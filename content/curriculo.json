@@ -64,7 +64,7 @@
         {
           "id": "02-02",
           "titulo": "Anatomia: 9/125, 250 e 900 µm",
-          "objetivo": "Ler \"9/125\"; revestimento primário × *tight buffer*.",
+          "objetivo": "Ler \"9/125\"; revestimento primário × tight buffer.",
           "prioridade": "P1",
           "confirmarNaEmpresa": false
         },
@@ -113,7 +113,7 @@
         {
           "id": "03-01",
           "titulo": "Ler a gravação do cabo",
-          "objetivo": "Decodificar `CFOA-SM-AS80-S 12FO NR`.",
+          "objetivo": "Decodificar a gravação \"CFOA-SM-AS80-S 12FO NR\".",
           "prioridade": "P1",
           "confirmarNaEmpresa": false
         },
@@ -232,7 +232,7 @@
         {
           "id": "05-03",
           "titulo": "Dentro da máquina",
-          "objetivo": "Alinhamento núcleo × casca, arco, *arc check*.",
+          "objetivo": "Alinhamento núcleo × casca, arco, arc check.",
           "prioridade": "P1",
           "confirmarNaEmpresa": true
         },

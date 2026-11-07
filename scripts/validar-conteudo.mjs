@@ -70,6 +70,12 @@ export function validar({ hoje = new Date() } = {}) {
   // ---- Currículo e plano ----
   const curriculo = lerCurriculo();
   const idsCurriculo = new Set(curriculo.modulos.flatMap((m) => m.licoes.map((l) => l.id)));
+  // Os textos do currículo aparecem sem passar pelo Markdown: asterisco ou crase sairiam literais na tela.
+  for (const m of curriculo.modulos) {
+    for (const [campo, texto] of Object.entries(m)) if (typeof texto === 'string' && /[*`]/.test(texto)) erro(`curriculo.json[${m.id}]`, `${campo} com Markdown (*, \`): o texto aparece sem formatação`);
+    for (const l of m.licoes)
+      for (const [campo, texto] of Object.entries(l)) if (typeof texto === 'string' && /[*`]/.test(texto)) erro(`curriculo.json[${l.id}]`, `${campo} com Markdown (*, \`): o texto aparece sem formatação`);
+  }
   const plano = lerPlano();
   const noPlano = plano.semanas.flatMap((s) => s.licoes);
   for (const id of noPlano) if (!idsCurriculo.has(id)) erro('plano.json', `lição ${id} não existe no currículo`);

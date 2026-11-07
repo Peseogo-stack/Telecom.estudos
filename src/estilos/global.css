@@ -743,6 +743,30 @@ a.item-lista:hover {
   stroke: var(--erro);
   stroke-dasharray: 6 4;
 }
+/* Traço de OTDR (leitor e diagramas do módulo 6) */
+.d-traco-fino {
+  stroke-width: 1.6;
+}
+.d-traco-1550 {
+  stroke: var(--alerta);
+  stroke-width: 1.6;
+  stroke-dasharray: 5 3;
+}
+.d-grade {
+  stroke: var(--borda);
+  stroke-width: 0.6;
+}
+.d-marco-letra {
+  fill: var(--superficie);
+  stroke: var(--royal);
+  stroke-width: 2;
+}
+.traco-otdr {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 460px;
+}
 
 /* ===== Questões ===== */
 .questao fieldset {
@@ -1053,4 +1077,33 @@ div.campo > label {
 .paleta-item > .dica {
   min-width: 1.5em;
   text-align: right;
+}
+
+/* ===== Leitor de OTDR ===== */
+.detalhes {
+  margin: 12px 0;
+}
+.detalhes > summary {
+  min-height: var(--toque);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--link);
+}
+.respostas-otdr {
+  border: 0;
+  padding: 0;
+  margin: 12px 0;
+}
+.respostas-otdr legend {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.lista-correcao {
+  padding-left: 1.1rem;
+  margin: 8px 0 0;
+}
+.lista-correcao li {
+  margin: 8px 0;
 }

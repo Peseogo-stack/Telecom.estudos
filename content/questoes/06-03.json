@@ -1,0 +1,253 @@
+[
+  {
+    "id": "06-03-q1",
+    "licao": "06-03",
+    "enunciado": "No traço, um evento tem pico e um degrau de 0,3 dB, na distância onde fica um DIO. O que é?",
+    "alternativas": [
+      {
+        "texto": "Par de conectores.",
+        "correta": true,
+        "explicacao": "Certo. Conector reflete (pico) e perde de 0,15 a 0,5 dB (VIAVI)."
+      },
+      {
+        "texto": "Fusão.",
+        "correta": false,
+        "explicacao": "Fusão não reflete: é degrau sem pico."
+      },
+      {
+        "texto": "Curvatura.",
+        "correta": false,
+        "explicacao": "Curvatura também não reflete."
+      },
+      {
+        "texto": "Fim da fibra.",
+        "correta": false,
+        "explicacao": "Depois do fim só há ruído, e o traço aqui continua."
+      }
+    ],
+    "fontes": [
+      "viavi-otdr-dicas"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "06-03-q2",
+    "licao": "06-03",
+    "enunciado": "Um degrau sem pico tem 0,05 dB em 1310 nm e 0,40 dB em 1550 nm. O que é?",
+    "alternativas": [
+      {
+        "texto": "Fusão.",
+        "correta": false,
+        "explicacao": "A fusão perde quase igual nas duas λ."
+      },
+      {
+        "texto": "Conector.",
+        "correta": false,
+        "explicacao": "Conector teria pico de reflexão."
+      },
+      {
+        "texto": "Curvatura.",
+        "correta": true,
+        "explicacao": "Certo. A curvatura costuma ser de 5 a 10 vezes pior em 1550 nm (VIAVI)."
+      },
+      {
+        "texto": "Fantasma.",
+        "correta": false,
+        "explicacao": "Fantasma é pico sem perda."
+      }
+    ],
+    "fontes": [
+      "viavi-otdr-dicas"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-03-q3",
+    "licao": "06-03",
+    "enunciado": "Uma fusão aparece com perda de −0,08 dB no traço de A para B. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Aprovar como fusão perfeita.",
+        "correta": false,
+        "explicacao": "Fusão passiva não ganha luz; o valor real pode ser maior."
+      },
+      {
+        "texto": "Refazer a fusão já.",
+        "correta": false,
+        "explicacao": "Primeiro descubra a perda real com a média dos dois sentidos."
+      },
+      {
+        "texto": "Trocar o OTDR, que está com defeito.",
+        "correta": false,
+        "explicacao": "É um efeito conhecido da medida num sentido só."
+      },
+      {
+        "texto": "É ganho aparente: pedir o traço de B para A e usar a média.",
+        "correta": true,
+        "explicacao": "Certo. A média dos dois sentidos dá a perda real (FOA, Yokogawa)."
+      }
+    ],
+    "fontes": [
+      "foa-otdr",
+      "yokogawa-otdr-bidirecional"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-03-q4",
+    "licao": "06-03",
+    "enunciado": "Uma emenda mostra −0,12 dB no sentido A→B e +0,30 dB no sentido B→A. Qual é a perda real?",
+    "alternativas": [
+      {
+        "texto": "0,42 dB",
+        "correta": false,
+        "explicacao": "Essa é a diferença entre os sentidos, não a perda."
+      },
+      {
+        "texto": "0,09 dB",
+        "correta": true,
+        "explicacao": "Certo. (−0,12 + 0,30) ÷ 2 = 0,09 dB."
+      },
+      {
+        "texto": "0,18 dB",
+        "correta": false,
+        "explicacao": "Somou os dois sentidos e esqueceu de dividir por 2."
+      },
+      {
+        "texto": "0,30 dB",
+        "correta": false,
+        "explicacao": "É o valor de um sentido só."
+      }
+    ],
+    "fontes": [
+      "foa-otdr",
+      "yokogawa-otdr-bidirecional"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-03-q5",
+    "licao": "06-03",
+    "enunciado": "O traço cai para o ruído em 3,8 km, com um pico pequeno. O projeto diz 6,0 km. O que suspeitar primeiro?",
+    "alternativas": [
+      {
+        "texto": "Fim normal da fibra.",
+        "correta": false,
+        "explicacao": "O fim ficaria perto dos 6,0 km do projeto."
+      },
+      {
+        "texto": "Quebra antes do comprimento do projeto. Confira também em 1550 nm, porque uma curva forte pode parecer fim.",
+        "correta": true,
+        "explicacao": "Certo. Quebra reflete de −30 a −48 dB ou nada, e uma curva forte pode passar de 6 dB (VIAVI)."
+      },
+      {
+        "texto": "Fusão boa.",
+        "correta": false,
+        "explicacao": "Fusão não derruba o traço para o ruído."
+      },
+      {
+        "texto": "Ganho aparente.",
+        "correta": false,
+        "explicacao": "Ganho aparente é degrau para cima, e o traço continua."
+      }
+    ],
+    "fontes": [
+      "viavi-otdr-dicas",
+      "foa-otdr"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-03-q6",
+    "licao": "06-03",
+    "enunciado": "Depois do fim da fibra, no meio do ruído, aparece um pico sem perda a quase o dobro da distância do fim. O que é?",
+    "alternativas": [
+      {
+        "texto": "Outra fibra emendada.",
+        "correta": false,
+        "explicacao": "Depois do fim não há fibra para medir."
+      },
+      {
+        "texto": "Uma quebra.",
+        "correta": false,
+        "explicacao": "A fibra já terminou antes."
+      },
+      {
+        "texto": "Um conector escondido.",
+        "correta": false,
+        "explicacao": "Conector teria degrau de perda e estaria antes do fim."
+      },
+      {
+        "texto": "Fantasma: eco de uma reflexão forte, que vai e volta na fibra.",
+        "correta": true,
+        "explicacao": "Certo. Aparece a múltiplos da distância de uma reflexão forte e não tem perda (FOA)."
+      }
+    ],
+    "fontes": [
+      "foa-otdr"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-03-q7",
+    "licao": "06-03",
+    "enunciado": "O fim da fibra aparece com refletância de −16 dB. O que isso indica?",
+    "alternativas": [
+      {
+        "texto": "Conector UPC aberto, com vidro e ar: de −14 a −20 dB é o típico.",
+        "correta": true,
+        "explicacao": "Certo. Valor típico da VIAVI para conector UPC aberto."
+      },
+      {
+        "texto": "Conector APC aberto.",
+        "correta": false,
+        "explicacao": "APC aberto reflete bem menos: de −35 a −45 dB."
+      },
+      {
+        "texto": "Fusão.",
+        "correta": false,
+        "explicacao": "Fusão não reflete."
+      },
+      {
+        "texto": "Quebra irregular sem reflexão.",
+        "correta": false,
+        "explicacao": "Sem reflexão não haveria −16 dB."
+      }
+    ],
+    "fontes": [
+      "viavi-otdr-dicas"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-03-q8",
+    "licao": "06-03",
+    "enunciado": "Com um traço só em 1550 nm, o OTDR marcou como emenda um degrau de 0,6 dB. Dá para afirmar que é uma fusão ruim?",
+    "alternativas": [
+      {
+        "texto": "Sim, porque fusão é degrau sem pico.",
+        "correta": false,
+        "explicacao": "Curvatura também é degrau sem pico."
+      },
+      {
+        "texto": "Sim, se o pico for alto.",
+        "correta": false,
+        "explicacao": "Nem fusão nem curvatura têm pico."
+      },
+      {
+        "texto": "Não: com uma λ só não se separa curvatura de fusão. Meça também em 1310 nm.",
+        "correta": true,
+        "explicacao": "Certo. A VIAVI diz que detectar curvatura exige 1310 e 1550 nm."
+      },
+      {
+        "texto": "Não, é sempre conector.",
+        "correta": false,
+        "explicacao": "Conector teria pico de reflexão."
+      }
+    ],
+    "fontes": [
+      "viavi-otdr-dicas"
+    ],
+    "dificuldade": 2
+  }
+]

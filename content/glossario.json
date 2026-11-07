@@ -407,6 +407,8 @@
       "yokogawa-otdr-bidirecional"
     ],
     "licoes": [
+      "06-02",
+      "06-03",
       "09-05"
     ],
     "sigla": "OTDR",
@@ -473,6 +475,7 @@
       "yokogawa-otdr-bidirecional"
     ],
     "licoes": [
+      "06-03",
       "09-05"
     ],
     "en": "Gainer"
@@ -834,5 +837,142 @@
       "02-07"
     ],
     "en": "Power budget"
+  },
+  {
+    "id": "perda-de-insercao",
+    "pt": "Perda de inserção",
+    "sigla": "IL",
+    "en": "Insertion loss",
+    "definicao": "Perda total de um enlace, medida com fonte de luz numa ponta e medidor de potência na outra, depois de zerar com o cordão de referência. Inclui as conexões das duas pontas.",
+    "fontes": [
+      "foa-perda-insercao"
+    ],
+    "licoes": [
+      "06-01"
+    ]
+  },
+  {
+    "id": "medidor-de-potencia",
+    "pt": "Medidor de potência óptica",
+    "sigla": "OPM",
+    "en": "Optical power meter",
+    "definicao": "Mede a potência da luz, em dBm. O medidor comum soma todos os comprimentos de onda; o medidor PON separa 1490 e 1577 nm.",
+    "fontes": [
+      "foa-pon-meter"
+    ],
+    "licoes": [
+      "06-01"
+    ]
+  },
+  {
+    "id": "cordao-de-referencia",
+    "pt": "Cordão de referência",
+    "en": "Test reference cord",
+    "definicao": "Cordão de teste de boa qualidade, usado para zerar o medidor e ligar o equipamento ao enlace. Para monomodo, a FOA cita perda de 0,2 dB e manda trocar o que passa de 0,5 dB.",
+    "fontes": [
+      "foa-perda-insercao"
+    ],
+    "licoes": [
+      "06-01"
+    ]
+  },
+  {
+    "id": "retroespalhamento",
+    "pt": "Retroespalhamento (de Rayleigh)",
+    "en": "Rayleigh backscattering",
+    "definicao": "Pequena parte da luz que o próprio vidro devolve em todo o comprimento. Forma a rampa do traço de OTDR; a inclinação da rampa dá a atenuação em dB/km.",
+    "fontes": [
+      "exfo-otdr-an194"
+    ],
+    "licoes": [
+      "06-02"
+    ]
+  },
+  {
+    "id": "reflexao-de-fresnel",
+    "pt": "Reflexão de Fresnel",
+    "en": "Fresnel reflection",
+    "definicao": "Reflexão forte numa mudança brusca de índice, como vidro e ar: conector, emenda mecânica, quebra, fim de fibra. Vira um pico no traço de OTDR.",
+    "fontes": [
+      "exfo-otdr-an194"
+    ],
+    "licoes": [
+      "06-02",
+      "06-03"
+    ]
+  },
+  {
+    "id": "refletancia",
+    "pt": "Refletância",
+    "en": "Reflectance",
+    "definicao": "Quanto um evento reflete, em dB negativo: quanto mais negativo, menos reflete. Valores típicos: par UPC limpo −50 a −59 dB; conector UPC aberto −14 a −20 dB.",
+    "fontes": [
+      "viavi-otdr-dicas"
+    ],
+    "licoes": [
+      "06-03"
+    ]
+  },
+  {
+    "id": "zona-morta",
+    "pt": "Zona morta",
+    "sigla": "EDZ/ADZ",
+    "en": "Event / attenuation dead zone",
+    "definicao": "Trecho logo depois de uma reflexão em que o OTDR fica \"cego\". A de evento costuma ser medida a −1,5 dB de cada lado do pico; a de atenuação vai até o traço voltar a 0,5 dB do retroespalhamento.",
+    "fontes": [
+      "exfo-otdr-an194"
+    ],
+    "licoes": [
+      "06-02"
+    ]
+  },
+  {
+    "id": "faixa-dinamica",
+    "pt": "Faixa dinâmica",
+    "en": "Dynamic range",
+    "definicao": "Maior perda que o OTDR consegue analisar, do início até o ruído. Regra prática: escolher um aparelho com 5 a 8 dB acima da maior perda do enlace.",
+    "fontes": [
+      "exfo-otdr-an194"
+    ],
+    "licoes": [
+      "06-02"
+    ]
+  },
+  {
+    "id": "largura-de-pulso",
+    "pt": "Largura de pulso",
+    "en": "Pulse width",
+    "definicao": "Tempo em que o laser do OTDR fica ligado em cada pulso. Pulso curto: zona morta menor e mais detalhe; pulso longo: alcance maior.",
+    "fontes": [
+      "exfo-otdr-an194",
+      "foa-otdr"
+    ],
+    "licoes": [
+      "06-02"
+    ]
+  },
+  {
+    "id": "cabo-de-lancamento",
+    "pt": "Cabo de lançamento",
+    "en": "Launch cable",
+    "definicao": "Bobina de fibra entre o OTDR e o enlace. Deixa o aparelho se recuperar do pulso e serve de referência para medir o primeiro conector; o cabo de recepção faz o mesmo na outra ponta.",
+    "fontes": [
+      "foa-otdr"
+    ],
+    "licoes": [
+      "06-02"
+    ]
+  },
+  {
+    "id": "fantasma",
+    "pt": "Fantasma (eco)",
+    "en": "Ghost",
+    "definicao": "Pico falso no traço de OTDR, sem perda, a múltiplos da distância de uma reflexão forte. Aparece em cabos curtos com conectores muito reflexivos.",
+    "fontes": [
+      "foa-otdr"
+    ],
+    "licoes": [
+      "06-03"
+    ]
   }
 ]

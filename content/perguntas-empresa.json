@@ -60,8 +60,9 @@
     "texto": "Que comprimentos de onda o OTDR tem?",
     "dica": "Etiqueta e tela do OTDR",
     "licoes": [
-      "06-05",
-      "02-05"
+      "02-05",
+      "06-02",
+      "06-05"
     ]
   },
   {
@@ -156,8 +157,10 @@
     "texto": "Qual é o critério de aceite das obras: perda máxima por fusão e por conector, dB/km, refletância, ORL? OTDR nos dois sentidos? Em quais comprimentos de onda?",
     "dica": "Anexo técnico do contrato de construção ou caderno de aceite",
     "licoes": [
-      "09-05",
-      "05-04"
+      "05-04",
+      "06-01",
+      "06-03",
+      "09-05"
     ]
   },
   {
@@ -263,6 +266,16 @@
     "licoes": [
       "02-06",
       "02-07"
+    ]
+  },
+  {
+    "id": "b17",
+    "onde": "documentos",
+    "texto": "Qual método de referência de perda de inserção a empresa pede (1, 2 ou 3 cordões), em quais comprimentos de onda, e qual é o critério de aceite da perda total?",
+    "dica": "Especificação técnica de aceite de obra",
+    "licoes": [
+      "06-01",
+      "09-05"
     ]
   },
   {
@@ -446,7 +459,8 @@
     "texto": "Qual é o critério de aceite por emenda que usamos no dia a dia (0,1? 0,15 dB?)",
     "dica": "",
     "licoes": [
-      "05-04"
+      "05-04",
+      "06-03"
     ]
   },
   {
@@ -530,6 +544,16 @@
     "dica": "",
     "licoes": [
       "02-07"
+    ]
+  },
+  {
+    "id": "d14",
+    "onde": "colega",
+    "texto": "Que equipamentos de teste a equipe tem (OTDR, power meter, medidor PON seletivo, VFL) e que cabos de lançamento e de recepção usamos (comprimento, conector UPC ou APC)?",
+    "dica": "Equipe de telecom",
+    "licoes": [
+      "06-01",
+      "06-02"
     ]
   }
 ]

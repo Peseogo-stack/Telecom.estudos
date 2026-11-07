@@ -2,6 +2,8 @@
 
 App de estudo e de consulta em campo sobre **telecom numa distribuidora de energia**, com foco em fibra óptica, FTTH, postes, contratos e segurança. Feito para estudar em pílulas de 10 a 15 minutos no celular e funcionar **sem internet** depois da primeira visita.
 
+**Prévia:** https://peseogo-stack.github.io/Telecom.estudos/ (conteúdo em revisão) · [Como instalar no Android e usar sem internet](docs/instalar-no-android.md)
+
 > **Status:** em construção. Fase 1 (pesquisa e plano) concluída; Fase 2 (base do app + semana 1: segurança e contratos) em aprovação. Os documentos estão em [`docs/`](docs/).
 
 ## O que tem (planejado)

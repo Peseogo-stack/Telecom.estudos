@@ -3,6 +3,7 @@ import { useEstado } from '../app/EstadoApp';
 import { NOME_APP } from '../app/config';
 import { useTitulo } from '../componentes/Comuns';
 import { ImportarExportar } from '../componentes/ImportarExportar';
+import { InstalarApp } from '../componentes/InstalarApp';
 import { apagarTudo } from '../dominio/armazenamento';
 import { NOMES_DIAS, diaDaSemana, diaDe, ehDiaValido, formatarDia } from '../dominio/datas';
 import { ESTADO_INICIAL, type Tema } from '../dominio/estado';
@@ -109,6 +110,11 @@ export function Ajustes() {
             </div>
           </div>
         )}
+      </section>
+
+      <section className="cartao" aria-labelledby="t-instalar">
+        <h2 id="t-instalar">Instalar e usar sem internet</h2>
+        <InstalarApp />
       </section>
 
       <section className="cartao" aria-labelledby="t-sobre">

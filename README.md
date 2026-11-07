@@ -2,7 +2,7 @@
 
 App de estudo e de consulta em campo sobre **telecom numa distribuidora de energia**, com foco em fibra óptica, FTTH, postes, contratos e segurança. Feito para estudar em pílulas de 10 a 15 minutos no celular e funcionar **sem internet** depois da primeira visita.
 
-> **Status:** em construção. Fase 1 (pesquisa e plano) concluída. Os documentos estão em [`docs/`](docs/).
+> **Status:** em construção. Fase 1 (pesquisa e plano) concluída; Fase 2 (base do app + semana 1: segurança e contratos) em aprovação. Os documentos estão em [`docs/`](docs/).
 
 ## O que tem (planejado)
 
@@ -30,4 +30,12 @@ App de estudo e de consulta em campo sobre **telecom numa distribuidora de energ
 
 ## Stack
 
-React + TypeScript + Vite, PWA offline, sem backend, publicado no GitHub Pages.
+React + TypeScript + Vite, PWA offline, sem backend, publicado no GitHub Pages. Como o código está organizado: [`docs/como-funciona.md`](docs/como-funciona.md).
+
+## Rodar no PC
+
+```bash
+npm install
+npm run dev        # http://localhost:5173/Telecom.estudos/
+npm run verificar  # valida o conteúdo, compila e roda todos os testes
+```

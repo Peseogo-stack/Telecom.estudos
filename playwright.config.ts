@@ -8,6 +8,9 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:4173/Telecom.estudos/',
     trace: 'off',
+    // Como no celular de quem usa: português do Brasil, fuso de Boa Vista (UTC−4).
+    locale: 'pt-BR',
+    timezoneId: 'America/Boa_Vista',
   },
   webServer: {
     command: 'npx vite preview --port 4173 --strictPort',

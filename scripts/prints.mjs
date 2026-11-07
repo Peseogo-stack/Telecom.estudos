@@ -51,7 +51,13 @@ const telas = [
 
 const navegador = await chromium.launch();
 for (const [largura, altura, sufixo] of [[390, 844, '390'], [1440, 900, '1440']]) {
-  const contexto = await navegador.newContext({ viewport: { width: largura, height: altura }, deviceScaleFactor: 2, serviceWorkers: 'block' });
+  const contexto = await navegador.newContext({
+    viewport: { width: largura, height: altura },
+    deviceScaleFactor: 2,
+    serviceWorkers: 'block',
+    locale: 'pt-BR',
+    timezoneId: 'America/Boa_Vista',
+  });
   const p = await contexto.newPage();
   await p.goto(BASE);
   await p.evaluate((e) => localStorage.setItem('fc:v1:estado', JSON.stringify(e)), EXEMPLO);

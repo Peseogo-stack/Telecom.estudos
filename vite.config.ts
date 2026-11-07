@@ -40,6 +40,8 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true,
     setupFiles: ['./src/testes-setup.ts'],
+    // Os testes de lógica rodam no fuso de Boa Vista (UTC−4), onde 21h já é o dia seguinte em UTC.
+    env: { TZ: 'America/Boa_Vista' },
     include: ['src/**/*.test.{ts,tsx}', 'scripts/**/*.test.mjs'],
   },
 });

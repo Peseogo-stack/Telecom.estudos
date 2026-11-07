@@ -4,7 +4,7 @@ import { NOME_APP } from '../app/config';
 import { useTitulo } from '../componentes/Comuns';
 import { ImportarExportar } from '../componentes/ImportarExportar';
 import { apagarTudo } from '../dominio/armazenamento';
-import { NOMES_DIAS, ehDiaValido, formatarDia } from '../dominio/datas';
+import { NOMES_DIAS, diaDaSemana, diaDe, ehDiaValido, formatarDia } from '../dominio/datas';
 import { ESTADO_INICIAL, type Tema } from '../dominio/estado';
 import { indice } from '../conteudo/carregar';
 
@@ -49,6 +49,9 @@ export function Ajustes() {
             value={a.inicioPlano ?? hoje}
             onChange={(e) => ehDiaValido(e.target.value) && despachar({ tipo: 'ajustes', ajustes: { inicioPlano: e.target.value } })}
           />
+          <span className="dica" data-testid="inicio-por-extenso">
+            Início: {NOMES_DIAS[diaDaSemana(a.inicioPlano ?? hoje)]}, {formatarDia(a.inicioPlano ?? hoje)}. O formato do campo segue o idioma do aparelho.
+          </span>
         </label>
         <fieldset style={{ border: 0, padding: 0, margin: '12px 0' }}>
           <legend style={{ fontWeight: 600 }}>Dias só de revisão (ex.: noites com curso)</legend>
@@ -119,7 +122,7 @@ export function Ajustes() {
           .
         </p>
         <p className="dica">
-          Conteúdo gerado em {formatarDia(indice.geradoEm.slice(0, 10))}. {indice.fontes.length} fontes, {indice.glossario.length} termos.
+          Conteúdo gerado em {formatarDia(diaDe(new Date(indice.geradoEm)))}. {indice.fontes.length} fontes, {indice.glossario.length} termos.
         </p>
       </section>
     </>

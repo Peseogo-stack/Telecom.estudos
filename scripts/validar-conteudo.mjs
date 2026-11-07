@@ -1,0 +1,237 @@
+// Valida todo o conteúdo. Falha (código 1) se houver erro; mostra avisos sem falhar.
+// Uso: node scripts/validar-conteudo.mjs            (rápido, sem internet)
+//      node scripts/validar-conteudo.mjs --links    (também confere se os links das fontes respondem)
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import {
+  RAIZ,
+  PASTA_CONTEUDO,
+  SECOES,
+  ONDE,
+  lerFontes,
+  lerGlossario,
+  lerCurriculo,
+  lerPlano,
+  lerLicoes,
+  lerQuestoes,
+  dividirSecoes,
+  marcacoes,
+  compilarLicao,
+  htmlParaTexto,
+  contarPalavras,
+} from './lib/conteudo.mjs';
+
+export function validar({ hoje = new Date() } = {}) {
+  const erros = [];
+  const avisos = [];
+  const erro = (onde, msg) => erros.push(`${onde}: ${msg}`);
+  const aviso = (onde, msg) => avisos.push(`${onde}: ${msg}`);
+
+  // ---- Fontes ----
+  const fontes = lerFontes();
+  const fontesPorId = new Map();
+  const TIPOS = ['norma', 'regulador', 'legislacao', 'fabricante', 'associacao', 'documentacao', 'curso', 'noticia'];
+  for (const f of fontes) {
+    const onde = `fontes.json[${f.id ?? '?'}]`;
+    if (!f.id) erro(onde, 'fonte sem id');
+    if (fontesPorId.has(f.id)) erro(onde, 'id repetido');
+    fontesPorId.set(f.id, f);
+    if (!f.titulo) erro(onde, 'sem título');
+    if (!f.organizacao) erro(onde, 'sem organização');
+    if (!/^https?:\/\//.test(f.url ?? '')) erro(onde, 'sem URL válida');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(f.acessadoEm ?? '')) erro(onde, 'sem data de acesso (AAAA-MM-DD)');
+    if (!TIPOS.includes(f.tipo)) erro(onde, `tipo inválido "${f.tipo}"`);
+    if (f.acessadoEm) {
+      const dias = (hoje - new Date(f.acessadoEm)) / 86_400_000;
+      if (dias > 365) aviso(onde, `acessada há mais de 12 meses (${f.acessadoEm})`);
+    }
+  }
+
+  // ---- Glossário ----
+  const glossario = lerGlossario();
+  const glossarioPorId = new Map();
+  const chaves = new Set();
+  for (const t of glossario) {
+    const onde = `glossario.json[${t.id ?? '?'}]`;
+    if (!t.id) erro(onde, 'termo sem id');
+    if (glossarioPorId.has(t.id)) erro(onde, 'id repetido');
+    glossarioPorId.set(t.id, t);
+    if (!t.pt) erro(onde, 'sem nome em português');
+    if (!t.definicao) erro(onde, 'sem definição');
+    const chave = `${(t.sigla ?? '').toLowerCase()}|${t.pt?.toLowerCase()}`;
+    if (chaves.has(chave)) erro(onde, 'termo duplicado (mesma sigla e nome)');
+    chaves.add(chave);
+    if (!Array.isArray(t.fontes) || t.fontes.length === 0) erro(onde, 'sem fonte');
+    for (const id of t.fontes ?? []) if (!fontesPorId.has(id)) erro(onde, `fonte inexistente "${id}"`);
+  }
+
+  // ---- Currículo e plano ----
+  const curriculo = lerCurriculo();
+  const idsCurriculo = new Set(curriculo.modulos.flatMap((m) => m.licoes.map((l) => l.id)));
+  const plano = lerPlano();
+  const noPlano = plano.semanas.flatMap((s) => s.licoes);
+  for (const id of noPlano) if (!idsCurriculo.has(id)) erro('plano.json', `lição ${id} não existe no currículo`);
+  if (new Set(noPlano).size !== noPlano.length) erro('plano.json', 'lição repetida no plano');
+  for (const id of idsCurriculo) if (!noPlano.includes(id)) erro('plano.json', `lição ${id} fora do plano`);
+
+  // ---- Diagramas disponíveis no código ----
+  const pastaDiagramas = join(RAIZ, 'src', 'diagramas');
+  const indiceDiagramas = existsSync(join(pastaDiagramas, 'index.ts'))
+    ? readFileSync(join(pastaDiagramas, 'index.ts'), 'utf-8')
+    : '';
+
+  // ---- Lições ----
+  const licoes = lerLicoes();
+  const idsLicoes = new Set();
+  for (const licao of licoes) {
+    const { meta, corpo, arquivo } = licao;
+    const onde = `licoes/${arquivo}`;
+    const id = String(meta.id ?? '');
+    if (!id) {
+      erro(onde, 'sem id no cabeçalho');
+      continue;
+    }
+    if (`${id}.md` !== arquivo) erro(onde, `o nome do arquivo deve ser ${id}.md`);
+    if (idsLicoes.has(id)) erro(onde, 'id repetido');
+    idsLicoes.add(id);
+    if (!idsCurriculo.has(id)) erro(onde, 'lição não está no currículo');
+    for (const campo of ['modulo', 'titulo', 'prioridade', 'duracao_min', 'objetivo', 'revisado_em']) {
+      if (meta[campo] === undefined || meta[campo] === '') erro(onde, `cabeçalho sem "${campo}"`);
+    }
+    if (meta.duracao_min && (meta.duracao_min < 10 || meta.duracao_min > 15)) erro(onde, 'duração fora de 10 a 15 min');
+    if (!Array.isArray(meta.fontes) || meta.fontes.length === 0) erro(onde, 'lição sem fontes');
+    for (const f of meta.fontes ?? []) if (!fontesPorId.has(f)) erro(onde, `fonte inexistente "${f}"`);
+    if (!meta.diagrama) erro(onde, 'lição sem diagrama');
+    else {
+      if (!indiceDiagramas.includes(`'${meta.diagrama}'`)) erro(onde, `diagrama "${meta.diagrama}" não existe em src/diagramas/index.ts`);
+      if (!meta.diagrama_descricao) erro(onde, 'diagrama sem descrição (texto alternativo)');
+    }
+    const perguntas = meta.perguntas ?? [];
+    if (perguntas.length === 0) erro(onde, 'sem "Pergunte na empresa" (campo perguntas)');
+    for (const p of perguntas) {
+      if (!p.texto) erro(onde, 'pergunta sem texto');
+      if (!ONDE.includes(p.onde)) erro(onde, `pergunta com "onde" inválido: ${p.onde} (use ${ONDE.join(', ')})`);
+    }
+
+    const secoes = dividirSecoes(corpo);
+    for (const titulo of Object.keys(SECOES)) {
+      if (!secoes[titulo]?.trim()) erro(onde, `falta a seção "## ${titulo}"`);
+    }
+    for (const titulo of Object.keys(secoes)) {
+      if (titulo !== '__antes__' && !(titulo in SECOES)) erro(onde, `seção desconhecida "## ${titulo}"`);
+    }
+    if (secoes['__antes__']) erro(onde, 'texto antes da primeira seção');
+
+    const usadas = new Set();
+    for (const m of marcacoes(corpo)) {
+      if (m.tipo === 'fonte') {
+        if (!(meta.fontes ?? []).includes(m.id)) erro(onde, `{{fonte:${m.id}}} não está na lista "fontes" do cabeçalho`);
+        usadas.add(m.id);
+      } else if (m.tipo === 'termo') {
+        if (!glossarioPorId.has(m.id)) erro(onde, `{{termo:${m.id}}} não existe no glossário`);
+      } else if (!['confirmar', 'diagrama'].includes(m.tipo)) {
+        erro(onde, `marcação desconhecida ${m.bruto}`);
+      }
+    }
+    for (const f of meta.fontes ?? []) if (!usadas.has(f)) aviso(onde, `fonte "${f}" listada mas não citada no texto`);
+    if (meta.confirmar_na_empresa && !corpo.includes('{{confirmar}}')) aviso(onde, 'marcada como "confirmar na empresa" mas sem selo {{confirmar}} no texto');
+
+    const compilada = compilarLicao(licao, fontesPorId, glossarioPorId);
+    const palavras = contarPalavras(
+      htmlParaTexto(compilada.explicacaoAntes + compilada.explicacaoDepois + compilada.naPratica + compilada.errosComuns),
+    );
+    if (palavras > 900) aviso(onde, `${palavras} palavras (o ideal é até 900 para caber em 10–15 min)`);
+
+    // ---- Questões da lição ----
+    const questoes = lerQuestoes(id);
+    if (!questoes) {
+      erro(onde, `falta content/questoes/${id}.json`);
+      continue;
+    }
+    if (questoes.length < 5) erro(`questoes/${id}.json`, `só ${questoes.length} questões (mínimo 5)`);
+    const idsQ = new Set();
+    for (const q of questoes) {
+      const ondeQ = `questoes/${id}.json[${q.id ?? '?'}]`;
+      if (!q.id?.startsWith(`${id}-q`)) erro(ondeQ, `id deve começar com "${id}-q"`);
+      if (idsQ.has(q.id)) erro(ondeQ, 'id repetido');
+      idsQ.add(q.id);
+      if (q.licao !== id) erro(ondeQ, `campo "licao" deve ser "${id}"`);
+      if (!q.enunciado) erro(ondeQ, 'sem enunciado');
+      if (!Array.isArray(q.alternativas) || q.alternativas.length !== 4) erro(ondeQ, 'precisa de exatamente 4 alternativas');
+      const certas = (q.alternativas ?? []).filter((a) => a.correta === true).length;
+      if (certas !== 1) erro(ondeQ, `precisa de exatamente 1 alternativa correta (tem ${certas})`);
+      (q.alternativas ?? []).forEach((a, i) => {
+        if (!a.texto) erro(ondeQ, `alternativa ${i + 1} sem texto`);
+        if (!a.explicacao || a.explicacao.length < 10) erro(ondeQ, `alternativa ${i + 1} sem explicação`);
+      });
+      const textos = (q.alternativas ?? []).map((a) => a.texto);
+      if (new Set(textos).size !== textos.length) erro(ondeQ, 'alternativas repetidas');
+      if (!Array.isArray(q.fontes) || q.fontes.length === 0) erro(ondeQ, 'questão sem fonte');
+      for (const f of q.fontes ?? []) if (!fontesPorId.has(f)) erro(ondeQ, `fonte inexistente "${f}"`);
+      if (![1, 2, 3].includes(q.dificuldade)) erro(ondeQ, 'dificuldade deve ser 1, 2 ou 3');
+    }
+  }
+
+  // Questões sem lição
+  const pastaQ = join(PASTA_CONTEUDO, 'questoes');
+  if (existsSync(pastaQ)) {
+    for (const f of readdirSync(pastaQ)) {
+      const id = f.replace('.json', '');
+      if (!idsLicoes.has(id)) erro(`questoes/${f}`, 'não há lição com esse id');
+    }
+  }
+
+  // Termos citados nas lições que apontam para lições inexistentes
+  for (const t of glossario) {
+    for (const l of t.licoes ?? []) if (!idsCurriculo.has(l)) erro(`glossario.json[${t.id}]`, `lição ${l} não existe`);
+  }
+
+  // Lista local de palavras proibidas (dados reais). Fica fora do Git: .palavras-proibidas.txt
+  const arquivoProibidas = join(RAIZ, '.palavras-proibidas.txt');
+  if (existsSync(arquivoProibidas)) {
+    const proibidas = readFileSync(arquivoProibidas, 'utf-8')
+      .split('\n')
+      .map((s) => s.trim().toLowerCase())
+      .filter((s) => s && !s.startsWith('#'));
+    const tudo = [
+      ...licoes.map((l) => [`licoes/${l.arquivo}`, JSON.stringify(l.meta) + l.corpo]),
+      ['glossario.json', JSON.stringify(glossario)],
+      ['fontes.json', JSON.stringify(fontes)],
+    ];
+    if (existsSync(pastaQ)) for (const f of readdirSync(pastaQ)) tudo.push([`questoes/${f}`, readFileSync(join(pastaQ, f), 'utf-8')]);
+    for (const [onde, texto] of tudo) {
+      const baixo = texto.toLowerCase();
+      for (const p of proibidas) if (baixo.includes(p)) erro(onde, `contém palavra da lista de dados reais: "${p}"`);
+    }
+  }
+
+  return { erros, avisos, fontes };
+}
+
+async function conferirLinks(fontes) {
+  const quebrados = [];
+  for (const f of fontes) {
+    try {
+      const r = await fetch(f.url, { method: 'GET', redirect: 'follow', signal: AbortSignal.timeout(20_000) });
+      if (r.status >= 400) quebrados.push(`${f.id}: HTTP ${r.status} — ${f.url}`);
+    } catch (e) {
+      quebrados.push(`${f.id}: ${e.name} — ${f.url}`);
+    }
+  }
+  return quebrados;
+}
+
+const rodandoDireto = process.argv[1]?.endsWith('validar-conteudo.mjs');
+if (rodandoDireto) {
+  const { erros, avisos, fontes } = validar();
+  for (const a of avisos) console.log(`AVISO  ${a}`);
+  for (const e of erros) console.log(`ERRO   ${e}`);
+  if (process.argv.includes('--links')) {
+    console.log('Conferindo links (precisa de internet)...');
+    const quebrados = await conferirLinks(fontes);
+    for (const q of quebrados) console.log(`LINK   ${q}`);
+    console.log(`${fontes.length - quebrados.length}/${fontes.length} links responderam.`);
+  }
+  console.log(`\nValidação: ${erros.length} erro(s), ${avisos.length} aviso(s).`);
+  process.exit(erros.length ? 1 : 0);
+}

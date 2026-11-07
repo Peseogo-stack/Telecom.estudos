@@ -1,0 +1,106 @@
+[
+  {
+    "id": "09-03-q1",
+    "licao": "09-03",
+    "enunciado": "No modelo do Decreto 11.246/2022, quem faz o recebimento definitivo do objeto do contrato?",
+    "alternativas": [
+      { "texto": "O fiscal técnico.", "correta": false, "explicacao": "O fiscal técnico faz o recebimento provisório (art. 22, X)." },
+      { "texto": "O gestor do contrato.", "correta": true, "explicacao": "Certo. Art. 21, IX: o gestor realiza o recebimento definitivo, por termo detalhado." },
+      { "texto": "O fornecedor.", "correta": false, "explicacao": "O fornecedor não pode aceitar a própria entrega." },
+      { "texto": "O fiscal administrativo.", "correta": false, "explicacao": "O fiscal administrativo cuida de prazos, garantias e glosas, e também pode fazer recebimento provisório; o definitivo é do gestor." }
+    ],
+    "fontes": ["decreto-11246"],
+    "dificuldade": 1
+  },
+  {
+    "id": "09-03-q2",
+    "licao": "09-03",
+    "enunciado": "Quem anota as ocorrências da execução do contrato e notifica o fornecedor para corrigir, com prazo?",
+    "alternativas": [
+      { "texto": "O fiscal técnico.", "correta": true, "explicacao": "Certo. Art. 22, II e III, do decreto. A lei (art. 117, § 1º) também manda o fiscal anotar em registro próprio." },
+      { "texto": "O gestor, sozinho.", "correta": false, "explicacao": "O gestor acompanha os registros, mas quem anota e notifica no dia a dia é o fiscal técnico." },
+      { "texto": "O jurídico.", "correta": false, "explicacao": "O jurídico assessora o fiscal (art. 117, § 3º), mas não faz o registro do dia a dia." },
+      { "texto": "O preposto do fornecedor.", "correta": false, "explicacao": "O preposto representa o fornecedor; o registro é da fiscalização do contratante." }
+    ],
+    "fontes": ["decreto-11246", "lei-14133"],
+    "dificuldade": 1
+  },
+  {
+    "id": "09-03-q3",
+    "licao": "09-03",
+    "enunciado": "Uma distribuidora de energia privada é obrigada a seguir a Lei 14.133/2021 nos seus contratos de telecom?",
+    "alternativas": [
+      { "texto": "Sim, toda empresa que contrata serviço segue essa lei.", "correta": false, "explicacao": "A Lei 14.133 é para a Administração Pública." },
+      { "texto": "Sim, porque é concessionária de serviço público.", "correta": false, "explicacao": "Ser concessionária não transforma os contratos privados dela em contratos administrativos dessa lei." },
+      { "texto": "Só para contratos acima de R$ 1 milhão.", "correta": false, "explicacao": "Não existe esse corte. A lei é para a Administração Pública." },
+      { "texto": "Não. Os contratos seguem o Código Civil e o que foi assinado; os termos da lei servem como boa prática.", "correta": true, "explicacao": "Certo. Gestor, fiscal, recebimento e glosa são vocabulário de mercado, não obrigação legal para a empresa privada." }
+    ],
+    "fontes": ["lei-14133"],
+    "dificuldade": 2
+  },
+  {
+    "id": "09-03-q4",
+    "licao": "09-03",
+    "enunciado": "No modelo do decreto, acompanhar garantias e glosas é tarefa principalmente de quem?",
+    "alternativas": [
+      { "texto": "Do fiscal técnico.", "correta": false, "explicacao": "O fiscal técnico apoia com as ocorrências e medições, mas o acompanhamento de garantias e glosas está no art. 23, I." },
+      { "texto": "Do fiscal administrativo.", "correta": true, "explicacao": "Certo. Art. 23, I: controle de prazos, aditivos, empenho, pagamento, garantias e glosas." },
+      { "texto": "Do fornecedor.", "correta": false, "explicacao": "O fornecedor não fiscaliza o próprio contrato." },
+      { "texto": "Do almoxarifado.", "correta": false, "explicacao": "O almoxarifado não aparece no decreto como responsável por glosas." }
+    ],
+    "fontes": ["decreto-11246"],
+    "dificuldade": 2
+  },
+  {
+    "id": "09-03-q5",
+    "licao": "09-03",
+    "enunciado": "Pela Lei 14.133, art. 140, depois do recebimento definitivo de uma obra, o construtor continua responsável pela solidez e segurança por pelo menos quanto tempo?",
+    "alternativas": [
+      { "texto": "90 dias.", "correta": false, "explicacao": "O § 6º do art. 140 fala em prazo mínimo de 5 anos." },
+      { "texto": "1 ano.", "correta": false, "explicacao": "O mínimo é de 5 anos; o contrato pode prever mais." },
+      { "texto": "5 anos.", "correta": true, "explicacao": "Certo. Art. 140, § 6º: prazo mínimo de 5 anos, admitido prazo maior no contrato." },
+      { "texto": "Nenhum: o aceite encerra a responsabilidade.", "correta": false, "explicacao": "O § 2º diz que o recebimento não exclui a responsabilidade civil pela solidez e segurança." }
+    ],
+    "fontes": ["lei-14133"],
+    "dificuldade": 2
+  },
+  {
+    "id": "09-03-q6",
+    "licao": "09-03",
+    "enunciado": "O fiscal encontra um problema cuja solução passa da competência dele (por exemplo, aplicar multa). O que fazer?",
+    "alternativas": [
+      { "texto": "Aplicar a multa por conta própria.", "correta": false, "explicacao": "Sanção é coordenada pelo gestor (art. 21, X); o fiscal informa." },
+      { "texto": "Ignorar, porque não é da competência dele.", "correta": false, "explicacao": "O fiscal tem de informar a tempo; ignorar deixa o problema crescer." },
+      { "texto": "Informar o gestor a tempo, com o registro da ocorrência.", "correta": true, "explicacao": "Certo. Lei 14.133, art. 117, § 2º, e decreto, art. 22, IV." },
+      { "texto": "Combinar um desconto direto com o fornecedor.", "correta": false, "explicacao": "Acordos informais fogem da regra do contrato e do registro." }
+    ],
+    "fontes": ["lei-14133", "decreto-11246"],
+    "dificuldade": 1
+  },
+  {
+    "id": "09-03-q7",
+    "licao": "09-03",
+    "enunciado": "Qual a diferença entre recebimento provisório e definitivo de uma obra, pelo art. 140 da Lei 14.133?",
+    "alternativas": [
+      { "texto": "O provisório é verbal; o definitivo é escrito.", "correta": false, "explicacao": "Os dois são por termo detalhado." },
+      { "texto": "O provisório confere as exigências técnicas (fiscalização); o definitivo comprova o atendimento do contrato todo.", "correta": true, "explicacao": "Certo. Inciso I, alíneas a e b." },
+      { "texto": "Não há diferença: são o mesmo ato em dias diferentes.", "correta": false, "explicacao": "São atos diferentes, feitos por responsáveis diferentes." },
+      { "texto": "O definitivo é feito pelo fornecedor.", "correta": false, "explicacao": "O definitivo é feito por quem a autoridade designar, nunca pelo fornecedor." }
+    ],
+    "fontes": ["lei-14133"],
+    "dificuldade": 2
+  },
+  {
+    "id": "09-03-q8",
+    "licao": "09-03",
+    "enunciado": "No modelo do decreto, quem deve avisar o gestor, a tempo, de que um contrato está perto do fim?",
+    "alternativas": [
+      { "texto": "O fiscal técnico.", "correta": true, "explicacao": "Certo. Art. 22, VII: comunicar o término do contrato, para renovação ou prorrogação a tempo." },
+      { "texto": "O fornecedor, sempre.", "correta": false, "explicacao": "O fornecedor pode avisar, mas a obrigação no decreto é do fiscal técnico." },
+      { "texto": "Ninguém: o contrato se renova sozinho.", "correta": false, "explicacao": "Renovação depende de ato formal; por isso o aviso a tempo." },
+      { "texto": "O usuário do link.", "correta": false, "explicacao": "O usuário não acompanha a vigência do contrato." }
+    ],
+    "fontes": ["decreto-11246"],
+    "dificuldade": 1
+  }
+]

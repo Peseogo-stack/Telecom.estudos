@@ -74,12 +74,12 @@
       {
         "texto": "Requisição.",
         "correta": true,
-        "explicacao": "Certo. É um pedido de algo novo, sem interrupção do serviço."
+        "explicacao": "Certo. É um pedido de alteração, sem falha no serviço. Se mexer no preço, costuma pedir também aditivo ao contrato."
       },
       {
         "texto": "Problema.",
         "correta": false,
-        "explicacao": "Problema é causa de falhas."
+        "explicacao": "Problema é a causa de um ou mais incidentes."
       },
       {
         "texto": "Escalonamento.",
@@ -88,7 +88,8 @@
       }
     ],
     "fontes": [
-      "tjba-politica-incidentes"
+      "tjba-politica-requisicoes",
+      "decreto-11246"
     ],
     "dificuldade": 1
   },
@@ -194,12 +195,12 @@
       {
         "texto": "Aceitar logo, para não atrasar.",
         "correta": false,
-        "explicacao": "Um encerramento sem conferir para o relógio do SLA antes da hora."
+        "explicacao": "Encerrar sem conferir faz o relógio do SLA parar antes da hora."
       },
       {
         "texto": "Testar se o serviço voltou de fato e pedir a causa informada.",
         "correta": true,
-        "explicacao": "Certo. Confira na ponta e registre a causa: ela ajuda a ver problemas que se repetem."
+        "explicacao": "Certo. Confira na ponta e registre a causa: ela ajuda a ver problemas que se repetem. A política do TJBA só encerra depois de restaurar e validar (Seção VI)."
       },
       {
         "texto": "Abrir outro chamado para o mesmo caso.",

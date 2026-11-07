@@ -7,12 +7,12 @@
       {
         "texto": "O fiscal técnico.",
         "correta": false,
-        "explicacao": "O fiscal técnico faz o recebimento provisório (Decreto 11.246, art. 22, X)."
+        "explicacao": "O fiscal técnico faz o recebimento provisório, de caráter técnico (Decreto 11.246, art. 22, X)."
       },
       {
         "texto": "O gestor do contrato.",
         "correta": true,
-        "explicacao": "Certo. No modelo do Decreto 11.246 (art. 21, IX), o gestor faz o recebimento definitivo. Na sua empresa o nome pode ser outro."
+        "explicacao": "Certo. No modelo do Decreto 11.246 (arts. 21, IX, e 25), o definitivo é do gestor do contrato (ou do gestor setorial, ou de uma comissão designada). Na sua empresa o nome pode ser outro."
       },
       {
         "texto": "O fornecedor.",
@@ -48,7 +48,7 @@
       {
         "texto": "Aplicar multa na hora.",
         "correta": false,
-        "explicacao": "Sanção é conduzida pelo gestor; o fiscal registra e informa."
+        "explicacao": "O fiscal registra e informa. O gestor pede a abertura do processo de sanção (Decreto 11.246, art. 21, X), que é conduzido por comissão ou pelo setor competente."
       },
       {
         "texto": "Ignorar, porque a obra já foi entregue.",
@@ -127,27 +127,27 @@
   {
     "id": "09-03-q5",
     "licao": "09-03",
-    "enunciado": "Seis meses depois do aceite definitivo, aparece um defeito de construção na obra. O construtor ainda responde?",
+    "enunciado": "Seis meses depois do aceite definitivo de uma rede óptica, aparece um defeito de execução: uma caixa de emenda mal vedada. O fornecedor ainda responde?",
     "alternativas": [
       {
         "texto": "Não: o aceite encerra tudo.",
         "correta": false,
-        "explicacao": "O recebimento não exclui a responsabilidade pela solidez e segurança (Lei 14.133, art. 140, § 2º)."
+        "explicacao": "O recebimento não exclui a responsabilidade pela solidez e segurança da obra ou do serviço (Lei 14.133, art. 140, § 2º)."
       },
       {
         "texto": "Só por 90 dias depois do aceite.",
         "correta": false,
-        "explicacao": "Na lei de contratos públicos, o mínimo é de 5 anos."
+        "explicacao": "Não existe esse prazo geral. Vale o que a lei e o contrato dizem; em obra de imóvel, a lei de contratos públicos dá no mínimo 5 anos (§ 6º)."
       },
       {
-        "texto": "Sim: o aceite não acaba com a responsabilidade pela solidez e segurança. Na lei de contratos públicos o mínimo é de 5 anos; confira a garantia do seu contrato.",
+        "texto": "Sim: o aceite não acaba com a responsabilidade, nos limites da lei e do contrato. Confira a garantia do seu contrato.",
         "correta": true,
-        "explicacao": "Certo. Art. 140, § 6º, da Lei 14.133, usado aqui como referência."
+        "explicacao": "Certo. Lei 14.133, art. 140, § 2º, usada aqui como referência. Os 5 anos do § 6º são para obra de imóvel; rede contratada como serviço segue o § 2º e o contrato."
       },
       {
         "texto": "Só se o defeito for no cabo, não nas ferragens.",
         "correta": false,
-        "explicacao": "A responsabilidade cobre a obra, não só um item."
+        "explicacao": "A responsabilidade cobre a execução toda, não só um item."
       }
     ],
     "fontes": [
@@ -163,7 +163,7 @@
       {
         "texto": "Aplicar a multa por conta própria.",
         "correta": false,
-        "explicacao": "Sanção é coordenada pelo gestor (Decreto 11.246, art. 21, X)."
+        "explicacao": "Multa não é decisão do fiscal. O gestor pede a abertura do processo de sanção (Decreto 11.246, art. 21, X), conduzido por comissão ou pelo setor competente."
       },
       {
         "texto": "Ignorar, porque não é sua competência.",

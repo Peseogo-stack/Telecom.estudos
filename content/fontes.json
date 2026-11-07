@@ -37,16 +37,16 @@
   },
   {
     "id": "abnt-nbr15214-2005",
-    "titulo": "ABNT NBR 15214:2005 — Rede de distribuição de energia elétrica: compartilhamento de infraestrutura com redes de telecomunicações",
-    "organizacao": "ABNT (cópia anexada a documento do SEESP)",
+    "titulo": "ABNT NBR 15214:2005 — Rede de distribuição de energia elétrica: compartilhamento de infraestrutura com redes de telecomunicações (edição substituída em 05/2024)",
+    "organizacao": "ABNT",
     "tipo": "norma",
-    "url": "https://www.seesp.org.br/site/images/documentos/InfraRede/ANEXO_2__ABNT_NBR_15214_2005_-_Compartilhamento_de_postes.pdf",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Tabela 1, item 8.2: 600 mm entre telecom e BT. Existe edição de 05/2024 (texto não público)."
+    "url": "https://www.abntcatalogo.com.br/",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Norma paga: busque \"15214\" no catálogo da ABNT. Na edição de 2005, Tabela 1 (item 8.2): 600 mm entre telecom e BT. A edição vigente é a de 05/2024 (texto não conferido); confirme o valor nela."
   },
   {
     "id": "neoenergia-dis-nor-056",
-    "titulo": "DIS-NOR-056 — Compartilhamento de infraestrutura (rev. 01)",
+    "titulo": "DIS-NOR-056 — Compartilhamento de Infraestrutura de Rede Elétrica com Redes de Telecomunicações (rev. 01, 22/02/2022)",
     "organizacao": "Neoenergia (usada como EXEMPLO)",
     "tipo": "norma",
     "url": "https://www.neoenergia.com/documents/d/sp/dis-nor-056-rev01-pdf",
@@ -69,16 +69,16 @@
     "tipo": "legislacao",
     "url": "https://www2.camara.leg.br/legin/fed/decret/2022/decreto-11246-27-outubro-2022-793362-normaatualizada-pe.pdf",
     "acessadoEm": "2026-11-07",
-    "observacao": "Arts. 21 (gestor), 22 (fiscal técnico) e 23 (fiscal administrativo)."
+    "observacao": "Arts. 21 (gestor), 22 (fiscal técnico), 23 (fiscal administrativo) e 25 (recebimentos, com a redação do Decreto 13.031/2026)."
   },
   {
     "id": "trt7-tr-internet",
     "titulo": "Termo de referência — Anexo I, serviço de acesso à internet (2022.TIC028)",
     "organizacao": "TRT da 7ª Região",
     "tipo": "documentacao",
-    "url": "https://www.trt7.jus.br/artefatos_tic/2022/",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Disponibilidade D = (To − Ti)/To; mínimo de 99,3%."
+    "url": "https://www.trt7.jus.br/artefatos_tic/2022/2022.TIC028.CITIC%20-%20Servi%C3%A7o%20de%20acesso%20a%20internet%20_%20nova%20contrata%C3%A7%C3%A3o%20%28FL%29/2022.TIC028.CITIC.TR.ANEXOI%20-%20Servi%C3%A7o%20de%20acesso%20a%20internet.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Disponibilidade D = (To − Ti)/To (5.3); mínimo de 99,3%, até 5,04 h de parada por mês (1.2); o contratante apura os tempos de inoperância (5.7)."
   },
   {
     "id": "ifsuldeminas-ans",
@@ -113,8 +113,8 @@
     "organizacao": "Anatel (cópia publicada por prestadora)",
     "tipo": "regulador",
     "url": "https://www.claro.com.br/files/104379/x/e94cf9c977/manual-operacional-do-rgc-consolidado_versaojunho_2025.pdf",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Ressarcimento por interrupção = (valor ÷ 43.200) × minutos; pedidos de reparo de concessionária de serviço público são demanda urgente."
+    "acessadoEm": "2026-11-07",
+    "observacao": "Ressarcimento por interrupção = (valor ÷ 43.200) × minutos (4.6.3). Demanda urgente (2.5.1): todo pedido de reparo e qualquer demanda de serviço de utilidade pública, como concessionária de serviço público; garante atendimento humano 24 h (art. 15, IV)."
   },
   {
     "id": "tjba-politica-incidentes",
@@ -123,7 +123,16 @@
     "tipo": "documentacao",
     "url": "https://www.tjba.jus.br/portaldatecnologia/wp-content/uploads/2026/03/Politica-de-Gerenciamento-de-Incidentes-de-TIC.pdf",
     "acessadoEm": "2026-11-07",
-    "observacao": "Definições de incidente, solução de contorno e escalonamento funcional e hierárquico; gerenciamento de problemas busca a causa-raiz."
+    "observacao": "Política interna do tribunal (v1.0, 18/03/2026). Define incidente, incidente grave, solução de contorno e escalonamento; Seção IV: escalona quando o nível inicial não resolve ou há risco de descumprir o nível de serviço; hierárquico para impacto relevante, decisão gerencial ou incidente grave; Seção VI: só encerra após restaurar e validar."
+  },
+  {
+    "id": "tjba-politica-requisicoes",
+    "titulo": "Portaria SETIM nº 62/2026 — Política de Gerenciamento de Requisições de Serviços de TIC (alinhada ao ITIL 4)",
+    "organizacao": "Tribunal de Justiça da Bahia",
+    "tipo": "documentacao",
+    "url": "https://www.tjba.jus.br/portaldatecnologia/wp-content/uploads/2026/08/Politica-de-Requisicoes-_Portaria_SETIM_62.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "DJE de 18/08/2026. Art. 3º: requisição é pedido formal ao Service Desk que não decorre de interrupção, degradação ou falha do serviço; incidente é interrupção não planejada ou degradação; problema é a causa subjacente de um ou mais incidentes, tratada para prevenir recorrências."
   },
   {
     "id": "foa-loss-budget",
@@ -131,8 +140,8 @@
     "organizacao": "The Fiber Optic Association (FOA)",
     "tipo": "associacao",
     "url": "https://www.thefoa.org/tech/loss-est.htm",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Valores de planejamento: fusão 0,15 dB (FOA); TIA: conector 0,75 dB, emenda 0,3 dB, cabo externo 0,5 dB/km."
+    "acessadoEm": "2026-11-07",
+    "observacao": "Fórmula do orçamento de perda; fusão de planejamento 0,15 dB; limites da EIA/TIA 568: emenda 0,3 dB e cabo externo 0,5 dB/km; ao comparar com a medição, lembrar da incerteza."
   },
   {
     "id": "yokogawa-otdr-bidirecional",
@@ -144,13 +153,49 @@
     "observacao": "Média dos dois sentidos elimina ganho e perda aparentes nas emendas."
   },
   {
-    "id": "corning-an3060",
-    "titulo": "AN3060 — nota de aplicação sobre emendas",
-    "organizacao": "Corning",
+    "id": "trt7-tr-principal",
+    "titulo": "Termo de referência — serviço de acesso à internet (2022.TIC028)",
+    "organizacao": "TRT da 7ª Região",
+    "tipo": "documentacao",
+    "url": "https://www.trt7.jus.br/artefatos_tic/2022/2022.TIC028.CITIC%20-%20Servi%C3%A7o%20de%20acesso%20a%20internet%20_%20nova%20contrata%C3%A7%C3%A3o%20%28FL%29/2022.TIC028.CITIC.TR%20-%20Servi%C3%A7o%20de%20acesso%20a%20internet.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "7.4: prazo de solução contado a partir da solicitação de suporte (chamado). 14.1: abaixo de 99,3%, desconto de 0,015% do valor mensal por minuto de indisponibilidade (o extenso diz \"quinze centésimos por cento\", que não bate com o número)."
+  },
+  {
+    "id": "foa-entrega",
+    "titulo": "Fiber Optic Cable Plant — Acceptance Of The Finished Product: Deliverables",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/ref/install/deliverables.html",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Especificações \"razoáveis\" para rede externa: fusão com média de 0,1 dB (rejeitar acima de 0,2 dB); conexão com média de 0,3 dB (rejeitar acima de 0,5 dB); fibra 0,4 dB/km (1310 nm) e 0,25 dB/km (1550 nm). Perda de emenda por OTDR nos dois sentidos, com média; a diferença entre sentidos pode chegar a 0,20–0,25 dB (dado da Corning AN3060 citado pela FOA). Documentação final com rota (GIS), cabos, caixas, posição das emendas e dados de teste."
+  },
+  {
+    "id": "foa-restauracao",
+    "titulo": "Guide To Fiber Optic Network Restoration (FOA Technical Bulletin)",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.foa.org/tech/guides/RG.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "3.2: marcar cada fibra em cada conexão e manter registro, em software ou planilha, de para onde vai cada fibra; 7.1: atualizar a documentação depois de reparos (novas emendas e caixas)."
+  },
+  {
+    "id": "foa-reflectancia",
+    "titulo": "Measuring Reflectance or Return Loss",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/ref/testing/test/reflectance.html",
+    "acessadoEm": "2026-11-07",
+    "observacao": "ORL é a soma de todas as reflexões e do retroespalhamento ao longo da fibra testada; reflectância de −50 dB equivale a perda de retorno de 50 dB."
+  },
+  {
+    "id": "yokogawa-aq7932",
+    "titulo": "AQ7932 OTDR Emulation Software (descontinuado)",
+    "organizacao": "Yokogawa Test & Measurement",
     "tipo": "fabricante",
-    "url": "https://www.corning.com/media/worldwide/coc/documents/Fiber/application-notes/AN3060.pdf",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Perda média bidirecional de fusão ≤ 0,10 dB citada como exigência típica."
+    "url": "https://tmi.yokogawa.com/solutions/discontinued/aq7932-otdr-emulation-software/",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Formatos .sor: Bellcore GR-196 (issue 1) e Telcordia SR-4731 (issue 2). O software abre e analisa o traço no PC e gera relatórios."
   },
   {
     "id": "corning-smf28-ultra",
@@ -158,8 +203,8 @@
     "organizacao": "Corning",
     "tipo": "fabricante",
     "url": "https://csmedia.corning.com/media/worldwide/coc/documents/Fiber/product-information-sheets/PI-1424-AEN.pdf",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Índice de refração de grupo: 1,4676 (1310 nm) e 1,4682 (1550 nm)."
+    "acessadoEm": "2026-11-07",
+    "observacao": "Índice de refração de grupo efetivo: 1,4676 (1310 nm) e 1,4682 (1550 nm). O site da Corning recusou o acesso direto (403) em 07/11/2026; os valores foram conferidos no trecho indexado pela busca das fichas de fev/2024 (inglês) e jul/2025 (francês)."
   },
   {
     "id": "fluke-tia5683d",
@@ -167,7 +212,7 @@
     "organizacao": "Fluke Networks",
     "tipo": "fabricante",
     "url": "https://flukenetworks.com/content/new-loss-budget-values-reference-grade-connectors-ansitia-5683-d",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Limites TIA: par de conectores 0,75 dB; emenda 0,3 dB."
+    "acessadoEm": "2026-11-07",
+    "observacao": "Conector padrão (standard-grade): 0,75 dB por par, valor da TIA-568.3-D para orçamento de perda."
   }
 ]

@@ -27,7 +27,7 @@
     ],
     "fontes": [
       "yokogawa-otdr-bidirecional",
-      "corning-an3060"
+      "foa-entrega"
     ],
     "dificuldade": 2
   },
@@ -71,7 +71,7 @@
       {
         "texto": "Aprovar, porque a TIA aceita até 0,3 dB.",
         "correta": false,
-        "explicacao": "Quem manda é o contrato. Se ele pede 0,10 dB, 0,14 dB não passa."
+        "explicacao": "O 0,3 dB da TIA é limite de norma para orçamento. Quem manda é o contrato: se ele pede 0,10 dB, 0,14 dB não passa."
       },
       {
         "texto": "Aprovar, porque a diferença é pequena.",
@@ -81,7 +81,7 @@
       {
         "texto": "Reprovar aquela emenda, registrar e notificar o fornecedor para refazer.",
         "correta": true,
-        "explicacao": "Certo. É pendência técnica: registra, notifica com prazo e confere de novo. Limite de 0,10 dB na média é exigência comum (nota da Corning)."
+        "explicacao": "Certo. É pendência técnica: registra, notifica com prazo e confere de novo. Vale o limite do contrato, mesmo que outras referências aceitem mais."
       },
       {
         "texto": "Trocar o critério para 0,15 dB.",
@@ -90,8 +90,8 @@
       }
     ],
     "fontes": [
-      "corning-an3060",
-      "fluke-tia5683d"
+      "foa-loss-budget",
+      "foa-entrega"
     ],
     "dificuldade": 2
   },
@@ -103,7 +103,7 @@
       {
         "texto": "As distâncias dos eventos ficam deslocadas, porque o OTDR usa o IOR para converter tempo em distância.",
         "correta": true,
-        "explicacao": "Certo. Uma fibra comum tem IOR por volta de 1,4676 (1310 nm) e 1,4682 (1550 nm), segundo a ficha da Corning."
+        "explicacao": "Certo. Por exemplo, a ficha da Corning SMF-28 Ultra traz 1,4676 (1310 nm) e 1,4682 (1550 nm); outro fabricante pode ter outro valor."
       },
       {
         "texto": "A potência do laser muda.",
@@ -222,7 +222,7 @@
   {
     "id": "09-05-q8",
     "licao": "09-05",
-    "enunciado": "No traço de A para B, uma fusão aparece com +0,05 dB, como se ganhasse luz. O que é isso?",
+    "enunciado": "No traço de A para B, uma fusão aparece com perda de −0,05 dB, como se ganhasse luz. O que é isso?",
     "alternativas": [
       {
         "texto": "Defeito do OTDR: o equipamento precisa de calibração.",

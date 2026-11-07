@@ -94,7 +94,7 @@
   {
     "id": "compartilhamento-de-infraestrutura",
     "pt": "Compartilhamento de infraestrutura",
-    "definicao": "Na nova NR-10: cessão paga da capacidade que sobra em postes, torres e dutos para serviços de telecomunicações.",
+    "definicao": "Na nova NR-10: cessão paga da capacidade que sobra em postes, torres e dutos para serviços de telecomunicações de prestadoras de outros grupos econômicos.",
     "fontes": [
       "nr10-portaria-737"
     ],
@@ -118,7 +118,7 @@
   {
     "id": "plh",
     "pt": "Profissional legalmente habilitado",
-    "definicao": "Profissional com formação e registro no conselho de classe. Na nova NR-10, aprova procedimentos e responde por capacitações.",
+    "definicao": "Profissional com formação em curso da área elétrica e registro no conselho de classe. Na nova NR-10, aprova procedimentos e responde por capacitações.",
     "fontes": [
       "nr10-portaria-737"
     ],
@@ -130,8 +130,8 @@
   },
   {
     "id": "apr",
-    "pt": "Análise preliminar de risco",
-    "definicao": "Estudo dos riscos de uma tarefa e das medidas de controle, feito antes de começar.",
+    "pt": "Análise de risco",
+    "definicao": "Avaliação dos riscos da tarefa, das causas, das consequências e das medidas de controle, feita antes de começar. Na empresa, muitas vezes chamada de APR (análise preliminar de risco).",
     "fontes": [
       "nr10-portaria-737"
     ],
@@ -140,12 +140,12 @@
       "10-05"
     ],
     "sigla": "APR",
-    "en": "Preliminary hazard analysis"
+    "en": "Risk analysis"
   },
   {
     "id": "permissao-de-trabalho",
     "pt": "Permissão de trabalho",
-    "definicao": "Documento que autoriza um trabalho não rotineiro, com a análise de riscos e as condições impeditivas. Na nova NR-10, vale pelo turno.",
+    "definicao": "Documento que autoriza um trabalho não rotineiro, com a análise de riscos e as condições impeditivas. Na nova NR-10, vale pela duração da atividade, no máximo o turno, e pode ser revalidada.",
     "fontes": [
       "nr10-portaria-737"
     ],
@@ -171,8 +171,9 @@
   {
     "id": "mt",
     "pt": "Média tensão",
-    "definicao": "Redes de distribuição como 13,8 kV e 34,5 kV, no alto do poste.",
+    "definicao": "Na nova NR-10: acima de 1.000 V e até 36.200 V em corrente alternada, como as redes de 13,8 kV e 34,5 kV. No texto atual da NR-10, essas redes contam como alta tensão (acima de 1.000 V).",
     "fontes": [
+      "nr10-portaria-737",
       "nr10-vigente"
     ],
     "licoes": [
@@ -211,7 +212,7 @@
   {
     "id": "indisponibilidade",
     "pt": "Tempo de indisponibilidade",
-    "definicao": "Minutos em que o serviço ficou parado no período, já tiradas as exclusões do contrato.",
+    "definicao": "Minutos em que o serviço ficou fora do ar ou degradado (latência, perda, vazão), conforme o contrato, já tiradas as exclusões.",
     "fontes": [
       "trt7-tr-internet",
       "tjal-tr-link"
@@ -239,9 +240,9 @@
   {
     "id": "memoria-de-calculo",
     "pt": "Memória de cálculo",
-    "definicao": "Registro passo a passo de como um valor foi calculado (período, paradas, exclusões, regra), para justificar a glosa.",
+    "definicao": "Registro passo a passo de como um valor foi calculado (período, paradas, exclusões, regra). No TR do TJAL, a fatura vem com as \"memórias de cálculo dos descontos lançados\" (9.2).",
     "fontes": [
-      "ifsuldeminas-ans"
+      "tjal-tr-link"
     ],
     "licoes": [
       "09-02"
@@ -251,7 +252,7 @@
   {
     "id": "gestor-do-contrato",
     "pt": "Gestor do contrato",
-    "definicao": "Coordena a fiscalização, faz o recebimento definitivo e abre processo de sanção (modelo do Decreto 11.246).",
+    "definicao": "Coordena a fiscalização, faz o recebimento definitivo e pede a abertura do processo de sanção, conduzido por comissão ou setor competente (modelo do Decreto 11.246, arts. 21 e 25).",
     "fontes": [
       "decreto-11246"
     ],
@@ -263,7 +264,7 @@
   {
     "id": "fiscal-tecnico",
     "pt": "Fiscal técnico",
-    "definicao": "Registra ocorrências, notifica o fornecedor com prazo e faz o recebimento provisório (modelo do Decreto 11.246).",
+    "definicao": "Registra ocorrências, notifica o fornecedor com prazo e faz o recebimento provisório de caráter técnico (modelo do Decreto 11.246, arts. 22 e 25).",
     "fontes": [
       "decreto-11246",
       "lei-14133"
@@ -276,7 +277,7 @@
   {
     "id": "fiscal-administrativo",
     "pt": "Fiscal administrativo",
-    "definicao": "Controla prazos, aditivos, pagamentos, garantias e glosas (modelo do Decreto 11.246).",
+    "definicao": "Controla prazos, aditivos, pagamentos, garantias e glosas, e faz o recebimento provisório de caráter administrativo (modelo do Decreto 11.246, arts. 23 e 25).",
     "fontes": [
       "decreto-11246"
     ],
@@ -326,8 +327,9 @@
   {
     "id": "problema",
     "pt": "Problema",
-    "definicao": "Causa de incidentes que se repetem ou de alto impacto; é investigada para achar a causa-raiz.",
+    "definicao": "Causa, conhecida ou não, de um ou mais incidentes; é tratada para que não se repitam.",
     "fontes": [
+      "tjba-politica-requisicoes",
       "tjba-politica-incidentes"
     ],
     "licoes": [
@@ -338,9 +340,9 @@
   {
     "id": "requisicao",
     "pt": "Requisição",
-    "definicao": "Pedido que não é falha, como aumentar a velocidade de um link.",
+    "definicao": "Pedido formal que não vem de falha (acesso, alteração, fornecimento), como mudar o endereço de entrega ou aumentar a velocidade de um link.",
     "fontes": [
-      "tjba-politica-incidentes"
+      "tjba-politica-requisicoes"
     ],
     "licoes": [
       "09-06"
@@ -413,7 +415,7 @@
   {
     "id": "ior",
     "pt": "Índice de refração (de grupo)",
-    "definicao": "Valor que o OTDR usa para converter tempo em distância. Fibra comum: cerca de 1,4676 (1310 nm) e 1,4682 (1550 nm).",
+    "definicao": "Valor que o OTDR usa para converter tempo em distância. A ficha da Corning SMF-28 Ultra traz 1,4676 (1310 nm) e 1,4682 (1550 nm); outro fabricante pode ter outro valor.",
     "fontes": [
       "corning-smf28-ultra"
     ],
@@ -426,9 +428,9 @@
   {
     "id": "orl",
     "pt": "Perda de retorno óptica",
-    "definicao": "Quanto da luz volta para a origem por reflexões ao longo do enlace. Valor alto em dB (em módulo) é melhor.",
+    "definicao": "Quanto da luz volta para a origem ao longo do enlace, somando reflexões e retroespalhamento. Em módulo, valor maior em dB é melhor (menos luz voltando).",
     "fontes": [
-      "foa-loss-budget"
+      "foa-reflectancia"
     ],
     "licoes": [
       "09-05"
@@ -476,10 +478,10 @@
   },
   {
     "id": "as-built",
-    "pt": "As built",
-    "definicao": "Desenho ou cadastro do que foi realmente construído, com posição de cabos, caixas e reservas.",
+    "pt": "As built (como construído)",
+    "definicao": "Documentação final do que foi realmente construído: rota, posição de cabos, caixas e emendas, com os dados de teste.",
     "fontes": [
-      "lei-14133"
+      "foa-entrega"
     ],
     "licoes": [
       "09-05"
@@ -489,9 +491,9 @@
   {
     "id": "mapa-de-fusao",
     "pt": "Mapa de fusão",
-    "definicao": "Registro de qual fibra liga em qual, em cada caixa de emenda.",
+    "definicao": "Registro de qual fibra liga em qual, em cada caixa de emenda. A FOA pede marcar cada fibra em cada conexão e guardar, em software ou planilha, para onde vai cada fibra.",
     "fontes": [
-      "corning-an3060"
+      "foa-restauracao"
     ],
     "licoes": [
       "09-05"
@@ -501,9 +503,9 @@
   {
     "id": "sor",
     "pt": "Arquivo .SOR",
-    "definicao": "Formato de arquivo do traço de OTDR, que pode ser reaberto e reanalisado.",
+    "definicao": "Formato padrão de arquivo do traço de OTDR (Bellcore GR-196 e Telcordia SR-4731). Pode ser reaberto e reanalisado em software no computador.",
     "fontes": [
-      "yokogawa-otdr-bidirecional"
+      "yokogawa-aq7932"
     ],
     "licoes": [
       "09-05"

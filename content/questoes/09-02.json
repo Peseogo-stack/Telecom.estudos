@@ -2,7 +2,7 @@
   {
     "id": "09-02-q1",
     "licao": "09-02",
-    "enunciado": "Link de R$ 4.320 por mês, 100 minutos parados que contam (mês de 30 dias). O contrato dá desconto proporcional ao tempo parado. Quanto é a glosa?",
+    "enunciado": "Link de R$ 4.320 por mês, 100 minutos parados que contam (mês de 30 dias). O contrato desconta todo minuto parado, proporcional ao tempo, mesmo dentro do SLA. Quanto é a glosa?",
     "alternativas": [
       {
         "texto": "R$ 1,00",
@@ -126,7 +126,7 @@
   {
     "id": "09-02-q5",
     "licao": "09-02",
-    "enunciado": "Um contrato usa Vd = V × (1 − D/100), com teto de 20%. Outro usa Dc = Cm × Ti ÷ To. No mesmo mês, longe do teto, os descontos são:",
+    "enunciado": "Um contrato usa Vd = V × (1 − D/100), com D sendo a disponibilidade do mês em %, e teto de 20%. Outro usa Dc = Cm × Ti ÷ To. No mesmo mês, longe do teto, os descontos são:",
     "alternativas": [
       {
         "texto": "Sempre o dobro no primeiro.",
@@ -163,7 +163,7 @@
       {
         "texto": "Período, paradas com protocolo e horário, exclusões aplicadas, Ti, disponibilidade, regra do contrato e valor.",
         "correta": true,
-        "explicacao": "Certo. Com isso o fornecedor consegue conferir passo a passo, e você consegue provar a conta."
+        "explicacao": "Certo. Com isso o fornecedor consegue conferir passo a passo, e você consegue provar a conta. Há contrato que exige a fatura acompanhada da memória de cálculo dos descontos (TJAL, 9.2)."
       },
       {
         "texto": "Só o valor final.",
@@ -182,7 +182,7 @@
       }
     ],
     "fontes": [
-      "ifsuldeminas-ans"
+      "tjal-tr-link"
     ],
     "dificuldade": 1
   },

@@ -19,7 +19,7 @@ export function DisponibilidadeBarra({ descricao }: PropsDiagrama) {
             <rect x="52" y={y} width={largura - fatia} height="24" className="d-barra-ok" />
             <rect x={52 + largura - fatia} y={y} width={fatia} height="24" className="d-barra-parada" />
             <text x={52 + largura - 4} y={y + 40} textAnchor="end" className="d-texto">
-              {l.min.toLocaleString('pt-BR')} min parados
+              {l.min.toLocaleString('pt-BR')} min permitidos
             </text>
           </g>
         );

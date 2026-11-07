@@ -77,7 +77,7 @@ export function Layout({ children }: { children: ReactNode }) {
       </header>
       {CONTEUDO_EM_REVISAO && (
         <p className="faixa-revisao" role="note">
-          <strong>Conteúdo em revisão.</strong> Os números estão com fonte, mas ainda passam por conferência técnica.
+          <strong>Conteúdo em revisão.</strong> Cada número tem fonte e cada módulo passa por revisão técnica antes de entrar. Confirme na empresa antes de usar em campo.
         </p>
       )}
       {!armazenamentoDisponivel && (

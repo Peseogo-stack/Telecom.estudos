@@ -7,6 +7,7 @@ import {
   RAIZ,
   PASTA_CONTEUDO,
   SECOES,
+  FERRAMENTAS,
   ONDE,
   lerFontes,
   lerGlossario,
@@ -159,6 +160,9 @@ export function validar({ hoje = new Date() } = {}) {
         usadas.add(m.id);
       } else if (m.tipo === 'termo') {
         if (!glossarioPorId.has(m.id)) erro(onde, `{{termo:${m.id}}} não existe no glossário`);
+      } else if (m.tipo === 'ferramenta') {
+        if (!FERRAMENTAS.includes(m.id)) erro(onde, `{{ferramenta:${m.id}}} não é uma ferramenta do app (${FERRAMENTAS.join(', ')})`);
+        if (!m.rotulo) erro(onde, `${m.bruto} precisa de texto: {{ferramenta:${m.id}|Nome da ferramenta}}`);
       } else if (!['confirmar', 'diagrama'].includes(m.tipo)) {
         erro(onde, `marcação desconhecida ${m.bruto}`);
       }

@@ -16,6 +16,9 @@ export const SECOES = {
   'Erros comuns': 'errosComuns',
 };
 
+/** Ferramentas que uma lição pode citar com {{ferramenta:id|texto}} (rotas /ferramentas/id do app). */
+export const FERRAMENTAS = ['disponibilidade', 'orcamento', 'conversor', 'cores', 'otdr'];
+
 /** Onde achar a resposta de uma pergunta "Pergunte na empresa". */
 export const ONDE = ['sozinho', 'documentos', 'outras-areas', 'colega'];
 
@@ -145,6 +148,7 @@ function escaparHtml(s) {
  *  {{fonte:id}}        -> número da fonte, na ordem do cabeçalho "fontes"
  *  {{confirmar}}       -> selo "Confirmar na empresa"
  *  {{termo:id|texto}}  -> link para o glossário
+ *  {{ferramenta:id|texto}} -> link para a ferramenta (#/ferramentas/id)
  *  {{diagrama}}        -> ponto onde entra o diagrama SVG
  */
 export function markdownParaHtml(md, ordemFontes, glossarioPorId) {
@@ -159,6 +163,7 @@ export function markdownParaHtml(md, ordemFontes, glossarioPorId) {
       const texto = rotulo ?? termo?.sigla ?? termo?.pt ?? id;
       return `<a class="termo" href="#/glossario?t=${encodeURIComponent(id)}">${escaparHtml(texto)}</a>`;
     }
+    if (tipo === 'ferramenta') return `<a class="link-ferramenta" href="#/ferramentas/${encodeURIComponent(id)}">${escaparHtml(rotulo ?? id)}</a>`;
     if (tipo === 'diagrama') return '\n\n<div data-diagrama></div>\n\n';
     return bruto;
   });

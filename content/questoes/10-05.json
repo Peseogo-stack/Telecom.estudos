@@ -67,14 +67,14 @@
     "enunciado": "Para a nova NR-10, um provedor de internet com cabo no poste da distribuidora é um caso de quê?",
     "alternativas": [
       {
-        "texto": "Compartilhamento de infraestrutura: cessão paga da capacidade que sobra no poste para serviços de telecomunicações.",
+        "texto": "Compartilhamento de infraestrutura: cessão paga da capacidade que sobra no poste para serviços de telecomunicações de outro grupo econômico.",
         "correta": true,
-        "explicacao": "Certo. É a definição do glossário (Anexo I) da nova NR-10."
+        "explicacao": "Certo. É a definição do glossário (Anexo I) da nova NR-10. A rede de telecom da própria distribuidora, ou de empresa do mesmo grupo, não entra nessa definição."
       },
       {
         "texto": "Equipamento segregado.",
         "correta": false,
-        "explicacao": "Segregado é o que ficou inacessível por invólucro ou barreira."
+        "explicacao": "No texto atual (glossário, item 9), segregado é o que ficou inacessível por invólucro ou barreira. Não descreve o cabo do provedor."
       },
       {
         "texto": "Operação elementar.",
@@ -95,7 +95,7 @@
   {
     "id": "10-05-q4",
     "licao": "10-05",
-    "enunciado": "Vai ser feita, perto da rede, uma tarefa de telecom que não está no procedimento escrito da empresa. Pela nova NR-10, o que é preciso?",
+    "enunciado": "Vai ser feita, perto da rede, uma tarefa de telecom não rotineira (fora da rotina). Pela nova NR-10, o que é preciso?",
     "alternativas": [
       {
         "texto": "Só a conversa da equipe antes de subir.",
@@ -105,7 +105,7 @@
       {
         "texto": "Permissão de trabalho, com análise de riscos antes, aprovada por trabalhador autorizado.",
         "correta": true,
-        "explicacao": "Certo. Item 10.7.2. A permissão vale pela duração da atividade, restrita ao turno (10.7.2.2)."
+        "explicacao": "Certo. Item 10.7.2. A permissão vale pela duração da atividade, no máximo o turno, e pode ser revalidada (10.7.2.2)."
       },
       {
         "texto": "Usar o procedimento de outra tarefa parecida.",
@@ -141,7 +141,7 @@
       {
         "texto": "Não: a tabela de zonas do Anexo II é a mesma do texto atual.",
         "correta": true,
-        "explicacao": "Certo. Baixa tensão continua com Rr 0,20 m e Rc 0,70 m. O que muda são treinamentos, procedimentos e regras de compartilhamento."
+        "explicacao": "Certo. Baixa tensão continua com Rr 0,20 m e Rc 0,70 m. O que muda são treinamentos, procedimentos e regras de compartilhamento. E surge outra distância, a segura contra o arco elétrico, definida por estudo de energia incidente (Anexo I)."
       },
       {
         "texto": "Não: a nova NR-10 acabou com a zona controlada.",
@@ -173,7 +173,7 @@
       {
         "texto": "Só depois de acidente.",
         "correta": false,
-        "explicacao": "Depois de acidente grave há treinamento eventual (10.9.11), além do periódico."
+        "explicacao": "Depois de acidente grave ou fatal há treinamento eventual (10.9.11), além do periódico."
       },
       {
         "texto": "Toda a distância, inclusive a prática.",
@@ -204,7 +204,7 @@
       {
         "texto": "Básico (40 h) e Complementar do SEP (40 h), com reciclagem a cada dois anos.",
         "correta": true,
-        "explicacao": "Certo. É o que exigem o Anexo III e o item 10.8.8.2 do texto vigente."
+        "explicacao": "Certo. No texto vigente: Básico (10.8.8 e Anexo III), Complementar do SEP (10.7.2 e Anexo III) e reciclagem bienal (10.8.8.2)."
       },
       {
         "texto": "Apenas a NR-35.",
@@ -220,12 +220,12 @@
   {
     "id": "10-05-q8",
     "licao": "10-05",
-    "enunciado": "Ao chegar no poste, você vê um cabo de provedor rompido encostado na rede. Pela nova NR-10, o que fazer?",
+    "enunciado": "Ao chegar no poste, você vê um cabo de provedor rompido encostado na rede. O que fazer, hoje e na nova NR-10?",
     "alternativas": [
       {
         "texto": "Não iniciar o serviço e comunicar o superior.",
         "correta": true,
-        "explicacao": "Certo. Na avaliação prévia, anormalidade que afete a segurança: a operação não é iniciada e o superior é comunicado (10.7.4.2)."
+        "explicacao": "Certo. Hoje: suspender diante de risco não previsto (10.6.5) e comunicar de imediato (10.13.4, c). Na nova NR-10: anormalidade na avaliação prévia, a operação não é iniciada e o superior é comunicado (10.7.4.2)."
       },
       {
         "texto": "Afastar o cabo com a mão e seguir.",
@@ -244,6 +244,7 @@
       }
     ],
     "fontes": [
+      "nr10-vigente",
       "nr10-portaria-737"
     ],
     "dificuldade": 1

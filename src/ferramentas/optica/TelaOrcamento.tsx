@@ -16,7 +16,8 @@ import {
   type ResultadoOrcamento,
 } from './potencia';
 
-const n = (x: number, casas = 2) => (Number.isFinite(x) ? x.toLocaleString('pt-BR', { maximumFractionDigits: casas }) : '—');
+// Vírgula decimal e sinal de menos tipográfico (−), como nas lições.
+const n = (x: number, casas = 2) => (Number.isFinite(x) ? x.toLocaleString('pt-BR', { maximumFractionDigits: casas }).replace('-', '−') : '—');
 const LAMBDAS = [1270, 1310, 1490, 1550, 1577, 1625];
 
 function novoId() {
@@ -74,15 +75,7 @@ function Escada({ e, r }: { e: EntradaOrcamento; r: ResultadoOrcamento }) {
   const passo = (largura - 40) / passos.length;
   return (
     <figure className="diagrama">
-      <svg viewBox={`0 0 ${largura} 250`} role="img" aria-label={`Potência ao longo do enlace: sai com ${n(e.txMin)} dBm e chega com ${n(r.recebidaMin)} dBm; a sensibilidade do receptor é ${n(e.sensibilidade)} dBm.`}>
-        <line x1="30" x2={largura - 4} y1={y(e.sensibilidade)} y2={y(e.sensibilidade)} className="d-cabo-bt" strokeDasharray="6 4" />
-        <text x={largura - 6} y={y(e.sensibilidade) - 6} textAnchor="end" className="d-texto d-alerta">
-          sensibilidade {n(e.sensibilidade)} dBm
-        </text>
-        <line x1="30" x2={largura - 4} y1={y(piso)} y2={y(piso)} className="d-cota" />
-        <text x={largura - 6} y={y(piso) - 4} textAnchor="end" className="d-texto d-suave">
-          {e.penalidade > 0 ? `+ penalidade e margem (${n(e.penalidade + e.margem)} dB)` : `+ margem ${n(e.margem)} dB`}
-        </text>
+      <svg viewBox={`0 0 ${largura} 290`} role="img" aria-label={`Potência ao longo do enlace: sai com ${n(e.txMin)} dBm e chega com ${n(r.recebidaMin)} dBm; a sensibilidade do receptor é ${n(e.sensibilidade)} dBm.`}>
         {passos.map((p, i) => {
           const x = 34 + i * passo;
           return (
@@ -94,7 +87,18 @@ function Escada({ e, r }: { e: EntradaOrcamento; r: ResultadoOrcamento }) {
             </g>
           );
         })}
-        <text x="2" y="245" className="d-texto d-suave" style={{ fontSize: 10 }}>
+        {/* As linhas vêm depois das barras para ficarem visíveis; os rótulos ficam na legenda, embaixo. */}
+        <line x1="30" x2={largura - 4} y1={y(e.sensibilidade)} y2={y(e.sensibilidade)} className="d-cabo-bt" strokeDasharray="6 4" />
+        <line x1="30" x2={largura - 4} y1={y(piso)} y2={y(piso)} className="d-cota" />
+        <line x1="4" x2="28" y1="236" y2="236" className="d-cabo-bt" strokeDasharray="6 4" />
+        <text x="34" y="240" className="d-texto d-alerta">
+          sensibilidade: {n(e.sensibilidade)} dBm
+        </text>
+        <line x1="4" x2="28" y1="256" y2="256" className="d-cota" />
+        <text x="34" y="260" className="d-texto">
+          {e.penalidade > 0 ? `+ penalidade e margem (${n(e.penalidade + e.margem)} dB): ${n(piso)} dBm` : `+ margem (${n(e.margem)} dB): ${n(piso)} dBm`}
+        </text>
+        <text x="4" y="284" className="d-texto d-suave" style={{ fontSize: 10 }}>
           dBm em cada ponto (Tx mínima)
         </text>
       </svg>
@@ -360,7 +364,7 @@ export function TelaOrcamento() {
                   </tr>
                   <tr>
                     <th scope="row">Chega no receptor (Tx máxima, perda mínima de {n(r.perdaMinima, 1)} dB)</th>
-                    <td>
+                    <td className={r.passaSobrecarga ? undefined : 'nao-ok'}>
                       {n(r.recebidaMax)} dBm {e.sobrecarga !== null && <span className="suave">(sobrecarga {n(e.sobrecarga)} dBm)</span>}
                     </td>
                   </tr>

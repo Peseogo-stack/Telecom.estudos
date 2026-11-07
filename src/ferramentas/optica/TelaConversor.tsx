@@ -99,9 +99,8 @@ export function TelaConversor() {
               <tr>
                 <th scope="col">Razão</th>
                 <th scope="col">Ideal (dB)</th>
-                <th scope="col">Máximo usado no orçamento (dB)</th>
-                <th scope="col">Faixa entre 3 fichas (dB)</th>
-                <th scope="col">Fonte</th>
+                <th scope="col">Máximo usado (dB)</th>
+                <th scope="col">Faixa (3 fichas)</th>
               </tr>
             </thead>
             <tbody>
@@ -111,15 +110,16 @@ export function TelaConversor() {
                   <td>{n(s.ideal)}</td>
                   <td>
                     <strong>{n(s.maximo, 1)}</strong>
+                    <br />
+                    <span className="dica">
+                      <Fonte id={s.fonte} />
+                    </span>
                   </td>
                   <td>
                     {(() => {
                       const f = faixaEntreFichas(s.n);
-                      return f ? (f.menor === f.maior ? n(f.menor, 1) : `${n(f.menor, 1)} a ${n(f.maior, 1)}`) : '—';
+                      return f ? (f.menor === f.maior ? n(f.menor, 1) : `${n(f.menor, 1)}–${n(f.maior, 1)}`) : '—';
                     })()}
-                  </td>
-                  <td>
-                    <Fonte id={s.fonte} />
                   </td>
                 </tr>
               ))}

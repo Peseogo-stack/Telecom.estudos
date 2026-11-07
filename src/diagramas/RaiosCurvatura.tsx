@@ -7,7 +7,7 @@ export function RaiosCurvatura({ descricao }: PropsDiagrama) {
   const cx = 130;
   const cy = 130;
   const raios = [
-    { r: 30, rotulo: 'G.652.D: teste com raio de 30 mm' },
+    { r: 30, rotulo: 'G.652.D: teste a 30 mm' },
     { r: 10, rotulo: 'G.657.A1: 10 mm' },
     { r: 7.5, rotulo: 'G.657.A2: 7,5 mm' },
     { r: 5, rotulo: 'G.657.B3: 5 mm' },

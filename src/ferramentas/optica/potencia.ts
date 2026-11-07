@@ -147,6 +147,8 @@ export interface ResultadoOrcamento {
 }
 
 const arred = (x: number, casas = 2) => Math.round(x * 10 ** casas) / 10 ** casas;
+/** Número com vírgula decimal (pt-BR), para os rótulos da memória de cálculo. */
+const br = (x: number, casas = 2) => arred(x, casas).toLocaleString('pt-BR', { maximumFractionDigits: casas });
 
 export function validarOrcamento(e: EntradaOrcamento): string[] {
   const erros: string[] = [];
@@ -175,9 +177,9 @@ export function validarOrcamento(e: EntradaOrcamento): string[] {
 
 export function calcularOrcamento(e: EntradaOrcamento): ResultadoOrcamento {
   const itens: ItemPerda[] = [
-    { rotulo: `Fibra: ${arred(e.km, 3)} km × ${arred(e.atenuacaoDbKm, 3)} dB/km (${e.lambdaNm} nm)`, perda: e.km * e.atenuacaoDbKm },
-    { rotulo: `Conectores: ${e.conectores} × ${arred(e.perdaConector)} dB`, perda: e.conectores * e.perdaConector },
-    { rotulo: `Fusões: ${e.fusoes} × ${arred(e.perdaFusao)} dB`, perda: e.fusoes * e.perdaFusao },
+    { rotulo: `Fibra: ${br(e.km, 3)} km × ${br(e.atenuacaoDbKm, 3)} dB/km (${e.lambdaNm} nm)`, perda: e.km * e.atenuacaoDbKm },
+    { rotulo: `Conectores: ${e.conectores} × ${br(e.perdaConector)} dB`, perda: e.conectores * e.perdaConector },
+    { rotulo: `Fusões: ${e.fusoes} × ${br(e.perdaFusao)} dB`, perda: e.fusoes * e.perdaFusao },
     ...e.splitters.map((s) => ({
       rotulo: s.tipo === 'balanceado' ? `Splitter 1:${s.n}` : `Splitter ${s.razao}, perna ${s.perna === 'menor' ? 'menor (derivação)' : 'maior (passagem)'}`,
       perda: s.perda,

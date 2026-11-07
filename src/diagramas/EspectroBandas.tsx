@@ -14,7 +14,7 @@ export function EspectroBandas({ descricao }: PropsDiagrama) {
     [1270, 'XGS ↑', 0],
     [1310, 'GPON ↑', 1],
     [1490, 'GPON ↓', 0],
-    [1550, '1550', 1],
+    [1550, 'longa dist.', 1],
     [1577, 'XGS ↓', 0],
     [1625, 'teste', 1],
     [1650, 'manutenção', 0],
@@ -31,7 +31,9 @@ export function EspectroBandas({ descricao }: PropsDiagrama) {
       ))}
       {marcas.map(([nm, rot, alto]) => (
         <g key={nm}>
-          <line x1={x(nm)} y1={alto ? 60 : 70} x2={x(nm)} y2="135" className="d-cabo-telecom" />
+          {/* A linha para na borda de cima da faixa, para não cobrir a letra da banda. */}
+          <line x1={x(nm)} y1={alto ? 60 : 70} x2={x(nm)} y2="90" className="d-cabo-telecom" />
+          <circle cx={x(nm)} cy="90" r="3" className="d-marco" />
           <text x={x(nm)} y={alto ? 52 : 26} textAnchor="middle" className="d-texto">
             {rot}
           </text>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { CampoNumero } from '../../componentes/CampoNumero';
 import { Migalhas, useTitulo } from '../../componentes/Comuns';
 import { fontesPorId } from '../../conteudo/carregar';
-import { SPLITTERS_BALANCEADOS, SPLITTERS_DESBALANCEADOS, dbmParaMw, mwParaDbm } from './potencia';
+import { SPLITTERS_BALANCEADOS, SPLITTERS_DESBALANCEADOS, dbmParaMw, faixaEntreFichas, mwParaDbm } from './potencia';
 
 const n = (x: number, casas = 2) => (Number.isFinite(x) ? x.toLocaleString('pt-BR', { maximumFractionDigits: casas, minimumFractionDigits: 0 }) : '—');
 
@@ -72,7 +72,7 @@ export function TelaConversor() {
                 [-3, 'metade'],
                 [-10, '1/10'],
                 [-20, '1/100'],
-                [-27, 'sensibilidade típica de ONU GPON B+'],
+                [-27, 'sensibilidade especificada (pior caso) de ONU GPON B+'],
                 [-30, '1/1.000'],
               ].map(([d, r]) => (
                 <tr key={d}>
@@ -85,7 +85,8 @@ export function TelaConversor() {
           </table>
         </div>
         <p className="dica">
-          Fórmula: dBm = 10 · log₁₀(P ÷ 1 mW). Fonte: <Fonte id="foa-db" />. Sensibilidade de ONU B+: <Fonte id="fs-gpon-onu-bplus" />.
+          Fórmula: dBm = 10 · log₁₀(P ÷ 1 mW). Fonte: <Fonte id="foa-db" />. Sensibilidade de ONU B+: <Fonte id="itu-g9842-2019" /> (G.984.2, Tabela A.1) e{' '}
+          <Fonte id="fs-gpon-onu-bplus" />.
         </p>
       </section>
 
@@ -98,7 +99,8 @@ export function TelaConversor() {
               <tr>
                 <th scope="col">Razão</th>
                 <th scope="col">Ideal (dB)</th>
-                <th scope="col">Máximo de ficha (dB)</th>
+                <th scope="col">Máximo usado no orçamento (dB)</th>
+                <th scope="col">Faixa entre 3 fichas (dB)</th>
                 <th scope="col">Fonte</th>
               </tr>
             </thead>
@@ -111,6 +113,12 @@ export function TelaConversor() {
                     <strong>{n(s.maximo, 1)}</strong>
                   </td>
                   <td>
+                    {(() => {
+                      const f = faixaEntreFichas(s.n);
+                      return f ? (f.menor === f.maior ? n(f.menor, 1) : `${n(f.menor, 1)} a ${n(f.maior, 1)}`) : '—';
+                    })()}
+                  </td>
+                  <td>
                     <Fonte id={s.fonte} />
                   </td>
                 </tr>
@@ -119,7 +127,8 @@ export function TelaConversor() {
           </table>
         </div>
         <p className="dica">
-          Splitter com conector: some a perda de cada conector (a <Fonte id="fs-plc" /> orienta 0,2 dB por conector do splitter).
+          Fichas comparadas: <Fonte id="intelbras-splitter-plc" />, <Fonte id="senko-plc" /> e <Fonte id="fs-plc" />, todas sem conector. Splitter com
+          conector: some a perda de cada conector (a FS orienta 0,2 dB por conector; a Intelbras traz até 0,3 dB, classe III).
         </p>
       </section>
 
@@ -153,7 +162,8 @@ export function TelaConversor() {
           </table>
         </div>
         <p className="dica">
-          Máximos da ficha <Fonte id="intelbras-xfsd" /> (XFSD). Outros fabricantes podem ter valores diferentes. <span className="selo-confirmar">Confirmar na empresa</span>
+          Máximos da ficha <Fonte id="intelbras-xfsd" /> (XFSD), que vale de 1310 a 1550 nm. Outros fabricantes podem ter valores diferentes.{' '}
+          <span className="selo-confirmar">Confirmar na empresa</span>
         </p>
       </section>
     </>

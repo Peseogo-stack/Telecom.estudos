@@ -29,6 +29,8 @@ export const ENTRADA_PADRAO: EntradaOrcamento = {
   txMax: gpon.txMax,
   sensibilidade: gpon.sensibilidade,
   sobrecarga: gpon.sobrecarga,
+  penalidade: gpon.penalidade,
+  perdaMinimaClasse: gpon.perdaMinimaClasse,
   lambdaNm: gpon.lambdaNm,
   km: 5,
   atenuacaoDbKm: atenuacaoMaximaG652D(gpon.lambdaNm),
@@ -63,6 +65,7 @@ function Escada({ e, r }: { e: EntradaOrcamento; r: ResultadoOrcamento }) {
     atual -= item.perda;
     passos.push({ rotulo: item.rotulo, valor: atual });
   }
+  const piso = e.sensibilidade + e.penalidade + e.margem;
   const topo = Math.max(e.txMin, 0) + 2;
   const fundo = Math.min(e.sensibilidade, atual) - 4;
   const altura = 200;
@@ -76,15 +79,15 @@ function Escada({ e, r }: { e: EntradaOrcamento; r: ResultadoOrcamento }) {
         <text x={largura - 6} y={y(e.sensibilidade) - 6} textAnchor="end" className="d-texto d-alerta">
           sensibilidade {n(e.sensibilidade)} dBm
         </text>
-        <line x1="30" x2={largura - 4} y1={y(e.sensibilidade + e.margem)} y2={y(e.sensibilidade + e.margem)} className="d-cota" />
-        <text x={largura - 6} y={y(e.sensibilidade + e.margem) - 4} textAnchor="end" className="d-texto d-suave">
-          + margem {n(e.margem)} dB
+        <line x1="30" x2={largura - 4} y1={y(piso)} y2={y(piso)} className="d-cota" />
+        <text x={largura - 6} y={y(piso) - 4} textAnchor="end" className="d-texto d-suave">
+          {e.penalidade > 0 ? `+ penalidade e margem (${n(e.penalidade + e.margem)} dB)` : `+ margem ${n(e.margem)} dB`}
         </text>
         {passos.map((p, i) => {
           const x = 34 + i * passo;
           return (
             <g key={i}>
-              <rect x={x} y={y(p.valor)} width={Math.max(6, passo - 6)} height={Math.max(1, y(fundo) - y(p.valor))} className={p.valor >= e.sensibilidade + e.margem ? 'd-barra-ok' : 'd-barra-parada'} />
+              <rect x={x} y={y(p.valor)} width={Math.max(6, passo - 6)} height={Math.max(1, y(fundo) - y(p.valor))} className={p.valor >= piso - 1e-9 ? 'd-barra-ok' : 'd-barra-parada'} />
               <text x={x + (passo - 6) / 2} y={y(p.valor) - 4} textAnchor="middle" className="d-texto" style={{ fontSize: 10 }}>
                 {n(p.valor, 1)}
               </text>
@@ -95,7 +98,7 @@ function Escada({ e, r }: { e: EntradaOrcamento; r: ResultadoOrcamento }) {
           dBm em cada ponto (Tx mínima)
         </text>
       </svg>
-      <figcaption>A cada perda a potência desce um degrau. No fim, precisa ficar acima da sensibilidade mais a margem.</figcaption>
+      <figcaption>A cada perda a potência desce um degrau. No fim, precisa ficar acima da sensibilidade mais a penalidade e a margem.</figcaption>
     </figure>
   );
 }
@@ -122,7 +125,16 @@ export function TelaOrcamento() {
     setPreset(id);
     const p = PRESETS.find((x) => x.id === id);
     if (!p) return;
-    mudar({ txMin: p.txMin, txMax: p.txMax, sensibilidade: p.sensibilidade, sobrecarga: p.sobrecarga, lambdaNm: p.lambdaNm, atenuacaoDbKm: atenuacaoMaximaG652D(p.lambdaNm) });
+    mudar({
+      txMin: p.txMin,
+      txMax: p.txMax,
+      sensibilidade: p.sensibilidade,
+      sobrecarga: p.sobrecarga,
+      penalidade: p.penalidade,
+      perdaMinimaClasse: p.perdaMinimaClasse,
+      lambdaNm: p.lambdaNm,
+      atenuacaoDbKm: atenuacaoMaximaG652D(p.lambdaNm),
+    });
   }
 
   function adicionarSplitter() {
@@ -190,6 +202,25 @@ export function TelaOrcamento() {
             dica="Deixe vazio se não souber."
           />
         </div>
+        <div className="linha-campos">
+          <CampoNumero
+            rotulo="Penalidade óptica"
+            sufixo="dB"
+            valor={e.penalidade}
+            onMudar={(v) => mudar({ penalidade: v })}
+            dica="Sai do orçamento antes das perdas. GPON B+: 0,5 dB."
+          />
+          <CampoNumero
+            rotulo="Perda mínima da classe"
+            sufixo="dB"
+            valor={e.perdaMinimaClasse ?? NaN}
+            onMudar={(v) => mudar({ perdaMinimaClasse: Number.isFinite(v) ? v : null })}
+            dica="GPON B+: 13 dB. Deixe vazio se não houver."
+          />
+        </div>
+        <p className="dica">
+          Penalidade e perda mínima da classe B+: <Fonte id="itu-g9842-2019" /> (G.984.2, Tabelas A.1 e A.2).
+        </p>
       </section>
 
       <section className="cartao" aria-labelledby="t-fibra">
@@ -224,8 +255,8 @@ export function TelaOrcamento() {
           <CampoNumero rotulo="Perda por fusão" sufixo="dB" valor={e.perdaFusao} onMudar={(v) => mudar({ perdaFusao: v })} />
         </div>
         <p className="dica">
-          Padrão conservador: limites da TIA, 0,75 dB por par de conectores e 0,3 dB por fusão (<Fonte id="fluke-tia5683d" />). Contratos costumam ser mais
-          rígidos.
+          Padrão conservador: limites da TIA, 0,75 dB por par de conectores (<Fonte id="fluke-tia5683d" />) e 0,3 dB por fusão (<Fonte id="foa-loss-budget" />
+          ). Para planejar, a FOA usa 0,15 dB por fusão monomodo. O contrato pode ser mais rígido.
         </p>
       </section>
 
@@ -316,7 +347,7 @@ export function TelaOrcamento() {
                     <td>{n(r.perdaTotal)} dB</td>
                   </tr>
                   <tr>
-                    <th scope="row">Orçamento (Tx mín. − sensibilidade)</th>
+                    <th scope="row">Orçamento (Tx mín. − sensibilidade − penalidade)</th>
                     <td>{n(r.orcamentoDisponivel)} dB</td>
                   </tr>
                   <tr>
@@ -328,7 +359,7 @@ export function TelaOrcamento() {
                     <td>{n(r.recebidaMin)} dBm</td>
                   </tr>
                   <tr>
-                    <th scope="row">Chega no receptor (Tx máxima)</th>
+                    <th scope="row">Chega no receptor (Tx máxima, perda mínima de {n(r.perdaMinima, 1)} dB)</th>
                     <td>
                       {n(r.recebidaMax)} dBm {e.sobrecarga !== null && <span className="suave">(sobrecarga {n(e.sobrecarga)} dBm)</span>}
                     </td>
@@ -350,9 +381,10 @@ export function TelaOrcamento() {
               {[
                 ...r.itens.map((i) => `${i.rotulo} = ${n(i.perda)} dB`),
                 `Perda total = ${n(r.perdaTotal)} dB`,
-                `Orçamento = ${n(e.txMin)} − (${n(e.sensibilidade)}) = ${n(r.orcamentoDisponivel)} dB`,
+                `Orçamento = ${n(e.txMin)} − (${n(e.sensibilidade)})${e.penalidade > 0 ? ` − ${n(e.penalidade)} (penalidade)` : ''} = ${n(r.orcamentoDisponivel)} dB`,
                 `Folga = ${n(r.orcamentoDisponivel)} − ${n(r.perdaTotal)} − ${n(e.margem)} (margem) = ${n(r.folga)} dB`,
                 `Potência no receptor (pior caso) = ${n(e.txMin)} − ${n(r.perdaTotal)} = ${n(r.recebidaMin)} dBm`,
+                `Saturação: ${n(e.txMax)} − ${n(r.perdaMinima)} (perda mínima: splitters ideais, resto zero) = ${n(r.recebidaMax)} dBm${e.sobrecarga !== null ? ` (sobrecarga ${n(e.sobrecarga)} dBm)` : ''}`,
                 r.passa ? 'Resultado: PASSA' : 'Resultado: NÃO PASSA',
               ].join('\n')}
             </pre>

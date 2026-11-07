@@ -27,6 +27,16 @@ describe('posições acima de 12', () => {
     expect(identificar('tia598', 48).marcacao).toBe('faixa verde');
     expect(identificar('tia598', 49).indefinido).toBe(true);
   });
+  it('TIA-598: as faixas são dos tubos; fibra 13+ no mesmo tubo vira "confira na ficha" (revisão do módulo 2, A2)', () => {
+    expect(identificar('tia598', 14, 'fibra')).toMatchObject({ posicao: 2, indefinido: true });
+    expect(identificar('tia598', 14, 'fibra').marcacao).toContain('fita');
+    expect(identificar('tia598', 5, 'fibra')).toMatchObject({ marcacao: '', indefinido: false });
+  });
+  it('TIA-598: tubos 26 e 39 têm faixa da mesma cor do tubo e pedem confirmação', () => {
+    expect(identificar('tia598', 26)).toMatchObject({ posicao: 2, indefinido: true });
+    expect(identificar('tia598', 39)).toMatchObject({ posicao: 3, indefinido: true });
+    expect(identificar('tia598', 27).indefinido).toBe(false);
+  });
 });
 
 describe('fibra ↔ tubo e cor', () => {

@@ -1,6 +1,7 @@
 // Código de cores de fibras e tubos.
 // - Padrão brasileiro: ficha Furukawa ET02719 v7 ("padrão de cor de tubos ABNT colorido"), igual na Prysmian e na Transcend.
 // - TIA-598 (cabos importados): ordem e marcações segundo a FOA ("Fiber Optic Cable and Connector Color Codes").
+//   As faixas acima de 12 são dos TUBOS; tubo com mais de 12 fibras separa as fibras em grupos com fita (binder).
 // - Tubo piloto e direcional: fichas Prysmian e Transcend (tubo 1 verde = piloto, tubo 2 amarelo = direcional, demais brancos/naturais).
 
 export type Padrao = 'abnt' | 'tia598';
@@ -57,8 +58,8 @@ export interface Identificacao {
   indefinido: boolean;
 }
 
-/** Identifica a posição n (1, 2, 3…) de uma fibra ou de um tubo pelo padrão de cores. */
-export function identificar(padrao: Padrao, n: number): Identificacao {
+/** Identifica a posição n (1, 2, 3…) de um tubo ou de uma fibra dentro do tubo pelo padrão de cores. */
+export function identificar(padrao: Padrao, n: number, elemento: 'tubo' | 'fibra' = 'tubo'): Identificacao {
   const posicao = ((n - 1) % 12) + 1;
   const ciclo = Math.floor((n - 1) / 12); // 0 = 1–12, 1 = 13–24, 2 = 25–36, 3 = 37–48
   const cor = CORES[padrao][posicao - 1];
@@ -67,8 +68,13 @@ export function identificar(padrao: Padrao, n: number): Identificacao {
     if (ciclo === 1) return { posicao, cor, marcacao: posicao === 9 ? 'traços brancos' : 'traços pretos', indefinido: false };
     return { posicao, cor, marcacao: 'não definida na ficha consultada', indefinido: true };
   }
+  // FOA: as faixas valem para os tubos; acima de 12 fibras no mesmo tubo, os grupos são separados por fita.
+  if (elemento === 'fibra') return { posicao, cor, marcacao: 'grupo separado por fita (binder): confira na ficha', indefinido: true };
   const faixas = ['', 'faixa preta', 'faixa laranja', 'faixa verde'];
   if (ciclo <= 3) {
+    // Tubo 26 (laranja com faixa laranja) e 39 (verde com faixa verde): a faixa some na cor do tubo; a FOA não trata o caso.
+    if ((ciclo === 2 && posicao === 2) || (ciclo === 3 && posicao === 3))
+      return { posicao, cor, marcacao: `${faixas[ciclo]}, da mesma cor do tubo: confira na ficha`, indefinido: true };
     const marcacao = ciclo === 1 && posicao === 8 ? 'faixa amarela' : faixas[ciclo];
     return { posicao, cor, marcacao, indefinido: false };
   }
@@ -97,7 +103,7 @@ export function corDoTubo(cfg: ConfigCabo, tubo: number): CorTubo {
     if (tubo === 2) return { numero: 2, nome: 'Amarela', hex: '#facc15', marcacao: '', papel: 'direcional', indefinido: false };
     return { numero: tubo, nome: 'Branca ou natural', hex: '#f8fafc', marcacao: '', papel: 'normal', indefinido: false };
   }
-  const id = identificar(cfg.padrao, tubo);
+  const id = identificar(cfg.padrao, tubo, 'tubo');
   return { numero: tubo, nome: id.cor.nome, hex: id.cor.hex, marcacao: id.marcacao, papel: null, indefinido: id.indefinido };
 }
 
@@ -117,7 +123,7 @@ export function localizar(cfg: ConfigCabo, fibra: number): Localizacao | null {
   if (!Number.isInteger(fibra) || fibra < 1 || fibra > cfg.totalFibras) return null;
   const tubo = Math.ceil(fibra / cfg.fibrasPorTubo);
   const fibraNoTubo = fibra - (tubo - 1) * cfg.fibrasPorTubo;
-  return { fibra, tubo: corDoTubo(cfg, tubo), fibraNoTubo, corFibra: identificar(cfg.padrao, fibraNoTubo) };
+  return { fibra, tubo: corDoTubo(cfg, tubo), fibraNoTubo, corFibra: identificar(cfg.padrao, fibraNoTubo, 'fibra') };
 }
 
 /** Tubo e posição da fibra dentro do tubo → número da fibra no cabo. */

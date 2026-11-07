@@ -30,15 +30,37 @@ export interface LinhaSplitter {
   confirmar?: boolean;
 }
 
-/** Splitter PLC balanceado: valor máximo de ficha (sem conector). */
+/**
+ * Máximos de perda de inserção de splitter PLC balanceado, sem conector, em três fichas
+ * (conferidas em 07/11/2026). Mostra que o valor muda de fabricante para fabricante.
+ */
+export const FICHAS_SPLITTER: Record<string, Partial<Record<number, number>>> = {
+  'intelbras-splitter-plc': { 2: 4.0, 4: 7.3, 8: 10.5, 16: 13.7, 32: 16.9 },
+  'senko-plc': { 2: 4, 4: 7.4, 8: 10.7, 16: 13.7, 32: 16.9, 64: 21 },
+  'fs-plc': { 2: 4.4, 4: 7.6, 8: 10.9, 16: 13.9, 32: 17.3, 64: 21.4 },
+};
+
+/** Menor e maior máximo entre as fichas para um splitter 1:N. */
+export function faixaEntreFichas(n: number): { menor: number; maior: number; fichas: number } | null {
+  const valores = Object.values(FICHAS_SPLITTER)
+    .map((f) => f[n])
+    .filter((v): v is number => typeof v === 'number');
+  if (!valores.length) return null;
+  return { menor: Math.min(...valores), maior: Math.max(...valores), fichas: valores.length };
+}
+
+/** Splitter PLC balanceado: valor máximo de ficha (sem conector) usado como padrão no orçamento. */
 export const SPLITTERS_BALANCEADOS: (LinhaSplitter & { n: number })[] = [
   { n: 2, rotulo: '1:2', ideal: perdaIdealBalanceado(2), maximo: 4.0, fonte: 'intelbras-splitter-plc' },
   { n: 4, rotulo: '1:4', ideal: perdaIdealBalanceado(4), maximo: 7.4, fonte: 'senko-plc' },
   { n: 8, rotulo: '1:8', ideal: perdaIdealBalanceado(8), maximo: 10.7, fonte: 'senko-plc' },
   { n: 16, rotulo: '1:16', ideal: perdaIdealBalanceado(16), maximo: 13.7, fonte: 'senko-plc' },
-  { n: 32, rotulo: '1:32', ideal: perdaIdealBalanceado(32), maximo: 17.0, fonte: 'senko-plc' },
+  { n: 32, rotulo: '1:32', ideal: perdaIdealBalanceado(32), maximo: 16.9, fonte: 'senko-plc' },
   { n: 64, rotulo: '1:64', ideal: perdaIdealBalanceado(64), maximo: 21.4, fonte: 'fs-plc' },
 ];
+
+/** A ficha Intelbras XFSD vale de 1310 a 1550 nm. */
+export const FAIXA_XFSD_NM = { de: 1310, ate: 1550 };
 
 /** Splitter FBT desbalanceado 1x2: perda máxima da perna menor e da perna maior (ficha Intelbras XFSD). */
 export const SPLITTERS_DESBALANCEADOS: { razao: string; menor: number; maior: number; idealMenor: number; idealMaior: number; fonte: string }[] = [
@@ -66,6 +88,15 @@ export type ItemSplitter =
   | { id: string; tipo: 'balanceado'; n: number; perda: number }
   | { id: string; tipo: 'desbalanceado'; razao: string; perna: 'menor' | 'maior'; perda: number };
 
+/** Perda ideal (sem excesso) de um item de splitter: o mínimo físico possível. */
+export function perdaIdealDoSplitter(s: ItemSplitter): number {
+  if (s.tipo === 'balanceado') return perdaIdealBalanceado(s.n);
+  const [a, b] = s.razao.split('/').map(Number);
+  const menor = Math.min(a, b) / 100;
+  const maior = Math.max(a, b) / 100;
+  return perdaIdealPerna(s.perna === 'menor' ? menor : maior);
+}
+
 export interface EntradaOrcamento {
   /** Potência de saída do transmissor, pior caso (mínima), em dBm. */
   txMin: number;
@@ -75,6 +106,10 @@ export interface EntradaOrcamento {
   sensibilidade: number;
   /** Sobrecarga do receptor (máxima potência que ele aceita), em dBm. null = não informado. */
   sobrecarga: number | null;
+  /** Penalidade óptica (dispersão, transmissor…), descontada do orçamento, em dB. */
+  penalidade: number;
+  /** Perda mínima exigida pela classe (GPON B+: 13 dB). null = sem exigência. */
+  perdaMinimaClasse: number | null;
   lambdaNm: number;
   km: number;
   atenuacaoDbKm: number;
@@ -95,10 +130,12 @@ export interface ItemPerda {
 export interface ResultadoOrcamento {
   itens: ItemPerda[];
   perdaTotal: number;
+  /** Menor perda possível: splitters ideais e o resto zero (pior caso para saturação). */
+  perdaMinima: number;
   orcamentoDisponivel: number;
-  /** Potência que chega no receptor no pior caso (Tx mínima). */
+  /** Potência que chega no receptor no pior caso (Tx mínima, perdas máximas). */
   recebidaMin: number;
-  /** Potência que chega no receptor no melhor caso (Tx máxima), para conferir saturação. */
+  /** Potência que chega no receptor com Tx máxima e perda mínima, para conferir saturação. */
   recebidaMax: number;
   /** O que sobra depois de tirar perdas e margem do orçamento. */
   folga: number;
@@ -120,6 +157,7 @@ export function validarOrcamento(e: EntradaOrcamento): string[] {
   if (e.sobrecarga !== null && !num(e.sobrecarga)) erros.push('Sobrecarga inválida.');
   if (e.sobrecarga !== null && num(e.sobrecarga) && num(e.sensibilidade) && e.sobrecarga <= e.sensibilidade)
     erros.push('A sobrecarga deve ser maior (menos negativa) que a sensibilidade.');
+  if (!(e.penalidade >= 0)) erros.push('Valor inválido em penalidade óptica (use zero ou mais).');
   for (const [v, nome] of [
     [e.km, 'distância'],
     [e.atenuacaoDbKm, 'atenuação da fibra'],
@@ -146,20 +184,32 @@ export function calcularOrcamento(e: EntradaOrcamento): ResultadoOrcamento {
     })),
   ];
   const perdaTotal = itens.reduce((t, i) => t + i.perda, 0);
-  const orcamentoDisponivel = e.txMin - e.sensibilidade;
+  // Saturação: o pior caso é Tx máxima com a MENOR perda possível (G.984.2, Tabela A.2: a classe B+
+  // exige perda mínima de 13 dB por causa da sobrecarga). Splitter ideal; fibra, conector e fusão em zero.
+  const perdaMinima = e.splitters.reduce((t, s) => t + perdaIdealDoSplitter(s), 0);
+  const orcamentoDisponivel = e.txMin - e.sensibilidade - e.penalidade;
   const recebidaMin = e.txMin - perdaTotal;
-  const recebidaMax = e.txMax - perdaTotal;
+  const recebidaMax = e.txMax - perdaMinima;
   const folga = orcamentoDisponivel - perdaTotal - e.margem;
   const passaSensibilidade = folga >= -1e-9;
   const passaSobrecarga = e.sobrecarga === null || recebidaMax <= e.sobrecarga + 1e-9;
   const maiorItem = itens.filter((i) => i.perda > 0).sort((a, b) => b.perda - a.perda)[0] ?? null;
   const avisos: string[] = [];
-  if (!passaSobrecarga) avisos.push('Potência alta demais no receptor (saturação): use atenuador ou um transceptor de menor alcance.');
+  if (!passaSobrecarga)
+    avisos.push('Com Tx máxima e a menor perda possível, a potência passa da sobrecarga do receptor (saturação): use atenuador ou um transceptor de menor alcance.');
+  if (e.perdaMinimaClasse !== null && perdaMinima < e.perdaMinimaClasse - 1e-9)
+    avisos.push(`A perda mínima possível (${arred(perdaMinima, 1).toLocaleString('pt-BR')} dB) fica abaixo dos ${e.perdaMinimaClasse.toLocaleString('pt-BR')} dB que a classe exige: a ONU pode saturar.`);
+  if (
+    e.splitters.some((s) => s.tipo === 'desbalanceado') &&
+    (e.lambdaNm < FAIXA_XFSD_NM.de || e.lambdaNm > FAIXA_XFSD_NM.ate)
+  )
+    avisos.push(`A ficha do splitter desbalanceado (XFSD) vale de 1310 a 1550 nm; em ${e.lambdaNm} nm, confirme a perda com o fabricante.`);
   if (passaSensibilidade && folga < 1) avisos.push('Passa, mas com menos de 1 dB de folga além da margem.');
   if (Number.isNaN(atenuacaoMaximaG652D(e.lambdaNm))) avisos.push('Comprimento de onda fora da faixa coberta pela G.652.D (1260 a 1625 nm).');
   return {
     itens,
     perdaTotal,
+    perdaMinima,
     orcamentoDisponivel,
     recebidaMin,
     recebidaMax,
@@ -181,6 +231,8 @@ export interface PresetTransceptor {
   txMax: number;
   sensibilidade: number;
   sobrecarga: number | null;
+  penalidade: number;
+  perdaMinimaClasse: number | null;
   fontes: string[];
   nota: string;
 }
@@ -194,8 +246,10 @@ export const PRESETS: PresetTransceptor[] = [
     txMax: 5,
     sensibilidade: -27,
     sobrecarga: -8,
-    fontes: ['fs-gpon-olt-sfp', 'fs-gpon-onu-bplus'],
-    nota: 'OLT de +1,5 a +5 dBm; ONU com sensibilidade de −27 dBm e sobrecarga de −8 dBm (fichas de fabricante para a classe B+).',
+    penalidade: 0.5,
+    perdaMinimaClasse: 13,
+    fontes: ['itu-g9842-2019', 'fs-gpon-olt-sfp', 'fs-gpon-onu-bplus'],
+    nota: 'OLT de +1,5 a +5 dBm; ONU com sensibilidade de −27 dBm e sobrecarga de −8 dBm; penalidade de 0,5 dB na descida. Orçamento da classe: 1,5 − (−27) − 0,5 = 28 dB, com perda mínima de 13 dB (G.984.2, Tabelas A.1 e A.2).',
   },
   {
     id: 'lx',
@@ -205,8 +259,10 @@ export const PRESETS: PresetTransceptor[] = [
     txMax: -3,
     sensibilidade: -19,
     sobrecarga: -3,
+    penalidade: 0,
+    perdaMinimaClasse: null,
     fontes: ['juniper-sfp-lx'],
-    nota: 'Tx de −9,5 a −3 dBm; recepção de −19 a −3 dBm (ficha de fabricante).',
+    nota: 'Tx de −9,5 a −3 dBm; recepção de −19 a −3 dBm (ficha de fabricante). A ficha não informa a penalidade: o campo começa em zero; confirme com o fabricante.',
   },
   {
     id: 'bx10',
@@ -216,7 +272,9 @@ export const PRESETS: PresetTransceptor[] = [
     txMax: -3,
     sensibilidade: -19.5,
     sobrecarga: -3,
+    penalidade: 3.3,
+    perdaMinimaClasse: null,
     fontes: ['extreme-sfp-bx10'],
-    nota: 'Tx de −9 a −3 dBm; sensibilidade de −19,5 dBm (ficha de fabricante). O par usa 1310 nm num sentido e 1490 nm no outro.',
+    nota: 'Tx de −9 a −3 dBm; sensibilidade de −19,5 dBm; penalidade máxima de transmissor e dispersão de 3,3 dB (ficha de fabricante). O par usa 1310 nm num sentido e 1490 nm no outro.',
   },
 ];

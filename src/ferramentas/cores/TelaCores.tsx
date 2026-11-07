@@ -203,8 +203,8 @@ export function TelaCores() {
         </div>
         <p className="dica">
           Brasil: ficha <Fonte id="furukawa-et02719" /> (igual em <Fonte id="prysmian-cfoa-as" /> e <Fonte id="transcend-as" />). TIA-598: <Fonte id="foa-cores" />.
-          Acima de 12: na Furukawa, do 13 ao 24 as cores se repetem com traços pretos (branco no preto); no TIA-598, faixa preta (amarela no preto), depois
-          laranja e verde.
+          Acima de 12: na Furukawa, do 13 ao 24 as cores se repetem com traços pretos (branco no preto). No TIA-598, os tubos 13 a 24 levam faixa preta
+          (amarela no preto), depois laranja e verde; num tubo com mais de 12 fibras, a FOA cita grupos separados por fita. Confira na ficha do cabo.
         </p>
       </section>
 

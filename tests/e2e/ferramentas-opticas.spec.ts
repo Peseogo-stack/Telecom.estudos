@@ -11,9 +11,11 @@ async function semRolagemLateral(page: import('@playwright/test').Page) {
 test('orçamento de potência: exemplo GPON B+ passa; com dois 1:8 não passa', async ({ page }) => {
   await page.goto('./#/ferramentas/orcamento');
   const res = page.locator('section[aria-labelledby="t-res"]');
-  // Exemplo: 5 km × 0,40 + 4 × 0,75 + 6 × 0,3 + 7,4 + 10,7 = 24,9 dB; orçamento 28,5; margem 3 → folga 0,6
+  // Exemplo: 5 km × 0,40 + 4 × 0,75 + 6 × 0,3 + 7,4 + 10,7 = 24,9 dB; orçamento 1,5 + 27 − 0,5 = 28; margem 3 → folga 0,1
   await expect(res.getByText('PASSA', { exact: true })).toBeVisible();
   await expect(res.getByRole('row', { name: /Perda total/ })).toContainText('24,9 dB');
+  await expect(res.getByRole('row', { name: /^Orçamento/ })).toContainText('28 dB');
+  await expect(res.getByRole('row', { name: /Folga/ })).toContainText('0,1 dB');
   // Troca o 1:4 por um 1:8
   await page.getByRole('button', { name: 'Remover splitter 1' }).click();
   await page.getByLabel('Tipo de splitter').selectOption('b8');

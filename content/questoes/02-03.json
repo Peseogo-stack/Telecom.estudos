@@ -243,7 +243,9 @@
       }
     ],
     "fontes": [
-      "fluke-om-os"
+      "fluke-om-os",
+      "prysmian-g652d",
+      "foa-fibra"
     ],
     "dificuldade": 3
   }

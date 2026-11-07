@@ -136,7 +136,7 @@
       {
         "texto": "A casca.",
         "correta": true,
-        "explicacao": "Certo. A G.652 fixa a casca em 125,0 ± 0,7 µm."
+        "explicacao": "Certo. A G.652.D (edição de 2024) fixa a casca em 125,0 µm, com tolerância de ±0,7 µm."
       },
       {
         "texto": "O revestimento colorido.",
@@ -157,7 +157,7 @@
   {
     "id": "02-01-q6",
     "licao": "02-01",
-    "enunciado": "Núcleo e casca: de que material são?",
+    "enunciado": "Na fibra de telecom, núcleo e casca são de que material?",
     "alternativas": [
       {
         "texto": "Os dois são vidro.",
@@ -167,7 +167,7 @@
       {
         "texto": "Núcleo de vidro e casca de plástico.",
         "correta": false,
-        "explicacao": "A casca também é vidro; o plástico vem depois (revestimento)."
+        "explicacao": "Existe fibra com casca de plástico, mas não na de telecom: aqui a casca também é vidro, e o plástico vem depois (revestimento)."
       },
       {
         "texto": "Núcleo de plástico e casca de vidro.",
@@ -198,7 +198,7 @@
       {
         "texto": "Não: é infravermelho, invisível. Nunca olhe a ponta de uma fibra.",
         "correta": true,
-        "explicacao": "Certo. Por ser invisível, o perigo não é percebido."
+        "explicacao": "Certo. É infravermelho: olhando, você não sabe se há luz."
       },
       {
         "texto": "Só à noite.",
@@ -212,7 +212,7 @@
       }
     ],
     "fontes": [
-      "foa-fibra"
+      "foa-seguranca"
     ],
     "dificuldade": 1
   },

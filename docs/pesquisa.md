@@ -257,7 +257,7 @@ Toda a conta de enlace é feita em **dB** (relação) e **dBm** (potência absol
 | Causas da atenuação | espalhamento de Rayleigh (∝1/λ⁴), absorção pela água, macro e microcurvatura; perda por curvatura cresce acima de 1550 nm | [3] | 06/11/2026 | Alta |
 | Espalhamento é a maior causa de perda; dobrar λ reduz o espalhamento ~16× | conceito | [8] | 06/11/2026 | Alta |
 | Macrocurvatura G.652.D | 100 voltas em raio de 30 mm: ≤ 0,1 dB em 1625 nm | [5][1] | 06/11/2026 | Alta |
-| Raio mínimo das G.657 | A1: 10 mm; A2 e B2: 7,5 mm; B3: 5 mm (G.652: 30 mm) | [1] | 06/11/2026 | Alta |
+| Raio mínimo das G.657 | A1: 10 mm; A2: 7,5 mm; B3: 5 mm (G.652: 30 mm). A B2 (7,5 mm) foi fundida na A2 na G.657 de 08/2024 | [1]; G.657 (08/2024) | 07/11/2026 | Alta |
 | Compatibilidade | A1/A2 são **conformes** (*compliant*) com G.652.D; B2/B3 são **compatíveis** (*compatible*), com pequenas diferenças de dispersão e PMD | [1] | 06/11/2026 | Alta |
 | Perda máxima G.657.A1 | 15 mm × 10 voltas: 0,25/1,0 dB; 10 mm × 1 volta: 0,75/1,5 dB (1550/1625 nm) | [13] | 06/11/2026 | Média (blog de fabricante; bate com [12]) |
 | Perda máxima G.657.A2 | 15 mm × 10: 0,03/0,1; 10 mm × 1: 0,1/0,2; 7,5 mm × 1: 0,5/1,0 dB | [13] | 06/11/2026 | Média |
@@ -274,7 +274,7 @@ Toda a conta de enlace é feita em **dB** (relação) e **dBm** (potência absol
 | dBm | dBm = 10·log₁₀(P / 1 mW); 0 dBm = 1 mW | [10] | 06/11/2026 | Alta |
 | Relações em dB | +3 dB = 2×; −3 dB = ½; +10 dB = 10×; −10 dB = 1/10; 25 µW = −16 dBm | [10] | 06/11/2026 | Alta |
 | Perda medida | dB = P_medida(dBm) − P_referência(dBm); de −20,0 para −22,3 dBm = 2,3 dB de perda | [10] | 06/11/2026 | Alta |
-| Cabo AS (Prysmian BR) | acréscimo de atenuação pelo cabeamento ≤ 0,05 dB/km (SM) | [19] | 06/11/2026 | Média |
+| Cabo AS (Prysmian BR) | variação de atenuação ≤ 0,05 dB/km (SM) no ensaio de ciclo térmico (NBR 13510); corrigido na revisão técnica de 07/11/2026 | [19] | 07/11/2026 | Média |
 
 **Tabela de conversão** (calculada com a fórmula de [10]):
 
@@ -292,13 +292,13 @@ Toda a conta de enlace é feita em **dB** (relação) e **dBm** (potência absol
 ### Divergências entre fontes
 
 1. **Atenuação "da G.652.D".** A norma fixa o máximo (0,4 / 0,3 dB/km) [5]. A FOA fala em "~0,4 / 0,25" como valor típico [8], e as fichas trazem 0,36 / 0,22 [6] ou 0,32 / 0,18 [12]. Ensinar: a norma dá o teto, a ficha do fabricante dá o produto, e a medida de campo fica em torno de 0,34 / 0,19 [3].
-2. **Fibra nua × cabo.** O máximo da fibra e o do cabo diferem; cabear acrescenta até ~0,05 dB/km [19]. A Fluke cita o limite TIA de cabo OSP em 0,5 dB/km [11], um valor conservador de projeto e não típico.
+2. **Fibra nua × cabo.** A G.652 dá a atenuação como atributo do cabo. A ficha Prysmian [19] traz só a variação no ensaio de ciclo térmico (≤ 0,05 dB/km), não o acréscimo causado pelo cabeamento. A Fluke cita o limite TIA de cabo OSP em 0,5 dB/km [11], um valor conservador de projeto e não típico.
 3. **250 × 245 × 242 µm.** "250 µm" é nominal; as fichas dão 245 ± 10 [6] ou 242 ± 7 µm [14].
 4. **NA monomodo.** Há citações de 0,12 [18] e de ~0,14 (comum em fichas Corning). Em monomodo o MFD importa mais que a NA; ensinar só a ideia.
 5. **Banda OM4/OM5.** A FOA lista 3600 MHz·km (OFL) [9] e a Fluke 4700 MHz·km (EMB, banda laser) [11]. São métricas diferentes.
 6. **Tabela de macrocurvatura da G.657.** Veio de blog de fabricante (HFCL) [13]. O valor de 10 mm para A1 é compatível com a Corning [12]. Conferir na G.657 oficial (ITU bloqueou o download automático).
 7. **1625 × 1650 nm.** A EXFO ainda vende porta de 1625 nm em serviço; AFL e VeEX recomendam 1650 nm com XGS-PON [15][16].
-8. **G.657.B2.** O folheto ITU de 2013 traz A1/A2/B2/B3 [1]. A edição atual pode ter reorganizado as subcategorias; o pedido citou só A1/A2/B3. Conferir na G.657 vigente.
+8. **G.657.B2.** O folheto ITU de 2013 traz A1/A2/B2/B3 [1]. Conferido na revisão técnica de 07/11/2026: a G.657 em vigor (08/2024) fundiu a B2 na A2 (resumo e Tabela 2, Nota 3).
 
 ### Confirmar na empresa
 
@@ -671,7 +671,7 @@ Pesquisa feita em 06/11/2026. As fontes estão numeradas em [n] na seção Fonte
 ### Resumo
 
 - Uma PON (rede óptica passiva, *Passive Optical Network*) liga uma OLT (terminal de linha óptica, *Optical Line Terminal*) a várias ONU/ONT (*Optical Network Unit/Terminal*) por uma ODN (rede de distribuição óptica, *Optical Distribution Network*) passiva. A ODN é formada por fibra, splitters, CTO (caixa de terminação óptica), drop e PTO (ponto de terminação óptica).
-- **GPON (G.984.x):** opera a 2,488 Gbit/s na descida e 1,244 Gbit/s na subida. O downstream usa 1480–1500 nm (1490 nm) e o upstream usa 1300–1320 nm (1310 nm). O alcance físico básico é de 20 km e o alcance lógico chega a 60 km [1].
+- **GPON (G.984.x):** opera a 2,488 Gbit/s na descida e 1,244 Gbit/s na subida. O downstream usa 1480–1500 nm (1490 nm) e o upstream fica em torno de 1310 nm: a G.984.2 permite de 1260 a 1360 nm, e o folheto cita 1300–1320 nm "mais outras opções". O alcance físico básico é de 20 km e o alcance lógico chega a 60 km [1].
 - **Classes ópticas de GPON:** a classe B+ admite até 28 dB de perda na ODN e a classe C+ até 32 dB [2][3]. A perda **mínima** de 13 dB para B+ e de 17 dB para C+ **não foi confirmada** no texto da norma (ver Divergências).
 - **XGS-PON (G.9807.1):** opera a 9,953 Gbit/s nos dois sentidos, com downstream em 1575–1580 nm e upstream em 1260–1280 nm. Convive com a GPON na mesma ODN por WDM [4]. As classes de perda são N1 (14–29 dB), N2 (16–31 dB), E1 (18–33 dB) e E2 (20–35 dB) [5].
 - **Splitters balanceados:** os valores máximos de ficha técnica ficam cerca de 1 a 3 dB acima do ideal teórico 10·log10(N) [6][7][8]. Os splitters desbalanceados FBT da Intelbras (5/95 a 50/50) têm ficha completa [9].
@@ -682,7 +682,7 @@ Pesquisa feita em 06/11/2026. As fontes estão numeradas em [n] na seção Fonte
 | Afirmação | Valor | Fonte | Acesso | Confiança |
 |---|---|---|---|---|
 | Taxas GPON | 2,488 Gbit/s ↓ / 1,244 Gbit/s ↑ | [1][3] | 06/11/2026 | Alta |
-| λ GPON | ↓ 1480–1500 nm; ↑ 1300–1320 nm; o vídeo RF em 1550 nm segue a banda de melhoria da G.984.5 | [1] | 06/11/2026 | Alta (o valor de 1550 nm é média) |
+| λ GPON | ↓ 1480–1500 nm; ↑ 1260–1360 nm na G.984.2 (8.2.5.2), com opções mais estreitas (1290–1330 e 1300–1320 nm, este no folheto); o vídeo RF em 1550 nm segue a banda de melhoria da G.984.5 | [1]; G.984.2 (08/2019) | 07/11/2026 | Alta (o valor de 1550 nm é média) |
 | Alcance GPON | 20 km físico básico; 60 km lógico; até 60 km físico com extensor (G.984.6) | [1] | 06/11/2026 | Alta |
 | Distância diferencial GPON | 20 km entre a ONU mais próxima e a mais distante | [13] | 06/11/2026 | Média |
 | Potência Tx da OLT GPON B+ | +1,5 a +5 dBm | [3][2] | 06/11/2026 | Alta |
@@ -789,15 +789,15 @@ Fórmulas: P(mW) = 10^(dBm/10) e dBm = 10·log10(P/1 mW). Orçamento disponível
 3. **GPON x XGS-PON e coexistência.** Objetivo: comparar taxas, λ e classes. P1: qual λ de downstream da XGS-PON? (1577 nm.) P2: por que as duas convivem na mesma fibra? (WDM com λ distintas e filtro bloqueador.) SVG: espectro de 1260 a 1580 nm com as bandas 1270, 1310, 1490, 1550 e 1577.
 4. **Splitters balanceados: teoria x ficha técnica.** Objetivo: usar 10·log10(N) e o valor máximo de ficha. P1: perda ideal de 1:16? (12,04 dB.) P2: perda de 1:4 + 1:8 em cascata pela ficha? (7,3 + 10,5 = 17,8 dB.) SVG: barras ideal x máximo de 1:2 a 1:64.
 5. **Splitters desbalanceados e rede em cascata.** Objetivo: calcular a perna "passante" e a perna "derivada". P1: num 10/90, qual perna vai à CTO local? (A de 10%, ≈ 11 dB.) P2: potência após três 90/10 em série pela perna de 90%? (3 × 1,1 = 3,3 dB.) SVG: barramento OLT → T1 (10/90) → T2 (20/80) → T3 (50/50), com derivações para CTOs 1:8.
-6. **Orçamento de potência passo a passo.** Objetivo: montar a tabela de perdas e checar a classe. P1: orçamento B+ downstream = 1,5 − (−27) = ? (28,5 dB.) P2: a margem de 3 dB entra somando ou subtraindo? (Soma na perda.) SVG: "escada" de potência descendo da OLT até a ONU.
+6. **Orçamento de potência passo a passo.** Objetivo: montar a tabela de perdas e checar a classe. P1: orçamento B+ downstream = 1,5 − (−27) − 0,5 de penalidade = ? (28 dB, a perda máxima da classe na G.984.2, Tabela A.2; corrigido na revisão técnica de 07/11/2026.) P2: a margem de 3 dB entra somando ou subtraindo? (Soma na perda.) SVG: "escada" de potência descendo da OLT até a ONU.
 7. **PON x ponto a ponto na distribuidora.** Objetivo: saber quando usar SFP LX, BX ou ZX e quando usar PON. P1: um ZX num enlace de 2 km sem atenuador: risco? (Saturação.) P2: qual tecnologia se usa para teleproteção de linha? (P2P dedicado, por latência e assimetria.) SVG: subestação A ↔ B com par de SFP e, ao lado, PON atendendo medidores.
 
 ### Exemplos de questões
 
-**Q1.** Uma OLT GPON B+ transmite +1,5 dBm (pior caso) e a ONU tem sensibilidade de −27 dBm. Qual é o orçamento de potência?
-a) 25,5 dB · b) **28,5 dB** · c) 30,0 dB · d) 1,5 dB
+**Q1.** Uma OLT GPON B+ transmite +1,5 dBm (pior caso), a ONU tem sensibilidade de −27 dBm e a penalidade óptica da descida é 0,5 dB. Qual é o orçamento de potência?
+a) 25,5 dB · b) **28 dB** · c) 30,0 dB · d) 1,5 dB
 - a) Errada: subtrai os valores com o sinal trocado.
-- b) Certa: 1,5 − (−27) = 28,5 dB.
+- b) Certa: 1,5 − (−27) − 0,5 = 28 dB, a perda máxima da classe B+ (G.984.2, Tabelas A.1 e A.2). Sem a penalidade, daria 28,5 dB (erro corrigido na revisão técnica de 07/11/2026).
 - c) Errada: usaria Tx de +3 dBm, que é o mínimo da classe C+.
 - d) Errada: ignora a sensibilidade.
 

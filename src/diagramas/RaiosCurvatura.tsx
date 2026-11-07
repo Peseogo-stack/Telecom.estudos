@@ -1,6 +1,7 @@
 import { Diagrama, type PropsDiagrama } from './Diagrama';
 
 // Escala: 1 mm = 3,6 unidades. Círculos centrados à esquerda.
+// G.657 (08/2024): a antiga B2 foi fundida na A2, por isso não aparece.
 export function RaiosCurvatura({ descricao }: PropsDiagrama) {
   const e = 3.6;
   const cx = 130;
@@ -8,7 +9,7 @@ export function RaiosCurvatura({ descricao }: PropsDiagrama) {
   const raios = [
     { r: 30, rotulo: 'G.652.D: teste com raio de 30 mm' },
     { r: 10, rotulo: 'G.657.A1: 10 mm' },
-    { r: 7.5, rotulo: 'G.657.A2 e B2: 7,5 mm' },
+    { r: 7.5, rotulo: 'G.657.A2: 7,5 mm' },
     { r: 5, rotulo: 'G.657.B3: 5 mm' },
   ];
   return (

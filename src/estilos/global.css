@@ -736,6 +736,10 @@ a.item-lista:hover {
   fill: none;
   stroke-linejoin: round;
 }
+.d-traco-curva {
+  stroke: var(--erro);
+  stroke-dasharray: 6 4;
+}
 
 /* ===== Questões ===== */
 .questao fieldset {

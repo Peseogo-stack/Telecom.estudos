@@ -7,7 +7,7 @@
       {
         "texto": "Curvatura (fibra dobrada demais).",
         "correta": true,
-        "explicacao": "Certo. A perda por curvatura cresce nos comprimentos de onda longos; uma emenda ruim perde parecido nos dois."
+        "explicacao": "Certo. A perda por curvatura cresce nos comprimentos de onda longos; uma emenda ruim costuma perder parecido nos dois."
       },
       {
         "texto": "Fusão mal feita.",
@@ -26,7 +26,8 @@
       }
     ],
     "fontes": [
-      "itu-gsup39"
+      "itu-gsup39",
+      "foa-otdr"
     ],
     "dificuldade": 2
   },
@@ -38,7 +39,7 @@
       {
         "texto": "Porque o espalhamento de Rayleigh cai muito com o comprimento de onda (1/λ⁴).",
         "correta": true,
-        "explicacao": "Certo. Medidas de campo dão em média 0,34 dB/km em 1310 e 0,19 dB/km em 1550."
+        "explicacao": "Certo. Medidas no núcleo de rede de uma operadora deram em média 0,34 dB/km em 1310 nm e 0,19 dB/km em 1550 nm (G.Sup39)."
       },
       {
         "texto": "Porque o laser de 1550 é mais forte.",
@@ -100,7 +101,7 @@
       {
         "texto": "O valor que o projeto ou o contrato mandar; na falta, o máximo da norma é o mais seguro.",
         "correta": true,
-        "explicacao": "Certo. A ficha mostra o produto; a norma, o teto."
+        "explicacao": "Certo. A ficha dá o máximo garantido daquele cabo; a norma, o teto de qualquer cabo G.652.D. Sem saber o cabo exato ou os reparos futuros, o máximo da norma é o mais seguro."
       },
       {
         "texto": "Sempre o menor, para o projeto passar.",
@@ -133,7 +134,7 @@
       {
         "texto": "Porque a curvatura aparece muito mais neles e fica fácil de achar.",
         "correta": true,
-        "explicacao": "Certo. Em 1310 nm uma curva pode passar despercebida."
+        "explicacao": "Certo. A fibra é mais sensível a curvatura e tensão nos comprimentos de onda longos; em 1310 nm uma curva pode passar despercebida."
       },
       {
         "texto": "Porque em 1310 nm a fibra não funciona.",
@@ -152,7 +153,8 @@
       }
     ],
     "fontes": [
-      "itu-gsup39"
+      "itu-gsup39",
+      "foa-otdr"
     ],
     "dificuldade": 2
   },
@@ -221,7 +223,7 @@
   {
     "id": "02-06-q8",
     "licao": "02-06",
-    "enunciado": "Qual é a atenuação média medida em redes reais com fibra G.652, em 1310 nm, segundo a ITU?",
+    "enunciado": "Segundo a ITU (G.Sup39), qual foi a atenuação média medida em fibras G.652 no núcleo de rede de uma operadora, em 1310 nm?",
     "alternativas": [
       {
         "texto": "Cerca de 0,34 dB/km",

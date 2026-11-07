@@ -17,6 +17,7 @@ export function EspectroBandas({ descricao }: PropsDiagrama) {
     [1550, '1550', 1],
     [1577, 'XGS ↓', 0],
     [1625, 'teste', 1],
+    [1650, 'manutenção', 0],
   ] as const;
   return (
     <Diagrama titulo="Bandas da fibra monomodo e quem usa cada comprimento de onda" descricao={descricao} viewBox="0 0 400 220">

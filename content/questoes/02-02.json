@@ -161,14 +161,14 @@
     "enunciado": "Onde aparece o tight buffer de 900 µm?",
     "alternativas": [
       {
-        "texto": "Em cordões e cabos internos, para facilitar o manuseio.",
+        "texto": "Em pigtails, cordões e cabos internos, para facilitar o manuseio.",
         "correta": true,
         "explicacao": "Certo. Nos cabos externos, as fibras ficam com 250 µm dentro dos tubos loose."
       },
       {
         "texto": "Só em cabo OPGW.",
         "correta": false,
-        "explicacao": "Não é exclusivo de OPGW."
+        "explicacao": "O OPGW usa fibras de 250 µm em tubo; o 900 µm é de pigtails, cordões e cabos internos."
       },
       {
         "texto": "Dentro do núcleo.",
@@ -182,19 +182,20 @@
       }
     ],
     "fontes": [
-      "prysmian-tight-buffer"
+      "prysmian-tight-buffer",
+      "foa-cores"
     ],
     "dificuldade": 2
   },
   {
     "id": "02-02-q7",
     "licao": "02-02",
-    "enunciado": "A ficha da G.652.D fala em \"diâmetro do campo modal de 8,6 a 9,2 µm\". O que guardar disso no dia a dia?",
+    "enunciado": "A G.652.D fixa o diâmetro do campo modal entre 8,6 e 9,2 µm (valor nominal, em 1310 nm). O que guardar disso no dia a dia?",
     "alternativas": [
       {
         "texto": "Que a luz ocupa uma área de cerca de 9 µm no centro da fibra.",
         "correta": true,
-        "explicacao": "Certo. O campo modal é um pouco maior que o núcleo nominal; para o dia a dia, \"9 µm\"."
+        "explicacao": "Certo. Na prática, o \"9\" da ficha é o campo modal: a área por onde a luz anda, um pouco maior que o núcleo de vidro."
       },
       {
         "texto": "Que a casca muda de tamanho.",
@@ -213,7 +214,8 @@
       }
     ],
     "fontes": [
-      "itu-g652-2024"
+      "itu-g652-2024",
+      "foa-fibra"
     ],
     "dificuldade": 3
   },

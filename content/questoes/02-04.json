@@ -43,7 +43,7 @@
       {
         "texto": "10 mm",
         "correta": true,
-        "explicacao": "Certo. A2 e B2: 7,5 mm; B3: 5 mm."
+        "explicacao": "Certo. A2: 7,5 mm; B3: 5 mm. A antiga B2 foi fundida na A2 em 2024."
       },
       {
         "texto": "5 mm",
@@ -57,7 +57,7 @@
       }
     ],
     "fontes": [
-      "itu-g657-folheto"
+      "itu-g657-2024"
     ],
     "dificuldade": 1
   },
@@ -188,17 +188,17 @@
   {
     "id": "02-04-q7",
     "licao": "02-04",
-    "enunciado": "Um cordão de 3 m mediu perda equivalente a 0,8 dB/km. Isso reprova pela G.652.D (0,40 dB/km)?",
+    "enunciado": "Um cabo interno de 300 m mediu atenuação equivalente a 0,8 dB/km em 1310 nm. Isso reprova pela G.652.D (0,40 dB/km)?",
     "alternativas": [
       {
         "texto": "Sim, passou do limite.",
         "correta": false,
-        "explicacao": "A própria norma diz que os limites não valem para cordões e cabos curtos."
+        "explicacao": "A própria G.652 diz que os limites de atenuação não valem para cordões, cabos internos e drops."
       },
       {
         "texto": "Não: os limites de atenuação da G.652.D não se aplicam a cordões, cabos internos e drops.",
         "correta": true,
-        "explicacao": "Certo. Em cabo curto, conta a perda dos conectores."
+        "explicacao": "Certo. Em cabo curto, a atenuação por quilômetro é difícil de medir com precisão: vale o valor do cabo de origem, e o que pesa são os conectores."
       },
       {
         "texto": "Sim, se for em 1550 nm.",
@@ -212,7 +212,8 @@
       }
     ],
     "fontes": [
-      "itu-g652-2024"
+      "itu-g652-2024",
+      "itu-g657-2024"
     ],
     "dificuldade": 3
   },

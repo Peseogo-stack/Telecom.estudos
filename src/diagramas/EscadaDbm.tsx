@@ -17,7 +17,7 @@ export function EscadaDbm({ descricao }: PropsDiagrama) {
           <g key={i}>
             <rect x={x} y={y(p.valor)} width="66" height={200 - y(p.valor)} className="d-barra-ok" opacity={0.85} />
             <text x={x + 33} y={y(p.valor) - 6} textAnchor="middle" className="d-texto d-forte">
-              {p.valor > 0 ? `+${p.valor}` : String(p.valor).replace('.', ',').replace('-', '−')} dBm
+              {`${p.valor > 0 ? '+' : p.valor < 0 ? '−' : ''}${Math.abs(p.valor).toLocaleString('pt-BR')}`} dBm
             </text>
             <text x={x + 33} y="218" textAnchor="middle" className="d-texto" style={{ fontSize: 10 }}>
               {p.rotulo.replace('.', ',')}
@@ -26,7 +26,7 @@ export function EscadaDbm({ descricao }: PropsDiagrama) {
         );
       })}
       <line x1="10" y1="200" x2="390" y2="200" className="d-eixo" />
-      <text x="390" y="236" textAnchor="end" className="d-texto d-suave">perda total 8,4 dB → chega −5,4 dBm</text>
+      <text x="390" y="236" textAnchor="end" className="d-texto d-suave">fibra em 1310 nm · perda total 8,4 dB → chega −5,4 dBm</text>
     </Diagrama>
   );
 }

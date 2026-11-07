@@ -1,0 +1,514 @@
+[
+  {
+    "id": "zona-de-risco",
+    "pt": "Zona de risco",
+    "definicao": "Área em volta de uma parte energizada até o raio Rr. Só trabalhador autorizado, com técnica e ferramentas próprias.",
+    "fontes": [
+      "nr10-vigente"
+    ],
+    "licoes": [
+      "10-01"
+    ],
+    "sigla": "ZR",
+    "en": "Hazard zone"
+  },
+  {
+    "id": "zona-controlada",
+    "pt": "Zona controlada",
+    "definicao": "Área entre Rr e Rc em volta de uma parte energizada. Só trabalhador autorizado. Na baixa tensão vai até 0,70 m.",
+    "fontes": [
+      "nr10-vigente"
+    ],
+    "licoes": [
+      "10-01"
+    ],
+    "sigla": "ZC",
+    "en": "Controlled zone"
+  },
+  {
+    "id": "zona-livre",
+    "pt": "Zona livre",
+    "definicao": "Área além do raio Rc, fora da zona controlada.",
+    "fontes": [
+      "nr10-vigente"
+    ],
+    "licoes": [
+      "10-01"
+    ],
+    "sigla": "ZL",
+    "en": "Free zone"
+  },
+  {
+    "id": "rr",
+    "pt": "Raio da zona de risco",
+    "definicao": "Limite entre a zona de risco e a zona controlada (NR-10, Anexo II). Baixa tensão: 0,20 m.",
+    "fontes": [
+      "nr10-vigente"
+    ],
+    "licoes": [
+      "10-01"
+    ],
+    "sigla": "Rr",
+    "en": "Hazard zone radius"
+  },
+  {
+    "id": "rc",
+    "pt": "Raio da zona controlada",
+    "definicao": "Limite entre a zona controlada e a zona livre (NR-10, Anexo II). Baixa tensão: 0,70 m; 13,8 kV: 1,38 m.",
+    "fontes": [
+      "nr10-vigente"
+    ],
+    "licoes": [
+      "10-01"
+    ],
+    "sigla": "Rc",
+    "en": "Controlled zone radius"
+  },
+  {
+    "id": "trabalho-em-proximidade",
+    "pt": "Trabalho em proximidade",
+    "definicao": "Trabalho em que a pessoa pode entrar na zona controlada, mesmo só com parte do corpo ou com ferramentas e materiais condutores.",
+    "fontes": [
+      "nr10-vigente",
+      "nr10-portaria-737"
+    ],
+    "licoes": [
+      "10-01",
+      "10-05"
+    ],
+    "en": "Work in the vicinity"
+  },
+  {
+    "id": "sep",
+    "pt": "Sistema Elétrico de Potência",
+    "definicao": "Geração, transmissão e distribuição de energia elétrica até a medição, inclusive.",
+    "fontes": [
+      "nr10-vigente"
+    ],
+    "licoes": [
+      "10-05"
+    ],
+    "sigla": "SEP",
+    "en": "Electric power system"
+  },
+  {
+    "id": "compartilhamento-de-infraestrutura",
+    "pt": "Compartilhamento de infraestrutura",
+    "definicao": "Na nova NR-10: cessão paga da capacidade que sobra em postes, torres e dutos para serviços de telecomunicações.",
+    "fontes": [
+      "nr10-portaria-737"
+    ],
+    "licoes": [
+      "10-05"
+    ],
+    "en": "Infrastructure sharing"
+  },
+  {
+    "id": "infraestrutura-de-suporte",
+    "pt": "Infraestrutura de suporte",
+    "definicao": "Meios físicos fixos que sustentam redes de telecom: postes, torres, mastros, armários, dutos e estruturas suspensas.",
+    "fontes": [
+      "nr10-portaria-737"
+    ],
+    "licoes": [
+      "10-05"
+    ],
+    "en": "Support infrastructure"
+  },
+  {
+    "id": "plh",
+    "pt": "Profissional legalmente habilitado",
+    "definicao": "Profissional com formação e registro no conselho de classe. Na nova NR-10, aprova procedimentos e responde por capacitações.",
+    "fontes": [
+      "nr10-portaria-737"
+    ],
+    "licoes": [
+      "10-05"
+    ],
+    "sigla": "PLH",
+    "en": "Legally qualified professional"
+  },
+  {
+    "id": "apr",
+    "pt": "Análise preliminar de risco",
+    "definicao": "Estudo dos riscos de uma tarefa e das medidas de controle, feito antes de começar.",
+    "fontes": [
+      "nr10-portaria-737"
+    ],
+    "licoes": [
+      "10-01",
+      "10-05"
+    ],
+    "sigla": "APR",
+    "en": "Preliminary hazard analysis"
+  },
+  {
+    "id": "permissao-de-trabalho",
+    "pt": "Permissão de trabalho",
+    "definicao": "Documento que autoriza um trabalho não rotineiro, com a análise de riscos e as condições impeditivas. Na nova NR-10, vale pelo turno.",
+    "fontes": [
+      "nr10-portaria-737"
+    ],
+    "licoes": [
+      "10-05"
+    ],
+    "sigla": "PT",
+    "en": "Work permit"
+  },
+  {
+    "id": "bt",
+    "pt": "Baixa tensão",
+    "definicao": "Na tabela da NR-10, tensão abaixo de 1 kV. É a rede que fica mais perto do cabo de telecom no poste.",
+    "fontes": [
+      "nr10-vigente"
+    ],
+    "licoes": [
+      "10-01"
+    ],
+    "sigla": "BT",
+    "en": "Low voltage"
+  },
+  {
+    "id": "mt",
+    "pt": "Média tensão",
+    "definicao": "Redes de distribuição como 13,8 kV e 34,5 kV, no alto do poste.",
+    "fontes": [
+      "nr10-vigente"
+    ],
+    "licoes": [
+      "10-01"
+    ],
+    "sigla": "MT",
+    "en": "Medium voltage"
+  },
+  {
+    "id": "sla",
+    "pt": "Acordo de nível de serviço",
+    "definicao": "Metas de serviço do contrato (disponibilidade, tempo de reparo) e o que acontece se não forem cumpridas.",
+    "fontes": [
+      "trt7-tr-internet",
+      "ifsuldeminas-ans"
+    ],
+    "licoes": [
+      "09-01",
+      "09-02"
+    ],
+    "sigla": "SLA",
+    "en": "Service Level Agreement"
+  },
+  {
+    "id": "disponibilidade",
+    "pt": "Disponibilidade",
+    "definicao": "Porcentagem do tempo em que o serviço funcionou no período: D = (To − Ti) ÷ To × 100.",
+    "fontes": [
+      "trt7-tr-internet"
+    ],
+    "licoes": [
+      "09-01"
+    ],
+    "en": "Availability"
+  },
+  {
+    "id": "indisponibilidade",
+    "pt": "Tempo de indisponibilidade",
+    "definicao": "Minutos em que o serviço ficou parado no período, já tiradas as exclusões do contrato.",
+    "fontes": [
+      "trt7-tr-internet",
+      "tjal-tr-link"
+    ],
+    "licoes": [
+      "09-01",
+      "09-02"
+    ],
+    "sigla": "Ti",
+    "en": "Downtime"
+  },
+  {
+    "id": "glosa",
+    "pt": "Glosa",
+    "definicao": "Desconto ou retenção no pagamento por serviço não prestado ou fora do padrão do contrato.",
+    "fontes": [
+      "ifsuldeminas-ans",
+      "decreto-11246"
+    ],
+    "licoes": [
+      "09-02"
+    ],
+    "en": "Service credit / deduction"
+  },
+  {
+    "id": "memoria-de-calculo",
+    "pt": "Memória de cálculo",
+    "definicao": "Registro passo a passo de como um valor foi calculado (período, paradas, exclusões, regra), para justificar a glosa.",
+    "fontes": [
+      "ifsuldeminas-ans"
+    ],
+    "licoes": [
+      "09-02"
+    ],
+    "en": "Calculation record"
+  },
+  {
+    "id": "gestor-do-contrato",
+    "pt": "Gestor do contrato",
+    "definicao": "Coordena a fiscalização, faz o recebimento definitivo e abre processo de sanção (modelo do Decreto 11.246).",
+    "fontes": [
+      "decreto-11246"
+    ],
+    "licoes": [
+      "09-03"
+    ],
+    "en": "Contract manager"
+  },
+  {
+    "id": "fiscal-tecnico",
+    "pt": "Fiscal técnico",
+    "definicao": "Registra ocorrências, notifica o fornecedor com prazo e faz o recebimento provisório (modelo do Decreto 11.246).",
+    "fontes": [
+      "decreto-11246",
+      "lei-14133"
+    ],
+    "licoes": [
+      "09-03"
+    ],
+    "en": "Technical inspector"
+  },
+  {
+    "id": "fiscal-administrativo",
+    "pt": "Fiscal administrativo",
+    "definicao": "Controla prazos, aditivos, pagamentos, garantias e glosas (modelo do Decreto 11.246).",
+    "fontes": [
+      "decreto-11246"
+    ],
+    "licoes": [
+      "09-03"
+    ],
+    "en": "Administrative inspector"
+  },
+  {
+    "id": "recebimento-provisorio",
+    "pt": "Recebimento provisório",
+    "definicao": "Aceite das exigências técnicas da obra ou serviço, por termo detalhado, por quem fiscaliza.",
+    "fontes": [
+      "lei-14133"
+    ],
+    "licoes": [
+      "09-03",
+      "09-05"
+    ],
+    "en": "Provisional acceptance"
+  },
+  {
+    "id": "recebimento-definitivo",
+    "pt": "Recebimento definitivo",
+    "definicao": "Aceite que comprova o atendimento do contrato todo, por termo detalhado, por quem a autoridade designar.",
+    "fontes": [
+      "lei-14133"
+    ],
+    "licoes": [
+      "09-03",
+      "09-05"
+    ],
+    "en": "Final acceptance"
+  },
+  {
+    "id": "incidente",
+    "pt": "Incidente",
+    "definicao": "Interrupção não planejada, redução da qualidade ou falha de um serviço.",
+    "fontes": [
+      "tjba-politica-incidentes"
+    ],
+    "licoes": [
+      "09-06"
+    ],
+    "en": "Incident"
+  },
+  {
+    "id": "problema",
+    "pt": "Problema",
+    "definicao": "Causa de incidentes que se repetem ou de alto impacto; é investigada para achar a causa-raiz.",
+    "fontes": [
+      "tjba-politica-incidentes"
+    ],
+    "licoes": [
+      "09-06"
+    ],
+    "en": "Problem"
+  },
+  {
+    "id": "requisicao",
+    "pt": "Requisição",
+    "definicao": "Pedido que não é falha, como aumentar a velocidade de um link.",
+    "fontes": [
+      "tjba-politica-incidentes"
+    ],
+    "licoes": [
+      "09-06"
+    ],
+    "en": "Service request"
+  },
+  {
+    "id": "solucao-de-contorno",
+    "pt": "Solução de contorno",
+    "definicao": "Medida temporária para restaurar o serviço rápido, enquanto a causa é investigada.",
+    "fontes": [
+      "tjba-politica-incidentes"
+    ],
+    "licoes": [
+      "09-06"
+    ],
+    "en": "Workaround"
+  },
+  {
+    "id": "escalonamento",
+    "pt": "Escalonamento",
+    "definicao": "Levar um chamado para um nível técnico (funcional) ou de gestão (hierárquico) acima.",
+    "fontes": [
+      "tjba-politica-incidentes"
+    ],
+    "licoes": [
+      "09-06"
+    ],
+    "en": "Escalation"
+  },
+  {
+    "id": "itil",
+    "pt": "ITIL",
+    "definicao": "Conjunto de boas práticas de gestão de serviços de TI, de onde vêm os termos incidente, problema e requisição.",
+    "fontes": [
+      "tjba-politica-incidentes"
+    ],
+    "licoes": [
+      "09-06"
+    ],
+    "sigla": "ITIL",
+    "en": "Information Technology Infrastructure Library"
+  },
+  {
+    "id": "rgc",
+    "pt": "Regulamento Geral de Direitos do Consumidor",
+    "definicao": "Regulamento da Anatel (Res. 765/2023) para os serviços de telecom ao consumidor; prevê ressarcimento por interrupção.",
+    "fontes": [
+      "anatel-rgc-manual"
+    ],
+    "licoes": [
+      "09-02",
+      "09-06"
+    ],
+    "sigla": "RGC"
+  },
+  {
+    "id": "otdr",
+    "pt": "Reflectômetro óptico no domínio do tempo",
+    "definicao": "Equipamento que manda pulsos de luz na fibra e mostra, num gráfico, perdas e eventos ao longo dela.",
+    "fontes": [
+      "yokogawa-otdr-bidirecional"
+    ],
+    "licoes": [
+      "09-05"
+    ],
+    "sigla": "OTDR",
+    "en": "Optical Time-Domain Reflectometer"
+  },
+  {
+    "id": "ior",
+    "pt": "Índice de refração (de grupo)",
+    "definicao": "Valor que o OTDR usa para converter tempo em distância. Fibra comum: cerca de 1,4676 (1310 nm) e 1,4682 (1550 nm).",
+    "fontes": [
+      "corning-smf28-ultra"
+    ],
+    "licoes": [
+      "09-05"
+    ],
+    "sigla": "IOR",
+    "en": "Index of refraction"
+  },
+  {
+    "id": "orl",
+    "pt": "Perda de retorno óptica",
+    "definicao": "Quanto da luz volta para a origem por reflexões ao longo do enlace. Valor alto em dB (em módulo) é melhor.",
+    "fontes": [
+      "foa-loss-budget"
+    ],
+    "licoes": [
+      "09-05"
+    ],
+    "sigla": "ORL",
+    "en": "Optical Return Loss"
+  },
+  {
+    "id": "db",
+    "pt": "Decibel",
+    "definicao": "Unidade de perda (ou ganho) de potência. Em fibra, perdas em dB se somam e menor é melhor.",
+    "fontes": [
+      "foa-loss-budget"
+    ],
+    "licoes": [
+      "09-05"
+    ],
+    "sigla": "dB",
+    "en": "Decibel"
+  },
+  {
+    "id": "orcamento-de-perda",
+    "pt": "Orçamento de perda",
+    "definicao": "Perda máxima esperada de um enlace: fibra (dB/km × km) + conectores + emendas.",
+    "fontes": [
+      "foa-loss-budget",
+      "fluke-tia5683d"
+    ],
+    "licoes": [
+      "09-05"
+    ],
+    "en": "Loss budget"
+  },
+  {
+    "id": "ganho-aparente",
+    "pt": "Ganho aparente",
+    "definicao": "Evento do OTDR que parece ganho de luz numa emenda, por diferença entre as fibras. Some na média dos dois sentidos.",
+    "fontes": [
+      "yokogawa-otdr-bidirecional"
+    ],
+    "licoes": [
+      "09-05"
+    ],
+    "en": "Gainer"
+  },
+  {
+    "id": "as-built",
+    "pt": "As built",
+    "definicao": "Desenho ou cadastro do que foi realmente construído, com posição de cabos, caixas e reservas.",
+    "fontes": [
+      "lei-14133"
+    ],
+    "licoes": [
+      "09-05"
+    ],
+    "en": "As built"
+  },
+  {
+    "id": "mapa-de-fusao",
+    "pt": "Mapa de fusão",
+    "definicao": "Registro de qual fibra liga em qual, em cada caixa de emenda.",
+    "fontes": [
+      "corning-an3060"
+    ],
+    "licoes": [
+      "09-05"
+    ],
+    "en": "Splice map"
+  },
+  {
+    "id": "sor",
+    "pt": "Arquivo .SOR",
+    "definicao": "Formato de arquivo do traço de OTDR, que pode ser reaberto e reanalisado.",
+    "fontes": [
+      "yokogawa-otdr-bidirecional"
+    ],
+    "licoes": [
+      "09-05"
+    ],
+    "sigla": ".SOR",
+    "en": "Standard OTDR Record"
+  }
+]

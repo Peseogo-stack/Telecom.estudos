@@ -1,0 +1,173 @@
+[
+  {
+    "id": "nr10-vigente",
+    "titulo": "NR-10 — Segurança em instalações e serviços em eletricidade (texto vigente, Portarias 598/2004, 508/2016 e 915/2019)",
+    "organizacao": "Ministério do Trabalho e Emprego",
+    "tipo": "legislacao",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-10-atualizada-2019-1.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Vale até a nova NR-10 entrar em vigor (junho de 2027)."
+  },
+  {
+    "id": "nr10-portaria-737",
+    "titulo": "Portaria MTE nº 737, de 29/05/2026 — aprova a nova redação da NR-10 (com a retificação do DOU de 24/06/2026)",
+    "organizacao": "Ministério do Trabalho e Emprego (DOU de 01/06/2026, Seção 1)",
+    "tipo": "legislacao",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2026-1/portaria-mte-no-737-nova-nr-10.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Entra em vigor 1 ano após a publicação (art. 5º)."
+  },
+  {
+    "id": "cemig-nd66",
+    "titulo": "ND-6.6 — Compartilhamento de postes das redes de distribuição de 15 kV, 24,2 kV e 36,2 kV (versão 12/2024)",
+    "organizacao": "Cemig (usada como EXEMPLO; quem manda é a norma da distribuidora local)",
+    "tipo": "norma",
+    "url": "https://www.cemig.com.br/wp-content/uploads/2025/10/nd-6-6-compartilhamento-postes-redes-distribuicao.pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Afastamento telecom–BT de 600 mm (Tabela 1, seção 7)."
+  },
+  {
+    "id": "energisa-ndu009-v4",
+    "titulo": "NDU-009 v4.0 (12/2017) — Critérios para compartilhamento de infraestrutura, anexa ao contrato EMS-APEC-03-2022",
+    "organizacao": "Energisa MS / UFGD (usada como EXEMPLO)",
+    "tipo": "norma",
+    "url": "https://files.ufgd.edu.br/arquivos/arquivos/78/CONTRATOS-PRAD/Contratos%20Vigentes/Contrato%2039-2022%20-%20Compartilhamento%20de%20postes%20-%20ENERGISA.pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Afastamento telecom–BT de 600 mm (itens 8.2–8.3). Versão mais nova não pôde ser lida."
+  },
+  {
+    "id": "abnt-nbr15214-2005",
+    "titulo": "ABNT NBR 15214:2005 — Rede de distribuição de energia elétrica: compartilhamento de infraestrutura com redes de telecomunicações",
+    "organizacao": "ABNT (cópia anexada a documento do SEESP)",
+    "tipo": "norma",
+    "url": "https://www.seesp.org.br/site/images/documentos/InfraRede/ANEXO_2__ABNT_NBR_15214_2005_-_Compartilhamento_de_postes.pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Tabela 1, item 8.2: 600 mm entre telecom e BT. Existe edição de 05/2024 (texto não público)."
+  },
+  {
+    "id": "neoenergia-dis-nor-056",
+    "titulo": "DIS-NOR-056 — Compartilhamento de infraestrutura (rev. 01)",
+    "organizacao": "Neoenergia (usada como EXEMPLO)",
+    "tipo": "norma",
+    "url": "https://www.neoenergia.com/documents/d/sp/dis-nor-056-rev01-pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Tabela 2: BT (até 1 kV) a 0,6 m; item 6.8.3: empregados da ocupante cumprem a NR-10."
+  },
+  {
+    "id": "lei-14133",
+    "titulo": "Lei nº 14.133/2021 — Licitações e contratos administrativos (texto atualizado)",
+    "organizacao": "Câmara dos Deputados (Legislação Informatizada)",
+    "tipo": "legislacao",
+    "url": "https://www2.camara.leg.br/legin/fed/lei/2021/lei-14133-1-abril-2021-791222-normaatualizada-pl.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Arts. 117 (fiscal) e 140 (recebimento provisório e definitivo). Vale para a Administração Pública; em empresa privada serve como vocabulário e boa prática."
+  },
+  {
+    "id": "decreto-11246",
+    "titulo": "Decreto nº 11.246/2022 — gestor e fiscais de contrato (texto atualizado)",
+    "organizacao": "Câmara dos Deputados (Legislação Informatizada)",
+    "tipo": "legislacao",
+    "url": "https://www2.camara.leg.br/legin/fed/decret/2022/decreto-11246-27-outubro-2022-793362-normaatualizada-pe.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Arts. 21 (gestor), 22 (fiscal técnico) e 23 (fiscal administrativo)."
+  },
+  {
+    "id": "trt7-tr-internet",
+    "titulo": "Termo de referência — Anexo I, serviço de acesso à internet (2022.TIC028)",
+    "organizacao": "TRT da 7ª Região",
+    "tipo": "documentacao",
+    "url": "https://www.trt7.jus.br/artefatos_tic/2022/",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Disponibilidade D = (To − Ti)/To; mínimo de 99,3%."
+  },
+  {
+    "id": "ifsuldeminas-ans",
+    "titulo": "Anexo I-A — Acordo de Nível de Serviço (link de dados)",
+    "organizacao": "IF Sul de Minas",
+    "tipo": "documentacao",
+    "url": "https://portal.mch.ifsuldeminas.edu.br/images/ANEXO_IA_-_ACORDO_DE_N%C3%8DVEL_DE_SERVI%C3%87O.pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Desconto Dc = (Cm × Ti) / To; glosa por faixas (abaixo de 90% e de 80%)."
+  },
+  {
+    "id": "tjal-tr-link",
+    "titulo": "Termo de referência — contratação de link de dados",
+    "organizacao": "Tribunal de Justiça de Alagoas",
+    "tipo": "documentacao",
+    "url": "https://diati.tjal.jus.br/wp-content/uploads/2024/TR-Link2.pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Latência ≤ 25 ms; paradas programadas (2/ano, ≤ 4 h, aviso de 15 dias); falhas em menos de 3 h contam como uma; falta de energia no cliente não conta; relógio a partir da abertura do chamado."
+  },
+  {
+    "id": "sudam-impugnacao-2026",
+    "titulo": "Manifestação sobre impugnação, Pregão Eletrônico 90006/2026",
+    "organizacao": "SUDAM",
+    "tipo": "documentacao",
+    "url": "https://www.gov.br/sudam/pt-br/acesso-a-informacoes/licitacoes-e-contratos/licitacoes-e-contratos-1/andamento/2026/Manifestacao_CGTIC_Impugnacao_CLARO_PE90006_2026.pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Desconto Vd = V × (1 − D/100), limitado a 20%."
+  },
+  {
+    "id": "anatel-rgc-manual",
+    "titulo": "Manual Operacional do RGC (Res. Anatel 765/2023), versão 4, jun/2025",
+    "organizacao": "Anatel (cópia publicada por prestadora)",
+    "tipo": "regulador",
+    "url": "https://www.claro.com.br/files/104379/x/e94cf9c977/manual-operacional-do-rgc-consolidado_versaojunho_2025.pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Ressarcimento por interrupção = (valor ÷ 43.200) × minutos; pedidos de reparo de concessionária de serviço público são demanda urgente."
+  },
+  {
+    "id": "tjba-politica-incidentes",
+    "titulo": "Política de Gerenciamento de Incidentes de TIC (baseada no ITIL 4)",
+    "organizacao": "Tribunal de Justiça da Bahia",
+    "tipo": "documentacao",
+    "url": "https://www.tjba.jus.br/portaldatecnologia/wp-content/uploads/2026/03/Politica-de-Gerenciamento-de-Incidentes-de-TIC.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Definições de incidente, solução de contorno e escalonamento funcional e hierárquico; gerenciamento de problemas busca a causa-raiz."
+  },
+  {
+    "id": "foa-loss-budget",
+    "titulo": "Loss Budget Estimates (orçamento de perda)",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/loss-est.htm",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Valores de planejamento: fusão 0,15 dB (FOA); TIA: conector 0,75 dB, emenda 0,3 dB, cabo externo 0,5 dB/km."
+  },
+  {
+    "id": "yokogawa-otdr-bidirecional",
+    "titulo": "OTDR two-way optical fiber measurement",
+    "organizacao": "Yokogawa Test & Measurement",
+    "tipo": "fabricante",
+    "url": "https://tmi.yokogawa.com/br/library/resources/application-notes/otdr-two-way-optical-fiber-measurement",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Média dos dois sentidos elimina ganho e perda aparentes nas emendas."
+  },
+  {
+    "id": "corning-an3060",
+    "titulo": "AN3060 — nota de aplicação sobre emendas",
+    "organizacao": "Corning",
+    "tipo": "fabricante",
+    "url": "https://www.corning.com/media/worldwide/coc/documents/Fiber/application-notes/AN3060.pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Perda média bidirecional de fusão ≤ 0,10 dB citada como exigência típica."
+  },
+  {
+    "id": "corning-smf28-ultra",
+    "titulo": "SMF-28 Ultra Optical Fiber — Product Information PI-1424",
+    "organizacao": "Corning",
+    "tipo": "fabricante",
+    "url": "https://csmedia.corning.com/media/worldwide/coc/documents/Fiber/product-information-sheets/PI-1424-AEN.pdf",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Índice de refração de grupo: 1,4676 (1310 nm) e 1,4682 (1550 nm)."
+  },
+  {
+    "id": "fluke-tia5683d",
+    "titulo": "New loss budget values for reference-grade connectors (ANSI/TIA-568.3-D)",
+    "organizacao": "Fluke Networks",
+    "tipo": "fabricante",
+    "url": "https://flukenetworks.com/content/new-loss-budget-values-reference-grade-connectors-ansitia-5683-d",
+    "acessadoEm": "2026-11-06",
+    "observacao": "Limites TIA: par de conectores 0,75 dB; emenda 0,3 dB."
+  }
+]

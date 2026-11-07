@@ -1,0 +1,599 @@
+{
+  "modulos": [
+    {
+      "id": "01",
+      "titulo": "Telecom numa distribuidora",
+      "descricao": "Por que a distribuidora tem rede própria; SCADA, IEC 61850 e redundância.",
+      "licoes": [
+        {
+          "id": "01-01",
+          "titulo": "Por que uma distribuidora tem rede própria",
+          "objetivo": "Listar os serviços (SCADA, automação de subestação, teleproteção, medição/AMI, religadores, corporativo) e o tempo de resposta de cada um.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "01-02",
+          "titulo": "Rede própria × link de operadora",
+          "objetivo": "Comparar controle, latência, custo, tempo de reparo e falha em comum.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "01-03",
+          "titulo": "Os protocolos que você vai ouvir: DNP3, IEC 60870-5-104 e IEC 61850",
+          "objetivo": "Camada, porta ou EtherType e função de cada um.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "01-04",
+          "titulo": "GOOSE: por que camada 2 e multicast",
+          "objetivo": "O limite de ~3 ms, VLAN e prioridade 802.1p.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "01-05",
+          "titulo": "Disponibilidade, anel e rotas diferentes",
+          "objetivo": "\"Noves\" em horas/ano; anel e rotas fisicamente distintas.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "01-06",
+          "titulo": "Meios de transporte: fibra, rádio, PLC, SDH, MPLS-TP e celular",
+          "objetivo": "Meio × uso típico × limite.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "titulo": "Fibra óptica",
+      "descricao": "Luz, tipos de fibra, comprimentos de onda, perdas, dB e dBm.",
+      "licoes": [
+        {
+          "id": "02-01",
+          "titulo": "Como a luz fica presa no vidro",
+          "objetivo": "Núcleo, casca, índice de refração, reflexão interna total.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "02-02",
+          "titulo": "Anatomia: 9/125, 250 e 900 µm",
+          "objetivo": "Ler \"9/125\"; revestimento primário × *tight buffer*.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "02-03",
+          "titulo": "Monomodo × multimodo, OM e OS",
+          "objetivo": "Diâmetros, dispersão modal e alcance.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "02-04",
+          "titulo": "G.652.D e a família G.657",
+          "objetivo": "Raios mínimos (30 / 10 / 7,5 / 5 mm); A × B.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "02-05",
+          "titulo": "Janelas e bandas",
+          "objetivo": "850, 1310, 1383, 1490, 1550, 1577, 1625/1650 nm e bandas O–U.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "02-06",
+          "titulo": "Por que a luz se perde",
+          "objetivo": "Rayleigh, absorção, curvatura; 0,4/0,3 dB/km (limite G.652.D) × ficha.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "02-07",
+          "titulo": "dB e dBm sem medo",
+          "objetivo": "mW ↔ dBm, somar perdas, potência que chega.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "titulo": "Cabos e componentes",
+      "descricao": "Gravação do cabo, cores, tubo piloto, conectores e caixas.",
+      "licoes": [
+        {
+          "id": "03-01",
+          "titulo": "Ler a gravação do cabo",
+          "objetivo": "Decodificar `CFOA-SM-AS80-S 12FO NR`.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "03-02",
+          "titulo": "Por dentro do cabo",
+          "objetivo": "FRP, tubo loose, aramida, hidroexpansíveis, capa.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "03-03",
+          "titulo": "Código de cores: Brasil × TIA-598",
+          "objetivo": "As 12 cores e a ordem TIA.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "03-04",
+          "titulo": "Tubo piloto, direcional e mais de 12",
+          "objetivo": "Contar tubos e fibras em 48 e 144 fibras.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "03-05",
+          "titulo": "Tipos de cabo e onde usar",
+          "objetivo": "ADSS, figura 8, drop, duto, OPGW.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "03-06",
+          "titulo": "Ferragens, ancoragem × suspensão e reserva técnica",
+          "objetivo": "Ferragem certa para cada ponto.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "03-07",
+          "titulo": "Conectores, polimento e DIO",
+          "objetivo": "SC/LC/FC; UPC (azul) × APC (verde); CEO, CTO, DIO, PTO.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "titulo": "FTTH/PON",
+      "descricao": "OLT, splitters, CTO, ONU e orçamento de potência.",
+      "licoes": [
+        {
+          "id": "04-01",
+          "titulo": "Anatomia de uma rede FTTH",
+          "objetivo": "OLT, ODN, splitters, CTO, drop, PTO, ONU.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "04-02",
+          "titulo": "GPON × XGS-PON e coexistência",
+          "objetivo": "Taxas, λ, classes B+, C+, N1, N2.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "04-03",
+          "titulo": "Splitters balanceados: teoria × ficha",
+          "objetivo": "10·log₁₀(N) × máximo de ficha.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "04-04",
+          "titulo": "Splitters desbalanceados e a rede em cascata",
+          "objetivo": "Pernas passante e derivada.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "04-05",
+          "titulo": "Orçamento de potência passo a passo",
+          "objetivo": "Tabela de perdas, margem, classe; sinal na ONU.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "04-06",
+          "titulo": "PON × ponto a ponto na distribuidora",
+          "objetivo": "SFP LX/BX/ZX; saturação; usos.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "titulo": "Fusão",
+      "descricao": "Preparo, máquina de fusão, perda estimada × medida.",
+      "licoes": [
+        {
+          "id": "05-01",
+          "titulo": "Fibra limpa, emenda boa",
+          "objetivo": "Preparo, decapagem, limpeza.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "05-02",
+          "titulo": "O corte perfeito",
+          "objetivo": "Clivagem e descarte.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "05-03",
+          "titulo": "Dentro da máquina",
+          "objetivo": "Alinhamento núcleo × casca, arco, *arc check*.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "05-04",
+          "titulo": "O número da tela não é a verdade",
+          "objetivo": "Perda estimada × OTDR; ficha × contrato.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "05-05",
+          "titulo": "Erros na tela",
+          "objetivo": "Bolha, emenda gorda/fina, sujeira, ângulo.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "05-06",
+          "titulo": "Fechando a caixa",
+          "objetivo": "Tubete, bandeja, raio, mapa de fusão.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "titulo": "Testes",
+      "descricao": "Power meter, OTDR, inspeção de conector e relatório.",
+      "licoes": [
+        {
+          "id": "06-01",
+          "titulo": "Power meter e perda de inserção",
+          "objetivo": "Medir perda com referência de 1 cordão (TIA-526-7 / IEC 61280-4-2).",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "06-02",
+          "titulo": "Como o OTDR \"enxerga\"",
+          "objetivo": "Retroespalhamento, Fresnel, dB/km.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "06-03",
+          "titulo": "Eventos no traço",
+          "objetivo": "Conector, fusão, curvatura, quebra, ganho aparente, fim.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "06-04",
+          "titulo": "Duas λ e dois sentidos",
+          "objetivo": "Curvatura × fusão; média bidirecional.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "06-05",
+          "titulo": "Configurar o OTDR",
+          "objetivo": "Pulso, zonas mortas, IOR, bobinas.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "06-06",
+          "titulo": "Inspecionar e limpar conectores",
+          "objetivo": "IEC 61300-3-35, zonas A–D.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "06-07",
+          "titulo": "Relatório de OTDR em detalhe",
+          "objetivo": "Traço, tabela de eventos, bidirecional, ORL (aprofunda a 09-05).",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "titulo": "Postes e compartilhamento",
+      "descricao": "Quem manda no poste, faixa de ocupação, reserva, drops e fiscalização.",
+      "licoes": [
+        {
+          "id": "07-01",
+          "titulo": "Quem manda no poste",
+          "objetivo": "Detentor × ocupante; Res. Conjunta 4/2014, REN 1.044/2022.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "07-02",
+          "titulo": "Anatomia do poste e faixa de ocupação",
+          "objetivo": "MT, BT, IP, faixa de 0,5 m; 0,60 m da BT (exemplos).",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "07-03",
+          "titulo": "Plaqueta e identificação",
+          "objetivo": "Onde vai, o que informa; clandestino.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "07-04",
+          "titulo": "Reserva, CEO, CTO e drops",
+          "objetivo": "Onde cada coisa pode ficar.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "07-05",
+          "titulo": "Alturas ao solo",
+          "objetivo": "Rua, entrada de veículos, pedestres.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "07-06",
+          "titulo": "Fiscalizar, notificar, retirar",
+          "objetivo": "Fluxo da REN 1.044.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "07-07",
+          "titulo": "Riscos em Roraima e o novo regulamento",
+          "objetivo": "Chuva, raios, queimadas; \"posteiro\" (ainda não vigente).",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "titulo": "QGIS",
+      "descricao": "SRC, edição, expressões e coleta com QField.",
+      "licoes": [
+        {
+          "id": "08-01",
+          "titulo": "O que é o QGIS e qual versão eu tenho",
+          "objetivo": "LTR × latest; 3.44 → 4.4 LTR em 03/2027.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "08-02",
+          "titulo": "Vetor, raster, feição e atributo",
+          "objetivo": "Geometrias e tabela de atributos.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "08-03",
+          "titulo": "SRC sem medo: SIRGAS, UTM 20S e o erro de 10.000 km",
+          "objetivo": "31980 × 4674; zona 21 no leste.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "08-04",
+          "titulo": "Formatos de arquivo",
+          "objetivo": "GPKG, SHP, KML, CSV, DXF.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "08-05",
+          "titulo": "Editar com segurança",
+          "objetivo": "Modo de edição, ponto, vértice, salvar.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "08-06",
+          "titulo": "Perguntas à camada",
+          "objetivo": "Expressões, filtros, contagens.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "08-07",
+          "titulo": "Campo com QField",
+          "objetivo": "Empacotar → coletar offline → sincronizar.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "titulo": "Contratos e fornecedores",
+      "descricao": "SLA, glosa, gestor × fiscal, chamados e aceite.",
+      "licoes": [
+        {
+          "id": "09-01",
+          "titulo": "Quanto é 99,7%?",
+          "objetivo": "Converter disponibilidade em minutos de parada por mês e por ano; SLA mensal × anual.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "09-02",
+          "titulo": "A glosa na prática",
+          "objetivo": "Calcular o desconto (Dc = Cm × Ti / To), as exclusões e as variantes de regra.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "09-03",
+          "titulo": "Gestor × fiscal",
+          "objetivo": "Separar os papéis (vocabulário da Lei 14.133 e do Decreto 11.246, usado como boa prática em empresa privada).",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "09-04",
+          "titulo": "Tipos de contrato de telecom",
+          "objetivo": "Link IP, L2/MPLS, fibra apagada/IRU, construção, manutenção, postes.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "09-05",
+          "titulo": "Conferir o relatório de teste ou de aceite do fornecedor",
+          "objetivo": "Checar se o relatório está completo (OTDR bidirecional, λ, IOR, power meter, mapa de fusão, as built) e se os números cabem no contrato.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "09-06",
+          "titulo": "Chamado e escalonamento",
+          "objetivo": "Abrir chamado com evidências; N1 → N2 → N3; incidente × problema × requisição.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "titulo": "Segurança",
+      "descricao": "Zonas da NR-10, nova NR-10, laser, fragmentos e álcool.",
+      "licoes": [
+        {
+          "id": "10-01",
+          "titulo": "Onde termina a zona livre",
+          "objetivo": "Anexo II da NR-10 aplicado ao poste, com o raciocínio à vista: 0,60 m (afastamento mínimo telecom–BT nas normas de exemplo) < 0,70 m (Rc da BT) → trabalho em proximidade → confirmar autorização e APR antes de qualquer trabalho em poste.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "10-02",
+          "titulo": "Altura: APR, PT e SPIQ",
+          "objetivo": "NR-35 no poste.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "10-03",
+          "titulo": "A luz que você não vê",
+          "objetivo": "Laser invisível, classes, microscópio com filtro.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "10-04",
+          "titulo": "Bancada limpa: fragmentos, álcool e gel",
+          "objetivo": "Descarte, álcool isopropílico perto do arco.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "10-05",
+          "titulo": "Nova NR-10: o que muda para telecom em poste",
+          "objetivo": "Portaria MTE 737/2026 (vigência em junho de 2027): compartilhamento de infraestrutura, trabalho em proximidade, treinamento específico de 40 h, capacitação de 24 h, prática presencial, reciclagem bienal de 16 h.",
+          "prioridade": "P1",
+          "confirmarNaEmpresa": true
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "titulo": "Redes",
+      "descricao": "SFP, DOM, VLAN, IP e MPLS — só o que telecom usa.",
+      "licoes": [
+        {
+          "id": "11-01",
+          "titulo": "Onde a fibra entra",
+          "objetivo": "Camadas OSI; fibra na camada 1.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "11-02",
+          "titulo": "Padrões ópticos e transceptores",
+          "objetivo": "SX/LX, SR/LR/ER; SFP, SFP+, QSFP.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "11-03",
+          "titulo": "Ler o DOM e diagnosticar o link",
+          "objetivo": "Tx/Rx × ficha.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "11-04",
+          "titulo": "VLAN: access, trunk e separação",
+          "objetivo": "802.1Q.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        },
+        {
+          "id": "11-05",
+          "titulo": "IPv4, máscara e sub-redes /24, /29, /30",
+          "objetivo": "Rede, broadcast, faixa útil.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "11-06",
+          "titulo": "MPLS e L2VPN no contrato",
+          "objetivo": "VPWS × VPLS.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": true
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "titulo": "Carreira",
+      "descricao": "Cargo × diploma, certificados grátis e portfólio.",
+      "licoes": [
+        {
+          "id": "12-01",
+          "titulo": "Cargo × título: o que é ser técnico no Brasil",
+          "objetivo": "Lei 13.639/2018, CFT/CRT, diploma técnico.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "12-02",
+          "titulo": "Trilha de certificados grátis",
+          "objetivo": "Fiber U → CFOT, NetAcad, Intelbras Itec, QGIS Training Manual.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        },
+        {
+          "id": "12-03",
+          "titulo": "Portfólio do técnico de campo",
+          "objetivo": "Documentar sem dados da empresa; LinkedIn.",
+          "prioridade": "P2",
+          "confirmarNaEmpresa": false
+        }
+      ]
+    }
+  ]
+}

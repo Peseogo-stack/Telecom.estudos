@@ -1,0 +1,173 @@
+{
+  "semanas": [
+    {
+      "semana": 1,
+      "licoes": [
+        "10-01",
+        "10-05",
+        "09-01",
+        "09-02",
+        "09-03",
+        "09-06",
+        "09-05"
+      ],
+      "foco": "Segurança no poste; SLA, glosa, chamados e relatório do fornecedor; calculadora de disponibilidade e glosa"
+    },
+    {
+      "semana": 2,
+      "licoes": [
+        "02-07",
+        "02-01",
+        "02-02",
+        "02-05",
+        "02-06",
+        "06-01",
+        "06-02"
+      ],
+      "foco": "Ler os números dos relatórios (dB, dBm, dB/km, λ); conversor dBm ↔ mW"
+    },
+    {
+      "semana": 3,
+      "licoes": [
+        "06-03",
+        "02-03",
+        "02-04",
+        "03-01",
+        "03-03",
+        "03-04",
+        "03-07"
+      ],
+      "foco": "Eventos de OTDR, tipos de fibra, cabo, cores e conectores; código de cores, leitor de OTDR"
+    },
+    {
+      "semana": 4,
+      "licoes": [
+        "10-03",
+        "10-04",
+        "05-01",
+        "05-03",
+        "05-04",
+        "04-01",
+        "04-03",
+        "04-05"
+      ],
+      "foco": "Segurança na bancada, fusão, PON; orçamento de potência"
+    },
+    {
+      "semana": 5,
+      "licoes": [
+        "07-01",
+        "07-02",
+        "07-04",
+        "08-03",
+        "01-01",
+        "09-04"
+      ],
+      "foco": "Poste, SRC, por que a rede existe, tipos de contrato"
+    },
+    {
+      "semana": 6,
+      "licoes": [
+        "05-02",
+        "05-05",
+        "05-06",
+        "06-04",
+        "06-05"
+      ],
+      "foco": "Fusão e OTDR completos"
+    },
+    {
+      "semana": 7,
+      "licoes": [
+        "06-06",
+        "06-07",
+        "07-03",
+        "07-05",
+        "07-06"
+      ],
+      "foco": "Inspeção de conector, relatório de OTDR, fiscalização de poste"
+    },
+    {
+      "semana": 8,
+      "licoes": [
+        "07-07",
+        "10-02",
+        "03-02",
+        "03-05",
+        "03-06"
+      ],
+      "foco": "Riscos regionais, NR-35, cabos e ferragens"
+    },
+    {
+      "semana": 9,
+      "licoes": [
+        "08-01",
+        "08-02",
+        "08-04",
+        "08-05"
+      ],
+      "foco": "QGIS: base e edição"
+    },
+    {
+      "semana": 10,
+      "licoes": [
+        "08-06",
+        "08-07",
+        "04-02",
+        "04-04",
+        "04-06"
+      ],
+      "foco": "QGIS avançado; PON avançado; montador PON"
+    },
+    {
+      "semana": 11,
+      "licoes": [
+        "01-02",
+        "01-03",
+        "01-04",
+        "01-05",
+        "01-06"
+      ],
+      "foco": "Telecom da distribuidora: protocolos e redundância"
+    },
+    {
+      "semana": 12,
+      "licoes": [
+        "11-01",
+        "11-02",
+        "11-03",
+        "11-04"
+      ],
+      "foco": "Redes: camadas, SFP, DOM, VLAN"
+    },
+    {
+      "semana": 13,
+      "licoes": [
+        "11-05",
+        "11-06",
+        "12-01",
+        "12-02",
+        "12-03"
+      ],
+      "foco": "IP, MPLS e carreira; revisão geral"
+    }
+  ],
+  "marcos": [
+    {
+      "dia": 7,
+      "texto": "Calcular SLA e glosa, abrir e escalar chamado, saber o papel de gestor e fiscal, conferir se um relatório do fornecedor está completo"
+    },
+    {
+      "dia": 30,
+      "texto": "Ler os números de um relatório de teste e acompanhar fusão e OTDR entendendo cada valor"
+    },
+    {
+      "dia": 60,
+      "texto": "Fiscalizar ocupação de poste e abrir o projeto no QGIS"
+    },
+    {
+      "dia": 90,
+      "texto": "Conversar de igual com a equipe, os fornecedores e os provedores"
+    }
+  ]
+}

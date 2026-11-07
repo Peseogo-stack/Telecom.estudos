@@ -52,7 +52,7 @@ test.describe('fluxos principais', () => {
       localStorage.setItem('fc:v1:estado', JSON.stringify({ revisao: { itens: { '09-02-q1': { etapa: 0, vence: d, erros: 1 } }, dominadas: [] } }));
     });
     await page.reload();
-    await expect(page.getByRole('heading', { name: '1 questão(ões) para revisar' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: '1 questão para revisar' })).toBeVisible();
     await page.getByRole('link', { name: /Revisar agora/ }).click();
     await expect(page.getByText(/4.320 por mês/)).toBeVisible();
     await page.getByLabel(/R\$ 10,00/).check();
@@ -87,12 +87,24 @@ test.describe('fluxos principais', () => {
     await expect(page.getByRole('link', { name: /09-02 · A glosa na prática/ })).toBeVisible();
   });
 
-  test('pergunta da lição vai para o caderno; importar arquivo inválido não muda nada', async ({ page }) => {
-    await page.goto('./#/licao/09-03');
-    await page.getByRole('button', { name: 'Levar para o caderno' }).first().click();
-    await expect(page.getByRole('button', { name: 'No caderno ✓' }).first()).toBeDisabled();
+  test('caderno já vem com as perguntas, agrupadas começando por "vejo sozinho"; remover tem desfazer', async ({ page }) => {
     await page.goto('./#/caderno');
-    await expect(page.getByText(/Quem é o gestor e quem são os fiscais/)).toBeVisible();
+    const grupos = page.locator('details.grupo-perguntas > summary strong');
+    await expect(grupos).toHaveText(['Vejo sozinho', 'Documentos', 'Outras áreas', 'Colega de telecom']);
+    await expect(page.locator('details.grupo-perguntas').first()).toHaveAttribute('open', '');
+    const primeira = page.locator('details.grupo-perguntas').first().locator('.pergunta-caderno').first();
+    const texto = (await primeira.locator('.titulo-item').textContent()) ?? '';
+    await primeira.getByRole('button', { name: /Remover a pergunta/ }).click();
+    await expect(page.getByText(texto, { exact: true })).toHaveCount(0);
+    await page.getByRole('button', { name: 'Desfazer' }).click();
+    await expect(page.locator('details.grupo-perguntas').first().locator('.titulo-item').first()).toHaveText(texto);
+    // A lição mostra que a pergunta já está no caderno.
+    await page.goto('./#/licao/09-03');
+    await expect(page.getByRole('link', { name: 'Já está no seu caderno' }).first()).toBeVisible();
+  });
+
+  test('importar arquivo inválido não muda nada', async ({ page }) => {
+    await page.goto('./#/caderno');
     await page.getByLabel('Máquina de fusão e clivador').fill('Modelo fictício');
     await page.locator('input[type=file]').first().setInputFiles({ name: 'ruim.json', mimeType: 'application/json', buffer: Buffer.from('{nada') });
     await expect(page.getByText(/não é um JSON válido. Nada foi alterado/)).toBeVisible();

@@ -39,12 +39,21 @@ export interface Modulo {
   licoes: LicaoResumo[];
 }
 
+export interface PerguntaEmpresa {
+  id: string;
+  onde: Onde;
+  texto: string;
+  dica: string;
+  licoes: string[];
+}
+
 export interface Indice {
   geradoEm: string;
   curriculo: { modulos: Modulo[] };
   plano: { semanas: SemanaPlano[]; marcos: { dia: number; texto: string }[] };
   glossario: Termo[];
   fontes: Fonte[];
+  perguntasEmpresa: PerguntaEmpresa[];
   busca: ItemBusca[];
 }
 
@@ -64,7 +73,7 @@ export interface Licao {
   explicacaoDepois: string;
   naPratica: string;
   errosComuns: string;
-  perguntas: { id: string; texto: string; onde: Onde }[];
+  perguntas: PerguntaEmpresa[];
   fontes: Fonte[];
 }
 

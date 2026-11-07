@@ -23,7 +23,9 @@ export interface PerguntaCaderno {
   id: string;
   texto: string;
   onde: Onde;
-  licao?: string;
+  /** Onde olhar, documento provável ou para quem perguntar. */
+  dica?: string;
+  licoes?: string[];
   resposta: string;
   resolvida: boolean;
   criadaEm: string; // ISO
@@ -34,6 +36,8 @@ export interface Caderno {
   campos: Record<string, string>;
   notas: Nota[];
   perguntas: PerguntaCaderno[];
+  /** Ids das perguntas do banco já colocadas no caderno (se você remover, não voltam sozinhas). */
+  semeadas: string[];
 }
 
 export type Tema = 'sistema' | 'claro' | 'escuro';
@@ -65,7 +69,7 @@ export const ESTADO_INICIAL: Estado = {
   versao: 1,
   progresso: { licoes: {}, diasEstudo: [] },
   revisao: REVISAO_VAZIA,
-  caderno: { campos: {}, notas: [], perguntas: [] },
+  caderno: { campos: {}, notas: [], perguntas: [], semeadas: [] },
   ajustes: { tema: 'sistema', sol: false, inicioPlano: null, diasSoRevisao: [], soRevisaoAte: null },
   ferramentas: {},
 };

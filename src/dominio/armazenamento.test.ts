@@ -4,7 +4,7 @@ import { ESTADO_INICIAL, type Estado } from './estado';
 
 const comCaderno = (campos: Record<string, string>): Estado => ({
   ...ESTADO_INICIAL,
-  caderno: { campos, notas: [], perguntas: [] },
+  caderno: { campos, notas: [], perguntas: [], semeadas: [] },
 });
 
 describe('armazenamento local', () => {
@@ -77,7 +77,7 @@ describe('exportar e importar', () => {
     const leitura = lerImportacao(exportar(comCaderno({ cores: 'TIA' }), 'caderno'));
     if (!leitura.ok) throw new Error('falhou');
     const linhas = resumirImportacao(ESTADO_INICIAL, leitura);
-    expect(linhas[0]).toContain('1 campo(s) alterado(s)');
+    expect(linhas[0]).toContain('1 campo alterado');
     expect(linhas.at(-1)).toContain('Nada do que você já tem é apagado');
   });
 

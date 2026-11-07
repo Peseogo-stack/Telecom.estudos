@@ -1,0 +1,490 @@
+[
+  {
+    "id": "a01",
+    "onde": "sozinho",
+    "texto": "Que cabo é este (tipo, vão AS, seco ou geleia, número de fibras, fabricante)?",
+    "dica": "Gravação na capa do cabo",
+    "licoes": [
+      "03-01"
+    ]
+  },
+  {
+    "id": "a02",
+    "onde": "sozinho",
+    "texto": "Os tubos são coloridos (padrão Furukawa) ou têm tubo piloto e direcional (padrão Prysmian)?",
+    "dica": "Abrir uma caixa de emenda acompanhado, foto do cabo, ficha do fabricante",
+    "licoes": [
+      "03-04"
+    ]
+  },
+  {
+    "id": "a03",
+    "onde": "sozinho",
+    "texto": "Qual a marca e o modelo da máquina de fusão e do clivador? O alinhamento é por núcleo ou por casca?",
+    "dica": "Etiqueta e tela \"Sobre\" da máquina",
+    "licoes": [
+      "05-03"
+    ]
+  },
+  {
+    "id": "a04",
+    "onde": "sozinho",
+    "texto": "Os conectores do DIO são azuis (UPC) ou verdes (APC)? SC ou LC?",
+    "dica": "Olhar o DIO e os cordões",
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "a05",
+    "onde": "sozinho",
+    "texto": "Qual versão do QGIS está instalada?",
+    "dica": "QGIS ► Ajuda ► Sobre (Help ► About)",
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "a06",
+    "onde": "sozinho",
+    "texto": "Qual o SRC (EPSG) do projeto e das camadas?",
+    "dica": "Canto inferior direito do QGIS; Propriedades da camada ► Informação",
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "a07",
+    "onde": "sozinho",
+    "texto": "Que comprimentos de onda o OTDR tem?",
+    "dica": "Etiqueta e tela do OTDR",
+    "licoes": [
+      "06-05"
+    ]
+  },
+  {
+    "id": "a08",
+    "onde": "sozinho",
+    "texto": "Que transceptores (SFP) estão nos switches? Eles têm leitura de potência (DOM)?",
+    "dica": "Etiqueta do SFP; leitura no switch, se tiver permissão",
+    "licoes": [
+      "11-03"
+    ]
+  },
+  {
+    "id": "a09",
+    "onde": "sozinho",
+    "texto": "Que padrão de plaqueta e de etiqueta aparece nos postes e no rack?",
+    "dica": "Observar em campo e no rack",
+    "licoes": [
+      "07-03"
+    ]
+  },
+  {
+    "id": "a10",
+    "onde": "sozinho",
+    "texto": "Qual é a designação (ID do circuito) de cada link e onde ela está anotada?",
+    "dica": "Etiqueta no equipamento da operadora, fatura ou contrato",
+    "licoes": [
+      "09-06"
+    ]
+  },
+  {
+    "id": "a11",
+    "onde": "sozinho",
+    "texto": "A baixa tensão dos postes onde vou trabalhar é nua ou isolada (multiplexada)?",
+    "dica": "Observar do chão, sem se aproximar; confirmar com a engenharia",
+    "licoes": [
+      "10-01"
+    ]
+  },
+  {
+    "id": "b01",
+    "onde": "documentos",
+    "texto": "Qual é a norma de compartilhamento de postes vigente (número e versão)? Há referência pública a uma \"NT-002\" (2020) e a uma possível \"NT 06/2024\".",
+    "dica": "Site da distribuidora, intranet",
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "b02",
+    "onde": "documentos",
+    "texto": "O que a nossa norma manda sobre faixa de ocupação, pontos por poste (urbano e rural), afastamentos, alturas, plaqueta, reserva, caixas e limite de drops?",
+    "dica": "Norma de compartilhamento",
+    "licoes": [
+      "07-02",
+      "07-03",
+      "07-04",
+      "07-05",
+      "10-01"
+    ]
+  },
+  {
+    "id": "b03",
+    "onde": "documentos",
+    "texto": "Qual é o SLA de cada link: % de disponibilidade, período (mensal ou anual), tempo de reparo e janela de manutenção?",
+    "dica": "Contrato e anexo de nível de serviço",
+    "licoes": [
+      "09-01"
+    ]
+  },
+  {
+    "id": "b04",
+    "onde": "documentos",
+    "texto": "Qual é a regra de glosa de cada contrato (proporcional ao tempo parado, só o excesso ou por faixas)? Tem teto? O relógio começa no chamado ou na falha?",
+    "dica": "Contrato (cláusula de SLA e penalidades)",
+    "licoes": [
+      "09-02"
+    ]
+  },
+  {
+    "id": "b05",
+    "onde": "documentos",
+    "texto": "Qual é o critério de aceite das obras: perda máxima por fusão e por conector, dB/km, refletância, ORL? OTDR nos dois sentidos? Em quais comprimentos de onda?",
+    "dica": "Anexo técnico do contrato de construção ou caderno de aceite",
+    "licoes": [
+      "09-05",
+      "05-04"
+    ]
+  },
+  {
+    "id": "b06",
+    "onde": "documentos",
+    "texto": "Em que formato o fornecedor entrega o as built (DWG, KMZ, GeoPackage) e os testes (.SOR, PDF)?",
+    "dica": "Anexo técnico",
+    "licoes": [
+      "09-05"
+    ]
+  },
+  {
+    "id": "b07",
+    "onde": "documentos",
+    "texto": "Qual é o índice de reajuste (IST, IPCA, IGP-M) e a data-base de cada contrato?",
+    "dica": "Contrato",
+    "licoes": [
+      "09-04"
+    ]
+  },
+  {
+    "id": "b08",
+    "onde": "documentos",
+    "texto": "Qual é o prazo de garantia da obra e como funcionam o aceite provisório e o definitivo?",
+    "dica": "Contrato de construção",
+    "licoes": [
+      "09-05"
+    ]
+  },
+  {
+    "id": "b09",
+    "onde": "documentos",
+    "texto": "Quais são os contatos e a matriz de escalonamento de cada fornecedor (central, NOC, gerente de contas)?",
+    "dica": "Anexo do contrato ou cadastro do fornecedor",
+    "licoes": [
+      "09-06"
+    ]
+  },
+  {
+    "id": "b10",
+    "onde": "documentos",
+    "texto": "O que diz a ficha técnica do cabo comprado (G.652.D ou G.657, IOR, atenuação)?",
+    "dica": "Anexo técnico, processo de compra",
+    "licoes": [
+      "02-04",
+      "06-05",
+      "09-05"
+    ]
+  },
+  {
+    "id": "b11",
+    "onde": "documentos",
+    "texto": "Qual é o modelo do contrato de ocupação de postes (valor por ponto, prazos, multas)?",
+    "dica": "Contrato-padrão de compartilhamento",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "b12",
+    "onde": "documentos",
+    "texto": "Qual é o procedimento escrito para trabalho em poste com rede de telecom, e o modelo de APR e de permissão de trabalho?",
+    "dica": "Procedimentos de segurança (intranet)",
+    "licoes": [
+      "10-01"
+    ]
+  },
+  {
+    "id": "b13",
+    "onde": "documentos",
+    "texto": "O contrato conta o mês como 30 dias (43.200 min) ou pelos dias do calendário?",
+    "dica": "Cláusula de SLA",
+    "licoes": [
+      "09-01"
+    ]
+  },
+  {
+    "id": "b14",
+    "onde": "documentos",
+    "texto": "Latência alta, perda de pacotes ou velocidade abaixo do contratado contam como indisponibilidade no contrato?",
+    "dica": "Anexo de nível de serviço",
+    "licoes": [
+      "09-01"
+    ]
+  },
+  {
+    "id": "b15",
+    "onde": "documentos",
+    "texto": "Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho?",
+    "dica": "Procedimentos de segurança (intranet)",
+    "licoes": [
+      "10-05"
+    ]
+  },
+  {
+    "id": "c01",
+    "onde": "outras-areas",
+    "texto": "Para trabalhar no cabo de telecom de um poste com baixa tensão (a 0,60 m dela), que autorização NR-10 eu preciso e quem emite a APR e a permissão de trabalho?",
+    "dica": "Segurança do trabalho (SESMT)",
+    "licoes": [
+      "10-01"
+    ]
+  },
+  {
+    "id": "c02",
+    "onde": "outras-areas",
+    "texto": "Como a empresa vai se preparar para a nova NR-10 (junho de 2027)? Quem faz telecom em poste terá o treinamento específico de compartilhamento (40 h) ou o Básico + Complementar do SEP?",
+    "dica": "SESMT / RH",
+    "licoes": [
+      "10-05"
+    ]
+  },
+  {
+    "id": "c03",
+    "onde": "outras-areas",
+    "texto": "Quais EPIs são exigidos para telecom em poste e na fusão? Qual é o plano de resgate em poste?",
+    "dica": "SESMT",
+    "licoes": [
+      "10-01",
+      "10-04"
+    ]
+  },
+  {
+    "id": "c04",
+    "onde": "outras-areas",
+    "texto": "Quem é gestor e quem é fiscal de cada contrato de telecom? Qual é o meu papel e a minha alçada?",
+    "dica": "Líder de TI",
+    "licoes": [
+      "09-03"
+    ]
+  },
+  {
+    "id": "c05",
+    "onde": "outras-areas",
+    "texto": "Qual sistema de chamados usamos e quem pode abrir chamado em nome da empresa?",
+    "dica": "Líder de TI",
+    "licoes": [
+      "09-06"
+    ]
+  },
+  {
+    "id": "c06",
+    "onde": "outras-areas",
+    "texto": "A rede é própria, contratada ou mista? Que protocolo SCADA usamos? Já há IEC 61850?",
+    "dica": "Engenharia / automação",
+    "licoes": [
+      "01-01"
+    ]
+  },
+  {
+    "id": "c07",
+    "onde": "outras-areas",
+    "texto": "Que requisitos de telecom do ONS valem depois da interligação ao SIN?",
+    "dica": "Engenharia",
+    "licoes": [
+      "01-06"
+    ]
+  },
+  {
+    "id": "c08",
+    "onde": "outras-areas",
+    "texto": "TI e TO (tecnologia da operação) são separadas? Quem cuida da telecom operativa?",
+    "dica": "Líder de TI",
+    "licoes": [
+      "01-01"
+    ]
+  },
+  {
+    "id": "c09",
+    "onde": "outras-areas",
+    "texto": "Que materiais temos em estoque (cabos, CEO, CTO, tubetes, SFP, cordões)?",
+    "dica": "Almoxarifado",
+    "licoes": [
+      "03-05",
+      "04-06"
+    ]
+  },
+  {
+    "id": "c10",
+    "onde": "outras-areas",
+    "texto": "As operadoras aplicam o RGC da Anatel aos nossos links ou só o SLA do contrato?",
+    "dica": "Jurídico",
+    "licoes": [
+      "09-02"
+    ]
+  },
+  {
+    "id": "c11",
+    "onde": "outras-areas",
+    "texto": "A empresa apoia algum curso ou certificação?",
+    "dica": "RH / líder de TI",
+    "licoes": [
+      "12-02"
+    ]
+  },
+  {
+    "id": "c12",
+    "onde": "outras-areas",
+    "texto": "Quando a baixa tensão é isolada (multiplexada), a empresa trata as zonas da NR-10 do mesmo jeito que na rede nua? Quem avalia se o isolamento está íntegro?",
+    "dica": "Segurança do trabalho (SESMT)",
+    "licoes": [
+      "10-01"
+    ]
+  },
+  {
+    "id": "c13",
+    "onde": "outras-areas",
+    "texto": "Quando vence a minha reciclagem da NR-10 e quantas horas ela terá?",
+    "dica": "SESMT / RH",
+    "licoes": [
+      "10-05"
+    ]
+  },
+  {
+    "id": "c14",
+    "onde": "outras-areas",
+    "texto": "Quem calcula e quem aprova a glosa antes do pagamento?",
+    "dica": "Líder de TI / financeiro",
+    "licoes": [
+      "09-02"
+    ]
+  },
+  {
+    "id": "c15",
+    "onde": "outras-areas",
+    "texto": "Que tensões existem nos postes onde vou trabalhar (baixa tensão, 13,8 kV, 34,5 kV)?",
+    "dica": "Engenharia / operação",
+    "licoes": [
+      "10-01"
+    ]
+  },
+  {
+    "id": "d01",
+    "onde": "colega",
+    "texto": "Como os fornecedores costumam mandar os relatórios, e o que já foi devolvido por estar incompleto?",
+    "dica": "",
+    "licoes": [
+      "09-05"
+    ]
+  },
+  {
+    "id": "d02",
+    "onde": "colega",
+    "texto": "Quais chamados se repetem e com quais fornecedores? Que prazos eles cumprem de verdade?",
+    "dica": "",
+    "licoes": [
+      "09-06"
+    ]
+  },
+  {
+    "id": "d03",
+    "onde": "colega",
+    "texto": "Que reserva técnica e que padrão de identificação usamos na prática?",
+    "dica": "",
+    "licoes": [
+      "03-06",
+      "07-03"
+    ]
+  },
+  {
+    "id": "d04",
+    "onde": "colega",
+    "texto": "Qual é o critério de aceite por emenda que usamos no dia a dia (0,1? 0,15 dB?)",
+    "dica": "",
+    "licoes": [
+      "05-04"
+    ]
+  },
+  {
+    "id": "d05",
+    "onde": "colega",
+    "texto": "Quem faz o arc check, a troca de eletrodo e a limpeza da máquina de fusão?",
+    "dica": "",
+    "licoes": [
+      "05-03"
+    ]
+  },
+  {
+    "id": "d06",
+    "onde": "colega",
+    "texto": "Que faixa de sinal na ONU cobramos dos provedores, se cobramos? Que topologia eles usam aqui?",
+    "dica": "",
+    "licoes": [
+      "04-05"
+    ]
+  },
+  {
+    "id": "d07",
+    "onde": "colega",
+    "texto": "A rede para as unidades é ponto a ponto (SFP) ou tem PON?",
+    "dica": "",
+    "licoes": [
+      "04-06"
+    ]
+  },
+  {
+    "id": "d08",
+    "onde": "colega",
+    "texto": "Como é o fluxo para cabo clandestino (registro, retirada, guarda do material)?",
+    "dica": "",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "d09",
+    "onde": "colega",
+    "texto": "Que nomes e campos usamos nas camadas do QGIS? Usamos QField?",
+    "dica": "",
+    "licoes": [
+      "08-06",
+      "08-07"
+    ]
+  },
+  {
+    "id": "d10",
+    "onde": "colega",
+    "texto": "Qual é o plano de VLANs, e eu posso rodar comandos de consulta (show) nos switches?",
+    "dica": "",
+    "licoes": [
+      "11-04"
+    ]
+  },
+  {
+    "id": "d11",
+    "onde": "colega",
+    "texto": "Como os fornecedores costumam contestar uma glosa, e o que já foi aceito ou recusado?",
+    "dica": "",
+    "licoes": [
+      "09-02"
+    ]
+  },
+  {
+    "id": "d12",
+    "onde": "colega",
+    "texto": "Existe um registro de ocorrências (livro, planilha, sistema) para cada contrato? Onde fica?",
+    "dica": "",
+    "licoes": [
+      "09-03"
+    ]
+  }
+]

@@ -14,6 +14,8 @@ import {
   lerPlano,
   lerLicoes,
   lerQuestoes,
+  lerPerguntasEmpresa,
+  gerarDocPerguntas,
   dividirSecoes,
   marcacoes,
   compilarLicao,
@@ -74,6 +76,27 @@ export function validar({ hoje = new Date() } = {}) {
   if (new Set(noPlano).size !== noPlano.length) erro('plano.json', 'lição repetida no plano');
   for (const id of idsCurriculo) if (!noPlano.includes(id)) erro('plano.json', `lição ${id} fora do plano`);
 
+  // ---- Banco de perguntas para a empresa ----
+  const perguntasEmpresa = lerPerguntasEmpresa();
+  const perguntasPorId = new Map();
+  const LETRA = { sozinho: 'a', documentos: 'b', 'outras-areas': 'c', colega: 'd' };
+  for (const p of perguntasEmpresa) {
+    const onde = `perguntas-empresa.json[${p.id ?? '?'}]`;
+    if (!p.id) erro(onde, 'pergunta sem id');
+    if (perguntasPorId.has(p.id)) erro(onde, 'id repetido');
+    perguntasPorId.set(p.id, p);
+    if (!ONDE.includes(p.onde)) erro(onde, `"onde" inválido: ${p.onde}`);
+    else if (!p.id?.startsWith(LETRA[p.onde])) erro(onde, `o id deve começar com "${LETRA[p.onde]}" (categoria ${p.onde})`);
+    if (!p.texto) erro(onde, 'sem texto');
+    if (p.onde !== 'colega' && !p.dica) erro(onde, 'sem dica de onde achar');
+    if (!Array.isArray(p.licoes) || p.licoes.length === 0) erro(onde, 'sem lição ligada');
+    for (const l of p.licoes ?? []) if (!idsCurriculo.has(l)) erro(onde, `lição ${l} não existe no currículo`);
+  }
+  const caminhoDoc = join(RAIZ, 'docs', 'perguntas-para-a-empresa.md');
+  if (!existsSync(caminhoDoc) || readFileSync(caminhoDoc, 'utf-8') !== gerarDocPerguntas(perguntasEmpresa)) {
+    erro('docs/perguntas-para-a-empresa.md', 'desatualizado em relação a content/perguntas-empresa.json (rode npm run conteudo)');
+  }
+
   // ---- Diagramas disponíveis no código ----
   const pastaDiagramas = join(RAIZ, 'src', 'diagramas');
   const indiceDiagramas = existsSync(join(pastaDiagramas, 'index.ts'))
@@ -107,10 +130,11 @@ export function validar({ hoje = new Date() } = {}) {
       if (!meta.diagrama_descricao) erro(onde, 'diagrama sem descrição (texto alternativo)');
     }
     const perguntas = meta.perguntas ?? [];
-    if (perguntas.length === 0) erro(onde, 'sem "Pergunte na empresa" (campo perguntas)');
-    for (const p of perguntas) {
-      if (!p.texto) erro(onde, 'pergunta sem texto');
-      if (!ONDE.includes(p.onde)) erro(onde, `pergunta com "onde" inválido: ${p.onde} (use ${ONDE.join(', ')})`);
+    if (perguntas.length === 0) erro(onde, 'sem "Pergunte na empresa" (campo perguntas, com ids de content/perguntas-empresa.json)');
+    for (const idP of perguntas) {
+      const p = perguntasPorId.get(idP);
+      if (!p) erro(onde, `pergunta "${idP}" não existe em content/perguntas-empresa.json`);
+      else if (!p.licoes.includes(id)) erro(onde, `a pergunta ${idP} não lista a lição ${id} no banco`);
     }
 
     const secoes = dividirSecoes(corpo);
@@ -136,7 +160,7 @@ export function validar({ hoje = new Date() } = {}) {
     for (const f of meta.fontes ?? []) if (!usadas.has(f)) aviso(onde, `fonte "${f}" listada mas não citada no texto`);
     if (meta.confirmar_na_empresa && !corpo.includes('{{confirmar}}')) aviso(onde, 'marcada como "confirmar na empresa" mas sem selo {{confirmar}} no texto');
 
-    const compilada = compilarLicao(licao, fontesPorId, glossarioPorId);
+    const compilada = compilarLicao(licao, fontesPorId, glossarioPorId, perguntasPorId);
     const palavras = contarPalavras(
       htmlParaTexto(compilada.explicacaoAntes + compilada.explicacaoDepois + compilada.naPratica + compilada.errosComuns),
     );

@@ -25,34 +25,37 @@ function ComLicao({ children }: { children: (licao: TLicao, questoes: Questao[])
 
 function PerguntasEmpresa({ licao }: { licao: TLicao }) {
   const { estado, despachar } = useEstado();
-  const salvas = new Set(estado.caderno.perguntas.map((p) => p.id));
+  const salvas = new Map(estado.caderno.perguntas.map((p) => [p.id, p]));
   return (
     <ul className="lista-limpa">
       {licao.perguntas.map((p) => {
         const r = ROTULO_ONDE[p.onde];
-        const jaSalva = salvas.has(p.id);
+        const noCaderno = salvas.get(p.id);
         return (
           <li key={p.id} className="pergunta-item">
-            <span>
-              <span className="selo" title={r.descricao}>
-                <span aria-hidden="true">{r.icone}</span> {r.titulo}
-              </span>
-              <br />
-              {p.texto}
+            <span className="selo" title={r.descricao}>
+              <span aria-hidden="true">{r.icone}</span> {r.titulo}
             </span>
-            <button
-              type="button"
-              className="botao botao-secundario"
-              disabled={jaSalva}
-              onClick={() =>
-                despachar({
-                  tipo: 'adicionarPergunta',
-                  pergunta: { id: p.id, texto: p.texto, onde: p.onde, licao: licao.id, resposta: '', resolvida: false, criadaEm: new Date().toISOString() },
-                })
-              }
-            >
-              {jaSalva ? 'No caderno ✓' : 'Levar para o caderno'}
-            </button>
+            <span>{p.texto}</span>
+            {p.dica && <span className="dica">{p.onde === 'outras-areas' ? 'Para quem: ' : 'Onde olhar: '}{p.dica}</span>}
+            {noCaderno ? (
+              <Link to="/caderno" className="dica">
+                {noCaderno.resolvida ? 'Respondida no caderno ✓' : 'Já está no seu caderno'}
+              </Link>
+            ) : (
+              <button
+                type="button"
+                className="botao botao-secundario"
+                onClick={() =>
+                  despachar({
+                    tipo: 'adicionarPergunta',
+                    pergunta: { id: p.id, texto: p.texto, onde: p.onde, dica: p.dica, licoes: p.licoes, resposta: '', resolvida: false, criadaEm: new Date().toISOString() },
+                  })
+                }
+              >
+                Levar de volta para o caderno
+              </button>
+            )}
           </li>
         );
       })}

@@ -2,6 +2,7 @@
 // Se o navegador bloquear o armazenamento (modo privado, por exemplo), o app continua funcionando
 // e avisa que o progresso não será salvo.
 import { ehDiaValido } from './datas';
+import { palavra, plural } from './texto';
 import {
   type Ajustes,
   type Caderno,
@@ -103,7 +104,7 @@ function normalizarRevisao(x: unknown): EstadoRevisao {
 }
 
 function normalizarCaderno(x: unknown): Caderno {
-  const caderno: Caderno = { campos: {}, notas: [], perguntas: [] };
+  const caderno: Caderno = { campos: {}, notas: [], perguntas: [], semeadas: [] };
   if (!ehObjeto(x)) return caderno;
   if (ehObjeto(x.campos)) for (const [k, v] of Object.entries(x.campos)) if (typeof v === 'string') caderno.campos[k] = v;
   if (Array.isArray(x.notas)) {
@@ -119,13 +120,19 @@ function normalizarCaderno(x: unknown): Caderno {
         id: p.id,
         texto: p.texto,
         onde: ONDES.includes(p.onde as Onde) ? (p.onde as Onde) : 'colega',
-        ...(typeof p.licao === 'string' ? { licao: p.licao } : {}),
+        ...(typeof p.dica === 'string' && p.dica ? { dica: p.dica } : {}),
+        ...(Array.isArray(p.licoes)
+          ? { licoes: p.licoes.filter((l): l is string => typeof l === 'string') }
+          : typeof p.licao === 'string'
+            ? { licoes: [p.licao] }
+            : {}),
         resposta: texto(p.resposta),
         resolvida: p.resolvida === true,
         criadaEm: texto(p.criadaEm),
       } satisfies PerguntaCaderno);
     }
   }
+  if (Array.isArray(x.semeadas)) caderno.semeadas = [...new Set(x.semeadas.filter((s): s is string => typeof s === 'string'))];
   return caderno;
 }
 
@@ -200,7 +207,12 @@ function mesclarCaderno(atual: Caderno, novo: Caderno): Caderno {
     const existente = perguntas.get(p.id);
     perguntas.set(p.id, existente ? { ...existente, resposta: p.resposta || existente.resposta, resolvida: p.resolvida || existente.resolvida } : p);
   }
-  return { campos, notas: [...notas.values()], perguntas: [...perguntas.values()] };
+  return {
+    campos,
+    notas: [...notas.values()],
+    perguntas: [...perguntas.values()],
+    semeadas: [...new Set([...atual.semeadas, ...novo.semeadas])],
+  };
 }
 
 /** Descreve, em frases, o que a importação vai mudar (mostrado antes de aplicar). */
@@ -216,12 +228,14 @@ export function resumirImportacao(atual: Estado, leitura: Extract<ResultadoLeitu
   }).length;
   const idsPerg = new Set(atual.caderno.perguntas.map((p) => p.id));
   const perguntasNovas = novo.perguntas.filter((p) => !idsPerg.has(p.id)).length;
-  linhas.push(`Caderno: ${camposAlterados} campo(s) alterado(s), ${notasNovas} nota(s) nova(s), ${notasAtualizadas} nota(s) atualizada(s), ${perguntasNovas} pergunta(s) nova(s).`);
+  linhas.push(
+    `Caderno: ${plural(camposAlterados, 'campo alterado', 'campos alterados')}, ${plural(notasNovas, 'nota nova', 'notas novas')}, ${plural(notasAtualizadas, 'nota atualizada', 'notas atualizadas')}, ${plural(perguntasNovas, 'pergunta nova', 'perguntas novas')}.`,
+  );
   if (leitura.escopo === 'tudo') {
     const licoes = Object.keys(leitura.dados.progresso?.licoes ?? {}).length;
     const revisao = Object.keys(leitura.dados.revisao?.itens ?? {}).length;
-    linhas.push(`Progresso: ${licoes} lição(ões) no arquivo (fica a melhor nota de cada).`);
-    linhas.push(`Revisão: ${revisao} questão(ões) na fila do arquivo (somadas às suas).`);
+    linhas.push(`Progresso: ${plural(licoes, 'lição', 'lições')} no arquivo (fica a melhor nota de cada).`);
+    linhas.push(`Revisão: ${plural(revisao, 'questão', 'questões')} na fila do arquivo (${palavra(revisao, 'somada', 'somadas')} às suas).`);
     linhas.push('Ajustes: os do arquivo substituem os atuais.');
   }
   linhas.push('Nada do que você já tem é apagado.');

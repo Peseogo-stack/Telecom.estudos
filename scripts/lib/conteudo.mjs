@@ -35,6 +35,56 @@ export function lerCurriculo() {
 export function lerPlano() {
   return lerJson('plano.json');
 }
+export function lerPerguntasEmpresa() {
+  return lerJson('perguntas-empresa.json');
+}
+
+const TITULOS_ONDE = {
+  sozinho: { letra: 'A', titulo: 'Eu vejo sozinho', coluna: 'Onde olhar', quando: 'Está gravado no cabo, na tela do equipamento, na etiqueta ou no próprio software' },
+  documentos: { letra: 'B', titulo: 'Documentos', coluna: 'Documento provável', quando: 'Está em contrato, anexo técnico, norma publicada no site ou na intranet da distribuidora' },
+  'outras-areas': { letra: 'C', titulo: 'Outras áreas', coluna: 'Para quem', quando: 'Líder de TI, segurança do trabalho (SESMT), engenharia, almoxarifado, jurídico, compras' },
+  colega: { letra: 'D', titulo: 'Colega de telecom', coluna: null, quando: 'Só quem já trabalha na telecom da empresa sabe (prática, histórico, combinados com fornecedores)' },
+};
+
+/** Gera docs/perguntas-para-a-empresa.md a partir de content/perguntas-empresa.json (fonte única). */
+export function gerarDocPerguntas(banco) {
+  const celula = (t) => String(t).replace(/\|/g, '\\|');
+  const linhas = [
+    '# Perguntas para a empresa — organizadas por onde achar a resposta',
+    '',
+    '> Arquivo gerado a partir de `content/perguntas-empresa.json` (`npm run conteudo`). Edite o JSON, não este arquivo.',
+    '> O app já traz estas perguntas no **Meu caderno**, agrupadas na mesma ordem. As respostas ficam só no aparelho, **nunca** no GitHub.',
+    '> O bloco "Pergunte na empresa" de cada lição usa as mesmas perguntas e as mesmas quatro categorias.',
+    '',
+    '| Categoria | Quando usar |',
+    '| --- | --- |',
+    ...Object.values(TITULOS_ONDE).map((c) => `| **${c.letra}. ${c.titulo}** | ${c.quando} |`),
+    '',
+    '> Comece pela A e pela B: dá para avançar sem depender de ninguém.',
+    '',
+  ];
+  for (const [onde, c] of Object.entries(TITULOS_ONDE)) {
+    const itens = banco.filter((p) => p.onde === onde);
+    linhas.push('---', '', `## ${c.letra}. ${c.titulo}`, '');
+    if (c.coluna) {
+      linhas.push(`| # | Pergunta | ${c.coluna} | Lição |`, '| --- | --- | --- | --- |');
+      for (const p of itens) linhas.push(`| ${p.id} | ${celula(p.texto)} | ${celula(p.dica)} | ${p.licoes.join(', ')} |`);
+    } else {
+      linhas.push('| # | Pergunta | Lição |', '| --- | --- | --- |');
+      for (const p of itens) linhas.push(`| ${p.id} | ${celula(p.texto)} | ${p.licoes.join(', ')} |`);
+    }
+    linhas.push('');
+  }
+  linhas.push(
+    '---',
+    '',
+    '### O que **não** levar para o app nem para o GitHub',
+    'Rotas, coordenadas, fotos, plantas, planilhas, nomes de pessoas, endereços de unidades, configurações e senhas. Usinas e subestações são infraestrutura crítica. As respostas ficam só no **Meu caderno**, no aparelho.',
+    '',
+  );
+  return linhas.join('\n');
+}
+
 export function lerChecklists() {
   const pasta = join(PASTA_CONTEUDO, 'checklists');
   if (!existsSync(pasta)) return [];
@@ -139,7 +189,7 @@ export function contarPalavras(texto) {
 }
 
 /** Compila uma lição: HTML de cada seção, diagrama, perguntas e fontes resolvidas. */
-export function compilarLicao({ meta, corpo }, fontesPorId, glossarioPorId) {
+export function compilarLicao({ meta, corpo }, fontesPorId, glossarioPorId, perguntasPorId) {
   const ordem = meta.fontes ?? [];
   const secoes = dividirSecoes(corpo);
   const html = {};
@@ -166,7 +216,7 @@ export function compilarLicao({ meta, corpo }, fontesPorId, glossarioPorId) {
     explicacaoDepois: depois,
     naPratica: html.naPratica,
     errosComuns: html.errosComuns,
-    perguntas: (meta.perguntas ?? []).map((p, i) => ({ id: `${meta.id}-p${i + 1}`, texto: p.texto, onde: p.onde })),
+    perguntas: (meta.perguntas ?? []).map((id) => perguntasPorId?.get(id)).filter(Boolean),
     fontes: ordem.map((id) => fontesPorId.get(id)).filter(Boolean),
   };
 }

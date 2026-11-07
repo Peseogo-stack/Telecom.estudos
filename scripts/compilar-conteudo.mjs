@@ -10,6 +10,8 @@ import {
   lerCurriculo,
   lerPlano,
   lerChecklists,
+  lerPerguntasEmpresa,
+  gerarDocPerguntas,
   lerLicoes,
   lerQuestoes,
   compilarLicao,
@@ -27,8 +29,13 @@ const glossarioPorId = new Map(glossario.map((t) => [t.id, t]));
 const curriculo = lerCurriculo();
 const plano = lerPlano();
 const checklists = lerChecklists();
+const perguntasEmpresa = lerPerguntasEmpresa();
+const perguntasPorId = new Map(perguntasEmpresa.map((p) => [p.id, p]));
 
-const licoes = lerLicoes().map((l) => compilarLicao(l, fontesPorId, glossarioPorId));
+// O documento de perguntas é gerado do mesmo banco que o app usa.
+writeFileSync(join(RAIZ, 'docs', 'perguntas-para-a-empresa.md'), gerarDocPerguntas(perguntasEmpresa));
+
+const licoes = lerLicoes().map((l) => compilarLicao(l, fontesPorId, glossarioPorId, perguntasPorId));
 const disponiveis = new Set(licoes.map((l) => l.id));
 
 // Lições e questões agrupadas por módulo.
@@ -84,7 +91,7 @@ const curriculoMarcado = {
   })),
 };
 
-const indice = { geradoEm: new Date().toISOString(), curriculo: curriculoMarcado, plano, glossario, fontes, checklists, busca };
+const indice = { geradoEm: new Date().toISOString(), curriculo: curriculoMarcado, plano, glossario, fontes, checklists, perguntasEmpresa, busca };
 writeFileSync(join(SAIDA, 'indice.json'), JSON.stringify(indice));
 
 console.log(

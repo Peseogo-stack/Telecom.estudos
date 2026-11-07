@@ -1,20 +1,102 @@
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useEstado } from '../app/EstadoApp';
 import { useTitulo } from '../componentes/Comuns';
 import { ImportarExportar } from '../componentes/ImportarExportar';
-import { CAMPOS_CADERNO, type Onde, ROTULO_ONDE } from '../dominio/estado';
-
-const ORDEM_ONDE: Onde[] = ['sozinho', 'documentos', 'outras-areas', 'colega'];
+import { ORDEM_ONDE, agruparPorOnde } from '../dominio/caderno';
+import { CAMPOS_CADERNO, type Nota, type Onde, type PerguntaCaderno, ROTULO_ONDE } from '../dominio/estado';
+import { plural } from '../dominio/texto';
 
 function novoId(prefixo: string) {
   return `${prefixo}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
 }
 
-function Perguntas() {
+/** O que foi removido por último, para poder desfazer. */
+type Removido = { tipo: 'pergunta'; item: PerguntaCaderno; posicao: number } | { tipo: 'nota'; item: Nota; posicao: number };
+
+/** Aviso "Removida. Desfazer" que some sozinho em 8 s. */
+function AvisoDesfazer({ removido, onDesfazer, onFechar }: { removido: Removido | null; onDesfazer: () => void; onFechar: () => void }) {
+  useEffect(() => {
+    if (!removido) return;
+    const t = setTimeout(onFechar, 8000);
+    return () => clearTimeout(t);
+  }, [removido, onFechar]);
+  if (!removido) return null;
+  return (
+    <div className="toast" role="status">
+      <span>{removido.tipo === 'pergunta' ? 'Pergunta removida.' : 'Anotação apagada.'}</span>
+      <button type="button" className="botao" onClick={onDesfazer}>
+        Desfazer
+      </button>
+      <button type="button" className="botao-icone" aria-label="Fechar aviso" onClick={onFechar}>
+        ✕
+      </button>
+    </div>
+  );
+}
+
+function ItemPergunta({ p, onRemover }: { p: PerguntaCaderno; onRemover: () => void }) {
+  const { despachar } = useEstado();
+  const idTexto = `perg-${p.id}`;
+  const prefixoDica = p.onde === 'outras-areas' ? 'Para quem: ' : 'Onde olhar: ';
+  return (
+    <li className={`pergunta-caderno${p.resolvida ? ' resolvida' : ''}`}>
+      <p id={idTexto} className="titulo-item" style={{ margin: 0 }}>
+        {p.texto}
+      </p>
+      {(p.dica || p.licoes?.length) && (
+        <p className="dica" style={{ margin: '4px 0 0' }}>
+          {p.dica && (
+            <>
+              {prefixoDica}
+              {p.dica}.{' '}
+            </>
+          )}
+          {p.licoes?.length ? (
+            <>
+              {p.licoes.length === 1 ? 'Lição ' : 'Lições '}
+              {p.licoes.map((l, i) => (
+                <span key={l}>
+                  {i > 0 && ', '}
+                  <Link to={`/licao/${l}`}>{l}</Link>
+                </span>
+              ))}
+              .
+            </>
+          ) : null}
+        </p>
+      )}
+      <label className="campo" style={{ margin: '8px 0' }}>
+        <span className="so-leitor">Resposta para: {p.texto}</span>
+        <textarea
+          rows={2}
+          style={{ minHeight: 64 }}
+          placeholder="Resposta (fica só neste aparelho)"
+          value={p.resposta}
+          onChange={(e) => despachar({ tipo: 'atualizarPergunta', id: p.id, mudancas: { resposta: e.target.value } })}
+        />
+      </label>
+      <div className="linha-acoes">
+        <label className="caixa-marcar">
+          <input
+            type="checkbox"
+            checked={p.resolvida}
+            onChange={(e) => despachar({ tipo: 'atualizarPergunta', id: p.id, mudancas: { resolvida: e.target.checked } })}
+          />
+          Respondida
+        </label>
+        <button type="button" className="botao-discreto" onClick={onRemover} aria-label={`Remover a pergunta: ${p.texto}`}>
+          Remover
+        </button>
+      </div>
+    </li>
+  );
+}
+
+function Perguntas({ onRemover }: { onRemover: (r: Removido) => void }) {
   const { estado, despachar } = useEstado();
   const [texto, setTexto] = useState('');
-  const [onde, setOnde] = useState<Onde>('documentos');
+  const [onde, setOnde] = useState<Onde>('sozinho');
   const perguntas = estado.caderno.perguntas;
   const abertas = perguntas.filter((p) => !p.resolvida).length;
 
@@ -22,55 +104,45 @@ function Perguntas() {
     <section className="cartao" aria-labelledby="t-perguntas">
       <h2 id="t-perguntas">Perguntas para a empresa</h2>
       <p className="dica">
-        {perguntas.length ? `${abertas} aberta(s) de ${perguntas.length}.` : 'Use o botão "Levar para o caderno" nas lições, ou escreva a sua abaixo.'}
+        {perguntas.length
+          ? `${plural(abertas, 'aberta', 'abertas')} de ${perguntas.length}. Comece pelas que você vê sozinho; depois documentos, outras áreas e, por último, o colega de telecom.`
+          : 'Nenhuma pergunta. Escreva a sua abaixo.'}
       </p>
-      {ORDEM_ONDE.map((o) => {
-        const lista = perguntas.filter((p) => p.onde === o);
-        if (!lista.length) return null;
+      {agruparPorOnde(perguntas).map(({ onde: o, itens }, indiceGrupo) => {
         const r = ROTULO_ONDE[o];
+        const feitas = itens.filter((p) => p.resolvida).length;
         return (
-          <div key={o}>
-            <h3>
-              <span aria-hidden="true">{r.icone}</span> {r.titulo} <span className="dica">— {r.descricao}</span>
-            </h3>
+          <details key={o} className="grupo-perguntas" open={indiceGrupo === 0}>
+            <summary>
+              <span aria-hidden="true">{r.icone}</span> <strong>{r.titulo}</strong>{' '}
+              <span className="dica">
+                · {feitas} de {itens.length} {itens.length === 1 ? 'respondida' : 'respondidas'}
+              </span>
+              <span className="dica bloco">{r.descricao}</span>
+            </summary>
             <ul className="lista-limpa">
-              {lista.map((p) => (
-                <li key={p.id} className="cartao" style={{ background: 'var(--superficie-2)' }}>
-                  <p style={{ marginTop: 0 }}>
-                    <strong>{p.texto}</strong>
-                    {p.licao && (
-                      <>
-                        {' '}
-                        <Link to={`/licao/${p.licao}`} className="dica">
-                          (lição {p.licao})
-                        </Link>
-                      </>
-                    )}
-                  </p>
-                  <label className="campo">
-                    <span>Resposta</span>
-                    <textarea value={p.resposta} onChange={(e) => despachar({ tipo: 'atualizarPergunta', id: p.id, mudancas: { resposta: e.target.value } })} />
-                  </label>
-                  <div className="acoes" style={{ alignItems: 'center' }}>
-                    <label className="caixa-marcar">
-                      <input type="checkbox" checked={p.resolvida} onChange={(e) => despachar({ tipo: 'atualizarPergunta', id: p.id, mudancas: { resolvida: e.target.checked } })} />
-                      Respondida
-                    </label>
-                    <button type="button" className="botao botao-perigo" onClick={() => despachar({ tipo: 'apagarPergunta', id: p.id })}>
-                      Remover
-                    </button>
-                  </div>
-                </li>
+              {itens.map((p) => (
+                <ItemPergunta
+                  key={p.id}
+                  p={p}
+                  onRemover={() => {
+                    onRemover({ tipo: 'pergunta', item: p, posicao: perguntas.findIndex((x) => x.id === p.id) });
+                    despachar({ tipo: 'apagarPergunta', id: p.id });
+                  }}
+                />
               ))}
             </ul>
-          </div>
+          </details>
         );
       })}
       <form
         onSubmit={(e) => {
           e.preventDefault();
           if (!texto.trim()) return;
-          despachar({ tipo: 'adicionarPergunta', pergunta: { id: novoId('p'), texto: texto.trim(), onde, resposta: '', resolvida: false, criadaEm: new Date().toISOString() } });
+          despachar({
+            tipo: 'adicionarPergunta',
+            pergunta: { id: novoId('p'), texto: texto.trim(), onde, resposta: '', resolvida: false, criadaEm: new Date().toISOString() },
+          });
           setTexto('');
         }}
       >
@@ -119,7 +191,7 @@ function Campos() {
   );
 }
 
-function Notas() {
+function Notas({ onRemover }: { onRemover: (r: Removido) => void }) {
   const { estado, despachar } = useEstado();
   const [editando, setEditando] = useState<{ id: string; titulo: string; texto: string } | null>(null);
 
@@ -157,29 +229,30 @@ function Notas() {
         </button>
       )}
       <ul className="lista-limpa" style={{ marginTop: 12 }}>
-        {estado.caderno.notas.map((n) => (
-          <li key={n.id} className="item-lista" style={{ alignItems: 'flex-start' }}>
-            <span className="meio">
-              <span className="titulo-item">{n.titulo || 'Sem título'}</span>
-              <br />
-              <span className="suave" style={{ whiteSpace: 'pre-wrap' }}>
-                {n.texto}
-              </span>
-            </span>
-            <span className="acoes" style={{ marginTop: 0 }}>
+        {estado.caderno.notas.map((n, i) => (
+          <li key={n.id} className="pergunta-caderno">
+            <p className="titulo-item" style={{ margin: 0 }}>
+              {n.titulo || 'Sem título'}
+            </p>
+            <p className="suave" style={{ whiteSpace: 'pre-wrap', margin: '4px 0' }}>
+              {n.texto}
+            </p>
+            <div className="linha-acoes">
               <button type="button" className="botao botao-secundario" onClick={() => setEditando({ id: n.id, titulo: n.titulo, texto: n.texto })}>
                 Editar
               </button>
               <button
                 type="button"
-                className="botao botao-perigo"
+                className="botao-discreto"
+                aria-label={`Apagar a anotação ${n.titulo || 'sem título'}`}
                 onClick={() => {
-                  if (window.confirm(`Apagar a nota "${n.titulo || 'sem título'}"?`)) despachar({ tipo: 'apagarNota', id: n.id });
+                  onRemover({ tipo: 'nota', item: n, posicao: i });
+                  despachar({ tipo: 'apagarNota', id: n.id });
                 }}
               >
                 Apagar
               </button>
-            </span>
+            </div>
           </li>
         ))}
       </ul>
@@ -189,19 +262,31 @@ function Notas() {
 
 export function Caderno() {
   useTitulo('Meu caderno');
+  const { despachar } = useEstado();
+  const [removido, setRemovido] = useState<Removido | null>(null);
+  const fechar = useCallback(() => setRemovido(null), []);
+
+  function desfazer() {
+    if (!removido) return;
+    if (removido.tipo === 'pergunta') despachar({ tipo: 'restaurarPergunta', pergunta: removido.item, posicao: removido.posicao });
+    else despachar({ tipo: 'restaurarNota', nota: removido.item, posicao: removido.posicao });
+    setRemovido(null);
+  }
+
   return (
     <>
       <h1>Meu caderno</h1>
       <p className="aviso" role="note">
         🔒 Tudo aqui fica <strong>só neste aparelho</strong>. Nada vai para a internet. Para levar do PC para o celular, exporte e importe o arquivo.
       </p>
-      <Perguntas />
+      <Perguntas onRemover={setRemovido} />
       <Campos />
-      <Notas />
+      <Notas onRemover={setRemovido} />
       <section className="cartao" aria-labelledby="t-arquivo">
         <h2 id="t-arquivo">Levar para outro aparelho</h2>
         <ImportarExportar escopo="caderno" />
       </section>
+      <AvisoDesfazer removido={removido} onDesfazer={desfazer} onFechar={fechar} />
     </>
   );
 }

@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { useTitulo } from '../componentes/Comuns';
 import { fontesPorId, indice } from '../conteudo/carregar';
 import { normalizar } from '../dominio/busca';
+import { plural } from '../dominio/texto';
 
 export function Glossario() {
   useTitulo('Glossário');
@@ -36,7 +37,7 @@ export function Glossario() {
         />
       </label>
       <p className="dica" aria-live="polite">
-        {termos.length} termo(s).
+        {plural(termos.length, 'termo', 'termos')}.
       </p>
       <ul className="lista-limpa">
         {termos.map((t) => (

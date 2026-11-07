@@ -5,6 +5,7 @@ import { indice } from '../conteudo/carregar';
 import type { Modulo as TModulo } from '../conteudo/tipos';
 import type { ProgressoLicao } from '../dominio/estado';
 import { NaoEncontrado } from './NaoEncontrado';
+import { plural } from '../dominio/texto';
 
 function aprovadas(m: TModulo, progresso: Record<string, ProgressoLicao>) {
   return m.licoes.filter((l) => progresso[l.id]?.aprovadaEm).length;
@@ -38,7 +39,7 @@ export function Trilha() {
                   <span className="suave">{m.descricao}</span>
                   <br />
                   <span className="dica">
-                    {prontas ? `${prontas} de ${m.licoes.length} lições prontas · ${feitas} aprovada(s)` : `${m.licoes.length} lições · em breve`}
+                    {prontas ? `${prontas} de ${m.licoes.length} lições prontas · ${plural(feitas, 'aprovada', 'aprovadas')}` : `${m.licoes.length} lições · em breve`}
                   </span>
                 </span>
               </Link>

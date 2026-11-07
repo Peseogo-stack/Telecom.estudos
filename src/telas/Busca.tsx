@@ -4,6 +4,7 @@ import { useEstado } from '../app/EstadoApp';
 import { useTitulo } from '../componentes/Comuns';
 import { indice } from '../conteudo/carregar';
 import { type ItemBusca, buscar, normalizar } from '../dominio/busca';
+import { plural } from '../dominio/texto';
 
 const ROTULOS: Record<ItemBusca['tipo'], string> = {
   licao: 'Lições',
@@ -64,7 +65,7 @@ export function Busca() {
         </label>
       </form>
       <p className="dica" aria-live="polite">
-        {q.trim().length >= 2 ? `${resultados.length} resultado(s).` : 'Digite pelo menos 2 letras. Acentos não importam.'}
+        {q.trim().length >= 2 ? `${plural(resultados.length, 'resultado', 'resultados')}.` : 'Digite pelo menos 2 letras. Acentos não importam.'}
       </p>
       {grupos.map((g) => (
         <section key={g.tipo} className="cartao" aria-labelledby={`g-${g.tipo}`}>

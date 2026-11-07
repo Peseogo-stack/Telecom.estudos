@@ -6,6 +6,7 @@ import { indice, licoesDisponiveis, resumoDaLicao } from '../conteudo/carregar';
 import { formatarDia, NOMES_DIAS, diaDaSemana } from '../dominio/datas';
 import { aprovada, ehDiaSoRevisao, proximaLicao, semanaAtual, sequencia, datasDaSemana } from '../dominio/plano';
 import { proximaRevisao, totalVencidas } from '../dominio/revisao';
+import { plural } from '../dominio/texto';
 
 export function Hoje() {
   useTitulo('Hoje');
@@ -30,13 +31,13 @@ export function Hoje() {
       </p>
       <h1>Hoje</h1>
       <p className="suave">
-        {dias > 0 ? `${dias} dia${dias > 1 ? 's' : ''} seguido${dias > 1 ? 's' : ''} estudando. ` : ''}
+        {dias > 0 ? `${plural(dias, 'dia seguido', 'dias seguidos')} estudando. ` : ''}
         Semana {semana} de 13 do plano.
       </p>
 
       <section className={`cartao${vencidas ? ' cartao-destaque' : ''}`} aria-labelledby="t-revisao">
         <p className="rotulo">Revisão de hoje</p>
-        <h2 id="t-revisao">{vencidas ? `${vencidas} questão(ões) para revisar` : 'Nada para revisar hoje'}</h2>
+        <h2 id="t-revisao">{vencidas ? `${plural(vencidas, 'questão', 'questões')} para revisar` : 'Nada para revisar hoje'}</h2>
         {vencidas ? (
           <>
             <p className="suave">Cerca de {Math.max(2, Math.ceil(Math.min(vencidas, 20) * 0.6))} min. São as questões que você errou, de volta no dia certo.</p>

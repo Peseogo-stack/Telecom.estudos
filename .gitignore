@@ -1,0 +1,9 @@
+node_modules
+dist
+src/gerado/
+test-results
+playwright-report
+*.local
+.DS_Store
+.palavras-proibidas.txt
+docs/prints/

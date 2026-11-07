@@ -1,0 +1,41 @@
+{
+  "name": "fibra-em-campo",
+  "private": true,
+  "version": "0.2.0",
+  "description": "App de estudo e consulta em campo sobre telecom numa distribuidora de energia (PWA offline).",
+  "type": "module",
+  "scripts": {
+    "conteudo": "node scripts/compilar-conteudo.mjs",
+    "validar": "node scripts/validar-conteudo.mjs",
+    "validar:links": "node scripts/validar-conteudo.mjs --links",
+    "dev": "npm run conteudo && vite",
+    "build": "npm run validar && npm run conteudo && tsc -b && vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "test": "vitest run",
+    "test:e2e": "playwright test --trace off",
+    "verificar": "npm run build && npm test && npm run test:e2e"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.28.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.1",
+    "@playwright/test": "1.63.0",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.1.0",
+    "@testing-library/dom": "10.4.0",
+    "@types/node": "22.10.2",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.4",
+    "gray-matter": "4.0.3",
+    "jsdom": "25.0.1",
+    "marked": "14.1.4",
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vite-plugin-pwa": "0.21.1",
+    "vitest": "2.1.8"
+  }
+}

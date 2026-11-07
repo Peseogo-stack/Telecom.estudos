@@ -282,8 +282,10 @@ main:focus {
   padding-bottom: env(safe-area-inset-bottom);
 }
 .navegacao a {
-  flex: 1 1 0;
-  min-width: 0;
+  /* Largura pelo tamanho do rótulo (e não 5 partes iguais): "Ferramentas" ganha mais espaço,
+     e a barra cabe numa linha mesmo com fontes mais largas (DejaVu, Roboto…). */
+  flex: 1 1 auto;
+  min-width: 48px;
   min-height: 56px;
   padding: 0 1px;
   display: flex;

@@ -55,10 +55,17 @@ test.describe('estudo à noite em Boa Vista (21h = 01h do dia seguinte em UTC)',
 });
 
 test.describe('modo sol: barra de baixo e título', () => {
+  // A fonte do sistema muda de aparelho para aparelho. DejaVu Sans é bem mais larga que Inter e Roboto:
+  // se couber com ela, cabe nos celulares. (No CI do GitHub, a fonte padrão já é larga.)
+  for (const fonte of ['padrão', 'DejaVu Sans'] as const)
   for (const largura of [320, 360, 390]) {
-    test(`rótulos não se encostam e o título fica numa linha (${largura} px)`, async ({ page }) => {
+    test(`rótulos não se encostam e o título fica numa linha (${largura} px, fonte ${fonte})`, async ({ page }) => {
       await page.setViewportSize({ width: largura, height: 800 });
       await semear(page, { ajustes: { tema: 'claro', sol: true, inicioPlano: null, diasSoRevisao: [], soRevisaoAte: null } });
+      if (fonte !== 'padrão') {
+        await page.addStyleTag({ content: `html, body, body * { font-family: '${fonte}', sans-serif !important; }` });
+        await page.evaluate(() => document.fonts.ready);
+      }
       const caixas = await page.locator('.navegacao a span').evaluateAll((els) =>
         els.map((e) => {
           const r = e.getBoundingClientRect();

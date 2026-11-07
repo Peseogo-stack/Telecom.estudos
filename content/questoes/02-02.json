@@ -1,0 +1,252 @@
+[
+  {
+    "id": "02-02-q1",
+    "licao": "02-02",
+    "enunciado": "A ficha do cabo diz \"monomodo 9/125\". O que esses números são?",
+    "alternativas": [
+      {
+        "texto": "Diâmetros em µm: núcleo de 9 e casca de 125.",
+        "correta": true,
+        "explicacao": "Certo. É o jeito padrão de descrever a fibra."
+      },
+      {
+        "texto": "9 fibras em 125 metros.",
+        "correta": false,
+        "explicacao": "Número de fibras e comprimento aparecem de outro jeito na gravação."
+      },
+      {
+        "texto": "9 tubos de 125 fibras.",
+        "correta": false,
+        "explicacao": "Não são tubos nem fibras."
+      },
+      {
+        "texto": "Perda de 9 dB em 125 km.",
+        "correta": false,
+        "explicacao": "Não é perda; são diâmetros."
+      }
+    ],
+    "fontes": [
+      "foa-fibra"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-02-q2",
+    "licao": "02-02",
+    "enunciado": "Na emenda por fusão, o que o decapador tira para a fibra ir para a máquina?",
+    "alternativas": [
+      {
+        "texto": "O revestimento colorido (e o buffer de 900 µm, se houver), deixando o vidro de 125 µm.",
+        "correta": true,
+        "explicacao": "Certo. A máquina emenda o vidro nu."
+      },
+      {
+        "texto": "A casca, deixando só o núcleo.",
+        "correta": false,
+        "explicacao": "A casca é vidro e fica; sem ela a luz não seria guiada."
+      },
+      {
+        "texto": "O núcleo.",
+        "correta": false,
+        "explicacao": "O núcleo é por onde a luz passa; nunca se tira."
+      },
+      {
+        "texto": "Nada: a fusão é feita por cima do revestimento.",
+        "correta": false,
+        "explicacao": "Com revestimento não há como fundir o vidro."
+      }
+    ],
+    "fontes": [
+      "foa-fibra"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-02-q3",
+    "licao": "02-02",
+    "enunciado": "Dá para emendar uma fibra de cordão com buffer de 900 µm numa fibra de 250 µm do tubo loose?",
+    "alternativas": [
+      {
+        "texto": "Não: os diâmetros são diferentes.",
+        "correta": false,
+        "explicacao": "O vidro por dentro é o mesmo: 125 µm."
+      },
+      {
+        "texto": "Sim: depois de decapar, as duas têm o mesmo vidro de 125 µm.",
+        "correta": true,
+        "explicacao": "Certo. O 900 µm e o 250 µm são só proteções."
+      },
+      {
+        "texto": "Só com conector.",
+        "correta": false,
+        "explicacao": "A fusão funciona normalmente."
+      },
+      {
+        "texto": "Só se as duas forem multimodo.",
+        "correta": false,
+        "explicacao": "Vale para monomodo também."
+      }
+    ],
+    "fontes": [
+      "foa-fibra",
+      "prysmian-tight-buffer"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-02-q4",
+    "licao": "02-02",
+    "enunciado": "Qual é o diâmetro típico do revestimento primário colorido?",
+    "alternativas": [
+      {
+        "texto": "Cerca de 250 µm.",
+        "correta": true,
+        "explicacao": "Certo. Uma ficha traz 245 ± 10 µm."
+      },
+      {
+        "texto": "9 µm.",
+        "correta": false,
+        "explicacao": "9 µm é o núcleo."
+      },
+      {
+        "texto": "125 µm.",
+        "correta": false,
+        "explicacao": "125 µm é a casca."
+      },
+      {
+        "texto": "900 µm.",
+        "correta": false,
+        "explicacao": "900 µm é o tight buffer."
+      }
+    ],
+    "fontes": [
+      "prysmian-g652d"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-02-q5",
+    "licao": "02-02",
+    "enunciado": "Na etiqueta de um cordão está \"50/125\". O que isso diz?",
+    "alternativas": [
+      {
+        "texto": "É monomodo.",
+        "correta": false,
+        "explicacao": "Monomodo é 9/125."
+      },
+      {
+        "texto": "É multimodo, com núcleo de 50 µm.",
+        "correta": true,
+        "explicacao": "Certo. Não serve para os links de longa distância da rede externa."
+      },
+      {
+        "texto": "Tem 50 metros.",
+        "correta": false,
+        "explicacao": "É diâmetro, não comprimento."
+      },
+      {
+        "texto": "Perde 50 dB.",
+        "correta": false,
+        "explicacao": "Não é perda."
+      }
+    ],
+    "fontes": [
+      "foa-fibra"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-02-q6",
+    "licao": "02-02",
+    "enunciado": "Onde aparece o tight buffer de 900 µm?",
+    "alternativas": [
+      {
+        "texto": "Em cordões e cabos internos, para facilitar o manuseio.",
+        "correta": true,
+        "explicacao": "Certo. Nos cabos externos, as fibras ficam com 250 µm dentro dos tubos loose."
+      },
+      {
+        "texto": "Só em cabo OPGW.",
+        "correta": false,
+        "explicacao": "Não é exclusivo de OPGW."
+      },
+      {
+        "texto": "Dentro do núcleo.",
+        "correta": false,
+        "explicacao": "É proteção externa, sobre o revestimento."
+      },
+      {
+        "texto": "Em todo cabo externo de postes.",
+        "correta": false,
+        "explicacao": "Nos cabos externos de tubo loose, o comum é 250 µm."
+      }
+    ],
+    "fontes": [
+      "prysmian-tight-buffer"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-02-q7",
+    "licao": "02-02",
+    "enunciado": "A ficha da G.652.D fala em \"diâmetro do campo modal de 8,6 a 9,2 µm\". O que guardar disso no dia a dia?",
+    "alternativas": [
+      {
+        "texto": "Que a luz ocupa uma área de cerca de 9 µm no centro da fibra.",
+        "correta": true,
+        "explicacao": "Certo. O campo modal é um pouco maior que o núcleo nominal; para o dia a dia, \"9 µm\"."
+      },
+      {
+        "texto": "Que a casca muda de tamanho.",
+        "correta": false,
+        "explicacao": "A casca é 125 µm."
+      },
+      {
+        "texto": "Que a fibra é multimodo.",
+        "correta": false,
+        "explicacao": "Campo modal é um parâmetro da monomodo."
+      },
+      {
+        "texto": "Que a perda é 9 dB.",
+        "correta": false,
+        "explicacao": "Não é perda."
+      }
+    ],
+    "fontes": [
+      "itu-g652-2024"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "02-02-q8",
+    "licao": "02-02",
+    "enunciado": "Um colega chama a camada colorida da fibra de \"casca\". Está certo?",
+    "alternativas": [
+      {
+        "texto": "Sim, é o nome técnico.",
+        "correta": false,
+        "explicacao": "Casca é o vidro de 125 µm em volta do núcleo."
+      },
+      {
+        "texto": "Não: a camada colorida é o revestimento (acrilato); a casca é vidro.",
+        "correta": true,
+        "explicacao": "Certo. Trocar os nomes confunde na hora de ler ficha e manual."
+      },
+      {
+        "texto": "Sim, nas fibras G.657.",
+        "correta": false,
+        "explicacao": "O nome não muda com o tipo da fibra."
+      },
+      {
+        "texto": "Depende da cor.",
+        "correta": false,
+        "explicacao": "A cor não muda o nome da camada."
+      }
+    ],
+    "fontes": [
+      "foa-fibra",
+      "prysmian-g652d"
+    ],
+    "dificuldade": 1
+  }
+]

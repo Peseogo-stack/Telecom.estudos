@@ -5,7 +5,8 @@
     "texto": "Que cabo é este (tipo, vão AS, seco ou geleia, número de fibras, fabricante)?",
     "dica": "Gravação na capa do cabo",
     "licoes": [
-      "03-01"
+      "03-01",
+      "02-02"
     ]
   },
   {
@@ -59,7 +60,8 @@
     "texto": "Que comprimentos de onda o OTDR tem?",
     "dica": "Etiqueta e tela do OTDR",
     "licoes": [
-      "06-05"
+      "06-05",
+      "02-05"
     ]
   },
   {
@@ -68,7 +70,8 @@
     "texto": "Que transceptores (SFP) estão nos switches? Eles têm leitura de potência (DOM)?",
     "dica": "Etiqueta do SFP; leitura no switch, se tiver permissão",
     "licoes": [
-      "11-03"
+      "11-03",
+      "02-07"
     ]
   },
   {
@@ -96,6 +99,15 @@
     "dica": "Observar do chão, sem se aproximar; confirmar com a engenharia",
     "licoes": [
       "10-01"
+    ]
+  },
+  {
+    "id": "a12",
+    "onde": "sozinho",
+    "texto": "Os cordões do rack e do DIO são amarelos (monomodo) ou laranja/água (multimodo)?",
+    "dica": "Cor da capa dos cordões e a gravação neles",
+    "licoes": [
+      "02-03"
     ]
   },
   {
@@ -192,7 +204,10 @@
     "licoes": [
       "02-04",
       "06-05",
-      "09-05"
+      "09-05",
+      "02-01",
+      "02-02",
+      "02-06"
     ]
   },
   {
@@ -238,6 +253,16 @@
     "dica": "Procedimentos de segurança (intranet)",
     "licoes": [
       "10-05"
+    ]
+  },
+  {
+    "id": "b16",
+    "onde": "documentos",
+    "texto": "Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem?",
+    "dica": "Projeto executivo ou memorial de cálculo da rede",
+    "licoes": [
+      "02-06",
+      "02-07"
     ]
   },
   {
@@ -320,7 +345,8 @@
     "dica": "Almoxarifado",
     "licoes": [
       "03-05",
-      "04-06"
+      "04-06",
+      "02-04"
     ]
   },
   {
@@ -375,6 +401,15 @@
     "dica": "Engenharia / operação",
     "licoes": [
       "10-01"
+    ]
+  },
+  {
+    "id": "c16",
+    "onde": "outras-areas",
+    "texto": "Há fibra multimodo nos racks das subestações ou do data center? Em quais equipamentos?",
+    "dica": "Engenharia / TI de infraestrutura",
+    "licoes": [
+      "02-03"
     ]
   },
   {
@@ -438,7 +473,8 @@
     "texto": "A rede para as unidades é ponto a ponto (SFP) ou tem PON?",
     "dica": "",
     "licoes": [
-      "04-06"
+      "04-06",
+      "02-05"
     ]
   },
   {
@@ -485,6 +521,15 @@
     "dica": "",
     "licoes": [
       "09-03"
+    ]
+  },
+  {
+    "id": "d13",
+    "onde": "colega",
+    "texto": "Que potências (dBm) costumamos ver nos equipamentos dos links, e a partir de quanto a equipe considera alarme?",
+    "dica": "",
+    "licoes": [
+      "02-07"
     ]
   }
 ]

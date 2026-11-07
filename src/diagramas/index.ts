@@ -9,6 +9,13 @@ import { GlosaFluxo } from './GlosaFluxo';
 import { GestorFiscal } from './GestorFiscal';
 import { Escalonamento } from './Escalonamento';
 import { RelatorioAceite } from './RelatorioAceite';
+import { FibraReflexao } from './FibraReflexao';
+import { FibraCamadas } from './FibraCamadas';
+import { SmMm } from './SmMm';
+import { RaiosCurvatura } from './RaiosCurvatura';
+import { EspectroBandas } from './EspectroBandas';
+import { CausasPerda } from './CausasPerda';
+import { EscadaDbm } from './EscadaDbm';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -18,4 +25,11 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'gestor-fiscal': GestorFiscal,
   'escalonamento': Escalonamento,
   'relatorio-aceite': RelatorioAceite,
+  'fibra-reflexao': FibraReflexao,
+  'fibra-camadas': FibraCamadas,
+  'sm-mm': SmMm,
+  'raios-curvatura': RaiosCurvatura,
+  'espectro-bandas': EspectroBandas,
+  'causas-perda': CausasPerda,
+  'escada-dbm': EscadaDbm,
 };

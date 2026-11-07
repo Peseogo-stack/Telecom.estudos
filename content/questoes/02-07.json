@@ -1,0 +1,251 @@
+[
+  {
+    "id": "02-07-q1",
+    "licao": "02-07",
+    "enunciado": "O transmissor manda 0 dBm e o enlace perde 12 dB. Quanto chega?",
+    "alternativas": [
+      {
+        "texto": "−12 dBm",
+        "correta": true,
+        "explicacao": "Certo. Potência que chega = potência que sai − perdas."
+      },
+      {
+        "texto": "+12 dBm",
+        "correta": false,
+        "explicacao": "Perda diminui a potência."
+      },
+      {
+        "texto": "12 mW",
+        "correta": false,
+        "explicacao": "0 dBm = 1 mW; depois de perder, chega bem menos."
+      },
+      {
+        "texto": "0 dBm",
+        "correta": false,
+        "explicacao": "Esqueceu de tirar a perda."
+      }
+    ],
+    "fontes": [
+      "foa-db"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-07-q2",
+    "licao": "02-07",
+    "enunciado": "Quanto é −3 dBm em mW?",
+    "alternativas": [
+      {
+        "texto": "0,5 mW",
+        "correta": true,
+        "explicacao": "Certo. −3 dB é metade de 1 mW."
+      },
+      {
+        "texto": "3 mW",
+        "correta": false,
+        "explicacao": "Seria cerca de +4,8 dBm."
+      },
+      {
+        "texto": "−3 mW",
+        "correta": false,
+        "explicacao": "Potência em mW nunca é negativa."
+      },
+      {
+        "texto": "0,03 mW",
+        "correta": false,
+        "explicacao": "Seria cerca de −15 dBm."
+      }
+    ],
+    "fontes": [
+      "foa-db"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-07-q3",
+    "licao": "02-07",
+    "enunciado": "A referência do power meter era −20,0 dBm e, com o enlace, ele leu −22,3 dBm. Qual a perda do enlace?",
+    "alternativas": [
+      {
+        "texto": "2,3 dB",
+        "correta": true,
+        "explicacao": "Certo. Perda = referência − medida = −20,0 − (−22,3)."
+      },
+      {
+        "texto": "42,3 dB",
+        "correta": false,
+        "explicacao": "Somou em vez de subtrair."
+      },
+      {
+        "texto": "−2,3 dBm",
+        "correta": false,
+        "explicacao": "Perda é em dB (relação), não em dBm."
+      },
+      {
+        "texto": "22,3 dB",
+        "correta": false,
+        "explicacao": "Esqueceu de tirar a referência."
+      }
+    ],
+    "fontes": [
+      "foa-db"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-07-q4",
+    "licao": "02-07",
+    "enunciado": "Uma ONU GPON classe B+ tem sensibilidade de −27 dBm. Isso equivale a quanto?",
+    "alternativas": [
+      {
+        "texto": "Cerca de 0,002 mW (2 µW)",
+        "correta": true,
+        "explicacao": "Certo. 10^(−27/10) ≈ 0,002 mW."
+      },
+      {
+        "texto": "27 mW",
+        "correta": false,
+        "explicacao": "Valor alto demais e positivo."
+      },
+      {
+        "texto": "0,27 mW",
+        "correta": false,
+        "explicacao": "Seria cerca de −5,7 dBm."
+      },
+      {
+        "texto": "−27 mW",
+        "correta": false,
+        "explicacao": "Potência em mW não é negativa."
+      }
+    ],
+    "fontes": [
+      "foa-db",
+      "fs-gpon-onu-bplus"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-07-q5",
+    "licao": "02-07",
+    "enunciado": "A tela do switch mostra Rx de −25 dBm num link e −18 dBm em outro. Qual está mais forte?",
+    "alternativas": [
+      {
+        "texto": "O de −18 dBm.",
+        "correta": true,
+        "explicacao": "Certo. Quanto mais negativo, mais fraco."
+      },
+      {
+        "texto": "O de −25 dBm.",
+        "correta": false,
+        "explicacao": "−25 é mais negativo, logo mais fraco."
+      },
+      {
+        "texto": "Os dois são iguais.",
+        "correta": false,
+        "explicacao": "Há 7 dB de diferença."
+      },
+      {
+        "texto": "Não dá para comparar dBm.",
+        "correta": false,
+        "explicacao": "Dá: dBm é potência absoluta."
+      }
+    ],
+    "fontes": [
+      "foa-db"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-07-q6",
+    "licao": "02-07",
+    "enunciado": "Um colega somou \"−10 dBm + −10 dBm = −20 dBm\" para dois sinais. O que está errado?",
+    "alternativas": [
+      {
+        "texto": "Potências em dBm não se somam assim; o que se soma são perdas em dB.",
+        "correta": true,
+        "explicacao": "Certo. Dois sinais iguais somados dão o dobro da potência, ou seja, +3 dB (cerca de −7 dBm)."
+      },
+      {
+        "texto": "Nada, está certo.",
+        "correta": false,
+        "explicacao": "Somar dBm assim não faz sentido físico."
+      },
+      {
+        "texto": "Deveria dar −100 dBm.",
+        "correta": false,
+        "explicacao": "Também não."
+      },
+      {
+        "texto": "Deveria dar 0 dBm.",
+        "correta": false,
+        "explicacao": "Também não."
+      }
+    ],
+    "fontes": [
+      "foa-db"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "02-07-q7",
+    "licao": "02-07",
+    "enunciado": "Um enlace perdeu 3 dB a mais depois de uma obra. O que isso significa em potência?",
+    "alternativas": [
+      {
+        "texto": "Chega metade da luz que chegava antes.",
+        "correta": true,
+        "explicacao": "Certo. −3 dB = metade."
+      },
+      {
+        "texto": "Quase nada mudou.",
+        "correta": false,
+        "explicacao": "3 dB já é metade da potência."
+      },
+      {
+        "texto": "Chega um terço.",
+        "correta": false,
+        "explicacao": "Um terço seria cerca de −4,8 dB."
+      },
+      {
+        "texto": "Chega o dobro.",
+        "correta": false,
+        "explicacao": "Perda diminui a potência."
+      }
+    ],
+    "fontes": [
+      "foa-db"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-07-q8",
+    "licao": "02-07",
+    "enunciado": "Qual a diferença entre dB e dBm?",
+    "alternativas": [
+      {
+        "texto": "dB é relação (perda ou ganho); dBm é potência, comparada com 1 mW.",
+        "correta": true,
+        "explicacao": "Certo. Relatório de perda usa dB; tela de equipamento mostra dBm."
+      },
+      {
+        "texto": "São a mesma coisa.",
+        "correta": false,
+        "explicacao": "Um é relação, o outro é potência absoluta."
+      },
+      {
+        "texto": "dBm é usado só em multimodo.",
+        "correta": false,
+        "explicacao": "Vale para qualquer fibra."
+      },
+      {
+        "texto": "dB é potência e dBm é perda.",
+        "correta": false,
+        "explicacao": "É o contrário."
+      }
+    ],
+    "fontes": [
+      "foa-db"
+    ],
+    "dificuldade": 1
+  }
+]

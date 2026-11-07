@@ -1,0 +1,252 @@
+[
+  {
+    "id": "02-06-q1",
+    "licao": "02-06",
+    "enunciado": "No OTDR, um degrau aparece grande em 1550 nm e quase some em 1310 nm. Qual a suspeita principal?",
+    "alternativas": [
+      {
+        "texto": "Curvatura (fibra dobrada demais).",
+        "correta": true,
+        "explicacao": "Certo. A perda por curvatura cresce nos comprimentos de onda longos; uma emenda ruim perde parecido nos dois."
+      },
+      {
+        "texto": "Fusão mal feita.",
+        "correta": false,
+        "explicacao": "Fusão ruim costuma perder de forma parecida em 1310 e 1550."
+      },
+      {
+        "texto": "Fim de fibra.",
+        "correta": false,
+        "explicacao": "Fim de fibra aparece igual nos dois."
+      },
+      {
+        "texto": "Equipamento descalibrado.",
+        "correta": false,
+        "explicacao": "O contraste entre λ é a pista típica de curvatura."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-06-q2",
+    "licao": "02-06",
+    "enunciado": "Numa fibra reta e boa, por que 1550 nm perde menos que 1310 nm?",
+    "alternativas": [
+      {
+        "texto": "Porque o espalhamento de Rayleigh cai muito com o comprimento de onda (1/λ⁴).",
+        "correta": true,
+        "explicacao": "Certo. Medidas de campo dão em média 0,34 dB/km em 1310 e 0,19 dB/km em 1550."
+      },
+      {
+        "texto": "Porque o laser de 1550 é mais forte.",
+        "correta": false,
+        "explicacao": "A atenuação é da fibra, não do transmissor."
+      },
+      {
+        "texto": "Porque 1550 nm é visível.",
+        "correta": false,
+        "explicacao": "1550 nm é infravermelho."
+      },
+      {
+        "texto": "Não é verdade: 1310 sempre perde menos.",
+        "correta": false,
+        "explicacao": "Numa fibra boa, 1550 perde menos."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-06-q3",
+    "licao": "02-06",
+    "enunciado": "Pelo máximo da G.652.D, quanto um cabo de 20 km pode perder em 1550 nm?",
+    "alternativas": [
+      {
+        "texto": "6 dB",
+        "correta": true,
+        "explicacao": "Certo. 20 × 0,30 = 6 dB."
+      },
+      {
+        "texto": "8 dB",
+        "correta": false,
+        "explicacao": "8 dB seria em 1310 nm (20 × 0,40)."
+      },
+      {
+        "texto": "3,8 dB",
+        "correta": false,
+        "explicacao": "Seria com a média medida (0,19 dB/km), que não é garantia."
+      },
+      {
+        "texto": "20 dB",
+        "correta": false,
+        "explicacao": "Seria 1 dB/km, muito acima do limite."
+      }
+    ],
+    "fontes": [
+      "itu-g652-2024"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-06-q4",
+    "licao": "02-06",
+    "enunciado": "A ficha do cabo diz 0,22 dB/km em 1550 nm; a norma diz no máximo 0,30. Qual usar no orçamento de potência?",
+    "alternativas": [
+      {
+        "texto": "O valor que o projeto ou o contrato mandar; na falta, o máximo da norma é o mais seguro.",
+        "correta": true,
+        "explicacao": "Certo. A ficha mostra o produto; a norma, o teto."
+      },
+      {
+        "texto": "Sempre o menor, para o projeto passar.",
+        "correta": false,
+        "explicacao": "Usar o valor mais otimista esconde risco."
+      },
+      {
+        "texto": "A média de campo, 0,19 dB/km.",
+        "correta": false,
+        "explicacao": "Média não é garantia."
+      },
+      {
+        "texto": "Tanto faz.",
+        "correta": false,
+        "explicacao": "A escolha muda o resultado do orçamento."
+      }
+    ],
+    "fontes": [
+      "itu-g652-2024",
+      "prysmian-g652d",
+      "itu-gsup39"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-06-q5",
+    "licao": "02-06",
+    "enunciado": "Por que medir uma fibra também em comprimento de onda longo (1550 ou 1625 nm)?",
+    "alternativas": [
+      {
+        "texto": "Porque a curvatura aparece muito mais neles e fica fácil de achar.",
+        "correta": true,
+        "explicacao": "Certo. Em 1310 nm uma curva pode passar despercebida."
+      },
+      {
+        "texto": "Porque em 1310 nm a fibra não funciona.",
+        "correta": false,
+        "explicacao": "1310 nm funciona normalmente."
+      },
+      {
+        "texto": "Porque 1625 nm mede a velocidade da internet.",
+        "correta": false,
+        "explicacao": "Não é medida de velocidade."
+      },
+      {
+        "texto": "Para aquecer a fibra.",
+        "correta": false,
+        "explicacao": "Não tem relação."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-06-q6",
+    "licao": "02-06",
+    "enunciado": "Quais são as causas da atenuação que a ITU lista para a fibra?",
+    "alternativas": [
+      {
+        "texto": "Espalhamento de Rayleigh, absorção pela água, macrocurvatura e microcurvatura.",
+        "correta": true,
+        "explicacao": "Certo. São as causas que a ITU lista na G.Sup39; a perda por curvatura cresce acima de 1550 nm."
+      },
+      {
+        "texto": "Só sujeira nos conectores.",
+        "correta": false,
+        "explicacao": "Sujeira causa perda nos conectores, não ao longo da fibra."
+      },
+      {
+        "texto": "Vento e chuva no cabo.",
+        "correta": false,
+        "explicacao": "Podem causar danos, mas não são as causas da atenuação da fibra."
+      },
+      {
+        "texto": "A cor da fibra.",
+        "correta": false,
+        "explicacao": "A cor do revestimento não muda a atenuação."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-06-q7",
+    "licao": "02-06",
+    "enunciado": "A perda de um enlace aumentou depois que o fornecedor reorganizou a caixa de emenda, mas nada quebrou. Onde procurar primeiro?",
+    "alternativas": [
+      {
+        "texto": "Curvas fechadas e fibras apertadas na bandeja.",
+        "correta": true,
+        "explicacao": "Certo. Curvatura e pressão (micro) fazem a luz escapar."
+      },
+      {
+        "texto": "No laser do equipamento.",
+        "correta": false,
+        "explicacao": "O transmissor não mudou; a mudança foi na caixa."
+      },
+      {
+        "texto": "Na cor dos tubos.",
+        "correta": false,
+        "explicacao": "Cor não causa perda."
+      },
+      {
+        "texto": "Na altura do poste.",
+        "correta": false,
+        "explicacao": "Altura não tem relação com a perda óptica."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-06-q8",
+    "licao": "02-06",
+    "enunciado": "Qual é a atenuação média medida em redes reais com fibra G.652, em 1310 nm, segundo a ITU?",
+    "alternativas": [
+      {
+        "texto": "Cerca de 0,34 dB/km",
+        "correta": true,
+        "explicacao": "Certo. Em 1550 nm, cerca de 0,19 dB/km (G.Sup39, Tabela 10-4)."
+      },
+      {
+        "texto": "Cerca de 3 dB/km",
+        "correta": false,
+        "explicacao": "Ordem de grandeza de multimodo em 850 nm."
+      },
+      {
+        "texto": "Cerca de 0,04 dB/km",
+        "correta": false,
+        "explicacao": "Muito abaixo do real."
+      },
+      {
+        "texto": "Exatamente 0,40 dB/km",
+        "correta": false,
+        "explicacao": "0,40 é o máximo da norma, não a média medida."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 2
+  }
+]

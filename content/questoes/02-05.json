@@ -1,0 +1,251 @@
+[
+  {
+    "id": "02-05-q1",
+    "licao": "02-05",
+    "enunciado": "O provedor diz que a OLT dele \"desce em 1490 e sobe em 1310\". Que tecnologia é?",
+    "alternativas": [
+      {
+        "texto": "GPON.",
+        "correta": true,
+        "explicacao": "Certo. GPON: descida 1480–1500 nm e subida 1300–1320 nm."
+      },
+      {
+        "texto": "XGS-PON.",
+        "correta": false,
+        "explicacao": "XGS-PON desce em 1575–1580 e sobe em 1260–1280 nm."
+      },
+      {
+        "texto": "Ethernet multimodo.",
+        "correta": false,
+        "explicacao": "Multimodo usa 850 nm."
+      },
+      {
+        "texto": "Vídeo analógico.",
+        "correta": false,
+        "explicacao": "Não é o caso."
+      }
+    ],
+    "fontes": [
+      "itu-g984-folheto"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-05-q2",
+    "licao": "02-05",
+    "enunciado": "Em que comprimento de onda o XGS-PON manda dados para a ONU (descida)?",
+    "alternativas": [
+      {
+        "texto": "1310 nm",
+        "correta": false,
+        "explicacao": "1310 nm é a subida do GPON."
+      },
+      {
+        "texto": "1490 nm",
+        "correta": false,
+        "explicacao": "1490 nm é a descida do GPON."
+      },
+      {
+        "texto": "1577 nm (faixa de 1575 a 1580)",
+        "correta": true,
+        "explicacao": "Certo. A subida do XGS-PON é em 1260–1280 nm."
+      },
+      {
+        "texto": "850 nm",
+        "correta": false,
+        "explicacao": "850 nm é multimodo."
+      }
+    ],
+    "fontes": [
+      "itu-g9807-folheto"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-05-q3",
+    "licao": "02-05",
+    "enunciado": "Como o GPON e o XGS-PON conseguem usar a mesma fibra ao mesmo tempo?",
+    "alternativas": [
+      {
+        "texto": "Usando comprimentos de onda diferentes.",
+        "correta": true,
+        "explicacao": "Certo. Cada um ocupa sua faixa, e eles convivem na mesma rede."
+      },
+      {
+        "texto": "Revezando: um funciona de dia e o outro à noite.",
+        "correta": false,
+        "explicacao": "Funcionam ao mesmo tempo."
+      },
+      {
+        "texto": "Um usa o núcleo e o outro, a casca.",
+        "correta": false,
+        "explicacao": "A luz dos dois anda no núcleo."
+      },
+      {
+        "texto": "Não conseguem: precisa de outra fibra.",
+        "correta": false,
+        "explicacao": "A coexistência está prevista na norma do XGS-PON."
+      }
+    ],
+    "fontes": [
+      "itu-g9807-folheto"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-05-q4",
+    "licao": "02-05",
+    "enunciado": "Em que banda fica 1550 nm?",
+    "alternativas": [
+      {
+        "texto": "Banda O",
+        "correta": false,
+        "explicacao": "O vai de 1260 a 1360 nm."
+      },
+      {
+        "texto": "Banda C",
+        "correta": true,
+        "explicacao": "Certo. C vai de 1530 a 1565 nm."
+      },
+      {
+        "texto": "Banda L",
+        "correta": false,
+        "explicacao": "L vai de 1565 a 1625 nm."
+      },
+      {
+        "texto": "Banda U",
+        "correta": false,
+        "explicacao": "U vai de 1625 a 1675 nm."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-05-q5",
+    "licao": "02-05",
+    "enunciado": "Para que a ITU pensou a banda U (1625 a 1675 nm)?",
+    "alternativas": [
+      {
+        "texto": "Para internet residencial.",
+        "correta": false,
+        "explicacao": "Não é faixa de canais de tráfego."
+      },
+      {
+        "texto": "Para manutenção e testes, numa região que os canais de tráfego não ocupam.",
+        "correta": true,
+        "explicacao": "Certo. Por isso testes em 1625/1650 nm aparecem em redes ativas, com equipamento próprio."
+      },
+      {
+        "texto": "Para multimodo.",
+        "correta": false,
+        "explicacao": "Multimodo usa 850 e 1300 nm."
+      },
+      {
+        "texto": "Para o pico d'água.",
+        "correta": false,
+        "explicacao": "O pico d'água fica perto de 1383 nm, na banda E."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-05-q6",
+    "licao": "02-05",
+    "enunciado": "Um técnico diz que viu a luz \"verde\" do 1550 nm na ponta da fibra. O que está errado?",
+    "alternativas": [
+      {
+        "texto": "1550 nm é infravermelho: não dá para ver. Ele pode ter visto o VFL ou outra coisa, e não deve olhar a ponta.",
+        "correta": true,
+        "explicacao": "Certo. Luz de transmissão é invisível e perigosa para os olhos."
+      },
+      {
+        "texto": "1550 nm é azul, não verde.",
+        "correta": false,
+        "explicacao": "1550 nm é invisível."
+      },
+      {
+        "texto": "Nada: 1550 é verde mesmo.",
+        "correta": false,
+        "explicacao": "1550 nm está no infravermelho."
+      },
+      {
+        "texto": "Ele só podia ver de dia.",
+        "correta": false,
+        "explicacao": "Continua invisível."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39",
+      "foa-fibra"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-05-q7",
+    "licao": "02-05",
+    "enunciado": "Qual comprimento de onda está associado ao pico de absorção da água na fibra?",
+    "alternativas": [
+      {
+        "texto": "Cerca de 1383 nm.",
+        "correta": true,
+        "explicacao": "Certo. A G.652.D limita a perda nessa região."
+      },
+      {
+        "texto": "850 nm.",
+        "correta": false,
+        "explicacao": "850 nm é a janela da multimodo."
+      },
+      {
+        "texto": "1550 nm.",
+        "correta": false,
+        "explicacao": "1550 nm é a região de menor perda."
+      },
+      {
+        "texto": "1625 nm.",
+        "correta": false,
+        "explicacao": "1625 nm é região de teste."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-05-q8",
+    "licao": "02-05",
+    "enunciado": "Num transceptor está escrito \"1310 nm, SMF\". Em que banda ele trabalha?",
+    "alternativas": [
+      {
+        "texto": "Banda O",
+        "correta": true,
+        "explicacao": "Certo. O vai de 1260 a 1360 nm."
+      },
+      {
+        "texto": "Banda C",
+        "correta": false,
+        "explicacao": "C vai de 1530 a 1565 nm."
+      },
+      {
+        "texto": "Banda S",
+        "correta": false,
+        "explicacao": "S vai de 1460 a 1530 nm."
+      },
+      {
+        "texto": "Fora das bandas",
+        "correta": false,
+        "explicacao": "1310 nm está dentro da banda O."
+      }
+    ],
+    "fontes": [
+      "itu-gsup39"
+    ],
+    "dificuldade": 1
+  }
+]

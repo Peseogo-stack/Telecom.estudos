@@ -1,0 +1,250 @@
+[
+  {
+    "id": "02-04-q1",
+    "licao": "02-04",
+    "enunciado": "O drop do provedor é G.657.A2 e a rede é G.652.D. Pode emendar uma na outra?",
+    "alternativas": [
+      {
+        "texto": "Sim: a G.657.A2 atende tudo da G.652.D.",
+        "correta": true,
+        "explicacao": "Certo. Os tipos A são conformes com a G.652.D."
+      },
+      {
+        "texto": "Não: fibras de normas diferentes não emendam.",
+        "correta": false,
+        "explicacao": "A1 e A2 foram feitas para conviver com a G.652.D."
+      },
+      {
+        "texto": "Só com conector de campo.",
+        "correta": false,
+        "explicacao": "A fusão funciona normalmente."
+      },
+      {
+        "texto": "Só se o drop for multimodo.",
+        "correta": false,
+        "explicacao": "As duas são monomodo."
+      }
+    ],
+    "fontes": [
+      "itu-g657-folheto"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-04-q2",
+    "licao": "02-04",
+    "enunciado": "Qual é o raio mínimo de curvatura de uma fibra G.657.A1?",
+    "alternativas": [
+      {
+        "texto": "30 mm",
+        "correta": false,
+        "explicacao": "30 mm é o raio do teste de curvatura da G.652.D."
+      },
+      {
+        "texto": "10 mm",
+        "correta": true,
+        "explicacao": "Certo. A2 e B2: 7,5 mm; B3: 5 mm."
+      },
+      {
+        "texto": "5 mm",
+        "correta": false,
+        "explicacao": "5 mm é a B3."
+      },
+      {
+        "texto": "1 mm",
+        "correta": false,
+        "explicacao": "Nenhuma categoria vai tão longe."
+      }
+    ],
+    "fontes": [
+      "itu-g657-folheto"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-04-q3",
+    "licao": "02-04",
+    "enunciado": "Pela G.652.D, qual é a atenuação máxima do cabo em 1550 nm?",
+    "alternativas": [
+      {
+        "texto": "0,30 dB/km",
+        "correta": true,
+        "explicacao": "Certo. De 1530 a 1565 nm, até 0,30 dB/km."
+      },
+      {
+        "texto": "0,40 dB/km",
+        "correta": false,
+        "explicacao": "0,40 vale para a faixa de 1310 a 1625 nm de modo geral."
+      },
+      {
+        "texto": "0,22 dB/km",
+        "correta": false,
+        "explicacao": "0,22 é exemplo de ficha de fabricante, não o máximo da norma."
+      },
+      {
+        "texto": "1,0 dB/km",
+        "correta": false,
+        "explicacao": "1,0 dB/km é referência para cabo interno, não para G.652.D externa."
+      }
+    ],
+    "fontes": [
+      "itu-g652-2024"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "02-04-q4",
+    "licao": "02-04",
+    "enunciado": "Num projeto em 1490 nm (GPON), alguém usou 0,30 dB/km \"porque é o máximo da G.652.D\". Está certo?",
+    "alternativas": [
+      {
+        "texto": "Sim, 0,30 vale para qualquer λ acima de 1310.",
+        "correta": false,
+        "explicacao": "0,30 vale só de 1530 a 1565 nm."
+      },
+      {
+        "texto": "Não: em 1490 nm o máximo da norma é 0,40 dB/km.",
+        "correta": true,
+        "explicacao": "Certo. 1490 nm está fora da faixa de 1530 a 1565 nm."
+      },
+      {
+        "texto": "Sim, porque 1490 é quase 1550.",
+        "correta": false,
+        "explicacao": "\"Quase\" não vale: a tabela da norma define a faixa."
+      },
+      {
+        "texto": "Não: em 1490 nm o máximo é 1,0 dB/km.",
+        "correta": false,
+        "explicacao": "1,0 dB/km não é o limite da G.652.D."
+      }
+    ],
+    "fontes": [
+      "itu-g652-2024"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "02-04-q5",
+    "licao": "02-04",
+    "enunciado": "Você precisa acomodar fibras numa bandeja apertada. A fibra é G.657.A1. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Dobrar o quanto precisar: G.657 não perde em curva.",
+        "correta": false,
+        "explicacao": "Perde menos, mas tem raio mínimo (10 mm na A1)."
+      },
+      {
+        "texto": "Respeitar o raio mínimo (10 mm) e, de preferência, deixar folga conforme o fabricante da caixa.",
+        "correta": true,
+        "explicacao": "Certo. Raio mínimo é limite, não meta."
+      },
+      {
+        "texto": "Usar fita para prender bem apertado.",
+        "correta": false,
+        "explicacao": "Pressão causa microcurvatura e perda."
+      },
+      {
+        "texto": "Cortar e emendar para não dobrar.",
+        "correta": false,
+        "explicacao": "Emenda a mais é perda a mais; acomode corretamente."
+      }
+    ],
+    "fontes": [
+      "itu-g657-folheto"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-04-q6",
+    "licao": "02-04",
+    "enunciado": "O que o \"D\" da G.652.D garante a mais que a G.652.B?",
+    "alternativas": [
+      {
+        "texto": "Baixa perda também perto de 1383 nm (pico d'água), liberando a faixa de 1260 a 1625 nm.",
+        "correta": true,
+        "explicacao": "Certo. A norma limita a perda em 1383 nm a 0,40 dB/km após envelhecimento por hidrogênio."
+      },
+      {
+        "texto": "Fibra multimodo.",
+        "correta": false,
+        "explicacao": "G.652 é monomodo."
+      },
+      {
+        "texto": "Raio de curvatura de 5 mm.",
+        "correta": false,
+        "explicacao": "Isso é da G.657.B3."
+      },
+      {
+        "texto": "Conector APC de fábrica.",
+        "correta": false,
+        "explicacao": "Não tem relação com conector."
+      }
+    ],
+    "fontes": [
+      "itu-g652-2024"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "02-04-q7",
+    "licao": "02-04",
+    "enunciado": "Um cordão de 3 m mediu perda equivalente a 0,8 dB/km. Isso reprova pela G.652.D (0,40 dB/km)?",
+    "alternativas": [
+      {
+        "texto": "Sim, passou do limite.",
+        "correta": false,
+        "explicacao": "A própria norma diz que os limites não valem para cordões e cabos curtos."
+      },
+      {
+        "texto": "Não: os limites de atenuação da G.652.D não se aplicam a cordões, cabos internos e drops.",
+        "correta": true,
+        "explicacao": "Certo. Em cabo curto, conta a perda dos conectores."
+      },
+      {
+        "texto": "Sim, se for em 1550 nm.",
+        "correta": false,
+        "explicacao": "O motivo é o tipo de cabo, não o λ."
+      },
+      {
+        "texto": "Depende da cor do cordão.",
+        "correta": false,
+        "explicacao": "Cor não é critério."
+      }
+    ],
+    "fontes": [
+      "itu-g652-2024"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "02-04-q8",
+    "licao": "02-04",
+    "enunciado": "Qual é a diferença entre as G.657 tipo A e tipo B?",
+    "alternativas": [
+      {
+        "texto": "A atende tudo da G.652.D (conforme); B é compatível, para o fim da rede.",
+        "correta": true,
+        "explicacao": "Certo. B3 aceita curva de até 5 mm."
+      },
+      {
+        "texto": "A é multimodo e B é monomodo.",
+        "correta": false,
+        "explicacao": "As duas são monomodo."
+      },
+      {
+        "texto": "A é para poste e B é para OPGW.",
+        "correta": false,
+        "explicacao": "Não é essa a divisão."
+      },
+      {
+        "texto": "Não há diferença.",
+        "correta": false,
+        "explicacao": "A diferença está na conformidade e no raio mínimo."
+      }
+    ],
+    "fontes": [
+      "itu-g657-folheto"
+    ],
+    "dificuldade": 2
+  }
+]

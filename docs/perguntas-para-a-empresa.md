@@ -19,17 +19,18 @@
 
 | # | Pergunta | Onde olhar | Lição |
 | --- | --- | --- | --- |
-| a01 | Que cabo é este (tipo, vão AS, seco ou geleia, número de fibras, fabricante)? | Gravação na capa do cabo | 03-01 |
+| a01 | Que cabo é este (tipo, vão AS, seco ou geleia, número de fibras, fabricante)? | Gravação na capa do cabo | 03-01, 02-02 |
 | a02 | Os tubos são coloridos (padrão Furukawa) ou têm tubo piloto e direcional (padrão Prysmian)? | Abrir uma caixa de emenda acompanhado, foto do cabo, ficha do fabricante | 03-04 |
 | a03 | Qual a marca e o modelo da máquina de fusão e do clivador? O alinhamento é por núcleo ou por casca? | Etiqueta e tela "Sobre" da máquina | 05-03 |
 | a04 | Os conectores do DIO são azuis (UPC) ou verdes (APC)? SC ou LC? | Olhar o DIO e os cordões | 03-07 |
 | a05 | Qual versão do QGIS está instalada? | QGIS ► Ajuda ► Sobre (Help ► About) | 08-01 |
 | a06 | Qual o SRC (EPSG) do projeto e das camadas? | Canto inferior direito do QGIS; Propriedades da camada ► Informação | 08-03 |
-| a07 | Que comprimentos de onda o OTDR tem? | Etiqueta e tela do OTDR | 06-05 |
-| a08 | Que transceptores (SFP) estão nos switches? Eles têm leitura de potência (DOM)? | Etiqueta do SFP; leitura no switch, se tiver permissão | 11-03 |
+| a07 | Que comprimentos de onda o OTDR tem? | Etiqueta e tela do OTDR | 06-05, 02-05 |
+| a08 | Que transceptores (SFP) estão nos switches? Eles têm leitura de potência (DOM)? | Etiqueta do SFP; leitura no switch, se tiver permissão | 11-03, 02-07 |
 | a09 | Que padrão de plaqueta e de etiqueta aparece nos postes e no rack? | Observar em campo e no rack | 07-03 |
 | a10 | Qual é a designação (ID do circuito) de cada link e onde ela está anotada? | Etiqueta no equipamento da operadora, fatura ou contrato | 09-06 |
 | a11 | A baixa tensão dos postes onde vou trabalhar é nua ou isolada (multiplexada)? | Observar do chão, sem se aproximar; confirmar com a engenharia | 10-01 |
+| a12 | Os cordões do rack e do DIO são amarelos (monomodo) ou laranja/água (multimodo)? | Cor da capa dos cordões e a gravação neles | 02-03 |
 
 ---
 
@@ -46,12 +47,13 @@
 | b07 | Qual é o índice de reajuste (IST, IPCA, IGP-M) e a data-base de cada contrato? | Contrato | 09-04 |
 | b08 | Qual é o prazo de garantia da obra e como funcionam o aceite provisório e o definitivo? | Contrato de construção | 09-05 |
 | b09 | Quais são os contatos e a matriz de escalonamento de cada fornecedor (central, NOC, gerente de contas)? | Anexo do contrato ou cadastro do fornecedor | 09-06 |
-| b10 | O que diz a ficha técnica do cabo comprado (G.652.D ou G.657, IOR, atenuação)? | Anexo técnico, processo de compra | 02-04, 06-05, 09-05 |
+| b10 | O que diz a ficha técnica do cabo comprado (G.652.D ou G.657, IOR, atenuação)? | Anexo técnico, processo de compra | 02-04, 06-05, 09-05, 02-01, 02-02, 02-06 |
 | b11 | Qual é o modelo do contrato de ocupação de postes (valor por ponto, prazos, multas)? | Contrato-padrão de compartilhamento | 07-06 |
 | b12 | Qual é o procedimento escrito para trabalho em poste com rede de telecom, e o modelo de APR e de permissão de trabalho? | Procedimentos de segurança (intranet) | 10-01 |
 | b13 | O contrato conta o mês como 30 dias (43.200 min) ou pelos dias do calendário? | Cláusula de SLA | 09-01 |
 | b14 | Latência alta, perda de pacotes ou velocidade abaixo do contratado contam como indisponibilidade no contrato? | Anexo de nível de serviço | 09-01 |
 | b15 | Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho? | Procedimentos de segurança (intranet) | 10-05 |
+| b16 | Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem? | Projeto executivo ou memorial de cálculo da rede | 02-06, 02-07 |
 
 ---
 
@@ -67,13 +69,14 @@
 | c06 | A rede é própria, contratada ou mista? Que protocolo SCADA usamos? Já há IEC 61850? | Engenharia / automação | 01-01 |
 | c07 | Que requisitos de telecom do ONS valem depois da interligação ao SIN? | Engenharia | 01-06 |
 | c08 | TI e TO (tecnologia da operação) são separadas? Quem cuida da telecom operativa? | Líder de TI | 01-01 |
-| c09 | Que materiais temos em estoque (cabos, CEO, CTO, tubetes, SFP, cordões)? | Almoxarifado | 03-05, 04-06 |
+| c09 | Que materiais temos em estoque (cabos, CEO, CTO, tubetes, SFP, cordões)? | Almoxarifado | 03-05, 04-06, 02-04 |
 | c10 | As operadoras aplicam o RGC da Anatel aos nossos links ou só o SLA do contrato? | Jurídico | 09-02 |
 | c11 | A empresa apoia algum curso ou certificação? | RH / líder de TI | 12-02 |
 | c12 | Quando a baixa tensão é isolada (multiplexada), a empresa trata as zonas da NR-10 do mesmo jeito que na rede nua? Quem avalia se o isolamento está íntegro? | Segurança do trabalho (SESMT) | 10-01 |
 | c13 | Quando vence a minha reciclagem da NR-10 e quantas horas ela terá? | SESMT / RH | 10-05 |
 | c14 | Quem calcula e quem aprova a glosa antes do pagamento? | Líder de TI / financeiro | 09-02 |
 | c15 | Que tensões existem nos postes onde vou trabalhar (baixa tensão, 13,8 kV, 34,5 kV)? | Engenharia / operação | 10-01 |
+| c16 | Há fibra multimodo nos racks das subestações ou do data center? Em quais equipamentos? | Engenharia / TI de infraestrutura | 02-03 |
 
 ---
 
@@ -87,12 +90,13 @@
 | d04 | Qual é o critério de aceite por emenda que usamos no dia a dia (0,1? 0,15 dB?) | 05-04 |
 | d05 | Quem faz o arc check, a troca de eletrodo e a limpeza da máquina de fusão? | 05-03 |
 | d06 | Que faixa de sinal na ONU cobramos dos provedores, se cobramos? Que topologia eles usam aqui? | 04-05 |
-| d07 | A rede para as unidades é ponto a ponto (SFP) ou tem PON? | 04-06 |
+| d07 | A rede para as unidades é ponto a ponto (SFP) ou tem PON? | 04-06, 02-05 |
 | d08 | Como é o fluxo para cabo clandestino (registro, retirada, guarda do material)? | 07-06 |
 | d09 | Que nomes e campos usamos nas camadas do QGIS? Usamos QField? | 08-06, 08-07 |
 | d10 | Qual é o plano de VLANs, e eu posso rodar comandos de consulta (show) nos switches? | 11-04 |
 | d11 | Como os fornecedores costumam contestar uma glosa, e o que já foi aceito ou recusado? | 09-02 |
 | d12 | Existe um registro de ocorrências (livro, planilha, sistema) para cada contrato? Onde fica? | 09-03 |
+| d13 | Que potências (dBm) costumamos ver nos equipamentos dos links, e a partir de quanto a equipe considera alarme? | 02-07 |
 
 ---
 

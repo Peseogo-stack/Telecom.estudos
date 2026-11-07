@@ -1,0 +1,106 @@
+[
+  {
+    "id": "10-01-q1",
+    "licao": "10-01",
+    "enunciado": "Pela tabela do Anexo II da NR-10, qual é o raio que marca o fim da zona controlada (Rc) para baixa tensão (menos de 1 kV)?",
+    "alternativas": [
+      { "texto": "0,20 m", "correta": false, "explicacao": "0,20 m é o Rr da baixa tensão: o limite entre a zona de risco e a zona controlada." },
+      { "texto": "0,70 m", "correta": true, "explicacao": "Certo. Para menos de 1 kV, Rr = 0,20 m e Rc = 0,70 m. Além de 0,70 m começa a zona livre." },
+      { "texto": "0,60 m", "correta": false, "explicacao": "0,60 m não está na tabela da NR-10. É o afastamento mínimo telecom–baixa tensão das normas de compartilhamento usadas como exemplo." },
+      { "texto": "1,38 m", "correta": false, "explicacao": "1,38 m é o Rc da faixa de 10 a 15 kV (por exemplo, 13,8 kV)." }
+    ],
+    "fontes": ["nr10-vigente"],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-01-q2",
+    "licao": "10-01",
+    "enunciado": "Segundo o glossário da NR-10, o que caracteriza o \"trabalho em proximidade\"?",
+    "alternativas": [
+      { "texto": "Tocar diretamente um condutor energizado.", "correta": false, "explicacao": "Tocar o condutor é intervir na instalação energizada, o que é outra situação, ainda mais restrita." },
+      { "texto": "Trabalhar a menos de 2 m de qualquer rede elétrica.", "correta": false, "explicacao": "A NR-10 não usa \"2 m\" como critério. O critério é poder entrar na zona controlada, cujo tamanho depende da tensão." },
+      { "texto": "Poder entrar na zona controlada, mesmo só com uma parte do corpo ou com ferramentas e materiais condutores.", "correta": true, "explicacao": "Certo. É a definição do item 28 do glossário: o trabalhador pode entrar na zona controlada, ainda que com parte do corpo ou extensões condutoras." },
+      { "texto": "Qualquer trabalho feito na zona livre.", "correta": false, "explicacao": "Na zona livre, por definição, você está além do Rc. Proximidade é justamente poder entrar na zona controlada." }
+    ],
+    "fontes": ["nr10-vigente"],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-01-q3",
+    "licao": "10-01",
+    "enunciado": "Um cabo de telecom está a 0,60 m do condutor de baixa tensão, como pedem as normas de compartilhamento de exemplo. Pelo Anexo II da NR-10, onde esse cabo fica em relação à baixa tensão?",
+    "alternativas": [
+      { "texto": "Na zona livre, porque 0,60 m é o afastamento exigido pela norma de compartilhamento.", "correta": false, "explicacao": "A norma de compartilhamento define onde o cabo é instalado; a NR-10 define as zonas. Como 0,60 m é menor que o Rc de 0,70 m, o cabo não está na zona livre." },
+      { "texto": "Na zona controlada, porque 0,60 m é menor que o Rc de 0,70 m.", "correta": true, "explicacao": "Certo. O cabo está entre Rr (0,20 m) e Rc (0,70 m), ou seja, dentro da zona controlada da baixa tensão." },
+      { "texto": "Na zona de risco, porque está a menos de 1 m.", "correta": false, "explicacao": "A zona de risco da baixa tensão vai só até 0,20 m (Rr). A 0,60 m o cabo está na zona controlada." },
+      { "texto": "Depende do tipo de cabo de telecom (fibra ou metálico).", "correta": false, "explicacao": "As zonas dependem da tensão e da distância ao ponto energizado, não do tipo de cabo de telecom." }
+    ],
+    "fontes": ["nr10-vigente", "abnt-nbr15214-2005", "cemig-nd66"],
+    "dificuldade": 2
+  },
+  {
+    "id": "10-01-q4",
+    "licao": "10-01",
+    "enunciado": "Qual é a conclusão correta do raciocínio \"0,60 m < 0,70 m\" para quem vai mexer no cabo de telecom de um poste com baixa tensão?",
+    "alternativas": [
+      { "texto": "É trabalho em proximidade: só com autorização da empresa, procedimento, APR e, quando a empresa exigir, permissão de trabalho.", "correta": true, "explicacao": "Certo. A zona controlada é restrita a trabalhadores autorizados e o ingresso nela exige procedimentos específicos (item 10.6.2). Confirme sempre com a empresa." },
+      { "texto": "Pode trabalhar normalmente, porque fibra óptica não conduz eletricidade.", "correta": false, "explicacao": "O risco vem da rede elétrica ao lado, não da fibra. Mão, ferramenta, escada e cordoalha podem entrar na zona controlada." },
+      { "texto": "É proibido qualquer trabalho em telecom no poste.", "correta": false, "explicacao": "Não é proibido: é permitido para trabalhador autorizado, seguindo o procedimento da empresa." },
+      { "texto": "Basta usar luvas para ficar dispensado da autorização.", "correta": false, "explicacao": "EPI não substitui a autorização. A NR-10 exige trabalhador autorizado na zona controlada." }
+    ],
+    "fontes": ["nr10-vigente"],
+    "dificuldade": 2
+  },
+  {
+    "id": "10-01-q5",
+    "licao": "10-01",
+    "enunciado": "Para medir se você está dentro da zona controlada, a distância é contada a partir de onde?",
+    "alternativas": [
+      { "texto": "Do poste.", "correta": false, "explicacao": "O poste não é o ponto energizado. As zonas são raios em volta da parte energizada." },
+      { "texto": "Do chão.", "correta": false, "explicacao": "A altura em relação ao chão importa para outras regras (altura mínima do cabo), não para as zonas da NR-10." },
+      { "texto": "Do ponto energizado (o condutor).", "correta": true, "explicacao": "Certo. Rr e Rc são raios em volta do ponto energizado, como mostram as figuras do Anexo II." },
+      { "texto": "Do cabo de telecom.", "correta": false, "explicacao": "O cabo de telecom é o lugar onde você trabalha; a referência das zonas é o condutor energizado." }
+    ],
+    "fontes": ["nr10-vigente"],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-01-q6",
+    "licao": "10-01",
+    "enunciado": "Numa rede de 13,8 kV, qual é o Rc (fim da zona controlada) pela tabela da NR-10?",
+    "alternativas": [
+      { "texto": "0,38 m", "correta": false, "explicacao": "0,38 m é o Rr da faixa de 10 a 15 kV, o limite da zona de risco." },
+      { "texto": "0,70 m", "correta": false, "explicacao": "0,70 m é o Rc da baixa tensão." },
+      { "texto": "1,58 m", "correta": false, "explicacao": "1,58 m é o Rc da faixa de 30 a 36 kV (por exemplo, 34,5 kV)." },
+      { "texto": "1,38 m", "correta": true, "explicacao": "Certo. 13,8 kV está na faixa de 10 a 15 kV: Rr = 0,38 m e Rc = 1,38 m." }
+    ],
+    "fontes": ["nr10-vigente"],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-01-q7",
+    "licao": "10-01",
+    "enunciado": "Você está no poste e começa a chover forte, com raios por perto. O que a NR-10 manda fazer?",
+    "alternativas": [
+      { "texto": "Terminar rápido o que falta.", "correta": false, "explicacao": "Acelerar mantém você exposto. A norma manda suspender." },
+      { "texto": "Suspender o serviço de imediato e descer com segurança.", "correta": true, "explicacao": "Certo. O item 10.6.3 manda suspender de imediato os serviços em instalações energizadas ou em suas proximidades na iminência de perigo." },
+      { "texto": "Cobrir a caixa e continuar.", "correta": false, "explicacao": "Proteger o material não tira você do perigo." },
+      { "texto": "Trocar as luvas e continuar.", "correta": false, "explicacao": "EPI não elimina o risco de raio e chuva no poste. O correto é suspender." }
+    ],
+    "fontes": ["nr10-vigente"],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-01-q8",
+    "licao": "10-01",
+    "enunciado": "Nas normas de exemplo, o cabo de telecom fica a 1,50 m de uma rede de 15 kV, e o Rc de 13,8 kV é 1,38 m. O que isso mostra?",
+    "alternativas": [
+      { "texto": "O cabo fica fora da zona controlada da média tensão, mas com folga de só 12 cm: braço e ferramenta podem cruzar o limite.", "correta": true, "explicacao": "Certo. 1,50 − 1,38 = 0,12 m. A folga é pequena, e o trabalho pode virar trabalho em proximidade da média tensão." },
+      { "texto": "A média tensão não oferece risco a quem trabalha no cabo de telecom.", "correta": false, "explicacao": "Com só 12 cm de folga, um braço ou uma ferramenta podem entrar na zona controlada da média tensão." },
+      { "texto": "O cabo está dentro da zona de risco da média tensão.", "correta": false, "explicacao": "A zona de risco de 13,8 kV vai só até 0,38 m. A 1,50 m o cabo nem está na zona controlada." },
+      { "texto": "A NR-10 não se aplica à média tensão.", "correta": false, "explicacao": "A NR-10 se aplica a todas as faixas de tensão da tabela do Anexo II, inclusive a média tensão." }
+    ],
+    "fontes": ["nr10-vigente", "cemig-nd66"],
+    "dificuldade": 3
+  }
+]

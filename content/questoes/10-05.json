@@ -1,0 +1,106 @@
+[
+  {
+    "id": "10-05-q1",
+    "licao": "10-05",
+    "enunciado": "Quando a nova NR-10 (Portaria MTE nº 737/2026, publicada em 01/06/2026) entra em vigor?",
+    "alternativas": [
+      { "texto": "Na data da publicação, 01/06/2026.", "correta": false, "explicacao": "A portaria foi publicada nessa data, mas o art. 5º dá prazo de 1 ano para entrar em vigor." },
+      { "texto": "Um ano após a publicação, em junho de 2027.", "correta": true, "explicacao": "Certo. Art. 5º: \"Esta Portaria entra em vigor 1 (um) ano após a sua publicação\". Até lá vale o texto atual." },
+      { "texto": "Na data da retificação, 24/06/2026.", "correta": false, "explicacao": "A retificação só corrigiu o item 10.8.4; não mudou a data de vigência." },
+      { "texto": "Só quando a ANEEL aprovar o novo regulamento de postes.", "correta": false, "explicacao": "A NR-10 é norma do Ministério do Trabalho e não depende do regulamento de postes da ANEEL e da Anatel." }
+    ],
+    "fontes": ["nr10-portaria-737"],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-05-q2",
+    "licao": "10-05",
+    "enunciado": "Qual é a carga horária mínima do treinamento inicial \"Específico de compartilhamento de infraestrutura do SEP\" na nova NR-10?",
+    "alternativas": [
+      { "texto": "8 h", "correta": false, "explicacao": "8 h é o treinamento \"Específico e pontual\", para estrangeiros ou não residentes em serviços curtos." },
+      { "texto": "16 h", "correta": false, "explicacao": "16 h é a carga mínima da reciclagem bienal (e de outros treinamentos complementares do SEC)." },
+      { "texto": "24 h", "correta": false, "explicacao": "24 h é o módulo de compartilhamento da capacitação do trabalhador-capacitado (10.8.4, alínea e), não o treinamento de segurança." },
+      { "texto": "40 h", "correta": true, "explicacao": "Certo. Quadro I do item 10.9.2: \"Específico de compartilhamento de infraestrutura do SEP\", 40 h." }
+    ],
+    "fontes": ["nr10-portaria-737"],
+    "dificuldade": 2
+  },
+  {
+    "id": "10-05-q3",
+    "licao": "10-05",
+    "enunciado": "Na nova NR-10, o que é \"compartilhamento de infraestrutura\"?",
+    "alternativas": [
+      { "texto": "A cessão, paga, de capacidade excedente da infraestrutura de suporte (postes, torres, dutos) para serviços de telecomunicações.", "correta": true, "explicacao": "Certo. É a definição do glossário (Anexo I). É o caso dos provedores nos postes da distribuidora." },
+      { "texto": "Duas distribuidoras usando a mesma subestação.", "correta": false, "explicacao": "A definição da NR-10 trata de telecomunicações usando a infraestrutura de suporte, não de distribuidoras entre si." },
+      { "texto": "Dividir o mesmo EPI entre trabalhadores.", "correta": false, "explicacao": "A NR-10 trata o EPI como de uso pessoal; isso não tem relação com compartilhamento de infraestrutura." },
+      { "texto": "Usar a mesma fibra para dados e voz.", "correta": false, "explicacao": "Isso é multiplexação de serviços, não o conceito da NR-10." }
+    ],
+    "fontes": ["nr10-portaria-737"],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-05-q4",
+    "licao": "10-05",
+    "enunciado": "Pela nova NR-10, como deve ser feito um trabalho em proximidade NÃO rotineiro?",
+    "alternativas": [
+      { "texto": "Só com a conversa de equipe antes de subir.", "correta": false, "explicacao": "Conversa ajuda, mas o item 10.7.2 exige permissão de trabalho precedida de análise de riscos." },
+      { "texto": "Com permissão de trabalho, precedida de análise de riscos e aprovada por trabalhador autorizado.", "correta": true, "explicacao": "Certo. Item 10.7.2. A permissão vale pela duração da atividade, restrita ao turno (10.7.2.2)." },
+      { "texto": "Com o mesmo procedimento usado nas tarefas rotineiras, sem nada a mais.", "correta": false, "explicacao": "Procedimento escrito é para o rotineiro (10.7.1). O não rotineiro exige permissão de trabalho." },
+      { "texto": "Não pode ser feito em nenhuma hipótese.", "correta": false, "explicacao": "Pode, desde que com permissão de trabalho e análise de riscos, por trabalhador autorizado." }
+    ],
+    "fontes": ["nr10-portaria-737"],
+    "dificuldade": 2
+  },
+  {
+    "id": "10-05-q5",
+    "licao": "10-05",
+    "enunciado": "O que a nova NR-10 mudou na tabela de raios das zonas de risco e controlada (Anexo II)?",
+    "alternativas": [
+      { "texto": "Aumentou o Rc da baixa tensão para 1,00 m.", "correta": false, "explicacao": "O Rc da baixa tensão continua 0,70 m." },
+      { "texto": "Criou uma zona nova só para telecom.", "correta": false, "explicacao": "Não existe zona especial para telecom; continuam ZR, ZC e ZL." },
+      { "texto": "Nada: os valores são os mesmos do texto atual.", "correta": true, "explicacao": "Certo. A tabela do Anexo II é igual nas duas versões (baixa tensão: Rr 0,20 m e Rc 0,70 m)." },
+      { "texto": "Eliminou a zona controlada.", "correta": false, "explicacao": "A zona controlada continua existindo e só pode ser acessada por trabalhador autorizado." }
+    ],
+    "fontes": ["nr10-portaria-737", "nr10-vigente"],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-05-q6",
+    "licao": "10-05",
+    "enunciado": "Sobre a reciclagem (treinamento periódico) na nova NR-10, o que é correto?",
+    "alternativas": [
+      { "texto": "É anual, com 8 h.", "correta": false, "explicacao": "O item 10.9.10 fala em treinamento periódico bienal, com mínimo de 16 h." },
+      { "texto": "É bienal, com carga mínima de 16 h.", "correta": true, "explicacao": "Certo. Item 10.9.10. O texto atual também é bienal, mas não fixa carga mínima." },
+      { "texto": "Só é exigida depois de acidente.", "correta": false, "explicacao": "Depois de acidente grave há treinamento eventual (10.9.11), mas o periódico bienal é obrigatório de qualquer forma." },
+      { "texto": "Pode ser feita toda a distância, inclusive a prática.", "correta": false, "explicacao": "O item 10.9.13 exige que o conteúdo prático seja presencial." }
+    ],
+    "fontes": ["nr10-portaria-737"],
+    "dificuldade": 2
+  },
+  {
+    "id": "10-05-q7",
+    "licao": "10-05",
+    "enunciado": "Hoje (antes de junho de 2027), que treinamentos a NR-10 vigente exige de quem trabalha no SEP ou em suas proximidades?",
+    "alternativas": [
+      { "texto": "Só o treinamento de compartilhamento de 40 h.", "correta": false, "explicacao": "Esse treinamento só existe na nova NR-10, que ainda não está em vigor." },
+      { "texto": "Nenhum, se o trabalho for só com fibra óptica.", "correta": false, "explicacao": "O que conta é a proximidade da instalação elétrica, não o tipo de cabo." },
+      { "texto": "Curso Básico (40 h) e Complementar do SEP (40 h), com reciclagem bienal.", "correta": true, "explicacao": "Certo. É o que o Anexo III e o item 10.8.8.2 do texto vigente exigem." },
+      { "texto": "Apenas a NR-35.", "correta": false, "explicacao": "A NR-35 trata de altura. O risco elétrico é tratado pela NR-10." }
+    ],
+    "fontes": ["nr10-vigente"],
+    "dificuldade": 2
+  },
+  {
+    "id": "10-05-q8",
+    "licao": "10-05",
+    "enunciado": "Antes de começar um trabalho em proximidade, a nova NR-10 pede uma avaliação prévia no local. Se você encontrar uma anormalidade que afete a segurança, o que fazer?",
+    "alternativas": [
+      { "texto": "Não iniciar o serviço e comunicar o superior.", "correta": true, "explicacao": "Certo. Item 10.7.4.2: a operação não deve ser iniciada e o superior hierárquico deve ser comunicado." },
+      { "texto": "Começar e resolver a anormalidade durante o serviço.", "correta": false, "explicacao": "O item 10.7.4.2 manda não iniciar." },
+      { "texto": "Anotar para a próxima visita e seguir.", "correta": false, "explicacao": "Anotar é bom, mas o serviço não deve começar enquanto a anormalidade existir." },
+      { "texto": "Chamar o provedor para trabalhar no seu lugar.", "correta": false, "explicacao": "Isso só transfere o risco. A regra é não iniciar e comunicar." }
+    ],
+    "fontes": ["nr10-portaria-737"],
+    "dificuldade": 1
+  }
+]

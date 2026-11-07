@@ -41,3 +41,7 @@ npm install
 npm run dev        # http://localhost:5173/Telecom.estudos/
 npm run verificar  # valida o conteúdo, compila e roda todos os testes
 ```
+
+## Publicar
+
+A cada push no `main`, o GitHub Actions valida o conteúdo, compila, roda os testes e grava o site pronto no branch `gh-pages` ([`.github/workflows/publicar.yml`](.github/workflows/publicar.yml)). No GitHub, em **Settings → Pages → Build and deployment**, a fonte precisa ser **Deploy from a branch → `gh-pages` → `/ (root)`**. Com `main`, o Pages publica o código-fonte, e o app não abre.

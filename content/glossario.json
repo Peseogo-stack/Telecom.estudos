@@ -581,8 +581,9 @@
   {
     "id": "tight-buffer",
     "pt": "Tight buffer",
-    "definicao": "Proteção de 900 µm aplicada sobre o revestimento, usada em cordões e cabos internos.",
+    "definicao": "Proteção de 900 µm aplicada sobre o revestimento, usada em pigtails, cordões e cabos internos.",
     "fontes": [
+      "foa-cores",
       "prysmian-tight-buffer"
     ],
     "licoes": [
@@ -646,9 +647,9 @@
   {
     "id": "g657",
     "pt": "Fibra G.657",
-    "definicao": "Fibra monomodo que aceita curvas mais fechadas: A1 10 mm, A2 7,5 mm, B3 5 mm. A1 e A2 atendem a G.652.D.",
+    "definicao": "Fibra monomodo que aceita curvas mais fechadas: A1 10 mm, A2 7,5 mm, B3 5 mm (a antiga B2 foi fundida na A2 em 2024). A1 e A2 atendem a G.652.D.",
     "fontes": [
-      "itu-g657-folheto"
+      "itu-g657-2024"
     ],
     "licoes": [
       "02-04"
@@ -661,6 +662,7 @@
     "pt": "Comprimento de onda",
     "definicao": "\"Cor\" da luz, em nanômetros (nm). Em telecom: 850, 1310, 1490, 1550, 1577, 1625 nm, todos invisíveis.",
     "fontes": [
+      "foa-seguranca",
       "itu-gsup39"
     ],
     "licoes": [
@@ -759,9 +761,10 @@
   {
     "id": "gpon",
     "pt": "Rede óptica passiva gigabit",
-    "definicao": "Padrão PON da ITU (G.984): descida 1480–1500 nm, subida 1300–1320 nm, 2,488/1,244 Gbit/s.",
+    "definicao": "Padrão PON da ITU (G.984): descida de 1480 a 1500 nm, subida em torno de 1310 nm (faixa de 1260 a 1360 nm na G.984.2), 2,488/1,244 Gbit/s.",
     "fontes": [
-      "itu-g984-folheto"
+      "itu-g984-folheto",
+      "itu-g9842-2019"
     ],
     "licoes": [
       "02-05"

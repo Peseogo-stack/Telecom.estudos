@@ -225,22 +225,31 @@
     "observacao": "Tabela 2 (G.652.D): atenuação máxima do cabo 0,40 dB/km de 1310 a 1625 nm e 0,30 dB/km de 1530 a 1565 nm; casca 125,0 ± 0,7 µm; macrocurvatura ≤ 0,1 dB em 1625 nm (100 voltas, raio 30 mm); Nota 1: não vale para cordões e cabos internos (indoor: 1,0 dB/km)."
   },
   {
+    "id": "itu-g657-2024",
+    "titulo": "Recommendation ITU-T G.657 (08/2024) — Characteristics of a bending-loss insensitive single-mode optical fibre and cable",
+    "organizacao": "ITU-T",
+    "tipo": "norma",
+    "url": "https://www.itu.int/rec/T-REC-G.657-202408-I/en",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Em vigor (5ª edição). Funde a categoria B2 na A2 (resumo e Tabela 2, Nota 3). Raio mínimo de projeto: A2 7,5 mm. Macrocurvatura, 1 volta: A1 em 10 mm ≤ 0,75 dB (1550 nm) e ≤ 1,5 dB (1625 nm); A2 em 7,5 mm ≤ 0,5 e 1,0 dB; B3 em 5 mm ≤ 0,15 e 0,45 dB. Tipo A atende a G.652.D; tipo B é compatível, para o fim da rede de acesso. Tabela 1, Nota 3: a atenuação de cabo curto pode ser tirada do cabo de origem."
+  },
+  {
     "id": "itu-g657-folheto",
     "titulo": "ITU-T G.657 fibres: bend-insensitive single-mode fibres for access networks (folheto oficial, 10/2013, sobre a G.657 de 2012)",
     "organizacao": "ITU-T",
     "tipo": "norma",
     "url": "https://itu.int/dms_pub/itu-t/oth/0b/04/T0B040000542C01PDFE.pdf",
     "acessadoEm": "2026-11-07",
-    "observacao": "Raios mínimos: A1 10 mm; A2 e B2 7,5 mm; B3 5 mm. A1 e A2 são conformes (compliant) com a G.652.D; B2 e B3 são compatíveis."
+    "observacao": "Folheto de 10/2013, sobre a G.657 de 2012: raios mínimos A1 10 mm, A2 e B2 7,5 mm, B3 5 mm; tipos A conformes (compliant) com a G.652.D, tipos B compatíveis. Na edição de 08/2024, a B2 foi fundida na A2."
   },
   {
     "id": "itu-gsup39",
-    "titulo": "ITU-T G.Sup39 (02/2016) — Optical system design and engineering considerations (cópia integral hospedada por terceiro)",
+    "titulo": "ITU-T G.Sup39 (10/2025) — Optical system design and engineering considerations",
     "organizacao": "ITU-T",
     "tipo": "norma",
-    "url": "https://mathscinotes.com/wp-content/uploads/2017/03/T-REC-G.Sup39-201602-IPDF-E.pdf",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Tabela 5-1 (bandas O, E, S, C, L, U); causas da atenuação (Rayleigh, água, curvatura); Tabela 10-4 (medidas de campo). Original: https://www.itu.int/rec/T-REC-G.Sup39"
+    "url": "https://www.itu.int/rec/T-REC-G.Sup39-202510-I/en",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Em vigor (substitui a de 02/2016, com o mesmo conteúdo nos trechos usados). Tabela 5-1: bandas O, E, S, C, L e U; a U é só para manutenção. Cláusula 10: causas da atenuação (Rayleigh 1/λ⁴, água, curvatura acima de 1550 nm). Tabela 10-4: médias medidas por OTDR no núcleo de rede de uma operadora (duas rotas de 60 km, 55 fibras G.652): 0,341 dB/km (1310 nm) e 0,194 dB/km (1551 nm)."
   },
   {
     "id": "itu-g984-folheto",
@@ -249,7 +258,16 @@
     "tipo": "norma",
     "url": "https://itu.int/en/ITU-T/studygroups/2017-2020/15/Documents/flyers/Flyer_ITU-T_G.984.pdf",
     "acessadoEm": "2026-11-06",
-    "observacao": "GPON: 2,488/1,244 Gbit/s; descida 1480–1500 nm, subida 1300–1320 nm; 20 km físico, 60 km lógico."
+    "observacao": "GPON: 2,488/1,244 Gbit/s; descida 1480–1500 nm; subida 1300–1320 nm \"mais outras opções\"; 20 km físico, 60 km lógico."
+  },
+  {
+    "id": "itu-g9842-2019",
+    "titulo": "Recommendation ITU-T G.984.2 (08/2019) — G-PON: Physical Media Dependent (PMD) layer specification",
+    "organizacao": "ITU-T",
+    "tipo": "norma",
+    "url": "https://www.itu.int/rec/T-REC-G.984.2-201908-I/en",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Em vigor. Descida 1480–1500 nm (8.2.5.1); subida 1260–1360 nm (8.2.5.2), com opções mais estreitas de 1290–1330 nm no Apêndice V. Classe B+ (Tabela A.1): OLT de +1,5 a +5 dBm; ONU com sensibilidade de −27 dBm e sobrecarga de −8 dBm; penalidade óptica de 0,5 dB. Tabela A.2: perda de 13 dB (mínima) a 28 dB (máxima)."
   },
   {
     "id": "itu-g9807-folheto",
@@ -276,7 +294,25 @@
     "tipo": "associacao",
     "url": "https://www.thefoa.org/tech/ref/testing/test/dB.html",
     "acessadoEm": "2026-11-06",
-    "observacao": "dBm = 10·log10(P/1 mW); perdas em dB se somam; perda = potência de referência − potência medida."
+    "observacao": "dBm = 10·log10(P/1 mW); perda = potência de referência − potência medida (a FOA mostra a perda medida como número negativo e lembra que, por convenção, ela é dita como número positivo)."
+  },
+  {
+    "id": "foa-seguranca",
+    "titulo": "Safety in Fiber Optic Installations",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/safety.htm",
+    "acessadoEm": "2026-11-07",
+    "observacao": "A luz é infravermelha: não dá para saber se há luz olhando. Na faixa de 1300 a 1550 nm, dificilmente lesa a retina, mas pode ferir a córnea ou o cristalino; não olhe a fibra sem saber se há fonte transmitindo."
+  },
+  {
+    "id": "foa-otdr",
+    "titulo": "OTDRs (The FOA Reference For Fiber Optics)",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/ref/testing/OTDR/OTDR.html",
+    "acessadoEm": "2026-11-07",
+    "observacao": "A fibra é mais sensível a tensão (stress) em comprimentos de onda maiores; comparar traços em dois comprimentos de onda ajuda a achar pontos de tensão da instalação."
   },
   {
     "id": "foa-om",
@@ -312,7 +348,7 @@
     "tipo": "associacao",
     "url": "https://www.thefoa.org/tech/ColCodes.htm",
     "acessadoEm": "2026-11-07",
-    "observacao": "TIA-598: azul, laranja, verde, marrom, cinza, branco, vermelho, preto, amarelo, violeta, rosa, água; 13–24 com faixa preta (amarela no preto), 25–36 laranja, 37–48 verde; conector monomodo azul (PC) e verde (APC)."
+    "observacao": "TIA-598: azul, laranja, verde, marrom, cinza, branco, vermelho, preto, amarelo, violeta, rosa, água. Nos tubos: 13–24 com faixa preta (amarela no preto), 25–36 laranja, 37–48 verde; tubo com mais de 12 fibras separa grupos com fita (binder). Fibras de 900 µm (tight buffer) em pigtails e cabos breakout. Conector monomodo azul (PC) e verde (APC)."
   },
   {
     "id": "furukawa-et02719",
@@ -330,7 +366,7 @@
     "tipo": "fabricante",
     "url": "https://www.instrufiber.com.br/image/catalog/pdf/c6faf5476cadcee5b40cf0d27f99fa00-CFOA%20AS%20KP%20DRY-DRY%20-%20PRYSMIAN%20-%20INSTRUFIBER.pdf",
     "acessadoEm": "2026-11-06",
-    "observacao": "Tubos: 1 verde, 2 amarelo, demais brancos; cores das fibras no padrão brasileiro; acréscimo de atenuação do cabeamento ≤ 0,05 dB/km."
+    "observacao": "Tubos: 1 verde, 2 amarelo, demais brancos; cores das fibras no padrão brasileiro; variação de atenuação ≤ 0,05 dB/km no ensaio de ciclo térmico (NBR 13510)."
   },
   {
     "id": "transcend-as",
@@ -420,7 +456,7 @@
     "tipo": "fabricante",
     "url": "https://support.omadanetworks.com/nordic/document/112365/",
     "acessadoEm": "2026-11-06",
-    "observacao": "Exemplo de orçamento com margem de 3 dB (recomenda 3 a 5 dB)."
+    "observacao": "Margem de 3 dB no exemplo (recomenda 3 a 5 dB). Use só para a margem: a página cita ~0,30 dB/km em 1490, 1550 e 1577 nm, o que não bate com o máximo da G.652.D."
   },
   {
     "id": "prysmian-tight-buffer",

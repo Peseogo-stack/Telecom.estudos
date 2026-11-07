@@ -1,0 +1,253 @@
+[
+  {
+    "id": "03-04-q1",
+    "licao": "03-04",
+    "enunciado": "Num cabo com tubo piloto e direcional, qual é o tubo 1?",
+    "alternativas": [
+      {
+        "texto": "O verde, chamado de piloto.",
+        "correta": true,
+        "explicacao": "Certo. É dele que a contagem parte."
+      },
+      {
+        "texto": "O amarelo.",
+        "correta": false,
+        "explicacao": "O amarelo é o 2, o direcional."
+      },
+      {
+        "texto": "Qualquer um dos brancos.",
+        "correta": false,
+        "explicacao": "Os brancos vêm depois do 2."
+      },
+      {
+        "texto": "O que estiver mais perto da gravação da capa.",
+        "correta": false,
+        "explicacao": "A gravação não marca tubo; quem marca é a cor."
+      }
+    ],
+    "fontes": [
+      "transcend-as",
+      "prysmian-cfoa-as"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-04-q2",
+    "licao": "03-04",
+    "enunciado": "Para que serve o tubo amarelo (direcional)?",
+    "alternativas": [
+      {
+        "texto": "Para levar as fibras de reserva.",
+        "correta": false,
+        "explicacao": "Ele é o tubo 2, com fibras como os outros."
+      },
+      {
+        "texto": "Para mostrar o sentido da contagem: do piloto para ele, e daí em diante.",
+        "correta": true,
+        "explicacao": "Certo. Depois do 2, os brancos são 3, 4, 5… no mesmo sentido."
+      },
+      {
+        "texto": "Para marcar o fim da contagem.",
+        "correta": false,
+        "explicacao": "Ele é o segundo; a contagem segue depois dele."
+      },
+      {
+        "texto": "Para indicar que o cabo é geleado.",
+        "correta": false,
+        "explicacao": "Seco ou geleado vem na gravação (S ou G)."
+      }
+    ],
+    "fontes": [
+      "transcend-as"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-04-q3",
+    "licao": "03-04",
+    "enunciado": "Por que não basta decorar \"conte no sentido horário\"?",
+    "alternativas": [
+      {
+        "texto": "Porque cada fabricante gira os tubos para um lado.",
+        "correta": false,
+        "explicacao": "O que muda é de que ponta você olha. Siga o direcional."
+      },
+      {
+        "texto": "Porque o piloto muda de cor no meio do cabo.",
+        "correta": false,
+        "explicacao": "O piloto é verde no cabo todo."
+      },
+      {
+        "texto": "Basta, sim: o sentido é sempre horário.",
+        "correta": false,
+        "explicacao": "Pela outra ponta do cabo, o horário vira anti-horário."
+      },
+      {
+        "texto": "Porque, olhando pela outra ponta, o sentido se inverte; o direcional resolve.",
+        "correta": true,
+        "explicacao": "Certo. Do piloto para o direcional, e segue: vale das duas pontas."
+      }
+    ],
+    "fontes": [
+      "transcend-as"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "03-04-q4",
+    "licao": "03-04",
+    "enunciado": "Cabo de 48 fibras, 4 tubos de 12. Em que tubo e posição fica a fibra 41?",
+    "alternativas": [
+      {
+        "texto": "Tubo 3, posição 5.",
+        "correta": false,
+        "explicacao": "Arredonde para cima: 41 ÷ 12 = 3,4 vira 4."
+      },
+      {
+        "texto": "Tubo 4, posição 1.",
+        "correta": false,
+        "explicacao": "A posição é 41 − 36 = 5."
+      },
+      {
+        "texto": "Tubo 4, posição 5.",
+        "correta": true,
+        "explicacao": "Certo: 41 ÷ 12 = 3,4 → tubo 4; 41 − 36 = 5."
+      },
+      {
+        "texto": "Tubo 5, posição 1.",
+        "correta": false,
+        "explicacao": "O cabo tem só 4 tubos de 12."
+      }
+    ],
+    "fontes": [
+      "prysmian-duto"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-04-q5",
+    "licao": "03-04",
+    "enunciado": "A fibra 41 de um cabo de 48 fibras está no tubo 4, posição 5. Que cores procurar, com tubos coloridos no padrão nacional?",
+    "alternativas": [
+      {
+        "texto": "Tubo azul, fibra vermelha.",
+        "correta": true,
+        "explicacao": "Certo: tubo 4 = azul; posição 5 = vermelha."
+      },
+      {
+        "texto": "Tubo branco, fibra vermelha.",
+        "correta": false,
+        "explicacao": "No esquema colorido, branco é o tubo 3. No esquema piloto, aí sim, o 4 seria branco."
+      },
+      {
+        "texto": "Tubo azul, fibra azul.",
+        "correta": false,
+        "explicacao": "Fibra azul é a posição 4."
+      },
+      {
+        "texto": "Tubo vermelho, fibra azul.",
+        "correta": false,
+        "explicacao": "Inverteu: o tubo é o 4 (azul) e a fibra é a 5 (vermelha)."
+      }
+    ],
+    "fontes": [
+      "furukawa-et02719"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "03-04-q6",
+    "licao": "03-04",
+    "enunciado": "Cabo de 144 fibras, com 12 por tubo: onde está a fibra 100?",
+    "alternativas": [
+      {
+        "texto": "Tubo 8, posição 4.",
+        "correta": false,
+        "explicacao": "Arredonde para cima: 100 ÷ 12 = 8,3 vira 9."
+      },
+      {
+        "texto": "Tubo 9, posição 4.",
+        "correta": true,
+        "explicacao": "Certo: 100 ÷ 12 = 8,3 → tubo 9; 100 − 96 = 4."
+      },
+      {
+        "texto": "Tubo 10, posição 0.",
+        "correta": false,
+        "explicacao": "Não existe posição 0; a fibra 100 é a 4ª do tubo 9."
+      },
+      {
+        "texto": "Tubo 9, posição 10.",
+        "correta": false,
+        "explicacao": "A posição é 100 − 96 = 4."
+      }
+    ],
+    "fontes": [
+      "prysmian-duto"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-04-q7",
+    "licao": "03-04",
+    "enunciado": "Dois cabos de 12 fibras do mesmo fabricante: um tem um tubo com as 12; o outro, tubos de 2. Por quê?",
+    "alternativas": [
+      {
+        "texto": "Um dos dois está com defeito.",
+        "correta": false,
+        "explicacao": "As duas montagens aparecem nas fichas."
+      },
+      {
+        "texto": "Tubo de 2 só existe em cabo multimodo.",
+        "correta": false,
+        "explicacao": "Os exemplos da ficha são monomodo."
+      },
+      {
+        "texto": "O de tubos de 2 tem fibras de reserva.",
+        "correta": false,
+        "explicacao": "Todas as fibras contam igual."
+      },
+      {
+        "texto": "O arranjo muda de um cabo para outro: confira sempre na ficha.",
+        "correta": true,
+        "explicacao": "Certo. Na Prysmian, o AS80 de 12 fibras tem um tubo com as 12 e o AS120, tubos de 2."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-04-q8",
+    "licao": "03-04",
+    "enunciado": "Num cabo de 288 fibras (24 tubos), o que diferencia o tubo 13 do tubo 1?",
+    "alternativas": [
+      {
+        "texto": "Uma marca extra: traços (Furukawa), anéis (Prysmian) ou faixa (TIA).",
+        "correta": true,
+        "explicacao": "Certo. As cores se repetem a partir do 13º, com essa marca."
+      },
+      {
+        "texto": "Nada: o técnico conta pela posição.",
+        "correta": false,
+        "explicacao": "Sem a marca, o 13 seria igual ao 1. As fichas marcam a partir do 13º."
+      },
+      {
+        "texto": "O tubo 13 é sempre preto.",
+        "correta": false,
+        "explicacao": "As cores se repetem: o 13 tem a cor do 1, com a marca."
+      },
+      {
+        "texto": "O tubo 13 não tem fibras.",
+        "correta": false,
+        "explicacao": "Tem fibras como os outros."
+      }
+    ],
+    "fontes": [
+      "furukawa-et02719",
+      "prysmian-duto",
+      "foa-cores"
+    ],
+    "dificuldade": 2
+  }
+]

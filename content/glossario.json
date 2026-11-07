@@ -488,7 +488,8 @@
       "foa-entrega"
     ],
     "licoes": [
-      "09-05"
+      "09-05",
+      "03-01"
     ],
     "en": "As built"
   },
@@ -577,7 +578,8 @@
       "prysmian-g652d"
     ],
     "licoes": [
-      "02-02"
+      "02-02",
+      "03-03"
     ],
     "en": "Coating"
   },
@@ -910,7 +912,8 @@
       "viavi-otdr-dicas"
     ],
     "licoes": [
-      "06-03"
+      "06-03",
+      "03-07"
     ]
   },
   {
@@ -973,6 +976,281 @@
     ],
     "licoes": [
       "06-03"
+    ]
+  },
+  {
+    "id": "cabo-autossustentado",
+    "pt": "Cabo autossustentado",
+    "sigla": "AS",
+    "en": "Self-supporting cable (ADSS)",
+    "definicao": "Cabo aéreo que se sustenta sozinho entre os postes. O número depois de AS é o vão máximo, em metros: AS80, AS120, AS200.",
+    "fontes": [
+      "transcend-as",
+      "prysmian-cfoa-as"
+    ],
+    "licoes": [
+      "03-01"
+    ]
+  },
+  {
+    "id": "vao",
+    "pt": "Vão",
+    "en": "Span",
+    "definicao": "Distância entre dois pontos de fixação de um cabo aéreo, como de um poste ao seguinte.",
+    "fontes": [
+      "transcend-as"
+    ],
+    "licoes": [
+      "03-01"
+    ]
+  },
+  {
+    "id": "nucleo-seco",
+    "pt": "Núcleo seco",
+    "en": "Dry core",
+    "definicao": "Cabo sem gel: a umidade é barrada por fios ou fitas que incham com água (hidroexpansíveis). Na gravação, S; o geleado é G.",
+    "fontes": [
+      "prysmian-cfoa-as",
+      "furukawa-et02719"
+    ],
+    "licoes": [
+      "03-01"
+    ]
+  },
+  {
+    "id": "classe-nr-rc",
+    "pt": "Classe NR / RC da capa",
+    "definicao": "Classe da capa do cabo quanto à chama: NR, normal; RC, retardante à chama. Não tem relação com as normas NR-10 e NR-35.",
+    "fontes": [
+      "prysmian-duto",
+      "prysmian-cfoa-as"
+    ],
+    "licoes": [
+      "03-01"
+    ]
+  },
+  {
+    "id": "tubo-loose",
+    "pt": "Tubo loose",
+    "en": "Loose tube",
+    "definicao": "Tubo plástico com as fibras de 250 µm soltas dentro, com gel ou seco. O cabo externo reúne vários tubos em volta do elemento central.",
+    "fontes": [
+      "prysmian-cfoa-as",
+      "furukawa-et02719"
+    ],
+    "licoes": [
+      "03-04",
+      "02-02"
+    ]
+  },
+  {
+    "id": "tubo-piloto",
+    "pt": "Tubo piloto",
+    "definicao": "No esquema piloto e direcional, o tubo 1, verde. É dele que a contagem dos tubos parte.",
+    "fontes": [
+      "transcend-as",
+      "prysmian-cfoa-as"
+    ],
+    "licoes": [
+      "03-04"
+    ]
+  },
+  {
+    "id": "tubo-direcional",
+    "pt": "Tubo direcional",
+    "definicao": "O tubo 2, amarelo, ao lado do piloto. Mostra o sentido em que a contagem segue pelos tubos brancos.",
+    "fontes": [
+      "transcend-as"
+    ],
+    "licoes": [
+      "03-04"
+    ]
+  },
+  {
+    "id": "enchimento",
+    "pt": "Enchimento",
+    "en": "Filler",
+    "definicao": "Elemento sem fibra que ocupa o lugar de um tubo para manter o núcleo do cabo redondo. Não entra na contagem dos tubos.",
+    "fontes": [
+      "furukawa-et02719",
+      "prysmian-duto"
+    ],
+    "licoes": [
+      "03-04"
+    ]
+  },
+  {
+    "id": "ferrolho",
+    "pt": "Ferrolho",
+    "en": "Ferrule",
+    "definicao": "Cilindro, quase sempre de cerâmica, que segura a fibra no centro do conector. SC e FC: 2,5 mm; LC: 1,25 mm.",
+    "fontes": [
+      "foa-conectores"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "adaptador-optico",
+    "pt": "Adaptador óptico",
+    "en": "Mating adapter",
+    "definicao": "Peça onde dois conectores se encaixam frente a frente, com os ferrolhos alinhados.",
+    "fontes": [
+      "foa-conectores"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "conector-sc",
+    "pt": "Conector SC",
+    "definicao": "Conector de encaixe de empurrar e puxar (push-pull), com ferrolho de 2,5 mm.",
+    "fontes": [
+      "foa-conectores"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "conector-lc",
+    "pt": "Conector LC",
+    "definicao": "Conector pequeno, com ferrolho de 1,25 mm, metade do SC.",
+    "fontes": [
+      "foa-conectores"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "conector-fc",
+    "pt": "Conector FC",
+    "definicao": "Conector de rosca, com ferrolho de 2,5 mm. Alinhe a chave antes de apertar.",
+    "fontes": [
+      "foa-conectores"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "upc",
+    "pt": "Polimento UPC",
+    "sigla": "UPC",
+    "en": "Ultra physical contact",
+    "definicao": "Polimento com a face curva, mais arredondada que a PC. Reflete cerca de −40 a −50 dB. Conector azul.",
+    "fontes": [
+      "foa-reflectancia",
+      "fluke-apc",
+      "foa-conectores"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "apc",
+    "pt": "Polimento APC",
+    "sigla": "APC",
+    "en": "Angled physical contact",
+    "definicao": "Polimento com a face em ângulo de 8°: a luz refletida sai do núcleo. Reflete −60 dB ou menos. Conector verde. Nunca se liga com UPC.",
+    "fontes": [
+      "foa-reflectancia",
+      "fluke-apc",
+      "foa-conectores"
+    ],
+    "licoes": [
+      "03-07",
+      "06-03"
+    ]
+  },
+  {
+    "id": "dio",
+    "pt": "Distribuidor interno óptico",
+    "sigla": "DIO",
+    "definicao": "Caixa de rack onde o cabo termina: as fibras são emendadas em pigtails, que chegam a um painel de adaptadores. Dali saem os cordões para os equipamentos.",
+    "fontes": [
+      "intelbras-dio",
+      "intelbras-infografico-ftth"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "pigtail",
+    "pt": "Pigtail",
+    "definicao": "Fibra curta com conector numa ponta só. A outra ponta é emendada por fusão na fibra do cabo, como no DIO.",
+    "fontes": [
+      "intelbras-dio",
+      "foa-cores"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "cordao-optico",
+    "pt": "Cordão óptico",
+    "en": "Patch cord",
+    "definicao": "Cabo curto com conector nas duas pontas, para ligar dois equipamentos ou fazer manobra no DIO.",
+    "fontes": [
+      "intelbras-infografico-ftth"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "ceo",
+    "pt": "Caixa de emenda óptica",
+    "sigla": "CEO",
+    "definicao": "Caixa que guarda as emendas por fusão e faz derivações no cabo principal da rede.",
+    "fontes": [
+      "intelbras-infografico-ftth"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "cto",
+    "pt": "Caixa de terminação óptica",
+    "sigla": "CTO",
+    "definicao": "Na rede FTTH, caixa onde a rede encontra o drop do cliente. Costuma ter o último splitter.",
+    "fontes": [
+      "intelbras-cto",
+      "intelbras-infografico-ftth"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "drop",
+    "pt": "Cabo drop",
+    "en": "Drop cable",
+    "definicao": "Cabo do último trecho, entre a rede (a CTO) e o cliente.",
+    "fontes": [
+      "intelbras-infografico-ftth"
+    ],
+    "licoes": [
+      "03-07"
+    ]
+  },
+  {
+    "id": "pto",
+    "pt": "Ponto de terminação óptico",
+    "sigla": "PTO",
+    "definicao": "Caixinha no imóvel do cliente onde o drop termina. Protege e conecta a fibra, com adaptadores SC.",
+    "fontes": [
+      "nazda-pto"
+    ],
+    "licoes": [
+      "03-07"
     ]
   }
 ]

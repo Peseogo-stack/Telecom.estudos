@@ -112,6 +112,15 @@
     ]
   },
   {
+    "id": "a13",
+    "onde": "sozinho",
+    "texto": "Os cabos da nossa rede seguem o código de cores nacional (verde, amarela, branca, azul…) ou há cabos importados no padrão TIA-598 (azul, laranja, verde…)? E os pigtails do DIO, em que ordem vêm?",
+    "dica": "Gravação da capa, ficha do fabricante, cores ao abrir uma caixa acompanhado",
+    "licoes": [
+      "03-03"
+    ]
+  },
+  {
     "id": "b01",
     "onde": "documentos",
     "texto": "Qual é a norma de compartilhamento de postes vigente (número e versão)? Há referência pública a uma \"NT-002\" (2020) e a uma possível \"NT 06/2024\".",
@@ -359,7 +368,8 @@
     "licoes": [
       "03-05",
       "04-06",
-      "02-04"
+      "02-04",
+      "03-07"
     ]
   },
   {
@@ -554,6 +564,15 @@
     "licoes": [
       "06-01",
       "06-02"
+    ]
+  },
+  {
+    "id": "d15",
+    "onde": "colega",
+    "texto": "Quando o mapa de fusão liga cabos de padrões de cor diferentes, ele casa as fibras por número ou por cor? Como a equipe anota?",
+    "dica": "",
+    "licoes": [
+      "03-03"
     ]
   }
 ]

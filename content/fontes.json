@@ -231,7 +231,7 @@
     "tipo": "associacao",
     "url": "https://www.thefoa.org/tech/ref/testing/test/reflectance.html",
     "acessadoEm": "2026-11-07",
-    "observacao": "ORL é a soma de todas as reflexões e do retroespalhamento ao longo da fibra testada; reflectância de −50 dB equivale a perda de retorno de 50 dB."
+    "observacao": "Refletância típica por tipo de conector: face plana com espaço de ar −20 dB; PC −30 a −40 dB; UPC −40 a −50 dB; APC (ângulo de 8°) −60 dB ou melhor. Refletância de 1% = −20 dB; 1 parte por milhão = −60 dB. ORL é a soma de todas as reflexões e do retroespalhamento ao longo da fibra testada; refletância de −50 dB equivale a perda de retorno de 50 dB."
   },
   {
     "id": "yokogawa-aq7932",
@@ -396,13 +396,76 @@
     "observacao": "TIA-598: azul, laranja, verde, marrom, cinza, branco, vermelho, preto, amarelo, violeta, rosa, água. Nos tubos: 13–24 com faixa preta (amarela no preto), 25–36 laranja, 37–48 verde; tubo com mais de 12 fibras separa grupos com fita (binder). Fibras de 900 µm (tight buffer) em pigtails e cabos breakout. Conector monomodo azul (PC) e verde (APC)."
   },
   {
+    "id": "prysmian-duto",
+    "titulo": "Cabo Óptico Dielétrico Duto CFOA-SM-DD-S 002–288FO NR/RC (Rev. 01, 19/08/2020)",
+    "organizacao": "Prysmian",
+    "tipo": "fabricante",
+    "url": "https://br.prysmian.com/sites/br.prysmian.com/files/media/documents/CO_SUB_01_PT_01_CFOA-SM-DD-S%20002-288FO%20NR-RC.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Gravação a cada 1 metro: <PRYSMIAN> <ano> <CFOA-XX-DD-S YYFO WW> <ANATEL> <código> <lote> <marcação métrica>; DD = duto dielétrico; S = núcleo seco; WW: NR = normal, RC = retardante à chama. Fibras por tubo: 2 a 12F (2), 24F e 36F (6), 48F a 288F (12). Tubos: 1 verde, 2 amarelo, demais naturais; a partir do 13º tubo, identificação por anéis. Raio mínimo de curvatura: 20× o diâmetro na instalação, 10× depois. Norma: ABNT NBR 14566."
+  },
+  {
+    "id": "foa-conectores",
+    "titulo": "Fiber Optic Connector Identifier",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/connID.htm",
+    "acessadoEm": "2026-11-07",
+    "observacao": "SC: engate de empurrar e puxar, ferrolho de 2,5 mm. LC: pequeno, ferrolho de 1,25 mm, metade do SC. FC: de rosca, ferrolho de 2,5 mm; alinhar a chave antes de apertar. Cores (TIA-568): azul para monomodo, verde para monomodo APC (angular)."
+  },
+  {
+    "id": "fluke-apc",
+    "titulo": "Angled Physical Contact Connectors (APC) — OptiFiber",
+    "organizacao": "Fluke Networks",
+    "tipo": "fabricante",
+    "url": "https://www.flukenetworks.com/knowledge-base/optifiber/angled-physical-contact-connectors-apc-optifiber",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Quando um conector APC é ligado a um UPC, a característica antirreflexo se anula, e a reflexão é tão grande que o traço mostra ecos da conexão APC/UPC."
+  },
+  {
+    "id": "intelbras-infografico-ftth",
+    "titulo": "Infográfico — soluções para rede ponto-multiponto (FTTH)",
+    "organizacao": "Intelbras",
+    "tipo": "fabricante",
+    "url": "https://backend.intelbras.com/sites/default/files/2023-02/Infogr%C3%A1fico_ponto_multiponto_v3.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Caminho central office → rede primária → secundária → drop → cliente. CEO: acondiciona as emendas por fusão e faz derivações no cabo principal. CTO: acomoda o último splitter, que liga os clientes à rede. Drop: cabo entre o cliente e a rede secundária. Cordão óptico: liga dois equipamentos, como o DIO e o conversor de mídia."
+  },
+  {
+    "id": "intelbras-cto",
+    "titulo": "Caixa de Terminação Óptica XFCT 1600 / 1608 / 1616 — datasheet (v1.2)",
+    "organizacao": "Intelbras",
+    "tipo": "fabricante",
+    "url": "https://backend.intelbras.com/sites/default/files/2022-08/Datasheet%20XFCT_v1.2.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "A CTO é o ponto de terminação do cabo backbone para conectar com o cabo drop nas redes FTTx; nela se fazem emendas, divisão e distribuição das fibras. Modelos com splitter 1x8 ou 1x16 SC/APC já instalado. IP 55."
+  },
+  {
+    "id": "intelbras-dio",
+    "titulo": "DIO 24FO D / 48FO D / 72FO D — guia de instalação",
+    "organizacao": "Intelbras",
+    "tipo": "fabricante",
+    "url": "https://backend.intelbras.com/sites/default/files/2025-01/Guia_DIO_48_24_72FO_D_03-24_site.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Distribuidor interno óptico SC/APC para rack: bandejas de acomodação de emendas e painel de adaptadores. A fibra do cabo é emendada por fusão no pigtail; antes da fusão, conferir com a caneta laser visualizadora de falhas se a fibra está íntegra. Os cordões ópticos se ligam aos adaptadores do DIO."
+  },
+  {
+    "id": "nazda-pto",
+    "titulo": "Ponto de Terminação Óptico (PTO) Nazda NZ-I PTOSTD, 8 fibras — ficha técnica",
+    "organizacao": "Nazda (ficha publicada pela Dicomp)",
+    "tipo": "fabricante",
+    "url": "https://www.dicomp.com.br/downloads/materiais_apoio/datasheet/21655-1.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "PTO: dispositivo de proteção e conexão para cabos de fibra em FTTH, principalmente para instalação interna e em corredores; acomoda splitter PLC 1x8 e adaptadores SC."
+  },
+  {
     "id": "furukawa-et02719",
     "titulo": "ET02719 v7 (28/06/2024) — Cabo óptico com proteção contra roedores e padrão de cor de tubos ABNT colorido",
     "organizacao": "Furukawa Electric LatAm (ficha hospedada por revendedor)",
     "tipo": "fabricante",
     "url": "https://www.instrufiber.com.br/image/catalog/pdf/f9ceeafa9dd5e981464834fafe8443f6-CFOA-XX-DDR-X-FO-RA.pdf",
     "acessadoEm": "2026-11-07",
-    "observacao": "Fibras e tubos 1–12: verde, amarela, branca, azul, vermelha, violeta, marrom, rosa, preta, cinza, laranja, azul-claro; 13–24 com traços pretos de ~10 mm (branco sobre o preto)."
+    "observacao": "Fibras e tubos 1–12: verde, amarela, branca, azul, vermelha, violeta, marrom, rosa, preta, cinza, laranja, azul-claro; 13–24 com traços pretos de ~10 mm (branco sobre o preto). Elemento central em FRP; tubos secos com elementos hidroexpansíveis; se necessário, tubos de material termoplástico (enchimento) mantêm o núcleo cilíndrico. Cabos de 18 a 36 fibras com 6 fibras por tubo; 48 a 60, com 12."
   },
   {
     "id": "prysmian-cfoa-as",
@@ -411,7 +474,7 @@
     "tipo": "fabricante",
     "url": "https://www.instrufiber.com.br/image/catalog/pdf/c6faf5476cadcee5b40cf0d27f99fa00-CFOA%20AS%20KP%20DRY-DRY%20-%20PRYSMIAN%20-%20INSTRUFIBER.pdf",
     "acessadoEm": "2026-11-06",
-    "observacao": "Tubos: 1 verde, 2 amarelo, demais brancos; cores das fibras no padrão brasileiro; variação de atenuação ≤ 0,05 dB/km no ensaio de ciclo térmico (NBR 13510)."
+    "observacao": "Norma: ABNT NBR 14160 (cabo óptico aéreo dielétrico autossustentado). Gravação: PRYSMIAN [mês/ano] CFOA-[fibra]-AS[vão]-[bloqueio] [n° fibra]FO [classe] [prot] ANATEL [n° Anatel] [lote] [m]; CFOA = cabo de fibra óptica revestida em acrilato; [bloqueio] = núcleo geleado (G) ou seco (S); [classe] = classe de resistência à chama (NR ou RC); [prot] = classe de proteção à penetração de umidade DRY-DRY (quando aplicável). Fibras por tubo: AS80 com 12 fibras, 12 num tubo; AS120 e AS200 com 12 fibras, tubos de 2; 24 e 36 fibras, 6 por tubo; 48 a 144, 12 por tubo. AS80 de 12 fibras com 9 mm de diâmetro. Raio mínimo de curvatura: 20× o diâmetro durante a instalação, 10× depois. Tubos: 1 verde, 2 amarelo, demais brancos; cores das fibras: verde, amarelo, branco, azul, vermelho, violeta, marrom, rosa, preto, cinza, laranja, acqua. Variação de atenuação ≤ 0,05 dB/km no ensaio de ciclo térmico (NBR 13510)."
   },
   {
     "id": "transcend-as",
@@ -420,7 +483,7 @@
     "tipo": "fabricante",
     "url": "https://www.instrufiber.com.br/image/catalog/pdf/6d64d073b91d01122c26db94f7ef8e66-Cabos%20AS%20Geral%20Transcend%20-%20INSTRUFIBER.pdf",
     "acessadoEm": "2026-11-06",
-    "observacao": "Unidade 01 \"piloto\" (verde), 02 \"direcional\" (amarelo), demais \"normal\" (branco ou natural)."
+    "observacao": "Gravação a cada 1 metro: TRANSCEND – CFOA – SM – AS - 80 - S XXF NR LOTE … ANO … XXXXM. SM = monomodo G.652.D; AS = autossustentado, vãos de 80, 120 ou 200 m; S ou G = núcleo seco ou geleado; a ficha chama o NR de \"norma de segurança\". Raio mínimo de curvatura: 20× o diâmetro externo durante a instalação, 10× depois. Unidade 01 \"piloto\" (verde), 02 \"direcional\" (amarelo), demais \"normal\" (branco ou natural)."
   },
   {
     "id": "intelbras-splitter-plc",
@@ -465,7 +528,7 @@
     "tipo": "fabricante",
     "url": "https://img-en.fs.com//file/datasheet/gsfp-43-20b-datasheet.pdf",
     "acessadoEm": "2026-11-06",
-    "observacao": "OLT classe B+: Tx de +1,5 a +5 dBm em 1490 nm; C+: +3 a +7 dBm."
+    "observacao": "OLT classe B+: Tx de +1,5 a +5 dBm em 1490 nm; C+: +3 a +7 dBm. Interface óptica SC/UPC."
   },
   {
     "id": "fs-gpon-onu-bplus",
@@ -492,7 +555,7 @@
     "tipo": "fabricante",
     "url": "https://documentation.extremenetworks.com/pluggable/GUID-19ED8539-09FF-4FCA-AA4B-CEF749AEE443.shtml",
     "acessadoEm": "2026-11-06",
-    "observacao": "Tx −9 a −3 dBm; Rx −19,5 dBm; orçamento de 11 dB; 10 km."
+    "observacao": "Tx −9 a −3 dBm; Rx −19,5 dBm; orçamento de 11 dB; 10 km. Conector LC de uma fibra (single-fiber LC)."
   },
   {
     "id": "omada-link-budget",

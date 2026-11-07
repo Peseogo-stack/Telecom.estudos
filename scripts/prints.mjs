@@ -1,9 +1,10 @@
 // Tira prints das telas em 390 px (celular) e 1440 px (PC) para revisão visual.
-// Uso: npm run build && npx vite preview --port 4173 & node scripts/prints.mjs docs/prints/fase-2
+// Uso: npm run build && npx vite preview --port 4173 & node scripts/prints.mjs docs/prints/fase-2 [fase-2|modulo-02]
 import { chromium } from 'playwright';
 import { mkdirSync } from 'node:fs';
 
 const saida = process.argv[2] ?? 'docs/prints';
+const conjunto = process.argv[3] ?? 'fase-2';
 mkdirSync(saida, { recursive: true });
 const BASE = 'http://localhost:4173/Telecom.estudos/';
 
@@ -23,7 +24,39 @@ const EXEMPLO = {
   ajustes: { tema: 'claro', sol: false, inicioPlano: ontem, diasSoRevisao: [], soRevisaoAte: null },
 };
 
-const telas = [
+const diagrama = async (p) => p.locator('figure.diagrama').first().scrollIntoViewIfNeeded();
+const resultado = async (p) => p.locator('section[aria-labelledby="t-res"]').scrollIntoViewIfNeeded();
+
+const TELAS_MODULO_02 = [
+  ['01-trilha-modulo-02', '#/trilha/02'],
+  ['02-licao-02-01', '#/licao/02-01'],
+  ['03-licao-02-04-g657', '#/licao/02-04', async (p) => p.getByRole('heading', { name: /G\.657: a fibra que aceita curva/ }).scrollIntoViewIfNeeded()],
+  ['04-licao-02-05-bandas', '#/licao/02-05', diagrama],
+  ['05-licao-02-06-perdas', '#/licao/02-06', diagrama],
+  ['06-licao-02-07-escada', '#/licao/02-07', diagrama],
+  ['07-questao-02-07', '#/licao/02-07/questoes', async (p) => {
+    await p.locator('.alternativa input').nth(1).check();
+    await p.getByRole('button', { name: 'Confirmar resposta' }).click();
+    await p.locator('.questao legend').scrollIntoViewIfNeeded();
+  }],
+  ['08-ferramentas', '#/ferramentas'],
+  ['09-orcamento-topo', '#/ferramentas/orcamento'],
+  ['10-orcamento-resultado', '#/ferramentas/orcamento', resultado],
+  ['11-orcamento-escada', '#/ferramentas/orcamento', async (p) => p.locator('section[aria-labelledby="t-res"] figure.diagrama').scrollIntoViewIfNeeded()],
+  ['12-orcamento-saturacao', '#/ferramentas/orcamento', async (p) => {
+    await p.getByLabel(/^Distância/).fill('1');
+    await p.getByRole('button', { name: 'Remover splitter 1' }).click();
+    await resultado(p);
+  }],
+  ['13-conversor-splitters', '#/ferramentas/conversor', async (p) => p.locator('section[aria-labelledby="t-bal"]').scrollIntoViewIfNeeded()],
+  ['14-cores-numero', '#/ferramentas/cores', async (p) => {
+    await p.getByLabel('Número da fibra').fill('30');
+    await p.locator('section[aria-labelledby="t-num"]').scrollIntoViewIfNeeded();
+  }],
+  ['15-cores-treino', '#/ferramentas/cores', async (p) => p.locator('section[aria-labelledby="t-treino"]').scrollIntoViewIfNeeded()],
+];
+
+const TELAS_FASE_2 = [
   ['01-hoje', '#/'],
   ['02-trilha', '#/trilha'],
   ['03-modulo-09', '#/trilha/09'],
@@ -49,6 +82,11 @@ const telas = [
   ['13-ajustes', '#/ajustes'],
 ];
 
+const telas = conjunto === 'modulo-02' ? TELAS_MODULO_02 : TELAS_FASE_2;
+const temas = conjunto === 'modulo-02'
+  ? [['16-escuro', '#/licao/02-06', { tema: 'escuro', sol: false }], ['17-modo-sol', '#/ferramentas/orcamento', { tema: 'claro', sol: true }]]
+  : [['14-escuro', '#/licao/10-01', { tema: 'escuro', sol: false }], ['15-modo-sol', '#/licao/10-01', { tema: 'claro', sol: true }]];
+
 const navegador = await chromium.launch();
 for (const [largura, altura, sufixo] of [[390, 844, '390'], [1440, 900, '1440']]) {
   const contexto = await navegador.newContext({
@@ -70,17 +108,17 @@ for (const [largura, altura, sufixo] of [[390, 844, '390'], [1440, 900, '1440']]
     await p.waitForTimeout(250);
     await p.screenshot({ path: `${saida}/${nome}-${sufixo}.png` });
   }
-  // Temas escuro e sol (só a lição)
-  for (const [nome, ajustes] of [['14-escuro', { tema: 'escuro', sol: false }], ['15-modo-sol', { tema: 'claro', sol: true }]]) {
+  // Temas escuro e sol
+  for (const [nome, rota, ajustes] of temas) {
     await p.evaluate((a) => {
       const e = JSON.parse(localStorage.getItem('fc:v1:estado'));
       e.ajustes = { ...e.ajustes, ...a };
       localStorage.setItem('fc:v1:estado', JSON.stringify(e));
     }, ajustes);
-    await p.goto(BASE + '#/licao/10-01');
+    await p.goto(BASE + rota);
     await p.reload();
     await p.locator('main h1').first().waitFor();
-    await p.locator('figure.diagrama').scrollIntoViewIfNeeded();
+    await p.locator('figure.diagrama').first().scrollIntoViewIfNeeded();
     await p.screenshot({ path: `${saida}/${nome}-${sufixo}.png` });
   }
   await contexto.close();

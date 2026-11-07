@@ -90,6 +90,13 @@ const busca = [
   },
   {
     tipo: 'ferramenta',
+    id: 'otdr',
+    titulo: 'Leitor de OTDR',
+    texto: 'OTDR traço treino evento conector fusão curvatura macrocurvatura quebra fim de fibra ganho aparente gainer fantasma ghost refletância 1310 1550',
+    rota: '/ferramentas/otdr',
+  },
+  {
+    tipo: 'ferramenta',
     id: 'conversor',
     titulo: 'dBm ↔ mW e splitters',
     texto: 'conversor dBm mW microwatt potência splitter balanceado desbalanceado PLC FBT 1:8 1:16 10/90 perda',

@@ -18,6 +18,11 @@ const PRONTAS = [
     texto: 'Converte potência e mostra a perda de splitters balanceados e desbalanceados, com a fonte de cada valor.',
   },
   {
+    para: '/ferramentas/otdr',
+    titulo: 'Leitor de OTDR',
+    texto: 'Treino com 36 traços simulados em três níveis: conector, fusão, curvatura, quebra, fim de fibra, ganho aparente e fantasma, com a correção explicada.',
+  },
+  {
     para: '/ferramentas/disponibilidade',
     titulo: 'Disponibilidade e glosa de SLA',
     texto: 'Converte a % do SLA em minutos, soma as paradas, aplica as exclusões e calcula o desconto, com memória de cálculo para copiar.',
@@ -26,7 +31,6 @@ const PRONTAS = [
 
 const EM_BREVE = [
   'Comprimento de cabo com reserva técnica',
-  'Leitor de OTDR',
   'Montador de rede PON',
   'Inspeção de poste',
 ];

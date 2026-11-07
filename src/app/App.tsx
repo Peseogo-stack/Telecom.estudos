@@ -10,6 +10,7 @@ import { TelaDisponibilidade } from '../ferramentas/disponibilidade/TelaDisponib
 import { TelaOrcamento } from '../ferramentas/optica/TelaOrcamento';
 import { TelaConversor } from '../ferramentas/optica/TelaConversor';
 import { TelaCores } from '../ferramentas/cores/TelaCores';
+import { TelaLeitorOtdr } from '../ferramentas/otdr/TelaLeitorOtdr';
 import { Glossario } from '../telas/Glossario';
 import { Busca } from '../telas/Busca';
 import { Caderno } from '../telas/Caderno';
@@ -36,6 +37,7 @@ export function App() {
             <Route path="/ferramentas/orcamento" element={<TelaOrcamento />} />
             <Route path="/ferramentas/conversor" element={<TelaConversor />} />
             <Route path="/ferramentas/cores" element={<TelaCores />} />
+            <Route path="/ferramentas/otdr" element={<TelaLeitorOtdr />} />
             <Route path="/glossario" element={<Glossario />} />
             <Route path="/busca" element={<Busca />} />
             <Route path="/caderno" element={<Caderno />} />

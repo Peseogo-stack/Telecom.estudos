@@ -49,8 +49,9 @@ function CampoNumero({ rotulo, valor, onMudar, dica, sufixo }: { rotulo: string;
 
 const ROTULO_REGRA: Record<Regra, string> = {
   proporcional: 'Proporcional ao tempo parado (Dc = Cm × Ti ÷ To)',
-  excesso: 'Só o que passou do permitido',
+  taxaPorMinuto: 'Taxa fixa por minuto parado (ex.: 0,015% do valor por minuto)',
   faixas: 'Por faixas de disponibilidade',
+  excesso: 'Só o que passou do permitido',
 };
 
 function novoId() {
@@ -77,9 +78,29 @@ export function TelaDisponibilidade() {
     setE((x) => ({ ...x, paradas: x.paradas.map((p) => (p.id === id ? { ...p, ...parcial } : p)) }));
 
   const to = minutosDoPeriodo(e.periodo, e.diasNoMes);
-  const fontes = ['trt7-tr-internet', 'ifsuldeminas-ans', 'sudam-impugnacao-2026', 'tjal-tr-link', 'anatel-rgc-manual']
+  const fontes = ['trt7-tr-internet', 'trt7-tr-principal', 'ifsuldeminas-ans', 'sudam-impugnacao-2026', 'tjal-tr-link', 'anatel-rgc-manual']
     .map((id) => fontesPorId.get(id))
     .filter(Boolean);
+
+  const editorFaixas = (
+    <div>
+      <p className="dica">Exemplo do IF Sul de Minas: abaixo de 90% → 50%; abaixo de 80% → 100%. Edite conforme o contrato.</p>
+      {e.faixas.map((f, n) => (
+        <div key={n} className="linha-campos">
+          <CampoNumero rotulo={`Faixa ${n + 1}: abaixo de`} sufixo="%" valor={f.abaixoDe} onMudar={(v) => mudar({ faixas: e.faixas.map((x, k) => (k === n ? { ...x, abaixoDe: v } : x)) })} />
+          <CampoNumero rotulo="glosa de" sufixo="% do valor" valor={f.glosaPercent} onMudar={(v) => mudar({ faixas: e.faixas.map((x, k) => (k === n ? { ...x, glosaPercent: v } : x)) })} />
+        </div>
+      ))}
+      <div className="acoes">
+        <button type="button" className="botao botao-secundario" onClick={() => mudar({ faixas: [...e.faixas, { abaixoDe: 99, glosaPercent: 10 }] })}>
+          + Faixa
+        </button>
+        <button type="button" className="botao botao-secundario" onClick={() => mudar({ faixas: FAIXAS_EXEMPLO })}>
+          Restaurar exemplo
+        </button>
+      </div>
+    </div>
+  );
 
   async function copiar() {
     if (!r) return;
@@ -119,6 +140,7 @@ export function TelaDisponibilidade() {
             <option value="mes30">Mês de 30 dias (43.200 min)</option>
             <option value="mesCalendario">Mês do calendário</option>
             <option value="ano">Ano de 365 dias (525.600 min)</option>
+            <option value="anoBissexto">Ano bissexto, 366 dias (527.040 min)</option>
           </select>
         </label>
         {e.periodo === 'mesCalendario' && (
@@ -173,33 +195,38 @@ export function TelaDisponibilidade() {
           ))}
         </fieldset>
         {e.regra === 'proporcional' && (
-          <label className="caixa-marcar">
-            <input type="checkbox" checked={e.descontoSoSeDescumprir} onChange={(ev) => mudar({ descontoSoSeDescumprir: ev.target.checked })} />
-            Só há desconto se a disponibilidade ficar abaixo do SLA
-          </label>
+          <>
+            <label className="caixa-marcar">
+              <input type="checkbox" checked={e.descontoSoSeDescumprir} onChange={(ev) => mudar({ descontoSoSeDescumprir: ev.target.checked })} />
+              Só há desconto se a disponibilidade ficar abaixo do SLA
+            </label>
+            <label className="caixa-marcar">
+              <input type="checkbox" checked={e.somarFaixas} onChange={(ev) => mudar({ somarFaixas: ev.target.checked })} />
+              Somar também a glosa por faixas (como no IF Sul de Minas)
+            </label>
+            {e.somarFaixas && (
+              <>
+                <p className="dica">
+                  A soma fica limitada ao valor do período. Confirme no contrato se as duas regras se somam <SeloConfirmar />.
+                </p>
+                {editorFaixas}
+              </>
+            )}
+          </>
+        )}
+        {e.regra === 'taxaPorMinuto' && (
+          <CampoNumero
+            rotulo="Desconto por minuto parado"
+            sufixo="% do valor"
+            valor={e.taxaPorMinutoPercent}
+            onMudar={(n) => mudar({ taxaPorMinutoPercent: n })}
+            dica="O TRT-7 usa 0,015% por minuto, só abaixo do SLA. Use o número do contrato."
+          />
         )}
         {e.regra === 'excesso' && (
           <p className="aviso">Não achamos essa regra em documento público. Use só se o contrato disser.</p>
         )}
-        {e.regra === 'faixas' && (
-          <div>
-            <p className="dica">Exemplo do IF Sul de Minas: abaixo de 90% → 50%; abaixo de 80% → 100%. Edite conforme o contrato.</p>
-            {e.faixas.map((f, n) => (
-              <div key={n} className="linha-campos">
-                <CampoNumero rotulo={`Faixa ${n + 1}: abaixo de`} sufixo="%" valor={f.abaixoDe} onMudar={(v) => mudar({ faixas: e.faixas.map((x, k) => (k === n ? { ...x, abaixoDe: v } : x)) })} />
-                <CampoNumero rotulo="glosa de" sufixo="% do valor" valor={f.glosaPercent} onMudar={(v) => mudar({ faixas: e.faixas.map((x, k) => (k === n ? { ...x, glosaPercent: v } : x)) })} />
-              </div>
-            ))}
-            <div className="acoes">
-              <button type="button" className="botao botao-secundario" onClick={() => mudar({ faixas: [...e.faixas, { abaixoDe: 99, glosaPercent: 10 }] })}>
-                + Faixa
-              </button>
-              <button type="button" className="botao botao-secundario" onClick={() => mudar({ faixas: FAIXAS_EXEMPLO })}>
-                Restaurar exemplo
-              </button>
-            </div>
-          </div>
-        )}
+        {e.regra === 'faixas' && editorFaixas}
         <label className="caixa-marcar">
           <input type="checkbox" checked={e.tetoPercent !== null} onChange={(ev) => mudar({ tetoPercent: ev.target.checked ? 20 : null })} />
           O contrato tem teto de desconto
@@ -264,7 +291,8 @@ export function TelaDisponibilidade() {
         <h2 id="t-fontes">De onde vêm as fórmulas</h2>
         <ul className="prosa">
           <li>Disponibilidade D = (To − Ti) ÷ To × 100 e mês de 43.200 min: TR do TRT-7 e manual do RGC (Anatel).</li>
-          <li>Glosa proporcional e por faixas: ANS do IF Sul de Minas. Teto de 20%: SUDAM.</li>
+          <li>Glosa proporcional e por faixas: ANS do IF Sul de Minas (lá, as faixas vêm além do proporcional). Teto de 20%: SUDAM.</li>
+          <li>Taxa fixa por minuto (0,015% do valor por minuto, abaixo de 99,3%): TR do TRT-7, item 14.1.</li>
           <li>Exclusões (manutenção avisada, falta de energia no local, falhas em menos de 3 h juntas): TR do TJAL.</li>
           <li>"Só o excesso": sem fonte pública; use só se o contrato disser.</li>
         </ul>

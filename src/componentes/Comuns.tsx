@@ -1,6 +1,7 @@
 import { useEffect, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { NOME_APP } from '../app/config';
+import { licoesDisponiveis } from '../conteudo/carregar';
 import type { Fonte } from '../conteudo/tipos';
 import { formatarDia } from '../dominio/datas';
 
@@ -90,4 +91,10 @@ export function embaralhar<T>(lista: T[]): T[] {
     [c[i], c[j]] = [c[j], c[i]];
   }
   return c;
+}
+
+/** Link para uma lição; se ela ainda não tem conteúdo, mostra só o número com "(em breve)". */
+export function LinkLicao({ id }: { id: string }) {
+  if (licoesDisponiveis.has(id)) return <Link to={`/licao/${id}`}>{id}</Link>;
+  return <span>{id} (em breve)</span>;
 }

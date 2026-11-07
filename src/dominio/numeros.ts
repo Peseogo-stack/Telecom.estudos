@@ -3,7 +3,8 @@
  * Vazio vira NaN (a validação de cada tela avisa).
  */
 export function lerNumero(texto: string): number {
-  let t = texto.trim().replace(/\s/g, '').replace(/^R\$/i, '');
+  // Aceita o sinal de menos tipográfico (−) e o travessão, que aparecem ao colar texto.
+  let t = texto.trim().replace(/\s/g, '').replace(/^R\$/i, '').replace(/[−–]/g, '-');
   if (t === '') return NaN;
   if (t.includes(',')) t = t.replace(/\./g, '').replace(',', '.');
   else if (/^-?\d{1,3}(\.\d{3})+$/.test(t)) t = t.replace(/\./g, '');

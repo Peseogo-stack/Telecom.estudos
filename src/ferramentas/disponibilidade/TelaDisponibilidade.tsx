@@ -16,36 +16,12 @@ import {
   permitido,
   validar,
 } from './calculo';
-import { lerNumero, mostrarNumero } from '../../dominio/numeros';
+import { mostrarNumero } from '../../dominio/numeros';
+import { CampoNumero } from '../../componentes/CampoNumero';
 
 const reais = (x: number) => x.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 const pct = (x: number, casas = 3) => `${x.toLocaleString('pt-BR', { maximumFractionDigits: casas })}%`;
 
-
-function CampoNumero({ rotulo, valor, onMudar, dica, sufixo }: { rotulo: string; valor: number; onMudar: (n: number) => void; dica?: string; sufixo?: string }) {
-  const [texto, setTexto] = useState(mostrarNumero(valor));
-  useEffect(() => {
-    if (lerNumero(texto) !== valor && !(Number.isNaN(valor) && texto === '')) setTexto(mostrarNumero(valor));
-  }, [valor]);
-  return (
-    <label className="campo">
-      <span>
-        {rotulo}
-        {sufixo ? ` (${sufixo})` : ''}
-      </span>
-      <input
-        type="text"
-        inputMode="decimal"
-        value={texto}
-        onChange={(e) => {
-          setTexto(e.target.value);
-          onMudar(lerNumero(e.target.value));
-        }}
-      />
-      {dica && <span className="dica">{dica}</span>}
-    </label>
-  );
-}
 
 const ROTULO_REGRA: Record<Regra, string> = {
   proporcional: 'Proporcional ao tempo parado (Dc = Cm × Ti ÷ To)',

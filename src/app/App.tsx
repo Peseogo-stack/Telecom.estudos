@@ -7,6 +7,9 @@ import { Licao, Quiz } from '../telas/Licao';
 import { Revisao } from '../telas/Revisao';
 import { Ferramentas } from '../telas/Ferramentas';
 import { TelaDisponibilidade } from '../ferramentas/disponibilidade/TelaDisponibilidade';
+import { TelaOrcamento } from '../ferramentas/optica/TelaOrcamento';
+import { TelaConversor } from '../ferramentas/optica/TelaConversor';
+import { TelaCores } from '../ferramentas/cores/TelaCores';
 import { Glossario } from '../telas/Glossario';
 import { Busca } from '../telas/Busca';
 import { Caderno } from '../telas/Caderno';
@@ -30,6 +33,9 @@ export function App() {
             <Route path="/revisao" element={<Revisao />} />
             <Route path="/ferramentas" element={<Ferramentas />} />
             <Route path="/ferramentas/disponibilidade" element={<TelaDisponibilidade />} />
+            <Route path="/ferramentas/orcamento" element={<TelaOrcamento />} />
+            <Route path="/ferramentas/conversor" element={<TelaConversor />} />
+            <Route path="/ferramentas/cores" element={<TelaCores />} />
             <Route path="/glossario" element={<Glossario />} />
             <Route path="/busca" element={<Busca />} />
             <Route path="/caderno" element={<Caderno />} />

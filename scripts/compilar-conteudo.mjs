@@ -74,6 +74,27 @@ const busca = [
     texto: 'calculadora SLA disponibilidade minutos parados glosa desconto contrato link 99,7 99,5 99,9 indisponibilidade',
     rota: '/ferramentas/disponibilidade',
   },
+  {
+    tipo: 'ferramenta',
+    id: 'orcamento',
+    titulo: 'Orçamento de potência',
+    texto: 'power budget link budget PON GPON XGS-PON ponto a ponto SFP LX BX ZX sensibilidade sobrecarga splitter perda fibra conector fusão margem dBm',
+    rota: '/ferramentas/orcamento',
+  },
+  {
+    tipo: 'ferramenta',
+    id: 'cores',
+    titulo: 'Código de cores',
+    texto: 'cor fibra tubo loose ABNT Furukawa TIA-598 piloto direcional verde amarela branca azul número da fibra',
+    rota: '/ferramentas/cores',
+  },
+  {
+    tipo: 'ferramenta',
+    id: 'conversor',
+    titulo: 'dBm ↔ mW e splitters',
+    texto: 'conversor dBm mW microwatt potência splitter balanceado desbalanceado PLC FBT 1:8 1:16 10/90 perda',
+    rota: '/ferramentas/conversor',
+  },
   ...checklists.map((c) => ({
     tipo: 'checklist',
     id: c.id,

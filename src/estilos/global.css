@@ -984,3 +984,64 @@ mark {
 .botao-discreto:hover {
   color: var(--erro);
 }
+
+/* Campo numérico com botão ± */
+div.campo {
+  margin: 12px 0;
+}
+div.campo > label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.campo-com-sinal {
+  display: flex;
+  gap: 8px;
+}
+.campo-com-sinal input {
+  flex: 1;
+  min-width: 0;
+}
+.campo-com-sinal .botao {
+  flex: 0 0 auto;
+  min-width: var(--toque);
+  padding: 0 12px;
+}
+
+/* Código de cores: amostra sempre com o nome escrito */
+.amostra {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+.amostra-cor {
+  position: relative;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--texto);
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+.amostra-marca {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg, transparent 0 5px, rgb(0 0 0 / 0.85) 5px 8px);
+}
+.paleta {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 6px 12px;
+  margin: 12px 0;
+}
+.paleta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.paleta-item > .dica {
+  min-width: 1.5em;
+  text-align: right;
+}

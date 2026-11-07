@@ -3,6 +3,21 @@ import { useTitulo } from '../componentes/Comuns';
 
 const PRONTAS = [
   {
+    para: '/ferramentas/orcamento',
+    titulo: 'Orçamento de potência',
+    texto: 'PON ou ponto a ponto: soma fibra, conectores, fusões e splitters, compara com o transmissor e o receptor e diz se passa.',
+  },
+  {
+    para: '/ferramentas/cores',
+    titulo: 'Código de cores',
+    texto: 'Número da fibra → tubo e cor, e o contrário, no padrão brasileiro e no TIA-598, com tubo piloto e modo treino.',
+  },
+  {
+    para: '/ferramentas/conversor',
+    titulo: 'dBm ↔ mW e splitters',
+    texto: 'Converte potência e mostra a perda de splitters balanceados e desbalanceados, com a fonte de cada valor.',
+  },
+  {
     para: '/ferramentas/disponibilidade',
     titulo: 'Disponibilidade e glosa de SLA',
     texto: 'Converte a % do SLA em minutos, soma as paradas, aplica as exclusões e calcula o desconto, com memória de cálculo para copiar.',
@@ -10,9 +25,6 @@ const PRONTAS = [
 ];
 
 const EM_BREVE = [
-  'Orçamento de potência (PON e ponto a ponto)',
-  'Conversor dBm ↔ mW e perda de splitters',
-  'Código de cores (Brasil e TIA-598)',
   'Comprimento de cabo com reserva técnica',
   'Leitor de OTDR',
   'Montador de rede PON',

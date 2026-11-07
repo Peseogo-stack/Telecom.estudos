@@ -11,6 +11,9 @@ describe('lerNumero', () => {
     ['R$ 4.320', 4320],
     ['  216 ', 216],
     ['0,5', 0.5],
+    ['-27', -27],
+    ['−19,5', -19.5],
+    ['+1,5', 1.5],
   ])('"%s" → %s', (texto, esperado) => {
     expect(lerNumero(texto)).toBe(esperado);
   });

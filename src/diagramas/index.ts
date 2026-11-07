@@ -1,0 +1,21 @@
+// Mapa: id do diagrama (cabeçalho da lição) -> componente SVG.
+// O validador de conteúdo confere se o id usado na lição existe aqui.
+import type { ComponentType } from 'react';
+import type { PropsDiagrama } from './Diagrama';
+import { ZonasPoste } from './ZonasPoste';
+import { Nr10LinhaDoTempo } from './Nr10LinhaDoTempo';
+import { DisponibilidadeBarra } from './DisponibilidadeBarra';
+import { GlosaFluxo } from './GlosaFluxo';
+import { GestorFiscal } from './GestorFiscal';
+import { Escalonamento } from './Escalonamento';
+import { RelatorioAceite } from './RelatorioAceite';
+
+export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
+  'zonas-poste': ZonasPoste,
+  'nr10-linha-do-tempo': Nr10LinhaDoTempo,
+  'disponibilidade-barra': DisponibilidadeBarra,
+  'glosa-fluxo': GlosaFluxo,
+  'gestor-fiscal': GestorFiscal,
+  'escalonamento': Escalonamento,
+  'relatorio-aceite': RelatorioAceite,
+};

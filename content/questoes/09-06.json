@@ -2,27 +2,27 @@
   {
     "id": "09-06-q1",
     "licao": "09-06",
-    "enunciado": "O link de uma unidade caiu agora. Pelo vocabulário do ITIL, isso é:",
+    "enunciado": "O link de uma unidade caiu agora. Que tipo de chamado é?",
     "alternativas": [
       {
-        "texto": "Um incidente.",
+        "texto": "Incidente.",
         "correta": true,
-        "explicacao": "Certo. Incidente é uma interrupção não planejada, redução da qualidade ou falha de um serviço."
+        "explicacao": "Certo. Incidente é interrupção não planejada, redução da qualidade ou falha de um serviço."
       },
       {
-        "texto": "Um problema.",
+        "texto": "Problema.",
         "correta": false,
         "explicacao": "Problema é a causa de incidentes, investigada para a solução definitiva."
       },
       {
-        "texto": "Uma requisição.",
+        "texto": "Requisição.",
         "correta": false,
-        "explicacao": "Requisição é um pedido que não é falha, como aumentar a velocidade."
+        "explicacao": "Requisição é um pedido que não é falha."
       },
       {
-        "texto": "Uma mudança.",
+        "texto": "Mudança.",
         "correta": false,
-        "explicacao": "Mudança é uma alteração planejada, não uma queda."
+        "explicacao": "Mudança é uma alteração planejada."
       }
     ],
     "fontes": [
@@ -33,25 +33,25 @@
   {
     "id": "09-06-q2",
     "licao": "09-06",
-    "enunciado": "O mesmo link cai toda tarde há duas semanas. Além de abrir os chamados, o que você deve pedir ao fornecedor?",
+    "enunciado": "O mesmo link cai toda tarde há duas semanas. Além de abrir os chamados, o que pedir ao fornecedor?",
     "alternativas": [
       {
-        "texto": "Nada além: cada queda é um incidente separado.",
+        "texto": "Nada: cada queda é um incidente separado.",
         "correta": false,
-        "explicacao": "Quedas repetidas indicam um problema, que exige análise de causa."
+        "explicacao": "Quedas que se repetem indicam um problema, que exige análise de causa."
       },
       {
         "texto": "Um desconto fixo, sem análise.",
         "correta": false,
-        "explicacao": "A glosa segue o contrato; o pedido aqui é técnico: a causa-raiz."
+        "explicacao": "A glosa segue o contrato; o pedido técnico é a causa-raiz."
       },
       {
         "texto": "Tratamento como problema: análise da causa-raiz e solução definitiva.",
         "correta": true,
-        "explicacao": "Certo. Gerenciamento de problemas trata incidentes recorrentes para achar a causa-raiz."
+        "explicacao": "Certo. O gerenciamento de problemas cuida de incidentes recorrentes para achar a causa."
       },
       {
-        "texto": "Uma requisição de aumento de velocidade.",
+        "texto": "Mais velocidade.",
         "correta": false,
         "explicacao": "Mais velocidade não resolve uma falha que se repete."
       }
@@ -64,27 +64,27 @@
   {
     "id": "09-06-q3",
     "licao": "09-06",
-    "enunciado": "Pedir ao fornecedor para aumentar a velocidade de um link de 100 para 300 Mbit/s é:",
+    "enunciado": "Você quer aumentar a velocidade do link de 100 para 300 Mbit/s. Que tipo de pedido é?",
     "alternativas": [
       {
-        "texto": "Um incidente.",
+        "texto": "Incidente.",
         "correta": false,
-        "explicacao": "Não há falha; o serviço está funcionando como contratado."
+        "explicacao": "Não há falha."
       },
       {
-        "texto": "Uma requisição.",
+        "texto": "Requisição.",
         "correta": true,
         "explicacao": "Certo. É um pedido de algo novo, sem interrupção do serviço."
       },
       {
-        "texto": "Um problema.",
+        "texto": "Problema.",
         "correta": false,
-        "explicacao": "Problema é causa de falhas, não um pedido de mudança de serviço."
+        "explicacao": "Problema é causa de falhas."
       },
       {
-        "texto": "Um escalonamento hierárquico.",
+        "texto": "Escalonamento.",
         "correta": false,
-        "explicacao": "Escalonamento é subir um caso de nível; aqui é só um pedido."
+        "explicacao": "Escalonamento é subir um caso de nível."
       }
     ],
     "fontes": [
@@ -95,27 +95,27 @@
   {
     "id": "09-06-q4",
     "licao": "09-06",
-    "enunciado": "Pela política de incidentes baseada no ITIL 4 estudada na lição, quando o escalonamento hierárquico deve ser usado?",
+    "enunciado": "O chamado de uma unidade crítica está parado. Quando subir o caso para a gestão do fornecedor (escalonamento hierárquico)?",
     "alternativas": [
       {
-        "texto": "Sempre, em qualquer chamado, desde o início.",
+        "texto": "Sempre, desde o primeiro minuto de qualquer chamado.",
         "correta": false,
-        "explicacao": "Escalar tudo para a gestão sobrecarrega e não acelera. A regra é usar quando há impacto relevante, decisão gerencial ou incidente grave."
+        "explicacao": "Escalar tudo sobrecarrega e não acelera."
       },
       {
-        "texto": "Quando há impacto relevante, necessidade de decisão gerencial ou incidente grave.",
+        "texto": "Quando há impacto relevante, quando é preciso uma decisão gerencial ou quando é um incidente grave.",
         "correta": true,
-        "explicacao": "Certo. São os três casos que a política lista para o escalonamento hierárquico."
+        "explicacao": "Certo. São os casos que uma política de incidentes baseada no ITIL 4 lista para o escalonamento hierárquico (exemplo: TJBA)."
       },
       {
         "texto": "Só depois de 30 dias de chamado aberto.",
         "correta": false,
-        "explicacao": "A política não fixa prazo assim; o gatilho é impacto, decisão ou gravidade (e os prazos do contrato)."
+        "explicacao": "O gatilho é impacto, decisão ou gravidade, além dos prazos do contrato."
       },
       {
         "texto": "Nunca: só existe escalonamento técnico.",
         "correta": false,
-        "explicacao": "A política prevê os dois: funcional (técnico) e hierárquico."
+        "explicacao": "Existem os dois: funcional (técnico) e hierárquico."
       }
     ],
     "fontes": [
@@ -129,24 +129,24 @@
     "enunciado": "Qual a diferença entre escalonamento funcional e hierárquico?",
     "alternativas": [
       {
-        "texto": "Funcional leva o caso a quem sabe resolver tecnicamente; hierárquico leva a quem decide, quando o impacto é grande ou há necessidade de decisão gerencial.",
+        "texto": "Funcional leva o caso a quem sabe resolver tecnicamente; hierárquico, a quem decide.",
         "correta": true,
-        "explicacao": "Certo. É a distinção da política baseada no ITIL 4."
+        "explicacao": "Certo. Funcional sobe no conhecimento técnico; hierárquico sobe na autoridade de decisão."
       },
       {
-        "texto": "Funcional é por telefone; hierárquico é por e-mail.",
+        "texto": "Funcional é por telefone; hierárquico, por e-mail.",
         "correta": false,
-        "explicacao": "O canal não define o tipo de escalonamento."
+        "explicacao": "O canal não define o tipo."
       },
       {
         "texto": "São a mesma coisa.",
         "correta": false,
-        "explicacao": "Um sobe no conhecimento técnico; o outro, na autoridade de decisão."
+        "explicacao": "Um sobe no conhecimento técnico; o outro, na decisão."
       },
       {
-        "texto": "Hierárquico só pode ser feito pelo fornecedor.",
+        "texto": "Hierárquico só o fornecedor pode fazer.",
         "correta": false,
-        "explicacao": "O cliente também pode acionar a gestão do fornecedor, como o gerente de contas."
+        "explicacao": "O cliente também pode acionar a gestão do fornecedor."
       }
     ],
     "fontes": [
@@ -162,7 +162,7 @@
       {
         "texto": "Porque em vários contratos o relógio da indisponibilidade começa na abertura do chamado.",
         "correta": true,
-        "explicacao": "Certo. É o caso do TR do TJAL. Sem o horário, o tempo parado não pode ser comprovado."
+        "explicacao": "Certo. Exemplo: TR do TJAL. Sem o horário, o tempo parado não pode ser comprovado."
       },
       {
         "texto": "Só para estatística.",
@@ -172,12 +172,12 @@
       {
         "texto": "Porque o fornecedor cobra por hora de chamado.",
         "correta": false,
-        "explicacao": "Em contrato de link com SLA, o chamado não é cobrado por hora."
+        "explicacao": "Em link com SLA, o chamado não é cobrado por hora."
       },
       {
-        "texto": "Não é necessário quando há monitoramento.",
+        "texto": "Não precisa quando há monitoramento.",
         "correta": false,
-        "explicacao": "Mesmo com monitoramento, o contrato pode contar a partir do chamado; registre os dois."
+        "explicacao": "O contrato pode contar a partir do chamado; registre os dois."
       }
     ],
     "fontes": [
@@ -189,27 +189,27 @@
   {
     "id": "09-06-q7",
     "licao": "09-06",
-    "enunciado": "O fornecedor ligou para encerrar o chamado dizendo que o link voltou. O que fazer antes de aceitar?",
+    "enunciado": "O fornecedor ligou dizendo que o link voltou e quer encerrar o chamado. O que fazer antes de aceitar?",
     "alternativas": [
       {
         "texto": "Aceitar logo, para não atrasar.",
         "correta": false,
-        "explicacao": "Sem conferir, um encerramento falso para o relógio do SLA."
+        "explicacao": "Um encerramento sem conferir para o relógio do SLA antes da hora."
       },
       {
         "texto": "Testar se o serviço voltou de fato e pedir a causa informada.",
         "correta": true,
-        "explicacao": "Certo. Confira na ponta e registre a causa: ela ajuda a identificar problemas recorrentes."
+        "explicacao": "Certo. Confira na ponta e registre a causa: ela ajuda a ver problemas que se repetem."
       },
       {
-        "texto": "Abrir um novo chamado para o mesmo caso.",
+        "texto": "Abrir outro chamado para o mesmo caso.",
         "correta": false,
         "explicacao": "Primeiro confira; se não voltou, o mesmo chamado continua aberto."
       },
       {
         "texto": "Pedir a glosa na hora, por telefone.",
         "correta": false,
-        "explicacao": "A glosa é calculada no fechamento do período, com a memória de cálculo."
+        "explicacao": "A glosa é calculada no fechamento do período, com memória de cálculo."
       }
     ],
     "fontes": [
@@ -220,12 +220,12 @@
   {
     "id": "09-06-q8",
     "licao": "09-06",
-    "enunciado": "Uma medida temporária que restaura o serviço rápido, enquanto a causa é investigada, se chama:",
+    "enunciado": "Enquanto conserta a fibra rompida, o fornecedor instala um link 4G provisório para a unidade não ficar parada. Como se chama isso?",
     "alternativas": [
       {
         "texto": "Problema.",
         "correta": false,
-        "explicacao": "Problema é a causa, não a medida temporária."
+        "explicacao": "Problema é a causa de incidentes."
       },
       {
         "texto": "Requisição.",
@@ -240,7 +240,7 @@
       {
         "texto": "Solução de contorno.",
         "correta": true,
-        "explicacao": "Certo. A política baseada no ITIL 4 define solução de contorno como medida temporária para restaurar o serviço."
+        "explicacao": "Certo. Medida temporária para restaurar o serviço rápido, enquanto a correção definitiva é feita."
       }
     ],
     "fontes": [

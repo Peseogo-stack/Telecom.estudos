@@ -2,105 +2,251 @@
   {
     "id": "09-01-q1",
     "licao": "09-01",
-    "enunciado": "Um SLA de 99,7% mensal, num mês contado como 30 dias, permite quantos minutos de parada?",
+    "enunciado": "O contrato do link diz 99,7% de disponibilidade mensal (mês de 30 dias). Quanto tempo o link pode ficar parado no mês sem descumprir?",
     "alternativas": [
-      { "texto": "43,2 min", "correta": false, "explicacao": "43,2 min é a parada permitida para 99,9% (0,1% de 43.200)." },
-      { "texto": "129,6 min", "correta": true, "explicacao": "Certo. 43.200 × 0,3 ÷ 100 = 129,6 min, cerca de 2 h 10 min." },
-      { "texto": "216 min", "correta": false, "explicacao": "216 min é a parada permitida para 99,5% (0,5% de 43.200)." },
-      { "texto": "302,4 min", "correta": false, "explicacao": "302,4 min é a parada permitida para 99,3% (0,7% de 43.200)." }
+      {
+        "texto": "43,2 min",
+        "correta": false,
+        "explicacao": "43,2 min é o permitido para 99,9% (0,1% de 43.200)."
+      },
+      {
+        "texto": "129,6 min",
+        "correta": true,
+        "explicacao": "Certo. 43.200 × 0,3 ÷ 100 = 129,6 min, cerca de 2 h 10 min."
+      },
+      {
+        "texto": "216 min",
+        "correta": false,
+        "explicacao": "216 min é o permitido para 99,5%."
+      },
+      {
+        "texto": "302,4 min",
+        "correta": false,
+        "explicacao": "302,4 min é o permitido para 99,3%."
+      }
     ],
-    "fontes": ["trt7-tr-internet", "anatel-rgc-manual"],
+    "fontes": [
+      "trt7-tr-internet",
+      "anatel-rgc-manual"
+    ],
     "dificuldade": 1
   },
   {
     "id": "09-01-q2",
     "licao": "09-01",
-    "enunciado": "Quantos minutos tem um mês de 30 dias?",
+    "enunciado": "Você vai conferir o SLA de um mês contado como 30 dias. Quantos minutos tem o período (To)?",
     "alternativas": [
-      { "texto": "4.320", "correta": false, "explicacao": "Faltou multiplicar por 10: 30 × 24 × 60 = 43.200." },
-      { "texto": "44.640", "correta": false, "explicacao": "44.640 é um mês de 31 dias (31 × 24 × 60)." },
-      { "texto": "43.200", "correta": true, "explicacao": "Certo. 30 × 24 × 60 = 43.200 minutos, a base usada pela Anatel no regulamento do consumidor." },
-      { "texto": "525.600", "correta": false, "explicacao": "525.600 é o número de minutos de um ano de 365 dias." }
+      {
+        "texto": "4.320",
+        "correta": false,
+        "explicacao": "Faltou um zero: 30 × 24 × 60 = 43.200."
+      },
+      {
+        "texto": "44.640",
+        "correta": false,
+        "explicacao": "44.640 é um mês de 31 dias."
+      },
+      {
+        "texto": "43.200",
+        "correta": true,
+        "explicacao": "Certo. 30 × 24 × 60 = 43.200 minutos, a mesma base que a Anatel usa no regulamento do consumidor."
+      },
+      {
+        "texto": "525.600",
+        "correta": false,
+        "explicacao": "525.600 é um ano de 365 dias."
+      }
     ],
-    "fontes": ["anatel-rgc-manual"],
+    "fontes": [
+      "anatel-rgc-manual"
+    ],
     "dificuldade": 1
   },
   {
     "id": "09-01-q3",
     "licao": "09-01",
-    "enunciado": "Um link ficou 300 minutos parado num mês de 30 dias. Qual foi a disponibilidade?",
+    "enunciado": "O link ficou 300 minutos parado (minutos que contam) num mês de 30 dias. Qual foi a disponibilidade?",
     "alternativas": [
-      { "texto": "99,31%", "correta": true, "explicacao": "Certo. (43.200 − 300) ÷ 43.200 × 100 = 99,305…% ≈ 99,31%." },
-      { "texto": "99,70%", "correta": false, "explicacao": "99,70% seria com 129,6 min de parada, não 300." },
-      { "texto": "97,00%", "correta": false, "explicacao": "Conta errada: 300 min é bem menos que 3% do mês (que seria 1.296 min)." },
-      { "texto": "99,93%", "correta": false, "explicacao": "Conta errada: 99,93% corresponderia a cerca de 30 min de parada." }
+      {
+        "texto": "99,31%",
+        "correta": true,
+        "explicacao": "Certo. (43.200 − 300) ÷ 43.200 × 100 = 99,305…% ≈ 99,31%."
+      },
+      {
+        "texto": "99,70%",
+        "correta": false,
+        "explicacao": "99,70% seria com 129,6 min parados."
+      },
+      {
+        "texto": "97,00%",
+        "correta": false,
+        "explicacao": "97% seria com 1.296 min parados."
+      },
+      {
+        "texto": "99,93%",
+        "correta": false,
+        "explicacao": "99,93% seria com cerca de 30 min parados."
+      }
     ],
-    "fontes": ["trt7-tr-internet"],
+    "fontes": [
+      "trt7-tr-internet"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-01-q4",
     "licao": "09-01",
-    "enunciado": "Dois contratos têm 99,9%: um mensal e outro anual. Qual a diferença na prática?",
+    "enunciado": "Dois fornecedores oferecem 99,9%: um mede por mês, o outro por ano. Qual a diferença para você?",
     "alternativas": [
-      { "texto": "Nenhuma: 99,9% é sempre igual.", "correta": false, "explicacao": "O período muda tudo. No anual, as 8,76 h podem cair todas num mês." },
-      { "texto": "No anual, o fornecedor pode ficar cerca de 8 h 46 min fora do ar num mês só e ainda cumprir o SLA; no mensal, só 43,2 min por mês.", "correta": true, "explicacao": "Certo. 525.600 × 0,1% = 525,6 min (8,76 h) por ano, contra 43,2 min por mês." },
-      { "texto": "O mensal é mais tolerante, porque o mês é mais curto.", "correta": false, "explicacao": "É o contrário: o mensal exige que cada mês, sozinho, cumpra a meta." },
-      { "texto": "O anual só vale para fibra apagada.", "correta": false, "explicacao": "O período do SLA é escolha do contrato, não depende do tipo de serviço." }
+      {
+        "texto": "Nenhuma: 99,9% é sempre igual.",
+        "correta": false,
+        "explicacao": "O período muda tudo."
+      },
+      {
+        "texto": "No anual, o link pode ficar cerca de 8 h 46 min fora do ar num mês só e ainda cumprir; no mensal, só 43,2 min por mês.",
+        "correta": true,
+        "explicacao": "Certo. 525.600 × 0,1% = 525,6 min por ano, contra 43,2 min por mês."
+      },
+      {
+        "texto": "O mensal é mais tolerante, porque o mês é mais curto.",
+        "correta": false,
+        "explicacao": "É o contrário: no mensal cada mês, sozinho, precisa cumprir a meta."
+      },
+      {
+        "texto": "O anual só existe para fibra apagada.",
+        "correta": false,
+        "explicacao": "O período é escolha do contrato, para qualquer serviço."
+      }
     ],
-    "fontes": ["trt7-tr-internet"],
+    "fontes": [
+      "trt7-tr-internet"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-01-q5",
     "licao": "09-01",
-    "enunciado": "Na fórmula D = (To − Ti) ÷ To × 100, o que é Ti?",
+    "enunciado": "Na conta D = (To − Ti) ÷ To × 100, o que você precisa levantar nos chamados para chegar ao Ti?",
     "alternativas": [
-      { "texto": "O tempo total do período.", "correta": false, "explicacao": "O tempo total é To." },
-      { "texto": "O tempo até o técnico chegar.", "correta": false, "explicacao": "Isso é tempo de atendimento, outra meta do contrato." },
-      { "texto": "A taxa de transmissão contratada.", "correta": false, "explicacao": "Velocidade não entra nessa fórmula." },
-      { "texto": "O tempo de indisponibilidade, em minutos.", "correta": true, "explicacao": "Certo. Ti é o tempo em que o serviço ficou indisponível no período." }
+      {
+        "texto": "O tempo total do mês.",
+        "correta": false,
+        "explicacao": "Esse é o To."
+      },
+      {
+        "texto": "Os minutos em que o serviço ficou indisponível, já tirando as exclusões do contrato.",
+        "correta": true,
+        "explicacao": "Certo. Ti é o tempo de indisponibilidade que conta; manutenção avisada e outras exclusões ficam fora."
+      },
+      {
+        "texto": "O tempo até o técnico chegar.",
+        "correta": false,
+        "explicacao": "Isso é tempo de atendimento, outra meta do contrato."
+      },
+      {
+        "texto": "A velocidade contratada.",
+        "correta": false,
+        "explicacao": "Velocidade não entra nessa fórmula."
+      }
     ],
-    "fontes": ["trt7-tr-internet"],
+    "fontes": [
+      "trt7-tr-internet"
+    ],
     "dificuldade": 1
   },
   {
     "id": "09-01-q6",
     "licao": "09-01",
-    "enunciado": "Num termo de referência público de link, além da queda total, o que também foi tratado como indisponibilidade?",
+    "enunciado": "O que um contrato de link pode considerar indisponibilidade, além da queda total?",
     "alternativas": [
-      { "texto": "Latência acima de 25 ms em duas medições seguidas, perda de pacotes acima de 2% ou velocidade abaixo de 95% da contratada.", "correta": true, "explicacao": "Certo. É o que diz o TR do TJAL. Cada contrato define o seu critério." },
-      { "texto": "Qualquer reclamação de usuário, mesmo sem medição.", "correta": false, "explicacao": "Os contratos usam critérios medidos, não reclamações sem registro." },
-      { "texto": "Somente a queda total, nunca a degradação.", "correta": false, "explicacao": "Alguns contratos contam a degradação como indisponibilidade, como o exemplo do TJAL." },
-      { "texto": "A manutenção programada e avisada com antecedência.", "correta": false, "explicacao": "Em geral, a manutenção programada dentro das regras do contrato é uma exclusão: não conta." }
+      {
+        "texto": "Degradação medida, como latência alta, perda de pacotes ou velocidade abaixo da contratada, se o contrato disser.",
+        "correta": true,
+        "explicacao": "Certo. Exemplo: um termo de referência público (TJAL) conta latência acima de 25 ms em duas medições seguidas, perda acima de 2% e vazão abaixo de 95%. Cada contrato define o seu."
+      },
+      {
+        "texto": "Qualquer reclamação de usuário, mesmo sem medição.",
+        "correta": false,
+        "explicacao": "Contratos usam critérios medidos e registrados."
+      },
+      {
+        "texto": "Nada além da queda total, em nenhum contrato.",
+        "correta": false,
+        "explicacao": "Vários contratos contam degradação como indisponibilidade."
+      },
+      {
+        "texto": "A manutenção programada avisada com antecedência.",
+        "correta": false,
+        "explicacao": "Dentro das regras do contrato, manutenção programada costuma ser exclusão: não conta."
+      }
     ],
-    "fontes": ["tjal-tr-link"],
+    "fontes": [
+      "tjal-tr-link"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-01-q7",
     "licao": "09-01",
-    "enunciado": "Num mês de 31 dias, se o contrato usa os dias do calendário, qual é o To?",
+    "enunciado": "O contrato conta o mês pelos dias do calendário. Num mês de 31 dias, qual é o To?",
     "alternativas": [
-      { "texto": "43.200 min", "correta": false, "explicacao": "43.200 min é um mês de 30 dias." },
-      { "texto": "44.640 min", "correta": true, "explicacao": "Certo. 31 × 24 × 60 = 44.640 min. Por isso é preciso saber como o contrato conta o mês." },
-      { "texto": "40.320 min", "correta": false, "explicacao": "40.320 min é um mês de 28 dias." },
-      { "texto": "525.600 min", "correta": false, "explicacao": "525.600 min é um ano de 365 dias." }
+      {
+        "texto": "43.200 min",
+        "correta": false,
+        "explicacao": "43.200 min é um mês de 30 dias."
+      },
+      {
+        "texto": "44.640 min",
+        "correta": true,
+        "explicacao": "Certo. 31 × 24 × 60 = 44.640 min. Por isso é preciso ler como o contrato conta o mês."
+      },
+      {
+        "texto": "40.320 min",
+        "correta": false,
+        "explicacao": "40.320 min é um mês de 28 dias."
+      },
+      {
+        "texto": "525.600 min",
+        "correta": false,
+        "explicacao": "525.600 min é um ano."
+      }
     ],
-    "fontes": ["trt7-tr-internet"],
+    "fontes": [
+      "trt7-tr-internet"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-01-q8",
     "licao": "09-01",
-    "enunciado": "Um SLA de 99,5% mensal (30 dias) permite quanto tempo de parada?",
+    "enunciado": "O contrato diz 99,5% mensal. Quanto tempo de parada isso permite num mês de 30 dias?",
     "alternativas": [
-      { "texto": "3 h 36 min", "correta": true, "explicacao": "Certo. 43.200 × 0,5 ÷ 100 = 216 min = 3 h 36 min." },
-      { "texto": "2 h 10 min", "correta": false, "explicacao": "Cerca de 2 h 10 min é o permitido para 99,7%." },
-      { "texto": "5 h", "correta": false, "explicacao": "Cerca de 5 h é o permitido para 99,3%." },
-      { "texto": "36 min", "correta": false, "explicacao": "Conta errada: 0,5% de 43.200 é 216 min, não 36." }
+      {
+        "texto": "3 h 36 min",
+        "correta": true,
+        "explicacao": "Certo. 43.200 × 0,5 ÷ 100 = 216 min = 3 h 36 min."
+      },
+      {
+        "texto": "2 h 10 min",
+        "correta": false,
+        "explicacao": "Cerca de 2 h 10 min é o permitido para 99,7%."
+      },
+      {
+        "texto": "5 h",
+        "correta": false,
+        "explicacao": "Cerca de 5 h é o permitido para 99,3%."
+      },
+      {
+        "texto": "36 min",
+        "correta": false,
+        "explicacao": "0,5% de 43.200 é 216 min, não 36."
+      }
     ],
-    "fontes": ["trt7-tr-internet", "anatel-rgc-manual"],
+    "fontes": [
+      "trt7-tr-internet",
+      "anatel-rgc-manual"
+    ],
     "dificuldade": 1
   }
 ]

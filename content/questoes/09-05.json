@@ -2,27 +2,65 @@
   {
     "id": "09-05-q1",
     "licao": "09-05",
-    "enunciado": "Por que o relatório de aceite deve trazer o OTDR medido nos dois sentidos (A→B e B→A)?",
+    "enunciado": "O fornecedor mandou o relatório de OTDR medido só de A para B. Por que pedir também de B para A?",
     "alternativas": [
-      { "texto": "Para medir a velocidade da internet nos dois sentidos.", "correta": false, "explicacao": "OTDR mede perdas e eventos na fibra, não velocidade de internet." },
-      { "texto": "Porque uma fusão pode mostrar ganho aparente num sentido; a perda real é a média dos dois.", "correta": true, "explicacao": "Certo. A média bidirecional corrige ganhos e perdas aparentes nas emendas." },
-      { "texto": "Para dobrar a perda medida e ter margem.", "correta": false, "explicacao": "Não se soma: tira-se a média dos dois sentidos." },
-      { "texto": "Não é necessário quando o cabo é novo.", "correta": false, "explicacao": "O ganho aparente vem de diferenças entre fibras e aparece em cabo novo também." }
+      {
+        "texto": "Para medir a velocidade da internet nos dois sentidos.",
+        "correta": false,
+        "explicacao": "OTDR mede perdas e eventos na fibra, não velocidade."
+      },
+      {
+        "texto": "Porque uma fusão pode mostrar ganho aparente num sentido; a perda real é a média dos dois.",
+        "correta": true,
+        "explicacao": "Certo. A média bidirecional corrige ganhos e perdas aparentes nas emendas."
+      },
+      {
+        "texto": "Para somar as duas perdas e ter margem.",
+        "correta": false,
+        "explicacao": "Não se soma: tira-se a média dos dois sentidos."
+      },
+      {
+        "texto": "Não precisa quando o cabo é novo.",
+        "correta": false,
+        "explicacao": "O ganho aparente vem de diferenças entre as fibras e aparece em cabo novo também."
+      }
     ],
-    "fontes": ["yokogawa-otdr-bidirecional", "corning-an3060"],
+    "fontes": [
+      "yokogawa-otdr-bidirecional",
+      "corning-an3060"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-05-q2",
     "licao": "09-05",
-    "enunciado": "Com os limites da TIA (0,5 dB/km, 0,75 dB por par de conectores, 0,3 dB por emenda), qual é a perda máxima de um enlace de 12 km com 2 pares de conectores e 6 fusões?",
+    "enunciado": "Enlace de 12 km com 2 pares de conectores e 6 fusões. Com os limites da TIA (0,5 dB/km, 0,75 dB por par de conectores, 0,3 dB por emenda), qual é a perda máxima aceitável?",
     "alternativas": [
-      { "texto": "6,0 dB", "correta": false, "explicacao": "6,0 dB é só a fibra (12 × 0,5). Faltam conectores e emendas." },
-      { "texto": "7,5 dB", "correta": false, "explicacao": "Faltaram as emendas: 6 × 0,3 = 1,8 dB." },
-      { "texto": "9,3 dB", "correta": true, "explicacao": "Certo. 12 × 0,5 + 2 × 0,75 + 6 × 0,3 = 6 + 1,5 + 1,8 = 9,3 dB." },
-      { "texto": "11,1 dB", "correta": false, "explicacao": "Conta errada: talvez tenha somado as emendas duas vezes." }
+      {
+        "texto": "6,0 dB",
+        "correta": false,
+        "explicacao": "6,0 dB é só a fibra (12 × 0,5). Faltam conectores e emendas."
+      },
+      {
+        "texto": "7,5 dB",
+        "correta": false,
+        "explicacao": "Faltaram as emendas: 6 × 0,3 = 1,8 dB."
+      },
+      {
+        "texto": "9,3 dB",
+        "correta": true,
+        "explicacao": "Certo. 12 × 0,5 + 2 × 0,75 + 6 × 0,3 = 6 + 1,5 + 1,8 = 9,3 dB."
+      },
+      {
+        "texto": "11,1 dB",
+        "correta": false,
+        "explicacao": "Conta errada: as emendas foram somadas duas vezes."
+      }
     ],
-    "fontes": ["foa-loss-budget", "fluke-tia5683d"],
+    "fontes": [
+      "foa-loss-budget",
+      "fluke-tia5683d"
+    ],
     "dificuldade": 2
   },
   {
@@ -30,77 +68,186 @@
     "licao": "09-05",
     "enunciado": "Uma fusão deu 0,14 dB na média dos dois sentidos. O contrato pede até 0,10 dB. O que fazer?",
     "alternativas": [
-      { "texto": "Aprovar, porque a TIA aceita até 0,3 dB.", "correta": false, "explicacao": "Quem manda é o contrato. Se ele pede 0,10 dB, 0,14 dB não passa." },
-      { "texto": "Aprovar, porque a diferença é pequena.", "correta": false, "explicacao": "O critério é objetivo; diferença pequena não muda o resultado." },
-      { "texto": "Reprovar aquela emenda, registrar e notificar o fornecedor para refazer.", "correta": true, "explicacao": "Certo. É uma pendência técnica: registra, notifica com prazo e confere de novo." },
-      { "texto": "Trocar o critério para 0,15 dB.", "correta": false, "explicacao": "A fiscalização não muda o critério do contrato por conta própria." }
+      {
+        "texto": "Aprovar, porque a TIA aceita até 0,3 dB.",
+        "correta": false,
+        "explicacao": "Quem manda é o contrato. Se ele pede 0,10 dB, 0,14 dB não passa."
+      },
+      {
+        "texto": "Aprovar, porque a diferença é pequena.",
+        "correta": false,
+        "explicacao": "O critério é objetivo."
+      },
+      {
+        "texto": "Reprovar aquela emenda, registrar e notificar o fornecedor para refazer.",
+        "correta": true,
+        "explicacao": "Certo. É pendência técnica: registra, notifica com prazo e confere de novo. Limite de 0,10 dB na média é exigência comum (nota da Corning)."
+      },
+      {
+        "texto": "Trocar o critério para 0,15 dB.",
+        "correta": false,
+        "explicacao": "A fiscalização não muda o critério do contrato."
+      }
     ],
-    "fontes": ["corning-an3060", "fluke-tia5683d"],
+    "fontes": [
+      "corning-an3060",
+      "fluke-tia5683d"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-05-q4",
     "licao": "09-05",
-    "enunciado": "Para que serve o IOR (índice de refração) configurado no OTDR?",
+    "enunciado": "No relatório, o IOR configurado no OTDR não bate com a ficha do cabo comprado. Qual é o problema?",
     "alternativas": [
-      { "texto": "Para o OTDR calcular a distância dos eventos; IOR errado desloca as distâncias.", "correta": true, "explicacao": "Certo. O OTDR converte tempo em distância usando o IOR. Confira com a ficha do cabo." },
-      { "texto": "Para definir a potência do laser.", "correta": false, "explicacao": "Potência e pulso são outros parâmetros." },
-      { "texto": "Para escolher o conector usado.", "correta": false, "explicacao": "O tipo de conector não tem relação com o IOR." },
-      { "texto": "Não tem efeito no resultado.", "correta": false, "explicacao": "Tem: muda a distância calculada até cada evento." }
+      {
+        "texto": "As distâncias dos eventos ficam deslocadas, porque o OTDR usa o IOR para converter tempo em distância.",
+        "correta": true,
+        "explicacao": "Certo. Uma fibra comum tem IOR por volta de 1,4676 (1310 nm) e 1,4682 (1550 nm), segundo a ficha da Corning."
+      },
+      {
+        "texto": "A potência do laser muda.",
+        "correta": false,
+        "explicacao": "Potência e pulso são outros parâmetros."
+      },
+      {
+        "texto": "O tipo de conector fica errado.",
+        "correta": false,
+        "explicacao": "Conector não tem relação com o IOR."
+      },
+      {
+        "texto": "Nenhum: o IOR não afeta o resultado.",
+        "correta": false,
+        "explicacao": "Afeta: muda a distância calculada até cada evento."
+      }
     ],
-    "fontes": ["corning-smf28-ultra"],
+    "fontes": [
+      "corning-smf28-ultra"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-05-q5",
     "licao": "09-05",
-    "enunciado": "Qual item NÃO pode faltar para conferir os equipamentos usados no teste?",
+    "enunciado": "Sobre as perdas em dB que aparecem num relatório, o que é verdade?",
     "alternativas": [
-      { "texto": "A foto do técnico.", "correta": false, "explicacao": "Não identifica nem garante a medição." },
-      { "texto": "O certificado de calibração válido do OTDR, do power meter e da fonte.", "correta": true, "explicacao": "Certo. Equipamento fora da calibração não garante a medida." },
-      { "texto": "O preço dos equipamentos.", "correta": false, "explicacao": "Preço não interessa para o aceite técnico." },
-      { "texto": "A cor do equipamento.", "correta": false, "explicacao": "Não tem relação com a qualidade da medição." }
+      {
+        "texto": "Maior é melhor.",
+        "correta": false,
+        "explicacao": "Perda maior significa menos luz chegando."
+      },
+      {
+        "texto": "As perdas se multiplicam.",
+        "correta": false,
+        "explicacao": "Em dB, as perdas se somam."
+      },
+      {
+        "texto": "Menor é melhor, e as perdas de cada trecho se somam.",
+        "correta": true,
+        "explicacao": "Certo. Por isso o orçamento é uma soma de fibra, conectores e emendas."
+      },
+      {
+        "texto": "dB e dB/km são a mesma coisa.",
+        "correta": false,
+        "explicacao": "dB é a perda; dB/km é a perda por quilômetro de fibra."
+      }
     ],
-    "fontes": ["foa-loss-budget"],
+    "fontes": [
+      "foa-loss-budget"
+    ],
     "dificuldade": 1
   },
   {
     "id": "09-05-q6",
     "licao": "09-05",
-    "enunciado": "Em perdas medidas em dB num enlace, o que é verdade?",
+    "enunciado": "O orçamento do enlace é 9,3 dB e o power meter mediu 7,8 dB de perda total. O que isso diz?",
     "alternativas": [
-      { "texto": "Maior é melhor.", "correta": false, "explicacao": "Perda maior significa menos luz chegando. Menor é melhor." },
-      { "texto": "As perdas se multiplicam.", "correta": false, "explicacao": "Em dB, as perdas se somam. É a vantagem de usar dB." },
-      { "texto": "Menor é melhor, e as perdas de cada trecho se somam.", "correta": true, "explicacao": "Certo. Por isso o orçamento é uma soma de fibra, conectores e emendas." },
-      { "texto": "dB e dB/km são a mesma coisa.", "correta": false, "explicacao": "dB é a perda; dB/km é a perda por quilômetro de fibra." }
+      {
+        "texto": "O enlace está reprovado, porque 7,8 dB é perda demais.",
+        "correta": false,
+        "explicacao": "7,8 dB é menor que o orçamento de 9,3 dB."
+      },
+      {
+        "texto": "A perda total cabe no orçamento; ainda confira, no OTDR, se cada emenda e conector atende o contrato.",
+        "correta": true,
+        "explicacao": "Certo. A soma pode estar boa e um evento isolado estar fora do limite."
+      },
+      {
+        "texto": "A diferença de 1,5 dB precisa ser somada à perda.",
+        "correta": false,
+        "explicacao": "Não se soma: compara-se o medido com o orçamento."
+      },
+      {
+        "texto": "Não dá para comparar power meter com orçamento.",
+        "correta": false,
+        "explicacao": "É justamente para isso que o orçamento serve."
+      }
     ],
-    "fontes": ["foa-loss-budget"],
-    "dificuldade": 1
+    "fontes": [
+      "foa-loss-budget"
+    ],
+    "dificuldade": 2
   },
   {
     "id": "09-05-q7",
     "licao": "09-05",
-    "enunciado": "O fornecedor mandou só o PDF do relatório. Por que pedir também os arquivos .SOR?",
+    "enunciado": "O cabo tem 12 fibras. A média de perda está boa, mas a fibra 7 passou do limite. Como fica o aceite?",
     "alternativas": [
-      { "texto": "Porque o .SOR guarda o traço original, que pode ser reaberto e reanalisado.", "correta": true, "explicacao": "Certo. O PDF é só uma imagem do resultado; o .SOR permite conferir de novo." },
-      { "texto": "Porque o .SOR é o contrato assinado.", "correta": false, "explicacao": ".SOR é o arquivo de medição do OTDR, não o contrato." },
-      { "texto": "Porque o PDF não tem valor nenhum.", "correta": false, "explicacao": "O PDF ajuda a ler, mas não substitui o arquivo original." },
-      { "texto": "Para o fornecedor cobrar a mais.", "correta": false, "explicacao": "Entregar os arquivos é parte do aceite, não um serviço extra." }
+      {
+        "texto": "Aprova o cabo inteiro pela média.",
+        "correta": false,
+        "explicacao": "A média esconde a fibra ruim. A conferência é por fibra."
+      },
+      {
+        "texto": "Reprova a fibra 7 (pendência a corrigir) e registra; as outras seguem o critério.",
+        "correta": true,
+        "explicacao": "Certo. O resultado é por fibra; a pendência vai para o registro e a notificação."
+      },
+      {
+        "texto": "Reprova a obra inteira sem notificar.",
+        "correta": false,
+        "explicacao": "O caminho é registrar e notificar a correção, com prazo."
+      },
+      {
+        "texto": "Ignora, porque uma fibra só não faz diferença.",
+        "correta": false,
+        "explicacao": "Pode ser justamente a fibra que vai levar um serviço crítico."
+      }
     ],
-    "fontes": ["yokogawa-otdr-bidirecional"],
-    "dificuldade": 1
+    "fontes": [
+      "foa-loss-budget"
+    ],
+    "dificuldade": 2
   },
   {
     "id": "09-05-q8",
     "licao": "09-05",
-    "enunciado": "O cabo tem 12 fibras. A média de perda está boa, mas a fibra 7 passou do limite. Como fica o aceite?",
+    "enunciado": "No traço de A para B, uma fusão aparece com +0,05 dB, como se ganhasse luz. O que é isso?",
     "alternativas": [
-      { "texto": "Aprova o cabo inteiro pela média.", "correta": false, "explicacao": "A média esconde a fibra ruim. A conferência é por fibra." },
-      { "texto": "Reprova a fibra 7 (pendência a corrigir) e registra; as outras seguem o critério.", "correta": true, "explicacao": "Certo. O resultado é por fibra. A pendência vai para o registro e a notificação." },
-      { "texto": "Reprova a obra inteira sem notificar.", "correta": false, "explicacao": "O caminho é registrar e notificar a correção, com prazo." },
-      { "texto": "Ignora, porque uma fibra só não faz diferença.", "correta": false, "explicacao": "Aquela fibra pode ser justamente a que vai levar um serviço crítico." }
+      {
+        "texto": "Defeito do OTDR: o equipamento precisa de calibração.",
+        "correta": false,
+        "explicacao": "É um efeito conhecido da medição num sentido só."
+      },
+      {
+        "texto": "Ganho aparente: diferença entre as fibras emendadas. A perda real sai da média com a medida de B para A.",
+        "correta": true,
+        "explicacao": "Certo. Fusão não amplifica luz; a média dos dois sentidos dá a perda real."
+      },
+      {
+        "texto": "Uma emenda perfeita, melhor que zero.",
+        "correta": false,
+        "explicacao": "Emenda passiva não ganha luz."
+      },
+      {
+        "texto": "Sinal de que a fibra está ligada ao contrário.",
+        "correta": false,
+        "explicacao": "Não; é diferença de características entre as duas fibras."
+      }
     ],
-    "fontes": ["foa-loss-budget"],
+    "fontes": [
+      "yokogawa-otdr-bidirecional"
+    ],
     "dificuldade": 2
   }
 ]

@@ -2,105 +2,251 @@
   {
     "id": "09-02-q1",
     "licao": "09-02",
-    "enunciado": "Um link custa R$ 4.320 por mês e ficou 100 minutos parado (minutos que contam) num mês de 30 dias. Pela regra proporcional Dc = Cm × Ti ÷ 43.200, qual é o desconto?",
+    "enunciado": "Link de R$ 4.320 por mês, 100 minutos parados que contam (mês de 30 dias). O contrato dá desconto proporcional ao tempo parado. Quanto é a glosa?",
     "alternativas": [
-      { "texto": "R$ 1,00", "correta": false, "explicacao": "Divisão a mais. 4.320 × 100 ÷ 43.200 = 10." },
-      { "texto": "R$ 10,00", "correta": true, "explicacao": "Certo. 4.320 × 100 = 432.000; 432.000 ÷ 43.200 = R$ 10,00." },
-      { "texto": "R$ 100,00", "correta": false, "explicacao": "Confundiu minutos com reais." },
-      { "texto": "R$ 432,00", "correta": false, "explicacao": "Isso seria 10% do valor mensal, o que não é a regra proporcional." }
+      {
+        "texto": "R$ 1,00",
+        "correta": false,
+        "explicacao": "Divisão a mais: 4.320 × 100 ÷ 43.200 = 10."
+      },
+      {
+        "texto": "R$ 10,00",
+        "correta": true,
+        "explicacao": "Certo. 4.320 × 100 ÷ 43.200 = R$ 10,00."
+      },
+      {
+        "texto": "R$ 100,00",
+        "correta": false,
+        "explicacao": "Confundiu minutos com reais."
+      },
+      {
+        "texto": "R$ 432,00",
+        "correta": false,
+        "explicacao": "Isso seria 10% do valor, que não é a regra proporcional."
+      }
     ],
-    "fontes": ["ifsuldeminas-ans"],
+    "fontes": [
+      "ifsuldeminas-ans"
+    ],
     "dificuldade": 1
   },
   {
     "id": "09-02-q2",
     "licao": "09-02",
-    "enunciado": "Link de R$ 3.000/mês, SLA de 99,7% mensal, 300 min parados que contam (mês de 30 dias). Quanto é a glosa pela regra proporcional?",
+    "enunciado": "Link de R$ 3.000 por mês, SLA de 99,7% mensal, 300 minutos parados que contam. O contrato usa a regra proporcional. Quanto é a glosa?",
     "alternativas": [
-      { "texto": "R$ 11,83", "correta": false, "explicacao": "R$ 11,83 é o resultado da regra \"só o excesso\" (300 − 129,6 min), não da proporcional." },
-      { "texto": "R$ 9,00", "correta": false, "explicacao": "Conta errada: 0,3% de 3.000 é 9, mas a regra usa os minutos parados." },
-      { "texto": "R$ 20,83", "correta": true, "explicacao": "Certo. 3.000 × 300 ÷ 43.200 = R$ 20,83." },
-      { "texto": "R$ 1.500,00", "correta": false, "explicacao": "Seria a glosa de 50% das faixas, que só vale abaixo de 90% de disponibilidade." }
+      {
+        "texto": "R$ 11,83",
+        "correta": false,
+        "explicacao": "R$ 11,83 é a regra \"só o excesso\" (300 − 129,6 min), não a proporcional."
+      },
+      {
+        "texto": "R$ 9,00",
+        "correta": false,
+        "explicacao": "0,3% de 3.000 é 9, mas a regra usa os minutos parados."
+      },
+      {
+        "texto": "R$ 20,83",
+        "correta": true,
+        "explicacao": "Certo. 3.000 × 300 ÷ 43.200 = R$ 20,83. A disponibilidade foi 99,31%, abaixo de 99,7%."
+      },
+      {
+        "texto": "R$ 1.500,00",
+        "correta": false,
+        "explicacao": "Seria uma glosa de 50%, que só aparece em regras por faixas com disponibilidade bem mais baixa."
+      }
     ],
-    "fontes": ["ifsuldeminas-ans"],
+    "fontes": [
+      "ifsuldeminas-ans"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-02-q3",
     "licao": "09-02",
-    "enunciado": "No exemplo de termo de referência público, a falta de energia no local do cliente entra no tempo de parada da operadora?",
+    "enunciado": "A unidade ficou sem energia e o roteador da operadora desligou por 2 horas. Em geral, isso conta no tempo parado da operadora?",
     "alternativas": [
-      { "texto": "Sim, qualquer parada conta.", "correta": false, "explicacao": "O TR do TJAL trata a falta de energia no cliente como exclusão: não conta contra a operadora." },
-      { "texto": "Não, é uma exclusão prevista no termo de referência.", "correta": true, "explicacao": "Certo. No exemplo do TJAL, falta de energia no local do cliente não conta. Confira o seu contrato." },
-      { "texto": "Só se durar mais de 4 horas.", "correta": false, "explicacao": "O limite de 4 h aparece nas manutenções programadas, não na falta de energia." },
-      { "texto": "Conta em dobro.", "correta": false, "explicacao": "Não há regra de contar em dobro nos exemplos estudados." }
+      {
+        "texto": "Sempre conta.",
+        "correta": false,
+        "explicacao": "Muitos contratos tratam falta de energia no local do cliente como exclusão."
+      },
+      {
+        "texto": "Em geral não: falta de energia no local do cliente costuma ser exclusão. Confira no contrato.",
+        "correta": true,
+        "explicacao": "Certo. Exemplo: um termo de referência público (TJAL) trata a falta de energia no cliente como exclusão."
+      },
+      {
+        "texto": "Só se passar de 4 horas.",
+        "correta": false,
+        "explicacao": "O limite de 4 h aparece em manutenções programadas, não na falta de energia."
+      },
+      {
+        "texto": "Conta em dobro.",
+        "correta": false,
+        "explicacao": "Não há regra de contar em dobro nos contratos estudados."
+      }
     ],
-    "fontes": ["tjal-tr-link"],
+    "fontes": [
+      "tjal-tr-link"
+    ],
     "dificuldade": 1
   },
   {
     "id": "09-02-q4",
     "licao": "09-02",
-    "enunciado": "Três falhas aconteceram em menos de 3 horas no mesmo link. Como o termo de referência do TJAL manda contar?",
+    "enunciado": "O link caiu três vezes em duas horas. Alguns contratos mandam juntar falhas próximas. Como fica a contagem nesses contratos?",
     "alternativas": [
-      { "texto": "Como três paradas separadas, somando só os minutos de cada uma.", "correta": false, "explicacao": "No TJAL, falhas repetidas em menos de 3 h contam como uma só." },
-      { "texto": "Como uma parada só, do início da primeira ao fim da última.", "correta": true, "explicacao": "Certo. É a regra do exemplo. Ela evita que o serviço \"volte\" por minutos e zere o relógio." },
-      { "texto": "Só a mais longa conta.", "correta": false, "explicacao": "A regra junta as falhas num intervalo só, não escolhe a maior." },
-      { "texto": "Nenhuma conta, porque foram curtas.", "correta": false, "explicacao": "Falhas curtas também contam; no exemplo, elas são juntadas." }
+      {
+        "texto": "Três paradas separadas, somando só os minutos de cada uma.",
+        "correta": false,
+        "explicacao": "Nesses contratos, falhas próximas são juntadas."
+      },
+      {
+        "texto": "Uma parada só, do início da primeira ao fim da última.",
+        "correta": true,
+        "explicacao": "Certo. Exemplo: o TR do TJAL junta falhas em menos de 3 h. Isso evita que o serviço \"volte\" por minutos e zere o relógio."
+      },
+      {
+        "texto": "Só a mais longa conta.",
+        "correta": false,
+        "explicacao": "A regra junta o intervalo; não escolhe a maior."
+      },
+      {
+        "texto": "Nenhuma conta, porque foram curtas.",
+        "correta": false,
+        "explicacao": "Falhas curtas também contam."
+      }
     ],
-    "fontes": ["tjal-tr-link"],
+    "fontes": [
+      "tjal-tr-link"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-02-q5",
     "licao": "09-02",
-    "enunciado": "A SUDAM usa Vd = V × (1 − D/100), limitado a 20%. Comparada com Dc = Cm × Ti ÷ To, essa fórmula dá:",
+    "enunciado": "Um contrato usa Vd = V × (1 − D/100), com teto de 20%. Outro usa Dc = Cm × Ti ÷ To. No mesmo mês, longe do teto, os descontos são:",
     "alternativas": [
-      { "texto": "Sempre o dobro.", "correta": false, "explicacao": "Não há fator 2. As duas expressões são equivalentes." },
-      { "texto": "O mesmo valor, porque 1 − D/100 = Ti ÷ To; a diferença é o teto de 20%.", "correta": true, "explicacao": "Certo. D = (To − Ti)/To × 100, logo 1 − D/100 = Ti/To. O teto limita casos extremos." },
-      { "texto": "Sempre zero, se a disponibilidade passar de 90%.", "correta": false, "explicacao": "A fórmula da SUDAM dá desconto proporcional a qualquer tempo parado." },
-      { "texto": "Um valor fixo de 20% em qualquer caso.", "correta": false, "explicacao": "20% é o limite máximo, não um valor fixo." }
+      {
+        "texto": "Sempre o dobro no primeiro.",
+        "correta": false,
+        "explicacao": "Não há fator 2: as contas são equivalentes."
+      },
+      {
+        "texto": "Iguais, porque 1 − D/100 = Ti ÷ To; a diferença é o teto de 20%.",
+        "correta": true,
+        "explicacao": "Certo. D = (To − Ti)/To × 100. Exemplo real do primeiro jeito de escrever: SUDAM, 2026."
+      },
+      {
+        "texto": "Sempre zero se a disponibilidade passar de 90%.",
+        "correta": false,
+        "explicacao": "As duas dão desconto proporcional ao tempo parado."
+      },
+      {
+        "texto": "Fixos em 20% em qualquer caso.",
+        "correta": false,
+        "explicacao": "20% é o limite máximo, não um valor fixo."
+      }
     ],
-    "fontes": ["sudam-impugnacao-2026", "ifsuldeminas-ans"],
+    "fontes": [
+      "sudam-impugnacao-2026",
+      "ifsuldeminas-ans"
+    ],
     "dificuldade": 3
   },
   {
     "id": "09-02-q6",
     "licao": "09-02",
-    "enunciado": "O que é a memória de cálculo da glosa?",
+    "enunciado": "O fornecedor contestou a glosa que você mandou. O que deveria estar na sua memória de cálculo?",
     "alternativas": [
-      { "texto": "O registro passo a passo de período, paradas, exclusões, Ti, disponibilidade, regra e valor, para justificar o desconto.", "correta": true, "explicacao": "Certo. Sem ela, o fornecedor contesta e você não tem como provar a conta." },
-      { "texto": "A nota fiscal do fornecedor.", "correta": false, "explicacao": "A nota fiscal é do fornecedor; a memória de cálculo é feita pela fiscalização." },
-      { "texto": "O gráfico de tráfego do link.", "correta": false, "explicacao": "O gráfico pode ser evidência, mas não é a memória de cálculo." },
-      { "texto": "O número do protocolo do chamado.", "correta": false, "explicacao": "O protocolo é uma das evidências que entram na memória de cálculo." }
+      {
+        "texto": "Período, paradas com protocolo e horário, exclusões aplicadas, Ti, disponibilidade, regra do contrato e valor.",
+        "correta": true,
+        "explicacao": "Certo. Com isso o fornecedor consegue conferir passo a passo, e você consegue provar a conta."
+      },
+      {
+        "texto": "Só o valor final.",
+        "correta": false,
+        "explicacao": "Sem os passos, não há como conferir nem defender o desconto."
+      },
+      {
+        "texto": "O gráfico de tráfego, sem horários.",
+        "correta": false,
+        "explicacao": "Pode ser evidência, mas sem horários não mostra o tempo parado."
+      },
+      {
+        "texto": "Só o número do contrato.",
+        "correta": false,
+        "explicacao": "Identifica o contrato, mas não justifica o desconto."
+      }
     ],
-    "fontes": ["ifsuldeminas-ans"],
+    "fontes": [
+      "ifsuldeminas-ans"
+    ],
     "dificuldade": 1
   },
   {
     "id": "09-02-q7",
     "licao": "09-02",
-    "enunciado": "Na regra por faixas do IF Sul de Minas, qual glosa se aplica com disponibilidade de 85% no mês?",
+    "enunciado": "O contrato diz: disponibilidade abaixo de 90%, glosa de 50% do mês; abaixo de 80%, 100%. No mês, deu 85%. Qual glosa?",
     "alternativas": [
-      { "texto": "Nenhuma.", "correta": false, "explicacao": "85% está abaixo de 90%, então há glosa." },
-      { "texto": "100% do mês.", "correta": false, "explicacao": "100% só abaixo de 80%." },
-      { "texto": "10% do mês.", "correta": false, "explicacao": "10% não é uma das faixas desse documento." },
-      { "texto": "50% do mês.", "correta": true, "explicacao": "Certo. Abaixo de 90% → 50%; abaixo de 80% → 100%. Com 85%, aplica-se 50%." }
+      {
+        "texto": "Nenhuma.",
+        "correta": false,
+        "explicacao": "85% está abaixo de 90%."
+      },
+      {
+        "texto": "100% do mês.",
+        "correta": false,
+        "explicacao": "100% só abaixo de 80%."
+      },
+      {
+        "texto": "10% do mês.",
+        "correta": false,
+        "explicacao": "10% não é uma das faixas desse contrato."
+      },
+      {
+        "texto": "50% do mês.",
+        "correta": true,
+        "explicacao": "Certo. Abaixo de 90% vale a faixa de 50%. Faixas assim aparecem, por exemplo, no acordo de nível de serviço do IF Sul de Minas."
+      }
     ],
-    "fontes": ["ifsuldeminas-ans"],
+    "fontes": [
+      "ifsuldeminas-ans"
+    ],
     "dificuldade": 2
   },
   {
     "id": "09-02-q8",
     "licao": "09-02",
-    "enunciado": "Por que guardar protocolo, data e hora de abertura e fechamento de cada chamado?",
+    "enunciado": "Por que guardar protocolo, data e hora de abertura e de fechamento de cada chamado?",
     "alternativas": [
-      { "texto": "Para medir o Ti e provar a indisponibilidade na hora de calcular a glosa.", "correta": true, "explicacao": "Certo. Em vários contratos o relógio começa na abertura do chamado; sem registro não há prova." },
-      { "texto": "Só para estatística interna, sem efeito no pagamento.", "correta": false, "explicacao": "Esses horários definem o tempo parado, que entra direto no cálculo do desconto." },
-      { "texto": "Porque a lei proíbe abrir chamado sem protocolo.", "correta": false, "explicacao": "O motivo é contratual e de prova, não uma proibição legal geral." },
-      { "texto": "Para o fornecedor saber o seu nome.", "correta": false, "explicacao": "O objetivo é registrar o tempo, não identificar quem abriu." }
+      {
+        "texto": "Para medir o Ti e provar o tempo parado na hora de calcular a glosa.",
+        "correta": true,
+        "explicacao": "Certo. Em vários contratos o relógio começa na abertura do chamado; sem registro não há prova."
+      },
+      {
+        "texto": "Só para estatística interna.",
+        "correta": false,
+        "explicacao": "Esses horários definem o tempo parado, que entra no desconto."
+      },
+      {
+        "texto": "Porque a lei proíbe chamado sem protocolo.",
+        "correta": false,
+        "explicacao": "O motivo é contratual e de prova."
+      },
+      {
+        "texto": "Para o fornecedor saber quem ligou.",
+        "correta": false,
+        "explicacao": "O objetivo é registrar o tempo."
+      }
     ],
-    "fontes": ["tjal-tr-link", "trt7-tr-internet"],
+    "fontes": [
+      "tjal-tr-link",
+      "trt7-tr-internet"
+    ],
     "dificuldade": 1
   }
 ]

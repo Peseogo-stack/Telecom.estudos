@@ -588,6 +588,9 @@ a.item-lista:hover {
   border-bottom: 1px solid var(--borda);
   text-align: left;
   vertical-align: top;
+  /* Na lição, .prosa quebra palavras em qualquer ponto; na tabela isso partia números ("131/0").
+     Com break-word a coluna fica do tamanho da maior palavra, e a tabela rola de lado se precisar. */
+  overflow-wrap: break-word;
 }
 .tabela th {
   background: var(--superficie-2);

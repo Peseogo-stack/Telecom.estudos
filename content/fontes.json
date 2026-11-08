@@ -159,7 +159,7 @@
     "tipo": "fabricante",
     "url": "https://www.exfo.com/contentassets/7e4d240b6717415283238de7dcec35ba/exfo_anote194_otdr-fundamentals_en.pdf",
     "acessadoEm": "2026-11-07",
-    "observacao": "© 2017. Retroespalhamento de Rayleigh (nível baixo e constante, dá a atenuação em dB/km) e reflexão de Fresnel (picos, \"milhares de vezes\" maior); eventos sem reflexão (fusão, curvatura) são queda brusca na rampa; zona morta de evento medida a −1,5 dB de cada lado do pico; zona morta de atenuação até voltar a 0,5 dB do retroespalhamento; faixa dinâmica 5 a 8 dB acima da maior perda; pulso curto = menos energia e zona morta menor."
+    "observacao": "© 2017. Retroespalhamento de Rayleigh (nível baixo e constante, dá a atenuação em dB/km) e reflexão de Fresnel (picos, \"milhares de vezes\" maior); eventos sem reflexão (fusão, curvatura) são queda brusca na rampa; zona morta de evento medida a −1,5 dB de cada lado do pico; zona morta de atenuação até voltar a 0,5 dB do retroespalhamento; especificada em geral no pulso mais curto com reflexão de −45 dB em monomodo (−35 dB em multimodo); faixa dinâmica 5 a 8 dB acima da maior perda (em geral especificada no pulso mais longo, 3 min, SNR = 1); pulso curto = menos energia e zona morta menor."
   },
   {
     "id": "viavi-otdr-dicas",
@@ -186,7 +186,7 @@
     "tipo": "fabricante",
     "url": "https://de.flukenetworks.com/knowledge-base/simplifiber-pro/scapc-scapc-fiber-testing-simplifiber-pro",
     "acessadoEm": "2026-11-07",
-    "observacao": "\"TIA/EIA Method A.1 for Singlemode\", também chamado de método de 1 cordão. Passos: deixar a fonte estabilizar por pelo menos 5 minutos; ligar o cordão de referência no medidor e gravar a referência (0,00 dB); soltar o cordão só da entrada do medidor; ligar um cordão bom no medidor e o enlace no meio."
+    "observacao": "\"TIA/EIA Method A.1 for Singlemode\", chamado nas normas IEC de Method A1 para monomodo e Method 2 para multimodo, e também de método de 1 cordão. Regra do equipamento: não colocar conector SC/APC na porta de saída da fonte (que é UPC), só na porta de entrada do medidor. Passos: deixar a fonte estabilizar por pelo menos 5 minutos; ligar o cordão de referência no medidor e gravar a referência (0,00 dB); soltar o cordão só da entrada do medidor; ligar um cordão bom no medidor e o enlace no meio."
   },
   {
     "id": "foa-pon-meter",
@@ -195,7 +195,7 @@
     "tipo": "associacao",
     "url": "https://www.foa.org/tech/ref/install/OPM%20and%20PON%20meters.pdf",
     "acessadoEm": "2026-11-07",
-    "observacao": "Um medidor comum não separa os comprimentos de onda: com GPON e XG(S)-PON na mesma rede, mostra a soma de 1490 e 1577 nm na descida. O medidor PON é seletivo, com filtros para 1490 nm e 1577 nm."
+    "observacao": "Um medidor comum não separa os comprimentos de onda: com GPON e XG(S)-PON na mesma rede, mostra a soma de 1490 e 1577 nm na descida. O medidor PON é seletivo, com filtros para 1490 nm e 1577 nm (na p. 2 há um erro de digitação \"1557 nm\" na primeira menção, seguido de \"1577 nm\" nas duas seguintes)."
   },
   {
     "id": "trt7-tr-principal",

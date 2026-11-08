@@ -37,16 +37,16 @@ export function Referencia1Cordao({ descricao }: PropsDiagrama) {
       {caixa(326, 124, 'Medidor', 'perda')}
       <text x="132" y="162" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 11 }}>A</text>
       <text x="270" y="162" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 11 }}>B</text>
-      <text x="95" y="162" textAnchor="middle" className="d-texto" style={{ fontSize: 10 }}>lançamento</text>
-      <text x="303" y="162" textAnchor="middle" className="d-texto" style={{ fontSize: 10 }}>recepção</text>
+      <text x="98" y="176" textAnchor="middle" className="d-texto" style={{ fontSize: 10 }}>lançamento</text>
+      <text x="300" y="176" textAnchor="middle" className="d-texto" style={{ fontSize: 10 }}>recepção</text>
 
       {/* chave do que entra na medida */}
-      <path d="M126 172 v8 h150 v-8" className="d-linha" />
-      <text x="201" y="196" textAnchor="middle" className="d-texto">entra na medida: conexão A + fibra + emendas + conexão B</text>
+      <path d="M126 182 v8 h150 v-8" className="d-linha" />
+      <text x="201" y="206" textAnchor="middle" className="d-texto">entra na medida: conexão A + fibra + emendas + conexão B</text>
 
-      <text x="4" y="228" className="d-texto d-alerta">Depois de zerar, não solte o cordão do lado da fonte:</text>
-      <text x="4" y="244" className="d-texto d-alerta">solte só o lado do medidor.</text>
-      <text x="4" y="272" className="d-texto d-suave">Perda (dB) = referência (dBm) − medida (dBm).</text>
+      <text x="4" y="234" className="d-texto d-alerta">Depois de zerar, não solte o cordão do lado da fonte:</text>
+      <text x="4" y="250" className="d-texto d-alerta">solte só o lado do medidor.</text>
+      <text x="4" y="274" className="d-texto d-suave">Perda (dB) = referência (dBm) − medida (dBm).</text>
     </Diagrama>
   );
 }

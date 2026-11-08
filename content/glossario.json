@@ -970,7 +970,7 @@
     "id": "fantasma",
     "pt": "Fantasma (eco)",
     "en": "Ghost",
-    "definicao": "Pico falso no traço de OTDR, sem perda, a múltiplos da distância de uma reflexão forte. Aparece em cabos curtos com conectores muito reflexivos.",
+    "definicao": "Pico falso no traço de OTDR, sem perda, a múltiplos da distância de uma reflexão forte (cabo de lançamento, primeiro trecho ou depois do fim da fibra). Aparece em cabos curtos com conectores muito reflexivos.",
     "fontes": [
       "foa-otdr"
     ],

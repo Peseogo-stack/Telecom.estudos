@@ -82,10 +82,26 @@ const TELAS_FASE_2 = [
   ['13-ajustes', '#/ajustes'],
 ];
 
-const telas = conjunto === 'modulo-02' ? TELAS_MODULO_02 : TELAS_FASE_2;
-const temas = conjunto === 'modulo-02'
-  ? [['16-escuro', '#/licao/02-06', { tema: 'escuro', sol: false }], ['17-modo-sol', '#/ferramentas/orcamento', { tema: 'claro', sol: true }]]
-  : [['14-escuro', '#/licao/10-01', { tema: 'escuro', sol: false }], ['15-modo-sol', '#/licao/10-01', { tema: 'claro', sol: true }]];
+const TELAS_MODULO_06 = [
+  ['01-trilha-modulo-06', '#/trilha/06'],
+  ['02-licao-06-01-diagrama', '#/licao/06-01', diagrama],
+  ['03-licao-06-02-diagrama', '#/licao/06-02', diagrama],
+  ['04-licao-06-03-diagrama', '#/licao/06-03', diagrama],
+  ['05-leitor-otdr-facil', '#/ferramentas/otdr'],
+  ['06-leitor-otdr-fantasma', '#/ferramentas/otdr', async (p) => {
+    await p.getByLabel('Nível').selectOption('dificil');
+    await p.getByRole('button', { name: 'Traço seguinte' }).click();
+    await p.getByRole('button', { name: 'Traço seguinte' }).click();
+    await p.locator('figure.diagrama').first().scrollIntoViewIfNeeded();
+  }],
+];
+
+const telas = conjunto === 'modulo-06' ? TELAS_MODULO_06 : conjunto === 'modulo-02' ? TELAS_MODULO_02 : TELAS_FASE_2;
+const temas = conjunto === 'modulo-06'
+  ? [['07-escuro', '#/licao/06-03', { tema: 'escuro', sol: false }], ['08-modo-sol', '#/ferramentas/otdr', { tema: 'claro', sol: true }]]
+  : conjunto === 'modulo-02'
+    ? [['16-escuro', '#/licao/02-06', { tema: 'escuro', sol: false }], ['17-modo-sol', '#/ferramentas/orcamento', { tema: 'claro', sol: true }]]
+    : [['14-escuro', '#/licao/10-01', { tema: 'escuro', sol: false }], ['15-modo-sol', '#/licao/10-01', { tema: 'claro', sol: true }]];
 
 const navegador = await chromium.launch();
 for (const [largura, altura, sufixo] of [[390, 844, '390'], [1440, 900, '1440']]) {

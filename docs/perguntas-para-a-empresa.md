@@ -55,7 +55,7 @@
 | b13 | O contrato conta o mês como 30 dias (43.200 min) ou pelos dias do calendário? | Cláusula de SLA | 09-01 |
 | b14 | Latência alta, perda de pacotes ou velocidade abaixo do contratado contam como indisponibilidade no contrato? | Anexo de nível de serviço | 09-01 |
 | b15 | Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho? | Procedimentos de segurança (intranet) | 10-05 |
-| b16 | Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem? | Projeto executivo ou memorial de cálculo da rede | 02-06, 02-07 |
+| b16 | Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem? | Projeto executivo ou memorial de cálculo da rede | 02-06, 02-07, 04-03, 04-05 |
 | b17 | Qual método de referência de perda de inserção a empresa pede (1, 2 ou 3 cordões), em quais comprimentos de onda, e qual é o critério de aceite da perda total? | Especificação técnica de aceite de obra | 06-01, 09-05 |
 
 ---
@@ -72,7 +72,7 @@
 | c06 | A rede é própria, contratada ou mista? Que protocolo SCADA usamos? Já há IEC 61850? | Engenharia / automação | 01-01 |
 | c07 | Que requisitos de telecom do ONS valem depois da interligação ao SIN? | Engenharia | 01-06 |
 | c08 | TI e TO (tecnologia da operação) são separadas? Quem cuida da telecom operativa? | Líder de TI | 01-01 |
-| c09 | Que materiais temos em estoque (cabos, CEO, CTO, tubetes, SFP, cordões)? | Almoxarifado | 03-05, 04-06, 02-04, 03-07, 05-01 |
+| c09 | Que materiais temos em estoque (cabos, CEO, CTO, tubetes, SFP, cordões)? | Almoxarifado | 03-05, 04-01, 04-03, 04-06, 02-04, 03-07, 05-01 |
 | c10 | As operadoras aplicam o RGC da Anatel aos nossos links ou só o SLA do contrato? | Jurídico | 09-02 |
 | c11 | A empresa apoia algum curso ou certificação? | RH / líder de TI | 12-02 |
 | c12 | Quando a baixa tensão é isolada (multiplexada), a empresa trata as zonas da NR-10 do mesmo jeito que na rede nua? Quem avalia se o isolamento está íntegro? | Segurança do trabalho (SESMT) | 10-01 |
@@ -93,7 +93,7 @@
 | d04 | Qual é o critério de aceite por emenda que usamos no dia a dia (0,1? 0,15 dB?) | 05-04, 06-03 |
 | d05 | Quem faz o arc check, a troca de eletrodo e a limpeza da máquina de fusão? | 05-03 |
 | d06 | Que faixa de sinal na ONU cobramos dos provedores, se cobramos? Que topologia eles usam aqui? | 04-05 |
-| d07 | A rede para as unidades é ponto a ponto (SFP) ou tem PON? | 04-06, 02-05 |
+| d07 | A rede para as unidades é ponto a ponto (SFP) ou tem PON? | 04-01, 04-06, 02-05 |
 | d08 | Como é o fluxo para cabo clandestino (registro, retirada, guarda do material)? | 07-06 |
 | d09 | Que nomes e campos usamos nas camadas do QGIS? Usamos QField? | 08-06, 08-07 |
 | d10 | Qual é o plano de VLANs, e eu posso rodar comandos de consulta (show) nos switches? | 11-04 |

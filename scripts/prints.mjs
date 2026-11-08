@@ -104,6 +104,13 @@ const TELAS_MODULO_03 = [
   ['05-licao-03-07-diagrama', '#/licao/03-07', diagrama],
 ];
 
+const TELAS_MODULO_04 = [
+  ['01-trilha-modulo-04', '#/trilha/04'],
+  ['02-licao-04-01-diagrama', '#/licao/04-01', diagrama],
+  ['03-licao-04-03-diagrama', '#/licao/04-03', diagrama],
+  ['04-licao-04-05-diagrama', '#/licao/04-05', diagrama],
+];
+
 const TELAS_MODULO_05 = [
   ['01-trilha-modulo-05', '#/trilha/05'],
   ['02-licao-05-01-diagrama', '#/licao/05-01', diagrama],
@@ -118,23 +125,30 @@ const TELAS_MODULO_10 = [
 ];
 
 const telas =
-  conjunto === 'modulo-05'
-    ? TELAS_MODULO_05
-    : conjunto === 'modulo-10'
-      ? TELAS_MODULO_10
-      : conjunto === 'modulo-03'
-        ? TELAS_MODULO_03
-        : conjunto === 'modulo-06'
-          ? TELAS_MODULO_06
-          : conjunto === 'modulo-02'
-            ? TELAS_MODULO_02
-            : TELAS_FASE_2;
+  conjunto === 'modulo-04'
+    ? TELAS_MODULO_04
+    : conjunto === 'modulo-05'
+      ? TELAS_MODULO_05
+      : conjunto === 'modulo-10'
+        ? TELAS_MODULO_10
+        : conjunto === 'modulo-03'
+          ? TELAS_MODULO_03
+          : conjunto === 'modulo-06'
+            ? TELAS_MODULO_06
+            : conjunto === 'modulo-02'
+              ? TELAS_MODULO_02
+              : TELAS_FASE_2;
 const temas =
-  conjunto === 'modulo-05'
+  conjunto === 'modulo-04'
     ? [
-        ['05-escuro', '#/licao/05-03', { tema: 'escuro', sol: false }],
-        ['06-modo-sol', '#/licao/05-04', { tema: 'claro', sol: true }],
+        ['05-escuro', '#/licao/04-03', { tema: 'escuro', sol: false }],
+        ['06-modo-sol', '#/licao/04-05', { tema: 'claro', sol: true }],
       ]
+    : conjunto === 'modulo-05'
+      ? [
+          ['05-escuro', '#/licao/05-03', { tema: 'escuro', sol: false }],
+          ['06-modo-sol', '#/licao/05-04', { tema: 'claro', sol: true }],
+        ]
     : conjunto === 'modulo-10'
       ? [
           ['04-escuro', '#/licao/10-03', { tema: 'escuro', sol: false }],

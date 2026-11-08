@@ -28,6 +28,9 @@ import { BancadaLimpa } from './BancadaLimpa';
 import { PreparoFusao } from './PreparoFusao';
 import { DentroMaquina } from './DentroMaquina';
 import { EstimadoRealFusao } from './EstimadoRealFusao';
+import { AnatomiaFtth } from './AnatomiaFtth';
+import { SplittersBalanceados } from './SplittersBalanceados';
+import { OrcamentoPon } from './OrcamentoPon';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -56,6 +59,9 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'preparo-fusao': PreparoFusao,
   'dentro-maquina': DentroMaquina,
   'estimado-real-fusao': EstimadoRealFusao,
+  'anatomia-ftth': AnatomiaFtth,
+  'splitters-balanceados': SplittersBalanceados,
+  'orcamento-pon': OrcamentoPon,
 };
 
 

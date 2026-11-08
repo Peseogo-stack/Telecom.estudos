@@ -121,6 +121,15 @@
     ]
   },
   {
+    "id": "a14",
+    "onde": "sozinho",
+    "texto": "Qual é a classe de laser e a potência gravadas na etiqueta da nossa caneta VFL, e que tipo de microscópio de inspeção a equipe usa (vídeo ou óptico com filtro IR)?",
+    "dica": "Etiqueta da caneta VFL e maleta de inspeção/limpeza",
+    "licoes": [
+      "10-03"
+    ]
+  },
+  {
     "id": "b01",
     "onde": "documentos",
     "texto": "Qual é a norma de compartilhamento de postes vigente (número e versão)? Há referência pública a uma \"NT-002\" (2020) e a uma possível \"NT 06/2024\".",
@@ -563,7 +572,8 @@
     "dica": "Equipe de telecom",
     "licoes": [
       "06-01",
-      "06-02"
+      "06-02",
+      "10-03"
     ]
   },
   {
@@ -574,5 +584,16 @@
     "licoes": [
       "03-03"
     ]
+  },
+  {
+    "id": "d16",
+    "onde": "colega",
+    "texto": "Que álcool isopropílico (pureza) e que removedor de geleia a equipe usa na bancada, e como fazemos o descarte do pote de fragmentos de fibra?",
+    "dica": "",
+    "licoes": [
+      "10-04",
+      "05-01"
+    ]
   }
 ]
+

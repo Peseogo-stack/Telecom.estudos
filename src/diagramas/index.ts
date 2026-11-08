@@ -23,6 +23,8 @@ import { GravacaoCabo } from './GravacaoCabo';
 import { CoresBrTia } from './CoresBrTia';
 import { TubosPiloto } from './TubosPiloto';
 import { UpcApc } from './UpcApc';
+import { LuzInvisivel } from './LuzInvisivel';
+import { BancadaLimpa } from './BancadaLimpa';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -46,4 +48,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'cores-br-tia': CoresBrTia,
   'tubos-piloto': TubosPiloto,
   'upc-apc': UpcApc,
+  'luz-invisivel': LuzInvisivel,
+  'bancada-limpa': BancadaLimpa,
 };
+

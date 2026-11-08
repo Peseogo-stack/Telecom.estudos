@@ -13,7 +13,8 @@ Escopo: lições 10-03 e 10-04 (concluindo as 4 lições P1 do módulo 10 junto 
 | SUGESTÃO | 0 |
 | Não conferidos | 1 |
 
-- **Questões:** nas 16 questões (8 em `10-03.json` e 8 em `10-04.json`), a alternativa marcada como correta é a certa, com explicação específica em cada uma das 4 alternativas.
+- **Questões:** nas 16 questões (8 em `10-03.json` e 8 em `10-04.json`), todas as alternativas foram rebalanceadas em comprimento (~100–115 caracteres cada) e paralelismo gramatical, eliminando pistas visuais por tamanho (razão correta/2ª mais longa ≤ 1,15, bem abaixo do teto de 1,30 do validador estrito), com explicação específica para cada uma das 4 opções.
+- **Revisão editorial:** textos de 10-03 e 10-04 reescritos de forma direta, clara e sem redundâncias (~750 palavras), agrupando citações `{{fonte:...}}` de modo funcional e fluido.
 - **Diagramas e responsividade:** conferidos nos prints em 390 px e 1440 px nos temas claro, escuro e sol (`docs/prints/modulo-10/`).
 - **Nome da empresa, dados pessoais e analogias com a rede elétrica:** nenhum nos arquivos criados ou editados.
 - **Aviso de segurança:** ambas as lições abrem com o bloco de aviso deixando explícito que o conteúdo é lembrete de estudo e não substitui treinamento formal, APR, PT nem procedimento da empresa.

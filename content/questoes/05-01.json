@@ -5,24 +5,24 @@
     "enunciado": "Qual é a sequência rigorosa de etapas recomendada pela FOA e pelos fabricantes para preparar e proteger uma fusão de fibra óptica?",
     "alternativas": [
       {
-        "texto": "Clivar, decapar o acrilato, limpar com lenço seco, fundir e passar o tubete por cima da emenda fria.",
-        "correta": false,
-        "explicacao": "O tubete não passa sobre a fibra depois de fundida, e clivar antes de decapar destrói a lâmina do clivador."
-      },
-      {
-        "texto": "Vestir o tubete, decapar o acrilato de 250 µm, limpar com IPA ≥ 99%, clivar, fundir na máquina e contrair o tubete no forno.",
+        "texto": "Vestir o tubete, decapar o acrilato de 250 µm, limpar com IPA ≥ 99%, clivar e fundir na máquina com contração no forno.",
         "correta": true,
-        "explicacao": "Certo. A sequência padrão é vestir o tubete primeiro, decapar sem arranhar o vidro, limpar com álcool isopropílico ≥ 99%, clivar e levar imediatamente à máquina."
+        "explicacao": "Certo. A sequência padrão é vestir o tubete antes de tudo, decapar sem ferir o vidro, limpar com IPA ≥ 99%, clivar de precisão e levar à máquina."
       },
       {
-        "texto": "Decapar, clivar, limpar a ponta clivada com álcool hidratado 70% e colocar o tubete dentro da máquina de fusão.",
+        "texto": "Decapar o acrilato, clivar a fibra no comprimento correto, limpar a face com IPA ≥ 99%, fundir e vestir o tubete após o arco.",
         "correta": false,
-        "explicacao": "Nunca se limpa a ponta após a clivagem, e o álcool hidratado 70% deixa água e resíduos prejudiciais."
+        "explicacao": "Nunca se limpa a face após a clivagem, e o tubete fechado não pode ser colocado depois que a fibra já está fundida."
       },
       {
-        "texto": "Limpar a capa com gel de petróleo, fundir as fibras com acrilato e aplicar fita isolante no lugar do tubete.",
+        "texto": "Limpar a fibra com IPA ≥ 99%, clivar a capa secundária, decapar a sílica com estilete e aplicar cola cianoacrilato no tubete.",
         "correta": false,
-        "explicacao": "Acrilato queima no arco gerando falha total; o tubete com haste de aço é indispensável para proteção mecânica."
+        "explicacao": "O uso de estilete fratura a sílica e a proteção de emenda é feita exclusivamente por tubete termocontrátil com haste de reforço."
+      },
+      {
+        "texto": "Vestir o tubete, clivar o cabo com capa, decapar o acrilato de 250 µm, limpar a seco e fundir sem teste de tração mecânica.",
+        "correta": false,
+        "explicacao": "Clivar antes de decapar destrói a lâmina do clivador e a limpeza com lenço seco não remove a camada protetora residual de acrilato."
       }
     ],
     "fontes": [
@@ -34,27 +34,27 @@
   {
     "id": "05-01-q2",
     "licao": "05-01",
-    "enunciado": "O que acontece na prática se o técnico esquecer de vestir o tubete termocontrátil na fibra antes de realizar a fusão?",
+    "enunciado": "O que acontece na prática se o profissional de campo esquecer de inserir o tubete termocontrátil na fibra antes de realizar a fusão?",
     "alternativas": [
       {
-        "texto": "Ele pode abrir o tubete longitudinalmente com um estilete e colá-lo com cianoacrilato.",
-        "correta": false,
-        "explicacao": "Cortar o tubete destrói sua integridade mecânica e a vedação contra umidade, proibido em normas de telecom."
-      },
-      {
-        "texto": "Terá de quebrar a emenda pronta, vestir o tubete e refazer todo o processo de decapagem, limpeza, clivagem e fusão.",
+        "texto": "Terá de quebrar a fusão recém-feita, colocar o tubete pela ponta livre e repetir todo o ciclo de preparo e emenda.",
         "correta": true,
-        "explicacao": "Certo. O tubete é fechado e cilíndrico; se não for inserido na fibra antes da união, a emenda terá de ser sacrificada e refeita."
+        "explicacao": "Certo. O tubete é tubular e fechado; se não for inserido na fibra antes da junção, a emenda pronta deve ser sacrificada e refeita."
       },
       {
-        "texto": "Pode empurrar o tubete pelo outro lado do cabo de 24 fibras já ancorado na caixa.",
+        "texto": "Poderá cortar a luva plástica do tubete no sentido longitudinal e fechá-la sobre a fibra usando fita de autofusão.",
         "correta": false,
-        "explicacao": "O cabo já está ancorado e a outra ponta está a quilômetros de distância no lance."
+        "explicacao": "Fender o tubete destrói a rigidez mecânica e a vedação contra umidade, sendo terminantemente proibido pelas normas de telecomunicações."
       },
       {
-        "texto": "A máquina de fusão detecta a ausência do tubete por câmera e rejeita o arco elétrico.",
+        "texto": "Poderá empurrar o tubete rígido a partir do terminal óptico oposto localizado no outro extremo do cabo lançado.",
         "correta": false,
-        "explicacao": "A máquina não monitora a presença do tubete na fibra; o arco ocorre normalmente e a emenda fica desprotegida."
+        "explicacao": "O cabo óptico já está ancorado na caixa e a outra extremidade está a centenas de metros ou quilômetros de distância."
+      },
+      {
+        "texto": "A máquina detectará a ausência do tubete por câmera de vídeo e abortará o ciclo de arco elétrico preventivamente.",
+        "correta": false,
+        "explicacao": "A máquina de fusão monitora apenas o alinhamento das fibras nas ranhuras em V; ela não verifica se o tubete foi vestido na fibra."
       }
     ],
     "fontes": [
@@ -68,24 +68,24 @@
     "enunciado": "Ao utilizar o decapador de precisão para retirar o revestimento de acrilato de 250 µm da fibra monomodo, qual é o principal cuidado técnico?",
     "alternativas": [
       {
-        "texto": "Puxar a fibra formando um ângulo de 45° para raspar a sílica até diminuir seu diâmetro.",
-        "correta": false,
-        "explicacao": "A casca de sílica de 125 µm nunca deve ser raspada nem ter seu diâmetro alterado."
-      },
-      {
-        "texto": "Manter a lâmina perpendicular ao eixo da fibra, sem torções, evitando riscos ou microfissuras na casca de sílica de 125 µm.",
+        "texto": "Manter o alicate perpendicular à fibra e puxar em linha reta, evitando que a lâmina metálica arranhe a casca de sílica.",
         "correta": true,
-        "explicacao": "Certo. Qualquer arranhão (nick) microscópico na casca causa quebra durante o teste de tração ou por fadiga meses depois na bandeja."
+        "explicacao": "Certo. Qualquer arranhão ou microfissura na casca de 125 µm induz ruptura mecânica prematura durante a tração ou na bandeja."
       },
       {
-        "texto": "Aquecer a lâmina do decapador com isqueiro para amolecer o vidro da fibra.",
+        "texto": "Inclinar a ferramenta em 45 graus para raspar o excesso de casca de 125 µm até que o diâmetro do núcleo diminua.",
         "correta": false,
-        "explicacao": "O fogo danifica o tratamento térmico da ferramenta e contamina a fibra com fuligem."
+        "explicacao": "A casca de sílica nunca deve sofrer abrasão ou raspagem; alterar o diâmetro da fibra compromete a geometria e a propagação óptica."
       },
       {
-        "texto": "Usar sempre o orifício maior do alicate, projetado para cabos de 3 mm, para não apertar o acrilato.",
+        "texto": "Utilizar a cavidade maior calibrada para capa de 3 mm para evitar que o acrilato sofra pressão excessiva de corte.",
         "correta": false,
-        "explicacao": "O entalhe de 3 mm não remove o acrilato de 250 µm; deve-se usar o entalhe calibrado para 250 µm da ferramenta."
+        "explicacao": "A cavidade de 3 mm serve para capas externas de cordões; para retirar o acrilato de 250 µm deve-se usar a cavidade precisa de 250 µm."
+      },
+      {
+        "texto": "Girar o alicate continuamente ao redor do eixo da fibra para remover a proteção de acrilato por torção mecânica.",
+        "correta": false,
+        "explicacao": "Torcer o decapador em torno da fibra causa fratura por torção e cria microfissuras severas na superfície externa do vidro."
       }
     ],
     "fontes": [
@@ -100,24 +100,24 @@
     "enunciado": "Por que a limpeza com álcool isopropílico (IPA ≥ 99%) deve ser feita ANTES da clivagem e NUNCA após clivar a ponta da fibra?",
     "alternativas": [
       {
-        "texto": "Porque o álcool isopropílico evapora instantaneamente e congela a face clivada se tocado depois.",
-        "correta": false,
-        "explicacao": "O álcool evapora rápido, mas não congela a face do vidro; o problema é a deposição de contaminantes e o dano à ponta clivada."
-      },
-      {
-        "texto": "Porque tocar a ponta já clivada com lenço ou dedos deposita resíduos, gordura e lasca as bordas do núcleo, gerando bolhas e atenuação no arco.",
+        "texto": "Porque esfregar a ponta já clivada deposita resíduos, engordura a face do vidro e quebra as bordas vivas do núcleo.",
         "correta": true,
-        "explicacao": "Certo. A clivagem produz uma superfície molecularmente limpa e plana; limpá-la após o corte contamina e lasca as arestas vivas da face do núcleo."
+        "explicacao": "Certo. A clivagem gera uma face atômica plana e limpa. Qualquer contato posterior contamina a extremidade e quebra suas arestas."
       },
       {
-        "texto": "Porque o álcool reage quimicamente com os eletrodos de tungstênio, dissolvendo a carcaça da máquina.",
+        "texto": "Porque o álcool isopropílico evapora rapidamente e resfria bruscamente a sílica, causando choque térmico na ponta.",
         "correta": false,
-        "explicacao": "O álcool não dissolve eletrodos de tungstênio nem carcaças metálicas."
+        "explicacao": "A evaporação do álcool não produz choque térmico danoso ao vidro em temperatura ambiente; a razão é mecânica e de contaminação."
       },
       {
-        "texto": "Porque a FOA recomenda clivar a fibra ainda molhada de álcool para resfriar a lâmina do clivador.",
+        "texto": "Porque a camada residual de álcool atua como isolante elétrico nos eletrodos e impede a deflagração do arco térmico.",
         "correta": false,
-        "explicacao": "A fibra deve estar completamente seca antes da clivagem; clivar fibra molhada prejudica o atrito nas almofadas do clivador."
+        "explicacao": "O álcool evapora em poucos segundos; a proibição de limpar após clivar decorre do lascamento das bordas do núcleo e sujeira."
+      },
+      {
+        "texto": "Porque a norma recomenda clivar a fibra ainda umedecida para lubrificar a lâmina circular de diamante do clivador.",
+        "correta": false,
+        "explicacao": "A fibra deve estar absolutamente seca antes do corte; umidade prejudica a aderência dos apoios de borracha no clivador."
       }
     ],
     "fontes": [
@@ -130,27 +130,27 @@
   {
     "id": "05-01-q5",
     "licao": "05-01",
-    "enunciado": "Como funciona o clivador de precisão e qual é o ângulo médio de clivagem obtido em fibra única segundo a especificação do Fujikura CT50?",
+    "enunciado": "Como opera o clivador de precisão e qual é o ângulo médio típico de clivagem obtido em fibra única monomodo?",
     "alternativas": [
       {
-        "texto": "Possui uma serra de alta rotação que fatia a fibra com ângulo médio de 5,0° a 8,0°.",
-        "correta": false,
-        "explicacao": "O clivador não é uma serra rotativa de corte contínuo e ângulos acima de 3° são rejeitados pelas máquinas de fusão."
-      },
-      {
-        "texto": "Sua lâmina circular risca microscopicamente a casca e aplica tração controlada para partir o vidro, atingindo ângulo médio de 0,3° a 0,9°.",
+        "texto": "Faz uma incisão microscópica na casca e traciona a fibra de modo controlado, obtendo ângulo típico de 0,3° a 0,9°.",
         "correta": true,
-        "explicacao": "Certo. A lâmina faz uma incisão e as borrachas tracionam a fibra para propagar a trinca de forma plana, obtendo tipicamente 0,3° a 0,9° no CT50."
+        "explicacao": "Certo. A lâmina apenas risca a superfície do vidro e os mordentes aplicam tensão axial para propagar a fratura plana controlada."
       },
       {
-        "texto": "Corta por arco elétrico térmico, fundindo a ponta com ângulo médio rigorosamente de 0,00°.",
+        "texto": "Corta a fibra por esmagamento contínuo entre pastilhas rotativas de tungstênio, atingindo ângulo fixo de 2,5° a 3,0°.",
         "correta": false,
-        "explicacao": "O clivador é uma ferramenta puramente mecânica e manual/motorizada, sem eletrodos nem calor."
+        "explicacao": "Esmagar a fibra geraria trincas irregulares e estilhaços, sendo que ângulos próximos a 3° são recusados por máquinas modernas."
       },
       {
-        "texto": "Esmaga a ponta da fibra entre duas garras de tungstênio com ângulo de 45° para facilitar a solda.",
+        "texto": "Utiliza microarco elétrico térmico de baixa potência para fundir a extremidade com ângulo padronizado em 0,00°.",
         "correta": false,
-        "explicacao": "Esmagar a fibra destruiria o núcleo de sílica em estilhaços."
+        "explicacao": "O clivador de precisão é um dispositivo mecânico sem componentes elétricos de aquecimento ou geração de arco voltaico."
+      },
+      {
+        "texto": "Desgasta a ponta da fibra por abrasão mecânica em alta rotação, gerando uma face polida com inclinação de 1,5° a 2,0°.",
+        "correta": false,
+        "explicacao": "Não há lixas nem discos rotativos de abrasão em clivadores; o princípio físico é a iniciação de trinca seguida de clivagem por tração."
       }
     ],
     "fontes": [
@@ -162,27 +162,27 @@
   {
     "id": "05-01-q6",
     "licao": "05-01",
-    "enunciado": "Segundo a ficha técnica do clivador Fujikura CT50 e da máquina 45S, por que não se deve clivar com comprimento inferior a 10 mm na rotina de cabos soltos normais?",
+    "enunciado": "Segundo as especificações de clivadores de precisão e máquinas de fusão, por que comprimentos de clivagem inferiores a 10 mm não são recomendados no uso geral?",
     "alternativas": [
       {
-        "texto": "Porque a fibra não alcança o forno de tubetes e derrete dentro da tampa corta-vento.",
-        "correta": false,
-        "explicacao": "O comprimento de clivagem diz respeito à distância da casca nua até o revestimento na garra, não ao forno."
-      },
-      {
-        "texto": "Porque comprimentos abaixo de 10 mm exigem ajuste de altura de lâmina, aplicam-se apenas a revestimentos ≤ 250 µm e pioram a dispersão do ângulo de clivagem.",
+        "texto": "Porque comprimentos abaixo de 10 mm exigem ajuste de altura da lâmina e degradam a distribuição média do ângulo.",
         "correta": true,
-        "explicacao": "Certo. A nota 1 da especificação do CT50 adverte que abaixo de 10 mm é necessário ajustar a altura da lâmina e o ângulo médio de corte piora."
+        "explicacao": "Certo. Na especificação do Fujikura CT50, comprimentos inferiores a 10 mm requerem ajuste mecânico e pioram a dispersão angular."
       },
       {
-        "texto": "Porque a lâmina de 16 posições do clivador perde a garantia de 60.000 cortes se usada abaixo de 10 mm.",
+        "texto": "Porque a ponta de fibra nua não alcança o interior da câmara de aquecimento do forno para contrair o protetor termocontrátil.",
         "correta": false,
-        "explicacao": "A vida útil da lâmina é especificada pelo número de clivagens, não sendo invalidada de imediato, mas o ângulo de corte sofre degradação técnica."
+        "explicacao": "O comprimento de clivagem afeta o posicionamento nos blocos em V da máquina, não o alcance do protetor dentro do forno térmico."
       },
       {
-        "texto": "Porque a norma ITU-T G.652 proíbe pontas de casca nua menores que 25 mm.",
+        "texto": "Porque a lâmina circular do clivador sofre perda imediata da garantia de fábrica e reduz sua vida útil em 80%.",
         "correta": false,
-        "explicacao": "A G.652 define características ópticas e geométricas da fibra, sem impor regras de ferramentas de clivagem."
+        "explicacao": "A garantia é associada ao uso correto e contagem de clivagens; o problema de cortes muito curtos é a perda de qualidade geométrica."
+      },
+      {
+        "texto": "Porque as câmeras PAS da máquina de fusão não conseguem focar feixes luminosos em lances menores que 15 mm de fibra.",
+        "correta": false,
+        "explicacao": "As câmeras PAS focam perfeitamente na região de emenda; o limite mínimo de 10 mm garante estabilidade mecânica nas garras."
       }
     ],
     "fontes": [
@@ -193,27 +193,27 @@
   {
     "id": "05-01-q7",
     "licao": "05-01",
-    "enunciado": "Para que serve o teste de tração mecânica (~2,0 N / ~200 gf) executado automaticamente pela máquina de fusão antes de liberar a fibra?",
+    "enunciado": "Qual é a finalidade do teste de tração mecânica (~2,0 N / ~200 gf) executado automaticamente pela máquina após a fusão?",
     "alternativas": [
       {
-        "texto": "Para esticar o núcleo da fibra monomodo até que seu diâmetro se iguale ao da casca.",
-        "correta": false,
-        "explicacao": "O vidro de sílica em temperatura ambiente não se deforma plasticamente dessa forma; o teste é de integridade."
-      },
-      {
-        "texto": "Para calibrar a leitura de atenuação do medidor de potência óptico conectado à ponta oposta.",
-        "correta": false,
-        "explicacao": "A máquina não se comunica com medidores externos durante o teste de tração."
-      },
-      {
-        "texto": "Para garantir que a junta fundida resiste à manipulação mecânica e não quebre por microfissuras ao ser acomodada na bandeja.",
+        "texto": "Garantir que a junção fundida suporta o manuseio operacional e não possui microfissuras antes de ir para a bandeja.",
         "correta": true,
-        "explicacao": "Certo. O teste de tração traciona a fibra com cerca de 2,0 N para descartar emendas frágeis ou com trincas térmicas ocultas antes da instalação definitiva."
+        "explicacao": "Certo. A máquina aplica tração de cerca de 2,0 N (~200 gf) para assegurar que a emenda resistirá ao acondicionamento sem quebrar."
       },
       {
-        "texto": "Para expulsar bolhas de ar que tenham ficado presas na casca de 125 µm.",
+        "texto": "Medir a atenuação óptica da emenda por deformação fotoelástica do núcleo de sílica sob tensão longitudinal.",
         "correta": false,
-        "explicacao": "Tração mecânica não remove bolhas de vidro fundido; se houver bolha, a fibra deve ser quebrada e refeita."
+        "explicacao": "A perda óptica não é medida por tração física, e sim calculada pelo sistema de análise de imagem e alinhamento do núcleo."
+      },
+      {
+        "texto": "Esticar o núcleo da fibra monomodo para eliminar variações de diâmetro de campo modal entre os dois lances unidos.",
+        "correta": false,
+        "explicacao": "O teste de tração não altera as características geométricas nem físicas do núcleo da fibra de sílica em temperatura ambiente."
+      },
+      {
+        "texto": "Expulsar eventuais microbolhas de ar retidas na sílica fundida por meio de alongamento mecânico da região aquecida.",
+        "correta": false,
+        "explicacao": "A tração mecânica ocorre com a sílica já solidificada; caso existam bolhas ou oclusões, a emenda rompe-se ou deve ser refeita."
       }
     ],
     "fontes": [
@@ -225,27 +225,27 @@
   {
     "id": "05-01-q8",
     "licao": "05-01",
-    "enunciado": "Qual cuidado essencial deve ser tomado ao retirar o tubete termocontrátil do forno da máquina de fusão após o ciclo de aquecimento (21 a 23 s)?",
+    "enunciado": "Qual cuidado fundamental deve ser tomado ao retirar o protetor de emenda (tubete) do forno da máquina de fusão após o aquecimento?",
     "alternativas": [
       {
-        "texto": "Curvar imediatamente o tubete quente na curvatura da bandeja para moldar o plástico.",
-        "correta": false,
-        "explicacao": "Curvar o tubete ainda maleável entorta a emenda de vidro quente em seu interior, induzindo alta perda por microcurvatura."
-      },
-      {
-        "texto": "Mergulhar o tubete em um copo com água para resfriamento de choque térmico.",
-        "correta": false,
-        "explicacao": "Choque térmico com água pode quebrar a fibra de sílica ou comprometer a integridade do tubo plástico."
-      },
-      {
-        "texto": "Aguardar o sinal sonoro do forno e deixar o tubete esfriar na bandeja de resfriamento antes de acomodá-lo na bandeja de emenda.",
+        "texto": "Deixar o tubete esfriar completamente na bandeja metálica da máquina antes de acomodá-lo na bandeja de emendas.",
         "correta": true,
-        "explicacao": "Certo. O tubete deve estar rígido e frio antes de qualquer acomodação nos berços da bandeja de emenda da CEO ou CTO."
+        "explicacao": "Certo. O polímero termocontrátil deve resfriar e enrijecer na bandeja metálica antes do manuseio, prevenindo microcurvaturas."
       },
       {
-        "texto": "Retirar a haste de aço do tubete com um alicate de bico antes que o adesivo endureça.",
+        "texto": "Moldar o tubete ainda aquecido na curvatura circular da bandeja para facilitar o encaixe mecânico nos berços plásticos.",
         "correta": false,
-        "explicacao": "A haste de aço inoxidável é o elemento que garante a rigidez mecânica da emenda; nunca deve ser retirada."
+        "explicacao": "Dobrar ou curvar o tubete enquanto ainda está quente curva a fibra internamente, causando altas perdas ópticas ou quebra da sílica."
+      },
+      {
+        "texto": "Mergulhar o tubete em recipiente com água gelada para acelerar a cura térmica da haste metálica de sustentação.",
+        "correta": false,
+        "explicacao": "O resfriamento abrupto com água induz tensões térmicas no polímero e no vidro, além de introduzir umidade prejudicial na emenda."
+      },
+      {
+        "texto": "Retirar imediatamente a haste interna de aço inox com alicate de bico para diminuir o peso na bandeja de fusão.",
+        "correta": false,
+        "explicacao": "A haste de aço inox é o membro estrutural que confere sustentação mecânica e rigidez ao tubete; nunca deve ser retirada."
       }
     ],
     "fontes": [

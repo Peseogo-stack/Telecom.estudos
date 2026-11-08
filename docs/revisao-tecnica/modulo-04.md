@@ -13,7 +13,8 @@ Escopo: lições 04-01, 04-03 e 04-05 (concluindo as 3 lições P1 do módulo 4)
 | SUGESTÃO | 0 |
 | Não conferidos | 0 |
 
-- **Questões:** nas 24 questões (8 em `04-01.json`, 8 em `04-03.json` e 8 em `04-05.json`), cada alternativa marcada como correta é rigorosamente verdadeira segundo as fontes, com explicações técnicas específicas para as 4 opções de cada questão.
+- **Questões:** nas 24 questões (8 em `04-01.json`, 8 em `04-03.json` e 8 em `04-05.json`), todas as 4 alternativas de cada questão foram rebalanceadas em comprimento (~105–118 caracteres) e estilo gramatical, eliminando dicas de tamanho (razão correta/2ª mais longa ≤ 1,15), com explicações técnicas específicas para cada opção.
+- **Revisão editorial:** as 3 lições foram harmonizadas para ~615–664 palavras, mantendo o tom didático, preciso e direto dos módulos 2, 6 e 3, com citações concentradas em pontos de dados técnicos normativos.
 - **Diagramas e responsividade:** conferidos em 390 px (celular) e 1440 px (PC) nos três temas (`claro`, `escuro` e `sol`) via `scripts/prints.mjs` com inspeção visual dos artefatos. Todos os textos cabem com margem folgada dentro das caixas SVG, sem sobreposição nem corte lateral.
 - **Acessibilidade (axe):** 13 testes automatizados em Playwright cobrindo regras WCAG 2.1 AA nas lições, telas de questões e termos de glossário com 0 violações graves ou críticas.
 - **Nome da empresa, dados pessoais e analogias com a rede elétrica:** nenhum nos arquivos criados ou editados.

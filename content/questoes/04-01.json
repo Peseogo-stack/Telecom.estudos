@@ -2,27 +2,27 @@
   {
     "id": "04-01-q1",
     "licao": "04-01",
-    "enunciado": "O que caracteriza a Rede de Distribuição Óptica (ODN - Optical Distribution Network) em uma arquitetura FTTH/PON segundo as normas ITU-T?",
+    "enunciado": "O que caracteriza a Rede de Distribuição Óptica (ODN) em uma arquitetura FTTH/PON segundo as normas ITU-T?",
     "alternativas": [
       {
-        "texto": "É composta por repetidores e amplificadores eletrônicos alimentados pela rede elétrica a cada 2 km.",
-        "correta": false,
-        "explicacao": "A rede PON é passiva por definição; a ODN não possui repetidores nem componentes eletrônicos amplificadores na rua."
-      },
-      {
-        "texto": "É um meio de transmissão óptico puramente passivo, formado por fibras, cabos, emendas, conectores e splitters, sem nenhum componente elétrico ativo entre a OLT e a ONU.",
+        "texto": "É um meio puramente passivo com fibras, emendas, conectores e splitters, sem alimentação elétrica ativa na rua.",
         "correta": true,
-        "explicacao": "Certo. Conforme as recomendações ITU-T G.984, a ODN é totalmente passiva, reduzindo falhas de energia e manutenção na planta externa."
+        "explicacao": "Certo. Conforme as recomendações ITU-T G.984, a ODN é totalmente passiva, eliminando pontos de falha elétrica na rua."
       },
       {
-        "texto": "Utiliza cabos coaxiais de alta blindagem com divisores indutivos de radiofrequência.",
+        "texto": "É uma malha ativa composta por repetidores e regeneradores ópticos alimentados pela rede elétrica dos postes.",
         "correta": false,
-        "explicacao": "A ODN em FTTH é 100% óptica com fibras de vidro monomodo, não usando cabos coaxiais de cobre."
+        "explicacao": "Redes PON não possuem repetidores ativos ou regeneradores na planta externa; toda a distribuição intermediária é passiva."
       },
       {
-        "texto": "Opera exclusivamente com fibras multimodo de 50 µm para permitir múltiplas portas simultâneas.",
+        "texto": "É uma infraestrutura híbrida baseada em cabos coaxiais blindados interligados por divisores indutivos de sinal.",
         "correta": false,
-        "explicacao": "A rede FTTH opera com fibras monomodo padrão G.652.D e G.657 para cobrir distâncias de até 20 km com baixa atenuação."
+        "explicacao": "A rede ODN de FTTH emprega 100% de fibra óptica monomodo dielétrica, sem cabos coaxiais condutores de cobre."
+      },
+      {
+        "texto": "É um enlace dedicado que utiliza exclusivamente fibras ópticas multimodo de 50 µm para alta capacidade local.",
+        "correta": false,
+        "explicacao": "Redes de acesso FTTH utilizam fibras monomodo padrão G.652.D e G.657 para cobrir distâncias de até 20 km com baixa atenuação."
       }
     ],
     "fontes": [
@@ -34,27 +34,27 @@
   {
     "id": "04-01-q2",
     "licao": "04-01",
-    "enunciado": "Qual é o papel da OLT (Optical Line Terminal) instalada na subestação ou central em uma rede GPON?",
+    "enunciado": "Qual é a função da OLT (Optical Line Terminal) instalada na central ou subestação em uma rede GPON?",
     "alternativas": [
       {
-        "texto": "Servir apenas como quadro de disjuntores para alimentar as caixas de emenda nos postes.",
-        "correta": false,
-        "explicacao": "A OLT é um equipamento óptico de telecomunicações de alta velocidade, não um quadro de força."
-      },
-      {
-        "texto": "Gerar o feixe óptico descendente (downstream) em 1490 nm para todas as ONUs e coordenar a recepção das rajadas de subida (upstream) em 1310 nm.",
+        "texto": "Transmitir continuamente em downstream a 1490 nm e coordenar a recepção das rajadas de upstream a 1310 nm.",
         "correta": true,
-        "explicacao": "Certo. Na norma ITU-T G.984, a OLT transmite continuamente em 1490 nm (a 2,488 Gbit/s) e recebe em 1310 nm (a 1,244 Gbit/s) coordenando as transmissões TDMA."
+        "explicacao": "Certo. Na norma ITU-T G.984, a OLT transmite continuamente em 1490 nm e coordena transmissões em rajada de subida em 1310 nm via TDMA."
       },
       {
-        "texto": "Converter diretamente o feixe óptico em sinal de TV analógica aberta via antena dipolo.",
+        "texto": "Servir como quadro de proteção elétrica para distribuir corrente contínua até os splitters ópticos dos postes.",
         "correta": false,
-        "explicacao": "A OLT comuta pacotes de dados digitais Ethernet/IP sobre a camada PON."
+        "explicacao": "A OLT é um equipamento óptico de telecomunicações de alta velocidade, e os splitters em campo são puramente passivos."
       },
       {
-        "texto": "Realizar a clivagem mecânica automática de cabos drops rompidos na rua.",
+        "texto": "Converter o tráfego óptico diretamente em sinais analógicos de rádio FM para transmissão aberta aos clientes.",
         "correta": false,
-        "explicacao": "A OLT fica instalada em rack dentro da sala de equipamentos e não interage mecanicamente com cabos de campo."
+        "explicacao": "A OLT comuta pacotes de dados digitais Ethernet/IP encapsulados em quadros GEM (GPON Encapsulation Method)."
+      },
+      {
+        "texto": "Realizar o alinhamento mecânico motorizado e a clivagem automática de cabos drops rompidos na planta externa.",
+        "correta": false,
+        "explicacao": "A OLT fica instalada em rack dentro da central técnica e não tem interação mecânica direta com cabos de campo."
       }
     ],
     "fontes": [
@@ -66,27 +66,27 @@
   {
     "id": "04-01-q3",
     "licao": "04-01",
-    "enunciado": "Qual é a diferença fundamental entre uma Caixa de Emenda Óptica (CEO) e uma Caixa de Terminação Óptica (CTO) na planta externa?",
+    "enunciado": "Qual é a diferença fundamental entre uma Caixa de Emenda Óptica (CEO) e uma Caixa de Terminação (CTO)?",
     "alternativas": [
       {
-        "texto": "A CEO é estritamente plástica e fica no chão, enquanto a CTO é metálica e fica no teto da subestação.",
-        "correta": false,
-        "explicacao": "Ambas costumam ser de polímero com proteção UV e instaladas em postes, fachadas ou caixas subterrâneas."
-      },
-      {
-        "texto": "A CEO acondiciona fusões do cabo principal e splitters de 1º nível de forma lacrada; a CTO acomoda o splitter final de atendimento com saídas para conectar os cabos drops dos clientes.",
+        "texto": "A CEO abriga fusões de cabos troncais de forma estanque; a CTO disponibiliza portas para conexão de drops de cliente.",
         "correta": true,
-        "explicacao": "Certo. Conforme o infográfico da Intelbras, a CEO protege as emendas principais da rota troncal, enquanto a CTO é o ponto de terminação onde os instaladores conectam os drops de atendimento."
+        "explicacao": "Certo. A CEO protege emendas de continuidade e splitters de 1º nível de forma fechada, enquanto a CTO oferece saídas para atendimento ao cliente."
       },
       {
-        "texto": "A CEO possui portas elétricas RJ-45 PoE, enquanto a CTO possui conectores coaxiais.",
+        "texto": "A CEO é instalada exclusivamente no piso de salas técnicas; enquanto a CTO opera montada no topo de postes de rua.",
         "correta": false,
-        "explicacao": "Nenhuma das caixas possui portas elétricas de rede; são caixas puramente ópticas e passivas."
+        "explicacao": "Tanto CEOs quanto CTOs são projetadas para instalação externa em postes, cordoalhas aéreas ou caixas subterrâneas."
       },
       {
-        "texto": "A CEO só aceita fibras multimodo, enquanto a CTO opera exclusivamente com laser invisível de 850 nm.",
+        "texto": "A CEO possui portas de rede metálica padrão RJ-45 com PoE; enquanto a CTO utiliza conectores coaxiais de rosca.",
         "correta": false,
-        "explicacao": "Ambas operam com cabos monomodo nas janelas de 1310, 1490 e 1550 nm em redes FTTH."
+        "explicacao": "Nenhuma das duas caixas possui conectores elétricos de rede metálica; ambas são estruturas passivas para cabos ópticos."
+      },
+      {
+        "texto": "A CEO opera apenas com fibras multimodo de 850 nm; enquanto a CTO atende exclusivamente lances monomodo de 1550 nm.",
+        "correta": false,
+        "explicacao": "Ambas operam com cabos monomodo nas janelas padronizadas de telecomunicações (1310, 1490 e 1550 nm)."
       }
     ],
     "fontes": [
@@ -97,27 +97,27 @@
   {
     "id": "04-01-q4",
     "licao": "04-01",
-    "enunciado": "No trecho final da rede FTTH, quais são os papéis do cabo drop e do Ponto de Terminação Óptico (PTO)?",
+    "enunciado": "No trecho de acesso final da rede FTTH, qual é o papel desempenhado pelo cabo drop e pelo PTO no cliente?",
     "alternativas": [
       {
-        "texto": "O cabo drop alimenta a OLT com energia de 220 V e o PTO é um nobreak de subestação.",
-        "correta": false,
-        "explicacao": "O drop é um cabo óptico de telecomunicações e o PTO é uma roseta óptica passiva."
-      },
-      {
-        "texto": "O cabo drop liga a CTO do poste até o imóvel do cliente, onde é ancorado e protegido pelo PTO (roseta óptica interna), de onde sai o cordão para a ONU.",
+        "texto": "O drop conduz o sinal da CTO até o imóvel e o PTO protege a transição mecânica da fibra para o cordão da ONU.",
         "correta": true,
-        "explicacao": "Certo. O cabo drop autossustentado de 1 FO faz a descida do poste até a edificação, terminando no PTO que protege a transição mecânica para o cordão da ONU."
+        "explicacao": "Certo. O drop óptico autossustentado conecta a CTO ao imóvel e o PTO (roseta) ancora o cabo e abriga o adaptador para a ONU."
       },
       {
-        "texto": "O cabo drop substitui a fibra óptica por um par trançado metálico para evitar raios.",
+        "texto": "O drop transporta energia de 220 V do poste e o PTO atua como nobreak com bateria para manter a rede ligada.",
         "correta": false,
-        "explicacao": "O cabo drop óptico contém fibra de vidro monomodo (geralmente G.657 com alta resistência a curvatura)."
+        "explicacao": "O drop óptico não conduz energia elétrica e o PTO é um acessório plástico passivo sem baterias nem nobreak."
       },
       {
-        "texto": "O PTO é um transmissor laser de 50 mW que amplifica a luz do poste.",
+        "texto": "O drop substitui o vidro por fios de cobre e o PTO converte pulsos elétricos analógicos em dados de alta taxa.",
         "correta": false,
-        "explicacao": "O PTO não tem componentes ativos nem emite luz; é apenas um gabinete plástico de terminação e acoplamento."
+        "explicacao": "O cabo drop óptico contém fibra de sílica monomodo com alta resistência mecânica e imunidade eletromagnética."
+      },
+      {
+        "texto": "O drop alimenta circuitos de rádio sem fio e o PTO funciona como roteador ativo com transmissor laser de 50 mW.",
+        "correta": false,
+        "explicacao": "O PTO não possui circuitos eletrônicos nem transmissores laser; é um ponto mecânico de transição e proteção física."
       }
     ],
     "fontes": [
@@ -128,27 +128,27 @@
   {
     "id": "04-01-q5",
     "licao": "04-01",
-    "enunciado": "Qual é a principal vantagem operacional da topologia de divisão óptica centralizada (ex.: 1 splitter 1:32 ou 1:64 na CEO ou armário) em relação à distribuída?",
+    "enunciado": "Qual é a principal vantagem operacional da topologia de divisão óptica centralizada em relação à distribuída?",
     "alternativas": [
       {
-        "texto": "Economiza até 90% de fibras nos cabos aéreos instalados em todos os postes da cidade.",
-        "correta": false,
-        "explicacao": "A divisão centralizada consome mais fibras nos cabos de distribuição, pois cada porta de CTO exige fibra dedicada até a central/armário."
-      },
-      {
-        "texto": "Facilita a manutenção e localização de falhas com OTDR disparado da central, pois há apenas um único evento de perda concentrada antes dos drops.",
+        "texto": "Facilita a manutenção e medição com OTDR da central, pois concentra a atenuação em um único evento de splitter.",
         "correta": true,
-        "explicacao": "Certo. Com divisão em nível único, o traço do OTDR exibe um degrau bem definido e permite identificar a distância de rompimento de qualquer perna com facilidade."
+        "explicacao": "Certo. Com splitter único (ex.: 1:32 ou 1:64), a identificação de falhas e distâncias com OTDR a partir da central é muito mais direta."
       },
       {
-        "texto": "Elimina totalmente a necessidade de usar conectores ópticos ou fusões na rede.",
+        "texto": "Reduz em mais de 90% a quantidade total de cabos e fibras ópticas lançados nos postes ao longo da cidade.",
         "correta": false,
-        "explicacao": "Toda rede óptica exige fusões e conectores nos pontos de terminação e atendimento."
+        "explicacao": "A topologia centralizada consome mais fibras nos cabos de distribuição, pois cada porta da CTO exige uma fibra exclusiva até o armário."
       },
       {
-        "texto": "Permite que a rede transmita dados na velocidade da luz sem perda por curvatura.",
+        "texto": "Dispensa completamente o uso de fusões e conectores ópticos em todas as caixas de atendimento da planta externa.",
         "correta": false,
-        "explicacao": "A física de propagação na fibra monomodo é a mesma em qualquer topologia."
+        "explicacao": "Toda arquitetura óptica necessita de emendas por fusão e conectores nos distribuidores e caixas de atendimento."
+      },
+      {
+        "texto": "Elimina a atenuação por curvatura e permite que a luz se propague com perda de zero decibéis no enlace óptico.",
+        "correta": false,
+        "explicacao": "A física de atenuação do vidro e perdas em divisores ópticos aplica-se igualmente a qualquer topologia de rede."
       }
     ],
     "fontes": [
@@ -160,27 +160,27 @@
   {
     "id": "04-01-q6",
     "licao": "04-01",
-    "enunciado": "Por que muitos provedores e operadoras adotam a topologia de divisão distribuída em dois níveis (ex.: 1:8 na CEO + 1:8 nas CTOs) em grandes áreas urbanas?",
+    "enunciado": "Por que as operadoras adotam a topologia de divisão distribuída em dois níveis (ex.: 1:8 na CEO + 1:8 na CTO)?",
     "alternativas": [
       {
-        "texto": "Porque dispensa a instalação de postes da distribuidora de energia.",
-        "correta": false,
-        "explicacao": "A rede aérea compartilhada continua dependente dos postes da distribuidora."
-      },
-      {
-        "texto": "Porque proporciona grande economia de cabos e fibras na rota troncal, permitindo que uma única fibra alimentadora atenda até 64 clientes ao longo das ruas.",
+        "texto": "Otimiza a ocupação de cabos troncos, permitindo que uma única fibra alimente até 64 clientes ao longo das ruas.",
         "correta": true,
-        "explicacao": "Certo. Ao dividir 1 fibra em 8 saídas na CEO e depois cada perna em mais 8 saídas na CTO de poste, atende-se 64 clientes usando muito menos cabos ópticos nas vias."
+        "explicacao": "Certo. Dividindo 1 fibra em 8 saídas na CEO e depois cada perna em 8 na CTO, atende-se até 64 assinantes com grande economia de cabos."
       },
       {
-        "texto": "Porque zera completamente a atenuação óptica acumulada da OLT até o cliente.",
+        "texto": "Elimina a dependência de postes compartilhados com a concessionária de energia elétrica nas zonas urbanas.",
         "correta": false,
-        "explicacao": "Pelo contrário: cada splitter adiciona atenuação (cerca de 10,5 dB por splitter 1:8, somando mais de 21 dB no total)."
+        "explicacao": "O uso de postes de energia permanece necessário para a sustentação aérea dos cabos e caixas em ambas as topologias."
       },
       {
-        "texto": "Porque permite conectar ONUs sem necessidade de configuração de autenticação.",
+        "texto": "Anula a atenuação acumulada na rota óptica, garantindo que o sinal chegue à ONU com a mesma potência da OLT.",
         "correta": false,
-        "explicacao": "A autenticação de ONUs no protocolo GPON é independente da topologia de divisão óptica da ODN."
+        "explicacao": "Splitters dividem potência luminosa; splitters em cascata somam atenuação (cerca de 10,5 dB cada 1:8, ultrapassando 21 dB no total)."
+      },
+      {
+        "texto": "Permite a conexão de novos assinantes na rede sem necessidade de configuração de autenticação no sistema PON.",
+        "correta": false,
+        "explicacao": "O provisionamento e controle de acesso de ONUs são requisitos de camada de protocolo independentes da topologia física."
       }
     ],
     "fontes": [
@@ -192,27 +192,27 @@
   {
     "id": "04-01-q7",
     "licao": "04-01",
-    "enunciado": "Qual tipo de conector e polimento óptico é rigorosamente padronizado para as portas de saída das CTOs e entrada dos clientes em FTTH, e por quê?",
+    "enunciado": "Qual conector e polimento óptico é padronizado nas saídas de CTOs e acessos de clientes em FTTH, e por quê?",
     "alternativas": [
       {
-        "texto": "Conector SC/UPC (azul), porque o acabamento reto reflete 100% da luz de volta para o transmissor.",
-        "correta": false,
-        "explicacao": "Reflexão de luz de volta prejudica o laser da OLT; polimentos retos têm perda de retorno inferior aos polimentos angulares."
-      },
-      {
-        "texto": "Conector SC/APC (verde), pois seu polimento angular de 8° desvia as reflexões para a casca, garantindo alta perda de retorno óptico (ORL > 55 dB a 60 dB).",
+        "texto": "Conector SC/APC (verde), pois o polimento angular de 8° desvia reflexões para a casca e garante alta ORL (> 60 dB).",
         "correta": true,
-        "explicacao": "Certo. O conector verde APC possui chanfro de 8° que minimiza reflexões que poderiam desestabilizar os lasers da OLT e degradar sinais de RF/vídeo."
+        "explicacao": "Certo. O chanfro angular de 8° do polimento APC garante perda de retorno superior a 60 dB, evitando reflexões instabilizadoras no laser."
       },
       {
-        "texto": "Conector BNC metálico de 75 Ohms com trava de baioneta.",
+        "texto": "Conector SC/UPC (azul), pois o acabamento reto reflete a totalidade da luz incidente diretamente para a OLT.",
         "correta": false,
-        "explicacao": "BNC é um conector de cabo coaxial de cobre de radiofrequência, não sendo utilizado em fibras ópticas."
+        "explicacao": "Reflexão excessiva prejudica transmissores ópticos; o polimento APC é escolhido justamente para minimizar essa reflexão."
       },
       {
-        "texto": "Qualquer conector azul ou verde indiferentemente, pois adaptadores verdes aceitam conectores azuis sem perda adicional.",
+        "texto": "Conector metálico BNC de 75 Ohms, pois a trava de baioneta garante maior blindagem contra interferências de RF.",
         "correta": false,
-        "explicacao": "Conectar conector azul UPC em adaptador verde APC destrói o contato físico das faces de vidro, gerando atenuação severa e reflexão."
+        "explicacao": "BNC é um conector de radiofrequência para cabos de cobre, não sendo aplicável em redes de fibra óptica."
+      },
+      {
+        "texto": "Conectores azuis e verdes de forma indistinta, pois adaptadores ópticos aceitam qualquer polimento sem perda.",
+        "correta": false,
+        "explicacao": "Acoplar conector UPC azul em APC verde causa danos físicos irreversíveis no polimento do vidro e severa atenuação."
       }
     ],
     "fontes": [
@@ -223,27 +223,27 @@
   {
     "id": "04-01-q8",
     "licao": "04-01",
-    "enunciado": "Em uma rede com divisão distribuída (1:8 na CEO + 1:8 na CTO), um técnico na OLT tenta usar um OTDR convencional para localizar um rompimento ocorrido no cabo drop de um cliente. Por que ele provavelmente não conseguirá enxergar a falha?",
+    "enunciado": "Por que um OTDR convencional disparado da OLT tem dificuldade para localizar rompimentos em drops após dois splitters 1:8?",
     "alternativas": [
       {
-        "texto": "Porque o OTDR não funciona em cabos pretos autossustentados.",
-        "correta": false,
-        "explicacao": "A cor externa da capa plástica do cabo não afeta a propagação da luz no núcleo de sílica de 9 µm."
-      },
-      {
-        "texto": "Porque a soma da atenuação dos dois splitters em cascata (mais de 21 dB) atenua o pulso e o retroespalhamento de Rayleigh abaixo do limite de ruído do OTDR.",
+        "texto": "A perda combinada dos splitters em cascata (> 21 dB) atenua o pulso e o retroespalhamento abaixo do ruído do OTDR.",
         "correta": true,
-        "explicacao": "Certo. Cada divisor 1:8 atenua mais de 10,5 dB no pulso e mais 10,5 dB no sinal de retorno; após dois níveis, o sinal do drop fica indistinguível do ruído, exigindo teste local a partir da CTO."
+        "explicacao": "Certo. O pulso sofre perda na ida e o sinal de retroespalhamento sofre nova perda na volta; após dois splitters, o sinal funde-se ao ruído."
       },
       {
-        "texto": "Porque os cabos drops em Roraima possuem blindagem magnética contra sinais ópticos de teste.",
+        "texto": "O sinal de teste de reflectometria óptica é absorvido pela capa plástica preta do cabo drop autossustentado.",
         "correta": false,
-        "explicacao": "Drops ópticos dielétricos não possuem blindagem magnética e transportam fótons imunes a campos eletromagnéticos."
+        "explicacao": "A luz do OTDR viaja confinada no núcleo de sílica de 9 µm; o pigmento da capa externa não tem interferência no teste."
       },
       {
-        "texto": "Porque a OLT bloqueia qualquer aparelho de teste desligando automaticamente a subestação.",
+        "texto": "Os cabos drops ópticos de acesso possuem blindagem dielétrica que bloqueia os pulsos de teste do aparelho.",
         "correta": false,
-        "explicacao": "O teste de OTDR é feito na fibra apagada desconectada da porta PON, sem interferência nos disjuntores da subestação."
+        "explicacao": "Materiais dielétricos isolam eletricamente a rota, mas não bloqueiam a propagação da luz guiada no núcleo da fibra."
+      },
+      {
+        "texto": "A OLT desliga automaticamente a alimentação óptica de toda a subestação ao detectar o pulso de teste do OTDR.",
+        "correta": false,
+        "explicacao": "O teste de OTDR é realizado com a fibra desconectada da porta PON ativa, sem qualquer vínculo com a subestação."
       }
     ],
     "fontes": [

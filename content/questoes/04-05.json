@@ -2,27 +2,27 @@
   {
     "id": "04-05-q1",
     "licao": "04-05",
-    "enunciado": "Segundo a Recomendação ITU-T G.984.2 (Tabela A.1), qual é a faixa de potência de transmissão óptica da OLT para transceptores GPON Classe B+ em 1490 nm, e qual valor deve ser usado no cálculo de pior caso de viabilidade?",
+    "enunciado": "Segundo a ITU-T G.984.2, qual é a potência de transmissão da OLT GPON Classe B+ e qual valor adotar no projeto?",
     "alternativas": [
       {
-        "texto": "Transmissão de −10 a −5 dBm; adota-se −5 dBm no cálculo.",
-        "correta": false,
-        "explicacao": "Potências negativas na saída da OLT não suportariam a perda de 28 dB da ODN."
-      },
-      {
-        "texto": "Transmissão de +1,5 dBm a +5,0 dBm; deve-se adotar a potência mínima (+1,5 dBm) para dimensionar o pior cenário viável.",
+        "texto": "Transmissão entre +1,5 e +5,0 dBm; devendo o projetista adotar a potência mínima (+1,5 dBm) para o pior caso.",
         "correta": true,
-        "explicacao": "Certo. Conforme a G.984.2 e datasheets da FS, a OLT Classe B+ emite entre +1,5 e +5,0 dBm. No projeto adota-se a potência mínima para garantir que o link opere com qualquer transmissor."
+        "explicacao": "Certo. Conforme a Tabela A.1 da ITU-T G.984.2, a OLT Classe B+ emite de +1,5 a +5,0 dBm; o projeto adota o mínimo para garantir viabilidade."
       },
       {
-        "texto": "Transmissão de +10 dBm a +20 dBm; adota-se +20 dBm no cálculo.",
+        "texto": "Transmissão entre −10,0 e −5,0 dBm; devendo o projetista adotar o valor mais elevado (−5,0 dBm) para a estimativa.",
         "correta": false,
-        "explicacao": "Potências acima de +10 dBm são perigosas (Classe 3B de laser) e queimariam os fotodiodos das ONUs sem splitters colossais."
+        "explicacao": "Potências negativas na saída da OLT não suportariam a atenuação de mais de 20 dB introduzida pelos splitters da rede PON."
       },
       {
-        "texto": "Transmissão fixa rigorosamente em 0,0 dBm (1 mW).",
+        "texto": "Transmissão entre +10,0 e +20,0 dBm; devendo o projetista adotar o valor máximo (+20,0 dBm) para garantir alcance.",
         "correta": false,
-        "explicacao": "A norma estipula uma faixa de tolerância de fabricação (+1,5 a +5,0 dBm) para a Classe B+."
+        "explicacao": "Potências acima de +10 dBm pertencem a lasers de alta periculosidade ocular (Classe 3B) e queimariam os receptores das ONUs."
+      },
+      {
+        "texto": "Transmissão fixa padronizada em rigorosamente 0,0 dBm (1,0 mW); sem margem para tolerâncias de fabricação do laser.",
+        "correta": false,
+        "explicacao": "A norma estabelece uma faixa de tolerância industrial (+1,5 a +5,0 dBm) devido a variações térmicas e de produção dos módulos ópticos."
       }
     ],
     "fontes": [
@@ -34,27 +34,27 @@
   {
     "id": "04-05-q2",
     "licao": "04-05",
-    "enunciado": "Qual é a sensibilidade limite de recepção da ONU em transceptores GPON Classe B+ segundo a ITU-T G.984.2 e o que acontece se o sinal chegar abaixo desse patamar?",
+    "enunciado": "Qual é a sensibilidade de recepção da ONU em transceptores GPON Classe B+ segundo a ITU-T G.984.2?",
     "alternativas": [
       {
-        "texto": "Sensibilidade de −15 dBm; abaixo disso o Wi-Fi da casa muda de canal.",
-        "correta": false,
-        "explicacao": "−15 dBm está bem no centro da faixa ideal; a sensibilidade limite da norma é muito mais profunda (−27 dBm)."
-      },
-      {
-        "texto": "Sensibilidade de −27,0 dBm; com potências menores que −27,0 dBm a taxa de erro (BER) explode, ocorrendo perda de sincronismo (LOS) e desconexão.",
+        "texto": "Sensibilidade de −27,0 dBm; potências inferiores causam alta taxa de erro, perda de sincronismo e queda do enlace.",
         "correta": true,
-        "explicacao": "Certo. Na G.984.2 (Tabela A.1), o receptor da ONU garante taxa de erro aceitável até −27,0 dBm. Sinais mais fracos provocam perda de pacotes e queda do enlace."
+        "explicacao": "Certo. Na G.984.2, a sensibilidade da ONU Classe B+ é de −27,0 dBm para uma taxa de erro de bit (BER) máxima de 10⁻⁴."
       },
       {
-        "texto": "Sensibilidade de −45 dBm; abaixo disso a OLT desliga a subestação por curto-circuito.",
+        "texto": "Sensibilidade de −15,0 dBm; potências inferiores ativam o modo de economia de energia e desconectam portas de rede.",
         "correta": false,
-        "explicacao": "Nenhum transceptor comercial GPON B+ possui sensibilidade de −45 dBm; o limite é de −27 dBm."
+        "explicacao": "−15 dBm é um sinal excelente; o limiar de sensibilidade de norma é bem mais profundo, fixado em −27,0 dBm."
       },
       {
-        "texto": "Sensibilidade de 0 dBm; potências negativas não podem ser decodificadas por fotodiodos.",
+        "texto": "Sensibilidade de −45,0 dBm; potências inferiores desligam a alimentação do laser da OLT por proteção elétrica.",
         "correta": false,
-        "explicacao": "0 dBm equivale a 1 mW, enquanto receptores ópticos trabalham rotineiramente com microwatts e nanowatts (potências negativas em dBm)."
+        "explicacao": "Nenhum transceptor comercial GPON Classe B+ alcança sensibilidade de −45 dBm; o limite tecnológico padrão é −27 dBm."
+      },
+      {
+        "texto": "Sensibilidade de 0,0 dBm; potências inferiores com sinal negativo não podem ser decodificadas pelos fotodetetores.",
+        "correta": false,
+        "explicacao": "0 dBm corresponde a 1 mW; receptores de telecomunicações operam com potências de microwatts (valores negativos em dBm)."
       }
     ],
     "fontes": [
@@ -66,27 +66,27 @@
   {
     "id": "04-05-q3",
     "licao": "04-05",
-    "enunciado": "O que define a sobrecarga óptica (optical overload) da ONU estabelecida em −8,0 dBm na ITU-T G.984.2, e qual procedimento deve ser adotado se um teste em campo acusar −5,0 dBm?",
+    "enunciado": "O que representa a sobrecarga óptica de −8,0 dBm na ONU (ITU-T G.984.2) e o que fazer se o sinal medir −5,0 dBm?",
     "alternativas": [
       {
-        "texto": "Indica sinal perfeito; deve-se conectar a ONU imediatamente para atingir maior velocidade de download.",
-        "correta": false,
-        "explicacao": "Sinal acima de −8 dBm satura o circuito receptor, degradando a leitura ou até queimando o fotodiodo."
-      },
-      {
-        "texto": "Indica o limite máximo de potência suportado; com −5,0 dBm o fotodiodo satura ou queima, sendo obrigatório inserir um atenuador óptico (ex.: 5 a 10 dB) antes da ONU.",
+        "texto": "É o teto de potência antes da saturação do receptor; com −5,0 dBm deve-se instalar atenuador óptico calibrado.",
         "correta": true,
-        "explicacao": "Certo. Na G.984.2, qualquer potência superior a −8,0 dBm satura o amplificador de transimpedância do receptor; um atenuador óptico fixo deve ser instalado para trazer o sinal para a faixa segura."
+        "explicacao": "Certo. Sinais acima de −8,0 dBm saturam o fotodiodo da ONU; deve-se inserir um atenuador óptico para trazer o sinal à faixa segura."
       },
       {
-        "texto": "Indica que o cabo drop está quebrado e vazando luz na calçada.",
+        "texto": "É o nível de sinal ideal de operação; com −5,0 dBm deve-se conectar a ONU diretamente para ganho de velocidade.",
         "correta": false,
-        "explicacao": "Cabo quebrado atenuaria a luz gerando sinal excessivamente fraco (< −30 dBm), não sinal forte de −5 dBm."
+        "explicacao": "−5 dBm ultrapassa a sobrecarga máxima (−8 dBm) e causa distorção por saturação do fotodiodo ou queima do receptor."
       },
       {
-        "texto": "Indica que a OLT está operando com bateria descarregada.",
+        "texto": "É o limiar de quebra mecânica do vidro; com −5,0 dBm o cabo drop deve ser substituído por lance de maior diâmetro.",
         "correta": false,
-        "explicacao": "Potência alta ocorre tipicamente quando a ONU está muito próxima da OLT com pouca perda de splitter no caminho."
+        "explicacao": "Sobrecarga óptica é um limite fotoelétrico do circuito receptor semicondutor da ONU, sem relação com a resistência física do vidro."
+      },
+      {
+        "texto": "É a tensão induzida pelo campo elétrico; com −5,0 dBm deve-se aterrar a carcaça da ONU no barramento do poste.",
+        "correta": false,
+        "explicacao": "A luz transmitida pela fibra é imune a interferências eletromagnéticas e o PTO é instalado no ambiente interno do cliente."
       }
     ],
     "fontes": [
@@ -98,27 +98,27 @@
   {
     "id": "04-05-q4",
     "licao": "04-05",
-    "enunciado": "Qual é a faixa de atenuação total permitida pela Tabela A.2 da ITU-T G.984.2 para a Rede de Distribuição Óptica (ODN) em sistemas GPON Classe B+?",
+    "enunciado": "Qual é a faixa de atenuação total permitida pela Recomendação ITU-T G.984.2 para a ODN em sistemas GPON Classe B+?",
     "alternativas": [
       {
-        "texto": "De 0 dB a 10 dB de perda total.",
-        "correta": false,
-        "explicacao": "Perda abaixo de 13 dB violaria o limite de sobrecarga da ONU com OLT transmitindo no máximo."
-      },
-      {
-        "texto": "De 13,0 dB (perda mínima) a 28,0 dB (perda máxima).",
+        "texto": "Perda mínima de 13,0 dB (evitando sobrecarga na ONU) e perda máxima permitida de 28,0 dB na rede passiva da ODN.",
         "correta": true,
-        "explicacao": "Certo. A Tabela A.2 da G.984.2 estabelece perda mínima de 13 dB (evitando sobrecarga na ONU) e perda máxima de 28 dB para a ODN Classe B+."
+        "explicacao": "Certo. A Tabela A.2 da norma G.984.2 estabelece perda óptica de 13,0 a 28,0 dB para a ODN na Classe B+."
       },
       {
-        "texto": "De 35 dB a 50 dB de perda total.",
+        "texto": "Perda mínima de 0,0 dB e perda máxima de 10,0 dB; garantindo sinal pleno sem atenuação acumulada na rota óptica.",
         "correta": false,
-        "explicacao": "Valores muito acima da capacidade da Classe B+; perdas acima de 28 dB exigem Classe C+ ou amplificação óptica."
+        "explicacao": "Uma perda menor que 13 dB com transmissor OLT no máximo (+5 dBm) saturaria o receptor da ONU (+5 − 10 = −5 dBm > −8 dBm)."
       },
       {
-        "texto": "A norma não fixa limites de perda para a rede passiva externa.",
+        "texto": "Perda mínima de 30,0 dB e perda máxima de 45,0 dB; para permitir o cascateamento de múltiplos splitters 1:64.",
         "correta": false,
-        "explicacao": "A especificação da camada física da ODN é rigorosamente tabelada na Recomendação G.984.2."
+        "explicacao": "Valores muito acima da capacidade do canal óptico Classe B+; perdas superiores a 28 dB violam a sensibilidade da ONU."
+      },
+      {
+        "texto": "Perda variável sem limites fixos estabelecidos; pois os transceptores ajustam o ganho dinamicamente de 0 a 60 dB.",
+        "correta": false,
+        "explicacao": "A especificação da camada óptica passiva (ODN) é rigidamente fixada na recomendação ITU-T G.984.2."
       }
     ],
     "fontes": [
@@ -129,27 +129,27 @@
   {
     "id": "04-05-q5",
     "licao": "04-05",
-    "enunciado": "Embora a norma ITU-T permita operar até a sensibilidade extrema de −27,0 dBm, qual é a faixa de potência recebida na ONU considerada ideal na prática de mercado de provedores e distribuidoras?",
+    "enunciado": "Qual é a faixa de potência recebida na ONU recomendada pelas boas práticas operacionais de provedores e distribuidoras?",
     "alternativas": [
       {
-        "texto": "De 0 dBm a +5 dBm.",
-        "correta": false,
-        "explicacao": "Potências positivas danificam os receptores comuns de ONU GPON."
-      },
-      {
-        "texto": "De −15,0 dBm a −25,0 dBm.",
+        "texto": "Entre −15,0 dBm e −25,0 dBm, mantendo folga contra sobrecarga (−8 dBm) e margem antes da sensibilidade (−27 dBm).",
         "correta": true,
-        "explicacao": "Certo. Conforme as boas práticas da indústria e manuais da Omada/TP-Link, manter o sinal entre −15 e −25 dBm garante margem confortável contra envelhecimento, poeira e variações de temperatura."
+        "explicacao": "Certo. Operar entre −15 e −25 dBm oferece margem contra envelhecimento da rede, poeira e variações térmicas sem arriscar desconexões."
       },
       {
-        "texto": "De −28,0 dBm a −35,0 dBm.",
+        "texto": "Entre 0,0 dBm e +5,0 dBm, fornecendo a maior densidade de potência luminosa possível para o receptor do cliente.",
         "correta": false,
-        "explicacao": "Abaixo de −27 dBm a ONU perde sincronismo e não autentica na OLT."
+        "explicacao": "Potências positivas danificam os circuitos fotodetectores de recepção da ONU projetados para operar em potências de submiliwatt."
       },
       {
-        "texto": "Rigorosamente igual a −8,0 dBm em todos os pontos da cidade.",
+        "texto": "Entre −28,0 dBm e −35,0 dBm, operando na faixa de alta atenuação para minimizar o consumo de energia da bateria.",
         "correta": false,
-        "explicacao": "−8 dBm é a sobrecarga extrema; operar colado em −8 dBm arrisca saturação contínua."
+        "explicacao": "Sinais abaixo de −27 dBm não garantem a taxa de erro mínima (BER) e provocam quedas sistemáticas de sincronismo da ONU."
+      },
+      {
+        "texto": "Fixa em exatamente −8,0 dBm em todas as instalações, ajustando-se a potência na OLT para cada cliente da rota.",
+        "correta": false,
+        "explicacao": "−8 dBm é o limite de sobrecarga; operar encostado nesse patamar arrisca saturação em qualquer oscilação de temperatura."
       }
     ],
     "fontes": [
@@ -161,27 +161,27 @@
   {
     "id": "04-05-q6",
     "licao": "04-05",
-    "enunciado": "Quais elementos devem ser obrigatoriamente somados na equação completa do orçamento de atenuação da ODN?",
+    "enunciado": "Quais parcelas devem compor obrigatoriamente a equação do orçamento de atenuação de potência da ODN em FTTH?",
     "alternativas": [
       {
-        "texto": "Apenas o comprimento do cabo multiplicado por 0,2 dB/km, ignorando splitters e conectores.",
-        "correta": false,
-        "explicacao": "Os splitters e conectores respondem pela maior parte da perda de uma rede PON e não podem ser ignorados."
-      },
-      {
-        "texto": "Atenuação linear da fibra (km × dB/km) + perda dos splitters + perda dos pares de conectores + perda das fusões + margem de projeto.",
+        "texto": "Atenuação linear dos cabos, perdas nos splitters, perdas em conectores, perdas por fusão e margem de projeto.",
         "correta": true,
-        "explicacao": "Certo. Conforme guias da FOA e TP-Link/Omada, o orçamento real totaliza cada fonte de atenuação passiva mais a margem para degradação futura."
+        "explicacao": "Certo. O cálculo de orçamento deve somar todas as perdas passivas do trajeto físico mais a margem para degradação futura."
       },
       {
-        "texto": "Potência do consumo elétrico da OLT somada à tensão dos postes em volts.",
+        "texto": "Comprimento dos cabos multiplicado por 0,2 dB/km, desconsiderando splitters por serem dispositivos passivos.",
         "correta": false,
-        "explicacao": "O orçamento óptico trata de atenuação luminosa em decibéis (dB), não de grandezas elétricas de alimentação."
+        "explicacao": "Os splitters são os elementos de maior atenuação na rede PON (ex.: 10,5 dB num 1:8) e jamais podem ser ignorados."
       },
       {
-        "texto": "A velocidade de internet contratada dividida pelo número de clientes da CTO.",
+        "texto": "Consumo elétrico em watts da OLT somado à resistência ôhmica do condutor de aterramento instalado na central.",
         "correta": false,
-        "explicacao": "Banda em megabits é camada lógica de tráfego; o orçamento de potência avalia a física da camada 1 (óptica)."
+        "explicacao": "O orçamento óptico trata de atenuação luminosa em decibéis (dB), e não de parâmetros da alimentação elétrica dos equipamentos."
+      },
+      {
+        "texto": "Largura de banda em megabits dividida pelo número de assinantes cadastrados na respectiva caixa de emenda.",
+        "correta": false,
+        "explicacao": "Banda de dados é parâmetro de tráfego lógico, enquanto o orçamento de potência analisa as perdas físicas da luz no vidro."
       }
     ],
     "fontes": [
@@ -193,27 +193,27 @@
   {
     "id": "04-05-q7",
     "licao": "04-05",
-    "enunciado": "Um enlace GPON Classe B+ possui 10 km de fibra (perda de 2,5 dB), dois splitters 1:8 cascateados (10,5 dB cada = 21,0 dB), perdas de conectores e fusões somando 1,5 dB e margem de segurança de 3,0 dB (atenuação total de 28,0 dB). Se a OLT estiver emitindo +2,0 dBm, qual será o sinal na ONU?",
+    "enunciado": "Um enlace GPON Classe B+ tem atenuação total de 28,0 dB na ODN. Se a OLT emitir +2,0 dBm, qual potência chegará à ONU?",
     "alternativas": [
       {
-        "texto": "+30,0 dBm, somando a potência com a atenuação.",
-        "correta": false,
-        "explicacao": "Atenuação de rede passiva sempre subtrai potência óptica do sinal do transmissor."
-      },
-      {
-        "texto": "−26,0 dBm, calculada por: +2,0 dBm − 28,0 dB.",
+        "texto": "Chegará potência de −26,0 dBm na ONU, calculada pela subtração direta: +2,0 dBm de transmissão menos 28,0 dB de perda.",
         "correta": true,
-        "explicacao": "Certo. Potência na ONU = +2,0 dBm − 28,0 dB = −26,0 dBm. O valor é viável (está acima da sensibilidade de −27 dBm da norma), situando-se na faixa marginal de atenção."
+        "explicacao": "Certo. Potência recebida = Potência emitida − Atenuação = +2,0 dBm − 28,0 dB = −26,0 dBm, operando acima do limite de −27 dBm."
       },
       {
-        "texto": "−14,0 dBm, subtraindo metade dos splitters.",
+        "texto": "Chegará potência de +30,0 dBm na ONU, resultante da soma algébrica entre o nível transmitido e a atenuação da rede.",
         "correta": false,
-        "explicacao": "Não se pode ignorar metade dos splitters; a perda de ambos deve ser deduzida integralmente."
+        "explicacao": "Atenuação de elementos passivos sempre subtrai potência do sinal óptico emitido pela fonte transmissora."
       },
       {
-        "texto": "0,0 dBm, pois a margem de 3 dB zera o sinal.",
+        "texto": "Chegará potência de −14,0 dBm na ONU, desconsiderando metade da atenuação dos splitters por divisão simétrica.",
         "correta": false,
-        "explicacao": "A margem é uma reserva de cálculo de perda, não um circuito cancelador de sinal."
+        "explicacao": "Cada sinal que alcança o cliente atravessa a totalidade dos splitters do caminho, somando as atenuações de cada estágio."
+      },
+      {
+        "texto": "Chegará potência de 0,0 dBm na ONU, pois a margem de projeto zera a perda acumulada antes do receptor da roseta.",
+        "correta": false,
+        "explicacao": "A margem de projeto é uma folga preventiva calculada, não um componente eletrônico de regeneração de sinal."
       }
     ],
     "fontes": [
@@ -225,27 +225,27 @@
   {
     "id": "04-05-q8",
     "licao": "04-05",
-    "enunciado": "Por que é indispensável incluir uma margem de segurança de projeto (tipicamente de 3,0 a 5,0 dB) no cálculo de orçamento de potência óptica de redes externas?",
+    "enunciado": "Por que é indispensável prever uma margem de segurança de projeto (tipicamente 3,0 dB) no balanço de potência óptica?",
     "alternativas": [
       {
-        "texto": "Para pagar os custos de aluguel de poste à distribuidora de energia.",
-        "correta": false,
-        "explicacao": "Margem de potência é um parâmetro técnico de engenharia de telecomunicações, sem relação com contratos comerciais."
-      },
-      {
-        "texto": "Para absorver futuras emendas de reparo por rompimentos acidentais de cabos, envelhecimento de conectores e variações climáticas sem derrubar os clientes.",
+        "texto": "Para absorver futuras fusões de reparo por rompimentos, envelhecimento de conectores e variações térmicas de campo.",
         "correta": true,
-        "explicacao": "Certo. Conforme documentado pela FOA e TP-Link/Omada, cabos aéreos sofrem manutenções corretivas ao longo dos anos; sem margem de projeto, a primeira fusão de reparo pode inviabilizar o enlace."
+        "explicacao": "Certo. A margem de segurança assegura que intervenções futuras de manutenção e desgastes não derrubem o enlace abaixo da sensibilidade."
       },
       {
-        "texto": "Para reduzir a velocidade da luz na fibra e evitar colisões no protocolo GPON.",
+        "texto": "Para cobrir os custos operacionais de compartilhamento de postes cobrados pela concessionária distribuidora.",
         "correta": false,
-        "explicacao": "A velocidade da luz na sílica é constante (~200.000 km/s) e independe de margens de potência."
+        "explicacao": "O balanço óptico é puramente técnico; custos de ocupação de postes pertencem à gestão financeira e regulatória do projeto."
       },
       {
-        "texto": "Porque a norma G.984.2 proíbe o uso de cabos com menos de 20 anos de garantia.",
+        "texto": "Para compensar a perda de velocidade de propagação da luz na fibra provocada pelo acúmulo de tráfego de dados.",
         "correta": false,
-        "explicacao": "A norma técnica define padrões de transmissão física e balanço óptico, não prazos de garantia de fabricantes."
+        "explicacao": "A velocidade de propagação da luz depende exclusivamente do índice de refração do vidro, não variando com o volume de dados."
+      },
+      {
+        "texto": "Para atender à exigência contratual de garantia de 20 anos estipulada pelos fabricantes de cabos autossustentados.",
+        "correta": false,
+        "explicacao": "A margem de potência é uma prática de engenharia preventiva de enlace, e não um critério de garantia jurídica de bobinas."
       }
     ],
     "fontes": [

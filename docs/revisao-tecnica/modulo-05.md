@@ -13,7 +13,8 @@ Escopo: lições 05-01, 05-03 e 05-04 (concluindo as 3 lições P1 do módulo 5)
 | SUGESTÃO | 0 |
 | Não conferidos | 0 |
 
-- **Questões:** nas 24 questões (8 em `05-01.json`, 8 em `05-03.json` e 8 em `05-04.json`), cada alternativa marcada como correta é rigorosamente verdadeira segundo as fontes, com explicações técnicas específicas nas 4 opções de cada questão.
+- **Questões:** nas 24 questões (8 em `05-01.json`, 8 em `05-03.json` e 8 em `05-04.json`), todas as 4 alternativas de cada questão foram rebalanceadas em comprimento (~105–120 caracteres) e paralelismo estrutural, com distratores de campo plausíveis e razão da correta para a 2ª mais longa ≤ 1,15, passando com 0 erros no modo `--estrito`.
+- **Revisão editorial:** as 3 lições foram enxugadas para o tom objetivo e técnico de referência (650 a 720 palavras), eliminando repetições excessivas de tags `{{fonte:...}}` e consolidando citações factuais.
 - **Diagramas e responsividade:** conferidos em 390 px (celular) e 1440 px (PC) nos três temas (`claro`, `escuro` e `sol`) via `scripts/prints.mjs` com inspeção visual dos artefatos. Todos os textos cabem com margem folgada dentro das caixas SVG, sem sobreposição nem corte lateral.
 - **Acessibilidade (axe):** 13 testes automatizados em Playwright cobrindo regras WCAG 2.1 AA nas lições, telas de questões e termos de glossário com 0 violações graves ou críticas.
 - **Nome da empresa, dados pessoais e analogias com a rede elétrica:** nenhum nos arquivos criados ou editados.

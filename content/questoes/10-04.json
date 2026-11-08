@@ -5,24 +5,24 @@
     "enunciado": "Segundo a FOA, qual é a principal causa real de acidentes oculares durante os serviços de fusão e conectorização de fibra óptica, e qual EPI é indispensável?",
     "alternativas": [
       {
-        "texto": "O clarão do arco elétrico da máquina de fusão, que exige máscara de soldador.",
+        "texto": "O arco elétrico da máquina de fusão durante a descarga, exigindo o uso de máscara facial escura de solda.",
         "correta": false,
-        "explicacao": "O arco da máquina de fusão é minúsculo e fica sob a tampa corta-vento; o risco principal para os olhos vem dos cacos de vidro."
+        "explicacao": "O arco elétrico é miniaturizado e ocorre sob o protetor de vento; o risco real de lesão mecânica vem dos fragmentos de fibra."
       },
       {
-        "texto": "Os fragmentos de fibra nua (pontas de vidro geradas na decapagem e na clivagem), que exigem óculos de segurança com proteção lateral o tempo todo.",
+        "texto": "Os fragmentos de sílica soltos na clivagem, exigindo o uso constante de óculos com proteção lateral.",
         "correta": true,
-        "explicacao": "Certo. A FOA destaca que pedaços de fibra nua no olho são muito difíceis de remover e exigem sempre óculos de segurança com proteção lateral."
+        "explicacao": "Certo. A FOA destaca que pedaços de fibra nua penetram nos olhos com facilidade, são difíceis de remover e demandam óculos com proteção lateral."
       },
       {
-        "texto": "O vapor do gel hidrobloqueador do cabo, que exige máscara autônoma de oxigênio.",
+        "texto": "A evaporação do gel hidrófugo em temperatura ambiente, exigindo o uso de respirador facial com filtro químico.",
         "correta": false,
-        "explicacao": "O gel de óleo mineral e parafina não solta vapor tóxico à temperatura ambiente (taxa de evaporação nula na FDS)."
+        "explicacao": "O gel mineral e parafina tem taxa de evaporação desprezível à temperatura ambiente e não gera vapores agressivos aos olhos."
       },
       {
-        "texto": "A luz da tela LCD do OTDR, que exige óculos polarizados.",
+        "texto": "O brilho intenso da tela digital da máquina de emenda, exigindo óculos polarizados com proteção contra reflexo.",
         "correta": false,
-        "explicacao": "A tela do equipamento não oferece risco de perfuração ocular; o perigo real são os fragmentos de fibra."
+        "explicacao": "Telas LCD de instrumentos não provocam acidentes oculares perfurantes; o perigo reside nos estilhaços microscópicos de sílica."
       }
     ],
     "fontes": [
@@ -36,24 +36,24 @@
     "enunciado": "O que deve ser feito com cada fragmento de fibra logo após a clivagem?",
     "alternativas": [
       {
-        "texto": "Soprar para fora da bancada, pois o vidro é fino e se desfaz no chão.",
+        "texto": "Soprar o caco para fora da bancada de trabalho, deixando que o vidro se pulverize no piso do veículo de campo.",
         "correta": false,
-        "explicacao": "O vidro de sílica não se desfaz: no chão ele gruda na sola do sapato ou no tapete e pode ser levado até para casa."
+        "explicacao": "Fragmentos soprados para o chão aderem a solas e roupas, sendo levados para outros ambientes onde ferem pessoas."
       },
       {
-        "texto": "Guardar no bolso da camisa ou da calça para jogar no lixo comum depois.",
+        "texto": "Guardar o fragmento solto no bolso do uniforme de trabalho para descartar no lixo comum da subestação depois.",
         "correta": false,
-        "explicacao": "No bolso o fragmento atravessa o tecido, fura a pele e contamina a roupa."
+        "explicacao": "Pedaços guardados no bolso perfuram o tecido, penetram na pele do operador e dificultam a remoção cirúrgica."
       },
       {
-        "texto": "Recolher imediatamente num recipiente próprio com tampa (ou fita adesiva de apoio na bancada) e, ao terminar, fechar e lacrar o pote para descarte seguro.",
+        "texto": "Descartar imediatamente em recipiente rígido com tampa rosqueável, lacrando o pote ao término do serviço.",
         "correta": true,
-        "explicacao": "Certo. A FOA recomenda um recipiente dedicado com tampa, lacrado com fita ao final do trabalho."
+        "explicacao": "Certo. A FOA recomenda o descarte imediato em recipiente dedicado com tampa (como potes rígidos), devidamente lacrado com fita ao final."
       },
       {
-        "texto": "Dissolver os fragmentos num copo com álcool isopropílico.",
+        "texto": "Colocar o fragmento num copo aberto com solvente para dissolver a sílica do vidro antes do fim da jornada.",
         "correta": false,
-        "explicacao": "O vidro de sílica não dissolve em álcool; você só criaria um líquido inflamável cheio de agulhas invisíveis."
+        "explicacao": "Vidro de sílica não se dissolve em álcool; manter frascos abertos com cacos cria uma solução inflamável com agulhas invisíveis."
       }
     ],
     "fontes": [
@@ -67,24 +67,24 @@
     "enunciado": "Por que é proibido comer, beber ou deixar copos e lanches sobre a bancada de fusão?",
     "alternativas": [
       {
-        "texto": "Apenas para não sujar o relatório impresso da obra.",
+        "texto": "Para evitar que respingos de café ou gordura de lanche manchem o laudo impresso de medição óptica do enlace.",
         "correta": false,
-        "explicacao": "Não é só limpeza documental: é uma regra grave de saúde e segurança."
+        "explicacao": "A proibição é uma medida estrita de segurança e saúde ocupacional, e não mero cuidado com papéis ou relatórios."
       },
       {
-        "texto": "Porque fragmentos de fibra podem cair na comida ou na bebida e, se ingeridos, cravar-se no aparelho digestivo e causar hemorragia interna.",
+        "texto": "Para impedir que cacos invisíveis caiam no alimento e causem perfuração interna ou hemorragia digestiva.",
         "correta": true,
-        "explicacao": "Certo. A regra 1 de segurança da FOA alerta expressamente que partículas de fibra ingeridas podem causar hemorragia interna."
+        "explicacao": "Certo. A regra de segurança da FOA alerta que fragmentos de fibra ingeridos com alimentos ou bebidas podem perfurar o aparelho digestivo."
       },
       {
-        "texto": "Porque o cheiro de comida descalibra o sensor de alinhamento por núcleo da máquina.",
+        "texto": "Para evitar que o odor de comida descalibre os sensores microscópicos de alinhamento por núcleo da máquina.",
         "correta": false,
-        "explicacao": "O alinhamento óptico usa câmeras e LEDs; o risco real é a ingestão de fragmentos de vidro e de resíduos químicos."
+        "explicacao": "Sistemas de alinhamento óptico operam com câmeras e LEDs; a restrição decorre do risco biológico de ingestão de sílica."
       },
       {
-        "texto": "Porque a umidade do copo altera o índice de refração do cabo.",
+        "texto": "Para impedir que o vapor de bebidas quentes altere temporariamente o índice de refração do vidro da fibra.",
         "correta": false,
-        "explicacao": "O índice de refração é uma propriedade do vidro do núcleo, não do ambiente externo."
+        "explicacao": "O índice de refração é propriedade estrutural do vidro; o perigo é a ingestão involuntária de pontas cortantes de sílica."
       }
     ],
     "fontes": [
@@ -99,24 +99,24 @@
     "enunciado": "A Ficha com Dados de Segurança (FDS) do álcool isopropílico (isopropanol 99–100%) informa ponto de fulgor de 11,85 °C em vaso fechado (21 °C em vaso aberto) e frase H225. O que isso significa numa bancada em Roraima (temperatura ambiente acima de 30 °C)?",
     "alternativas": [
       {
-        "texto": "Que o álcool só pega fogo se o frasco chegar a 398,85 °C.",
+        "texto": "Que o produto químico só emite vapores inflamáveis se o ambiente de trabalho atingir a marca de 398,85 °C.",
         "correta": false,
-        "explicacao": "398,85 °C é a temperatura de autoignição (sem faísca). Acima do ponto de fulgor (11,85 °C), qualquer faísca ou arco já inflama o vapor."
+        "explicacao": "A temperatura de 398,85 °C é o ponto de autoignição (sem chama). Acima de 11,85 °C o líquido já libera vapores inflamáveis diante de faíscas."
       },
       {
-        "texto": "Que na temperatura ambiente o álcool já libera vapores inflamáveis suficientes para pegar fogo perto de uma faísca, como o arco elétrico da máquina de fusão.",
+        "texto": "Que o solvente libera vapores combustíveis na temperatura ambiente, podendo inflamar perto do arco elétrico.",
         "correta": true,
-        "explicacao": "Certo. Como a temperatura ambiente está muito acima de 11,85 °C, o líquido solta vapor inflamável o tempo todo; o frasco deve ficar fechado e longe do arco e do forno."
+        "explicacao": "Certo. Como a temperatura de campo supera com folga o ponto de fulgor (11,85 °C), há liberação contínua de vapores inflamáveis (H225)."
       },
       {
-        "texto": "Que o álcool ferve a 11,85 °C e evapora instantaneamente.",
+        "texto": "Que o álcool isopropílico ferve e passa totalmente ao estado gasoso logo que o termômetro atinge 11,85 °C.",
         "correta": false,
-        "explicacao": "O ponto de ebulição do isopropanol é 82,26 °C; 11,85 °C é o ponto de fulgor."
+        "explicacao": "O ponto de ebulição do isopropanol é em torno de 82 °C; 11,85 °C é o ponto de fulgor onde se iniciam vapores combustíveis."
       },
       {
-        "texto": "Que é mais seguro trocar o álcool 99% por álcool doméstico 46% para limpar a fibra.",
+        "texto": "Que o isopropanol 99% deve ser diluído em partes iguais de água mineral para reduzir a inflamabilidade.",
         "correta": false,
-        "explicacao": "Álcool 46% tem mais da metade de água, deixa resíduo na fibra e estraga a fusão; os fabricantes exigem pureza ≥ 99%."
+        "explicacao": "Diluir com água inutiliza o solvente para telecomunicações, oxidando componentes ópticos e arruinando a qualidade da fusão."
       }
     ],
     "fontes": [
@@ -131,24 +131,24 @@
     "enunciado": "Qual pureza de álcool os fabricantes de máquinas de fusão (como a Fujikura) exigem para limpar a fibra, as ranhuras em V (V-grooves) e as lentes objetivas?",
     "alternativas": [
       {
-        "texto": "Álcool etílico 70% comum de farmácia.",
+        "texto": "Álcool etílico comum 70% de uso hospitalar, dispensado sobre gaze de algodão com movimentos circulares.",
         "correta": false,
-        "explicacao": "O álcool 70% contém 30% de água, que demora a secar e deixa resíduo na fibra e nas lentes."
+        "explicacao": "O álcool 70% possui 30% de água e aditivos minerais que demoram a secar e deixam resíduos oleosos na superfície da fibra."
       },
       {
-        "texto": "Álcool isopropílico com pureza de 99% ou superior, usando lenço que não solta fiapo ou haste de algodão sem reutilizar.",
+        "texto": "Álcool isopropílico com pureza mínima de 99%, aplicado com lenço sem fiapo ou haste de algodão nova.",
         "correta": true,
-        "explicacao": "Certo. O guia técnico da Fujikura especifica álcool com pureza de 99% ou superior e hastes novas para cada lente."
+        "explicacao": "Certo. Manuais e boletins técnicos dos fabricantes exigem álcool isopropílico com 99% de pureza ou superior para evitar resíduos minerais e água."
       },
       {
-        "texto": "Acetona pura ou thinner automotivo.",
+        "texto": "Acetona pura comercial ou solvente thinner automotivo, com aplicação direta sobre os prismas da máquina.",
         "correta": false,
-        "explicacao": "Acetona e thinner atacam plásticos, revestimentos de acrilato e partes da máquina."
+        "explicacao": "Acetona e thinner danificam vedações plásticas, revestimentos de acrilato e partes poliméricas da máquina de emenda."
       },
       {
-        "texto": "Água destilada com detergente neutro.",
+        "texto": "Solução aquosa de água desmineralizada com detergente neutro, secando com jato de ar comprimido comum.",
         "correta": false,
-        "explicacao": "Água e detergente deixam filme e umidade na fibra antes do arco."
+        "explicacao": "Detergentes deixam tensoativos na superfície e ar comprimido industrial costuma conter gotículas de óleo de compressor."
       }
     ],
     "fontes": [
@@ -162,24 +162,24 @@
     "enunciado": "Ao preparar um cabo geleado (núcleo G), parte da geleia caiu no piso liso da sala e sujou suas mãos. De acordo com a FDS do gel de bloqueio de água (óleo mineral e parafina), quais são os cuidados corretos?",
     "alternativas": [
       {
-        "texto": "Jogar apenas água no chão e lavar as mãos com thinner.",
+        "texto": "Lavar o piso liso apenas com água corrente fria e limpar a graxa das mãos usando solvente thinner automotivo.",
         "correta": false,
-        "explicacao": "O gel é insolúvel em água (só água não remove a pasta do piso), e nunca se usa thinner na pele."
+        "explicacao": "O gel à base de óleo mineral é insolúvel em água pura e nunca se deve utilizar solventes agressivos como thinner sobre a pele."
       },
       {
-        "texto": "Recolher e limpar o piso imediatamente porque o gel cria risco de escorregamento e queda, e lavar a pele com água e sabão.",
+        "texto": "Remover o gel do piso para evitar escorregamentos graves e lavar a pele contaminada com água e sabão neutro.",
         "correta": true,
-        "explicacao": "Certo. A FDS destaca o perigo de escorregamento em pisos lisos e orienta lavar a pele com água e sabão."
+        "explicacao": "Certo. A FDS aponta o perigo mecânico de quedas por piso escorregadio e orienta a higienização da pele com água e sabão."
       },
       {
-        "texto": "Deixar o gel secar sozinho no piso, pois ele evapora em poucos minutos.",
+        "texto": "Aguardar a evaporação natural do composto no piso, pois a parafina mineral volatiliza em poucos minutos.",
         "correta": false,
-        "explicacao": "O gel de óleo mineral e parafina tem taxa de evaporação nula e permanece escorregadio por anos."
+        "explicacao": "Compostos parafínicos pesados possuem taxa de evaporação nula e permanecem viscosos no piso por tempo indeterminado."
       },
       {
-        "texto": "Queimar o excesso de gel com isqueiro antes de decapar o tubo.",
+        "texto": "Aquecer o piso e as ferramentas com maçarico portátil para fluidificar e queimar os resíduos de óleo mineral.",
         "correta": false,
-        "explicacao": "Jamais use chama aberta no cabo ou na bancada."
+        "explicacao": "O uso de chama aberta próximo a solventes e materiais plásticos na sala de equipamentos é terminantemente proibido."
       }
     ],
     "fontes": [
@@ -193,24 +193,24 @@
     "enunciado": "Sobre os solventes próprios para remover a geleia do cabo (como o D'Gel FO, à base cítrica, com ponto de fulgor acima de 60 °C), qual cuidado de manuseio consta na ficha técnica?",
     "alternativas": [
       {
-        "texto": "Pode ser usado sem luvas nem óculos, pois tem cheiro de laranja e não irrita a pele.",
+        "texto": "Aplicar o solvente cítrico diretamente com as mãos desprotegidas, pois o produto é hipoalergênico e inócuo.",
         "correta": false,
-        "explicacao": "Mesmo sendo de base cítrica, a ficha alerta que pode causar reação alérgica na pele e exige luvas e proteção ocular."
+        "explicacao": "A ficha técnica do D'Gel alerta que os terpenos cítricos podem provocar irritação e reações alérgicas cutâneas com uso contínuo."
       },
       {
-        "texto": "Usar luvas e óculos de proteção, manter longe de calor, faíscas e chamas abertas, e deixar o solvente evaporar ou secar com pano que não solta fiapo antes da fusão.",
+        "texto": "Utilizar luvas de proteção, manter longe de faíscas e secar totalmente a fibra antes de aplicar o arco.",
         "correta": true,
-        "explicacao": "Certo. São as instruções de aplicação e manuseio da ficha técnica do D'Gel FO."
+        "explicacao": "Certo. A ficha orienta o uso de luvas, manutenção de distância de fontes de calor e evaporação/secagem total antes do arco elétrico."
       },
       {
-        "texto": "Mergulhar os eletrodos ligados da máquina de fusão no solvente para limpá-los.",
+        "texto": "Mergulhar os eletrodos de tungstênio ligados no frasco do solvente para retirar a fuligem de queima do arco.",
         "correta": false,
-        "explicacao": "O removedor de gel é para os cabos e fibras, nunca para os eletrodos da máquina."
+        "explicacao": "Solventes removedores de gel destinam-se exclusivamente a cabos e tubos; nunca devem tocar os eletrodos da máquina de fusão."
       },
       {
-        "texto": "Despejar a sobra do solvente na rede pluvial.",
+        "texto": "Despejar as sobras do solvente utilizado na limpeza dos tubos na caixa de escoamento pluvial da via pública.",
         "correta": false,
-        "explicacao": "Solventes e resíduos químicos devem ser descartados conforme as normas ambientais, nunca na drenagem."
+        "explicacao": "Resíduos de hidrocarbonetos e solventes devem ser recolhidos em recipientes de descarte químico conforme a legislação ambiental."
       }
     ],
     "fontes": [
@@ -224,24 +224,24 @@
     "enunciado": "Uma equipe precisa fazer uma emenda num cabo que passa dentro de uma caixa subterrânea (manhole). O que a FOA determina sobre usar a máquina de fusão ali dentro?",
     "alternativas": [
       {
-        "texto": "Fazer a fusão normalmente no fundo da caixa, pois o arco elétrico é frio.",
+        "texto": "Operar a máquina de fusão no fundo da galeria subterrânea, pois o plasma elétrico não atinge alta temperatura.",
         "correta": false,
-        "explicacao": "O arco elétrico é uma faísca de alta temperatura capaz de inflamar gases acumulados."
+        "explicacao": "O arco elétrico atinge temperaturas da ordem de 2.000 °C, sendo fonte imediata de ignição para atmosferas combustíveis."
       },
       {
-        "texto": "Nunca fazer fusão dentro de caixas subterrâneas onde gases inflamáveis possam se acumular: trazer a sobra do cabo para a superfície (tenda ou veículo de fusão).",
+        "texto": "Nunca emendar dentro da galeria: puxar a sobra do cabo para a superfície em tenda ou veículo ventilado.",
         "correta": true,
-        "explicacao": "Certo. Na seção Fire Safety, a FOA explica que a máquina de fusão usa arco elétrico e por isso nunca se faz fusão em caixas subterrâneas onde gases inflamáveis possam se acumular."
+        "explicacao": "Certo. A FOA estabelece expressamente que fusões nunca devem ser feitas em caixas subterrâneas pelo risco de gases combustíveis acumulados."
       },
       {
-        "texto": "Aumentar a corrente do arco para queimar rapidamente qualquer gás presente.",
+        "texto": "Elevar a corrente do arco elétrico ao nível máximo para queimar instantaneamente os gases do poço de visita.",
         "correta": false,
-        "explicacao": "Acionar o arco na presença de gás inflamável pode provocar explosão."
+        "explicacao": "Acionar descargas elétricas em ambiente confinado com gases pode deflagrar explosão catastrófica com risco de morte."
       },
       {
-        "texto": "Usar apenas álcool isopropílico aberto no fundo da caixa para melhorar o ar.",
+        "texto": "Deixar o frasco de isopropanol aberto no fundo da caixa para neutralizar a presença de misturas inflamáveis.",
         "correta": false,
-        "explicacao": "O álcool isopropílico solta ainda mais vapor inflamável (H225) e narcótico (H336) num espaço fechado."
+        "explicacao": "O álcool isopropílico evapora e agrava o risco de explosão com gases acumulados no espaço confinado."
       }
     ],
     "fontes": [

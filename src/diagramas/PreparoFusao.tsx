@@ -44,7 +44,7 @@ export function PreparoFusao({ descricao }: PropsDiagrama) {
         • Lenço sem fiapo (1 sentido)
       </text>
       <text x="22" y="143" className="d-texto d-suave" style={{ fontSize: 9.5 }}>
-        • Antes e depois de decapar
+        • Limpar casca nua antes de clivar
       </text>
 
       {/* Passo 4: Clivagem de precisão */}

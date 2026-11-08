@@ -407,6 +407,7 @@
       "yokogawa-otdr-bidirecional"
     ],
     "licoes": [
+      "05-04",
       "06-02",
       "06-03",
       "09-05"
@@ -475,6 +476,7 @@
       "yokogawa-otdr-bidirecional"
     ],
     "licoes": [
+      "05-04",
       "06-03",
       "09-05"
     ],
@@ -1453,6 +1455,35 @@
     ],
     "licoes": [
       "05-03",
+      "05-04"
+    ]
+  },
+  {
+    "id": "mfd",
+    "pt": "Diâmetro do campo modal",
+    "en": "Mode Field Diameter",
+    "sigla": "MFD",
+    "definicao": "Diâmetro efetivo da área por onde a luz se propaga no núcleo de uma fibra monomodo (tipicamente 9,2 ± 0,4 µm em 1310 nm na G.652). Diferenças de MFD entre duas fibras emendadas causam perda adicional e ganho ou perda aparente no OTDR.",
+    "fontes": [
+      "itu-g652-2024",
+      "tempo-910fs-fusao",
+      "exfo-otdr-an194"
+    ],
+    "licoes": [
+      "05-04"
+    ]
+  },
+  {
+    "id": "media-bidirecional",
+    "pt": "Média bidirecional no OTDR",
+    "en": "Two-way average / Bidirectional OTDR test",
+    "definicao": "Média algébrica das medições de perda de uma emenda obtidas com OTDR a partir das duas pontas do cabo (A→B e B→A). Cancela diferenças de coeficiente de retroespalhamento e MFD, fornecendo a perda óptica real da fusão.",
+    "fontes": [
+      "yokogawa-otdr-bidirecional",
+      "exfo-otdr-an194",
+      "foa-fusao"
+    ],
+    "licoes": [
       "05-04"
     ]
   }

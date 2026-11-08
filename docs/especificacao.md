@@ -1,7 +1,7 @@
 # Especificação do app — "Fibra em Campo" (nome provisório)
 
 > Versão 0.2 · 07/11/2026 · repositório `Peseogo-stack/Telecom.estudos`, publicado em `https://peseogo-stack.github.io/Telecom.estudos/` (base do Vite: `/Telecom.estudos/`)
-> Público: um técnico de telecom iniciante numa distribuidora de energia, que estuda no celular (Android) e no PC.
+> Público: profissional de TI e telecomunicações numa distribuidora de energia, que estuda no celular (Android) e no PC.
 
 ## 1. O que o app precisa fazer
 

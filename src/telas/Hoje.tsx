@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEstado } from '../app/EstadoApp';
 import { BarraProgresso, useTitulo } from '../componentes/Comuns';
-import { IconeBusca, IconeFerramentas, IconePlano, IconeRevisao } from '../componentes/Icones';
+import { IconeChecklist, IconeFerramentas, IconePlano, IconeRevisao } from '../componentes/Icones';
 import { indice, licoesDisponiveis, resumoDaLicao } from '../conteudo/carregar';
 import { formatarDia, NOMES_DIAS, diaDaSemana } from '../dominio/datas';
 import { aprovada, ehDiaSoRevisao, proximaLicao, semanaAtual, sequencia, datasDaSemana } from '../dominio/plano';
@@ -97,20 +97,20 @@ export function Hoje() {
       </section>
 
       <div className="grade grade-2">
+        <Link to="/campo" className="cartao atalho">
+          <IconeChecklist />
+          <span className="meio">
+            <span className="titulo-item">Campo</span>
+            <br />
+            <span className="suave">Checklists offline</span>
+          </span>
+        </Link>
         <Link to="/ferramentas/disponibilidade" className="cartao atalho">
           <IconeFerramentas />
           <span className="meio">
             <span className="titulo-item">Disponibilidade e glosa</span>
             <br />
             <span className="suave">Calcular SLA e desconto</span>
-          </span>
-        </Link>
-        <Link to="/busca" className="cartao atalho">
-          <IconeBusca />
-          <span className="meio">
-            <span className="titulo-item">Buscar</span>
-            <br />
-            <span className="suave">Lições, glossário, caderno</span>
           </span>
         </Link>
       </div>

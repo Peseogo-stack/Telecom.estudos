@@ -3,6 +3,11 @@ import { useTitulo } from '../componentes/Comuns';
 
 const PRONTAS = [
   {
+    para: '/campo',
+    titulo: 'Checklists de campo',
+    texto: 'Roteiros de conferência offline para subir no poste, antes da fusão, inspeção de CEO/CTO e aceite de obra com cópia de relatório.',
+  },
+  {
     para: '/ferramentas/orcamento',
     titulo: 'Orçamento de potência',
     texto: 'PON ou ponto a ponto: soma fibra, conectores, fusões e splitters, compara com o transmissor e o receptor e diz se passa.',

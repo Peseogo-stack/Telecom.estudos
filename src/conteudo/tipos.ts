@@ -47,12 +47,28 @@ export interface PerguntaEmpresa {
   licoes: string[];
 }
 
+export interface ItemChecklist {
+  id: string;
+  texto: string;
+  porque: string;
+  fontes: string[];
+}
+
+export interface Checklist {
+  id: string;
+  titulo: string;
+  aviso: string;
+  descricao?: string;
+  itens: ItemChecklist[];
+}
+
 export interface Indice {
   geradoEm: string;
   curriculo: { modulos: Modulo[] };
   plano: { semanas: SemanaPlano[]; marcos: { dia: number; texto: string }[] };
   glossario: Termo[];
   fontes: Fonte[];
+  checklists: Checklist[];
   perguntasEmpresa: PerguntaEmpresa[];
   busca: ItemBusca[];
 }

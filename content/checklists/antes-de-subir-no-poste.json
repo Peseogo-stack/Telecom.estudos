@@ -1,0 +1,80 @@
+{
+  "id": "antes-de-subir-no-poste",
+  "titulo": "Antes de subir no poste",
+  "aviso": "Lembrete de segurança. Não substitui treinamento oficial, APR nem procedimentos operacionais da distribuidora.",
+  "descricao": "Roteiro de verificação prévia obrigatória para trabalhos de telecomunicações em postes de distribuição de energia elétrica (NR-10, NR-35 e normas de compartilhamento).",
+  "itens": [
+    {
+      "id": "autorizacao-e-aso",
+      "texto": "Autorização formal da empresa válida (NR-10 e NR-35) e ASO com aptidão médica para trabalho em altura.",
+      "porque": "Trabalhar em poste exige capacitação e autorização expressa da empresa (NR-10 item 10.8.8) e atestado de saúde ocupacional (ASO) apto para trabalho em altura (NR-35 item 35.4.1).",
+      "fontes": ["nr10-vigente", "nr35-vigente"]
+    },
+    {
+      "id": "apr-e-pt",
+      "texto": "Análise Preliminar de Risco (APR) preenchida e assinada por toda a equipe no local; Permissão de Trabalho (PT) emitida se atividade não for rotineira.",
+      "porque": "A APR documenta os perigos específicos do local e medidas de controle com a participação dos executantes; a PT é mandatória para serviços não rotineiros (NR-35 itens 35.4.4 e 35.4.7).",
+      "fontes": ["nr35-vigente", "nr10-vigente"]
+    },
+    {
+      "id": "clima-e-condicoes-meteorologicas",
+      "texto": "Condições climáticas favoráveis: ausência de chuva, tempestades, raios ou ventos fortes.",
+      "porque": "A NR-35 (item 35.4.4.1) e a NR-10 proíbem trabalho em altura sob intempéries severas devido ao risco iminente de escorregamento, queda e arcos elétricos atmosféricos.",
+      "fontes": ["nr35-vigente", "nr10-vigente"]
+    },
+    {
+      "id": "zonas-de-seguranca-e-tensoes",
+      "texto": "Identificação visual dos níveis de tensão no poste (Baixa Tensão, Média Tensão 13,8/34,5 kV) e respeito ao raio da zona controlada (Rc).",
+      "porque": "O Anexo II da NR-10 define que a zona controlada da BT inicia a 0,70 m do condutor nu; como o ponto de fixação de telecom fica tipicamente a 0,60 m da BT, todo trabalho em poste é considerado em proximidade.",
+      "fontes": ["nr10-vigente", "cemig-nd66", "energisa-ndu009-v4"]
+    },
+    {
+      "id": "teste-de-tensao-na-cordoalha",
+      "texto": "Teste de tensão com detector por aproximação ou contato na cordoalha de aço, mensageiro e ferragens metálicas antes de tocar.",
+      "porque": "Fios da rede elétrica rompidos ou isoladores danificados podem energizar acidentalmente a infraestrutura de telecomunicações sem desligar a proteção da rede.",
+      "fontes": ["nr10-vigente", "neoenergia-dis-nor-056"]
+    },
+    {
+      "id": "integridade-do-poste",
+      "texto": "Inspeção visual da integridade física do poste: ausência de trincas na base, ferragens expostas, abalroamento ou inclinação excessiva.",
+      "porque": "O esforço de subir e apoiar escada pode provocar o colapso de um poste comprometido mecanicamente ou corroído por queimação e umidade.",
+      "fontes": ["nr35-vigente", "abnt-nbr15214-2005"]
+    },
+    {
+      "id": "escada-inspecionada-e-amarrada",
+      "texto": "Escada extensível de fibra de vidro inspecionada, sapatas niveladas e montante superior amarrado ao poste com corda apropriada.",
+      "porque": "Escadas portáteis devem ser de material não condutor, inspecionadas antes do uso e obrigatoriamente travadas ou amarradas para evitar deslizamento (NR-35 Anexo III).",
+      "fontes": ["nr35-vigente", "nr10-vigente"]
+    },
+    {
+      "id": "inspecao-spiq-e-epis",
+      "texto": "Inspeção diária do SPIQ: cinto tipo paraquedista, talabarte de posicionamento, talabarte em Y com absorvedor de energia e capacete classe B com jugular.",
+      "porque": "Costuras, fitas e travas dos mosquetões devem ser checados antes de vestir; o capacete classe B oferece isolamento elétrico contra contatos acidentais (NR-35 item 35.5.2 e NR-10).",
+      "fontes": ["nr35-vigente", "nr10-vigente"]
+    },
+    {
+      "id": "ancoragem-100-por-cento",
+      "texto": "Garantia de 100% do tempo conectado a ponto de ancoragem seguro durante a subida, permanência e descida.",
+      "porque": "A desconexão simultânea dos talabartes deixa o trabalhador totalmente vulnerável à queda; nunca conecte um talabarte diretamente no outro.",
+      "fontes": ["nr35-vigente"]
+    },
+    {
+      "id": "sinalizacao-e-isolamento-da-via",
+      "texto": "Isolamento do perímetro do poste com fita zebrada e cones de sinalização viária refletivos.",
+      "porque": "Protege a equipe contra atropelamentos e impede a circulação de pedestres na área de risco de queda de ferramentas ou materiais (NR-35 item 35.4.4 e regras de trânsito).",
+      "fontes": ["nr35-vigente"]
+    },
+    {
+      "id": "animais-peconhentos",
+      "texto": "Inspeção visual para abelhas, marimbondos, vespas e outros animais peçonhentos no topo do poste, cruzetas e caixas.",
+      "porque": "Ataques de insetos em altura provocam reações instintivas de soltura e pânico, levando a choques elétricos ou quedas graves mesmo com EPI.",
+      "fontes": ["nr35-vigente", "nr10-vigente"]
+    },
+    {
+      "id": "hidratacao-e-resgate",
+      "texto": "Disponibilidade de água potável, protetor solar e equipe treinada para plano de emergência e resgate em altura.",
+      "porque": "Em regiões de calor extremo, a desidratação e estresse térmico provocam vertigem e desmaio em altura; o tempo de resposta para resgate deve ser imediato para evitar a síndrome da suspensão inerte.",
+      "fontes": ["nr35-vigente", "nr10-portaria-737"]
+    }
+  ]
+}

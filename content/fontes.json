@@ -664,6 +664,15 @@
     "url": "https://www.thefoa.org/tech/tia568b3.htm",
     "acessadoEm": "2026-11-07",
     "observacao": "Resumo da norma TIA-568 para cabeamento óptico: perda máxima por emenda (fusão ou mecânica) de 0,3 dB em monomodo ou multimodo, com perda de retorno (ORL) melhor que 26 dB em monomodo (55 dB para vídeo CATV). Perda máxima por par acoplado de conectores de 0,75 dB (para projeto, a FOA recomenda < 0,3 dB para cordões polidos de fábrica e < 0,5 dB para conectores de campo emendados ou pré-polidos). Atenuação máxima do cabo monomodo: 0,5 dB/km em planta externa e 1,0 dB/km em planta interna (1310 e 1550 nm)."
+  },
+  {
+    "id": "nr35-vigente",
+    "titulo": "NR-35: Segurança e saúde no trabalho em altura (Portaria MTP nº 4.218/2022 e atualizações)",
+    "organizacao": "MTE",
+    "tipo": "norma",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-35-atualizada-2023.pdf",
+    "acessadoEm": "2026-11-08",
+    "observacao": "Norma regulamentadora para trabalho com diferença de nível superior a 2,0 m com risco de queda: exigência de Análise de Risco (AR/APR), Permissão de Trabalho (PT para atividades não rotineiras), capacitação bienal, Sistema de Proteção Individual Contra Quedas (SPIQ), inspeção inicial e periódica de EPIs (cinto paraquedista, talabartes de posicionamento e retenção de queda com absorvedor), ponto de ancoragem seguro, isolamento de área e plano de emergência e resgate."
   }
 ]
 

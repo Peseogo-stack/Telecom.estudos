@@ -407,6 +407,7 @@
       "yokogawa-otdr-bidirecional"
     ],
     "licoes": [
+      "05-04",
       "06-02",
       "06-03",
       "09-05"
@@ -475,6 +476,7 @@
       "yokogawa-otdr-bidirecional"
     ],
     "licoes": [
+      "05-04",
       "06-03",
       "09-05"
     ],
@@ -1307,7 +1309,8 @@
       "fujikura-dicas-90r"
     ],
     "licoes": [
-      "10-04"
+      "10-04",
+      "05-01"
     ]
   },
   {
@@ -1334,6 +1337,156 @@
     "licoes": [
       "10-04"
     ]
+  },
+  {
+    "id": "decapador",
+    "pt": "Decapador de fibra",
+    "en": "Fiber stripper",
+    "definicao": "Ferramenta calibrada (como Miller, No-Nik ou Micro-Strip, ou com furos para 2–3 mm, 900 µm e 250 µm) que remove o revestimento de acrilato sem riscar a casca de vidro de 125 µm.",
+    "fontes": [
+      "foa-fusao",
+      "fujikura-catalogo-telecom"
+    ],
+    "licoes": [
+      "05-01"
+    ]
+  },
+  {
+    "id": "clivagem",
+    "pt": "Clivagem",
+    "en": "Cleave",
+    "definicao": "Corte perpendicular e espelhado da fibra de vidro, feito por risco controlado e tração, deixando a ponta a quase 90° (média de 0,3° a 0,9° em fibra única no clivador CT50) para a fusão.",
+    "fontes": [
+      "foa-fusao",
+      "fujikura-catalogo-telecom"
+    ],
+    "licoes": [
+      "05-01",
+      "05-03"
+    ]
+  },
+  {
+    "id": "clivador",
+    "pt": "Clivador de precisão",
+    "en": "Precision fiber cleaver",
+    "definicao": "Ferramenta com lâmina circular numerada (até ~60.000 clivagens no CT50) que faz um micro-risco no vidro de 125 µm e o parte com face limpa e reta no comprimento ajustado (como 10 a 16 mm).",
+    "fontes": [
+      "foa-fusao",
+      "fujikura-catalogo-telecom"
+    ],
+    "licoes": [
+      "05-01"
+    ]
+  },
+  {
+    "id": "tubete",
+    "pt": "Tubete termocontrátil (protetor de emenda)",
+    "en": "Heat-shrink splice protection sleeve",
+    "definicao": "Tubo plástico de 40 mm ou 60 mm com haste metálica interna e tubo termofusível que deve ser vestido na fibra antes da clivagem e contraído no forno da máquina para proteger a fusão.",
+    "fontes": [
+      "foa-fusao",
+      "fujikura-catalogo-telecom"
+    ],
+    "licoes": [
+      "05-01"
+    ]
+  },
+  {
+    "id": "alinhamento-nucleo",
+    "pt": "Alinhamento pelo núcleo",
+    "sigla": "PAS / LID",
+    "en": "Core alignment",
+    "definicao": "Método em que a máquina de fusão enxerga os núcleos das duas fibras (por imagem em duas direções a 90°, PAS, ou por injeção e detecção local de luz, LID) e os alinha nos eixos X, Y e Z antes do arco.",
+    "fontes": [
+      "foa-fusao",
+      "tempo-910fs-fusao"
+    ],
+    "licoes": [
+      "05-03"
+    ]
+  },
+  {
+    "id": "alinhamento-casca",
+    "pt": "Alinhamento pela casca",
+    "en": "Cladding alignment",
+    "definicao": "Método em que a máquina alinha o diâmetro externo de 125 µm da casca (com ranhura em V ativa ou fixa), sendo mais sensível a diferenças de concentricidade núcleo-casca que o alinhamento pelo núcleo.",
+    "fontes": [
+      "fujikura-catalogo-telecom",
+      "tempo-910fs-fusao"
+    ],
+    "licoes": [
+      "05-03"
+    ]
+  },
+  {
+    "id": "arc-check",
+    "pt": "Calibração do arco",
+    "en": "Arc check / ARC calibration",
+    "definicao": "Rotina feita no início da jornada ou quando mudam temperatura, umidade, altitude ou desgaste dos eletrodos: a máquina funde uma fibra de teste e ajusta automaticamente a potência e o tempo do arco.",
+    "fontes": [
+      "tempo-910fs-fusao"
+    ],
+    "licoes": [
+      "05-03"
+    ]
+  },
+  {
+    "id": "teste-de-tracao",
+    "pt": "Teste de tração da emenda",
+    "en": "Proof test / Fiber tensile test",
+    "definicao": "Puxão calibrado de cerca de 2,0 N (~200 gf) que a máquina de fusão aplica automaticamente à fibra ao abrir as garras para garantir que a emenda não quebre ao ser acomodada na bandeja.",
+    "fontes": [
+      "fujikura-catalogo-telecom"
+    ],
+    "licoes": [
+      "05-01",
+      "05-03"
+    ]
+  },
+  {
+    "id": "perda-estimada",
+    "pt": "Perda estimada pela máquina",
+    "en": "Estimated splice loss",
+    "definicao": "Valor em dB mostrado na tela da máquina de fusão com base na imagem das pontas clivadas, no alinhamento e no formato da emenda. É apenas uma aproximação visual; a perda real só se mede com OTDR (de preferência nos dois sentidos).",
+    "fontes": [
+      "foa-fusao",
+      "tempo-910fs-fusao",
+      "viavi-otdr-dicas"
+    ],
+    "licoes": [
+      "05-03",
+      "05-04"
+    ]
+  },
+  {
+    "id": "mfd",
+    "pt": "Diâmetro do campo modal",
+    "en": "Mode Field Diameter",
+    "sigla": "MFD",
+    "definicao": "Diâmetro efetivo da área por onde a luz se propaga no núcleo de uma fibra monomodo (tipicamente 9,2 ± 0,4 µm em 1310 nm na G.652). Diferenças de MFD entre duas fibras emendadas causam perda adicional e ganho ou perda aparente no OTDR.",
+    "fontes": [
+      "itu-g652-2024",
+      "tempo-910fs-fusao",
+      "exfo-otdr-an194"
+    ],
+    "licoes": [
+      "05-04"
+    ]
+  },
+  {
+    "id": "media-bidirecional",
+    "pt": "Média bidirecional no OTDR",
+    "en": "Two-way average / Bidirectional OTDR test",
+    "definicao": "Média algébrica das medições de perda de uma emenda obtidas com OTDR a partir das duas pontas do cabo (A→B e B→A). Cancela diferenças de coeficiente de retroespalhamento e MFD, fornecendo a perda óptica real da fusão.",
+    "fontes": [
+      "yokogawa-otdr-bidirecional",
+      "exfo-otdr-an194",
+      "foa-fusao"
+    ],
+    "licoes": [
+      "05-04"
+    ]
   }
 ]
+
 

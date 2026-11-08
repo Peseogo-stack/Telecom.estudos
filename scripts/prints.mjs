@@ -104,6 +104,13 @@ const TELAS_MODULO_03 = [
   ['05-licao-03-07-diagrama', '#/licao/03-07', diagrama],
 ];
 
+const TELAS_MODULO_05 = [
+  ['01-trilha-modulo-05', '#/trilha/05'],
+  ['02-licao-05-01-diagrama', '#/licao/05-01', diagrama],
+  ['03-licao-05-03-diagrama', '#/licao/05-03', diagrama],
+  ['04-licao-05-04-diagrama', '#/licao/05-04', diagrama],
+];
+
 const TELAS_MODULO_10 = [
   ['01-trilha-modulo-10', '#/trilha/10'],
   ['02-licao-10-03-diagrama', '#/licao/10-03', diagrama],
@@ -111,31 +118,38 @@ const TELAS_MODULO_10 = [
 ];
 
 const telas =
-  conjunto === 'modulo-10'
-    ? TELAS_MODULO_10
-    : conjunto === 'modulo-03'
-      ? TELAS_MODULO_03
-      : conjunto === 'modulo-06'
-        ? TELAS_MODULO_06
-        : conjunto === 'modulo-02'
-          ? TELAS_MODULO_02
-          : TELAS_FASE_2;
+  conjunto === 'modulo-05'
+    ? TELAS_MODULO_05
+    : conjunto === 'modulo-10'
+      ? TELAS_MODULO_10
+      : conjunto === 'modulo-03'
+        ? TELAS_MODULO_03
+        : conjunto === 'modulo-06'
+          ? TELAS_MODULO_06
+          : conjunto === 'modulo-02'
+            ? TELAS_MODULO_02
+            : TELAS_FASE_2;
 const temas =
-  conjunto === 'modulo-10'
+  conjunto === 'modulo-05'
     ? [
-        ['04-escuro', '#/licao/10-03', { tema: 'escuro', sol: false }],
-        ['05-modo-sol', '#/licao/10-04', { tema: 'claro', sol: true }],
+        ['05-escuro', '#/licao/05-03', { tema: 'escuro', sol: false }],
+        ['06-modo-sol', '#/licao/05-04', { tema: 'claro', sol: true }],
       ]
-    : conjunto === 'modulo-03'
+    : conjunto === 'modulo-10'
       ? [
-          ['06-escuro', '#/licao/03-04', { tema: 'escuro', sol: false }],
-          ['07-modo-sol', '#/licao/03-07', { tema: 'claro', sol: true }],
+          ['04-escuro', '#/licao/10-03', { tema: 'escuro', sol: false }],
+          ['05-modo-sol', '#/licao/10-04', { tema: 'claro', sol: true }],
         ]
-      : conjunto === 'modulo-06'
-        ? [['07-escuro', '#/licao/06-03', { tema: 'escuro', sol: false }], ['08-modo-sol', '#/ferramentas/otdr', { tema: 'claro', sol: true }]]
-        : conjunto === 'modulo-02'
-          ? [['16-escuro', '#/licao/02-06', { tema: 'escuro', sol: false }], ['17-modo-sol', '#/ferramentas/orcamento', { tema: 'claro', sol: true }]]
-          : [['14-escuro', '#/licao/10-01', { tema: 'escuro', sol: false }], ['15-modo-sol', '#/licao/10-01', { tema: 'claro', sol: true }]];
+      : conjunto === 'modulo-03'
+        ? [
+            ['06-escuro', '#/licao/03-04', { tema: 'escuro', sol: false }],
+            ['07-modo-sol', '#/licao/03-07', { tema: 'claro', sol: true }],
+          ]
+        : conjunto === 'modulo-06'
+          ? [['07-escuro', '#/licao/06-03', { tema: 'escuro', sol: false }], ['08-modo-sol', '#/ferramentas/otdr', { tema: 'claro', sol: true }]]
+          : conjunto === 'modulo-02'
+            ? [['16-escuro', '#/licao/02-06', { tema: 'escuro', sol: false }], ['17-modo-sol', '#/ferramentas/orcamento', { tema: 'claro', sol: true }]]
+            : [['14-escuro', '#/licao/10-01', { tema: 'escuro', sol: false }], ['15-modo-sol', '#/licao/10-01', { tema: 'claro', sol: true }]];
 
 const navegador = await chromium.launch();
 for (const [largura, altura, sufixo] of [[390, 844, '390'], [1440, 900, '1440']]) {

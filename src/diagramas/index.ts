@@ -25,6 +25,9 @@ import { TubosPiloto } from './TubosPiloto';
 import { UpcApc } from './UpcApc';
 import { LuzInvisivel } from './LuzInvisivel';
 import { BancadaLimpa } from './BancadaLimpa';
+import { PreparoFusao } from './PreparoFusao';
+import { DentroMaquina } from './DentroMaquina';
+import { EstimadoRealFusao } from './EstimadoRealFusao';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -50,5 +53,9 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'upc-apc': UpcApc,
   'luz-invisivel': LuzInvisivel,
   'bancada-limpa': BancadaLimpa,
+  'preparo-fusao': PreparoFusao,
+  'dentro-maquina': DentroMaquina,
+  'estimado-real-fusao': EstimadoRealFusao,
 };
+
 

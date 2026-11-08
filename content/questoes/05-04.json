@@ -1,0 +1,261 @@
+[
+  {
+    "id": "05-04-q1",
+    "licao": "05-04",
+    "enunciado": "O que representa o valor de atenuação em decibéis (ex.: 0,01 ou 0,02 dB) exibido na tela da máquina de fusão logo após a união das fibras?",
+    "alternativas": [
+      {
+        "texto": "Uma medição direta e oficial da potência de luz transmitida pelo núcleo de uma ponta à outra.",
+        "correta": false,
+        "explicacao": "A máquina não injeta um feixe calibrado através do enlace para medir recepção; ela calcula uma estimativa visual."
+      },
+      {
+        "texto": "Uma estimativa teórica calculada por software a partir da imagem das câmeras (ângulo de clivagem, alinhamento dos eixos e simetria da junta).",
+        "correta": true,
+        "explicacao": "Certo. Conforme as notas técnicas da Greenlee/Tempo e da FOA, o valor na tela é uma aproximação matemática baseada na geometria externa da emenda, não uma medição óptica real."
+      },
+      {
+        "texto": "A resistência elétrica dos eletrodos de tungstênio medida em Ohms durante a descarga.",
+        "correta": false,
+        "explicacao": "O valor é exibido em decibéis (dB) como estimativa óptica, sem relação com medição de resistência elétrica."
+      },
+      {
+        "texto": "A perda de retorno óptico (ORL) refletida para trás em direção à OLT.",
+        "correta": false,
+        "explicacao": "A máquina de fusão não possui fotodetectores nem reflectômetro para medir perda de retorno."
+      }
+    ],
+    "fontes": [
+      "foa-fusao",
+      "tempo-910fs-fusao"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "05-04-q2",
+    "licao": "05-04",
+    "enunciado": "Quais causas frequentes de atenuação óptica real em campo NÃO podem ser detectadas pelas câmeras da máquina de fusão?",
+    "alternativas": [
+      {
+        "texto": "Diferença de diâmetro de campo modal (MFD) entre os cabos e microcurvaturas ocorridas no forno ou na acomodação da bandeja.",
+        "correta": true,
+        "explicacao": "Certo. Variações microscópicas de MFD (ex.: 5 µm gerando 0,2 dB) e curvaturas posteriores à saída da máquina não aparecem na imagem da tela."
+      },
+      {
+        "texto": "Falta de acrilato na casca e presença de eletrodos novos.",
+        "correta": false,
+        "explicacao": "A remoção de acrilato é necessária e eletrodos novos garantem arco uniforme; não são causas de atenuação oculta."
+      },
+      {
+        "texto": "Comprimento total do cabo de lançamento do OTDR e espessura do espaguete de proteção.",
+        "correta": false,
+        "explicacao": "O cabo de lançamento é conectado externamente ao OTDR, não afetando a física da fusão na máquina."
+      },
+      {
+        "texto": "A luz solar refletida na tampa da máquina e a voltagem da rede de 13,8 kV da rua.",
+        "correta": false,
+        "explicacao": "A tampa corta-vento bloqueia a luz externa durante a fusão e a máquina opera com bateria própria isolada."
+      }
+    ],
+    "fontes": [
+      "foa-fusao",
+      "tempo-910fs-fusao"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "05-04-q3",
+    "licao": "05-04",
+    "enunciado": "Qual é o procedimento técnico padrão para homologar e medir com precisão a atenuação de emendas por fusão em enlaces ópticos de planta externa?",
+    "alternativas": [
+      {
+        "texto": "Tirar foto da tela da máquina de fusão com o celular e anexar ao laudo de entrega.",
+        "correta": false,
+        "explicacao": "Fotos da tela mostram apenas estimativas visuais não aceitas como laudo técnico oficial de enlace."
+      },
+      {
+        "texto": "Realizar teste com OTDR em medição bidirecional (pontas A e B), calculando a média algébrica da perda de cada evento.",
+        "correta": true,
+        "explicacao": "Certo. Conforme documentado pela FOA, VIAVI e Yokogawa, a medição bidirecional com OTDR elimina erros de retroespalhamento e fornece a perda real da fusão."
+      },
+      {
+        "texto": "Usar caneta óptica laser vermelha (VFL) e estimar a perda pelo brilho do feixe visível na emenda.",
+        "correta": false,
+        "explicacao": "O VFL serve apenas para localização visual de falhas e continuidade em curta distância, sem capacidade de quantificar perda em dB."
+      },
+      {
+        "texto": "Medir a continuidade com um multímetro na escala de resistência ôhmica.",
+        "correta": false,
+        "explicacao": "A fibra de vidro de sílica é um isolante elétrico; multímetros elétricos não funcionam em cabos ópticos."
+      }
+    ],
+    "fontes": [
+      "foa-fusao",
+      "viavi-otdr-dicas",
+      "yokogawa-otdr-bidirecional"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "05-04-q4",
+    "licao": "05-04",
+    "enunciado": "Ao analisar o traço de um OTDR em uma emenda por fusão, o técnico observa um degrau para cima (leitura de −0,12 dB, parecendo um \"ganho\" de potência). Qual é a explicação física desse fenômeno?",
+    "alternativas": [
+      {
+        "texto": "A máquina de fusão amplificou a luz do feixe por ressonância atômica na junta.",
+        "correta": false,
+        "explicacao": "A sílica fundida é um meio totalmente passivo; não há amplificação óptica espontânea em emendas comuns."
+      },
+      {
+        "texto": "Trata-se de um ganho aparente (gainer), causado pela transição para uma fibra com coeficiente de retroespalhamento de Rayleigh ou MFD maior, que reflete mais luz de volta ao OTDR.",
+        "correta": true,
+        "explicacao": "Certo. Quando a segunda fibra dispersa mais luz de volta (maior retroespalhamento), o sinal captado sobe artificialmente; o ganho desaparece ao fazer a média com o sentido inverso."
+      },
+      {
+        "texto": "A emenda está quebrada e a luz está escapando lateralmente para a atmosfera.",
+        "correta": false,
+        "explicacao": "Uma quebra geraria grande reflexão de Fresnel ou queda abrupta de potência até o ruído de fundo, não degrau de ganho aparente."
+      },
+      {
+        "texto": "O OTDR está com o fotodiodo de recepção em curto-circuito.",
+        "correta": false,
+        "explicacao": "O ganho aparente em sentido único é um comportamento físico natural e esperado em emendas entre fibras de bobinas diferentes."
+      }
+    ],
+    "fontes": [
+      "exfo-otdr-an194",
+      "yokogawa-otdr-bidirecional"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "05-04-q5",
+    "licao": "05-04",
+    "enunciado": "Em um teste bidirecional de OTDR, uma fusão registrou perda de +0,28 dB no sentido A→B e ganho aparente de −0,12 dB no sentido B→A. Qual é a atenuação real dessa emenda?",
+    "alternativas": [
+      {
+        "texto": "+0,40 dB, somando os módulos dos dois valores.",
+        "correta": false,
+        "explicacao": "Os valores devem ser somados algebricamente respeitando o sinal negativo do ganho antes da divisão por 2."
+      },
+      {
+        "texto": "0,08 dB, calculada pela média algébrica: (+0,28 + (−0,12)) / 2 = 0,16 / 2.",
+        "correta": true,
+        "explicacao": "Certo. A média bidirecional algébrica cancela as diferenças de espalhamento: (+0,28 − 0,12) / 2 = +0,16 / 2 = 0,08 dB."
+      },
+      {
+        "texto": "+0,28 dB, pois o pior sentido sempre prevalece como regra absoluta.",
+        "correta": false,
+        "explicacao": "O valor de sentido único é distorcido pela diferença de retroespalhamento; a única perda real é a média bidirecional."
+      },
+      {
+        "texto": "0,00 dB, pois um sentido anula o outro completamente.",
+        "correta": false,
+        "explicacao": "A emenda possui atenuação física de 0,08 dB, perfeitamente compatível com uma fusão de alta qualidade."
+      }
+    ],
+    "fontes": [
+      "foa-fusao",
+      "exfo-otdr-an194",
+      "yokogawa-otdr-bidirecional"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "05-04-q6",
+    "licao": "05-04",
+    "enunciado": "Por que a perda média de catálogo informada pelos fabricantes de máquinas de fusão (ex.: 0,03 dB na Fujikura 45S ou 0,02 dB em notas de aplicação) não deve ser cobrada em todas as fusões de campo?",
+    "alternativas": [
+      {
+        "texto": "Porque esse número foi obtido em laboratório pelo método de cut-back cortando e reemendando a mesma fibra, sob temperatura e alinhamento ideais.",
+        "correta": true,
+        "explicacao": "Certo. Conforme nota da Greenlee/Tempo e notas de rodapé da Fujikura, a especificação de catálogo resulta de reemendas idênticas da mesma fibra; em campo unem-se cabos com tolerâncias diferentes."
+      },
+      {
+        "texto": "Porque as máquinas de fusão perdem 50% de sua precisão quando desconectadas da tomada elétrica.",
+        "correta": false,
+        "explicacao": "A máquina opera em campo com bateria recarregável com a mesma voltagem e precisão de arco."
+      },
+      {
+        "texto": "Porque a norma TIA-568 anula automaticamente especificações de fabricantes asiáticos.",
+        "correta": false,
+        "explicacao": "A TIA-568 é uma norma de cabeamento que estabelece limites máximos para projeto, não invalidando ensaios fabris."
+      },
+      {
+        "texto": "Porque em campo o arco elétrico gera mais calor devido à pressão atmosférica de Roraima.",
+        "correta": false,
+        "explicacao": "A pressão e altitude afetam ligeiramente o arco, mas isso é ajustado com o arc check, não sendo a razão da diferença de teste de mesma fibra."
+      }
+    ],
+    "fontes": [
+      "fujikura-catalogo-telecom",
+      "tempo-910fs-fusao"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "05-04-q7",
+    "licao": "05-04",
+    "enunciado": "Qual é a atenuação típica de campo de uma fusão monomodo segundo guias de teste (como a VIAVI) e qual valor a FOA recomenda adotar no orçamento de perdas (loss budget)?",
+    "alternativas": [
+      {
+        "texto": "Atenuação típica de 0,50 dB e orçamento de projeto de 1,00 dB por fusão.",
+        "correta": false,
+        "explicacao": "Valores muito acima do aceitável em redes ópticas monomodo modernas; 0,5 dB é típico de conector, não de fusão."
+      },
+      {
+        "texto": "Atenuação típica de 0,08 dB (faixa comum < 0,10 dB) e valor de projeto/planejamento de 0,15 dB (ou meta contratual de 0,10 a 0,15 dB).",
+        "correta": true,
+        "explicacao": "Certo. A ficha técnica da VIAVI indica atenuação típica de fusão entre 0,10 e 0,30 dB (com média prática em 0,08 dB) e a FOA recomenda 0,15 dB no cálculo de perda para planejamento."
+      },
+      {
+        "texto": "Atenuação típica de 0,001 dB e valor de planejamento de 0,01 dB.",
+        "correta": false,
+        "explicacao": "Valores irrealistas para condições de campo em redes externas de telecomunicações."
+      },
+      {
+        "texto": "Atenuação típica de 3,0 dB devido à divisão de potência entre as cascas.",
+        "correta": false,
+        "explicacao": "3,0 dB é a atenuação típica de um divisor óptico balanceado 1:2 (splitter), não de uma emenda por fusão."
+      }
+    ],
+    "fontes": [
+      "viavi-otdr-dicas",
+      "foa-loss-budget"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "05-04-q8",
+    "licao": "05-04",
+    "enunciado": "Segundo a norma EIA/TIA-568, qual é o limite MÁXIMO permitido de atenuação para uma emenda óptica (fusão ou mecânica), e por que esse valor não deve ser tomado como meta de qualidade de fusão?",
+    "alternativas": [
+      {
+        "texto": "Limite máximo de 0,10 dB; qualquer valor acima disso aciona alarme de incêndio no distribuidor óptico.",
+        "correta": false,
+        "explicacao": "O limite máximo da norma TIA-568 é de 0,30 dB, e atenuação óptica não provoca disparo de alarmes de incêndio."
+      },
+      {
+        "texto": "Limite máximo de 0,30 dB; ele serve como teto normativo conservador (cobrindo até emendas mecânicas), enquanto uma boa fusão de campo deve ficar bem abaixo disso (típica em 0,08 dB).",
+        "correta": true,
+        "explicacao": "Certo. A TIA-568 estipula 0,30 dB como limite de conformidade. Se todas as fusões de uma rota ficassem em 0,30 dB, o enlace acumularia perda excessiva desnecessariamente."
+      },
+      {
+        "texto": "Limite máximo de 0,75 dB, que é o mesmo valor aplicado para splitters ópticos 1:16.",
+        "correta": false,
+        "explicacao": "0,75 dB é o limite da TIA-568 para par de conectores acoplados, enquanto splitters 1:16 atenuam cerca de 13 a 14 dB."
+      },
+      {
+        "texto": "A norma TIA-568 não estabelece limites em dB, apenas avalia a cor do tubete protetor.",
+        "correta": false,
+        "explicacao": "A norma estabelece especificações de atenuação e perda de retorno rigorosas para emendas e conectores."
+      }
+    ],
+    "fontes": [
+      "foa-tia568",
+      "foa-loss-budget",
+      "viavi-otdr-dicas"
+    ],
+    "dificuldade": 2
+  }
+]

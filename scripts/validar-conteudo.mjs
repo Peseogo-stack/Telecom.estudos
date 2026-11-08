@@ -24,7 +24,7 @@ import {
   contarPalavras,
 } from './lib/conteudo.mjs';
 
-export function validar({ hoje = new Date() } = {}) {
+export function validar({ hoje = new Date(), estrito = false } = {}) {
   const erros = [];
   const avisos = [];
   const erro = (onde, msg) => erros.push(`${onde}: ${msg}`);
@@ -203,6 +203,21 @@ export function validar({ hoje = new Date() } = {}) {
       if (!Array.isArray(q.fontes) || q.fontes.length === 0) erro(ondeQ, 'questão sem fonte');
       for (const f of q.fontes ?? []) if (!fontesPorId.has(f)) erro(ondeQ, `fonte inexistente "${f}"`);
       if (![1, 2, 3].includes(q.dificuldade)) erro(ondeQ, 'dificuldade deve ser 1, 2 ou 3');
+
+      // Equilíbrio das alternativas: a correta não deve ser desproporcionalmente mais longa (> 30% que a 2ª mais longa)
+      const altCorreta = (q.alternativas ?? []).find((a) => a.correta);
+      const altIncorretas = (q.alternativas ?? []).filter((a) => !a.correta);
+      if (altCorreta?.texto && altIncorretas.length === 3) {
+        const tamCorreta = altCorreta.texto.trim().length;
+        const tamsIncorretas = altIncorretas.map((a) => a.texto?.trim()?.length ?? 0).sort((a, b) => b - a);
+        const tamSegunda = tamsIncorretas[0];
+        if (tamSegunda > 0 && tamCorreta > 1.3 * tamSegunda) {
+          const pct = Math.round(((tamCorreta / tamSegunda) - 1) * 100);
+          const msg = `alternativa correta desbalanceada: tem ${tamCorreta} caracteres (+${pct}% que a 2ª mais longa com ${tamSegunda} car.)`;
+          if (estrito) erro(ondeQ, msg);
+          else aviso(ondeQ, msg);
+        }
+      }
     }
   }
 
@@ -291,7 +306,8 @@ async function conferirLinks(fontes) {
 
 const rodandoDireto = process.argv[1]?.endsWith('validar-conteudo.mjs');
 if (rodandoDireto) {
-  const { erros, avisos, fontes } = validar();
+  const estrito = process.argv.includes('--estrito');
+  const { erros, avisos, fontes } = validar({ estrito });
   for (const a of avisos) console.log(`AVISO  ${a}`);
   for (const e of erros) console.log(`ERRO   ${e}`);
   if (process.argv.includes('--links')) {

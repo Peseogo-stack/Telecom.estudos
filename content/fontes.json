@@ -628,6 +628,43 @@
     "url": "https://cdn.shopify.com/s/files/1/0014/6404/1539/files/trueCABLE-Cat6-Gel-Filled-Direct-Burial-SDS-Sheet.pdf",
     "acessadoEm": "2026-11-07",
     "observacao": "Composto típico de bloqueio de água (95% óleo mineral branco e 5% cera de parafina), insolúvel em água. Pode causar irritação leve na pele e nos olhos; lavar a pele com água e sabão; cria risco de escorregamento em pisos lisos."
+  },
+  {
+    "id": "foa-fusao",
+    "titulo": "The FOA Reference For Fiber Optics — Fusion Splicing",
+    "organizacao": "The Fiber Optic Association",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/ref/termination/fusion.html",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Preparo do cabo e da fibra: abrir cerca de 2 a 3 m de capa para acomodar na caixa, deixar ~1 m de tubo loose dentro da caixa e ~1 m de fibra dentro da bandeja (splice tray); limpar todo o material bloqueador de água; limpar cada fibra antes de decapar e novamente após decapar e antes de clivar (strip, clean & cleave); decapadores Miller, No-Nik e Micro-Strip (não riscar o vidro). Alinhamento automático pelo núcleo por imagem/perfil (Profile Alignment System, PAS — iluminação em duas direções a 90° e câmeras X/Y) ou por injeção e detecção local de luz (Local Injection and Detection, LID). Na avaliação da emenda: pontos ou linhas escuras podem melhorar repetindo o arco (re-arc), mas nunca mais de 2 vezes; para desalinhamento grande de núcleo, bolha (bubble) ou engrossamento/protuberância (bulging), sempre refazer do zero. A perda na tela da máquina é apenas uma estimativa (estimate); a perda real da emenda num lance só se mede com o OTDR, de preferência nos dois sentidos fazendo a média."
+  },
+  {
+    "id": "fujikura-catalogo-telecom",
+    "titulo": "Fusion Splicers — Telecommunication uses (100S, 45S, 90R, CT50 — catálogo de especificações, 10/2025)",
+    "organizacao": "Fujikura Ltd.",
+    "tipo": "fabricante",
+    "url": "https://www.fusionsplicer.fujikura.com/wp-content/uploads/2025/10/Fusionsplicer_telecom_Eng.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Máquina 45S (alinhamento ativo pela casca, Active clad alignment): comprimento de clivagem de 5 a 16 mm (para revestimento ≤ 250 µm; 10 a 16 mm acima de 250 µm); perda média medida em laboratório por cut-back de 0,03 dB em G.652 e G.657 (0,01 dB em G.651 e 0,05 dB em G.653/G.655); tempo de fusão 6 a 8 s (SM FAST); tubete termocontrátil de 60 mm (FP-03) ou 40 mm (FP-03 L=40), máximo 66 mm e Ø 6,0 mm antes da contração (forno: 21 a 23 s em 60 mm e 16 a 18 s em 60 mm slim); teste de tração (tensile test) de ~2,0 N; vida útil dos eletrodos de ~6.000 fusões; Active Fusion Control e Warm Splice Image (WSI). Máquina de fita 90R12/90R16 (ranhura em V fixa substituível): clivagem ~10 mm, perda média 0,05 dB em G.652 e G.657, eletrodos ~1.500 fusões (90R12). Clivador CT50: comprimento de clivagem de 5 a 20 mm (≤ 250 µm), 10 a 20 mm (250 a 900 µm) e 14 a 20 mm (900 µm a 3 mm), com nota de que clivar abaixo de 10 mm exige ajuste de altura da lâmina e piora o ângulo médio; ângulo médio de clivagem de 0,3° a 0,9° em fibra única (medido em interferômetro); vida útil da lâmina de ~60.000 clivagens (16 posições no CT50 e 28 posições no CT60)."
+  },
+  {
+    "id": "tempo-910fs-fusao",
+    "titulo": "Application Note — Reducing Losses in Fusion Splicing (910FS, 02/02/2015)",
+    "organizacao": "Tempo / Greenlee Communications",
+    "tipo": "fabricante",
+    "url": "https://res.cloudinary.com/iwh/image/upload/q_auto,g_center/assets/1/26/Tempo_910FS_Application_Note.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Compara alinhamento pelo núcleo (core alignment, câmeras e motores nos eixos X, Y e Z) com alinhamento pela casca (cladding alignment), que sofre mais com erro de concentricidade núcleo-casca e com fibras antigas ou de fabricantes diferentes. Explica que a perda mostrada na tela da máquina após a fusão é apenas uma aproximação (approximation) baseada na qualidade e eixo da clivagem e no formato da emenda, devendo ser validada com OTDR ou par fonte/medidor (OLTS); que perdas típicas de catálogo (0,02 dB) vêm de cortar e reemendar a mesma fibra; que uma diferença de 5 µm no diâmetro de núcleo pode gerar 0,2 dB de perda; que se deve limpar a fibra com álcool isopropílico 99% e lenço sem fiapos antes de clivar, fazer calibração do arco (ARC calibration) no início da sessão e nunca tocar nos eletrodos com as mãos."
+  },
+  {
+    "id": "foa-tia568",
+    "titulo": "EIA/TIA 568 B.3 / 568-C Standard For Fiber Optics",
+    "organizacao": "The Fiber Optic Association",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/tia568b3.htm",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Resumo da norma TIA-568 para cabeamento óptico: perda máxima por emenda (fusão ou mecânica) de 0,3 dB em monomodo ou multimodo, com perda de retorno (ORL) melhor que 26 dB em monomodo (55 dB para vídeo CATV). Perda máxima por par acoplado de conectores de 0,75 dB (para projeto, a FOA recomenda < 0,3 dB para cordões polidos de fábrica e < 0,5 dB para conectores de campo emendados ou pré-polidos). Atenuação máxima do cabo monomodo: 0,5 dB/km em planta externa e 1,0 dB/km em planta interna (1310 e 1550 nm)."
   }
 ]
+
 

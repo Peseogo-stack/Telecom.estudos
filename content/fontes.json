@@ -348,7 +348,7 @@
     "tipo": "associacao",
     "url": "https://www.thefoa.org/tech/safety.htm",
     "acessadoEm": "2026-11-07",
-    "observacao": "A luz é infravermelha: não dá para saber se há luz olhando. Na faixa de 1300 a 1550 nm, dificilmente lesa a retina, mas pode ferir a córnea ou o cristalino; não olhe a fibra sem saber se há fonte transmitindo."
+    "observacao": "A luz é infravermelha: não dá para saber se há luz olhando; confirmar com power meter que a fibra está escura antes de examinar. Na faixa de 1300 a 1550 nm a luz é absorvida pela água do globo ocular (dificilmente lesa a retina, mas pode ferir a córnea ou o cristalino); em 650 nm (visível, como laser pointer / VFL) o olho é transparente e chega à retina; olhar a ponta com rastreador visível de lado, a pelo menos 6 polegadas (~15 cm). A luz sai da fibra num cone que se abre, mas um microscópio óptico concentra toda a luz no olho e precisa de filtro infravermelho. Maior risco real aos olhos e à pele: fragmentos (scraps) de fibra nua; usar óculos de segurança com proteção lateral (side shields), recolher em recipiente próprio com tampa (preferido pela FOA à fita dupla-face), nunca jogar no chão, não comer/beber/fumar na área (ingestão pode causar hemorragia interna), lavar as mãos antes de tocar olhos ou lentes de contato, e nunca fazer fusão por arco elétrico em caixas subterrâneas (manholes) onde gases inflamáveis possam se acumular."
   },
   {
     "id": "foa-otdr",
@@ -574,5 +574,60 @@
     "url": "https://australia.prysmian.com/sites/australia.prysmian.com/files/media/documents/TightBuffer.pdf",
     "acessadoEm": "2026-11-06",
     "observacao": "Tight buffer de 900 ± 50 µm sobre o revestimento primário."
+  },
+  {
+    "id": "iec-60825-2-amd1",
+    "titulo": "IEC 60825-2:2004/AMD1:2006 — Safety of laser products — Part 2: Safety of optical fibre communication systems (OFCS) (amostra oficial)",
+    "organizacao": "IEC (amostra em iTeh Standards)",
+    "tipo": "norma",
+    "url": "https://cdn.standards.iteh.ai/samples/13181/dca9a6a5603847b592304856dde678a2/IEC-60825-2-2004-AMD1-2006.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Cláusula 4.4 e Tabelas 1, 2 e 3: níveis de perigo (hazard levels) onde a radiação fica acessível ao abrir conector ou caixa de emenda. Local sem restrição (unrestricted location): permitido até nível 2M (400–700 nm) e 1M (demais λ, infravermelho). Local restrito (restricted location): até 1M, 2M ou 3R (3B proibido). Local controlado (controlled location): até 3B. Nos níveis 1M e 2M, o aviso proíbe observar diretamente com instrumentos ópticos não atenuantes (lupas ou microscópios sem filtro)."
+  },
+  {
+    "id": "trend-vfl-safety",
+    "titulo": "Application Note — Visual Fault Locators (VFF5 e classes de segurança de laser)",
+    "organizacao": "TREND Networks",
+    "tipo": "fabricante",
+    "url": "https://www.trend-networks.com/wp-content/uploads/2022/06/VFL-Safety-App-Note-1.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "VFL com saída máxima de 1 mW é laser Classe II (Class 2): seguro para exposição acidental de até 1/4 de segundo pelo reflexo de desviar o olhar; regra: não encarar o feixe (do not stare into beam). Canetas VFL baratas de 10 a 50 mW (ou mais) são Classe IIIb (Class 3B): exigem etiqueta de advertência, oferecem risco de lesão ocular permanente por feixe direto ou refletido e podem aquecer a pele ou queimar materiais de perto."
+  },
+  {
+    "id": "fds-isopropanol-rauter",
+    "titulo": "Ficha com Dados de Segurança (FDS) — Isopropanol / Álcool Isopropílico 99–100% (versão 1, 01/07/2025, NBR 14725)",
+    "organizacao": "Rauter Química",
+    "tipo": "fabricante",
+    "url": "https://fabesul.com.br/HabilB2B/Catalogo/29302-FISPQ.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "2-propanol (CAS 67-63-0, concentração 99–100%). Perigos GHS: H225 (líquido e vapores altamente inflamáveis, categoria 2), H319 (provoca irritação ocular grave, categoria 2A), H336 (pode provocar sonolência ou vertigem, categoria 3). Ponto de fulgor: 11,85 °C em vaso fechado e 21 °C em vaso aberto; limites de inflamabilidade no ar: 2,0% a 12,0% (v/v); temperatura de autoignição: 398,85 °C; ponto de ebulição: 82,26 °C. Precauções: manter afastado de calor, faísca, chama aberta e superfícies quentes (P210), manter recipiente bem fechado (P233), usar em local ventilado e guardar no recipiente original longe da luz direta do sol. Limite de tolerância NR-15: 310 ppm (765 mg/m³), com absorção também pela pele."
+  },
+  {
+    "id": "fujikura-dicas-90r",
+    "titulo": "Fusion splicer technical tips — limpeza de lentes, V-grooves e garras com álcool ≥ 99%",
+    "organizacao": "Fujikura Europe",
+    "tipo": "fabricante",
+    "url": "https://www.europe.fujikura.com/?p=13521",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Pede álcool com pureza de 99% ou superior (purity of 99% or higher) e hastes de algodão sem reuso; limpar as ranhuras em V (V-grooves) e garras diariamente, e as lentes objetivas mensalmente (desligando a máquina e retirando os eletrodos antes de limpar as lentes)."
+  },
+  {
+    "id": "lps-dgel-ficha",
+    "titulo": "D'Gel FO — Fiber Optic Cable Gel Remover (ficha técnica)",
+    "organizacao": "LPS Laboratories",
+    "tipo": "fabricante",
+    "url": "https://assets.testequity.com/te1/Documents/pdf/LPS/lps_61200_dgel_fo_fiber_optic_cable_gel_remover_datasheet.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Removedor de gel de cabos ópticos (odor cítrico de laranja), evapora sem deixar resíduo, ponto de fulgor acima de 60 °C (> 61,0 °C TCC). Pode causar reação alérgica na pele; manter longe de calor, faíscas e chamas abertas e usar luvas e proteção ocular."
+  },
+  {
+    "id": "truecable-gel-sds",
+    "titulo": "Safety Data Sheet — Waterproof Gel (composto de óleo mineral e parafina para cabos geleados, 15/11/2021)",
+    "organizacao": "trueCABLE",
+    "tipo": "fabricante",
+    "url": "https://cdn.shopify.com/s/files/1/0014/6404/1539/files/trueCABLE-Cat6-Gel-Filled-Direct-Burial-SDS-Sheet.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Composto típico de bloqueio de água (95% óleo mineral branco e 5% cera de parafina), insolúvel em água. Pode causar irritação leve na pele e nos olhos; lavar a pele com água e sabão; cria risco de escorregamento em pisos lisos."
   }
 ]
+

@@ -32,6 +32,7 @@
 | a11 | A baixa tensão dos postes onde vou trabalhar é nua ou isolada (multiplexada)? | Observar do chão, sem se aproximar; confirmar com a engenharia | 10-01 |
 | a12 | Os cordões do rack e do DIO são amarelos (monomodo) ou laranja/água (multimodo)? | Cor da capa dos cordões e a gravação neles | 02-03 |
 | a13 | Os cabos da nossa rede seguem o código de cores nacional (verde, amarela, branca, azul…) ou há cabos importados no padrão TIA-598 (azul, laranja, verde…)? E os pigtails do DIO, em que ordem vêm? | Gravação da capa, ficha do fabricante, cores ao abrir uma caixa acompanhado | 03-03 |
+| a14 | Qual é a classe de laser e a potência gravadas na etiqueta da nossa caneta VFL, e que tipo de microscópio de inspeção a equipe usa (vídeo ou óptico com filtro IR)? | Etiqueta da caneta VFL e maleta de inspeção/limpeza | 10-03 |
 
 ---
 
@@ -99,8 +100,9 @@
 | d11 | Como os fornecedores costumam contestar uma glosa, e o que já foi aceito ou recusado? | 09-02 |
 | d12 | Existe um registro de ocorrências (livro, planilha, sistema) para cada contrato? Onde fica? | 09-03 |
 | d13 | Que potências (dBm) costumamos ver nos equipamentos dos links, e a partir de quanto a equipe considera alarme? | 02-07 |
-| d14 | Que equipamentos de teste a equipe tem (OTDR, power meter, medidor PON seletivo, VFL) e que cabos de lançamento e de recepção usamos (comprimento, conector UPC ou APC)? | 06-01, 06-02 |
+| d14 | Que equipamentos de teste a equipe tem (OTDR, power meter, medidor PON seletivo, VFL) e que cabos de lançamento e de recepção usamos (comprimento, conector UPC ou APC)? | 06-01, 06-02, 10-03 |
 | d15 | Quando o mapa de fusão liga cabos de padrões de cor diferentes, ele casa as fibras por número ou por cor? Como a equipe anota? | 03-03 |
+| d16 | Que álcool isopropílico (pureza) e que removedor de geleia a equipe usa na bancada, e como fazemos o descarte do pote de fragmentos de fibra? | 10-04, 05-01 |
 
 ---
 

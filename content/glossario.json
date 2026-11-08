@@ -1254,5 +1254,86 @@
     "licoes": [
       "03-07"
     ]
+  },
+  {
+    "id": "vfl",
+    "pt": "Localizador visual de falhas",
+    "sigla": "VFL",
+    "en": "Visual Fault Locator",
+    "definicao": "Caneta ou fonte de laser vermelho visível (em torno de 650 nm) usada para identificar fibras e achar quebras ou curvas fechadas. Modelos de até 1 mW são Classe 2; modelos de 10 a 50 mW são Classe 3B.",
+    "fontes": [
+      "trend-vfl-safety",
+      "foa-seguranca"
+    ],
+    "licoes": [
+      "10-03"
+    ]
+  },
+  {
+    "id": "nivel-de-perigo",
+    "pt": "Nível de perigo (laser)",
+    "sigla": "HL",
+    "en": "Hazard level",
+    "definicao": "Classificação da IEC 60825-2 para o risco de radiação óptica num ponto acessível da rede (conector ou caixa aberta): até 2M (400–700 nm) e 1M (infravermelho) em locais sem restrição, até 3R em locais restritos e até 3B em locais controlados.",
+    "fontes": [
+      "iec-60825-2-amd1"
+    ],
+    "licoes": [
+      "10-03"
+    ]
+  },
+  {
+    "id": "microscopio-de-inspecao",
+    "pt": "Microscópio de inspeção",
+    "en": "Fiber inspection microscope",
+    "definicao": "Instrumento para examinar a face do conector. O modelo óptico precisa ter filtro infravermelho para não concentrar luz invisível no olho; o de vídeo mostra a imagem numa tela.",
+    "fontes": [
+      "foa-seguranca",
+      "viavi-otdr-dicas"
+    ],
+    "licoes": [
+      "10-03",
+      "06-01"
+    ]
+  },
+  {
+    "id": "alcool-isopropilico",
+    "pt": "Álcool isopropílico (isopropanol)",
+    "sigla": "IPA",
+    "en": "Isopropyl alcohol",
+    "definicao": "Solvente usado com pureza ≥ 99% para limpar fibras, conectores e partes da máquina de fusão. Líquido e vapores altamente inflamáveis (H225), com ponto de fulgor de 11,85 °C em vaso fechado.",
+    "fontes": [
+      "fds-isopropanol-rauter",
+      "fujikura-dicas-90r"
+    ],
+    "licoes": [
+      "10-04"
+    ]
+  },
+  {
+    "id": "fds",
+    "pt": "Ficha com Dados de Segurança",
+    "sigla": "FDS / FISPQ",
+    "en": "Safety Data Sheet (SDS)",
+    "definicao": "Documento oficial (NBR 14725) que informa os perigos de um produto químico (frases H e P), ponto de fulgor, limites de exposição, EPIs, primeiros socorros e armazenamento.",
+    "fontes": [
+      "fds-isopropanol-rauter"
+    ],
+    "licoes": [
+      "10-04"
+    ]
+  },
+  {
+    "id": "ponto-de-fulgor",
+    "pt": "Ponto de fulgor",
+    "en": "Flash point",
+    "definicao": "Menor temperatura em que um líquido solta vapor suficiente para pegar fogo perto de uma faísca ou chama. No álcool isopropílico é 11,85 °C em vaso fechado (21 °C em vaso aberto).",
+    "fontes": [
+      "fds-isopropanol-rauter"
+    ],
+    "licoes": [
+      "10-04"
+    ]
   }
 ]
+

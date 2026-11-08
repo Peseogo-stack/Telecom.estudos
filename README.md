@@ -4,7 +4,7 @@ App de estudo e de consulta em campo sobre **telecom numa distribuidora de energ
 
 **Prévia:** https://peseogo-stack.github.io/Telecom.estudos/ (conteúdo em revisão) · [Como instalar no Android e usar sem internet](docs/instalar-no-android.md)
 
-> **Status:** em construção. Fases 1 e 2 concluídas. A prévia traz a semana 1 (segurança e contratos), o módulo 2 (fibra óptica, com orçamento de potência, dBm ↔ mW, splitters e código de cores), o módulo 6 (testes ópticos: power meter, OTDR e leitor de OTDR) e o módulo 3 (cabos, cores, conectores e caixas), cada um já com a revisão técnica aplicada ([semana 1](docs/revisao-tecnica/semana-1.md), [módulo 2](docs/revisao-tecnica/modulo-02.md), [módulo 6](docs/revisao-tecnica/modulo-06.md), [módulo 3](docs/revisao-tecnica/modulo-03.md)). Os módulos seguintes entram depois de passar pela mesma revisão. Os documentos estão em [`docs/`](docs/).
+> **Status:** em construção. Fases 1 e 2 concluídas. A prévia traz a semana 1 (segurança e contratos), o módulo 2 (fibra óptica, com orçamento de potência, dBm ↔ mW, splitters e código de cores), o módulo 6 (testes ópticos: power meter, OTDR e leitor de OTDR), o módulo 3 (cabos, cores, conectores e caixas) e o módulo 10 completo (segurança elétrica, altura, óptica e química), cada um já com a revisão técnica aplicada ([semana 1](docs/revisao-tecnica/semana-1.md), [módulo 2](docs/revisao-tecnica/modulo-02.md), [módulo 6](docs/revisao-tecnica/modulo-06.md), [módulo 3](docs/revisao-tecnica/modulo-03.md), [módulo 10](docs/revisao-tecnica/modulo-10.md)). Os módulos seguintes entram depois de passar pela mesma revisão. Os documentos estão em [`docs/`](docs/).
 
 ## O que tem (planejado)
 

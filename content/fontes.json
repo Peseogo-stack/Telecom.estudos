@@ -153,6 +153,51 @@
     "observacao": "Média dos dois sentidos elimina ganho e perda aparentes nas emendas."
   },
   {
+    "id": "exfo-otdr-an194",
+    "titulo": "Application Note 194 — Fundamentals of an OTDR",
+    "organizacao": "EXFO",
+    "tipo": "fabricante",
+    "url": "https://www.exfo.com/contentassets/7e4d240b6717415283238de7dcec35ba/exfo_anote194_otdr-fundamentals_en.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "© 2017. Retroespalhamento de Rayleigh (nível baixo e constante, dá a atenuação em dB/km) e reflexão de Fresnel (picos, \"milhares de vezes\" maior); eventos sem reflexão (fusão, curvatura) são queda brusca na rampa; zona morta de evento medida a −1,5 dB de cada lado do pico; zona morta de atenuação até voltar a 0,5 dB do retroespalhamento; especificada em geral no pulso mais curto com reflexão de −45 dB em monomodo (−35 dB em multimodo); faixa dinâmica 5 a 8 dB acima da maior perda (em geral especificada no pulso mais longo, 3 min, SNR = 1); pulso curto = menos energia e zona morta menor."
+  },
+  {
+    "id": "viavi-otdr-dicas",
+    "titulo": "OTDR Testing — Tech Tip (valores típicos de perda e reflexão)",
+    "organizacao": "VIAVI Solutions",
+    "tipo": "fabricante",
+    "url": "https://www.viavisolutions.com/en-uk/literature/otdr-testing-tips-and-tricks-quick-references-en.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "© 2023. Fibra monomodo 0,35 dB/km (1310) e 0,2 dB/km (1550); fusão 0,10–0,30 dB sem reflexão; emenda mecânica 0,15–0,50 dB, −40 a −50 dB; par de conectores 0,15–0,5 dB, UPC −50 a −59 dB, APC −65 a −76 dB (APC novo pode ficar abaixo de −77 dB e não aparecer); conector UPC aberto −14 a −20 dB; APC aberto −35 a −45 dB; quebra −30 a −48 dB; curvatura em 1550 nm costuma ser 5 a 10 vezes pior que em 1310 nm e pode passar de 6 dB, parecendo fim de fibra; com uma λ só, o OTDR não identifica curvatura; splitters 1x8 9–11 dB, 1x32 15–17 dB."
+  },
+  {
+    "id": "foa-perda-insercao",
+    "titulo": "Testing the Installed Fiber Optic Cable Plant With A Test Source and Power Meter (insertion loss)",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/ref/testing/test/OFSTP-14.html",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Método de 1 cabo de referência quando os conectores do equipamento são compatíveis; 2 ou 3 cabos quando não são, e o método muda bastante o resultado, por isso deve ser registrado. O teste com cabos de lançamento e de recepção mede a planta \"including the connectors on each end\". Normas: OFSTP-14 (multimodo) e OFSTP-7 (monomodo). Cabos de referência monomodo: perda especificada de 0,2 dB; cordões que passam de 0,5 dB devem ser trocados."
+  },
+  {
+    "id": "fluke-1-cordao",
+    "titulo": "SC/APC to SC/APC fiber testing with the SimpliFiber Pro (método de 1 cordão)",
+    "organizacao": "Fluke Networks",
+    "tipo": "fabricante",
+    "url": "https://de.flukenetworks.com/knowledge-base/simplifiber-pro/scapc-scapc-fiber-testing-simplifiber-pro",
+    "acessadoEm": "2026-11-07",
+    "observacao": "\"TIA/EIA Method A.1 for Singlemode\", chamado nas normas IEC de Method A1 para monomodo e Method 2 para multimodo, e também de método de 1 cordão. Regra do equipamento: não colocar conector SC/APC na porta de saída da fonte (que é UPC), só na porta de entrada do medidor. Passos: deixar a fonte estabilizar por pelo menos 5 minutos; ligar o cordão de referência no medidor e gravar a referência (0,00 dB); soltar o cordão só da entrada do medidor; ligar um cordão bom no medidor e o enlace no meio."
+  },
+  {
+    "id": "foa-pon-meter",
+    "titulo": "What Is A PON Power Meter? (V. Grozdanovic)",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.foa.org/tech/ref/install/OPM%20and%20PON%20meters.pdf",
+    "acessadoEm": "2026-11-07",
+    "observacao": "Um medidor comum não separa os comprimentos de onda: com GPON e XG(S)-PON na mesma rede, mostra a soma de 1490 e 1577 nm na descida. O medidor PON é seletivo, com filtros para 1490 nm e 1577 nm (na p. 2 há um erro de digitação \"1557 nm\" na primeira menção, seguido de \"1577 nm\" nas duas seguintes)."
+  },
+  {
     "id": "trt7-tr-principal",
     "titulo": "Termo de referência — serviço de acesso à internet (2022.TIC028)",
     "organizacao": "TRT da 7ª Região",

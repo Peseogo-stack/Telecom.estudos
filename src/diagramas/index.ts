@@ -16,6 +16,9 @@ import { RaiosCurvatura } from './RaiosCurvatura';
 import { EspectroBandas } from './EspectroBandas';
 import { CausasPerda } from './CausasPerda';
 import { EscadaDbm } from './EscadaDbm';
+import { Referencia1Cordao } from './Referencia1Cordao';
+import { OtdrComoEnxerga } from './OtdrComoEnxerga';
+import { OtdrEventos } from './OtdrEventos';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -32,4 +35,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'espectro-bandas': EspectroBandas,
   'causas-perda': CausasPerda,
   'escada-dbm': EscadaDbm,
+  'referencia-1-cordao': Referencia1Cordao,
+  'otdr-como-enxerga': OtdrComoEnxerga,
+  'otdr-eventos': OtdrEventos,
 };

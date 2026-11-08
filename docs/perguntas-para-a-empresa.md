@@ -25,7 +25,7 @@
 | a04 | Os conectores do DIO são azuis (UPC) ou verdes (APC)? SC ou LC? | Olhar o DIO e os cordões | 03-07 |
 | a05 | Qual versão do QGIS está instalada? | QGIS ► Ajuda ► Sobre (Help ► About) | 08-01 |
 | a06 | Qual o SRC (EPSG) do projeto e das camadas? | Canto inferior direito do QGIS; Propriedades da camada ► Informação | 08-03 |
-| a07 | Que comprimentos de onda o OTDR tem? | Etiqueta e tela do OTDR | 06-05, 02-05 |
+| a07 | Que comprimentos de onda o OTDR tem? | Etiqueta e tela do OTDR | 02-05, 06-02, 06-05 |
 | a08 | Que transceptores (SFP) estão nos switches? Eles têm leitura de potência (DOM)? | Etiqueta do SFP; leitura no switch, se tiver permissão | 11-03, 02-07 |
 | a09 | Que padrão de plaqueta e de etiqueta aparece nos postes e no rack? | Observar em campo e no rack | 07-03 |
 | a10 | Qual é a designação (ID do circuito) de cada link e onde ela está anotada? | Etiqueta no equipamento da operadora, fatura ou contrato | 09-06 |
@@ -42,7 +42,7 @@
 | b02 | O que a nossa norma manda sobre faixa de ocupação, pontos por poste (urbano e rural), afastamentos, alturas, plaqueta, reserva, caixas e limite de drops? | Norma de compartilhamento | 07-02, 07-03, 07-04, 07-05, 10-01 |
 | b03 | Qual é o SLA de cada link: % de disponibilidade, período (mensal ou anual), tempo de reparo e janela de manutenção? | Contrato e anexo de nível de serviço | 09-01 |
 | b04 | Qual é a regra de glosa de cada contrato (proporcional ao tempo parado, só o excesso ou por faixas)? Tem teto? O relógio começa no chamado ou na falha? | Contrato (cláusula de SLA e penalidades) | 09-02 |
-| b05 | Qual é o critério de aceite das obras: perda máxima por fusão e por conector, dB/km, refletância, ORL? OTDR nos dois sentidos? Em quais comprimentos de onda? | Anexo técnico do contrato de construção ou caderno de aceite | 09-05, 05-04 |
+| b05 | Qual é o critério de aceite das obras: perda máxima por fusão e por conector, dB/km, refletância, ORL? OTDR nos dois sentidos? Em quais comprimentos de onda? | Anexo técnico do contrato de construção ou caderno de aceite | 05-04, 06-01, 06-03, 09-05 |
 | b06 | Em que formato o fornecedor entrega o as built (DWG, KMZ, GeoPackage) e os testes (.SOR, PDF)? | Anexo técnico | 09-05 |
 | b07 | Qual é o índice de reajuste (IST, IPCA, IGP-M) e a data-base de cada contrato? | Contrato | 09-04 |
 | b08 | Qual é o prazo de garantia da obra e como funcionam o aceite provisório e o definitivo? | Contrato de construção | 09-05 |
@@ -54,6 +54,7 @@
 | b14 | Latência alta, perda de pacotes ou velocidade abaixo do contratado contam como indisponibilidade no contrato? | Anexo de nível de serviço | 09-01 |
 | b15 | Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho? | Procedimentos de segurança (intranet) | 10-05 |
 | b16 | Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem? | Projeto executivo ou memorial de cálculo da rede | 02-06, 02-07 |
+| b17 | Qual método de referência de perda de inserção a empresa pede (1, 2 ou 3 cordões), em quais comprimentos de onda, e qual é o critério de aceite da perda total? | Especificação técnica de aceite de obra | 06-01, 09-05 |
 
 ---
 
@@ -87,7 +88,7 @@
 | d01 | Como os fornecedores costumam mandar os relatórios, e o que já foi devolvido por estar incompleto? | 09-05 |
 | d02 | Quais chamados se repetem e com quais fornecedores? Que prazos eles cumprem de verdade? | 09-06 |
 | d03 | Que reserva técnica e que padrão de identificação usamos na prática? | 03-06, 07-03 |
-| d04 | Qual é o critério de aceite por emenda que usamos no dia a dia (0,1? 0,15 dB?) | 05-04 |
+| d04 | Qual é o critério de aceite por emenda que usamos no dia a dia (0,1? 0,15 dB?) | 05-04, 06-03 |
 | d05 | Quem faz o arc check, a troca de eletrodo e a limpeza da máquina de fusão? | 05-03 |
 | d06 | Que faixa de sinal na ONU cobramos dos provedores, se cobramos? Que topologia eles usam aqui? | 04-05 |
 | d07 | A rede para as unidades é ponto a ponto (SFP) ou tem PON? | 04-06, 02-05 |
@@ -97,6 +98,7 @@
 | d11 | Como os fornecedores costumam contestar uma glosa, e o que já foi aceito ou recusado? | 09-02 |
 | d12 | Existe um registro de ocorrências (livro, planilha, sistema) para cada contrato? Onde fica? | 09-03 |
 | d13 | Que potências (dBm) costumamos ver nos equipamentos dos links, e a partir de quanto a equipe considera alarme? | 02-07 |
+| d14 | Que equipamentos de teste a equipe tem (OTDR, power meter, medidor PON seletivo, VFL) e que cabos de lançamento e de recepção usamos (comprimento, conector UPC ou APC)? | 06-01, 06-02 |
 
 ---
 

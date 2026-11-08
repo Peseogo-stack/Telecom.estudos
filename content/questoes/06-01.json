@@ -1,0 +1,250 @@
+[
+  {
+    "id": "06-01-q1",
+    "licao": "06-01",
+    "enunciado": "Depois de zerar o medidor com o cordão de lançamento ligado direto nele, você vai ligar o enlace. O que você solta?",
+    "alternativas": [
+      {
+        "texto": "Os dois lados do cordão, para limpar tudo de novo.",
+        "correta": false,
+        "explicacao": "Soltar o lado da fonte muda a luz lançada e a referência deixa de valer. Limpe e inspecione antes de zerar."
+      },
+      {
+        "texto": "Só o lado do medidor; o lado da fonte fica como está.",
+        "correta": true,
+        "explicacao": "Certo. O passo a passo da Fluke manda soltar o cordão só da entrada do medidor."
+      },
+      {
+        "texto": "Só o lado da fonte.",
+        "correta": false,
+        "explicacao": "É justamente o lado que não se mexe depois de zerar."
+      },
+      {
+        "texto": "Nada: mede com o cordão ligado no medidor.",
+        "correta": false,
+        "explicacao": "Assim você mede só o cordão, não o enlace."
+      }
+    ],
+    "fontes": [
+      "fluke-1-cordao"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "06-01-q2",
+    "licao": "06-01",
+    "enunciado": "O medidor mostrava −5,0 dBm na referência. Com o enlace no meio, mostra −8,4 dBm. Qual é a perda de inserção?",
+    "alternativas": [
+      {
+        "texto": "1,7 dB",
+        "correta": false,
+        "explicacao": "Dividiu a diferença por 2; a perda é toda a diferença entre a referência e a medida."
+      },
+      {
+        "texto": "13,4 dB",
+        "correta": false,
+        "explicacao": "Os valores foram somados; a conta é a diferença."
+      },
+      {
+        "texto": "3,4 dB",
+        "correta": true,
+        "explicacao": "Certo. Entre −5,0 dBm e −8,4 dBm a queda é de 3,4 dB (na escala dB o visor pode mostrar −3,4 dB, mas por convenção dizemos 3,4 dB de perda — FOA)."
+      },
+      {
+        "texto": "8,4 dB",
+        "correta": false,
+        "explicacao": "−8,4 dBm é a potência que chegou, não a perda."
+      }
+    ],
+    "fontes": [
+      "foa-db"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "06-01-q3",
+    "licao": "06-01",
+    "enunciado": "Por que a perda medida com referência de 1 cordão é a que vai contra o orçamento de perda do enlace?",
+    "alternativas": [
+      {
+        "texto": "Porque inclui as conexões das duas pontas, além da fibra e das emendas.",
+        "correta": true,
+        "explicacao": "Certo. Com cordões de lançamento e de recepção, o teste mede o enlace incluindo os conectores de cada ponta (FOA)."
+      },
+      {
+        "texto": "Porque tira os conectores da conta.",
+        "correta": false,
+        "explicacao": "É o contrário: as duas pontas entram na medida."
+      },
+      {
+        "texto": "Porque mede só a fibra, em dB/km.",
+        "correta": false,
+        "explicacao": "O dB/km sai da inclinação do traço no OTDR, não da perda de inserção."
+      },
+      {
+        "texto": "Porque não depende do comprimento de onda.",
+        "correta": false,
+        "explicacao": "A perda muda com a λ; mede-se em cada λ pedida."
+      }
+    ],
+    "fontes": [
+      "foa-perda-insercao"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-01-q4",
+    "licao": "06-01",
+    "enunciado": "O fornecedor mandou a perda total do enlace tirada só do OTDR, sem teste com fonte e medidor. O que dizer?",
+    "alternativas": [
+      {
+        "texto": "Que basta somar os picos do traço.",
+        "correta": false,
+        "explicacao": "Pico é reflexão, não perda."
+      },
+      {
+        "texto": "Que vale, desde que seja em 1625 nm.",
+        "correta": false,
+        "explicacao": "O comprimento de onda não muda isso."
+      },
+      {
+        "texto": "Que o OTDR substitui o power meter em qualquer caso.",
+        "correta": false,
+        "explicacao": "A FOA diz o contrário."
+      },
+      {
+        "texto": "Que falta a perda de inserção: o OTDR não deve ser usado para medi-la; essa tarefa é da fonte com o medidor.",
+        "correta": true,
+        "explicacao": "Certo. É a orientação da FOA. Peça o teste com fonte e medidor, além dos traços."
+      }
+    ],
+    "fontes": [
+      "foa-otdr"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-01-q5",
+    "licao": "06-01",
+    "enunciado": "Numa rede com GPON e XGS-PON na mesma fibra, você mede a potência na casa do cliente com um power meter comum. O que acontece?",
+    "alternativas": [
+      {
+        "texto": "O medidor mostra só o GPON.",
+        "correta": false,
+        "explicacao": "Ele não separa os comprimentos de onda."
+      },
+      {
+        "texto": "O medidor mostra a soma de 1490 e 1577 nm, sem separar os dois sistemas.",
+        "correta": true,
+        "explicacao": "Certo. Para medir cada um, use um medidor PON seletivo, com filtros para 1490 e 1577 nm (FOA)."
+      },
+      {
+        "texto": "O medidor mostra só o XGS-PON.",
+        "correta": false,
+        "explicacao": "Ele não separa os comprimentos de onda."
+      },
+      {
+        "texto": "O medidor não funciona em fibra com PON.",
+        "correta": false,
+        "explicacao": "Ele mede, mas mostra a soma de tudo o que chega."
+      }
+    ],
+    "fontes": [
+      "foa-pon-meter"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-01-q6",
+    "licao": "06-01",
+    "enunciado": "Dois técnicos mediram o mesmo enlace e acharam valores quase 1 dB diferentes. Um usou referência de 1 cordão; o outro, de 2 cordões. O que conferir primeiro?",
+    "alternativas": [
+      {
+        "texto": "A cor da capa do cabo.",
+        "correta": false,
+        "explicacao": "A cor não muda a medida."
+      },
+      {
+        "texto": "Nada: diferença de 1 dB é normal em qualquer caso.",
+        "correta": false,
+        "explicacao": "Pode ser método, cordão sujo ou gasto. Tem de investigar."
+      },
+      {
+        "texto": "O método de referência: 1, 2 ou 3 cordões dão resultados diferentes e o método tem de estar no relatório.",
+        "correta": true,
+        "explicacao": "Certo. A FOA alerta que o método muda bastante o resultado."
+      },
+      {
+        "texto": "A hora do dia em que mediram.",
+        "correta": false,
+        "explicacao": "A hora não explica a diferença; o método explica."
+      }
+    ],
+    "fontes": [
+      "foa-perda-insercao"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "06-01-q7",
+    "licao": "06-01",
+    "enunciado": "Você acabou de ligar a fonte e já quer zerar o medidor. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Esperar a fonte estabilizar e só então zerar.",
+        "correta": true,
+        "explicacao": "Certo. O guia da Fluke pede pelo menos 5 minutos antes de gravar a referência."
+      },
+      {
+        "texto": "Zerar na hora, porque a fonte não varia.",
+        "correta": false,
+        "explicacao": "A potência varia até estabilizar, e a referência sai errada."
+      },
+      {
+        "texto": "Zerar duas vezes seguidas para compensar.",
+        "correta": false,
+        "explicacao": "Não compensa: a fonte continua variando."
+      },
+      {
+        "texto": "Medir sem zerar.",
+        "correta": false,
+        "explicacao": "Sem referência, o número não é perda."
+      }
+    ],
+    "fontes": [
+      "fluke-1-cordao"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "06-01-q8",
+    "licao": "06-01",
+    "enunciado": "O cordão de referência, já gasto, mostra 0,6 dB de perda num teste. Dá para usar?",
+    "alternativas": [
+      {
+        "texto": "Sim, é só descontar 0,6 dB depois.",
+        "correta": false,
+        "explicacao": "Cordão ruim deixa o resultado incerto. Troque e refaça a referência."
+      },
+      {
+        "texto": "Sim, se limpar a capa do cordão.",
+        "correta": false,
+        "explicacao": "Limpar a capa não muda a perda do conector."
+      },
+      {
+        "texto": "Sim, desde que seja em 1550 nm.",
+        "correta": false,
+        "explicacao": "A λ não resolve um cordão gasto."
+      },
+      {
+        "texto": "Não: troque. A FOA cita 0,2 dB para cordão de referência monomodo e manda trocar o que passa de 0,5 dB.",
+        "correta": true,
+        "explicacao": "Certo. O cordão faz parte da medida."
+      }
+    ],
+    "fontes": [
+      "foa-perda-insercao"
+    ],
+    "dificuldade": 2
+  }
+]

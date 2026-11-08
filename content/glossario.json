@@ -464,6 +464,7 @@
       "fluke-tia5683d"
     ],
     "licoes": [
+      "04-05",
       "09-05"
     ],
     "en": "Loss budget"
@@ -801,7 +802,10 @@
       "intelbras-xfsd"
     ],
     "licoes": [
-      "02-07"
+      "02-07",
+      "04-01",
+      "04-03",
+      "04-05"
     ],
     "en": "Splitter"
   },
@@ -813,7 +817,8 @@
       "fs-gpon-onu-bplus"
     ],
     "licoes": [
-      "02-07"
+      "02-07",
+      "04-05"
     ],
     "en": "Receiver sensitivity"
   },
@@ -825,7 +830,8 @@
       "fs-gpon-onu-bplus"
     ],
     "licoes": [
-      "02-07"
+      "02-07",
+      "04-05"
     ],
     "en": "Receiver overload"
   },
@@ -838,7 +844,8 @@
       "foa-loss-budget"
     ],
     "licoes": [
-      "02-07"
+      "02-07",
+      "04-05"
     ],
     "en": "Power budget"
   },
@@ -1181,7 +1188,8 @@
       "intelbras-infografico-ftth"
     ],
     "licoes": [
-      "03-07"
+      "03-07",
+      "04-01"
     ]
   },
   {
@@ -1205,7 +1213,8 @@
       "intelbras-infografico-ftth"
     ],
     "licoes": [
-      "03-07"
+      "03-07",
+      "04-01"
     ]
   },
   {
@@ -1217,7 +1226,8 @@
       "intelbras-infografico-ftth"
     ],
     "licoes": [
-      "03-07"
+      "03-07",
+      "04-01"
     ]
   },
   {
@@ -1230,7 +1240,8 @@
       "intelbras-infografico-ftth"
     ],
     "licoes": [
-      "03-07"
+      "03-07",
+      "04-01"
     ]
   },
   {
@@ -1242,7 +1253,8 @@
       "intelbras-infografico-ftth"
     ],
     "licoes": [
-      "03-07"
+      "03-07",
+      "04-01"
     ]
   },
   {
@@ -1254,7 +1266,8 @@
       "nazda-pto"
     ],
     "licoes": [
-      "03-07"
+      "03-07",
+      "04-01"
     ]
   },
   {
@@ -1485,6 +1498,82 @@
     ],
     "licoes": [
       "05-04"
+    ]
+  },
+  {
+    "id": "olt",
+    "pt": "Terminal de linha óptico",
+    "en": "Optical Line Terminal",
+    "sigla": "OLT",
+    "definicao": "Equipamento ativo instalado na subestação, POP ou central que comanda a rede PON, transmitindo downstream em 1490 nm e recebendo upstream em 1310 nm.",
+    "fontes": [
+      "itu-g984-folheto",
+      "itu-g9842-2019",
+      "intelbras-infografico-ftth"
+    ],
+    "licoes": [
+      "04-01",
+      "04-05"
+    ]
+  },
+  {
+    "id": "onu",
+    "pt": "Unidade de rede óptica",
+    "en": "Optical Network Unit",
+    "sigla": "ONU",
+    "definicao": "Equipamento ativo do usuário final ou subunidade da distribuidora que recebe downstream e transmite upstream em rajadas TDMA, convertendo o sinal óptico em Ethernet.",
+    "fontes": [
+      "itu-g984-folheto",
+      "itu-g9842-2019",
+      "fs-gpon-onu-bplus"
+    ],
+    "licoes": [
+      "04-01",
+      "04-05"
+    ]
+  },
+  {
+    "id": "odn",
+    "pt": "Rede de distribuição óptica",
+    "en": "Optical Distribution Network",
+    "sigla": "ODN",
+    "definicao": "Planta óptica totalmente passiva entre a OLT e as ONUs, composta por cabos alimentadores, de distribuição e drop, emendas, conectores, DIOs, CEOs, CTOs e splitters.",
+    "fontes": [
+      "itu-g9842-2019",
+      "intelbras-infografico-ftth"
+    ],
+    "licoes": [
+      "04-01",
+      "04-05"
+    ]
+  },
+  {
+    "id": "splitter-balanceado",
+    "pt": "Divisor óptico balanceado (PLC)",
+    "en": "Balanced PLC splitter",
+    "definicao": "Componente passivo baseado em circuito planar de ondas de luz (PLC) que divide a potência de entrada igualmente entre N saídas (1:2 até 1:64), com perda teórica de 10·log₁₀(N) dB.",
+    "fontes": [
+      "intelbras-splitter-plc",
+      "senko-plc",
+      "fs-plc"
+    ],
+    "licoes": [
+      "04-03"
+    ]
+  },
+  {
+    "id": "classe-bplus",
+    "pt": "GPON Classe B+",
+    "en": "GPON Class B+",
+    "sigla": "B+",
+    "definicao": "Classe de transceptor mais usada em GPON (ITU-T G.984.2): OLT transmite de +1,5 a +5,0 dBm e a ONU possui sensibilidade de −27 dBm e sobrecarga de −8 dBm, suportando atenuação de 13 a 28 dB na ODN.",
+    "fontes": [
+      "itu-g9842-2019",
+      "fs-gpon-olt-sfp",
+      "fs-gpon-onu-bplus"
+    ],
+    "licoes": [
+      "04-05"
     ]
   }
 ]

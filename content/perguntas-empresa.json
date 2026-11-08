@@ -283,7 +283,9 @@
     "dica": "Projeto executivo ou memorial de cálculo da rede",
     "licoes": [
       "02-06",
-      "02-07"
+      "02-07",
+      "04-03",
+      "04-05"
     ]
   },
   {
@@ -376,6 +378,8 @@
     "dica": "Almoxarifado",
     "licoes": [
       "03-05",
+      "04-01",
+      "04-03",
       "04-06",
       "02-04",
       "03-07",
@@ -507,6 +511,7 @@
     "texto": "A rede para as unidades é ponto a ponto (SFP) ou tem PON?",
     "dica": "",
     "licoes": [
+      "04-01",
       "04-06",
       "02-05"
     ]

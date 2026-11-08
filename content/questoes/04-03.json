@@ -1,0 +1,261 @@
+[
+  {
+    "id": "04-03-q1",
+    "licao": "04-03",
+    "enunciado": "Qual é a fórmula matemática para calcular a perda teórica por divisão de potência óptica pura em decibéis para um divisor balanceado com N saídas?",
+    "alternativas": [
+      {
+        "texto": "Perda (dB) = N · 3,01 dB",
+        "correta": false,
+        "explicacao": "Multiplicar N por 3 geraria números absurdos (ex.: 8 × 3 = 24 dB para 1:8 em vez de 9 dB); a relação é logarítmica."
+      },
+      {
+        "texto": "Perda teórica (dB) = 10 · log₁₀(N)",
+        "correta": true,
+        "explicacao": "Certo. Como a potência é fracionada em 1/N, a atenuação em dB é dada por −10 · log₁₀(1/N) = 10 · log₁₀(N)."
+      },
+      {
+        "texto": "Perda (dB) = N / 10",
+        "correta": false,
+        "explicacao": "A conversão para escala logarítmica exige o uso da função logaritmo na base 10 multiplicada por 10."
+      },
+      {
+        "texto": "Perda (dB) = 10 · ln(N) / 2",
+        "correta": false,
+        "explicacao": "A fórmula padrão em telecomunicações utiliza logaritmo na base 10 (log₁₀), não o logaritmo natural."
+      }
+    ],
+    "fontes": [
+      "intelbras-splitter-plc",
+      "senko-plc"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "04-03-q2",
+    "licao": "04-03",
+    "enunciado": "Quais são as perdas teóricas ideais por divisão pura para os splitters balanceados 1:2, 1:4 e 1:8, considerando apenas a física da divisão de potência?",
+    "alternativas": [
+      {
+        "texto": "1:2 = 1,0 dB; 1:4 = 2,0 dB; 1:8 = 3,0 dB.",
+        "correta": false,
+        "explicacao": "Valores muito baixos; cada divisão pela metade reduz 50% da potência, o que equivale a ~3,01 dB em escala logarítmica."
+      },
+      {
+        "texto": "1:2 ≈ 3,01 dB; 1:4 ≈ 6,02 dB; 1:8 ≈ 9,03 dB.",
+        "correta": true,
+        "explicacao": "Certo. 10·log₁₀(2) ≈ 3,01 dB; 10·log₁₀(4) = 10·log₁₀(2²) ≈ 6,02 dB; 10·log₁₀(8) = 10·log₁₀(2³) ≈ 9,03 dB."
+      },
+      {
+        "texto": "1:2 = 4,5 dB; 1:4 = 9,0 dB; 1:8 = 18,0 dB.",
+        "correta": false,
+        "explicacao": "Esses valores são muito superiores à perda física intrínseca de divisão de potência óptica."
+      },
+      {
+        "texto": "1:2 = 0,5 dB; 1:4 = 1,5 dB; 1:8 = 3,5 dB.",
+        "correta": false,
+        "explicacao": "A lei da conservação de energia impõe que metade da potência corresponde a −3 dBm em relação à entrada."
+      }
+    ],
+    "fontes": [
+      "intelbras-splitter-plc",
+      "senko-plc"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "04-03-q3",
+    "licao": "04-03",
+    "enunciado": "Qual é a perda teórica pura de inserção de um splitter óptico balanceado 1:64 em decibéis?",
+    "alternativas": [
+      {
+        "texto": "Aproximadamente 12,04 dB.",
+        "correta": false,
+        "explicacao": "12,04 dB é a perda teórica de um divisor 1:16 (2⁴)."
+      },
+      {
+        "texto": "Aproximadamente 15,05 dB.",
+        "correta": false,
+        "explicacao": "15,05 dB é a perda teórica de um divisor 1:32 (2⁵)."
+      },
+      {
+        "texto": "Aproximadamente 18,06 dB.",
+        "correta": true,
+        "explicacao": "Certo. Como 64 = 2⁶, temos 10 · log₁₀(64) = 10 · 6 · log₁₀(2) ≈ 60 · 0,30103 ≈ 18,06 dB."
+      },
+      {
+        "texto": "Aproximadamente 24,08 dB.",
+        "correta": false,
+        "explicacao": "24,08 dB seria a perda teórica de um divisor 1:256 (2⁸)."
+      }
+    ],
+    "fontes": [
+      "senko-plc",
+      "fs-plc"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "04-03-q4",
+    "licao": "04-03",
+    "enunciado": "Por que a atenuação de inserção real indicada nas fichas técnicas dos fabricantes é sempre maior do que a perda teórica ideal calculada pela fórmula?",
+    "alternativas": [
+      {
+        "texto": "Porque a norma ITU-T exige aplicar um imposto em decibéis sobre componentes ópticos importados.",
+        "correta": false,
+        "explicacao": "Decibéis são unidades físicas de medida de atenuação de potência, sem relação com tributos fiscais."
+      },
+      {
+        "texto": "Porque os guias de onda de sílica apresentam imperfeições físicas (perda em excesso por espalhamento e absorção) e somam-se as perdas dos conectores ópticos de entrada e saída.",
+        "correta": true,
+        "explicacao": "Certo. Conforme documentado pela SENKO e FS, o chip planar possui perda em excesso interna (~0,5 a 1,0 dB) mais a perda por inserção dos conectores SC/APC (0,2 a 0,3 dB cada)."
+      },
+      {
+        "texto": "Porque os splitters PLC possuem resistores elétricos internos para dissipar a luz em calor.",
+        "correta": false,
+        "explicacao": "Splitters são componentes puramente ópticos e passivos, sem resistores elétricos."
+      },
+      {
+        "texto": "Porque o sinal óptico precisa recarregar a bateria interna do chip do divisor.",
+        "correta": false,
+        "explicacao": "Splitters não possuem baterias nem circuitos eletrônicos."
+      }
+    ],
+    "fontes": [
+      "intelbras-splitter-plc",
+      "senko-plc",
+      "fs-plc"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "04-03-q5",
+    "licao": "04-03",
+    "enunciado": "Consultando os datasheets de fabricantes consagrados (Intelbras, SENKO e FS), quais são os valores MÁXIMOS típicos de perda de inserção para splitters conectorizados 1:8 e 1:16 com SC/APC?",
+    "alternativas": [
+      {
+        "texto": "1:8 máximo de 9,0 dB e 1:16 máximo de 12,0 dB.",
+        "correta": false,
+        "explicacao": "Esses são os valores teóricos ideais puros sem conectores nem perda em excesso, nunca alcançados em catálogo com conectores."
+      },
+      {
+        "texto": "1:8 máximo de 10,5 a 10,7 dB e 1:16 máximo de 13,7 a 13,9 dB.",
+        "correta": true,
+        "explicacao": "Certo. A ficha técnica da Intelbras e SENKO especifica perda máxima de 10,5 a 10,7 dB para 1:8 e 13,7 a 13,9 dB para 1:16 com conectores SC/APC."
+      },
+      {
+        "texto": "1:8 máximo de 15,0 dB e 1:16 máximo de 20,0 dB.",
+        "correta": false,
+        "explicacao": "Valores excessivamente altos; um splitter 1:8 com 15 dB de perda estaria defeituoso ou danificado."
+      },
+      {
+        "texto": "1:8 máximo de 3,0 dB e 1:16 máximo de 6,0 dB.",
+        "correta": false,
+        "explicacao": "Valores fisicamente impossíveis pela conservação da energia na divisão em 8 ou 16 portas."
+      }
+    ],
+    "fontes": [
+      "intelbras-splitter-plc",
+      "senko-plc",
+      "fs-plc"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "04-03-q6",
+    "licao": "04-03",
+    "enunciado": "O que significa o parâmetro de uniformidade (uniformity) presente nas especificações de splitters balanceados PLC?",
+    "alternativas": [
+      {
+        "texto": "A temperatura máxima que a carcaça de alumínio suporta sob o sol direto de Roraima.",
+        "correta": false,
+        "explicacao": "Essa é a faixa de temperatura de operação ambiental, não a uniformidade óptica."
+      },
+      {
+        "texto": "A diferença máxima de perda de inserção entre a porta com menor atenuação e a porta com maior atenuação do mesmo divisor.",
+        "correta": true,
+        "explicacao": "Certo. Conforme as fichas da SENKO e Intelbras, a uniformidade mede o equilíbrio entre as saídas, devendo ser inferior a 0,8–1,5 dB nos modelos balanceados."
+      },
+      {
+        "texto": "O tempo que o conector SC/APC demora para desbotar a cor verde.",
+        "correta": false,
+        "explicacao": "Uniformidade é uma métrica óptica de equilíbrio de potência entre saídas, sem relação com pigmentação plástica."
+      },
+      {
+        "texto": "A quantidade de clientes conectados que usam a mesma velocidade de internet.",
+        "correta": false,
+        "explicacao": "Uniformidade óptica refere-se exclusivamente à propagação dos fótons nos canais do chip PLC."
+      }
+    ],
+    "fontes": [
+      "intelbras-splitter-plc",
+      "senko-plc"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "04-03-q7",
+    "licao": "04-03",
+    "enunciado": "Ao calcular o orçamento de potência óptica de um projeto de rede FTTH, qual valor de atenuação do splitter deve ser adotado pelo projetista?",
+    "alternativas": [
+      {
+        "texto": "O valor teórico ideal (ex.: 9,03 dB para 1:8), para mostrar que o projeto é econômico.",
+        "correta": false,
+        "explicacao": "Usar o valor teórico subdimensiona a perda; em campo o splitter real atenuará mais e o link pode reprovar no aceite."
+      },
+      {
+        "texto": "O valor máximo garantido pela ficha técnica do fabricante com conectores (ex.: 10,5 ou 10,7 dB para 1:8).",
+        "correta": true,
+        "explicacao": "Certo. O projeto deve sempre trabalhar no pior cenário homologado (pior porta da ficha com conector) para garantir viabilidade e estabilidade futura."
+      },
+      {
+        "texto": "Zero dB, pois a luz viaja no vácuo dos guias de onda do chip óptico.",
+        "correta": false,
+        "explicacao": "A divisão física de fótons entre múltiplos caminhos reduz a potência obrigatoriamente."
+      },
+      {
+        "texto": "A média entre a perda teórica e a perda de um cabo drop de 100 metros.",
+        "correta": false,
+        "explicacao": "A perda do splitter é independente da atenuação do cabo drop; ambos devem ser somados individualmente."
+      }
+    ],
+    "fontes": [
+      "intelbras-splitter-plc",
+      "senko-plc",
+      "fs-plc"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "04-03-q8",
+    "licao": "04-03",
+    "enunciado": "Como se comporta a atenuação de um divisor balanceado PLC quando o comprimento de onda da luz varia entre 1310 nm (upstream), 1490 nm (downstream GPON) e 1550 nm (downstream de vídeo)?",
+    "alternativas": [
+      {
+        "texto": "O splitter atenua 18 dB em 1310 nm e apenas 1 dB em 1550 nm por causa da cor da luz.",
+        "correta": false,
+        "explicacao": "O chip PLC não apresenta comportamento ressonante com variações drásticas dessa magnitude."
+      },
+      {
+        "texto": "Apresenta resposta espectral plana e praticamente constante (banda larga de 1260 a 1650 nm), atenuando valores quase idênticos em 1310, 1490 e 1550 nm.",
+        "correta": true,
+        "explicacao": "Certo. Conforme as especificações técnicas da Intelbras e FS, os splitters PLC são componentes de banda ultralarga (*broadband*), mantendo a mesma perda nas janelas de operação da rede PON."
+      },
+      {
+        "texto": "Bloqueia completamente sinais acima de 1500 nm por efeito fotoelétrico reverso.",
+        "correta": false,
+        "explicacao": "Splitters PLC operam com transmissão contínua de 1260 até 1650 nm, sendo transparentes ao sinal de 1550 nm e 1577 nm (XGS-PON)."
+      },
+      {
+        "texto": "O splitter derrete se receber luz simultânea em dois comprimentos de onda distintos.",
+        "correta": false,
+        "explicacao": "A multiplexação por comprimento de onda (WDM) é o princípio nativo das redes PON sobre a mesma fibra e divisor."
+      }
+    ],
+    "fontes": [
+      "intelbras-splitter-plc",
+      "fs-plc"
+    ],
+    "dificuldade": 2
+  }
+]

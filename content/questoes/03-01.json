@@ -1,0 +1,254 @@
+[
+  {
+    "id": "03-01-q1",
+    "licao": "03-01",
+    "enunciado": "No poste, a capa do cabo diz CFOA-SM-AS80-S 12FO NR. Quantas fibras ele tem?",
+    "alternativas": [
+      {
+        "texto": "80.",
+        "correta": false,
+        "explicacao": "80 é o vão do autossustentado (AS80), em metros."
+      },
+      {
+        "texto": "12.",
+        "correta": true,
+        "explicacao": "Certo. O número antes de FO é o de fibras."
+      },
+      {
+        "texto": "1, porque é SM.",
+        "correta": false,
+        "explicacao": "SM diz o tipo da fibra (monomodo), não a quantidade."
+      },
+      {
+        "texto": "Não dá para saber pela capa.",
+        "correta": false,
+        "explicacao": "Dá: a quantidade vem logo antes de FO."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-01-q2",
+    "licao": "03-01",
+    "enunciado": "O que o AS80 diz sobre o cabo?",
+    "alternativas": [
+      {
+        "texto": "Que é autossustentado, feito para vão de até 80 m.",
+        "correta": true,
+        "explicacao": "Certo. Também existem AS120 e AS200."
+      },
+      {
+        "texto": "Que tem 80 fibras.",
+        "correta": false,
+        "explicacao": "As fibras vêm antes de FO (12FO = 12 fibras)."
+      },
+      {
+        "texto": "Que a bobina tem 80 km.",
+        "correta": false,
+        "explicacao": "O comprimento sai da marcação de metro, não do AS."
+      },
+      {
+        "texto": "Que a fibra perde 0,80 dB/km.",
+        "correta": false,
+        "explicacao": "A atenuação está na ficha, não na sigla."
+      }
+    ],
+    "fontes": [
+      "transcend-as"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-01-q3",
+    "licao": "03-01",
+    "enunciado": "Na gravação, o que quer dizer o S logo depois do AS80?",
+    "alternativas": [
+      {
+        "texto": "Monomodo (single).",
+        "correta": false,
+        "explicacao": "O monomodo é o SM, logo depois do CFOA."
+      },
+      {
+        "texto": "Subterrâneo.",
+        "correta": false,
+        "explicacao": "Cabo de duto leva DD no lugar do AS."
+      },
+      {
+        "texto": "Núcleo seco; G seria geleado.",
+        "correta": true,
+        "explicacao": "Certo. No núcleo seco, a umidade é barrada sem gel."
+      },
+      {
+        "texto": "Que a capa é retardante à chama.",
+        "correta": false,
+        "explicacao": "A classe da capa vem no fim: NR ou RC."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-01-q4",
+    "licao": "03-01",
+    "enunciado": "Um colega diz que o NR no fim da gravação é de NR-10. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Que ele tem razão: o cabo foi aprovado pela NR-10.",
+        "correta": false,
+        "explicacao": "A NR-10 trata de segurança em serviços com eletricidade; não aprova cabo."
+      },
+      {
+        "texto": "Que NR quer dizer \"não reflete\", porque o conector é APC.",
+        "correta": false,
+        "explicacao": "O polimento do conector não aparece na gravação da capa."
+      },
+      {
+        "texto": "Que NR quer dizer \"núcleo reforçado\".",
+        "correta": false,
+        "explicacao": "O núcleo aparece no S ou G (seco ou geleado)."
+      },
+      {
+        "texto": "Que é a classe da capa: NR normal, RC retardante à chama.",
+        "correta": true,
+        "explicacao": "Certo, pelas fichas da Prysmian. Não tem relação com a NR-10."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as",
+      "prysmian-duto"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-01-q5",
+    "licao": "03-01",
+    "enunciado": "Você vai cortar um trecho. Numa ponta a capa marca 00840 M; na outra, 01495 M. Quanto cabo tem o trecho?",
+    "alternativas": [
+      {
+        "texto": "655 m.",
+        "correta": true,
+        "explicacao": "Certo: 1495 − 840 = 655. A marcação muda de 1 em 1 metro."
+      },
+      {
+        "texto": "2335 m.",
+        "correta": false,
+        "explicacao": "Isso é a soma. O comprimento é a diferença."
+      },
+      {
+        "texto": "1495 m.",
+        "correta": false,
+        "explicacao": "Esse é só o valor de uma das marcações; falta descontar a outra."
+      },
+      {
+        "texto": "840 m.",
+        "correta": false,
+        "explicacao": "Também é só uma das marcações."
+      }
+    ],
+    "fontes": [
+      "transcend-as",
+      "prysmian-duto"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-01-q6",
+    "licao": "03-01",
+    "enunciado": "O cabo tem 9 mm de diâmetro. Qual o raio mínimo de curvatura enquanto você puxa?",
+    "alternativas": [
+      {
+        "texto": "90 mm.",
+        "correta": false,
+        "explicacao": "Esse é o raio depois de instalado (10 × o diâmetro)."
+      },
+      {
+        "texto": "9 mm.",
+        "correta": false,
+        "explicacao": "Seria dobrar o cabo quase sobre ele mesmo."
+      },
+      {
+        "texto": "20 mm.",
+        "correta": false,
+        "explicacao": "O 20 é o multiplicador, não o raio."
+      },
+      {
+        "texto": "180 mm.",
+        "correta": true,
+        "explicacao": "Certo: 20 × 9 mm, pelas fichas consultadas."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as",
+      "transcend-as"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-01-q7",
+    "licao": "03-01",
+    "enunciado": "Qual a diferença entre um CFOA-SM-AS80 e um CFOA-SM-DD?",
+    "alternativas": [
+      {
+        "texto": "O DD tem o dobro de fibras.",
+        "correta": false,
+        "explicacao": "O número de fibras vem antes de FO."
+      },
+      {
+        "texto": "O AS é aéreo autossustentado; o DD é para duto (duto dielétrico).",
+        "correta": true,
+        "explicacao": "Certo. AS e DD dizem o tipo de instalação."
+      },
+      {
+        "texto": "O AS é multimodo e o DD, monomodo.",
+        "correta": false,
+        "explicacao": "Os dois são SM, monomodo."
+      },
+      {
+        "texto": "Nenhuma: são só nomes de fabricantes diferentes.",
+        "correta": false,
+        "explicacao": "A mesma Prysmian faz os dois; a sigla diz onde o cabo vai."
+      }
+    ],
+    "fontes": [
+      "prysmian-duto",
+      "transcend-as"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-01-q8",
+    "licao": "03-01",
+    "enunciado": "Pelas marcações da capa, há 1200 m de cabo entre duas caixas. O OTDR mostra o fim da fibra em 1212 m. O que pensar?",
+    "alternativas": [
+      {
+        "texto": "Que há uma quebra no meio do cabo.",
+        "correta": false,
+        "explicacao": "A quebra apareceria antes do fim, não depois."
+      },
+      {
+        "texto": "Que o OTDR está descalibrado.",
+        "correta": false,
+        "explicacao": "Uns 12 m a mais em 1200 m é a folga normal da fibra."
+      },
+      {
+        "texto": "Que está dentro do esperado: a fibra tem cerca de 1% a mais que o cabo.",
+        "correta": true,
+        "explicacao": "Certo. A fibra fica com folga dentro do tubo; a FOA fala em cerca de 1%."
+      },
+      {
+        "texto": "Que a gravação da capa está errada.",
+        "correta": false,
+        "explicacao": "A capa mede o cabo; o OTDR mede a fibra, que é um pouco mais longa."
+      }
+    ],
+    "fontes": [
+      "foa-otdr"
+    ],
+    "dificuldade": 3
+  }
+]

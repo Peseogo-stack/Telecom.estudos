@@ -571,6 +571,20 @@ a.item-lista:hover {
   text-decoration: underline dotted;
   text-underline-offset: 3px;
 }
+.prosa a.link-ferramenta {
+  font-weight: 700;
+}
+/* Citação curta (ex.: o modelo de gravação de um cabo, copiado da ficha) */
+.prosa blockquote {
+  margin: 12px 0;
+  padding: 8px 12px;
+  border-left: 4px solid var(--royal);
+  background: var(--superficie-2);
+  border-radius: 6px;
+}
+.prosa blockquote p {
+  margin: 0;
+}
 .tabela {
   overflow-x: auto;
   margin: 12px 0;
@@ -760,6 +774,39 @@ a.item-lista:hover {
   fill: var(--superficie);
   stroke: var(--royal);
   stroke-width: 2;
+}
+/* Cabos, tubos e conectores (módulo 3). As cores das fibras e dos conectores são fixas (são cores físicas). */
+.d-capa-cabo {
+  fill: #141821;
+  stroke: var(--texto-suave);
+  stroke-width: 1;
+}
+.d-texto-capa {
+  fill: #f8fafc;
+  font-weight: 700;
+  font-family: inherit;
+}
+.d-amostra {
+  stroke: var(--texto-suave);
+  stroke-width: 1.2;
+}
+.d-ferrolho {
+  fill: #e5e7eb;
+  stroke: var(--texto-suave);
+  stroke-width: 1.2;
+}
+.d-nucleo {
+  stroke: var(--royal);
+  stroke-width: 3;
+}
+.d-reflexao {
+  stroke: var(--erro);
+  stroke-width: 2;
+  stroke-dasharray: 5 3;
+  fill: none;
+}
+.d-reflexao-ponta {
+  fill: var(--erro);
 }
 .traco-otdr {
   display: block;

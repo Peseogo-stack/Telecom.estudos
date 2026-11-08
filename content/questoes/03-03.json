@@ -1,0 +1,254 @@
+[
+  {
+    "id": "03-03-q1",
+    "licao": "03-03",
+    "enunciado": "Num cabo nacional, qual é a cor da fibra 1 do tubo?",
+    "alternativas": [
+      {
+        "texto": "Azul.",
+        "correta": false,
+        "explicacao": "Azul é a fibra 1 na TIA-598; no padrão nacional, é a 4."
+      },
+      {
+        "texto": "Verde.",
+        "correta": true,
+        "explicacao": "Certo. No padrão nacional: verde, amarela, branca, azul…"
+      },
+      {
+        "texto": "Branca.",
+        "correta": false,
+        "explicacao": "Branca é a 3 no padrão nacional."
+      },
+      {
+        "texto": "Vermelha.",
+        "correta": false,
+        "explicacao": "Vermelha é a 5 no padrão nacional."
+      }
+    ],
+    "fontes": [
+      "furukawa-et02719",
+      "prysmian-cfoa-as"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-03-q2",
+    "licao": "03-03",
+    "enunciado": "Num cabo importado no padrão TIA-598, qual é a fibra 1?",
+    "alternativas": [
+      {
+        "texto": "A azul.",
+        "correta": true,
+        "explicacao": "Certo. A TIA começa por azul, laranja, verde, marrom."
+      },
+      {
+        "texto": "A verde.",
+        "correta": false,
+        "explicacao": "Verde é a 1 no padrão nacional e a 3 na TIA."
+      },
+      {
+        "texto": "A laranja.",
+        "correta": false,
+        "explicacao": "Laranja é a 2 na TIA."
+      },
+      {
+        "texto": "A branca.",
+        "correta": false,
+        "explicacao": "Branca é a 6 na TIA."
+      }
+    ],
+    "fontes": [
+      "foa-cores"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-03-q3",
+    "licao": "03-03",
+    "enunciado": "Num tubo de cabo nacional, você precisa da fibra 9. Que cor procurar?",
+    "alternativas": [
+      {
+        "texto": "Amarela.",
+        "correta": false,
+        "explicacao": "Amarela é a 9 na TIA; no padrão nacional, é a 2."
+      },
+      {
+        "texto": "Cinza.",
+        "correta": false,
+        "explicacao": "Cinza é a 10 no padrão nacional."
+      },
+      {
+        "texto": "Preta.",
+        "correta": true,
+        "explicacao": "Certo: 9 = preta no padrão nacional."
+      },
+      {
+        "texto": "Rosa.",
+        "correta": false,
+        "explicacao": "Rosa é a 8 no padrão nacional."
+      }
+    ],
+    "fontes": [
+      "furukawa-et02719"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-03-q4",
+    "licao": "03-03",
+    "enunciado": "Num cabo nacional, a fibra azul é a de número…",
+    "alternativas": [
+      {
+        "texto": "1.",
+        "correta": false,
+        "explicacao": "Só na TIA o azul é a 1."
+      },
+      {
+        "texto": "12.",
+        "correta": false,
+        "explicacao": "A 12 é a azul-claro (ou acqua)."
+      },
+      {
+        "texto": "3.",
+        "correta": false,
+        "explicacao": "A 3 é a branca no padrão nacional."
+      },
+      {
+        "texto": "4.",
+        "correta": true,
+        "explicacao": "Certo: verde, amarela, branca, azul."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-03-q5",
+    "licao": "03-03",
+    "enunciado": "O mapa de fusão manda emendar a fibra 1 de um cabo nacional na fibra 1 de um cabo TIA-598. Que cores vão juntas?",
+    "alternativas": [
+      {
+        "texto": "Verde com verde.",
+        "correta": false,
+        "explicacao": "Assim você liga a fibra 1 na fibra 3 da TIA."
+      },
+      {
+        "texto": "Azul com azul.",
+        "correta": false,
+        "explicacao": "Assim você liga a fibra 4 do cabo nacional na 1 da TIA."
+      },
+      {
+        "texto": "Tanto faz, desde que anote.",
+        "correta": false,
+        "explicacao": "Não: cada fibra tem que ir onde o mapa manda."
+      },
+      {
+        "texto": "Verde com azul.",
+        "correta": true,
+        "explicacao": "Certo: a 1 é verde no padrão nacional e azul na TIA. Quem manda é o número."
+      }
+    ],
+    "fontes": [
+      "furukawa-et02719",
+      "foa-cores"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "03-03-q6",
+    "licao": "03-03",
+    "enunciado": "Por que não dá para emendar \"cor com cor\" entre um cabo nacional e um TIA-598?",
+    "alternativas": [
+      {
+        "texto": "Porque as fibras TIA são multimodo.",
+        "correta": false,
+        "explicacao": "O código de cores não diz se a fibra é monomodo ou multimodo."
+      },
+      {
+        "texto": "Porque as mesmas cores ficam em posições diferentes: a cor não diz o número.",
+        "correta": true,
+        "explicacao": "Certo. Verde é a 1 num padrão e a 3 no outro."
+      },
+      {
+        "texto": "Porque a fusão entre fibras de cores diferentes perde mais.",
+        "correta": false,
+        "explicacao": "A cor está no revestimento, que sai antes da fusão."
+      },
+      {
+        "texto": "Porque a TIA usa só 6 cores.",
+        "correta": false,
+        "explicacao": "As duas usam 12 cores."
+      }
+    ],
+    "fontes": [
+      "foa-cores",
+      "furukawa-et02719"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-03-q7",
+    "licao": "03-03",
+    "enunciado": "Qual sequência abre o padrão nacional de cores?",
+    "alternativas": [
+      {
+        "texto": "Verde, amarela, branca, azul.",
+        "correta": true,
+        "explicacao": "Certo: as cores da bandeira."
+      },
+      {
+        "texto": "Azul, laranja, verde, marrom.",
+        "correta": false,
+        "explicacao": "Essa é a abertura da TIA-598."
+      },
+      {
+        "texto": "Branca, preta, vermelha, verde.",
+        "correta": false,
+        "explicacao": "Não é a ordem de nenhum dos dois padrões."
+      },
+      {
+        "texto": "Vermelha, verde, azul, amarela.",
+        "correta": false,
+        "explicacao": "Também não é a ordem de nenhum dos dois."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as",
+      "furukawa-et02719"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-03-q8",
+    "licao": "03-03",
+    "enunciado": "Os pigtails do DIO vêm coloridos. O que conferir antes de emendar?",
+    "alternativas": [
+      {
+        "texto": "Nada: o pigtail sempre segue o padrão do cabo.",
+        "correta": false,
+        "explicacao": "Pode não seguir. Confira na ficha."
+      },
+      {
+        "texto": "Só a cor do conector.",
+        "correta": false,
+        "explicacao": "A cor do conector diz o polimento (lição 03-07), não a ordem das fibras."
+      },
+      {
+        "texto": "Em que padrão de cores eles vêm, na ficha do DIO ou do pigtail.",
+        "correta": true,
+        "explicacao": "Certo. As fibras de 900 µm dos pigtails também seguem um código de cores."
+      },
+      {
+        "texto": "A cor da capa do cabo.",
+        "correta": false,
+        "explicacao": "A capa do cabo externo é preta e não diz a ordem das fibras."
+      }
+    ],
+    "fontes": [
+      "foa-cores"
+    ],
+    "dificuldade": 2
+  }
+]

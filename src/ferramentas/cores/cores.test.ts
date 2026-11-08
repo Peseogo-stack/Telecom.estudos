@@ -61,12 +61,13 @@ describe('fibra ↔ tubo e cor', () => {
       }
     }
   });
-  it('tubo piloto e direcional', () => {
-    const cfg: ConfigCabo = { padrao: 'abnt', modoTubos: 'piloto', fibrasPorTubo: 12, totalFibras: 144 };
-    expect(localizar(cfg, 1)!.tubo).toMatchObject({ papel: 'piloto', nome: 'Verde' });
-    expect(localizar(cfg, 13)!.tubo).toMatchObject({ papel: 'direcional', nome: 'Amarela' });
-    expect(localizar(cfg, 25)!.tubo).toMatchObject({ papel: 'normal', numero: 3 });
-    expect(totalTubos(cfg)).toBe(12);
+  it('tubo piloto e direcional (e anéis a partir do 13º tubo)', () => {
+    const cfg: ConfigCabo = { padrao: 'abnt', modoTubos: 'piloto', fibrasPorTubo: 12, totalFibras: 288 };
+    expect(localizar(cfg, 1)!.tubo).toMatchObject({ papel: 'piloto', nome: 'Verde', marcacao: '' });
+    expect(localizar(cfg, 13)!.tubo).toMatchObject({ papel: 'direcional', nome: 'Amarela', marcacao: '' });
+    expect(localizar(cfg, 25)!.tubo).toMatchObject({ papel: 'normal', numero: 3, marcacao: '' });
+    expect(localizar(cfg, 145)!.tubo).toMatchObject({ papel: 'normal', numero: 13, marcacao: 'anéis' });
+    expect(totalTubos(cfg)).toBe(24);
   });
   it('fora do cabo devolve null', () => {
     expect(localizar(cabo48, 0)).toBeNull();

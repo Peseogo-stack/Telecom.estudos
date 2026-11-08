@@ -31,6 +31,7 @@
 | a10 | Qual é a designação (ID do circuito) de cada link e onde ela está anotada? | Etiqueta no equipamento da operadora, fatura ou contrato | 09-06 |
 | a11 | A baixa tensão dos postes onde vou trabalhar é nua ou isolada (multiplexada)? | Observar do chão, sem se aproximar; confirmar com a engenharia | 10-01 |
 | a12 | Os cordões do rack e do DIO são amarelos (monomodo) ou laranja/água (multimodo)? | Cor da capa dos cordões e a gravação neles | 02-03 |
+| a13 | Os cabos da nossa rede seguem o código de cores nacional (verde, amarela, branca, azul…) ou há cabos importados no padrão TIA-598 (azul, laranja, verde…)? E os pigtails do DIO, em que ordem vêm? | Gravação da capa, ficha do fabricante, cores ao abrir uma caixa acompanhado | 03-03 |
 
 ---
 
@@ -70,7 +71,7 @@
 | c06 | A rede é própria, contratada ou mista? Que protocolo SCADA usamos? Já há IEC 61850? | Engenharia / automação | 01-01 |
 | c07 | Que requisitos de telecom do ONS valem depois da interligação ao SIN? | Engenharia | 01-06 |
 | c08 | TI e TO (tecnologia da operação) são separadas? Quem cuida da telecom operativa? | Líder de TI | 01-01 |
-| c09 | Que materiais temos em estoque (cabos, CEO, CTO, tubetes, SFP, cordões)? | Almoxarifado | 03-05, 04-06, 02-04 |
+| c09 | Que materiais temos em estoque (cabos, CEO, CTO, tubetes, SFP, cordões)? | Almoxarifado | 03-05, 04-06, 02-04, 03-07 |
 | c10 | As operadoras aplicam o RGC da Anatel aos nossos links ou só o SLA do contrato? | Jurídico | 09-02 |
 | c11 | A empresa apoia algum curso ou certificação? | RH / líder de TI | 12-02 |
 | c12 | Quando a baixa tensão é isolada (multiplexada), a empresa trata as zonas da NR-10 do mesmo jeito que na rede nua? Quem avalia se o isolamento está íntegro? | Segurança do trabalho (SESMT) | 10-01 |
@@ -99,6 +100,7 @@
 | d12 | Existe um registro de ocorrências (livro, planilha, sistema) para cada contrato? Onde fica? | 09-03 |
 | d13 | Que potências (dBm) costumamos ver nos equipamentos dos links, e a partir de quanto a equipe considera alarme? | 02-07 |
 | d14 | Que equipamentos de teste a equipe tem (OTDR, power meter, medidor PON seletivo, VFL) e que cabos de lançamento e de recepção usamos (comprimento, conector UPC ou APC)? | 06-01, 06-02 |
+| d15 | Quando o mapa de fusão liga cabos de padrões de cor diferentes, ele casa as fibras por número ou por cor? Como a equipe anota? | 03-03 |
 
 ---
 

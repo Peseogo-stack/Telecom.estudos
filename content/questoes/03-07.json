@@ -1,0 +1,252 @@
+[
+  {
+    "id": "03-07-q1",
+    "licao": "03-07",
+    "enunciado": "Você quer saber se tem luz saindo de um cordão desconectado. Como conferir?",
+    "alternativas": [
+      {
+        "texto": "Olhando de perto a ponta: se não vir nada, está apagado.",
+        "correta": false,
+        "explicacao": "A luz de telecom é infravermelha: não se vê, mesmo ligada."
+      },
+      {
+        "texto": "Com o medidor de potência, sem olhar a ponta.",
+        "correta": true,
+        "explicacao": "Certo. Nunca olhe a ponta de uma fibra sem saber se há transmissor ligado."
+      },
+      {
+        "texto": "Pela cor do conector.",
+        "correta": false,
+        "explicacao": "A cor diz o polimento, não se há luz."
+      },
+      {
+        "texto": "Apontando a ponta para a palma da mão.",
+        "correta": false,
+        "explicacao": "A luz também não aparece na mão, e o risco para o olho continua."
+      }
+    ],
+    "fontes": [
+      "foa-seguranca"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-07-q2",
+    "licao": "03-07",
+    "enunciado": "Qual destes é o conector pequeno, com ferrolho de 1,25 mm?",
+    "alternativas": [
+      {
+        "texto": "SC.",
+        "correta": false,
+        "explicacao": "O SC tem ferrolho de 2,5 mm e encaixe de empurrar e puxar."
+      },
+      {
+        "texto": "FC.",
+        "correta": false,
+        "explicacao": "O FC é de rosca, com ferrolho de 2,5 mm."
+      },
+      {
+        "texto": "LC.",
+        "correta": true,
+        "explicacao": "Certo: metade do tamanho do SC."
+      },
+      {
+        "texto": "Os três têm o mesmo ferrolho.",
+        "correta": false,
+        "explicacao": "SC e FC têm 2,5 mm; o LC, 1,25 mm."
+      }
+    ],
+    "fontes": [
+      "foa-conectores"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-07-q3",
+    "licao": "03-07",
+    "enunciado": "Pela TIA-568, um conector verde quer dizer…",
+    "alternativas": [
+      {
+        "texto": "Multimodo.",
+        "correta": false,
+        "explicacao": "Pela TIA-568, multimodo é bege (ou preto em OM2, água em OM3/OM4 e verde-limão em OM5, segundo a FOA)."
+      },
+      {
+        "texto": "Monomodo com polimento UPC.",
+        "correta": false,
+        "explicacao": "UPC é azul."
+      },
+      {
+        "texto": "Conector de teste.",
+        "correta": false,
+        "explicacao": "A cor diz a fibra e o polimento, não o uso."
+      },
+      {
+        "texto": "Monomodo com polimento APC (em ângulo).",
+        "correta": true,
+        "explicacao": "Certo. Azul é monomodo PC/UPC; verde, monomodo APC."
+      }
+    ],
+    "fontes": [
+      "foa-conectores",
+      "foa-cores"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-07-q4",
+    "licao": "03-07",
+    "enunciado": "Por que o APC reflete menos que o UPC?",
+    "alternativas": [
+      {
+        "texto": "Porque o ângulo de 8° joga a luz refletida para fora do núcleo.",
+        "correta": true,
+        "explicacao": "Certo. A reflexão se perde na casca e fica em −60 dB ou menos."
+      },
+      {
+        "texto": "Porque é verde.",
+        "correta": false,
+        "explicacao": "A cor só identifica; quem reduz a reflexão é o ângulo."
+      },
+      {
+        "texto": "Porque tem gel na ponta.",
+        "correta": false,
+        "explicacao": "Não há gel no conector; é o polimento em ângulo."
+      },
+      {
+        "texto": "Porque perde mais sinal na conexão.",
+        "correta": false,
+        "explicacao": "A ideia não é perder mais; é a reflexão sair do núcleo."
+      }
+    ],
+    "fontes": [
+      "foa-reflectancia",
+      "fluke-apc"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-07-q5",
+    "licao": "03-07",
+    "enunciado": "Você precisa ligar um cordão SC/APC num adaptador onde já está um SC/UPC. O corpo encaixa. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Ligar: se encaixou, está certo.",
+        "correta": false,
+        "explicacao": "O corpo SC é igual nos dois; o polimento não. A cor avisa."
+      },
+      {
+        "texto": "Ligar, depois de limpar bem.",
+        "correta": false,
+        "explicacao": "Limpeza não resolve: as faces não casam."
+      },
+      {
+        "texto": "Não ligar: use um cordão com o mesmo polimento.",
+        "correta": true,
+        "explicacao": "Certo. APC com UPC anula o antirreflexo, e a reflexão fica forte."
+      },
+      {
+        "texto": "Ligar e girar até achar a posição.",
+        "correta": false,
+        "explicacao": "Girar não adianta: o problema é o polimento, não a posição."
+      }
+    ],
+    "fontes": [
+      "fluke-apc"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-07-q6",
+    "licao": "03-07",
+    "enunciado": "Como um conector APC em bom estado aparece no traço do OTDR?",
+    "alternativas": [
+      {
+        "texto": "Com um pico alto, igual ao de um conector UPC aberto.",
+        "correta": false,
+        "explicacao": "O APC reflete muito menos que o UPC."
+      },
+      {
+        "texto": "Como um degrau para cima.",
+        "correta": false,
+        "explicacao": "Degrau para cima é o ganho aparente (lição 06-03)."
+      },
+      {
+        "texto": "Quase como uma fusão: degrau, com pico pequeno ou nenhum.",
+        "correta": true,
+        "explicacao": "Certo. A Fluke diz que o OTDR mostra o APC bom como evento sem reflexão."
+      },
+      {
+        "texto": "Não aparece de jeito nenhum.",
+        "correta": false,
+        "explicacao": "A perda do conector aparece como degrau."
+      }
+    ],
+    "fontes": [
+      "fluke-apc"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-07-q7",
+    "licao": "03-07",
+    "enunciado": "Qual peça guarda as fusões e faz derivações no meio do cabo principal?",
+    "alternativas": [
+      {
+        "texto": "CTO.",
+        "correta": false,
+        "explicacao": "A CTO liga a rede ao drop do cliente e costuma ter o último splitter."
+      },
+      {
+        "texto": "PTO.",
+        "correta": false,
+        "explicacao": "O PTO fica no imóvel do cliente."
+      },
+      {
+        "texto": "DIO.",
+        "correta": false,
+        "explicacao": "O DIO fica no rack, onde o cabo termina."
+      },
+      {
+        "texto": "CEO.",
+        "correta": true,
+        "explicacao": "Certo: caixa de emenda óptica."
+      }
+    ],
+    "fontes": [
+      "intelbras-infografico-ftth"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-07-q8",
+    "licao": "03-07",
+    "enunciado": "No DIO, como a fibra do cabo chega ao painel de adaptadores?",
+    "alternativas": [
+      {
+        "texto": "É emendada por fusão num pigtail, que tem conector na outra ponta.",
+        "correta": true,
+        "explicacao": "Certo, como no guia do DIO consultado."
+      },
+      {
+        "texto": "Por um cordão óptico, com conector nas duas pontas.",
+        "correta": false,
+        "explicacao": "O cordão liga o DIO aos equipamentos; a fibra do cabo entra pelo pigtail."
+      },
+      {
+        "texto": "Por emenda mecânica dentro do adaptador.",
+        "correta": false,
+        "explicacao": "No guia consultado, a emenda é por fusão, na bandeja."
+      },
+      {
+        "texto": "A fibra do próprio cabo vai direto no adaptador, sem emenda.",
+        "correta": false,
+        "explicacao": "No guia consultado, a fibra do cabo é emendada num pigtail."
+      }
+    ],
+    "fontes": [
+      "intelbras-dio"
+    ],
+    "dificuldade": 3
+  }
+]

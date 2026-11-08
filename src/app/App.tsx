@@ -16,6 +16,8 @@ import { Busca } from '../telas/Busca';
 import { Caderno } from '../telas/Caderno';
 import { Plano } from '../telas/Plano';
 import { Ajustes } from '../telas/Ajustes';
+import { Campo } from '../telas/Campo';
+import { TelaChecklist } from '../telas/TelaChecklist';
 import { NaoEncontrado } from '../telas/NaoEncontrado';
 
 // HashRouter: os endereços ficam como .../Telecom.estudos/#/trilha.
@@ -41,6 +43,8 @@ export function App() {
             <Route path="/glossario" element={<Glossario />} />
             <Route path="/busca" element={<Busca />} />
             <Route path="/caderno" element={<Caderno />} />
+            <Route path="/campo" element={<Campo />} />
+            <Route path="/campo/:id" element={<TelaChecklist />} />
             <Route path="/plano" element={<Plano />} />
             <Route path="/ajustes" element={<Ajustes />} />
             <Route path="*" element={<NaoEncontrado />} />

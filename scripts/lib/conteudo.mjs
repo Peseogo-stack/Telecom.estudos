@@ -88,12 +88,18 @@ export function gerarDocPerguntas(banco) {
   return linhas.join('\n');
 }
 
+const ORDEM_CHECKLISTS = ['antes-de-subir-no-poste', 'antes-da-fusao', 'inspecao-ceo-cto', 'aceite-de-obra'];
 export function lerChecklists() {
   const pasta = join(PASTA_CONTEUDO, 'checklists');
   if (!existsSync(pasta)) return [];
   return readdirSync(pasta)
     .filter((f) => f.endsWith('.json'))
-    .map((f) => JSON.parse(readFileSync(join(pasta, f), 'utf-8')));
+    .map((f) => JSON.parse(readFileSync(join(pasta, f), 'utf-8')))
+    .sort((a, b) => {
+      const ia = ORDEM_CHECKLISTS.indexOf(a.id);
+      const ib = ORDEM_CHECKLISTS.indexOf(b.id);
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    });
 }
 
 /** Lê todos os arquivos .md de content/licoes e separa cabeçalho (YAML) e corpo. */

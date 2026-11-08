@@ -220,6 +220,39 @@ export function validar({ hoje = new Date() } = {}) {
     for (const l of t.licoes ?? []) if (!idsCurriculo.has(l)) erro(`glossario.json[${t.id}]`, `lição ${l} não existe`);
   }
 
+  // ---- Checklists ----
+  const pastaChecklists = join(PASTA_CONTEUDO, 'checklists');
+  if (existsSync(pastaChecklists)) {
+    const arquivosC = readdirSync(pastaChecklists).filter((f) => f.endsWith('.json'));
+    for (const f of arquivosC) {
+      const ondeC = `checklists/${f}`;
+      let c;
+      try {
+        c = JSON.parse(readFileSync(join(pastaChecklists, f), 'utf-8'));
+      } catch (e) {
+        erro(ondeC, `JSON inválido: ${e.message}`);
+        continue;
+      }
+      if (!c.id) erro(ondeC, 'sem id');
+      if (`${c.id}.json` !== f) erro(ondeC, `o nome do arquivo deve ser ${c.id}.json`);
+      if (!c.titulo) erro(ondeC, 'sem título');
+      if (!c.aviso) erro(ondeC, 'sem aviso de segurança/procedimento');
+      if (!Array.isArray(c.itens) || c.itens.length < 5) erro(ondeC, 'deve ter pelo menos 5 itens');
+      const idsItens = new Set();
+      for (const item of c.itens ?? []) {
+        if (!item.id) erro(ondeC, 'item sem id');
+        if (idsItens.has(item.id)) erro(ondeC, `item com id repetido "${item.id}"`);
+        idsItens.add(item.id);
+        if (!item.texto?.trim()) erro(ondeC, `item ${item.id} sem texto`);
+        if (!item.porque?.trim()) erro(ondeC, `item ${item.id} sem "porque"`);
+        if (!Array.isArray(item.fontes) || item.fontes.length === 0) erro(ondeC, `item ${item.id} sem fontes`);
+        for (const fo of item.fontes ?? []) {
+          if (!fontesPorId.has(fo)) erro(ondeC, `item ${item.id} cita fonte inexistente "${fo}"`);
+        }
+      }
+    }
+  }
+
   // Lista local de palavras proibidas (dados reais). Fica fora do Git: .palavras-proibidas.txt
   const arquivoProibidas = join(RAIZ, '.palavras-proibidas.txt');
   if (existsSync(arquivoProibidas)) {
@@ -233,6 +266,7 @@ export function validar({ hoje = new Date() } = {}) {
       ['fontes.json', JSON.stringify(fontes)],
     ];
     if (existsSync(pastaQ)) for (const f of readdirSync(pastaQ)) tudo.push([`questoes/${f}`, readFileSync(join(pastaQ, f), 'utf-8')]);
+    if (existsSync(pastaChecklists)) for (const f of readdirSync(pastaChecklists)) tudo.push([`checklists/${f}`, readFileSync(join(pastaChecklists, f), 'utf-8')]);
     for (const [onde, texto] of tudo) {
       const baixo = texto.toLowerCase();
       for (const p of proibidas) if (baixo.includes(p)) erro(onde, `contém palavra da lista de dados reais: "${p}"`);

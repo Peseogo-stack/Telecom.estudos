@@ -1,0 +1,68 @@
+{
+  "id": "aceite-de-obra",
+  "titulo": "Aceite de obra óptica",
+  "aviso": "Lembrete contratual e técnico. Não substitui o Termo de Referência, o Edital nem os procedimentos de fiscalização da empresa.",
+  "descricao": "Roteiro para fiscalização, conferência física, validação de relatórios de teste (OTDR e power meter) e recebimento provisório/definitivo de obras de infraestrutura de telecomunicações.",
+  "itens": [
+    {
+      "id": "ordem-de-servico-e-projeto",
+      "texto": "Conferência do traçado executado em campo com a Ordem de Serviço (OS) e o projeto executivo aprovado pela distribuidora.",
+      "porque": "Mudanças não autorizadas de rota, travessias e postes violam o contrato, criam passivos regulatórios com outras concessionárias e invalidam o projeto de carga nos postes.",
+      "fontes": ["lei-14133", "decreto-11246"]
+    },
+    {
+      "id": "boletim-de-medicao-fisica",
+      "texto": "Conferência física das quantidades no Boletim de Medição: metragem de cabos lançados, caixas (CEO e CTO), ferragens e reservas técnicas.",
+      "porque": "A liquidação da despesa pública ou corporativa exige a comprovação da entrega exata dos materiais e serviços antes da autorização de pagamento da fatura.",
+      "fontes": ["lei-14133", "decreto-11246"]
+    },
+    {
+      "id": "relatorio-fotografico-georreferenciado",
+      "texto": "Relatório fotográfico georreferenciado com fotos nítidas dos postes, caixas abertas com bandejas, ferragens de fixação e plaquetas.",
+      "porque": "Constitui evidência documental indispensável para auditorias, fiscalização de contratos e manutenção preventiva remota da planta externa.",
+      "fontes": ["lei-14133", "foa-entrega"]
+    },
+    {
+      "id": "otdr-bidirecional-e-sor",
+      "texto": "Testes de OTDR bidirecionais em 1310 nm e 1550 nm para 100% das fibras, acompanhados dos arquivos digitais .SOR originais sem manipulação.",
+      "porque": "A medição em sentido único esconde degraus reais atrás de falsos ganhos (*gainers*); apenas a média bidirecional (A→B e B→A) fornece a perda óptica verdadeira de cada evento.",
+      "fontes": ["exfo-otdr-an194", "yokogawa-otdr-bidirecional"]
+    },
+    {
+      "id": "power-meter-e-perda-total",
+      "texto": "Medição de perda total de inserção com conjunto Power Meter e Fonte de Luz (método de 1 cordão) dentro do orçamento de potência de projeto.",
+      "porque": "O teste de perda de ponta a ponta é a prova real de que o feixe de transmissão alcançará o receptor com margem de segurança operacional conforme a ITU-T G.984.2.",
+      "fontes": ["foa-loss-budget", "itu-g9842-2019"]
+    },
+    {
+      "id": "perda-por-emenda-e-conector",
+      "texto": "Validação das perdas individuais: fusões dentro da meta contratual (típico ≤ 0,10 a 0,15 dB no OTDR bidirecional) e conectores ≤ 0,30 a 0,50 dB.",
+      "porque": "Emendas mal executadas degradam o enlace a longo prazo; o limite máximo normativo da norma TIA-568 é de 0,30 dB por emenda, mas contratos de implantação exigem metas mais rigorosas.",
+      "fontes": ["foa-tia568", "foa-loss-budget"]
+    },
+    {
+      "id": "mapa-de-fusao-completo",
+      "texto": "Mapa de fusão detalhado e atualizado registrando tubo, cor da fibra e destino de cada emenda em todas as caixas da rota.",
+      "porque": "Sem o mapa de emendas é inviável localizar rapidamente falhas e realizar manobras de restauração durante rompimentos acidentais de cabos em campo.",
+      "fontes": ["foa-entrega", "foa-fusao"]
+    },
+    {
+      "id": "documentacao-as-built",
+      "texto": "Entrega do projeto como construído ('as-built') nos formatos exigidos pela empresa (ex.: KMZ, GeoPackage ou DWG/CAD).",
+      "porque": "Garante que o cadastro técnico e o sistema de informações geográficas (SIG) reflitam a localização exata de cada poste, caixa e cabo no mundo real.",
+      "fontes": ["lei-14133", "foa-entrega"]
+    },
+    {
+      "id": "conformidade-nos-postes-e-plaquetas",
+      "texto": "Conformidade com a faixa de ocupação nos postes, altura livre ao solo e fixação de plaquetas padronizadas da distribuidora.",
+      "porque": "Cabos abaixo da altura mínima ou fora da faixa de 50 cm oferecem risco de colisão com caminhões e notificações com multas da distribuidora de energia.",
+      "fontes": ["abnt-nbr15214-2005", "cemig-nd66"]
+    },
+    {
+      "id": "limpeza-e-termo-de-recebimento",
+      "texto": "Limpeza da área de trabalho, devolução de materiais sobressalentes e emissão de lista de pendências para o Termo de Recebimento Provisório.",
+      "porque": "O recebimento provisório formaliza o início do período de observação e testes de carga; o recebimento definitivo só ocorre após a regularização de todas as pendências apontadas.",
+      "fontes": ["lei-14133", "decreto-11246"]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "antes-da-fusao",
+  "titulo": "Antes da fusão e testes ópticos",
+  "aviso": "Lembrete de segurança. Não substitui treinamento oficial, APR nem procedimentos da empresa.",
+  "descricao": "Roteiro de boas práticas, segurança do trabalho, manuseio químico e calibração de equipamentos para emendas por fusão óptica e testes de campo.",
+  "itens": [
+    {
+      "id": "tratar-fibra-como-ativa",
+      "texto": "Tratar toda fibra óptica como potencialmente ativa: medir o nível de potência com power meter antes de qualquer intervenção.",
+      "porque": "A luz usada em telecomunicações (1310, 1490, 1550 e 1577 nm) é completamente invisível aos olhos humanos e não aciona o reflexo natural de piscar, podendo causar queimaduras irreversíveis na retina.",
+      "fontes": ["foa-seguranca", "iec-60825-2-amd1"]
+    },
+    {
+      "id": "seguranca-ocular-e-microscopio",
+      "texto": "Nunca olhar diretamente para conector, fibra ou acoplador; usar microscópio óptico com filtro infravermelho ou microscópio de vídeo.",
+      "porque": "Lupas comuns ou microscópios sem atenuação atuam como lentes concentradoras que focalizam feixes de laser invisíveis diretamente sobre a fóvea ocular.",
+      "fontes": ["iec-60825-2-amd1", "foa-seguranca"]
+    },
+    {
+      "id": "cuidados-com-vfl",
+      "texto": "Ao usar a caneta óptica (VFL, 635–650 nm), observar o feixe apenas de lado a uma distância ≥ 15 cm e usar óculos de segurança.",
+      "porque": "Mesmo na faixa visível, o laser de 1 mW a 10 mW pode causar ofuscamento e danos por reflexão direta em faces polidas de conectores ou clivagens.",
+      "fontes": ["trend-vfl-safety", "foa-seguranca"]
+    },
+    {
+      "id": "recipiente-descarte-cacos",
+      "texto": "Recipiente rígido, fechado e identificado posicionado na bancada para descarte imediato dos fragmentos de fibra de clivagem.",
+      "porque": "Os cacos de sílica de 125 µm são agulhas de vidro invisíveis que penetram facilmente sob a pele, entram na corrente sanguínea ou atingem os olhos; nunca descarte fragmentos no chão ou bolsos.",
+      "fontes": ["foa-seguranca", "foa-fusao"]
+    },
+    {
+      "id": "bancada-e-tapete-escuro",
+      "texto": "Bancada nivelada, limpa e forrada com tapete ou base de contraste escuro para facilitar a visualização de fragmentos perdidos.",
+      "porque": "A sílica transparente é quase invisível sobre superfícies claras; a base escura e antiestática facilita a localização e recolhimento de cacos com fita adesiva.",
+      "fontes": ["foa-seguranca", "tempo-910fs-fusao"]
+    },
+    {
+      "id": "alcool-isopropilico-e-arco",
+      "texto": "Álcool isopropílico (IPA ≥ 99%) em dosador tipo bomba de fechamento automático mantido afastado do forno e do arco voltaico.",
+      "porque": "O isopropanol tem ponto de fulgor de 11,85 °C em vaso fechado e libera vapores altamente inflamáveis (H225); o arco elétrico da máquina de fusão pode inflamar frascos abertos.",
+      "fontes": ["fds-isopropanol-rauter", "fujikura-dicas-90r"]
+    },
+    {
+      "id": "limpeza-de-gel-e-higiene",
+      "texto": "Remoção de gel tixotrópico com solvente próprio (D'Gel), uso de luvas descartáveis e proibição de ingestão de alimentos na bancada.",
+      "porque": "Resíduos químicos e cacos invisíveis de fibra podem contaminar alimentos e provocar perfurações gastrointestinais graves em caso de ingestão acidental.",
+      "fontes": ["lps-dgel-ficha", "foa-seguranca"]
+    },
+    {
+      "id": "vestir-tubete-antes",
+      "texto": "Vestir o tubete termocontrátil de proteção na fibra antes de efetuar a decapagem, limpeza e clivagem.",
+      "porque": "Tentar passar o tubete após a clivagem contamina a ponta espelhada com poeira; se a fusão for feita sem o tubete, a emenda precisará ser quebrada e refeita.",
+      "fontes": ["foa-fusao", "fujikura-catalogo-telecom"]
+    },
+    {
+      "id": "calibracao-arco-e-vgrooves",
+      "texto": "Executar a calibração do arco elétrico (Arc Check) e inspecionar a limpeza das ranhuras em V (V-grooves) da máquina de fusão.",
+      "porque": "Variações de temperatura, umidade do ar e pressão atmosférica alteram a intensidade do plasma de fusão; poeira no V-groove causa desalinhamento e emendas com atenuação alta.",
+      "fontes": ["fujikura-catalogo-telecom", "tempo-910fs-fusao"]
+    }
+  ]
+}

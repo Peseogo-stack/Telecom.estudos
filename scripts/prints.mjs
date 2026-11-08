@@ -118,6 +118,14 @@ const TELAS_MODULO_05 = [
   ['04-licao-05-04-diagrama', '#/licao/05-04', diagrama],
 ];
 
+const TELAS_CHECKLISTS_P1 = [
+  ['01-campo-lista', '#/campo'],
+  ['02-antes-subir-poste', '#/campo/antes-de-subir-no-poste'],
+  ['03-antes-fusao', '#/campo/antes-da-fusao'],
+  ['04-inspecao-ceo-cto', '#/campo/inspecao-ceo-cto'],
+  ['05-aceite-obra', '#/campo/aceite-de-obra'],
+];
+
 const TELAS_MODULO_10 = [
   ['01-trilha-modulo-10', '#/trilha/10'],
   ['02-licao-10-03-diagrama', '#/licao/10-03', diagrama],
@@ -125,7 +133,9 @@ const TELAS_MODULO_10 = [
 ];
 
 const telas =
-  conjunto === 'modulo-04'
+  conjunto === 'checklists-p1'
+    ? TELAS_CHECKLISTS_P1
+    : conjunto === 'modulo-04'
     ? TELAS_MODULO_04
     : conjunto === 'modulo-05'
       ? TELAS_MODULO_05
@@ -139,7 +149,12 @@ const telas =
               ? TELAS_MODULO_02
               : TELAS_FASE_2;
 const temas =
-  conjunto === 'modulo-04'
+  conjunto === 'checklists-p1'
+    ? [
+        ['06-escuro', '#/campo/antes-de-subir-no-poste', { tema: 'escuro', sol: false }],
+        ['07-modo-sol', '#/campo/antes-da-fusao', { tema: 'claro', sol: true }],
+      ]
+    : conjunto === 'modulo-04'
     ? [
         ['05-escuro', '#/licao/04-03', { tema: 'escuro', sol: false }],
         ['06-modo-sol', '#/licao/04-05', { tema: 'claro', sol: true }],
@@ -195,8 +210,9 @@ for (const [largura, altura, sufixo] of [[390, 844, '390'], [1440, 900, '1440']]
     }, ajustes);
     await p.goto(BASE + rota);
     await p.reload();
-    await p.locator('main h1').first().waitFor();
-    await p.locator('figure.diagrama').first().scrollIntoViewIfNeeded();
+    if (await p.locator('figure.diagrama').count() > 0) {
+      await p.locator('figure.diagrama').first().scrollIntoViewIfNeeded();
+    }
     await p.screenshot({ path: `${saida}/${nome}-${sufixo}.png` });
   }
   await contexto.close();

@@ -61,6 +61,7 @@ export function TracoSvg({
   const temFantasma = cenario.eventos.some((e) => e.tipo === 'fantasma');
   const nivelFim = Math.min(...cenario.lambdas.map((l) => nivelRetroespalhamento(cenario, l, terminal.km, exagero)));
   const ruido = Math.min(...cenario.lambdas.map((l) => nivelDoRuido(cenario, l, exagero)));
+  const ruidoTopo = Math.max(...cenario.lambdas.map((l) => nivelDoRuido(cenario, l, exagero)));
   const yMin = Math.floor((temFantasma ? ruido - 2 : nivelFim - 6) / 2) * 2;
 
   const x = (km: number) => M.esq + (km / cenario.kmMax) * (LARGURA - M.esq - M.dir);
@@ -75,7 +76,7 @@ export function TracoSvg({
 
   /** Onde a letra aponta: topo do pico (se refletir) ou o traço em 1310 nm. */
   const alvoDoEvento = (km: number, refletancia: number | null, ehFantasma: boolean) =>
-    (ehFantasma ? ruido : nivelRetroespalhamento(cenario, 1310, km, exagero)) + alturaDoPico(refletancia);
+    (ehFantasma ? ruidoTopo : nivelRetroespalhamento(cenario, 1310, km, exagero)) + alturaDoPico(refletancia);
 
   const circulo = (key: string, km: number, alvoDb: number, texto: string) => {
     const yAlvo = yPreso(alvoDb);

@@ -36,9 +36,9 @@
     "enunciado": "O medidor mostrava −5,0 dBm na referência. Com o enlace no meio, mostra −8,4 dBm. Qual é a perda de inserção?",
     "alternativas": [
       {
-        "texto": "−3,4 dB",
+        "texto": "1,7 dB",
         "correta": false,
-        "explicacao": "A perda é dita como número positivo: referência − medida."
+        "explicacao": "Dividiu a diferença por 2; a perda é toda a diferença entre a referência e a medida."
       },
       {
         "texto": "13,4 dB",
@@ -48,7 +48,7 @@
       {
         "texto": "3,4 dB",
         "correta": true,
-        "explicacao": "Certo. −5,0 − (−8,4) = 3,4 dB (FOA: perda = referência − medida)."
+        "explicacao": "Certo. Entre −5,0 dBm e −8,4 dBm a queda é de 3,4 dB (na escala dB o visor pode mostrar −3,4 dB, mas por convenção dizemos 3,4 dB de perda — FOA)."
       },
       {
         "texto": "8,4 dB",

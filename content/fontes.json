@@ -357,7 +357,7 @@
     "tipo": "associacao",
     "url": "https://www.thefoa.org/tech/ref/testing/OTDR/OTDR.html",
     "acessadoEm": "2026-11-07",
-    "observacao": "A fibra é mais sensível a tensão (stress) em comprimentos de onda maiores; comparar traços em dois comprimentos de onda ajuda a achar pontos de tensão da instalação."
+    "observacao": "O cabo tem cerca de 1% de excesso de fibra, por isso o OTDR mede distância um pouco maior que a marcação da capa. Cabo de lançamento e de recepção permitem ao OTDR se recuperar após o pulso de teste e dão referência para medir os conectores das duas pontas. Fantasmas aparecem em múltiplos da distância até o primeiro conector reflexivo ou a 2× o comprimento do cabo após o fim da fibra. A fibra é mais sensível a tensão (stress) em comprimentos de onda maiores; comparar traços em dois comprimentos de onda ajuda a achar pontos de tensão da instalação."
   },
   {
     "id": "foa-om",
@@ -393,7 +393,7 @@
     "tipo": "associacao",
     "url": "https://www.thefoa.org/tech/ColCodes.htm",
     "acessadoEm": "2026-11-07",
-    "observacao": "TIA-598: azul, laranja, verde, marrom, cinza, branco, vermelho, preto, amarelo, violeta, rosa, água. Nos tubos: 13–24 com faixa preta (amarela no preto), 25–36 laranja, 37–48 verde; tubo com mais de 12 fibras separa grupos com fita (binder). Fibras de 900 µm (tight buffer) em pigtails e cabos breakout. Conector monomodo azul (PC) e verde (APC)."
+    "observacao": "TIA-598: azul, laranja, verde, marrom, cinza (slate), branco, vermelho, preto, amarelo, violeta, rosa (rose), água (aqua). Nos tubos: 13–24 com faixa preta (amarela no preto), 25–36 laranja, 37–48 verde; tubo com mais de 12 fibras separa grupos com fita (binder). Fibras de 900 µm (tight buffer) em pigtails e cabos breakout. Conector: monomodo azul (PC) e verde (APC); multimodo bege (62,5/125), preto (50/125 OM2), água (OM3/OM4), verde-limão (OM5)."
   },
   {
     "id": "prysmian-duto",

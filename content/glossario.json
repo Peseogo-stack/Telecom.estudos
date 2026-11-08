@@ -1141,9 +1141,10 @@
     "pt": "Polimento UPC",
     "sigla": "UPC",
     "en": "Ultra physical contact",
-    "definicao": "Polimento com a face curva, mais arredondada que a PC. Reflete cerca de −40 a −50 dB. Conector azul.",
+    "definicao": "Polimento com a face curva, mais arredondada que a PC. Reflete cerca de −40 a −50 dB segundo a FOA (−50 a −59 dB num par limpo na ficha da VIAVI). Conector azul.",
     "fontes": [
       "foa-reflectancia",
+      "viavi-otdr-dicas",
       "fluke-apc",
       "foa-conectores"
     ],
@@ -1156,9 +1157,10 @@
     "pt": "Polimento APC",
     "sigla": "APC",
     "en": "Angled physical contact",
-    "definicao": "Polimento com a face em ângulo de 8°: a luz refletida sai do núcleo. Reflete −60 dB ou menos. Conector verde. Nunca se liga com UPC.",
+    "definicao": "Polimento com a face em ângulo de 8°: a luz refletida sai do núcleo. Reflete −60 dB ou menos segundo a FOA (−65 a −76 dB na ficha da VIAVI). Conector verde. Nunca se liga com UPC.",
     "fontes": [
       "foa-reflectancia",
+      "viavi-otdr-dicas",
       "fluke-apc",
       "foa-conectores"
     ],
@@ -1245,7 +1247,7 @@
     "id": "pto",
     "pt": "Ponto de terminação óptico",
     "sigla": "PTO",
-    "definicao": "Caixinha no imóvel do cliente onde o drop termina. Protege e conecta a fibra, com adaptadores SC.",
+    "definicao": "Caixa usada em instalações internas, corredores de prédios ou no imóvel do cliente em FTTH. Protege a emenda ou conexão do cabo com o pigtail e os adaptadores SC.",
     "fontes": [
       "nazda-pto"
     ],

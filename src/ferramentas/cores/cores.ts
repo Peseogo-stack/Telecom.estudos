@@ -101,7 +101,8 @@ export function corDoTubo(cfg: ConfigCabo, tubo: number): CorTubo {
   if (cfg.modoTubos === 'piloto') {
     if (tubo === 1) return { numero: 1, nome: 'Verde', hex: '#16a34a', marcacao: '', papel: 'piloto', indefinido: false };
     if (tubo === 2) return { numero: 2, nome: 'Amarela', hex: '#facc15', marcacao: '', papel: 'direcional', indefinido: false };
-    return { numero: tubo, nome: 'Branca ou natural', hex: '#f8fafc', marcacao: '', papel: 'normal', indefinido: false };
+    const marcacao = tubo >= 13 ? 'anéis' : '';
+    return { numero: tubo, nome: 'Branca ou natural', hex: '#f8fafc', marcacao, papel: 'normal', indefinido: false };
   }
   const id = identificar(cfg.padrao, tubo, 'tubo');
   return { numero: tubo, nome: id.cor.nome, hex: id.cor.hex, marcacao: id.marcacao, papel: null, indefinido: id.indefinido };

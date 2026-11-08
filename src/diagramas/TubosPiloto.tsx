@@ -73,10 +73,10 @@ export function TubosPiloto({ descricao }: PropsDiagrama) {
         Piloto e direcional
       </text>
       <text x="300" y="232" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 11 }}>
-        1 verde (piloto), 2 amarelo (direcional)
+        1 verde (piloto), 2 amarelo
       </text>
       <text x="300" y="248" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 11 }}>
-        e os brancos na sequência
+        (direcional) e brancos a seguir
       </text>
     </Diagrama>
   );

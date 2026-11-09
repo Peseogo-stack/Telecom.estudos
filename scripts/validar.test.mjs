@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { LIMITE_CORRETA, razaoCorreta, validar } from './validar-conteudo.mjs';
+import { LIMITE_CORRETA, LIMITE_LICAO, razaoCorreta, validar, viesDaLicao } from './validar-conteudo.mjs';
 import { FERRAMENTAS, RAIZ, markdownParaHtml } from './lib/conteudo.mjs';
 
 describe('validador de conteúdo', () => {
@@ -28,6 +28,15 @@ describe('viés de comprimento das alternativas', () => {
 
   it('sem alternativa correta não há razão', () => {
     expect(razaoCorreta({ alternativas: [{ texto: 'a', correta: false }] })).toBeNull();
+  });
+
+  it('a lição reprova quando mais de 30% das questões passam do limite', () => {
+    expect(LIMITE_LICAO).toBe(0.3);
+    const longa = questao('x'.repeat(30), 'x'.repeat(20), 'x', 'x');
+    const boa = questao('x'.repeat(20), 'x'.repeat(20), 'x', 'x');
+    expect(viesDaLicao([longa, longa, boa, boa, boa, boa, boa, boa, boa, boa])).toEqual({ comAviso: 2, total: 10, reprova: false });
+    expect(viesDaLicao([longa, longa, longa, boa, boa, boa, boa, boa, boa, boa])).toEqual({ comAviso: 3, total: 10, reprova: false });
+    expect(viesDaLicao([longa, longa, longa, longa, boa, boa, boa, boa, boa, boa]).reprova).toBe(true);
   });
 });
 

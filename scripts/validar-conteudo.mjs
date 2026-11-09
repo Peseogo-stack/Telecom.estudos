@@ -37,6 +37,16 @@ export function razaoCorreta(q) {
   return maior > 0 ? correta.texto.trim().length / maior : null;
 }
 
+/** Erro na lição quando mais de 30% das questões têm a correta acima do limite. */
+export const LIMITE_LICAO = 0.3;
+
+/** Quantas questões da lição passam do limite e se isso reprova a lição. */
+export function viesDaLicao(questoes) {
+  const total = questoes.length;
+  const comAviso = questoes.filter((q) => (razaoCorreta(q) ?? 0) > LIMITE_CORRETA).length;
+  return { comAviso, total, reprova: total > 0 && comAviso / total > LIMITE_LICAO };
+}
+
 export function validar({ hoje = new Date(), estrito = false } = {}) {
   const erros = [];
   const avisos = [];
@@ -231,6 +241,11 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
         if (estrito) erro(ondeQ, msg);
         else aviso(ondeQ, msg);
       }
+    }
+    // Na lição, o aviso vira erro quando passa de 30% das questões: aí o chute "a mais longa" compensa.
+    const vies = viesDaLicao(questoes);
+    if (vies.reprova) {
+      erro(`questoes/${id}.json`, `${vies.comAviso} de ${vies.total} questões com a correta mais de 15% acima da maior errada (o máximo é 30% da lição)`);
     }
   }
 

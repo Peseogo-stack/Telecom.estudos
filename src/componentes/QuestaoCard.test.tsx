@@ -32,6 +32,16 @@ describe('QuestaoCard', () => {
     expect(screen.getByText(/A certa é: 129,6 min/)).toBeInTheDocument();
   });
 
+  it('embaralha as alternativas: a posição da certa na tela não é a do arquivo', () => {
+    // Com o sorteio sempre em 0, o Fisher–Yates leva a 1ª alternativa do arquivo para o fim.
+    const sorteio = vi.spyOn(Math, 'random').mockReturnValue(0);
+    render(<QuestaoCard questao={questao} numero={1} total={5} onResponder={() => {}} onProxima={() => {}} rotuloProxima="Próxima" />);
+    const textos = screen.getAllByRole('radio').map((r) => r.closest('label')?.textContent ?? '');
+    expect(textos[0]).not.toContain('129,6');
+    expect(textos[3]).toContain('129,6');
+    sorteio.mockRestore();
+  });
+
   it('teclado: 1 a 4 escolhem e Enter confirma', () => {
     const onResponder = vi.fn();
     render(<QuestaoCard questao={questao} numero={1} total={5} onResponder={onResponder} onProxima={() => {}} rotuloProxima="Próxima" />);

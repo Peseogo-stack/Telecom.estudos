@@ -198,24 +198,24 @@
     "enunciado": "Na tabela da VIAVI para OTDR, qual é a perda típica de uma fusão? E que valor a FOA usa para planejar?",
     "alternativas": [
       {
-        "texto": "De 0,10 a 0,30 dB (VIAVI); a FOA planeja com 0,15 dB por fusão monomodo.",
+        "texto": "0,03 a 0,10 dB (VIAVI); 0,03 dB para planejar (FOA).",
+        "correta": false,
+        "explicacao": "0,03 dB é a média de laboratório do catálogo da 45S, com a mesma fibra. A VIAVI dá 0,10 a 0,30 dB e a FOA planeja com 0,15 dB."
+      },
+      {
+        "texto": "0,10 a 0,30 dB (VIAVI); 0,15 dB para planejar (FOA).",
         "correta": true,
-        "explicacao": "Certo. A VIAVI dá 0,10 a 0,30 dB para fusão; a FOA usa 0,15 dB para planejar o orçamento de perda."
+        "explicacao": "Certo. A VIAVI dá 0,10 a 0,30 dB como perda típica de fusão, e a FOA usa 0,15 dB por fusão monomodo para planejar o orçamento de perda."
       },
       {
-        "texto": "De 0,50 a 1,00 dB; a FOA planeja com 1,0 dB por fusão.",
+        "texto": "0,15 a 0,50 dB (VIAVI); 0,3 dB para planejar (FOA).",
         "correta": false,
-        "explicacao": "Isso é ordem de grandeza de conector: a VIAVI dá 0,15 a 0,5 dB por par de conectores."
+        "explicacao": "0,15 a 0,5 dB é o valor da VIAVI para par de conectores, e 0,3 dB é o máximo por emenda da TIA-568, não o valor de planejamento da FOA."
       },
       {
-        "texto": "De 0,001 a 0,01 dB; a FOA planeja com 0,01 dB.",
+        "texto": "0,10 a 0,20 dB (VIAVI); 0,2 dB para planejar (FOA).",
         "correta": false,
-        "explicacao": "Nem o catálogo de laboratório chega a isso: a 45S dá média de 0,03 dB por cut-back."
-      },
-      {
-        "texto": "Cerca de 3 dB; a FOA planeja com 3 dB por fusão.",
-        "correta": false,
-        "explicacao": "3 dB é metade da luz: a perda de um splitter 1:2, não de uma fusão."
+        "explicacao": "0,2 dB é o limite acima do qual a FOA manda rejeitar a fusão no aceite. A VIAVI dá 0,10 a 0,30 dB e o planejamento da FOA é 0,15 dB."
       }
     ],
     "fontes": [

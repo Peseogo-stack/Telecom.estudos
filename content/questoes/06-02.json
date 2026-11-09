@@ -5,24 +5,24 @@
     "enunciado": "No traço do OTDR, o que forma a rampa que desce devagar ao longo da fibra?",
     "alternativas": [
       {
-        "texto": "As reflexões de Fresnel nos conectores.",
+        "texto": "A reflexão de Fresnel, luz que volta dos conectores.",
         "correta": false,
         "explicacao": "Fresnel forma os picos, não a rampa."
       },
       {
-        "texto": "A luz do localizador visual (VFL).",
+        "texto": "O ruído do receptor, que o OTDR soma ao longo do traço.",
         "correta": false,
-        "explicacao": "O VFL é outro instrumento, de luz visível."
+        "explicacao": "A rampa é luz devolvida pela fibra, não ruído do receptor."
       },
       {
-        "texto": "O retroespalhamento de Rayleigh, luz que o próprio vidro devolve.",
+        "texto": "O retroespalhamento de Rayleigh, luz que o vidro devolve.",
         "correta": true,
-        "explicacao": "Certo. A inclinação dessa rampa dá a atenuação em dB/km (EXFO)."
+        "explicacao": "Certo. É um nível baixo e constante devolvido pelo próprio vidro em todo o comprimento; a inclinação da rampa dá a atenuação em dB/km (EXFO)."
       },
       {
-        "texto": "O pulso que volta do fim da fibra.",
+        "texto": "A perda de inserção, acumulada ao longo do enlace.",
         "correta": false,
-        "explicacao": "O fim aparece como pico e queda, não como rampa."
+        "explicacao": "A perda de inserção é medida com fonte e medidor; a rampa é retroespalhamento."
       }
     ],
     "fontes": [
@@ -68,24 +68,24 @@
     "enunciado": "Por que um conector aparece como pico no traço?",
     "alternativas": [
       {
-        "texto": "Porque ele amplifica a luz.",
+        "texto": "Ele amplifica a luz do pulso quando ela o atravessa.",
         "correta": false,
-        "explicacao": "Conector não amplifica; ele perde um pouco."
+        "explicacao": "Conector não amplifica; ele perde um pouco de luz."
       },
       {
-        "texto": "Porque a mudança brusca de índice (vidro e ar) reflete muito mais luz que o retroespalhamento.",
+        "texto": "Ele perde muita luz, e a perda aparece como o pico.",
+        "correta": false,
+        "explicacao": "A perda é o degrau depois do pico; o pico é reflexão."
+      },
+      {
+        "texto": "O OTDR desenha o pico de cada conector por configuração.",
+        "correta": false,
+        "explicacao": "O pico vem da luz refletida, não de uma marcação do aparelho."
+      },
+      {
+        "texto": "A passagem do vidro para o ar reflete muita luz de volta.",
         "correta": true,
-        "explicacao": "Certo. É a reflexão de Fresnel, que pode ser milhares de vezes maior (EXFO)."
-      },
-      {
-        "texto": "Porque ele perde muita luz.",
-        "correta": false,
-        "explicacao": "A perda é o degrau depois do pico."
-      },
-      {
-        "texto": "Porque o OTDR marca conectores de propósito.",
-        "correta": false,
-        "explicacao": "O pico vem da luz refletida, não de uma marcação."
+        "explicacao": "Certo. É a reflexão de Fresnel, na mudança brusca de índice; ela pode ser milhares de vezes maior que o retroespalhamento (EXFO)."
       }
     ],
     "fontes": [
@@ -99,24 +99,24 @@
     "enunciado": "O primeiro conector do enlace, logo na saída do OTDR, não aparece no traço. O que faltou?",
     "alternativas": [
       {
-        "texto": "Aumentar a largura do pulso.",
+        "texto": "Um cabo de recepção, que tira o conector da zona morta.",
+        "correta": false,
+        "explicacao": "O cabo de recepção fica na outra ponta e permite medir o último conector."
+      },
+      {
+        "texto": "Um cabo de lançamento, que tira o conector da zona morta.",
+        "correta": true,
+        "explicacao": "Certo. O OTDR é sempre usado com cabo de lançamento: ele deixa o aparelho se recuperar do pulso e serve de referência para medir o primeiro conector (FOA)."
+      },
+      {
+        "texto": "Um pulso mais longo, que encurta a zona morta.",
         "correta": false,
         "explicacao": "Pulso longo aumenta a zona morta e piora o problema."
       },
       {
-        "texto": "Trocar para 1550 nm.",
+        "texto": "Trocar para 1550 nm, que encurta a zona morta.",
         "correta": false,
-        "explicacao": "A λ não tira o conector da zona morta."
-      },
-      {
-        "texto": "Cabo de lançamento, que tira esse conector da zona morta e serve de referência para medi-lo.",
-        "correta": true,
-        "explicacao": "Certo. A FOA diz que o OTDR é sempre usado com cabo de lançamento."
-      },
-      {
-        "texto": "Limpar a tela do OTDR.",
-        "correta": false,
-        "explicacao": "Não tem relação."
+        "explicacao": "O comprimento de onda não tira o conector da zona morta."
       }
     ],
     "fontes": [
@@ -130,24 +130,24 @@
     "enunciado": "Você precisa separar no traço dois conectores a poucos metros um do outro, no mesmo armário. Que pulso usar?",
     "alternativas": [
       {
-        "texto": "O mais longo do aparelho.",
-        "correta": false,
-        "explicacao": "Pulso longo junta eventos próximos num só."
+        "texto": "Curto, que dá zona morta menor e mais detalhe.",
+        "correta": true,
+        "explicacao": "Certo. Pulso curto leva menos energia, dá zona morta menor e separa eventos próximos, com menos alcance (EXFO, FOA)."
       },
       {
-        "texto": "Tanto faz.",
+        "texto": "Longo, que dá zona morta menor e mais detalhe.",
+        "correta": false,
+        "explicacao": "É o pulso curto que dá zona morta menor e mais detalhe."
+      },
+      {
+        "texto": "Longo, que alcança mais longe e separa melhor os eventos.",
+        "correta": false,
+        "explicacao": "Pulso longo alcança mais, mas junta eventos próximos num só (FOA)."
+      },
+      {
+        "texto": "Médio, porque o pulso não muda a separação dos eventos.",
         "correta": false,
         "explicacao": "O pulso define a menor distância entre eventos que o OTDR separa."
-      },
-      {
-        "texto": "Curto: zona morta menor e mais detalhe.",
-        "correta": true,
-        "explicacao": "Certo. Pulso curto separa eventos próximos, com menos alcance (EXFO, FOA)."
-      },
-      {
-        "texto": "Longo, para enxergar mais longe.",
-        "correta": false,
-        "explicacao": "Alcance não ajuda a separar eventos próximos."
       }
     ],
     "fontes": [
@@ -162,24 +162,24 @@
     "enunciado": "O enlace tem perda total esperada de 24 dB. O OTDR disponível tem faixa dinâmica de 26 dB. Serve bem?",
     "alternativas": [
       {
-        "texto": "Fica apertado: a regra prática pede 5 a 8 dB acima da maior perda, ou seja, de 29 a 32 dB.",
+        "texto": "Sim: a regra pede 1 a 3 dB acima, ou seja, de 25 a 27 dB.",
+        "correta": false,
+        "explicacao": "A regra prática pede 5 a 8 dB acima da maior perda (EXFO)."
+      },
+      {
+        "texto": "Não: a regra pede o dobro da perda, ou seja, 48 dB.",
+        "correta": false,
+        "explicacao": "Não existe regra do dobro; a margem é de 5 a 8 dB."
+      },
+      {
+        "texto": "Não: a regra pede 5 a 8 dB acima, ou seja, 29 a 32 dB.",
         "correta": true,
-        "explicacao": "Certo. É a regra prática da EXFO para escolher o OTDR."
+        "explicacao": "Certo. A regra prática da EXFO é escolher um OTDR com 5 a 8 dB acima da maior perda do enlace; 24 + 5 a 8 dá de 29 a 32 dB. Com só 2 dB de sobra, o fim do traço fica perto do ruído."
       },
       {
-        "texto": "Serve com folga, porque 26 é maior que 24.",
+        "texto": "Sim: basta a faixa dinâmica ser maior que a perda total.",
         "correta": false,
-        "explicacao": "Só 2 dB de sobra deixa o fim do traço perto do ruído."
-      },
-      {
-        "texto": "Precisa ter o dobro, 48 dB.",
-        "correta": false,
-        "explicacao": "Não existe essa regra."
-      },
-      {
-        "texto": "A faixa dinâmica não importa.",
-        "correta": false,
-        "explicacao": "Ela diz até onde o OTDR enxerga antes do ruído."
+        "explicacao": "Só maior não basta: sem margem, o fim do traço fica no ruído."
       }
     ],
     "fontes": [
@@ -193,24 +193,24 @@
     "enunciado": "O OTDR dá 10,10 km até o fim da fibra; o projeto diz 10,0 km de cabo. Há algo errado?",
     "alternativas": [
       {
-        "texto": "Sim: há uma quebra.",
+        "texto": "Sim: há uma quebra, que o OTDR marcou depois do fim do cabo.",
         "correta": false,
         "explicacao": "Quebra apareceria antes do comprimento do projeto, não depois."
       },
       {
-        "texto": "Não necessariamente: o cabo tem cerca de 1% de fibra a mais, e o OTDR mede a fibra.",
+        "texto": "Não: o cabo tem cerca de 1% de fibra a mais que o comprimento.",
         "correta": true,
-        "explicacao": "Certo. A FOA lembra que o comprimento do cabo é menor que o da fibra."
+        "explicacao": "Certo. O OTDR mede a fibra, e o cabo tem cerca de 1% de fibra a mais que o seu comprimento; 10,10 km para 10,0 km de cabo é o esperado (FOA)."
       },
       {
-        "texto": "Sim: o OTDR está com defeito.",
-        "correta": false,
-        "explicacao": "Uma diferença de 1% é esperada."
-      },
-      {
-        "texto": "Com o IOR certo daria exatamente 10,0 km.",
+        "texto": "Sim: o IOR está errado, e com o certo daria 10,0 km exatos.",
         "correta": false,
         "explicacao": "Mesmo com o IOR certo, a fibra é mais longa que o cabo."
+      },
+      {
+        "texto": "Sim: o OTDR está com defeito e precisa ser calibrado.",
+        "correta": false,
+        "explicacao": "Uma diferença de cerca de 1% é esperada."
       }
     ],
     "fontes": [
@@ -224,24 +224,24 @@
     "enunciado": "Em que caso o OTDR ajuda menos?",
     "alternativas": [
       {
-        "texto": "Num cabo de 20 km com várias emendas.",
+        "texto": "Num cabo de 20 km, com várias emendas e conectores no meio.",
         "correta": false,
         "explicacao": "É onde o OTDR rende mais."
       },
       {
-        "texto": "Num enlace monomodo de rede externa.",
+        "texto": "Num enlace monomodo de rede externa, entre duas caixas.",
         "correta": false,
         "explicacao": "É o uso típico do OTDR."
       },
       {
-        "texto": "Para achar a distância até uma quebra.",
+        "texto": "Num enlace com uma quebra, para achar a distância até ela.",
         "correta": false,
-        "explicacao": "Localizar quebras é um dos usos principais."
+        "explicacao": "Localizar quebras é um dos usos principais do OTDR."
       },
       {
-        "texto": "Num cordão ou cabo de poucos metros: abaixo de cerca de 250 m, prefira fonte e medidor.",
+        "texto": "Num cordão ou cabo curto, abaixo de cerca de 250 m.",
         "correta": true,
-        "explicacao": "Certo. A FOA diz que o OTDR é mais útil em cabos acima de cerca de 250 m."
+        "explicacao": "Certo. A FOA diz que o OTDR rende mais em cabos acima de cerca de 250 m; para cordão e cabo curto, use fonte e medidor."
       }
     ],
     "fontes": [

@@ -67,24 +67,24 @@
     "enunciado": "Por que a perda medida com referência de 1 cordão é a que vai contra o orçamento de perda do enlace?",
     "alternativas": [
       {
-        "texto": "Porque inclui as conexões das duas pontas, além da fibra e das emendas.",
+        "texto": "Ela inclui os conectores das pontas, a fibra e as emendas.",
         "correta": true,
-        "explicacao": "Certo. Com cordões de lançamento e de recepção, o teste mede o enlace incluindo os conectores de cada ponta (FOA)."
+        "explicacao": "Certo. Com cordões de lançamento e de recepção, o teste mede o enlace incluindo os conectores de cada ponta, além da fibra e das emendas (FOA). É esse número que vai contra o orçamento."
       },
       {
-        "texto": "Porque tira os conectores da conta.",
+        "texto": "Ela mede só a fibra e as emendas, sem os conectores das pontas.",
         "correta": false,
-        "explicacao": "É o contrário: as duas pontas entram na medida."
+        "explicacao": "Com a referência de 1 cordão, os conectores das duas pontas entram na medida."
       },
       {
-        "texto": "Porque mede só a fibra, em dB/km.",
+        "texto": "Ela sai da inclinação da rampa no OTDR, em dB/km, de A para B.",
         "correta": false,
-        "explicacao": "O dB/km sai da inclinação do traço no OTDR, não da perda de inserção."
+        "explicacao": "O dB/km vem da rampa do traço do OTDR; a perda de inserção vem da fonte com o medidor."
       },
       {
-        "texto": "Porque não depende do comprimento de onda.",
+        "texto": "Ela vale igual em 1310 e 1550 nm, então basta medir em uma.",
         "correta": false,
-        "explicacao": "A perda muda com a λ; mede-se em cada λ pedida."
+        "explicacao": "A perda muda com o comprimento de onda; mede-se em cada λ pedida."
       }
     ],
     "fontes": [
@@ -98,24 +98,24 @@
     "enunciado": "O fornecedor mandou a perda total do enlace tirada só do OTDR, sem teste com fonte e medidor. O que dizer?",
     "alternativas": [
       {
-        "texto": "Que basta somar os picos do traço.",
+        "texto": "Vale: o OTDR mede a perda de inserção do enlace inteiro.",
         "correta": false,
-        "explicacao": "Pico é reflexão, não perda."
+        "explicacao": "A perda de inserção é medida com fonte e medidor; o OTDR não deve ser usado para isso (FOA)."
       },
       {
-        "texto": "Que vale, desde que seja em 1625 nm.",
+        "texto": "Vale, se somar os picos de reflexão do traço no relatório.",
         "correta": false,
-        "explicacao": "O comprimento de onda não muda isso."
+        "explicacao": "Pico é reflexão, não perda; a perda aparece como degrau."
       },
       {
-        "texto": "Que o OTDR substitui o power meter em qualquer caso.",
-        "correta": false,
-        "explicacao": "A FOA diz o contrário."
-      },
-      {
-        "texto": "Que falta a perda de inserção: o OTDR não deve ser usado para medi-la; essa tarefa é da fonte com o medidor.",
+        "texto": "Faltam fonte e medidor; veja no contrato se o OTDR basta.",
         "correta": true,
-        "explicacao": "Certo. É a orientação da FOA: peça o teste com fonte e medidor, além dos traços. Em rede externa, alguns contratos aceitam só o OTDR; confira o seu."
+        "explicacao": "Certo. A FOA diz que o OTDR não deve ser usado para medir a perda de inserção, tarefa da fonte com o medidor, e que muitas normas não aceitam só o OTDR. Em cabos de rede externa ele às vezes basta: quem decide é o contrato (FOA)."
+      },
+      {
+        "texto": "Vale, mas só se o OTDR medir em 1550 nm e nos dois sentidos.",
+        "correta": false,
+        "explicacao": "Comprimento de onda e sentido não transformam o OTDR em medidor de perda de inserção."
       }
     ],
     "fontes": [
@@ -129,22 +129,22 @@
     "enunciado": "Numa rede com GPON e XGS-PON na mesma fibra, você mede a potência na casa do cliente com um power meter comum. O que acontece?",
     "alternativas": [
       {
-        "texto": "O medidor mostra só o GPON.",
+        "texto": "Mostra só o 1490 nm, do GPON, e ignora o XGS-PON.",
         "correta": false,
-        "explicacao": "Ele não separa os comprimentos de onda."
+        "explicacao": "O medidor comum não separa comprimentos de onda; mostra a soma."
       },
       {
-        "texto": "O medidor mostra a soma de 1490 e 1577 nm, sem separar os dois sistemas.",
+        "texto": "Mostra a soma de 1490 e 1577 nm, sem separar os sistemas.",
         "correta": true,
-        "explicacao": "Certo. Para medir cada um, use um medidor PON seletivo, com filtros para 1490 e 1577 nm (FOA)."
+        "explicacao": "Certo. O medidor comum soma tudo o que chega. Para medir cada sistema, use um medidor PON seletivo, com filtros para 1490 e 1577 nm (FOA)."
       },
       {
-        "texto": "O medidor mostra só o XGS-PON.",
+        "texto": "Mostra cada sistema separado, porque filtra 1490 e 1577 nm.",
         "correta": false,
-        "explicacao": "Ele não separa os comprimentos de onda."
+        "explicacao": "Quem filtra é o medidor PON seletivo, não o comum."
       },
       {
-        "texto": "O medidor não funciona em fibra com PON.",
+        "texto": "Não mede nada, porque o medidor comum não lê fibra com PON ativa.",
         "correta": false,
         "explicacao": "Ele mede, mas mostra a soma de tudo o que chega."
       }
@@ -160,24 +160,24 @@
     "enunciado": "Dois técnicos mediram o mesmo enlace e acharam valores quase 1 dB diferentes. Um usou referência de 1 cordão; o outro, de 2 cordões. O que conferir primeiro?",
     "alternativas": [
       {
-        "texto": "A cor da capa do cabo.",
+        "texto": "A cor da capa do cabo, que muda a perda do enlace.",
         "correta": false,
-        "explicacao": "A cor não muda a medida."
+        "explicacao": "A cor da capa não entra na medida."
       },
       {
-        "texto": "Nada: diferença de 1 dB é normal em qualquer caso.",
+        "texto": "O OTDR de cada um, pois ele mede a perda de inserção.",
         "correta": false,
-        "explicacao": "Pode ser método, cordão sujo ou gasto. Tem de investigar."
+        "explicacao": "A perda de inserção é medida com fonte e medidor, não com OTDR."
       },
       {
-        "texto": "O método de referência: 1, 2 ou 3 cordões dão resultados diferentes e o método tem de estar no relatório.",
+        "texto": "Nada: 1 dB de diferença entre dois técnicos é normal.",
+        "correta": false,
+        "explicacao": "Método diferente, cordão gasto ou sujo explicam a diferença; tem de investigar."
+      },
+      {
+        "texto": "O método de referência, que deve ir no relatório.",
         "correta": true,
-        "explicacao": "Certo. A FOA alerta que o método muda bastante o resultado."
-      },
-      {
-        "texto": "A hora do dia em que mediram.",
-        "correta": false,
-        "explicacao": "A hora não explica a diferença; o método explica."
+        "explicacao": "Certo. Com 1, 2 ou 3 cordões o resultado muda bastante, por isso o método tem de ser anotado junto com o valor (FOA)."
       }
     ],
     "fontes": [
@@ -222,24 +222,24 @@
     "enunciado": "O cordão de referência, já gasto, mostra 0,6 dB de perda num teste. Dá para usar?",
     "alternativas": [
       {
-        "texto": "Sim, é só descontar 0,6 dB depois.",
+        "texto": "Não: troque o cordão, que passa de 0,5 dB.",
+        "correta": true,
+        "explicacao": "Certo. O cordão faz parte da medida. A FOA cita 0,2 dB para cordão de referência monomodo (cordões bons de campo, até 0,3 dB) e manda trocar os que passam de 0,5 dB."
+      },
+      {
+        "texto": "Sim: até 1,0 dB ainda serve de cordão de referência.",
+        "correta": false,
+        "explicacao": "A FOA manda trocar o cordão que passa de 0,5 dB."
+      },
+      {
+        "texto": "Sim: é só descontar os 0,6 dB do resultado depois.",
         "correta": false,
         "explicacao": "Cordão ruim deixa o resultado incerto. Troque e refaça a referência."
       },
       {
-        "texto": "Sim, se limpar a capa do cordão.",
+        "texto": "Não: só serve cordão com até 0,1 dB de perda.",
         "correta": false,
-        "explicacao": "Limpar a capa não muda a perda do conector."
-      },
-      {
-        "texto": "Sim, desde que seja em 1550 nm.",
-        "correta": false,
-        "explicacao": "A λ não resolve um cordão gasto."
-      },
-      {
-        "texto": "Não: troque. A FOA cita 0,2 dB para cordão de referência monomodo e manda trocar o que passa de 0,5 dB.",
-        "correta": true,
-        "explicacao": "Certo. O cordão faz parte da medida."
+        "explicacao": "A FOA cita 0,2 dB como valor de referência e 0,5 dB como limite para trocar."
       }
     ],
     "fontes": [

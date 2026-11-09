@@ -101,7 +101,8 @@ export function corDoTubo(cfg: ConfigCabo, tubo: number): CorTubo {
   if (cfg.modoTubos === 'piloto') {
     if (tubo === 1) return { numero: 1, nome: 'Verde', hex: '#16a34a', marcacao: '', papel: 'piloto', indefinido: false };
     if (tubo === 2) return { numero: 2, nome: 'Amarela', hex: '#facc15', marcacao: '', papel: 'direcional', indefinido: false };
-    const marcacao = tubo >= 13 ? 'anéis' : '';
+    // Prysmian (cabo de duto): a partir do 13º tubo, identificação por anéis. Outros fabricantes podem marcar diferente.
+    const marcacao = tubo >= 13 ? 'anéis, na ficha Prysmian; confira a do seu cabo' : '';
     return { numero: tubo, nome: 'Branca ou natural', hex: '#f8fafc', marcacao, papel: 'normal', indefinido: false };
   }
   const id = identificar(cfg.padrao, tubo, 'tubo');

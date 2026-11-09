@@ -66,7 +66,7 @@ describe('fibra ↔ tubo e cor', () => {
     expect(localizar(cfg, 1)!.tubo).toMatchObject({ papel: 'piloto', nome: 'Verde', marcacao: '' });
     expect(localizar(cfg, 13)!.tubo).toMatchObject({ papel: 'direcional', nome: 'Amarela', marcacao: '' });
     expect(localizar(cfg, 25)!.tubo).toMatchObject({ papel: 'normal', numero: 3, marcacao: '' });
-    expect(localizar(cfg, 145)!.tubo).toMatchObject({ papel: 'normal', numero: 13, marcacao: 'anéis' });
+    expect(localizar(cfg, 145)!.tubo).toMatchObject({ papel: 'normal', numero: 13, marcacao: 'anéis, na ficha Prysmian; confira a do seu cabo' });
     expect(totalTubos(cfg)).toBe(24);
   });
   it('fora do cabo devolve null', () => {

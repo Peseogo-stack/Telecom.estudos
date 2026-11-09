@@ -17,7 +17,7 @@
       {
         "texto": "A fibra transmite apenas pulsos ultracurtos que a vista humana não consegue registrar sem instrumentos.",
         "correta": false,
-        "explicacao": "Mesmo em emissão contínua com potência elevada, os comprimentos de onda de 1310, 1490 e 1550 nm não sensibilizam os fotorreceptores da retina humana."
+        "explicacao": "Não é questão de pulso: em 1310, 1490 e 1550 nm a luz é infravermelha e o olho não a enxerga, contínua ou não."
       },
       {
         "texto": "A potência do feixe óptico caiu abaixo do limiar de sensibilidade da visão humana naquele momento.",
@@ -45,22 +45,22 @@
       {
         "texto": "Medir a porta com power meter para confirmar ausência de sinal e usar microscópio com filtro de infravermelho.",
         "correta": true,
-        "explicacao": "Certo. A FOA orienta confirmar com o medidor de potência que a fibra está escura e utilizar apenas microscópio de vídeo ou óptico com filtro IR."
+        "explicacao": "Certo. A FOA manda confirmar com o medidor de potência que a fibra está apagada e usar microscópio com filtro infravermelho (ou de vídeo)."
       },
       {
         "texto": "Injetar a caneta VFL na outra extremidade para iluminar a face do conector durante o exame microscópico.",
         "correta": false,
-        "explicacao": "Observar pelo microscópio óptico com o VFL ligado concentra a radiação luminosa vermelha diretamente na retina."
+        "explicacao": "Com o VFL ligado, o microscópio óptico concentra a luz vermelha no olho; e 650 nm chega à retina."
       },
       {
         "texto": "Limpar o ferrolho com álcool 70% e inspecionar a face com uma lupa comum de relojoeiro sem barreira óptica.",
         "correta": false,
-        "explicacao": "Lupas comuns concentram o cone divergente no olho e o álcool 70% deixa resíduos que danificam a emenda."
+        "explicacao": "Lupa comum concentra a luz no olho; e, para limpar, a FOA pede álcool isopropílico 99%, não 70%."
       }
     ],
     "fontes": [
       "foa-seguranca",
-      "viavi-otdr-dicas"
+      "foa-limpeza"
     ],
     "dificuldade": 1
   },
@@ -77,7 +77,7 @@
       {
         "texto": "O feixe sai divergindo em cone pela fibra solta, mas a lente sem filtro concentra toda a potência no olho.",
         "correta": true,
-        "explicacao": "Certo. A fibra solta espalha a luz em cone divergente; o instrumento óptico sem filtro atenuador recolhe esse cone e focaliza a energia no olho do operador."
+        "explicacao": "Certo. A luz sai da fibra solta num cone que se abre; o microscópio sem filtro recolhe esse cone e concentra a luz no olho (FOA)."
       },
       {
         "texto": "O ferrolho cerâmico superaquece pelo atrito com a ocular e projeta estilhaços microscópicos na córnea.",
@@ -107,9 +107,9 @@
         "explicacao": "Com o olho aberto durante a inspeção de um conector, a radiação incide diretamente nos meios oculares."
       },
       {
-        "texto": "O infravermelho é absorvido pela água da córnea e cristalino, enquanto o feixe do VFL atinge a retina.",
+        "texto": "O infravermelho é absorvido pela água do olho, enquanto o vermelho do VFL atinge a retina.",
         "correta": true,
-        "explicacao": "Certo. A água dos tecidos oculares absorve o infravermelho de 1300 a 1550 nm (risco para córnea e cristalino), enquanto o olho é transparente aos 650 nm do VFL, atingindo a retina."
+        "explicacao": "Certo. Pela FOA, de 1300 a 1550 nm a luz é absorvida pela água do olho (risco para córnea e cristalino); em 650 nm o olho é transparente e a luz chega à retina."
       },
       {
         "texto": "O feixe de 650 nm do VFL é invisível na retina, enquanto o infravermelho de 1550 nm gera brilho avermelhado.",
@@ -119,7 +119,7 @@
       {
         "texto": "A radiação em 1550 nm induz reflexo de piscar em 0,25 s, enquanto o feixe de 650 nm não provoca reação motora.",
         "correta": false,
-        "explicacao": "O reflexo de aversão e piscar ocorre com luz visível brilhante (como 650 nm); o infravermelho invisível não aciona esse reflexo protetor."
+        "explicacao": "É o contrário: o reflexo de desviar o olhar vem com luz visível forte, como a do VFL; o infravermelho não se vê e não provoca esse reflexo."
       }
     ],
     "fontes": [
@@ -136,12 +136,12 @@
       {
         "texto": "Nenhuma: qualquer emissão na faixa de 650 nm pertence à Classe 1 e é isenta de riscos aos olhos humanos.",
         "correta": false,
-        "explicacao": "Em 1 mW o VFL é enquadrado em Classe 2 e, em 10 a 50 mW, sobe para Classe 3B com perigo de lesão ocular permanente."
+        "explicacao": "Até 1 mW o VFL é Classe 2; de 10 a 50 mW é Classe 3B, com risco de lesão permanente no olho."
       },
       {
-        "texto": "O VFL de 1 mW é Classe 2 protegido pelo piscar dos olhos, enquanto o de 10 a 50 mW é Classe 3B e gera lesão.",
+        "texto": "O de 1 mW é Classe 2, coberto pelo reflexo de desviar o olhar; o de 10 a 50 mW é Classe 3B e pode lesar o olho.",
         "correta": true,
-        "explicacao": "Certo. Em até 1 mW (Classe 2), o reflexo de piscar em 0,25 s protege o olho; em 10 a 50 mW (Classe 3B), o feixe direto ou refletido causa lesão retiniana permanente."
+        "explicacao": "Certo. Pela TREND, até 1 mW (Classe 2) é seguro numa exposição acidental de até 1/4 de segundo, porque a pessoa desvia o olhar; de 10 a 50 mW (Classe 3B), o feixe direto ou refletido pode causar lesão permanente no olho."
       },
       {
         "texto": "O modelo de 50 mW opera em 1550 nm invisível, enquanto a caneta de 1 mW emite feixe vermelho no espectro visível.",
@@ -151,7 +151,7 @@
       {
         "texto": "A caneta de 1 mW é de uso exclusivo industrial, enquanto modelos de 50 mW são homologados para uso residencial.",
         "correta": false,
-        "explicacao": "Canetas de teste seguras de fabricantes profissionais são limitadas a 1 mW exatamente para evitar classificação perigosa 3B."
+        "explicacao": "Não existe essa regra. Fabricantes de teste como a TREND limitam o VFL a 1 mW justamente para ele ser seguro para os olhos."
       }
     ],
     "fontes": [
@@ -172,17 +172,17 @@
       {
         "texto": "Observar pelo microscópio óptico comum para visualizar a luz vermelha emergindo do centro da fibra.",
         "correta": false,
-        "explicacao": "Microscópios ópticos concentram o feixe do laser vermelho diretamente na retina, gerando alto risco de queimadura."
+        "explicacao": "O microscópio óptico concentra a luz no olho; com o vermelho de 650 nm, ela chega à retina."
       },
       {
         "texto": "Olhar a ponta de lado, em ângulo oblíquo, mantendo distância mínima de segurança de 15 cm dos olhos.",
         "correta": true,
-        "explicacao": "Certo. A regra da FOA manda nunca olhar diretamente para o eixo do conector e observar a luz visível de lado, a pelo menos 15 cm (6 polegadas) de distância."
+        "explicacao": "Certo. Regra da FOA: com o rastreador visível, olhe a fibra de lado, a pelo menos 6 polegadas (cerca de 15 cm) do olho."
       },
       {
         "texto": "Usar óculos escuros comuns de sol para encarar o feixe frontalmente sem ofuscar a visão do operador.",
         "correta": false,
-        "explicacao": "Óculos de sol não são Equipamento de Proteção Individual certificado para laser e não autorizam observação direta do feixe."
+        "explicacao": "Óculos de sol não protegem contra laser e não tornam seguro encarar o feixe."
       }
     ],
     "fontes": [
@@ -193,27 +193,27 @@
   {
     "id": "10-03-q7",
     "licao": "10-03",
-    "enunciado": "Pela IEC 60825-2 (cláusula 4.4 e Tabela 1), quais são os níveis máximos de perigo (hazard levels) permitidos num local sem restrição de acesso (como a casa do cliente ou área pública) e o que significa o sufixo \"M\" em 1M e 2M?",
+    "enunciado": "Pela IEC 60825-2, qual é o nível de perigo máximo permitido num ponto de conexão em local sem restrição de acesso, e o que avisa a etiqueta do nível 2M?",
     "alternativas": [
       {
         "texto": "Nível 3B em qualquer comprimento de onda, onde a letra M indica compatibilidade exclusiva com multimodo.",
         "correta": false,
-        "explicacao": "O nível 3B é restrito a locais controlados com operadores autorizados, e o sufixo M refere-se a instrumentos de aumento óptico."
+        "explicacao": "3B só é permitido em local controlado; em local sem restrição, 3R e 3B não são permitidos."
       },
       {
-        "texto": "Nível 2M no visível e 1M no infravermelho, sendo proibido o uso de lupas ou microscópios sem filtro.",
+        "texto": "2M no visível e 1M no infravermelho; a etiqueta do 2M avisa para não olhar com instrumentos ópticos sem atenuação.",
         "correta": true,
-        "explicacao": "Certo. A IEC 60825-2 permite até 2M (visível) e 1M (infravermelho) em locais sem restrição, com a regra de proibir observação por instrumentos de aumento não atenuantes."
+        "explicacao": "Certo. Em local sem restrição, o máximo é 2M (400 a 700 nm) e 1M (infravermelho). A etiqueta do 2M diz: não olhe o feixe nem veja direto com instrumentos ópticos sem atenuação."
       },
       {
         "texto": "Nível 1 irrestrito em toda a planta, sendo vedada a presença de conectores ópticos em logradouros públicos.",
         "correta": false,
-        "explicacao": "A norma admite níveis 1M e 2M em locais irrestritos com o uso de conectores e travas de proteção mecânica adequadas."
+        "explicacao": "A norma admite até 2M (visível) e 1M (infravermelho); acima dos níveis 2 e 1, o conector precisa de um meio que limite o acesso à luz."
       },
       {
-        "texto": "Nível 3R em caixas abertas de clientes, onde a letra M significa manutenção temporária com laser desligado.",
+        "texto": "3R nas caixas abertas de clientes, com a etiqueta pedindo só para evitar o feixe.",
         "correta": false,
-        "explicacao": "Na Tabela 1 da IEC 60825-2, o nível 3R é explicitamente não permitido em locais irrestritos sem controle de acesso."
+        "explicacao": "Na Tabela 1 da IEC 60825-2, os níveis 3R e 3B não são permitidos em local sem restrição."
       }
     ],
     "fontes": [
@@ -224,7 +224,7 @@
   {
     "id": "10-03-q8",
     "licao": "10-03",
-    "enunciado": "Por que o microscópio de inspeção de vídeo (sonda ligada a uma tela ou ao celular) é a opção mais segura para inspecionar conectores no DIO e nas caixas?",
+    "enunciado": "Por que o microscópio de vídeo (sonda ligada a uma tela ou ao celular) é mais seguro para os olhos que um microscópio óptico sem filtro?",
     "alternativas": [
       {
         "texto": "Porque a sonda emite feixe ultrassônico que desintegra partículas de poeira e oleosidade no ferrolho.",
@@ -234,7 +234,7 @@
       {
         "texto": "Porque a imagem é captada por sensor digital e exibida na tela, sem alinhamento óptico direto com o olho.",
         "correta": true,
-        "explicacao": "Certo. No microscópio de vídeo não existe trajetória física de feixe luminoso até a retina do operador, eliminando o risco de exposição a lasers invisíveis."
+        "explicacao": "Certo. Você olha uma tela, não a fibra: o olho não fica na linha da luz. O microscópio óptico, ao contrário, concentra a luz no olho e por isso precisa de filtro infravermelho (FOA)."
       },
       {
         "texto": "Porque ele calcula a perda de retorno (ORL) e o comprimento de onda sem necessidade de conectar o OTDR.",
@@ -248,8 +248,7 @@
       }
     ],
     "fontes": [
-      "foa-seguranca",
-      "viavi-otdr-dicas"
+      "foa-seguranca"
     ],
     "dificuldade": 1
   }

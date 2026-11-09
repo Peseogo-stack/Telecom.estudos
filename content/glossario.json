@@ -1301,10 +1301,9 @@
     "id": "microscopio-de-inspecao",
     "pt": "Microscópio de inspeção",
     "en": "Fiber inspection microscope",
-    "definicao": "Instrumento para examinar a face do conector. O modelo óptico precisa ter filtro infravermelho para não concentrar luz invisível no olho; o de vídeo mostra a imagem numa tela.",
+    "definicao": "Instrumento para examinar a face do conector. O óptico concentra no olho a luz que sai da fibra e por isso precisa de filtro infravermelho; no de vídeo, você olha uma tela, não a fibra.",
     "fontes": [
-      "foa-seguranca",
-      "viavi-otdr-dicas"
+      "foa-seguranca"
     ],
     "licoes": [
       "10-03",
@@ -1577,5 +1576,3 @@
     ]
   }
 ]
-
-

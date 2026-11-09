@@ -47,7 +47,7 @@ export function LuzInvisivel({ descricao }: PropsDiagrama) {
       {/* Caixa esquerda: proibido */}
       <rect x="12" y="126" width="182" height="110" rx="8" className="d-zona-risco" />
       <text x="103" y="146" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 10.5 }}>
-        PROIBIDO (níveis 1M / 2M+)
+        NÃO FAÇA
       </text>
       {/* Conector + cone + lente concentrando */}
       <rect x="24" y="166" width="28" height="12" rx="2" className="d-caixa" />
@@ -60,7 +60,7 @@ export function LuzInvisivel({ descricao }: PropsDiagrama) {
         Olho nu ou lupa/microscópio
       </text>
       <text x="103" y="224" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9.5 }}>
-        sem filtro: foca o feixe no olho
+        sem filtro: concentra a luz no olho
       </text>
 
       {/* Caixa direita: procedimento seguro */}

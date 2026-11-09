@@ -16,6 +16,8 @@ concurrency:
 
 jobs:
   publicar:
+    # Só publica depois que os testes no navegador passarem: um teste vermelho não vai ao ar.
+    needs: testes-no-navegador
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

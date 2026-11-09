@@ -621,15 +621,6 @@
     "observacao": "Removedor de gel de cabos ópticos (odor cítrico de laranja), evapora sem deixar resíduo, ponto de fulgor acima de 60 °C (> 61,0 °C TCC). Pode causar reação alérgica na pele; manter longe de calor, faíscas e chamas abertas e usar luvas e proteção ocular."
   },
   {
-    "id": "truecable-gel-sds",
-    "titulo": "Safety Data Sheet — Waterproof Gel (composto de óleo mineral e parafina para cabos geleados, 15/11/2021)",
-    "organizacao": "trueCABLE",
-    "tipo": "fabricante",
-    "url": "https://cdn.shopify.com/s/files/1/0014/6404/1539/files/trueCABLE-Cat6-Gel-Filled-Direct-Burial-SDS-Sheet.pdf",
-    "acessadoEm": "2026-11-07",
-    "observacao": "Composto típico de bloqueio de água (95% óleo mineral branco e 5% cera de parafina), insolúvel em água. Pode causar irritação leve na pele e nos olhos; lavar a pele com água e sabão; cria risco de escorregamento em pisos lisos."
-  },
-  {
     "id": "foa-fusao",
     "titulo": "The FOA Reference For Fiber Optics — Fusion Splicing",
     "organizacao": "The Fiber Optic Association",

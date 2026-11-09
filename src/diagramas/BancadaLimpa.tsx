@@ -66,13 +66,13 @@ export function BancadaLimpa({ descricao }: PropsDiagrama) {
         3. Geleia do cabo, solventes e ambiente de trabalho
       </text>
       <text x="20" y="187" className="d-texto" style={{ fontSize: 9.5 }}>
-        • Gel (óleo + parafina): escorrega no piso; lavar pele com sabão.
+        • Gel: limpar com o produto apropriado; pedir a ficha de segurança.
       </text>
       <text x="20" y="204" className="d-texto" style={{ fontSize: 9.5 }}>
-        • Removedor D&apos;Gel (fulgor &gt; 60 °C): usar luvas e secar antes do arco.
+        • Removedor de gel: luvas, longe de faísca; secar antes do arco.
       </text>
       <text x="20" y="221" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        • Caixa subterrânea (gases): nunca fundir lá; subir o cabo.
+        • Caixa subterrânea (gases): nunca fundir lá; o cabo sobe.
       </text>
     </Diagrama>
   );

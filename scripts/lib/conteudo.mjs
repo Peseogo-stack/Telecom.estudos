@@ -116,6 +116,12 @@ export function lerLicoes() {
     });
 }
 
+/** Lê content/videos.json (vídeos conferidos e termos de busca, por lição). */
+export function lerVideos() {
+  const caminho = join(PASTA_CONTEUDO, 'videos.json');
+  return existsSync(caminho) ? JSON.parse(readFileSync(caminho, 'utf-8')) : [];
+}
+
 /** Lê content/questoes/<id>.json (lista de questões da lição). */
 export function lerQuestoes(idLicao) {
   const caminho = join(PASTA_CONTEUDO, 'questoes', `${idLicao}.json`);

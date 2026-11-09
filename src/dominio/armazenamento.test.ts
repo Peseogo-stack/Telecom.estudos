@@ -48,6 +48,20 @@ describe('armazenamento local', () => {
     expect(estado.progresso.licoes['09-01']).toEqual({ melhor: 5, tentativas: 0 });
     expect(estado.revisao.itens).toEqual({});
     expect(estado.ajustes.tema).toBe('sistema');
+    expect(estado.videos).toEqual({});
+  });
+
+  it('avaliações de vídeo: só "util" e "fora" são aceitas ao ler', () => {
+    window.localStorage.setItem(
+      CHAVE,
+      JSON.stringify({ videos: { 'https://youtu.be/aaaaaaaaaaa': 'util', 'https://youtu.be/bbbbbbbbbbb': 'fora', 'https://youtu.be/ccccccccccc': 'otimo', x: 3 } }),
+    );
+    expect(carregar().estado.videos).toEqual({ 'https://youtu.be/aaaaaaaaaaa': 'util', 'https://youtu.be/bbbbbbbbbbb': 'fora' });
+  });
+
+  it('videos que não é objeto vira vazio', () => {
+    window.localStorage.setItem(CHAVE, JSON.stringify({ videos: ['util'] }));
+    expect(carregar().estado.videos).toEqual({});
   });
 });
 
@@ -98,5 +112,20 @@ describe('exportar e importar', () => {
     expect(r.progresso.licoes['09-01']).toEqual({ melhor: 5, tentativas: 2, aprovadaEm: '2026-11-11' });
     expect(Object.keys(r.revisao.itens).sort()).toEqual(['a', 'b']);
     expect(r.progresso.diasEstudo).toEqual(['2026-11-09', '2026-11-11']);
+  });
+
+  it('importar "tudo" soma as avaliações de vídeo, e a do arquivo vale em caso de conflito', () => {
+    const a = 'https://youtu.be/aaaaaaaaaaa';
+    const b = 'https://youtu.be/bbbbbbbbbbb';
+    const atual: Estado = { ...ESTADO_INICIAL, videos: { [a]: 'util', [b]: 'util' } };
+    const outro: Estado = { ...ESTADO_INICIAL, videos: { [b]: 'fora' } };
+    const leitura = lerImportacao(exportar(outro, 'tudo'));
+    if (!leitura.ok) throw new Error('falhou');
+    expect(aplicarImportacao(atual, leitura).videos).toEqual({ [a]: 'util', [b]: 'fora' });
+  });
+
+  it('exportar só o caderno não leva as avaliações de vídeo', () => {
+    const estado: Estado = { ...ESTADO_INICIAL, videos: { 'https://youtu.be/aaaaaaaaaaa': 'util' } };
+    expect(JSON.parse(exportar(estado, 'caderno')).dados).not.toHaveProperty('videos');
   });
 });

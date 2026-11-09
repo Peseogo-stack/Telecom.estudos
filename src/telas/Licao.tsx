@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useEstado } from '../app/EstadoApp';
 import { AvisoSeguranca, Html, ListaFontes, Migalhas, SeloConfirmar, embaralhar, useTitulo } from '../componentes/Comuns';
 import { QuestaoCard } from '../componentes/QuestaoCard';
+import { VideosLicao } from '../componentes/VideosLicao';
 import { indice, licoesDisponiveis, resumoDaLicao, useLicao } from '../conteudo/carregar';
 import type { Licao as TLicao, Questao } from '../conteudo/tipos';
 import { DIAGRAMAS } from '../diagramas';
@@ -132,6 +133,7 @@ function ConteudoLicao({ licao, total }: { licao: TLicao; total: number }) {
         <ListaFontes fontes={licao.fontes} />
         {licao.revisadoEm && <p className="dica">Conteúdo escrito em {formatarDia(licao.revisadoEm)}.</p>}
       </section>
+      <VideosLicao videos={licao.videos} termos={licao.termosBusca} />
 
       <div className="cartao" style={{ marginTop: 24 }}>
         <h2 style={{ marginTop: 0 }}>Hora das questões</h2>

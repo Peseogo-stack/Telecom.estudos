@@ -36,24 +36,24 @@
     "enunciado": "O que o AS80 diz sobre o cabo?",
     "alternativas": [
       {
-        "texto": "Que é autossustentado, feito para vão de até 80 m.",
+        "texto": "Cabo de 80 fibras, feito para duto.",
+        "correta": false,
+        "explicacao": "As fibras vêm antes de FO (12FO = 12 fibras); AS80 não é número de fibras, e AS não é duto."
+      },
+      {
+        "texto": "Autossustentado, para vão de até 120 m.",
+        "correta": false,
+        "explicacao": "O vão do AS80 é 80 m. O de 120 m é o AS120."
+      },
+      {
+        "texto": "Autossustentado, para vão de até 80 m.",
         "correta": true,
-        "explicacao": "Certo. Também existem AS120 e AS200."
+        "explicacao": "Certo. AS é autossustentado (ADSS) e 80 é o vão em metros; existem AS120 e AS200 (Transcend)."
       },
       {
-        "texto": "Que tem 80 fibras.",
+        "texto": "Duto dielétrico, para vão de até 80 m.",
         "correta": false,
-        "explicacao": "As fibras vêm antes de FO (12FO = 12 fibras)."
-      },
-      {
-        "texto": "Que a bobina tem 80 km.",
-        "correta": false,
-        "explicacao": "O comprimento sai da marcação de metro, não do AS."
-      },
-      {
-        "texto": "Que a fibra perde 0,80 dB/km.",
-        "correta": false,
-        "explicacao": "A atenuação está na ficha, não na sigla."
+        "explicacao": "Duto dielétrico é o DD. O AS é autossustentado e o número é o vão."
       }
     ],
     "fontes": [
@@ -162,24 +162,24 @@
     "enunciado": "O cabo tem 9 mm de diâmetro. Qual o raio mínimo de curvatura enquanto você puxa?",
     "alternativas": [
       {
-        "texto": "90 mm.",
-        "correta": false,
-        "explicacao": "Esse é o raio depois de instalado (10 × o diâmetro)."
-      },
-      {
-        "texto": "9 mm.",
-        "correta": false,
-        "explicacao": "Seria dobrar o cabo quase sobre ele mesmo."
-      },
-      {
-        "texto": "20 mm.",
-        "correta": false,
-        "explicacao": "O 20 é o multiplicador, não o raio."
-      },
-      {
         "texto": "180 mm.",
         "correta": true,
-        "explicacao": "Certo: 20 × 9 mm, pelas fichas consultadas."
+        "explicacao": "Certo. 20 × 9 mm durante a instalação (Prysmian e Transcend). Depois de instalado, 10 × 9 = 90 mm."
+      },
+      {
+        "texto": "90 mm.",
+        "correta": false,
+        "explicacao": "Esse é o raio depois de instalado (10 × o diâmetro). Enquanto puxa, é 20 ×."
+      },
+      {
+        "texto": "45 mm.",
+        "correta": false,
+        "explicacao": "Seria só 5 × o diâmetro, abaixo do mínimo das fichas (20 × puxando, 10 × instalado)."
+      },
+      {
+        "texto": "360 mm.",
+        "correta": false,
+        "explicacao": "Seria 40 × o diâmetro. As fichas pedem 20 × durante a instalação."
       }
     ],
     "fontes": [
@@ -194,24 +194,24 @@
     "enunciado": "Qual a diferença entre um CFOA-SM-AS80 e um CFOA-SM-DD?",
     "alternativas": [
       {
-        "texto": "O DD tem o dobro de fibras.",
+        "texto": "O AS é para duto; o DD é aéreo autossustentado.",
         "correta": false,
-        "explicacao": "O número de fibras vem antes de FO."
+        "explicacao": "Está invertido: AS é autossustentado (aéreo) e DD é duto dielétrico."
       },
       {
-        "texto": "O AS é aéreo autossustentado; o DD é para duto (duto dielétrico).",
+        "texto": "O AS tem 12 fibras e o DD tem 48.",
+        "correta": false,
+        "explicacao": "O número de fibras vem antes de FO, não no AS ou no DD."
+      },
+      {
+        "texto": "O AS é multimodo; o DD é monomodo.",
+        "correta": false,
+        "explicacao": "Os dois trazem SM: são monomodo. O tipo de fibra é a segunda parte da sigla."
+      },
+      {
+        "texto": "O AS é aéreo autossustentado; o DD, de duto.",
         "correta": true,
-        "explicacao": "Certo. AS e DD dizem o tipo de instalação."
-      },
-      {
-        "texto": "O AS é multimodo e o DD, monomodo.",
-        "correta": false,
-        "explicacao": "Os dois são SM, monomodo."
-      },
-      {
-        "texto": "Nenhuma: são só nomes de fabricantes diferentes.",
-        "correta": false,
-        "explicacao": "A mesma Prysmian faz os dois; a sigla diz onde o cabo vai."
+        "explicacao": "Certo. AS e DD dizem o tipo de instalação; DD é duto dielétrico (Prysmian)."
       }
     ],
     "fontes": [
@@ -226,24 +226,24 @@
     "enunciado": "Pelas marcações da capa, há 1200 m de cabo entre duas caixas. O OTDR mostra o fim da fibra em 1212 m. O que pensar?",
     "alternativas": [
       {
-        "texto": "Que há uma quebra no meio do cabo.",
+        "texto": "Há uma quebra no cabo, e o fim devia ser em 1200 m.",
         "correta": false,
-        "explicacao": "A quebra apareceria antes do fim, não depois."
+        "explicacao": "Uma quebra apareceria antes do fim, não depois. Os 12 m a mais são a folga normal da fibra."
       },
       {
-        "texto": "Que o OTDR está descalibrado.",
-        "correta": false,
-        "explicacao": "Uns 12 m a mais em 1200 m é a folga normal da fibra."
-      },
-      {
-        "texto": "Que está dentro do esperado: a fibra tem cerca de 1% a mais que o cabo.",
+        "texto": "Normal: a fibra é cerca de 1% mais longa que o cabo.",
         "correta": true,
-        "explicacao": "Certo. A fibra fica com folga dentro do tubo; a FOA fala em cerca de 1%."
+        "explicacao": "Certo. A fibra tem folga dentro do tubo, cerca de 1% (FOA): 12 m em 1200 m."
       },
       {
-        "texto": "Que a gravação da capa está errada.",
+        "texto": "O OTDR está descalibrado e precisa ser trocado agora.",
         "correta": false,
-        "explicacao": "A capa mede o cabo; o OTDR mede a fibra, que é um pouco mais longa."
+        "explicacao": "Cerca de 12 m a mais em 1200 m é o esperado; não indica defeito no OTDR."
+      },
+      {
+        "texto": "A marcação de metro da capa está errada em 12 m.",
+        "correta": false,
+        "explicacao": "A capa mede o cabo; o OTDR mede a fibra, um pouco mais longa."
       }
     ],
     "fontes": [

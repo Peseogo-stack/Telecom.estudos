@@ -37,24 +37,24 @@
     "enunciado": "Para que serve o tubo amarelo (direcional)?",
     "alternativas": [
       {
-        "texto": "Para levar as fibras de reserva.",
+        "texto": "Leva as fibras de reserva do cabo, sem tráfego.",
         "correta": false,
-        "explicacao": "Ele é o tubo 2, com fibras como os outros."
+        "explicacao": "Ele é o tubo 2, com fibras como os outros tubos."
       },
       {
-        "texto": "Para mostrar o sentido da contagem: do piloto para ele, e daí em diante.",
+        "texto": "Mostra o sentido da contagem, do piloto em diante.",
         "correta": true,
-        "explicacao": "Certo. Depois do 2, os brancos são 3, 4, 5… no mesmo sentido."
+        "explicacao": "Certo. É o tubo 2; depois dele os brancos são 3, 4, 5… no mesmo sentido (Prysmian, Transcend)."
       },
       {
-        "texto": "Para marcar o fim da contagem.",
+        "texto": "Marca o último tubo da contagem, o de número 6.",
         "correta": false,
-        "explicacao": "Ele é o segundo; a contagem segue depois dele."
+        "explicacao": "Ele é o segundo tubo; a contagem segue depois dele."
       },
       {
-        "texto": "Para indicar que o cabo é geleado.",
+        "texto": "Indica que o cabo é geleado, e não seco.",
         "correta": false,
-        "explicacao": "Seco ou geleado vem na gravação (S ou G)."
+        "explicacao": "Seco ou geleado vem na gravação (S ou G), não na cor do tubo."
       }
     ],
     "fontes": [
@@ -68,24 +68,24 @@
     "enunciado": "Por que não basta decorar \"conte no sentido horário\"?",
     "alternativas": [
       {
-        "texto": "Porque cada fabricante gira os tubos para um lado.",
+        "texto": "Porque a contagem começa no direcional, e não no piloto.",
         "correta": false,
-        "explicacao": "O que muda é de que ponta você olha. Siga o direcional."
+        "explicacao": "A contagem começa no piloto (1), passa pelo direcional (2) e segue."
+      },
+      {
+        "texto": "Porque, olhando pela outra ponta, o horário vira anti-horário.",
+        "correta": true,
+        "explicacao": "Certo. Por isso se segue o direcional, do piloto em diante, a partir de qualquer ponta (Transcend)."
+      },
+      {
+        "texto": "Porque os tubos brancos têm cores diferentes entre si.",
+        "correta": false,
+        "explicacao": "Os tubos brancos são iguais entre si; é o direcional que dá o sentido."
       },
       {
         "texto": "Porque o piloto muda de cor no meio do cabo.",
         "correta": false,
-        "explicacao": "O piloto é verde no cabo todo."
-      },
-      {
-        "texto": "Basta, sim: o sentido é sempre horário.",
-        "correta": false,
-        "explicacao": "Pela outra ponta do cabo, o horário vira anti-horário."
-      },
-      {
-        "texto": "Porque, olhando pela outra ponta, o sentido se inverte; o direcional resolve.",
-        "correta": true,
-        "explicacao": "Certo. Do piloto para o direcional, e segue: vale das duas pontas."
+        "explicacao": "O piloto é verde no cabo todo; o que muda é a ponta de onde você olha."
       }
     ],
     "fontes": [
@@ -192,24 +192,24 @@
     "enunciado": "Dois cabos de 12 fibras do mesmo fabricante: um tem um tubo com as 12; o outro, tubos de 2. Por quê?",
     "alternativas": [
       {
-        "texto": "Um dos dois está com defeito.",
-        "correta": false,
-        "explicacao": "As duas montagens aparecem nas fichas."
+        "texto": "O arranjo muda de cabo para cabo, e está na ficha.",
+        "correta": true,
+        "explicacao": "Certo. Na Prysmian, o AS80 de 12 fibras tem um tubo com as 12 e o AS120, tubos de 2."
       },
       {
-        "texto": "Tubo de 2 só existe em cabo multimodo.",
+        "texto": "Um dos dois cabos saiu com defeito de fábrica.",
+        "correta": false,
+        "explicacao": "As duas montagens aparecem nas fichas; nenhuma é defeito."
+      },
+      {
+        "texto": "Tubo de 2 fibras só existe em cabo multimodo.",
         "correta": false,
         "explicacao": "Os exemplos da ficha são monomodo."
       },
       {
-        "texto": "O de tubos de 2 tem fibras de reserva.",
+        "texto": "O cabo de tubos de 2 traz fibras de reserva.",
         "correta": false,
-        "explicacao": "Todas as fibras contam igual."
-      },
-      {
-        "texto": "O arranjo muda de um cabo para outro: confira sempre na ficha.",
-        "correta": true,
-        "explicacao": "Certo. Na Prysmian, o AS80 de 12 fibras tem um tubo com as 12 e o AS120, tubos de 2."
+        "explicacao": "Todas as fibras contam igual; o que muda é o arranjo."
       }
     ],
     "fontes": [
@@ -223,24 +223,24 @@
     "enunciado": "Num cabo de 288 fibras (24 tubos), o que diferencia o tubo 13 do tubo 1?",
     "alternativas": [
       {
-        "texto": "Uma marca extra: traços (Furukawa), anéis (Prysmian) ou faixa (TIA).",
-        "correta": true,
-        "explicacao": "Certo. As cores se repetem a partir do 13º, com essa marca."
+        "texto": "A cor: o tubo 13 é preto e o tubo 1, verde.",
+        "correta": false,
+        "explicacao": "As cores se repetem: o 13 tem a cor do 1, com a marca. O preto é o tubo 9."
       },
       {
-        "texto": "Nada: o técnico conta pela posição.",
+        "texto": "Nada: o técnico conta a posição em volta do cabo.",
         "correta": false,
         "explicacao": "Sem a marca, o 13 seria igual ao 1. As fichas marcam a partir do 13º."
       },
       {
-        "texto": "O tubo 13 é sempre preto.",
+        "texto": "O número de fibras: o tubo 13 tem só 6 fibras.",
         "correta": false,
-        "explicacao": "As cores se repetem: o 13 tem a cor do 1, com a marca."
+        "explicacao": "Os tubos têm o mesmo número de fibras, que vem na ficha; o que muda é a marca."
       },
       {
-        "texto": "O tubo 13 não tem fibras.",
-        "correta": false,
-        "explicacao": "Tem fibras como os outros."
+        "texto": "Uma marca extra no tubo: traços, anéis ou faixa.",
+        "correta": true,
+        "explicacao": "Certo. As cores se repetem a partir do 13º tubo, com marca: traços (Furukawa), anéis (Prysmian) ou faixa (TIA-598)."
       }
     ],
     "fontes": [

@@ -162,24 +162,24 @@
     "enunciado": "Por que não dá para emendar \"cor com cor\" entre um cabo nacional e um TIA-598?",
     "alternativas": [
       {
-        "texto": "Porque as fibras TIA são multimodo.",
+        "texto": "As fibras do padrão TIA-598 são todas de multimodo.",
         "correta": false,
         "explicacao": "O código de cores não diz se a fibra é monomodo ou multimodo."
       },
       {
-        "texto": "Porque as mesmas cores ficam em posições diferentes: a cor não diz o número.",
+        "texto": "A fusão entre cores diferentes tem uma perda maior.",
+        "correta": false,
+        "explicacao": "A cor está no revestimento, que sai antes da fusão; não influencia a perda."
+      },
+      {
+        "texto": "A TIA-598 usa só 6 cores e o padrão nacional, 12.",
+        "correta": false,
+        "explicacao": "As duas ordens usam 12 cores, em sequências diferentes."
+      },
+      {
+        "texto": "A mesma cor tem posições diferentes nos dois padrões.",
         "correta": true,
-        "explicacao": "Certo. Verde é a 1 num padrão e a 3 no outro."
-      },
-      {
-        "texto": "Porque a fusão entre fibras de cores diferentes perde mais.",
-        "correta": false,
-        "explicacao": "A cor está no revestimento, que sai antes da fusão."
-      },
-      {
-        "texto": "Porque a TIA usa só 6 cores.",
-        "correta": false,
-        "explicacao": "As duas usam 12 cores."
+        "explicacao": "Certo. A cor não diz o número: verde é a fibra 1 no Brasil e a 3 na TIA-598 (FOA, Furukawa)."
       }
     ],
     "fontes": [
@@ -226,22 +226,22 @@
     "enunciado": "Os pigtails do DIO vêm coloridos. O que conferir antes de emendar?",
     "alternativas": [
       {
-        "texto": "Nada: o pigtail sempre segue o padrão do cabo.",
-        "correta": false,
-        "explicacao": "Pode não seguir. Confira na ficha."
-      },
-      {
-        "texto": "Só a cor do conector.",
-        "correta": false,
-        "explicacao": "A cor do conector diz o polimento (lição 03-07), não a ordem das fibras."
-      },
-      {
-        "texto": "Em que padrão de cores eles vêm, na ficha do DIO ou do pigtail.",
+        "texto": "O padrão de cores do pigtail, na ficha do DIO ou do pigtail.",
         "correta": true,
-        "explicacao": "Certo. As fibras de 900 µm dos pigtails também seguem um código de cores."
+        "explicacao": "Certo. As fibras de 900 µm dos pigtails também seguem um código de cores (FOA), e ele pode não ser o do cabo."
       },
       {
-        "texto": "A cor da capa do cabo.",
+        "texto": "Nada: o pigtail segue o padrão de cores do cabo.",
+        "correta": false,
+        "explicacao": "Pode não seguir. Confira na ficha do DIO ou do pigtail."
+      },
+      {
+        "texto": "Só a cor do conector, que dá a ordem das fibras.",
+        "correta": false,
+        "explicacao": "A cor do conector diz monomodo e polimento (lição 03-07), não a ordem das fibras."
+      },
+      {
+        "texto": "A cor da capa do cabo externo, que dá a ordem das fibras.",
         "correta": false,
         "explicacao": "A capa do cabo externo é preta e não diz a ordem das fibras."
       }

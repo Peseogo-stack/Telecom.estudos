@@ -67,24 +67,24 @@
     "enunciado": "Pela TIA-568, um conector verde quer dizer…",
     "alternativas": [
       {
-        "texto": "Multimodo.",
+        "texto": "Monomodo, com polimento PC.",
         "correta": false,
-        "explicacao": "Pela TIA-568, multimodo é bege (ou preto em OM2, água em OM3/OM4 e verde-limão em OM5, segundo a FOA)."
+        "explicacao": "PC e UPC são azuis. Verde é APC."
       },
       {
-        "texto": "Monomodo com polimento UPC.",
-        "correta": false,
-        "explicacao": "UPC é azul."
-      },
-      {
-        "texto": "Conector de teste.",
-        "correta": false,
-        "explicacao": "A cor diz a fibra e o polimento, não o uso."
-      },
-      {
-        "texto": "Monomodo com polimento APC (em ângulo).",
+        "texto": "Monomodo, com polimento APC.",
         "correta": true,
-        "explicacao": "Certo. Azul é monomodo PC/UPC; verde, monomodo APC."
+        "explicacao": "Certo. Pela TIA-568, verde é monomodo APC (FOA)."
+      },
+      {
+        "texto": "Multimodo OM3, com polimento APC.",
+        "correta": false,
+        "explicacao": "Multimodo é bege; o OM3 é água (FOA). Verde é monomodo APC."
+      },
+      {
+        "texto": "Monomodo, com polimento UPC.",
+        "correta": false,
+        "explicacao": "UPC é azul. Verde é APC."
       }
     ],
     "fontes": [
@@ -99,24 +99,24 @@
     "enunciado": "Por que o APC reflete menos que o UPC?",
     "alternativas": [
       {
-        "texto": "Porque o ângulo de 8° joga a luz refletida para fora do núcleo.",
-        "correta": true,
-        "explicacao": "Certo. A reflexão se perde na casca e fica em −60 dB ou menos."
-      },
-      {
-        "texto": "Porque é verde.",
+        "texto": "A cor verde do corpo absorve a luz refletida.",
         "correta": false,
-        "explicacao": "A cor só identifica; quem reduz a reflexão é o ângulo."
+        "explicacao": "A cor só identifica o polimento; quem reduz a reflexão é o ângulo."
       },
       {
-        "texto": "Porque tem gel na ponta.",
+        "texto": "O ângulo de 8° devolve a luz refletida para o núcleo.",
+        "correta": false,
+        "explicacao": "É o contrário: o ângulo joga a luz para fora do núcleo, e ela se perde na casca."
+      },
+      {
+        "texto": "O ângulo de 8° joga a luz refletida para fora do núcleo.",
+        "correta": true,
+        "explicacao": "Certo. A reflexão se perde na casca e fica em −60 dB ou menos (FOA, Fluke)."
+      },
+      {
+        "texto": "Um gel na ponta absorve a luz refletida.",
         "correta": false,
         "explicacao": "Não há gel no conector; é o polimento em ângulo."
-      },
-      {
-        "texto": "Porque perde mais sinal na conexão.",
-        "correta": false,
-        "explicacao": "A ideia não é perder mais; é a reflexão sair do núcleo."
       }
     ],
     "fontes": [
@@ -131,24 +131,24 @@
     "enunciado": "Você precisa ligar um cordão SC/APC num adaptador onde já está um SC/UPC. O corpo encaixa. O que fazer?",
     "alternativas": [
       {
-        "texto": "Ligar: se encaixou, está certo.",
+        "texto": "Ligar depois de limpar bem as duas faces.",
         "correta": false,
-        "explicacao": "O corpo SC é igual nos dois; o polimento não. A cor avisa."
+        "explicacao": "Limpeza não resolve: as faces não casam (Fluke)."
       },
       {
-        "texto": "Ligar, depois de limpar bem.",
-        "correta": false,
-        "explicacao": "Limpeza não resolve: as faces não casam."
-      },
-      {
-        "texto": "Não ligar: use um cordão com o mesmo polimento.",
-        "correta": true,
-        "explicacao": "Certo. APC com UPC anula o antirreflexo, e a reflexão fica forte."
-      },
-      {
-        "texto": "Ligar e girar até achar a posição.",
+        "texto": "Ligar e girar o cordão até achar a posição.",
         "correta": false,
         "explicacao": "Girar não adianta: o problema é o polimento, não a posição."
+      },
+      {
+        "texto": "Não ligar e usar um cordão com o mesmo polimento.",
+        "correta": true,
+        "explicacao": "Certo. APC com UPC anula o efeito antirreflexo, e a reflexão fica forte, com ecos no OTDR (Fluke)."
+      },
+      {
+        "texto": "Ligar mesmo assim, porque o corpo SC encaixou.",
+        "correta": false,
+        "explicacao": "O corpo SC é igual nos dois; o polimento não. A cor avisa."
       }
     ],
     "fontes": [

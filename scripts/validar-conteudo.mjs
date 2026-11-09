@@ -213,6 +213,10 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
       (q.alternativas ?? []).forEach((a, i) => {
         if (!a.texto) erro(ondeQ, `alternativa ${i + 1} sem texto`);
         if (!a.explicacao || a.explicacao.length < 10) erro(ondeQ, `alternativa ${i + 1} sem explicação`);
+        // A explicação da correta começa com "Certo"; a de uma errada, nunca. Pega a marca trocada ao reordenar.
+        const comecaCerto = /^Certo\b/.test(a.explicacao ?? '');
+        if (a.correta === true && !comecaCerto) erro(ondeQ, `a explicação da alternativa correta (${i + 1}) deve começar com "Certo"`);
+        if (a.correta !== true && comecaCerto) erro(ondeQ, `a alternativa ${i + 1} está marcada como errada, mas a explicação começa com "Certo" (marca trocada?)`);
       });
       const textos = (q.alternativas ?? []).map((a) => a.texto);
       if (new Set(textos).size !== textos.length) erro(ondeQ, 'alternativas repetidas');

@@ -243,6 +243,7 @@ Cada lição tem **no mínimo 5 questões** (o ideal é 8 a 10, para variar ao r
 ### 5.5 Validador (`npm run validar`)
 Falha o build quando:
 - questão sem 4 alternativas, sem exatamente 1 correta ou com alternativa sem `explicacao`;
+- explicação da correta que não começa com "Certo", ou de uma errada que começa (marca de correta trocada);
 - lição com menos de 5 questões, sem `fontes`, sem alguma das seções obrigatórias ou com `{{fonte:x}}` inexistente;
 - fonte sem `url` ou `acessado_em`, ou id repetido;
 - termo de glossário duplicado (sigla + pt);

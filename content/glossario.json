@@ -1354,10 +1354,9 @@
     "id": "decapador",
     "pt": "Decapador de fibra",
     "en": "Fiber stripper",
-    "definicao": "Ferramenta calibrada (como Miller, No-Nik ou Micro-Strip, ou com furos para 2–3 mm, 900 µm e 250 µm) que remove o revestimento de acrilato sem riscar a casca de vidro de 125 µm.",
+    "definicao": "Ferramenta do tamanho certo para o revestimento a remover (a FOA cita os tipos Miller, No-Nik e Micro-Strip). Tira o revestimento sem riscar o vidro de 125 µm: um risco pode virar trinca e quebrar a fibra depois.",
     "fontes": [
-      "foa-fusao",
-      "fujikura-catalogo-telecom"
+      "foa-fusao"
     ],
     "licoes": [
       "05-01"
@@ -1381,7 +1380,7 @@
     "id": "clivador",
     "pt": "Clivador de precisão",
     "en": "Precision fiber cleaver",
-    "definicao": "Ferramenta com lâmina circular numerada (até ~60.000 clivagens no CT50) que faz um micro-risco no vidro de 125 µm e o parte com face limpa e reta no comprimento ajustado (como 10 a 16 mm).",
+    "definicao": "Ferramenta que risca o vidro de 125 µm e o parte por tração, deixando a ponta reta no comprimento que a máquina pede (na Fujikura 45S, de 5 a 16 mm para fibra de 250 µm). A lâmina do CT50 dura cerca de 60.000 clivagens.",
     "fontes": [
       "foa-fusao",
       "fujikura-catalogo-telecom"
@@ -1394,7 +1393,7 @@
     "id": "tubete",
     "pt": "Tubete termocontrátil (protetor de emenda)",
     "en": "Heat-shrink splice protection sleeve",
-    "definicao": "Tubo plástico de 40 mm ou 60 mm com haste metálica interna e tubo termofusível que deve ser vestido na fibra antes da clivagem e contraído no forno da máquina para proteger a fusão.",
+    "definicao": "Protetor termocontrátil que vai sobre a emenda. É posto na fibra antes de decapar e clivar e encolhido no forno da máquina. Na Fujikura 45S, até 66 mm de comprimento (o forno tem modos para 60 mm); há também tubetes de 40 mm.",
     "fontes": [
       "foa-fusao",
       "fujikura-catalogo-telecom"
@@ -1434,7 +1433,7 @@
     "id": "arc-check",
     "pt": "Calibração do arco",
     "en": "Arc check / ARC calibration",
-    "definicao": "Rotina feita no início da jornada ou quando mudam temperatura, umidade, altitude ou desgaste dos eletrodos: a máquina funde uma fibra de teste e ajusta automaticamente a potência e o tempo do arco.",
+    "definicao": "Calibração do arco: a máquina faz fusões de teste e ajusta a potência e o tempo do arco. A nota da Tempo manda fazer no início de cada sessão de fusão; repetições seguem o manual da máquina.",
     "fontes": [
       "tempo-910fs-fusao"
     ],
@@ -1446,7 +1445,7 @@
     "id": "teste-de-tracao",
     "pt": "Teste de tração da emenda",
     "en": "Proof test / Fiber tensile test",
-    "definicao": "Puxão calibrado de cerca de 2,0 N (~200 gf) que a máquina de fusão aplica automaticamente à fibra ao abrir as garras para garantir que a emenda não quebre ao ser acomodada na bandeja.",
+    "definicao": "Puxão de cerca de 2,0 N (cerca de 0,2 kgf) que a máquina de fusão aplica na emenda pronta, para garantir que ela aguenta ser acomodada na bandeja.",
     "fontes": [
       "fujikura-catalogo-telecom"
     ],
@@ -1459,11 +1458,10 @@
     "id": "perda-estimada",
     "pt": "Perda estimada pela máquina",
     "en": "Estimated splice loss",
-    "definicao": "Valor em dB mostrado na tela da máquina de fusão com base na imagem das pontas clivadas, no alinhamento e no formato da emenda. É apenas uma aproximação visual; a perda real só se mede com OTDR (de preferência nos dois sentidos).",
+    "definicao": "Valor em dB que a máquina de fusão mostra, calculado pela clivagem, pelo alinhamento e pelo formato da emenda. É uma aproximação: a perda real se mede com OTDR (de preferência nos dois sentidos) ou com fonte e medidor.",
     "fontes": [
       "foa-fusao",
-      "tempo-910fs-fusao",
-      "viavi-otdr-dicas"
+      "tempo-910fs-fusao"
     ],
     "licoes": [
       "05-03",
@@ -1489,10 +1487,10 @@
     "id": "media-bidirecional",
     "pt": "Média bidirecional no OTDR",
     "en": "Two-way average / Bidirectional OTDR test",
-    "definicao": "Média algébrica das medições de perda de uma emenda obtidas com OTDR a partir das duas pontas do cabo (A→B e B→A). Cancela diferenças de coeficiente de retroespalhamento e MFD, fornecendo a perda óptica real da fusão.",
+    "definicao": "Média das perdas de uma emenda medidas com OTDR a partir das duas pontas (A→B e B→A). Elimina o ganho e a perda aparentes que surgem entre fibras diferentes e dá a perda real da emenda.",
     "fontes": [
       "yokogawa-otdr-bidirecional",
-      "exfo-otdr-an194",
+      "foa-otdr",
       "foa-fusao"
     ],
     "licoes": [
@@ -1504,7 +1502,7 @@
     "pt": "Terminal de linha óptico",
     "en": "Optical Line Terminal",
     "sigla": "OLT",
-    "definicao": "Equipamento ativo instalado na subestação, POP ou central que comanda a rede PON, transmitindo downstream em 1490 nm e recebendo upstream em 1310 nm.",
+    "definicao": "Equipamento ativo da central que comanda a rede PON. No GPON, transmite a descida em torno de 1490 nm e recebe a subida em torno de 1310 nm.",
     "fontes": [
       "itu-g984-folheto",
       "itu-g9842-2019",
@@ -1520,7 +1518,7 @@
     "pt": "Unidade de rede óptica",
     "en": "Optical Network Unit",
     "sigla": "ONU",
-    "definicao": "Equipamento ativo do usuário final ou subunidade da distribuidora que recebe downstream e transmite upstream em rajadas TDMA, convertendo o sinal óptico em Ethernet.",
+    "definicao": "Equipamento do lado do cliente numa rede PON: recebe a descida, transmite a subida em rajadas e entrega a porta de rede.",
     "fontes": [
       "itu-g984-folheto",
       "itu-g9842-2019",

@@ -7,12 +7,12 @@
       {
         "texto": "Uma estimativa teórica calculada por visão computacional com base no alinhamento e geometria das pontas.",
         "correta": true,
-        "explicacao": "Certo. Conforme a Greenlee/Tempo e a FOA, o valor na tela é uma estimativa matemática baseada em câmeras, e não uma medição óptica real de perda."
+        "explicacao": "Certo. A FOA e a Tempo chamam o número da tela de estimativa: a perda real se mede com OTDR ou com fonte e medidor."
       },
       {
         "texto": "Uma medição óptica real obtida por feixe de luz calibrado injetado através do núcleo ao longo de todo o lance.",
         "correta": false,
-        "explicacao": "A máquina não dispõe de transmissor e receptor óptico nas pontas do enlace para medir atenuação real de sinal."
+        "explicacao": "A máquina não mede o enlace inteiro; a perda real de uma emenda se mede com OTDR ou com fonte e medidor."
       },
       {
         "texto": "A resistência elétrica medida em Ohms entre as pontas dos eletrodos de tungstênio durante a descarga do arco.",
@@ -37,9 +37,9 @@
     "enunciado": "Quais fatores frequentes de atenuação óptica real em campo NÃO podem ser detectados pelas câmeras da máquina?",
     "alternativas": [
       {
-        "texto": "Diferença de diâmetro de campo modal (MFD) entre cabos e microcurvaturas surgidas no forno ou na bandeja.",
+        "texto": "Diferença entre as fibras emendadas e curvas que surgem depois, no forno ou na bandeja.",
         "correta": true,
-        "explicacao": "Certo. Discrepâncias de MFD (ex.: variação de 0,5 µm) e microcurvaturas pós-fusão causam atenuação sem que a imagem da máquina perceba."
+        "explicacao": "Certo. Uma diferença de 5 µm no núcleo pode dar 0,2 dB (Tempo) com a emenda perfeita na tela; e o forno e a bandeja vêm depois da estimativa."
       },
       {
         "texto": "Remoção completa do acrilato primário de proteção e utilização de eletrodos novos devidamente calibrados.",
@@ -71,12 +71,12 @@
       {
         "texto": "Realizar teste com OTDR em medição bidirecional (A→B e B→A) e calcular a média algébrica da perda do evento.",
         "correta": true,
-        "explicacao": "Certo. Conforme FOA, VIAVI e Yokogawa, a medição bidirecional com OTDR elimina erros de retroespalhamento e afere a perda real da junta."
+        "explicacao": "Certo. A FOA manda medir a perda de emenda com OTDR, de preferência nos dois sentidos, com a média; a Yokogawa mostra que a média elimina o ganho e a perda aparentes."
       },
       {
         "texto": "Fotografar o visor digital da máquina de fusão com a câmera do celular e anexar a imagem ao laudo de entrega.",
         "correta": false,
-        "explicacao": "A tela da máquina mostra estimativa matemática geométrica, rejeitada em normas como comprovação de homologação de rota."
+        "explicacao": "A tela mostra uma estimativa (FOA, Tempo); foto dela não comprova a perda."
       },
       {
         "texto": "Injetar feixe visível com caneta óptica laser (VFL) e estimar a perda de decibéis pela intensidade do brilho.",
@@ -91,7 +91,6 @@
     ],
     "fontes": [
       "foa-fusao",
-      "viavi-otdr-dicas",
       "yokogawa-otdr-bidirecional"
     ],
     "dificuldade": 1
@@ -123,7 +122,7 @@
       }
     ],
     "fontes": [
-      "exfo-otdr-an194",
+      "foa-otdr",
       "yokogawa-otdr-bidirecional"
     ],
     "dificuldade": 2
@@ -146,18 +145,18 @@
       {
         "texto": "+0,28 dB, pois as normas de telecomunicações determinam considerar exclusivamente o pior sentido medido.",
         "correta": false,
-        "explicacao": "Medições unidirecionais contêm erros intrínsecos de retroespalhamento; a norma exige a média bidirecional."
+        "explicacao": "Num sentido só há o erro do retroespalhamento; a perda real é a média dos dois (FOA)."
       },
       {
         "texto": "0,00 dB, pois o ganho óptico registrado em um dos sentidos anula completamente a atenuação do sentido oposto.",
         "correta": false,
-        "explicacao": "A média resulta em 0,08 dB de atenuação real, índice plenamente satisfatório para fusão monomodo de alta qualidade."
+        "explicacao": "A média dá 0,08 dB de perda, dentro da referência da FOA para aceite (média de 0,1 dB, rejeitar acima de 0,2 dB)."
       }
     ],
     "fontes": [
       "foa-fusao",
-      "exfo-otdr-an194",
-      "yokogawa-otdr-bidirecional"
+      "yokogawa-otdr-bidirecional",
+      "foa-entrega"
     ],
     "dificuldade": 2
   },
@@ -184,7 +183,7 @@
       {
         "texto": "Porque a pressão barométrica elevada no ambiente externo aumenta a densidade do arco e queima as cascas de vidro.",
         "correta": false,
-        "explicacao": "Efeitos de pressão e temperatura do ar são compensados pelo arc check no início do trabalho, sem queimar o vidro."
+        "explicacao": "O motivo é o da Tempo: o valor de catálogo vem de cortar e reemendar a mesma fibra."
       }
     ],
     "fontes": [
@@ -196,27 +195,27 @@
   {
     "id": "05-04-q7",
     "licao": "05-04",
-    "enunciado": "Qual é a atenuação típica de campo de uma fusão monomodo e qual valor a FOA recomenda adotar no orçamento de perdas?",
+    "enunciado": "Na tabela da VIAVI para OTDR, qual é a perda típica de uma fusão? E que valor a FOA usa para planejar?",
     "alternativas": [
       {
-        "texto": "Perda típica de campo em torno de 0,08 dB e valor conservador de projeto de 0,15 dB (meta de 0,10 a 0,15 dB).",
+        "texto": "De 0,10 a 0,30 dB (VIAVI); a FOA planeja com 0,15 dB por fusão monomodo.",
         "correta": true,
-        "explicacao": "Certo. Guias da VIAVI indicam média de campo de 0,08 dB e a FOA recomenda 0,15 dB para dimensionamento do orçamento óptico."
+        "explicacao": "Certo. A VIAVI dá 0,10 a 0,30 dB para fusão; a FOA usa 0,15 dB para planejar o orçamento de perda."
       },
       {
-        "texto": "Perda típica de campo em torno de 0,50 dB e valor conservador de projeto de 1,00 dB para cada emenda fundida.",
+        "texto": "De 0,50 a 1,00 dB; a FOA planeja com 1,0 dB por fusão.",
         "correta": false,
-        "explicacao": "0,50 dB é valor típico de conexão por conector óptico acoplado, inaceitável como média para fusões em campo."
+        "explicacao": "Isso é ordem de grandeza de conector: a VIAVI dá 0,15 a 0,5 dB por par de conectores."
       },
       {
-        "texto": "Perda típica de campo em torno de 0,001 dB e valor conservador de projeto de 0,01 dB para cálculos contratuais.",
+        "texto": "De 0,001 a 0,01 dB; a FOA planeja com 0,01 dB.",
         "correta": false,
-        "explicacao": "Valores da ordem de milésimos de dB são inatingíveis de maneira sustentável em redes externas reais de telecomunicações."
+        "explicacao": "Nem o catálogo de laboratório chega a isso: a 45S dá média de 0,03 dB por cut-back."
       },
       {
-        "texto": "Perda típica de campo em torno de 3,00 dB devido ao acoplamento de potência luminosa entre os dois núcleos.",
+        "texto": "Cerca de 3 dB; a FOA planeja com 3 dB por fusão.",
         "correta": false,
-        "explicacao": "Atenuação de 3,0 dB representa perda de 50% de sinal, característica de um divisor óptico 1:2 e não de uma fusão monomodo."
+        "explicacao": "3 dB é metade da luz: a perda de um splitter 1:2, não de uma fusão."
       }
     ],
     "fontes": [
@@ -231,9 +230,9 @@
     "enunciado": "Segundo a norma EIA/TIA-568, qual é o limite MÁXIMO aceitável para uma emenda óptica e por que não deve ser a meta de fusão?",
     "alternativas": [
       {
-        "texto": "Teto de 0,30 dB para cobrir emendas mecânicas; fusões bem feitas devem atingir níveis bem menores (~0,08 dB).",
+        "texto": "0,3 dB por emenda, fusão ou mecânica; é um máximo, e a FOA aceita fusão com média de 0,1 dB.",
         "correta": true,
-        "explicacao": "Certo. A TIA-568 fixa 0,30 dB como teto normativo para aceitação. Boas fusões alcançam médias muito melhores, em torno de 0,08 dB."
+        "explicacao": "Certo. A TIA-568 fixa 0,3 dB por emenda. Como referência de aceite, a FOA considera razoável média de 0,1 dB, rejeitando acima de 0,2 dB."
       },
       {
         "texto": "Teto de 0,10 dB para qualquer tecnologia de emenda; valores superiores geram risco imediato de arco de fogo na caixa.",
@@ -243,7 +242,7 @@
       {
         "texto": "Teto de 0,75 dB por emenda óptica; sendo este o mesmo valor de referência aplicado para divisores tipo splitter 1:16.",
         "correta": false,
-        "explicacao": "0,75 dB é o limite normativo para par de conectores acoplados, enquanto divisores 1:16 atenuam cerca de 13,8 dB."
+        "explicacao": "0,75 dB é o máximo da TIA por par de conectores; um splitter 1:16 perde até 13,7 a 13,9 dB nas fichas."
       },
       {
         "texto": "Teto flexível sem valor em decibéis; pois a norma avalia apenas a tração física e a ausência de trincas externas.",
@@ -253,8 +252,7 @@
     ],
     "fontes": [
       "foa-tia568",
-      "foa-loss-budget",
-      "viavi-otdr-dicas"
+      "foa-entrega"
     ],
     "dificuldade": 2
   }

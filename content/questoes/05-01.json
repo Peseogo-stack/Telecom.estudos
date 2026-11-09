@@ -17,7 +17,7 @@
       {
         "texto": "Limpar a fibra com IPA ≥ 99%, clivar a capa secundária, decapar a sílica com estilete e aplicar cola cianoacrilato no tubete.",
         "correta": false,
-        "explicacao": "O uso de estilete fratura a sílica e a proteção de emenda é feita exclusivamente por tubete termocontrátil com haste de reforço."
+        "explicacao": "Estilete risca e quebra o vidro; a emenda é protegida com tubete termocontrátil ou protetor de encaixe (FOA), não com cola."
       },
       {
         "texto": "Vestir o tubete, clivar o cabo com capa, decapar o acrilato de 250 µm, limpar a seco e fundir sem teste de tração mecânica.",
@@ -44,7 +44,7 @@
       {
         "texto": "Poderá cortar a luva plástica do tubete no sentido longitudinal e fechá-la sobre a fibra usando fita de autofusão.",
         "correta": false,
-        "explicacao": "Fender o tubete destrói a rigidez mecânica e a vedação contra umidade, sendo terminantemente proibido pelas normas de telecomunicações."
+        "explicacao": "Cortar o tubete tira a proteção que ele deveria dar à emenda; o certo é refazer."
       },
       {
         "texto": "Poderá empurrar o tubete rígido a partir do terminal óptico oposto localizado no outro extremo do cabo lançado.",
@@ -102,7 +102,7 @@
       {
         "texto": "Porque esfregar a ponta já clivada deposita resíduos, engordura a face do vidro e quebra as bordas vivas do núcleo.",
         "correta": true,
-        "explicacao": "Certo. A clivagem gera uma face atômica plana e limpa. Qualquer contato posterior contamina a extremidade e quebra suas arestas."
+        "explicacao": "Certo. A ordem da FOA é decapar, limpar e clivar: a ponta clivada vai direto para a máquina. Esfregar depois suja e pode lascar a ponta."
       },
       {
         "texto": "Porque o álcool isopropílico evapora rapidamente e resfria bruscamente a sílica, causando choque térmico na ponta.",
@@ -117,13 +117,12 @@
       {
         "texto": "Porque a norma recomenda clivar a fibra ainda umedecida para lubrificar a lâmina circular de diamante do clivador.",
         "correta": false,
-        "explicacao": "A fibra deve estar absolutamente seca antes do corte; umidade prejudica a aderência dos apoios de borracha no clivador."
+        "explicacao": "Não há essa regra: a fibra é limpa com álcool 99% e lenço sem fiapo antes de clivar (Tempo)."
       }
     ],
     "fontes": [
       "foa-fusao",
-      "tempo-910fs-fusao",
-      "fujikura-dicas-90r"
+      "tempo-910fs-fusao"
     ],
     "dificuldade": 2
   },
@@ -140,7 +139,7 @@
       {
         "texto": "Corta a fibra por esmagamento contínuo entre pastilhas rotativas de tungstênio, atingindo ângulo fixo de 2,5° a 3,0°.",
         "correta": false,
-        "explicacao": "Esmagar a fibra geraria trincas irregulares e estilhaços, sendo que ângulos próximos a 3° são recusados por máquinas modernas."
+        "explicacao": "O clivador não esmaga: ele risca o vidro e quebra a fibra por tração, com ângulo médio de 0,3° a 0,9° no CT50."
       },
       {
         "texto": "Utiliza microarco elétrico térmico de baixa potência para fundir a extremidade com ângulo padronizado em 0,00°.",
@@ -182,7 +181,7 @@
       {
         "texto": "Porque as câmeras PAS da máquina de fusão não conseguem focar feixes luminosos em lances menores que 15 mm de fibra.",
         "correta": false,
-        "explicacao": "As câmeras PAS focam perfeitamente na região de emenda; o limite mínimo de 10 mm garante estabilidade mecânica nas garras."
+        "explicacao": "O motivo é o da ficha do CT50: abaixo de 10 mm, a lâmina precisa de ajuste e o ângulo médio piora."
       }
     ],
     "fontes": [
@@ -230,7 +229,7 @@
       {
         "texto": "Deixar o tubete esfriar completamente na bandeja metálica da máquina antes de acomodá-lo na bandeja de emendas.",
         "correta": true,
-        "explicacao": "Certo. O polímero termocontrátil deve resfriar e enrijecer na bandeja metálica antes do manuseio, prevenindo microcurvaturas."
+        "explicacao": "Certo. O tubete sai do forno mole: espere esfriar antes de curvar a fibra na bandeja."
       },
       {
         "texto": "Moldar o tubete ainda aquecido na curvatura circular da bandeja para facilitar o encaixe mecânico nos berços plásticos.",
@@ -243,9 +242,9 @@
         "explicacao": "O resfriamento abrupto com água induz tensões térmicas no polímero e no vidro, além de introduzir umidade prejudicial na emenda."
       },
       {
-        "texto": "Retirar imediatamente a haste interna de aço inox com alicate de bico para diminuir o peso na bandeja de fusão.",
+        "texto": "Cortar o tubete ao meio para ele caber melhor na bandeja.",
         "correta": false,
-        "explicacao": "A haste de aço inox é o membro estrutural que confere sustentação mecânica e rigidez ao tubete; nunca deve ser retirada."
+        "explicacao": "O tubete inteiro é o que protege a emenda; cortado, deixa a fibra exposta."
       }
     ],
     "fontes": [

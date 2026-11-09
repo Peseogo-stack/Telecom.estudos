@@ -18,10 +18,10 @@ export function EstimadoRealFusao({ descricao }: PropsDiagrama) {
         0,02 dB
       </text>
       <text x="102" y="72" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9.5 }}>
-        Estimativa visual (clivagem)
+        Estimativa (imagem da emenda)
       </text>
       <text x="102" y="90" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Não mede luz nem vê MFD
+        É estimativa, não medição
       </text>
       <text x="102" y="106" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9 }}>
         Não vale como laudo de aceite
@@ -39,69 +39,48 @@ export function EstimadoRealFusao({ descricao }: PropsDiagrama) {
         Média: 0,08 dB
       </text>
       <text x="298" y="90" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9.5 }}>
-        Cancela diferença de MFD
+        Elimina o ganho aparente
       </text>
       <text x="298" y="106" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9 }}>
-        Medição oficial de cada emenda
+        Perda real da emenda
       </text>
 
       {/* Faixa inferior: Régua de valores de emenda */}
       <rect x="10" y="130" width="380" height="106" rx="8" className="d-zona-controlada" />
       <text x="20" y="148" className="d-texto d-forte" style={{ fontSize: 10 }}>
-        3. O que cada número significa (ficha × projeto × norma)
+        3. Perda por fusão: quatro números diferentes
       </text>
-      {/* Eixo horizontal */}
-      <line x1="36" y1="176" x2="364" y2="176" className="d-cota" />
-      {/* Marcador 1: 0,03 dB */}
-      <circle cx="52" cy="176" r="5" className="d-ponto" />
-      <text x="52" y="166" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9.5 }}>
+      {/* Eixo horizontal, em escala de 0 a 0,35 dB */}
+      <line x1="36" y1="180" x2="364" y2="180" className="d-cota" />
+      {/* Faixa típica da VIAVI: 0,10 a 0,30 dB */}
+      <rect x="130" y="157" width="187" height="8" rx="3" className="d-faixa-vigente" />
+      <text x="223" y="153" textAnchor="middle" className="d-texto" style={{ fontSize: 9 }}>
+        0,10–0,30 dB: típica (VIAVI)
+      </text>
+      {/* Marcadores */}
+      <circle cx="64" cy="180" r="5" className="d-ponto" />
+      <text x="64" y="198" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9.5 }}>
         0,03 dB
       </text>
-      <text x="52" y="194" textAnchor="middle" className="d-texto" style={{ fontSize: 8.5 }}>
-        Média cat.
+      <text x="64" y="211" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
+        catálogo (lab)
       </text>
-      <text x="52" y="206" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        (lab cut-back)
+      <circle cx="177" cy="180" r="5" className="d-ponto" />
+      <text x="177" y="198" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9.5 }}>
+        0,15 dB
       </text>
-
-      {/* Marcador 2: 0,08 dB */}
-      <circle cx="144" cy="176" r="5" className="d-ponto" />
-      <text x="144" y="166" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9.5 }}>
-        0,08 dB
+      <text x="177" y="211" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
+        FOA: planejar
       </text>
-      <text x="144" y="194" textAnchor="middle" className="d-texto" style={{ fontSize: 8.5 }}>
-        Típica campo
+      <circle cx="317" cy="180" r="5" className="d-ponto" />
+      <text x="317" y="198" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
+        0,3 dB
       </text>
-      <text x="144" y="206" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        (VIAVI OTDR)
+      <text x="317" y="211" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
+        máx. TIA-568
       </text>
-
-      {/* Marcador 3: 0,10 a 0,15 dB */}
-      <circle cx="246" cy="176" r="5" className="d-ponto" />
-      <text x="246" y="166" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9.5 }}>
-        0,10–0,15 dB
-      </text>
-      <text x="246" y="194" textAnchor="middle" className="d-texto" style={{ fontSize: 8.5 }}>
-        Contrato / FOA
-      </text>
-      <text x="246" y="206" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        (confirmar!)
-      </text>
-
-      {/* Marcador 4: 0,30 dB */}
-      <circle cx="348" cy="176" r="5" className="d-ponto" />
-      <text x="348" y="166" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        0,30 dB
-      </text>
-      <text x="348" y="194" textAnchor="middle" className="d-texto" style={{ fontSize: 8.5 }}>
-        Máx. TIA-568
-      </text>
-      <text x="348" y="206" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        (teto norma)
-      </text>
-
-      <text x="200" y="226" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9 }}>
-        No app: 0,30 dB (máx. TIA-568) padrão; 0,10 dB típico.
+      <text x="200" y="229" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9 }}>
+        Na obra, vale o critério do contrato. No app, o orçamento usa 0,3 dB.
       </text>
     </Diagrama>
   );

@@ -2,12 +2,12 @@
   {
     "id": "05-03-q1",
     "licao": "05-03",
-    "enunciado": "Por que o alinhamento pelo núcleo (core alignment via PAS) é superior ao alinhamento pela casca ao emendar fibras de diferentes fabricantes?",
+    "enunciado": "Segundo a nota da Tempo, por que o alinhamento pelo núcleo se sai melhor ao emendar fibras antigas ou de fabricantes diferentes?",
     "alternativas": [
       {
         "texto": "Alinha diretamente os núcleos de sílica onde a luz trafega, compensando desvios de concentricidade entre núcleo e casca.",
         "correta": true,
-        "explicacao": "Certo. Conforme a FOA e notas de aplicação, quando há excentricidade geométrica, alinhar a casca desalinha os núcleos; o alinhamento de núcleo sobrepõe os eixos ópticos reais."
+        "explicacao": "Certo. A Tempo explica que fibras antigas ou de outros fabricantes podem ter o núcleo fora do centro da casca; a máquina que alinha pelo núcleo se adapta a essas diferenças."
       },
       {
         "texto": "Dispensa a clivagem de precisão com clivadores mecânicos, permitindo quebrar a ponta da fibra manualmente sem perda.",
@@ -17,12 +17,12 @@
       {
         "texto": "Utiliza feixe ultravioleta frio de alta intensidade em vez do arco elétrico térmico gerado por eletrodos de tungstênio.",
         "correta": false,
-        "explicacao": "Máquinas de alinhamento por núcleo usam descarga elétrica por arco voltaico convencional para fundir a sílica a cerca de 2.000 °C."
+        "explicacao": "Máquinas por núcleo também fundem com arco elétrico entre eletrodos."
       },
       {
         "texto": "Elimina a necessidade de calibração periódica do arco elétrico mesmo diante de mudanças severas no clima de campo.",
         "correta": false,
-        "explicacao": "A calibração do arco (arc check) é indispensável em qualquer máquina quando houver alterações de temperatura, pressão ou umidade."
+        "explicacao": "Toda máquina precisa da calibração do arco; a Tempo manda fazer no início de cada sessão de fusão."
       }
     ],
     "fontes": [
@@ -37,14 +37,14 @@
     "enunciado": "Como opera o sistema de alinhamento por perfil óptico (PAS - Profile Alignment System) nas máquinas de fusão modernas?",
     "alternativas": [
       {
-        "texto": "Emite luz ortogonal a 90° em câmeras X e Y para detectar a refração do núcleo, acionando motores nos eixos X, Y e Z.",
+        "texto": "Ilumina as fibras de duas direções, a 90°, e as câmeras e o software acham o núcleo e movem as fibras.",
         "correta": true,
-        "explicacao": "Certo. O sistema PAS ilumina as fibras em eixos perpendiculares e analisa o perfil de refração do núcleo para comandar os micromotores."
+        "explicacao": "Certo. Pela FOA, no PAS as fibras são iluminadas de duas direções, a 90°; o software reconhece o núcleo nas imagens e alinha com estágios móveis."
       },
       {
         "texto": "Aplica curvaturas mecânicas acentuadas na fibra para medir perdas com fotodiodos sem usar câmeras de vídeo digitais.",
         "correta": false,
-        "explicacao": "Isso descreve o sistema LID (Light Injection and Detection), enquanto o PAS baseia-se puramente em câmeras ópticas e visão computacional."
+        "explicacao": "Isso lembra o LID (Local Injection and Detection), que injeta e detecta luz; o PAS trabalha com imagem."
       },
       {
         "texto": "Mantém as fibras travadas em ranhuras estáticas de metal fundido sem qualquer movimento motorizado durante a solda.",
@@ -69,9 +69,9 @@
     "enunciado": "Qual é a característica operacional do alinhamento ativo pela casca (active clad alignment, como na Fujikura 45S)?",
     "alternativas": [
       {
-        "texto": "Move as ranhuras em V por motores para alinhar as bordas da casca, atingindo perda média de catálogo de 0,03 dB em SMF.",
+        "texto": "Alinha as fibras pela casca, com ajuste ativo da máquina; o catálogo dá perda média de 0,03 dB em G.652.",
         "correta": true,
-        "explicacao": "Certo. Na Fujikura 45S, atuadores motorizados corrigem a posição dos V-grooves para alinhar a casca externa, com perda média típica de 0,03 dB."
+        "explicacao": "Certo. A ficha da 45S diz \"Active clad alignment\" e média de 0,03 dB em G.652 e G.657, medida por cut-back em laboratório."
       },
       {
         "texto": "Deixa as ranhuras em V totalmente imóveis e depende apenas da limpeza da casca para assentar a fibra na ranhura fixa.",
@@ -86,7 +86,7 @@
       {
         "texto": "Exige a substituição manual dos eletrodos de tungstênio a cada dez fusões para garantir a centralização mecânica.",
         "correta": false,
-        "explicacao": "Eletrodos de máquinas modernas suportam milhares de fusões (tipicamente 5.000 a 6.000) antes de demandarem substituição."
+        "explicacao": "Os eletrodos duram centenas a milhares de fusões: cerca de 6.000 na 45S e 800 a 1.500 nas máquinas de fita 90R."
       }
     ],
     "fontes": [
@@ -102,7 +102,7 @@
       {
         "texto": "Vaporizar poeiras microscópicas residuais nas pontas e pré-aquecer a sílica antes do avanço e solda das duas fibras.",
         "correta": true,
-        "explicacao": "Certo. Conforme documentado pela FOA, o pulso curto de pré-fusão queima sujeiras microscópicas e amolece levemente as faces antes da união."
+        "explicacao": "Certo. Pela FOA, a pré-fusão tira a sujeira das pontas e pré-aquece as fibras antes da fusão."
       },
       {
         "texto": "Derreter a capa de acrilato externa para colá-la na borda dos eletrodos e impedir deslocamentos axiais no processo.",
@@ -112,7 +112,7 @@
       {
         "texto": "Disparar um feixe luminoso vermelho visível para iluminar o interior da máquina e auxiliar na inspeção pelo operador.",
         "correta": false,
-        "explicacao": "A pré-fusão é uma descarga elétrica invisível de baixa energia, não uma lâmpada piloto de iluminação de bancada."
+        "explicacao": "A pré-fusão é um arco elétrico curto, não uma luz para iluminar a máquina."
       },
       {
         "texto": "Esvaziar a carga residual dos capacitores internos de alta tensão para proteger a placa eletrônica contra descargas.",
@@ -131,9 +131,9 @@
     "enunciado": "Em que ocasiões o profissional de campo deve executar a rotina de calibração do arco (arc check) na máquina de fusão?",
     "alternativas": [
       {
-        "texto": "No início de cada dia de trabalho e sempre que houver variação considerável de temperatura ambiente, umidade ou altitude.",
+        "texto": "No início de cada sessão de fusão e quando o manual da máquina pedir.",
         "correta": true,
-        "explicacao": "Certo. O arc check calibra a corrente e a posição do plasma elétrico para a pressão e densidade do ar ambiente no local do trabalho."
+        "explicacao": "Certo. A Tempo manda calibrar o arco no início de cada sessão de fusão; repetições ao longo do dia seguem o manual da máquina."
       },
       {
         "texto": "Apenas uma vez a cada doze meses quando a máquina for enviada ao laboratório credenciado para calibração formal.",
@@ -148,7 +148,7 @@
       {
         "texto": "A cada três fibras emendadas em sequência contínua no mesmo cabo óptico e sob as mesmas condições climáticas locais.",
         "correta": false,
-        "explicacao": "Se as condições térmicas e atmosféricas estiverem estáveis, não é necessário interromper o trabalho a cada três emendas."
+        "explicacao": "Não há essa regra; a calibração é no início da sessão e quando o manual pedir."
       }
     ],
     "fontes": [
@@ -163,14 +163,14 @@
     "enunciado": "Quais são os cuidados essenciais de manutenção preventiva para eletrodos, ranhuras em V e lentes da máquina de fusão?",
     "alternativas": [
       {
-        "texto": "Nunca tocar eletrodos com as mãos; limpar ranhuras em V com cotonete e IPA; e limpar lentes a frio sem os eletrodos.",
+        "texto": "Não tocar os eletrodos com a mão; limpar ranhuras em V com haste e álcool 99%; limpar as lentes sem os eletrodos.",
         "correta": true,
-        "explicacao": "Certo. Conforme manuais da Fujikura e Tempo, a oleosidade da pele estraga os eletrodos e as lentes exigem limpeza cuidadosa a frio com IPA ≥ 99%."
+        "explicacao": "Certo. A Tempo manda nunca tocar os eletrodos com a mão; a Fujikura pede ranhuras em V limpas todo dia e lentes uma vez por mês, com álcool de pureza 99% ou mais, tirando os eletrodos antes."
       },
       {
         "texto": "Lixar os eletrodos com palha de aço; lavar os blocos em V com água corrente; e lubrificar lentes ópticas com silicone.",
         "correta": false,
-        "explicacao": "Palha de aço estraga a ponta de tungstênio, água infiltra no chassi eletrônico e silicone gera névoa óptica irreversível nas lentes."
+        "explicacao": "Nada disso está em manual: palha de aço estraga o eletrodo, água não entra na máquina e lente se limpa com álcool 99%."
       },
       {
         "texto": "Aplicar vaselina líquida nas ranhuras em V para reduzir o atrito do vidro; e usar estilete para raspar as lentes ópticas.",
@@ -180,7 +180,7 @@
       {
         "texto": "Substituir os eletrodos de tungstênio a cada 50 fusões executadas, independentemente do desgaste ou da estabilidade do arco.",
         "correta": false,
-        "explicacao": "Eletrodos suportam normalmente de 1.500 a mais de 5.000 descargas térmicas antes de atingirem o limite de vida útil."
+        "explicacao": "Os eletrodos duram cerca de 800 a 6.000 fusões, conforme o modelo (catálogo Fujikura); troque quando a máquina avisar."
       }
     ],
     "fontes": [
@@ -203,7 +203,7 @@
       {
         "texto": "Acionar ciclos contínuos de re-arco elétrico por até dez vezes consecutivas até que a mancha de vidro desapareça.",
         "correta": false,
-        "explicacao": "Múltiplos arcos sucessivos superaquecem e queimam o núcleo de sílica, degradando a geometria e provocando alta perda óptica."
+        "explicacao": "A FOA limita a duas repetições; se não resolveu, refaça a emenda."
       },
       {
         "texto": "Aceitar a emenda sem restrições, pois linhas escuras aumentam a velocidade de propagação do sinal por difração de luz.",
@@ -213,7 +213,7 @@
       {
         "texto": "Limpar a fibra ainda quente na câmara com gaze embebida em solvente para remover manchas depositadas externamente.",
         "correta": false,
-        "explicacao": "Tocar a fibra recém-fundida com solvente frio causa quebra imediata por choque térmico e risco de inflamação de vapores inflamáveis."
+        "explicacao": "Nada de solvente na fibra recém-emendada; se o defeito persistiu, refaça."
       }
     ],
     "fontes": [
@@ -224,12 +224,12 @@
   {
     "id": "05-03-q8",
     "licao": "05-03",
-    "enunciado": "Se a tela da máquina de fusão revelar bolha de ar (bubble), dilatação em barriga (bulging) ou estrangulamento da fibra, o que fazer?",
+    "enunciado": "Se a tela mostrar bolha, emenda inchada (bulging) ou núcleos muito desalinhados, o que fazer?",
     "alternativas": [
       {
         "texto": "Quebrar a fibra na hora e reiniciar todo o processo do zero, revisando clivagem, limpeza e parâmetros do arco.",
         "correta": true,
-        "explicacao": "Certo. Defeitos graves como bolhas, barrigas ou estrangulamentos comprometem a condução óptica e a resistência mecânica; não aceitam re-arco."
+        "explicacao": "Certo. Para a FOA, bolha, emenda inchada e desalinhamento grande de núcleo pedem refazer sempre; não adianta repetir o arco."
       },
       {
         "texto": "Repetir a aplicação do arco térmico cinco vezes consecutivas para tentar vaporizar os bolsões de ar retidos na junta.",

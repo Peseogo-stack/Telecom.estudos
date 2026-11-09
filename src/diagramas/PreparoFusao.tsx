@@ -17,7 +17,7 @@ export function PreparoFusao({ descricao }: PropsDiagrama) {
       <rect x="64" y="40" width="68" height="16" rx="4" className="d-caixa" />
       <line x1="70" y1="44" x2="126" y2="44" className="d-marco" />
       <text x="102" y="70" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9.5 }}>
-        40 ou 60 mm + haste de aço
+        40 ou 60 mm
       </text>
 
       {/* Passo 2: Limpar e decapar */}
@@ -41,7 +41,7 @@ export function PreparoFusao({ descricao }: PropsDiagrama) {
         3. Limpar com IPA ≥ 99%
       </text>
       <text x="22" y="126" className="d-texto" style={{ fontSize: 9.5 }}>
-        • Lenço sem fiapo (1 sentido)
+        • Lenço sem fiapo
       </text>
       <text x="22" y="143" className="d-texto d-suave" style={{ fontSize: 9.5 }}>
         • Limpar casca nua antes de clivar
@@ -50,10 +50,10 @@ export function PreparoFusao({ descricao }: PropsDiagrama) {
       {/* Passo 4: Clivagem de precisão */}
       <rect x="206" y="90" width="184" height="68" rx="8" className="d-caixa" />
       <text x="218" y="108" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
-        4. Clivar (10–16 mm)
+        4. Clivar (5–16 mm na 45S)
       </text>
       <text x="218" y="126" className="d-texto" style={{ fontSize: 9.5 }}>
-        • Face reta: 0,3° a 0,9° (CT50)
+        • Ângulo médio 0,3° a 0,9° (CT50)
       </text>
       <text x="218" y="143" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
         • Não encostar a ponta em nada
@@ -65,7 +65,7 @@ export function PreparoFusao({ descricao }: PropsDiagrama) {
         5. Fundir → tração (~2,0 N) → centralizar tubete e forno
       </text>
       <text x="20" y="205" className="d-texto" style={{ fontSize: 9.5 }}>
-        • Tração (~200 gf) testa a resistência antes de ir à bandeja.
+        • Tração (~2,0 N) testa a emenda antes da bandeja.
       </text>
       <text x="20" y="221" className="d-texto d-suave" style={{ fontSize: 9.5 }}>
         • Forno (16–23 s em 60 mm): esfriar antes de curvar a fibra.

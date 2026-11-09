@@ -59,13 +59,13 @@ export function DentroMaquina({ descricao }: PropsDiagrama) {
         Arc check, manutenção e defeitos na tela
       </text>
       <text x="20" y="186" className="d-texto" style={{ fontSize: 9.5 }}>
-        • Arc check: início do dia; eletrodos: 1.500–6.000 arcos.
+        • Arc check: início da sessão; eletrodos: 800 a 6.000 fusões.
       </text>
       <text x="20" y="203" className="d-texto" style={{ fontSize: 9.5 }}>
-        • IPA ≥ 99%: V-groove todo dia; lente 1×/mês (desligada).
+        • Álcool 99%: V-groove todo dia; lente 1×/mês (90R).
       </text>
       <text x="20" y="220" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        • Linha: até 2 re-arcos. Bolha ou barriga: refazer do zero!
+        • Linha escura: até 2 re-arcos. Bolha ou inchaço: refazer.
       </text>
     </Diagrama>
   );

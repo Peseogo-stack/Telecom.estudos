@@ -669,6 +669,7 @@ a.item-lista:hover {
   stroke: var(--texto);
   stroke-width: 1.2;
   stroke-dasharray: 4 3;
+  fill: none;
 }
 .d-poste {
   fill: var(--superficie-2);
@@ -677,6 +678,7 @@ a.item-lista:hover {
 .d-cabo-bt {
   stroke: var(--erro);
   stroke-width: 4;
+  fill: none;
 }
 .d-cabo-telecom {
   stroke: var(--royal);

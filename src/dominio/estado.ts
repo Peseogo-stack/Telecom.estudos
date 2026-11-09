@@ -52,6 +52,8 @@ export interface Ajustes {
   soRevisaoAte: Dia | null;
 }
 
+export type AvaliacaoVideo = 'util' | 'fora';
+
 export interface Estado {
   versao: 1;
   progresso: {
@@ -61,6 +63,8 @@ export interface Estado {
   revisao: EstadoRevisao;
   caderno: Caderno;
   ajustes: Ajustes;
+  /** Avaliação de cada vídeo recomendado, pela URL. Fica só no aparelho. */
+  videos: Record<string, AvaliacaoVideo>;
   /** Últimos valores usados em cada ferramenta (conveniência). */
   ferramentas: Record<string, unknown>;
 }
@@ -71,6 +75,7 @@ export const ESTADO_INICIAL: Estado = {
   revisao: REVISAO_VAZIA,
   caderno: { campos: {}, notas: [], perguntas: [], semeadas: [] },
   ajustes: { tema: 'sistema', sol: false, inicioPlano: null, diasSoRevisao: [], soRevisaoAte: null },
+  videos: {},
   ferramentas: {},
 };
 

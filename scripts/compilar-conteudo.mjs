@@ -14,6 +14,7 @@ import {
   gerarDocPerguntas,
   lerLicoes,
   lerQuestoes,
+  lerVideos,
   compilarLicao,
   htmlParaTexto,
 } from './lib/conteudo.mjs';
@@ -35,7 +36,12 @@ const perguntasPorId = new Map(perguntasEmpresa.map((p) => [p.id, p]));
 // O documento de perguntas é gerado do mesmo banco que o app usa.
 writeFileSync(join(RAIZ, 'docs', 'perguntas-para-a-empresa.md'), gerarDocPerguntas(perguntasEmpresa));
 
-const licoes = lerLicoes().map((l) => compilarLicao(l, fontesPorId, glossarioPorId, perguntasPorId));
+const videosPorLicao = new Map(lerVideos().map((v) => [v.licao, v]));
+const licoes = lerLicoes().map((l) => {
+  const compilada = compilarLicao(l, fontesPorId, glossarioPorId, perguntasPorId);
+  const v = videosPorLicao.get(compilada.id);
+  return { ...compilada, videos: v?.videos ?? [], termosBusca: v?.termosBusca ?? [] };
+});
 const disponiveis = new Set(licoes.map((l) => l.id));
 
 // Lições e questões agrupadas por módulo.

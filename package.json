@@ -7,6 +7,7 @@
   "scripts": {
     "conteudo": "node scripts/compilar-conteudo.mjs",
     "validar": "node scripts/validar-conteudo.mjs",
+    "conferir-videos": "node scripts/conferir-videos.mjs",
     "validar:links": "node scripts/validar-conteudo.mjs --links",
     "dev": "npm run conteudo && vite",
     "build": "npm run validar && npm run conteudo && tsc -b && vite build",

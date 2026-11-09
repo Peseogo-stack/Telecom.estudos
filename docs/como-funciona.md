@@ -115,7 +115,7 @@ Datas são guardadas como texto `"AAAA-MM-DD"` no fuso do aparelho (`datas.ts`),
 
 | Comando | O que roda |
 | --- | --- |
-| `npm test` | Vitest: regras puras (revisão, calculadora, armazenamento, busca, plano), o cartão de questão e o validador de conteúdo |
+| `npm test` | Vitest: regras puras (revisão, calculadora, armazenamento, busca, plano), o cartão de questão, a seção de vídeos e o validador de conteúdo |
 | `npm run test:e2e` | Playwright: abre o app compilado no Chromium, faz uma lição inteira, revisão, calculadora, caderno, modo offline, e roda o axe (acessibilidade) nos temas claro, escuro e sol |
 | `npm run verificar` | Tudo acima, na ordem |
 
@@ -134,3 +134,22 @@ npm run verificar  # build + todos os testes
 3. Toda fonte nova entra em `content/fontes.json` com URL e data de acesso.
 4. Se a lição tiver um diagrama novo, crie o componente em `src/diagramas/` e registre em `src/diagramas/index.ts`.
 5. `npm run validar` até dar 0 erro. Depois `npm run dev` para ver.
+
+## 13. Vídeos recomendados
+
+Cada lição mostra, depois de "Fontes", a seção "Vídeos" (`src/componentes/VideosLicao.tsx`). Os dados ficam em `content/videos.json`, uma entrada por lição:
+
+```json
+{ "licao": "02-01", "videos": [ { "url": "https://www.youtube.com/watch?v=XXXXXXXXXXX", "titulo": "…", "canal": "…", "duracao": "12:34", "trecho": "3:10 a 9:45", "observar": "uma frase", "aviso": "diferença em relação à lição", "conferidoEm": "2026-11-09", "conferencia": "oEmbed; descrição pelo RSS do canal" } ], "termosBusca": ["termo 1", "termo 2"] }
+```
+
+**Como acrescentar um vídeo**
+1. Abra o vídeo, confira que é em português e que combina com a lição (até 2 por lição, de até uns 20 min; se for longo, preencha `trecho`).
+2. Copie `titulo` e `canal` exatamente como o oEmbed devolve (`https://www.youtube.com/oembed?url=<url>&format=json`: campos `title` e `author_name`).
+3. Escreva `observar` (uma frase), `aviso` (só se o vídeo diferir da lição) e `conferidoEm` (hoje, AAAA-MM-DD).
+4. Rode `npm run validar`. Sem vídeo, a lição continua mostrando os `termosBusca`.
+
+**Como conferir os links:** `npm run conferir-videos` consulta o oEmbed de cada vídeo (300 ms entre as consultas), imprime uma linha por vídeo e marca `QUEBRADO` (HTTP diferente de 200) e `MUDOU` (título ou canal diferente do salvo). Sai com código 1 se houver quebrado. Precisa de internet e **não** roda no build, no `npm run verificar` nem no CI.
+
+As escolhas "Útil" e "Fora do tema" ficam em `estado.videos` (chave = URL), só no aparelho; entram na exportação "tudo", não na do caderno.
+

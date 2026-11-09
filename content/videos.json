@@ -1,0 +1,235 @@
+[
+  {
+    "licao": "02-01",
+    "videos": [],
+    "termosBusca": [
+      "reflexão interna total fibra óptica explicação",
+      "núcleo e casca da fibra óptica como a luz viaja"
+    ]
+  },
+  {
+    "licao": "02-02",
+    "videos": [],
+    "termosBusca": [
+      "fibra óptica 9/125 o que significa",
+      "fibra óptica revestimento 250 µm e 900 µm tight buffer"
+    ]
+  },
+  {
+    "licao": "02-03",
+    "videos": [],
+    "termosBusca": [
+      "fibra monomodo e multimodo diferença",
+      "fibra OM3 OM4 OS2 como identificar"
+    ]
+  },
+  {
+    "licao": "02-04",
+    "videos": [],
+    "termosBusca": [
+      "G.652D x G.657A2 diferença",
+      "fibra G.657 curvatura emenda com G.652"
+    ]
+  },
+  {
+    "licao": "02-05",
+    "videos": [],
+    "termosBusca": [
+      "janelas de transmissão fibra óptica 1310 1550",
+      "GPON XGS-PON comprimentos de onda 1490 1577"
+    ]
+  },
+  {
+    "licao": "02-06",
+    "videos": [],
+    "termosBusca": [
+      "atenuação em fibra óptica causas",
+      "macrocurvatura fibra óptica perda"
+    ]
+  },
+  {
+    "licao": "02-07",
+    "videos": [],
+    "termosBusca": [
+      "dB e dBm fibra óptica cálculo",
+      "converter dBm em mW"
+    ]
+  },
+  {
+    "licao": "03-01",
+    "videos": [],
+    "termosBusca": [
+      "cabo óptico AS80 como ler a gravação",
+      "cabo óptico CFOA-SM marcação de metro"
+    ]
+  },
+  {
+    "licao": "03-03",
+    "videos": [],
+    "termosBusca": [
+      "código de cores fibra óptica 12 cores",
+      "cores da fibra óptica ABNT e TIA-598"
+    ]
+  },
+  {
+    "licao": "03-04",
+    "videos": [],
+    "termosBusca": [
+      "código de cores fibra óptica tubo piloto direcional",
+      "achar a fibra em cabo de 144 fibras"
+    ]
+  },
+  {
+    "licao": "03-07",
+    "videos": [],
+    "termosBusca": [
+      "conector APC UPC diferença",
+      "DIO CEO CTO PTO para que servem"
+    ]
+  },
+  {
+    "licao": "04-01",
+    "videos": [],
+    "termosBusca": [
+      "o que é OLT ONU CTO FTTH",
+      "rede GPON como funciona da OLT à ONU"
+    ]
+  },
+  {
+    "licao": "04-03",
+    "videos": [],
+    "termosBusca": [
+      "splitter óptico perda por divisão 1:8 1:16",
+      "splitter desbalanceado rede FTTH provedor"
+    ]
+  },
+  {
+    "licao": "04-05",
+    "videos": [],
+    "termosBusca": [
+      "cálculo de potência rede GPON splitter",
+      "orçamento de potência GPON classe B+"
+    ]
+  },
+  {
+    "licao": "05-01",
+    "videos": [],
+    "termosBusca": [
+      "clivagem fibra óptica clivador",
+      "preparo e decapagem de fibra óptica para fusão"
+    ]
+  },
+  {
+    "licao": "05-03",
+    "videos": [],
+    "termosBusca": [
+      "fusão de fibra óptica passo a passo",
+      "limpeza máquina de fusão eletrodo",
+      "arc check máquina de fusão calibração"
+    ]
+  },
+  {
+    "licao": "05-04",
+    "videos": [],
+    "termosBusca": [
+      "perda de emenda por fusão estimada x medida OTDR",
+      "OTDR bidirecional emenda gainer"
+    ]
+  },
+  {
+    "licao": "06-01",
+    "videos": [],
+    "termosBusca": [
+      "power meter e fonte de luz medir perda de fibra",
+      "perda de inserção fibra óptica referência um cordão"
+    ]
+  },
+  {
+    "licao": "06-02",
+    "videos": [],
+    "termosBusca": [
+      "OTDR como funciona",
+      "zona morta OTDR bobina de lançamento"
+    ]
+  },
+  {
+    "licao": "06-03",
+    "videos": [],
+    "termosBusca": [
+      "OTDR como ler o traço",
+      "eventos no OTDR fusão conector fantasma ganho aparente"
+    ]
+  },
+  {
+    "licao": "09-01",
+    "videos": [],
+    "termosBusca": [
+      "cálculo de disponibilidade SLA link dedicado",
+      "SLA 99,7% quantos minutos de parada"
+    ]
+  },
+  {
+    "licao": "09-02",
+    "videos": [],
+    "termosBusca": [
+      "glosa de SLA como calcular desconto",
+      "SLA de link memória de cálculo da glosa"
+    ]
+  },
+  {
+    "licao": "09-03",
+    "videos": [],
+    "termosBusca": [
+      "gestão e fiscalização de contratos Lei 14.133 gestor fiscal",
+      "fiscal técnico de contrato o que faz"
+    ]
+  },
+  {
+    "licao": "09-05",
+    "videos": [],
+    "termosBusca": [
+      "relatório de teste OTDR certificação fibra óptica",
+      "aceite de obra de fibra óptica"
+    ]
+  },
+  {
+    "licao": "09-06",
+    "videos": [],
+    "termosBusca": [
+      "incidente problema requisição ITIL diferença",
+      "abrir chamado com fornecedor escalonamento"
+    ]
+  },
+  {
+    "licao": "10-01",
+    "videos": [],
+    "termosBusca": [
+      "NR-10 zona livre zona controlada zona de risco",
+      "NR-10 trabalho próximo a rede elétrica em poste"
+    ]
+  },
+  {
+    "licao": "10-03",
+    "videos": [],
+    "termosBusca": [
+      "segurança laser fibra óptica olho",
+      "VFL localizador visual de falhas segurança"
+    ]
+  },
+  {
+    "licao": "10-04",
+    "videos": [],
+    "termosBusca": [
+      "segurança fibra óptica fragmentos",
+      "descarte de fibra nua cacos na bancada"
+    ]
+  },
+  {
+    "licao": "10-05",
+    "videos": [],
+    "termosBusca": [
+      "nova NR-10 2026 o que muda",
+      "NR-10 telecom em poste compartilhado"
+    ]
+  }
+]

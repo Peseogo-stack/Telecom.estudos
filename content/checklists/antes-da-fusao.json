@@ -2,61 +2,94 @@
   "id": "antes-da-fusao",
   "titulo": "Antes da fusão e testes ópticos",
   "aviso": "Lembrete de segurança. Não substitui treinamento oficial, APR nem procedimentos da empresa.",
-  "descricao": "Roteiro de boas práticas, segurança do trabalho, manuseio químico e calibração de equipamentos para emendas por fusão óptica e testes de campo.",
+  "descricao": "Conferência da bancada de fusão: olhos, cacos de fibra, produtos químicos e máquina. Base: FOA, fichas de segurança e fabricantes.",
   "itens": [
     {
       "id": "tratar-fibra-como-ativa",
-      "texto": "Tratar toda fibra óptica como potencialmente ativa: medir o nível de potência com power meter antes de qualquer intervenção.",
-      "porque": "A luz usada em telecomunicações (1310, 1490, 1550 e 1577 nm) é completamente invisível aos olhos humanos e não aciona o reflexo natural de piscar, podendo causar queimaduras irreversíveis na retina.",
-      "fontes": ["foa-seguranca", "iec-60825-2-amd1"]
+      "texto": "Toda fibra tratada como ativa: o medidor de potência confirma que ela está apagada antes de alguém olhar a ponta.",
+      "porque": "A luz de telecom é infravermelha: olhando, não dá para saber se há luz. Na faixa de 1300 a 1550 nm, ela dificilmente chega à retina, mas pode ferir a córnea ou o cristalino. A FOA manda conferir com o medidor de potência antes de examinar a fibra.",
+      "fontes": [
+        "foa-seguranca"
+      ]
     },
     {
       "id": "seguranca-ocular-e-microscopio",
-      "texto": "Nunca olhar diretamente para conector, fibra ou acoplador; usar microscópio óptico com filtro infravermelho ou microscópio de vídeo.",
-      "porque": "Lupas comuns ou microscópios sem atenuação atuam como lentes concentradoras que focalizam feixes de laser invisíveis diretamente sobre a fóvea ocular.",
-      "fontes": ["iec-60825-2-amd1", "foa-seguranca"]
+      "texto": "Ninguém olha de frente a ponta de conector, adaptador ou fibra. Para inspecionar, só microscópio com filtro infravermelho ou microscópio de vídeo.",
+      "porque": "A luz sai da fibra num cone que se abre, mas o microscópio concentra toda essa luz no olho; por isso precisa de filtro infravermelho (FOA). Na IEC 60825-2, a etiqueta dos níveis 1M e 2M avisa para não olhar com instrumentos ópticos sem atenuação. No microscópio de vídeo, você olha uma tela, não a fibra.",
+      "fontes": [
+        "foa-seguranca",
+        "iec-60825-2-amd1"
+      ]
     },
     {
       "id": "cuidados-com-vfl",
-      "texto": "Ao usar a caneta óptica (VFL, 635–650 nm), observar o feixe apenas de lado a uma distância ≥ 15 cm e usar óculos de segurança.",
-      "porque": "Mesmo na faixa visível, o laser de 1 mW a 10 mW pode causar ofuscamento e danos por reflexão direta em faces polidas de conectores ou clivagens.",
-      "fontes": ["trend-vfl-safety", "foa-seguranca"]
+      "texto": "Caneta de luz vermelha (VFL): potência conferida na etiqueta; a ponta da fibra é olhada de lado, a pelo menos 15 cm, e o feixe nunca é encarado.",
+      "porque": "Regra da FOA: com o rastreador visível, olhe a fibra de lado, a pelo menos 6 polegadas (cerca de 15 cm) do olho. Em 650 nm o olho é transparente e a luz chega à retina. VFL de até 1 mW é Classe 2: o reflexo de desviar o olhar protege numa exposição acidental, mas o feixe não deve ser encarado. Canetas baratas de 10 a 50 mW são Classe 3B e podem causar lesão permanente no olho, por feixe direto ou refletido (TREND).",
+      "fontes": [
+        "foa-seguranca",
+        "trend-vfl-safety"
+      ]
+    },
+    {
+      "id": "oculos-de-seguranca",
+      "texto": "Óculos de segurança com proteção lateral durante todo o trabalho com fibra.",
+      "porque": "Para a FOA, o maior risco real para os olhos são os cacos de fibra: no olho, são muito difíceis de lavar e costumam acabar no pronto-socorro. A regra da FOA é usar óculos de segurança com proteção lateral e luvas.",
+      "fontes": [
+        "foa-seguranca"
+      ]
     },
     {
       "id": "recipiente-descarte-cacos",
-      "texto": "Recipiente rígido, fechado e identificado posicionado na bancada para descarte imediato dos fragmentos de fibra de clivagem.",
-      "porque": "Os cacos de sílica de 125 µm são agulhas de vidro invisíveis que penetram facilmente sob a pele, entram na corrente sanguínea ou atingem os olhos; nunca descarte fragmentos no chão ou bolsos.",
-      "fontes": ["foa-seguranca", "foa-fusao"]
+      "texto": "Recipiente com tampa na bancada para cada caco que sai do clivador; no fim, tampar, passar fita e descartar.",
+      "porque": "As pontas de fibra nua são muito afiadas, entram na pele, quebram e são difíceis de achar e tirar. A FOA prefere um recipiente próprio com tampa à fita dupla-face e manda nunca deixar caco no chão: ele gruda no sapato e vai parar em outro lugar, até em casa. O destino do recipiente cheio segue a regra da empresa.",
+      "fontes": [
+        "foa-seguranca"
+      ],
+      "confirmar": true
     },
     {
       "id": "bancada-e-tapete-escuro",
-      "texto": "Bancada nivelada, limpa e forrada com tapete ou base de contraste escuro para facilitar a visualização de fragmentos perdidos.",
-      "porque": "A sílica transparente é quase invisível sobre superfícies claras; a base escura e antiestática facilita a localização e recolhimento de cacos com fita adesiva.",
-      "fontes": ["foa-seguranca", "tempo-910fs-fusao"]
+      "texto": "Bancada limpa e organizada; ao terminar, área limpa e cacos perdidos procurados.",
+      "porque": "Regras da FOA: guarde todo pedaço cortado em lugar seguro e limpe bem a área de trabalho ao terminar. Como o caco é de vidro transparente, um tapete escuro ajuda a enxergá-lo.",
+      "fontes": [
+        "foa-seguranca"
+      ]
     },
     {
       "id": "alcool-isopropilico-e-arco",
-      "texto": "Álcool isopropílico (IPA ≥ 99%) em dosador tipo bomba de fechamento automático mantido afastado do forno e do arco voltaico.",
-      "porque": "O isopropanol tem ponto de fulgor de 11,85 °C em vaso fechado e libera vapores altamente inflamáveis (H225); o arco elétrico da máquina de fusão pode inflamar frascos abertos.",
-      "fontes": ["fds-isopropanol-rauter", "fujikura-dicas-90r"]
+      "texto": "Álcool isopropílico (99% ou mais) em frasco que fica fechado, longe do arco da máquina e do forno do tubete.",
+      "porque": "A ficha de segurança classifica o líquido e o vapor do isopropanol como altamente inflamáveis (H225), com ponto de fulgor de 11,85 °C em vaso fechado: no calor ambiente ele já solta vapor inflamável. Ela manda manter longe de calor, faísca e chama (P210) e o recipiente bem fechado (P233). A máquina emenda a fibra com um arco elétrico (FOA). A Fujikura pede álcool com pureza de 99% ou mais.",
+      "fontes": [
+        "fds-isopropanol-rauter",
+        "foa-seguranca",
+        "fujikura-dicas-90r"
+      ]
     },
     {
       "id": "limpeza-de-gel-e-higiene",
-      "texto": "Remoção de gel tixotrópico com solvente próprio (D'Gel), uso de luvas descartáveis e proibição de ingestão de alimentos na bancada.",
-      "porque": "Resíduos químicos e cacos invisíveis de fibra podem contaminar alimentos e provocar perfurações gastrointestinais graves em caso de ingestão acidental.",
-      "fontes": ["lps-dgel-ficha", "foa-seguranca"]
+      "texto": "Gel do cabo tirado com removedor próprio, de luvas; nada de comida, bebida ou cigarro na bancada; mãos lavadas antes de comer ou tocar os olhos.",
+      "porque": "O removedor de gel pode causar alergia na pele e pede luvas e proteção para os olhos e o rosto (ficha LPS). Caco de fibra engolido pode causar hemorragia interna; quem usa lente de contato só mexe nela depois de lavar bem as mãos (FOA).",
+      "fontes": [
+        "lps-dgel-ficha",
+        "foa-seguranca"
+      ]
     },
     {
       "id": "vestir-tubete-antes",
-      "texto": "Vestir o tubete termocontrátil de proteção na fibra antes de efetuar a decapagem, limpeza e clivagem.",
-      "porque": "Tentar passar o tubete após a clivagem contamina a ponta espelhada com poeira; se a fusão for feita sem o tubete, a emenda precisará ser quebrada e refeita.",
-      "fontes": ["foa-fusao", "fujikura-catalogo-telecom"]
+      "texto": "Tubete termocontrátil colocado na fibra antes de decapar, limpar e clivar.",
+      "porque": "O protetor termocontrátil vai sobre a emenda pronta (FOA). Um tubo não entra numa fibra já emendada: se esquecer, só quebrando a emenda e refazendo. Passar o tubete depois de clivar ainda arrisca sujar ou bater a ponta clivada.",
+      "fontes": [
+        "foa-fusao"
+      ]
     },
     {
       "id": "calibracao-arco-e-vgrooves",
-      "texto": "Executar a calibração do arco elétrico (Arc Check) e inspecionar a limpeza das ranhuras em V (V-grooves) da máquina de fusão.",
-      "porque": "Variações de temperatura, umidade do ar e pressão atmosférica alteram a intensidade do plasma de fusão; poeira no V-groove causa desalinhamento e emendas com atenuação alta.",
-      "fontes": ["fujikura-catalogo-telecom", "tempo-910fs-fusao"]
+      "texto": "Calibração do arco feita no início da sessão; ranhuras em V e garras limpas.",
+      "porque": "A nota da Tempo manda calibrar o arco no início de cada sessão de fusão, limpar a fibra com álcool isopropílico 99% antes de clivar e nunca tocar os eletrodos com a mão. Para a máquina 90R, a Fujikura recomenda limpar as ranhuras em V e as garras todo dia: poeira nelas passa para a fibra e aumenta a perda da emenda.",
+      "fontes": [
+        "tempo-910fs-fusao",
+        "fujikura-dicas-90r"
+      ]
     }
   ]
 }

@@ -58,7 +58,7 @@ export const EXPLICACAO: Record<TipoEvento, string> = {
   fusao: 'Degrau para baixo sem pico, quase igual em 1310 e em 1550 nm: fusão não reflete e perde tipicamente de 0,10 a 0,30 dB.',
   curvatura: 'Degrau sem pico, bem maior em 1550 nm do que em 1310 nm: a curvatura costuma ser de 5 a 10 vezes pior em 1550 nm.',
   ganho: 'Degrau para cima: ganho aparente, efeito de fibras diferentes na emenda. A perda real sai da média dos dois sentidos.',
-  quebra: 'O traço cai para o ruído antes do comprimento do projeto, com pico menor que o de um conector aberto (−30 a −48 dB) ou sem pico.',
+  quebra: 'O traço cai para o ruído antes do comprimento do projeto, com pico menor que o de um conector UPC aberto: a quebra reflete de −30 a −48 dB.',
   fim: 'O traço cai para o ruído no comprimento do projeto (a fibra tem cerca de 1% a mais que o cabo), com pico alto: conector UPC aberto reflete de −14 a −20 dB.',
   fantasma: 'Pico sem perda, depois do fim, a um múltiplo da distância de uma reflexão forte: é eco, não evento.',
 };
@@ -145,8 +145,8 @@ export function gerarCenario(nivel: Nivel, indice: number): Cenario {
   eventos.sort((a, b) => a.km - b.km);
 
   if (quebra) {
-    const semPico = r() < 0.3;
-    eventos.push({ tipo: 'quebra', km: kmTerminal, perda: { 1310: 0, 1550: 0 }, refletancia: semPico ? null : Math.round(entre(r, -48, -30)) });
+    // VIAVI: quebra ou corte reflete de −30 a −48 dB (menos que um conector UPC aberto).
+    eventos.push({ tipo: 'quebra', km: kmTerminal, perda: { 1310: 0, 1550: 0 }, refletancia: Math.round(entre(r, -48, -30)) });
   } else {
     eventos.push({ tipo: 'fim', km: kmTerminal, perda: { 1310: 0, 1550: 0 }, refletancia: Math.round(entre(r, -20, -14)) });
   }

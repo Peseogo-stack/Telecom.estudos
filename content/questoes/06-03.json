@@ -138,7 +138,7 @@
       {
         "texto": "Quebra antes do comprimento do projeto. Confira também em 1550 nm, porque uma curva forte pode parecer fim.",
         "correta": true,
-        "explicacao": "Certo. Quebra reflete de −30 a −48 dB ou nada, e uma curva forte pode passar de 6 dB (VIAVI)."
+        "explicacao": "Certo. A quebra reflete menos que um conector aberto, de −30 a −48 dB, e uma curva forte pode passar de 6 dB e parecer fim (VIAVI)."
       },
       {
         "texto": "Fusão boa.",
@@ -209,9 +209,9 @@
         "explicacao": "Fusão não reflete."
       },
       {
-        "texto": "Quebra irregular sem reflexão.",
+        "texto": "Quebra da fibra.",
         "correta": false,
-        "explicacao": "Sem reflexão não haveria −16 dB."
+        "explicacao": "A quebra reflete menos: de −30 a −48 dB (VIAVI)."
       }
     ],
     "fontes": [

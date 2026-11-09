@@ -115,7 +115,7 @@
       {
         "texto": "Que falta a perda de inserção: o OTDR não deve ser usado para medi-la; essa tarefa é da fonte com o medidor.",
         "correta": true,
-        "explicacao": "Certo. É a orientação da FOA. Peça o teste com fonte e medidor, além dos traços."
+        "explicacao": "Certo. É a orientação da FOA: peça o teste com fonte e medidor, além dos traços. Em rede externa, alguns contratos aceitam só o OTDR; confira o seu."
       }
     ],
     "fontes": [

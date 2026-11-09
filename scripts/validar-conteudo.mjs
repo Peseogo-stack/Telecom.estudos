@@ -261,6 +261,7 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
         if (!item.texto?.trim()) erro(ondeC, `item ${item.id} sem texto`);
         if (!item.porque?.trim()) erro(ondeC, `item ${item.id} sem "porque"`);
         if (!Array.isArray(item.fontes) || item.fontes.length === 0) erro(ondeC, `item ${item.id} sem fontes`);
+        if ('confirmar' in item && typeof item.confirmar !== 'boolean') erro(ondeC, `item ${item.id}: "confirmar" deve ser true ou false`);
         for (const fo of item.fontes ?? []) {
           if (!fontesPorId.has(fo)) erro(ondeC, `item ${item.id} cita fonte inexistente "${fo}"`);
         }

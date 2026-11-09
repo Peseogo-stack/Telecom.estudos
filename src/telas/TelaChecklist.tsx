@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { BarraProgresso, useTitulo } from '../componentes/Comuns';
+import { BarraProgresso, SeloConfirmar, useTitulo } from '../componentes/Comuns';
 import { indice } from '../conteudo/carregar';
 import { NaoEncontrado } from './NaoEncontrado';
 
@@ -77,7 +77,7 @@ export function TelaChecklist() {
       'ITENS DE VERIFICAÇÃO:',
       ...checklist.itens.map((item) => {
         const check = marcados.has(item.id) ? '[X]' : '[ ]';
-        return `${check} ${item.texto}`;
+        return `${check} ${item.texto}${item.confirmar ? ' (confirmar na empresa)' : ''}`;
       }),
       '',
       observacoes.trim() ? `OBSERVAÇÕES DO LOCAL:\n${observacoes.trim()}` : 'OBSERVAÇÕES: Nenhuma observação registrada.',
@@ -168,6 +168,12 @@ export function TelaChecklist() {
                       #{idx + 1}{' '}
                     </span>
                     <strong>{item.texto}</strong>
+                    {item.confirmar && (
+                      <>
+                        {' '}
+                        <SeloConfirmar />
+                      </>
+                    )}
                   </span>
                 </label>
 

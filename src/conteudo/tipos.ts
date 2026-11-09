@@ -52,6 +52,8 @@ export interface ItemChecklist {
   texto: string;
   porque: string;
   fontes: string[];
+  /** Prática que varia de empresa para empresa: mostra o selo "Confirmar na empresa". */
+  confirmar?: boolean;
 }
 
 export interface Checklist {

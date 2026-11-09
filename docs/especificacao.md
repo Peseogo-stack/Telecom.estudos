@@ -253,7 +253,7 @@ Falha o build quando:
 - texto com palavras proibidas da lista de dados reais (nomes de unidades, por exemplo — lista local, fora do Git).
 
 Avisa (sem falhar):
-- lição com mais de 900 palavras;
+- lição com mais de 700 palavras;
 - fonte acessada há mais de 12 meses;
 - `--links`: confere os links (HEAD/GET) e lista os quebrados (precisa de internet; roda à parte).
 

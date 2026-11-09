@@ -23,6 +23,9 @@ export function Hoje() {
   const resumo = proxima ? resumoDaLicao(proxima) : null;
   const soRevisao = ehDiaSoRevisao(ajustes, hoje);
   const dias = sequencia(progresso.diasEstudo, hoje);
+  // "Comece por aqui" opcional: aparece só enquanto a lição não foi aberta; não muda a semana nem a próxima lição.
+  const comece = indice.plano.comecePorAqui;
+  const resumoComece = comece && licoesDisponiveis.has(comece.licao) && !progresso.licoes[comece.licao]?.lidaEm && !aprovada(progresso.licoes, comece.licao) ? resumoDaLicao(comece.licao) : null;
 
   return (
     <>
@@ -81,6 +84,19 @@ export function Hoje() {
           </>
         )}
       </section>
+
+      {comece && resumoComece && (
+        <section className="cartao" aria-labelledby="t-comece">
+          <p className="rotulo">Comece por aqui · opcional</p>
+          <h2 id="t-comece">
+            {comece.licao} · {resumoComece.titulo}
+          </h2>
+          <p className="suave">{comece.texto}</p>
+          <Link to={`/licao/${comece.licao}`} className="botao botao-secundario">
+            Abrir a lição
+          </Link>
+        </section>
+      )}
 
       <section className="cartao" aria-labelledby="t-semana">
         <p className="rotulo">

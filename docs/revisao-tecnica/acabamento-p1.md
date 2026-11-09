@@ -98,4 +98,16 @@ Os outros 18 diagramas ficaram como estavam. Têm letra igual ou maior que a das
 
 ## 3. Lições acima de 700 palavras
 
-(preenchido no fim do trabalho)
+A contagem é a do validador: o texto visível de "Explicação", "Na prática" e "Erros comuns".
+
+Só três lições passavam de 700 palavras: 10-01, 10-05 e 03-07. O Sonnet as encurtou.
+
+Eu conferi com um script que compara, antes e depois, os números com unidade, os itens de norma, as marcações `{{fonte}}`, `{{confirmar}}` e `{{termo}}` e os negritos. Também li o diff inteiro de cada lição.
+
+| Lição | Antes | Depois | O que eu corrigi no corte |
+| --- | --- | --- | --- |
+| 10-01 | 893 | 699 | Voltaram:<br>• "em muitos **cabos multiplexados**" o neutro é nu;<br>• as duas fontes do "600 mm para BT nua ou multiplexada";<br>• "instalações energizadas **ou em suas proximidades**" (item 10.6.3), que tinha virado "ou próximas";<br>• "escada e trena **metálicas**" (não é toda escada que conduz).<br>"Só a segurança do trabalho afrouxa" virou "Só a segurança do trabalho decide". |
+| 10-05 | 825 | 696 | Voltaram "**devem** fazer ações integradas" (10.7.9), "suspender **diante de** risco não previsto" e "alínea 'e', retificada". A linha do trabalho não rotineiro ganhou o texto da portaria (10.7.2). |
+| 03-07 | 707 | 698 | Voltaram a linha "Fonte: FOA" da tabela de conectores e a fonte da face do UPC (Fluke), dentro da tabela. |
+
+Nada técnico saiu. Na 10-05, o que saiu de "Na prática" e "Erros comuns" repetia a tabela: prática presencial, tabela de zonas igual e 24 h × 40 h. Na 10-01, os cinco passos do raciocínio viraram três, com os mesmos números.

@@ -33,6 +33,7 @@
 | a12 | Os cordões do rack e do DIO são amarelos (monomodo) ou laranja/água (multimodo)? | Cor da capa dos cordões e a gravação neles | 02-03 |
 | a13 | Os cabos da nossa rede seguem o código de cores nacional (verde, amarela, branca, azul…) ou há cabos importados no padrão TIA-598 (azul, laranja, verde…)? E os pigtails do DIO, em que ordem vêm? | Gravação da capa, ficha do fabricante, cores ao abrir uma caixa acompanhado | 03-03 |
 | a14 | Qual é a classe de laser e a potência gravadas na etiqueta da nossa caneta VFL, e que tipo de microscópio de inspeção a equipe usa (vídeo ou óptico com filtro IR)? | Etiqueta da caneta VFL e maleta de inspeção/limpeza | 10-03 |
+| a15 | Como os religadores se comunicam hoje (rádio, celular, fibra)? Qual equipamento de comunicação fica em cada um? | Etiqueta e ficha do religador; mapa da rede | 01-06 |
 
 ---
 
@@ -57,6 +58,9 @@
 | b15 | Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho? | Procedimentos de segurança (intranet) | 10-05 |
 | b16 | Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem? | Projeto executivo ou memorial de cálculo da rede | 02-06, 02-07, 04-03, 04-05 |
 | b17 | Qual método de referência de perda de inserção a empresa pede (1, 2 ou 3 cordões), em quais comprimentos de onda, e qual é o critério de aceite da perda total? | Especificação técnica de aceite de obra | 06-01, 09-05 |
+| b18 | Os links contratados têm SLA? Qual a disponibilidade, o período (mensal ou anual) e qual a meta de disponibilidade que a empresa quer para os links operativos? | Contratos de link e especificação técnica da rede | 01-02, 01-05, 09-01 |
+| b19 | Que serviços (SCADA, teleproteção, medição, religadores, corporativo) vão na rede própria e quais vão em link contratado? | Projeto da rede de telecom ou plano diretor | 01-01, 01-02 |
+| b20 | Existe um plano de migração da rede de transporte (por exemplo, de SDH para pacotes)? Quais são as etapas? | Plano diretor de telecom, projeto de modernização | 01-06 |
 
 ---
 
@@ -70,7 +74,7 @@
 | c04 | Quem é gestor e quem é fiscal de cada contrato de telecom? Qual é o meu papel e a minha alçada? | Líder de TI | 09-03 |
 | c05 | Qual sistema de chamados usamos e quem pode abrir chamado em nome da empresa? | Líder de TI | 09-06 |
 | c06 | A rede é própria, contratada ou mista? Que protocolo SCADA usamos? Já há IEC 61850? | Engenharia / automação | 01-01 |
-| c07 | Que requisitos de telecom do ONS valem depois da interligação ao SIN? | Engenharia | 01-06 |
+| c07 | Que requisitos de telecom do ONS valem depois da interligação ao SIN? | Engenharia | 01-02, 01-06 |
 | c08 | TI e TO (tecnologia da operação) são separadas? Quem cuida da telecom operativa? | Líder de TI | 01-01 |
 | c09 | Que materiais temos em estoque (cabos, CEO, CTO, tubetes, SFP, cordões)? | Almoxarifado | 03-05, 04-01, 04-03, 04-06, 02-04, 03-07, 05-01 |
 | c10 | As operadoras aplicam o RGC da Anatel aos nossos links ou só o SLA do contrato? | Jurídico | 09-02 |
@@ -80,6 +84,7 @@
 | c14 | Quem calcula e quem aprova a glosa antes do pagamento? | Líder de TI / financeiro | 09-02 |
 | c15 | Que tensões existem nos postes onde vou trabalhar (baixa tensão, 13,8 kV, 34,5 kV)? | Engenharia / operação | 10-01 |
 | c16 | Há fibra multimodo nos racks das subestações ou do data center? Em quais equipamentos? | Engenharia / TI de infraestrutura | 02-03 |
+| c18 | Os links importantes têm rota dupla, com caminhos fisicamente diferentes? Como isso é verificado? | Engenharia de telecom e planejamento da rede | 01-05 |
 
 ---
 
@@ -103,6 +108,8 @@
 | d14 | Que equipamentos de teste a equipe tem (OTDR, power meter, medidor PON seletivo, VFL) e que cabos de lançamento e de recepção usamos (comprimento, conector UPC ou APC)? | 06-01, 06-02, 10-03 |
 | d15 | Quando o mapa de fusão liga cabos de padrões de cor diferentes, ele casa as fibras por número ou por cor? Como a equipe anota? | 03-03 |
 | d16 | Que álcool isopropílico (pureza) e que removedor de geleia a equipe usa na bancada, e como fazemos o descarte do pote de fragmentos de fibra? | 10-04, 05-01 |
+| d17 | Que protocolos (DNP3, IEC 104, IEC 61850) a equipe de automação usa, e onde eles passam pela rede? | 01-03, 01-04 |
+| d18 | Que meios de transporte a empresa usa para cada serviço (fibra, rádio, PLC, SDH, MPLS-TP, celular)? | 01-06 |
 
 ---
 

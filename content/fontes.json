@@ -871,5 +871,14 @@
     "url": "https://tdworld.com/grid-innovations/article/55265661/brazils-td-utilities-tackle-telecom-requirements",
     "acessadoEm": "2026-11-09",
     "observacao": "Eduardo Polvani Campaner, 11/03/2025. Transmissão: toda linha nova com OPGW; na rede básica, dois canais de teleproteção dedicados por meios diferentes (ex.: OPGW e onda portadora); centros de controle ligados ao ONS por dois enlaces redundantes em regiões diferentes; recomenda separar as redes operativa e corporativa. Distribuição: automação, medição inteligente e gestão de perdas dependem de telecom; redes mesh, LTE/4G, 5G e rádio privativo; requisitos menos rígidos que na transmissão."
+  },
+  {
+    "id": "sel-assimetria-87l",
+    "titulo": "Channel Asymmetry Compensation for Line Current Differential Relays Without External Time Sources",
+    "organizacao": "Schweitzer Engineering Laboratories (SEL)",
+    "tipo": "fabricante",
+    "url": "https://selinc.com/api/download/140762",
+    "acessadoEm": "2026-11-09",
+    "observacao": "Ravi, Skendzic, Yedidi, Clark e Janarthanan (2025). A assimetria do canal é a diferença de atraso entre os caminhos de transmissão e de recepção; aparece, por exemplo, quando só um sentido troca para o caminho reserva no multiplexador. O sincronismo pelo próprio canal não é confiável nesse caso."
   }
 ]

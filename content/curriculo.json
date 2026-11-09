@@ -38,7 +38,7 @@
           "titulo": "Disponibilidade, anel e rotas diferentes",
           "objetivo": "\"Noves\" em horas/ano; anel e rotas fisicamente distintas.",
           "prioridade": "P2",
-          "confirmarNaEmpresa": false
+          "confirmarNaEmpresa": true
         },
         {
           "id": "01-06",

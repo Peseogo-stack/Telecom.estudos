@@ -192,7 +192,9 @@
     ],
     "licoes": [
       "09-01",
-      "09-02"
+      "09-02",
+      "01-02",
+      "01-05"
     ],
     "sigla": "SLA",
     "en": "Service Level Agreement"
@@ -205,7 +207,8 @@
       "trt7-tr-internet"
     ],
     "licoes": [
-      "09-01"
+      "09-01",
+      "01-05"
     ],
     "en": "Availability"
   },
@@ -998,7 +1001,8 @@
       "prysmian-cfoa-as"
     ],
     "licoes": [
-      "03-01"
+      "03-01",
+      "01-06"
     ]
   },
   {
@@ -1571,6 +1575,341 @@
     ],
     "licoes": [
       "04-05"
+    ]
+  },
+  {
+    "id": "scada",
+    "pt": "Supervisão, controle e aquisição de dados",
+    "sigla": "SCADA",
+    "en": "Supervisory Control and Data Acquisition",
+    "definicao": "Sistema de supervisão e controle remotos usado para operar subestações à distância, a partir do centro de controle.",
+    "fontes": [
+      "tdworld-brasil-telecom",
+      "cisco-da"
+    ],
+    "licoes": [
+      "01-01",
+      "01-03"
+    ]
+  },
+  {
+    "id": "ied",
+    "pt": "Dispositivo eletrônico inteligente",
+    "sigla": "IED",
+    "en": "Intelligent Electronic Device",
+    "definicao": "Equipamento da subestação, como um relé, que publica ou assina mensagens GOOSE e Sampled Values.",
+    "fontes": [
+      "softwaretoolbox-61850",
+      "sel-goose-seguranca"
+    ],
+    "licoes": [
+      "01-03",
+      "01-04"
+    ]
+  },
+  {
+    "id": "goose",
+    "pt": "Mensagem GOOSE",
+    "en": "GOOSE (IEC 61850)",
+    "definicao": "Mensagem rápida do IEC 61850 entre IEDs, em multicast direto na camada 2 da Ethernet (EtherType 0x88B8), sem IP e sem TCP. O trip por GOOSE tem prazo de 3 ms.",
+    "fontes": [
+      "softwaretoolbox-61850",
+      "wireshark-etypes",
+      "sel-ethernet-61850"
+    ],
+    "licoes": [
+      "01-01",
+      "01-03",
+      "01-04"
+    ]
+  },
+  {
+    "id": "sampled-values",
+    "pt": "Valores amostrados",
+    "sigla": "SV",
+    "en": "Sampled Values (IEC 61850)",
+    "definicao": "Mensagens do IEC 61850 com valores amostrados, enviadas por merging units em multicast de camada 2 (EtherType 0x88BA).",
+    "fontes": [
+      "softwaretoolbox-61850",
+      "wireshark-etypes"
+    ],
+    "licoes": [
+      "01-03"
+    ]
+  },
+  {
+    "id": "mms",
+    "pt": "Especificação de mensagens de manufatura",
+    "sigla": "MMS",
+    "en": "Manufacturing Message Specification",
+    "definicao": "Parte do IEC 61850 para acesso a dados, relatórios e controle do SCADA, sobre TCP/IP (porta TCP 102), roteável pela WAN.",
+    "fontes": [
+      "softwaretoolbox-61850",
+      "iana-portas"
+    ],
+    "licoes": [
+      "01-03"
+    ]
+  },
+  {
+    "id": "dnp3",
+    "pt": "Protocolo de rede distribuída",
+    "sigla": "DNP3",
+    "en": "Distributed Network Protocol",
+    "definicao": "Protocolo do IEEE 1815 para comunicação em sistemas de energia elétrica. Tem porta 20000 (TCP e UDP) na IANA.",
+    "fontes": [
+      "ieee-1815",
+      "iana-portas"
+    ],
+    "licoes": [
+      "01-03"
+    ]
+  },
+  {
+    "id": "iec-104",
+    "pt": "IEC 60870-5-104",
+    "sigla": "IEC 104",
+    "en": "IEC 60870-5-104",
+    "definicao": "Protocolo de comunicação TCP/IP entre a estação controladora (mestre SCADA) e as estações controladas. Porta TCP 2404.",
+    "fontes": [
+      "schneider-iec104",
+      "iana-portas"
+    ],
+    "licoes": [
+      "01-03"
+    ]
+  },
+  {
+    "id": "ami",
+    "pt": "Infraestrutura de medição avançada",
+    "sigla": "AMI",
+    "en": "Advanced Metering Infrastructure",
+    "definicao": "Medição inteligente. Reduz a leitura manual e melhora a detecção de falhas. Prazo de 2 a 15 s nas contribuições reunidas pelo DOE.",
+    "fontes": [
+      "tdworld-brasil-telecom",
+      "doe-requisitos-smart-grid"
+    ],
+    "licoes": [
+      "01-01"
+    ]
+  },
+  {
+    "id": "teleprotecao",
+    "pt": "Teleproteção",
+    "en": "Teleprotection",
+    "definicao": "Esquemas de proteção de linha que dependem de um canal de comunicação entre as pontas, como o diferencial de linha, a proteção piloto e o DTT. Na rede básica da transmissão, cada linha tem dois canais dedicados por meios diferentes.",
+    "fontes": [
+      "tdworld-brasil-telecom",
+      "sel-teleprotecao-mpls"
+    ],
+    "licoes": [
+      "01-01",
+      "01-02"
+    ]
+  },
+  {
+    "id": "religador",
+    "pt": "Religador",
+    "en": "Recloser",
+    "definicao": "Equipamento de linha de distribuição que pode ser comandado à distância para restabelecer a energia. A frequência de religamentos pode indicar interferência de vegetação.",
+    "fontes": [
+      "tdworld-brasil-telecom",
+      "cisco-da"
+    ],
+    "licoes": [
+      "01-01"
+    ]
+  },
+  {
+    "id": "rede-operativa",
+    "pt": "Rede operativa",
+    "en": "Operational network",
+    "definicao": "Rede que carrega os serviços de operação (supervisão, controle, proteção). Recomenda-se separá-la da rede corporativa, com endereços IP distintos.",
+    "fontes": [
+      "tdworld-brasil-telecom"
+    ],
+    "licoes": [
+      "01-01"
+    ]
+  },
+  {
+    "id": "opgw",
+    "pt": "Cabo para-raios com fibra óptica",
+    "sigla": "OPGW",
+    "en": "Optical Ground Wire",
+    "definicao": "Cabo para-raios de linha de transmissão com fibras ópticas dentro. No Brasil, toda linha de transmissão nova deve ter um.",
+    "fontes": [
+      "tdworld-brasil-telecom"
+    ],
+    "licoes": [
+      "01-02",
+      "01-06"
+    ]
+  },
+  {
+    "id": "adss",
+    "pt": "Cabo óptico autossustentado todo dielétrico",
+    "sigla": "ADSS",
+    "en": "All-Dielectric Self-Supporting",
+    "definicao": "Cabo óptico não metálico e autossustentado para linhas de energia, definido no IEEE 1222.",
+    "fontes": [
+      "ieee-1222"
+    ],
+    "licoes": [
+      "01-06"
+    ]
+  },
+  {
+    "id": "plc-portadora",
+    "pt": "Onda portadora em linha de alta tensão",
+    "sigla": "PLC",
+    "en": "Power Line Carrier",
+    "definicao": "Transmissão de voz, dados e comandos de proteção pela própria linha de alta tensão. Não é o splitter PLC (Planar Lightwave Circuit), da lição 04-03. Os modems chegam a 9600 bps (banda estreita) ou 256 kbps (banda larga).",
+    "fontes": [
+      "hitachi-etl600"
+    ],
+    "licoes": [
+      "01-02",
+      "01-06"
+    ]
+  },
+  {
+    "id": "sdh",
+    "pt": "Hierarquia digital síncrona",
+    "sigla": "SDH",
+    "en": "Synchronous Digital Hierarchy",
+    "definicao": "Tecnologia TDM com relógio comum e banda dedicada por circuito, usada em teleproteção.",
+    "fontes": [
+      "sel-teleprotecao-mpls",
+      "hitachi-fox615"
+    ],
+    "licoes": [
+      "01-02",
+      "01-06"
+    ]
+  },
+  {
+    "id": "tdm",
+    "pt": "Multiplexação por divisão de tempo",
+    "sigla": "TDM",
+    "en": "Time-Division Multiplexing",
+    "definicao": "Sistema síncrono com relógio comum que dedica banda a cada circuito, com latência baixa e desempenho garantido. Exemplos: T1, SONET e SDH.",
+    "fontes": [
+      "sel-teleprotecao-mpls"
+    ],
+    "licoes": [
+      "01-02"
+    ]
+  },
+  {
+    "id": "mpls-tp",
+    "pt": "MPLS com perfil de transporte",
+    "sigla": "MPLS-TP",
+    "en": "MPLS Transport Profile",
+    "definicao": "Traz ao MPLS recursos do SDH, como canais bidirecionais e estáticos e supervisão fim a fim por OAM. Segundo a Hitachi, o determinismo é pior que o do SDH.",
+    "fontes": [
+      "hitachi-fox615",
+      "strathclyde-mpls"
+    ],
+    "licoes": [
+      "01-02",
+      "01-06"
+    ]
+  },
+  {
+    "id": "prp-hsr",
+    "pt": "PRP e HSR",
+    "sigla": "PRP/HSR",
+    "en": "Parallel Redundancy Protocol e High-availability Seamless Redundancy",
+    "definicao": "Protocolos de redundância da IEC 62439-3 com troca sem interrupção e tempo de recuperação zero. O PRP liga os nós a duas redes separadas; o HSR liga em anel nós de duas portas.",
+    "fontes": [
+      "iec-62439-3"
+    ],
+    "licoes": [
+      "01-05"
+    ]
+  },
+  {
+    "id": "rstp",
+    "pt": "Protocolo de árvore de abrangência rápida",
+    "sigla": "RSTP",
+    "en": "Rapid Spanning Tree Protocol",
+    "definicao": "Protocolo que mantém um só caminho ativo numa rede Ethernet com laços, como um anel: tem uma raiz (root bridge), deixa enlaces em espera (hot standby) e reconfigura a rede quando um enlace falha.",
+    "fontes": [
+      "sel-ethernet-61850"
+    ],
+    "licoes": [
+      "01-05"
+    ]
+  },
+  {
+    "id": "dtt",
+    "pt": "Transferência direta de disparo",
+    "sigla": "DTT",
+    "en": "Direct Transfer Trip",
+    "definicao": "Comando de disparo enviado por telecom para abrir disjuntores na outra ponta de um alimentador ou no equipamento de um gerador distribuído (Cisco). Na tabela da SEL, pede latência de 10 ms.",
+    "fontes": [
+      "sel-teleprotecao-mpls",
+      "cisco-da"
+    ],
+    "licoes": [
+      "01-01",
+      "01-02",
+      "01-06"
+    ]
+  },
+  {
+    "id": "latencia",
+    "pt": "Latência",
+    "en": "Latency",
+    "definicao": "Tempo que a comunicação leva. Na teleproteção, é medida em milissegundos: 5 ms no diferencial de linha e 10 ms no DTT.",
+    "fontes": [
+      "sel-teleprotecao-mpls"
+    ],
+    "licoes": [
+      "01-01"
+    ]
+  },
+  {
+    "id": "assimetria",
+    "pt": "Assimetria",
+    "en": "Asymmetry",
+    "definicao": "Diferença de atraso entre o caminho de ida e o de volta do canal, por exemplo quando só um sentido troca para o caminho reserva. No diferencial de linha sensível, a SEL pede 0,5 ms ou menos.",
+    "fontes": [
+      "sel-assimetria-87l",
+      "sel-teleprotecao-mpls"
+    ],
+    "licoes": [
+      "01-02"
+    ]
+  },
+  {
+    "id": "multicast",
+    "pt": "Multicast",
+    "en": "Multicast",
+    "definicao": "Um quadro enviado a um grupo de destinos. No GOOSE, o MAC de destino é multicast e a faixa começa com 01-0C-CD.",
+    "fontes": [
+      "sel-goose-seguranca",
+      "softwaretoolbox-61850"
+    ],
+    "licoes": [
+      "01-04"
+    ]
+  },
+  {
+    "id": "vlan",
+    "pt": "Rede local virtual",
+    "sigla": "VLAN",
+    "en": "Virtual LAN",
+    "definicao": "Particiona e isola redes na camada de enlace. A tag 802.1Q (EtherType 0x8100) leva a prioridade 802.1p.",
+    "fontes": [
+      "sel-ethernet-61850",
+      "sel-goose-seguranca",
+      "wireshark-etypes"
+    ],
+    "licoes": [
+      "01-03",
+      "01-04"
     ]
   }
 ]

@@ -6,66 +6,72 @@ export function DentroMaquina({ descricao }: PropsDiagrama) {
     <Diagrama
       titulo="Dentro da máquina: alinhamento pelo núcleo × pela casca e arco (fora de escala)"
       descricao={descricao}
-      viewBox="0 0 400 248"
+      viewBox="0 0 400 440"
     >
-      {/* Quadro esquerdo: Alinhamento pelo núcleo (PAS / LID) */}
-      <rect x="10" y="12" width="184" height="124" rx="8" className="d-caixa-destaque" />
-      <text x="102" y="30" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
+      {/* Quadro 1: Alinhamento pelo núcleo (PAS / LID) */}
+      <rect x="10" y="10" width="380" height="130" rx="8" className="d-caixa-destaque" />
+      <text x="200" y="28" textAnchor="middle" className="d-texto d-forte">
         Alinhamento pelo núcleo
       </text>
-      <text x="102" y="44" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9 }}>
+      <text x="200" y="42" textAnchor="middle" className="d-texto d-suave">
         PAS (câmeras X/Y a 90°) ou LID
       </text>
       {/* Duas fibras com núcleos alinhados mesmo se a casca tiver excentricidade */}
-      <rect x="24" y="58" width="68" height="22" rx="2" className="d-caixa" />
-      <line x1="24" y1="69" x2="92" y2="69" className="d-cabo-telecom" />
-      <rect x="112" y="55" width="68" height="22" rx="2" className="d-caixa" />
-      <line x1="112" y1="69" x2="180" y2="69" className="d-cabo-telecom" />
+      <rect x="118" y="58" width="68" height="22" rx="2" className="d-caixa" />
+      <line x1="118" y1="69" x2="186" y2="69" className="d-cabo-telecom" />
+      <rect x="204" y="55" width="68" height="22" rx="2" className="d-caixa" />
+      <line x1="204" y1="69" x2="272" y2="69" className="d-cabo-telecom" />
       {/* Eletrodos superior e inferior */}
-      <polygon points="98,48 106,48 102,62" className="d-ponto" />
-      <polygon points="98,90 106,90 102,76" className="d-ponto" />
-      <text x="102" y="106" textAnchor="middle" className="d-texto" style={{ fontSize: 9.5 }}>
+      <polygon points="191,46 199,46 195,60" className="d-ponto" />
+      <polygon points="191,92 199,92 195,78" className="d-ponto" />
+      <text x="200" y="112" textAnchor="middle" className="d-texto">
         Motores X, Y e Z casam os núcleos
       </text>
-      <text x="102" y="122" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9 }}>
+      <text x="200" y="130" textAnchor="middle" className="d-texto d-suave">
         Compensa excentricidade núcleo-casca
       </text>
 
-      {/* Quadro direito: Alinhamento pela casca */}
-      <rect x="206" y="12" width="184" height="124" rx="8" className="d-caixa" />
-      <text x="298" y="30" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
+      {/* Quadro 2: Alinhamento pela casca */}
+      <rect x="10" y="150" width="380" height="130" rx="8" className="d-caixa" />
+      <text x="200" y="168" textAnchor="middle" className="d-texto d-forte">
         Alinhamento pela casca
       </text>
-      <text x="298" y="44" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9 }}>
+      <text x="200" y="182" textAnchor="middle" className="d-texto d-suave">
         Ranhura em V (V-groove ativa ou fixa)
       </text>
       {/* Duas fibras alinhadas pela borda externa de 125 µm */}
-      <rect x="220" y="58" width="68" height="22" rx="2" className="d-caixa" />
-      <line x1="220" y1="67" x2="288" y2="67" className="d-cabo-telecom" />
-      <rect x="308" y="58" width="68" height="22" rx="2" className="d-caixa" />
-      <line x1="308" y1="72" x2="376" y2="72" className="d-cabo-telecom" />
-      <polygon points="294,48 302,48 298,62" className="d-ponto" />
-      <polygon points="294,90 302,90 298,76" className="d-ponto" />
-      <text x="298" y="106" textAnchor="middle" className="d-texto" style={{ fontSize: 9.5 }}>
+      <rect x="118" y="198" width="68" height="22" rx="2" className="d-caixa" />
+      <line x1="118" y1="207" x2="186" y2="207" className="d-cabo-telecom" />
+      <rect x="204" y="198" width="68" height="22" rx="2" className="d-caixa" />
+      <line x1="204" y1="212" x2="272" y2="212" className="d-cabo-telecom" />
+      <polygon points="191,186 199,186 195,200" className="d-ponto" />
+      <polygon points="191,232 199,232 195,218" className="d-ponto" />
+      <text x="200" y="252" textAnchor="middle" className="d-texto">
         Alinha o vidro externo (125 µm)
       </text>
-      <text x="298" y="122" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9 }}>
+      <text x="200" y="270" textAnchor="middle" className="d-texto d-alerta">
         Sofre se o núcleo for excêntrico
       </text>
 
       {/* Faixa inferior: Arco, eletrodos e defeitos na tela */}
-      <rect x="10" y="148" width="380" height="88" rx="8" className="d-zona-controlada" />
-      <text x="20" y="168" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
+      <rect x="10" y="290" width="380" height="142" rx="8" className="d-zona-controlada" />
+      <text x="20" y="310" className="d-texto d-forte">
         Arc check, manutenção e defeitos na tela
       </text>
-      <text x="20" y="186" className="d-texto" style={{ fontSize: 9.5 }}>
-        • Arc check: início da sessão; eletrodos: 800 a 6.000 fusões.
+      <text x="20" y="332" className="d-texto">
+        • Arc check: início da sessão;
       </text>
-      <text x="20" y="203" className="d-texto" style={{ fontSize: 9.5 }}>
+      <text x="32" y="348" className="d-texto">
+        eletrodos: 800 a 6.000 fusões.
+      </text>
+      <text x="20" y="370" className="d-texto">
         • Álcool 99%: V-groove todo dia; lente 1×/mês (90R).
       </text>
-      <text x="20" y="220" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        • Linha escura: até 2 re-arcos. Bolha ou inchaço: refazer.
+      <text x="20" y="392" className="d-texto d-alerta">
+        • Linha escura: até 2 re-arcos.
+      </text>
+      <text x="32" y="408" className="d-texto d-alerta">
+        Bolha ou inchaço: refazer.
       </text>
     </Diagrama>
   );

@@ -2,119 +2,61 @@ import { Diagrama, type PropsDiagrama } from './Diagrama';
 
 // Comparativo entre a perda teórica por divisão de potência 10*log10(N)
 // e a atenuação máxima de catálogo das fichas técnicas (Intelbras, SENKO e FS).
+const SPLITTERS = [
+  { n: '1:2', teorico: '3,01', fichas: '4,0–4,4', pot: '50%' },
+  { n: '1:4', teorico: '6,02', fichas: '7,3–7,6', pot: '25%' },
+  { n: '1:8', teorico: '9,03', fichas: '10,5–10,9', pot: '12,5%' },
+  { n: '1:16', teorico: '12,04', fichas: '13,7–13,9', pot: '6,25%' },
+  { n: '1:32', teorico: '15,05', fichas: '16,9–17,3', pot: '3,12%' },
+  { n: '1:64', teorico: '18,06', fichas: '21,0–21,4', pot: '1,56%' },
+];
+
 export function SplittersBalanceados({ descricao }: PropsDiagrama) {
   return (
     <Diagrama
       titulo="Splitters balanceados PLC: divisão teórica 10·log10(N) × valores máximos de catálogo"
       descricao={descricao}
-      viewBox="0 0 400 248"
+      viewBox="0 0 400 382"
     >
       {/* Topo: Fórmula teórica */}
-      <rect x="10" y="8" width="380" height="42" rx="8" className="d-caixa-destaque" />
-      <text x="200" y="24" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10 }}>
+      <rect x="10" y="8" width="380" height="50" rx="8" className="d-caixa-destaque" />
+      <text x="200" y="27" textAnchor="middle" className="d-texto d-forte">
         Perda = 10 · log₁₀(N) + perda em excesso + conector
       </text>
-      <text x="200" y="40" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        Cada divisão por 2 adiciona ~3,01 dB de perda teórica de potência
+      <text x="200" y="46" textAnchor="middle" className="d-texto d-suave">
+        Cada divisão por 2 adiciona ~3,01 dB de perda teórica
       </text>
 
-      {/* Grade com os 6 splitters principais */}
-      {/* 1:2 */}
-      <rect x="10" y="56" width="122" height="66" rx="6" className="d-caixa" />
-      <text x="71" y="73" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
-        Splitter 1:2
-      </text>
-      <text x="71" y="88" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        Teórico: 3,01 dB
-      </text>
-      <text x="71" y="104" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Fichas: 4,0–4,4 dB
-      </text>
-      <text x="71" y="116" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
-        (50% potência p/ porta)
-      </text>
+      {/* Grade com os 6 splitters, 2 colunas */}
+      {SPLITTERS.map((s, i) => {
+        const x = 10 + (i % 2) * 196;
+        const y = 66 + Math.floor(i / 2) * 86;
+        const cx = x + 92;
+        return (
+          <g key={s.n}>
+            <rect x={x} y={y} width="184" height="78" rx="6" className="d-caixa" />
+            <text x={cx} y={y + 18} textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 13 }}>
+              Splitter {s.n}
+            </text>
+            <text x={cx} y={y + 36} textAnchor="middle" className="d-texto d-suave">
+              Teórico: {s.teorico} dB
+            </text>
+            <text x={cx} y={y + 54} textAnchor="middle" className="d-texto d-alerta">
+              Fichas: {s.fichas} dB
+            </text>
+            <text x={cx} y={y + 70} textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 11 }}>
+              ({s.pot} potência p/ porta)
+            </text>
+          </g>
+        );
+      })}
 
-      {/* 1:4 */}
-      <rect x="139" y="56" width="122" height="66" rx="6" className="d-caixa" />
-      <text x="200" y="73" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
-        Splitter 1:4
-      </text>
-      <text x="200" y="88" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        Teórico: 6,02 dB
-      </text>
-      <text x="200" y="104" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Fichas: 7,3–7,6 dB
-      </text>
-      <text x="200" y="116" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
-        (25% potência p/ porta)
-      </text>
-
-      {/* 1:8 */}
-      <rect x="268" y="56" width="122" height="66" rx="6" className="d-caixa" />
-      <text x="329" y="73" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
-        Splitter 1:8
-      </text>
-      <text x="329" y="88" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        Teórico: 9,03 dB
-      </text>
-      <text x="329" y="104" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Fichas: 10,5–10,9 dB
-      </text>
-      <text x="329" y="116" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
-        (12,5% potência p/ porta)
-      </text>
-
-      {/* 1:16 */}
-      <rect x="10" y="128" width="122" height="66" rx="6" className="d-caixa" />
-      <text x="71" y="145" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
-        Splitter 1:16
-      </text>
-      <text x="71" y="160" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        Teórico: 12,04 dB
-      </text>
-      <text x="71" y="176" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Fichas: 13,7–13,9 dB
-      </text>
-      <text x="71" y="188" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
-        (6,25% potência p/ porta)
-      </text>
-
-      {/* 1:32 */}
-      <rect x="139" y="128" width="122" height="66" rx="6" className="d-caixa" />
-      <text x="200" y="145" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
-        Splitter 1:32
-      </text>
-      <text x="200" y="160" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        Teórico: 15,05 dB
-      </text>
-      <text x="200" y="176" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Fichas: 16,9–17,3 dB
-      </text>
-      <text x="200" y="188" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
-        (3,12% potência p/ porta)
-      </text>
-
-      {/* 1:64 */}
-      <rect x="268" y="128" width="122" height="66" rx="6" className="d-caixa" />
-      <text x="329" y="145" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
-        Splitter 1:64
-      </text>
-      <text x="329" y="160" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        Teórico: 18,06 dB
-      </text>
-      <text x="329" y="176" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Fichas: 21,0–21,4 dB
-      </text>
-      <text x="329" y="188" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
-        (1,56% potência p/ porta)
-      </text>
-
-      {/* Faixa inferior: Regra de ouro de projeto */}
-      <rect x="10" y="200" width="380" height="40" rx="6" className="d-zona-controlada" />
-      <text x="200" y="215" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9 }}>
+      {/* Faixa inferior: Regra de projeto */}
+      <rect x="10" y="326" width="380" height="48" rx="6" className="d-zona-controlada" />
+      <text x="200" y="345" textAnchor="middle" className="d-texto d-forte">
         Regra de projeto: no orçamento use o MÁXIMO da ficha
       </text>
-      <text x="200" y="230" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8 }}>
+      <text x="200" y="363" textAnchor="middle" className="d-texto d-suave">
         Fichas sem conectores: some 0,2 a 0,3 dB por conector
       </text>
     </Diagrama>

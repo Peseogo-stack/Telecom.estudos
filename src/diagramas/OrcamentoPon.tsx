@@ -7,86 +7,85 @@ export function OrcamentoPon({ descricao }: PropsDiagrama) {
     <Diagrama
       titulo="Orçamento de potência GPON Classe B+: transmissão OLT, perdas e sinal na ONU"
       descricao={descricao}
-      viewBox="0 0 400 248"
+      viewBox="0 0 400 424"
     >
-      {/* Topo: Potência de Transmissão da OLT (Classe B+) */}
-      <rect x="10" y="8" width="184" height="66" rx="8" className="d-caixa-destaque" />
-      <text x="102" y="26" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9.5 }}>
+      {/* 1. Transmissão da OLT */}
+      <rect x="10" y="8" width="380" height="68" rx="8" className="d-caixa-destaque" />
+      <text x="200" y="26" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 13 }}>
         1. Transmissão OLT (Classe B+)
       </text>
-      <text x="102" y="46" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 13 }}>
+      <text x="200" y="48" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 16 }}>
         +1,5 a +5,0 dBm
       </text>
-      <text x="102" y="62" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
+      <text x="200" y="66" textAnchor="middle" className="d-texto d-suave">
         Downstream: 1490 nm
       </text>
 
-      {/* Topo direito: Perda máxima permitida pela norma */}
-      <rect x="206" y="8" width="184" height="66" rx="8" className="d-caixa" />
-      <text x="298" y="26" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9.5 }}>
+      {/* 2. Atenuação da ODN */}
+      <rect x="10" y="84" width="380" height="68" rx="8" className="d-caixa" />
+      <text x="200" y="102" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 13 }}>
         2. Atenuação da ODN (G.984.2)
       </text>
-      <text x="298" y="46" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 13 }}>
+      <text x="200" y="124" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 16 }}>
         13 a 28 dB
       </text>
-      <text x="298" y="62" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
+      <text x="200" y="142" textAnchor="middle" className="d-texto d-suave">
         Fibra + splitters + conectores + fusões
       </text>
 
-      {/* Faixa central: Composição de perdas */}
-      <rect x="10" y="80" width="380" height="48" rx="6" className="d-zona-controlada" />
-      <text x="200" y="96" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9 }}>
+      {/* Composição de perdas */}
+      <rect x="10" y="160" width="380" height="104" rx="6" className="d-zona-controlada" />
+      <text x="200" y="180" textAnchor="middle" className="d-texto d-forte">
         Perdas + margem ≤ 1,5 − (−27) − 0,5 = 28,0 dB
       </text>
-      <text x="200" y="112" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8 }}>
-        Exemplo: 2,0 fibra + 3,0 conexões + 1,8 fusões + 18,1 splitters + 3 margem = 27,9 dB
+      <text x="200" y="200" textAnchor="middle" className="d-texto d-suave">
+        Exemplo: 2,0 fibra + 3,0 conexões
+      </text>
+      <text x="200" y="217" textAnchor="middle" className="d-texto d-suave">
+        + 1,8 fusões + 18,1 splitters
+      </text>
+      <text x="200" y="234" textAnchor="middle" className="d-texto d-suave">
+        + 3 margem = 27,9 dB
       </text>
 
-      {/* Faixa inferior: Régua de recepção na ONU */}
-      <rect x="10" y="134" width="380" height="106" rx="8" className="d-caixa" />
-      <text x="200" y="150" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 10 }}>
+      {/* 3. Régua de recepção na ONU */}
+      <rect x="10" y="272" width="380" height="144" rx="8" className="d-caixa" />
+      <text x="200" y="292" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 13 }}>
         3. Faixas de sinal recebido na ONU em 1490 nm
       </text>
 
-      {/* Faixa verde de fundo da zona ideal */}
-      <rect x="130" y="166" width="160" height="38" rx="4" style={{ fill: 'rgba(34, 197, 94, 0.15)', stroke: 'rgba(34, 197, 94, 0.4)' }} />
-
-      {/* Linha da régua */}
-      <line x1="40" y1="178" x2="360" y2="178" className="d-cota" />
-
-      {/* Ponto 1: Sobrecarga */}
-      <circle cx="65" cy="178" r="5" className="d-ponto" style={{ fill: 'var(--cor-alerta)' }} />
-      <text x="65" y="168" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9 }}>
+      {/* Zona garantida (entre os dois limites) */}
+      <rect x="64" y="316" width="272" height="8" rx="4" className="d-faixa-vigente" />
+      <line x1="64" y1="320" x2="336" y2="320" className="d-cota" />
+      <circle cx="64" cy="320" r="6" className="d-ponto" />
+      <circle cx="336" cy="320" r="6" className="d-ponto" />
+      <text x="64" y="308" textAnchor="middle" className="d-texto d-alerta">
         −8 dBm
       </text>
-      <text x="65" y="196" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 8 }}>
-        Sobrecarga
+      <text x="336" y="308" textAnchor="middle" className="d-texto d-alerta">
+        −27 dBm
       </text>
-      <text x="65" y="208" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
-        (satura)
-      </text>
-
-      {/* Faixa central ideal */}
-      <text x="210" y="168" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9 }}>
+      <text x="200" y="312" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 11 }}>
         Garantido pela norma
       </text>
-      <text x="210" y="196" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8 }}>
+      <text x="200" y="378" textAnchor="middle" className="d-texto d-suave">
         entre −27 e −8 dBm
       </text>
 
-      {/* Ponto 2: Sensibilidade */}
-      <circle cx="335" cy="178" r="5" className="d-ponto" style={{ fill: 'var(--cor-alerta)' }} />
-      <text x="335" y="168" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9 }}>
-        −27 dBm
+      <text x="64" y="342" textAnchor="start" className="d-texto d-forte">
+        Sobrecarga
       </text>
-      <text x="335" y="196" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 8 }}>
+      <text x="64" y="358" textAnchor="start" className="d-texto d-suave">
+        (satura)
+      </text>
+      <text x="336" y="342" textAnchor="end" className="d-texto d-forte">
         Sensibilidade
       </text>
-      <text x="335" y="208" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
+      <text x="336" y="358" textAnchor="end" className="d-texto d-suave">
         (limite norma)
       </text>
 
-      <text x="200" y="228" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8 }}>
+      <text x="200" y="397" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 11 }}>
         Abaixo de −27 dBm, a taxa de erros deixa de ser garantida
       </text>
     </Diagrama>

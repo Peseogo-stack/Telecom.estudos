@@ -6,73 +6,82 @@ export function BancadaLimpa({ descricao }: PropsDiagrama) {
     <Diagrama
       titulo="Bancada de fusão: fragmentos, álcool isopropílico e gel (fora de escala)"
       descricao={descricao}
-      viewBox="0 0 400 244"
+      viewBox="0 0 400 472"
     >
-      {/* Coluna 1: Fragmentos de vidro */}
-      <rect x="10" y="14" width="184" height="122" rx="8" className="d-caixa-destaque" />
-      <text x="102" y="34" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 11 }}>
+      {/* Bloco 1: Fragmentos de vidro */}
+      <rect x="10" y="10" width="380" height="124" rx="8" className="d-caixa-destaque" />
+      <text x="200" y="30" textAnchor="middle" className="d-texto d-forte">
         1. Fragmentos de clivagem
       </text>
       {/* Pote com tampa */}
-      <rect x="26" y="52" width="44" height="48" rx="4" className="d-caixa" />
-      <rect x="22" y="46" width="52" height="8" rx="2" className="d-marco" />
-      <line x1="34" y1="74" x2="58" y2="88" className="d-linha" />
-      <line x1="38" y1="88" x2="62" y2="70" className="d-linha" />
-      <text x="80" y="62" className="d-texto" style={{ fontSize: 10.5 }}>
+      <rect x="40" y="56" width="44" height="48" rx="4" className="d-caixa" />
+      <rect x="36" y="50" width="52" height="8" rx="2" className="d-marco" />
+      <line x1="48" y1="78" x2="72" y2="92" className="d-linha" />
+      <line x1="52" y1="92" x2="76" y2="74" className="d-linha" />
+      <text x="100" y="66" className="d-texto">
         Pote com tampa
       </text>
-      <text x="80" y="76" className="d-texto d-suave" style={{ fontSize: 10 }}>
+      <text x="100" y="82" className="d-texto d-suave">
         (lacrar ao final)
       </text>
-      <text x="80" y="94" className="d-texto" style={{ fontSize: 10.5 }}>
+      <text x="100" y="100" className="d-texto">
         Óculos com lateral
       </text>
-      <text x="102" y="120" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 10 }}>
+      <text x="200" y="124" textAnchor="middle" className="d-texto d-alerta">
         Sem comida, bebida ou cigarro
       </text>
 
-      {/* Coluna 2: IPA longe do arco */}
-      <rect x="206" y="14" width="184" height="122" rx="8" className="d-zona-risco" />
-      <text x="298" y="34" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 11 }}>
+      {/* Bloco 2: IPA longe do arco */}
+      <rect x="10" y="144" width="380" height="146" rx="8" className="d-zona-risco" />
+      <text x="200" y="164" textAnchor="middle" className="d-texto d-forte">
         2. IPA ≥ 99% × arco elétrico
       </text>
       {/* Frasco de IPA fechado */}
-      <rect x="220" y="56" width="32" height="44" rx="4" className="d-caixa" />
-      <rect x="228" y="48" width="16" height="8" rx="2" className="d-marco" />
-      <text x="236" y="82" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9.5 }}>
+      <rect x="30" y="196" width="32" height="44" rx="4" className="d-caixa" />
+      <rect x="38" y="188" width="16" height="8" rx="2" className="d-marco" />
+      <text x="46" y="222" textAnchor="middle" className="d-texto d-forte">
         IPA
       </text>
       {/* Seta de afastamento */}
-      <line x1="258" y1="78" x2="314" y2="78" className="d-cota" />
-      <text x="286" y="70" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
+      <line x1="72" y1="218" x2="256" y2="218" className="d-cota" />
+      <text x="164" y="208" textAnchor="middle" className="d-texto d-alerta">
         afastar!
       </text>
       {/* Máquina de fusão / arco */}
-      <rect x="320" y="54" width="56" height="46" rx="5" className="d-caixa" />
-      <circle cx="348" cy="72" r="5" className="d-ponto" />
-      <text x="348" y="92" textAnchor="middle" className="d-texto" style={{ fontSize: 9 }}>
+      <rect x="262" y="192" width="100" height="56" rx="5" className="d-caixa" />
+      <circle cx="312" cy="208" r="5" className="d-ponto" />
+      <text x="312" y="236" textAnchor="middle" className="d-texto">
         Arco / forno
       </text>
-      <text x="298" y="118" textAnchor="middle" className="d-texto" style={{ fontSize: 10 }}>
+      <text x="200" y="262" textAnchor="middle" className="d-texto">
         Fulgor 11,85 °C: vapor inflamável
       </text>
-      <text x="298" y="130" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 9.5 }}>
+      <text x="200" y="280" textAnchor="middle" className="d-texto d-suave">
         Frasco fechado e local ventilado
       </text>
 
-      {/* Faixa inferior: Geleia, solvente e ambiente */}
-      <rect x="10" y="148" width="380" height="84" rx="8" className="d-caixa" />
-      <text x="20" y="168" className="d-texto d-forte" style={{ fontSize: 10.5 }}>
+      {/* Bloco 3: Geleia, solvente e ambiente */}
+      <rect x="10" y="300" width="380" height="162" rx="8" className="d-caixa" />
+      <text x="20" y="320" className="d-texto d-forte">
         3. Geleia do cabo, solventes e ambiente de trabalho
       </text>
-      <text x="20" y="187" className="d-texto" style={{ fontSize: 9.5 }}>
-        • Gel: limpar com o produto apropriado; pedir a ficha de segurança.
+      <text x="20" y="342" className="d-texto">
+        • Gel: limpar com o produto apropriado;
       </text>
-      <text x="20" y="204" className="d-texto" style={{ fontSize: 9.5 }}>
-        • Removedor de gel: luvas, longe de faísca; secar antes do arco.
+      <text x="32" y="358" className="d-texto">
+        pedir a ficha de segurança.
       </text>
-      <text x="20" y="221" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        • Caixa subterrânea (gases): nunca fundir lá; o cabo sobe.
+      <text x="20" y="380" className="d-texto">
+        • Removedor de gel: luvas, longe de faísca;
+      </text>
+      <text x="32" y="396" className="d-texto">
+        secar antes do arco.
+      </text>
+      <text x="20" y="418" className="d-texto d-alerta">
+        • Caixa subterrânea (gases): nunca fundir lá;
+      </text>
+      <text x="32" y="434" className="d-texto d-alerta">
+        o cabo sobe.
       </text>
     </Diagrama>
   );

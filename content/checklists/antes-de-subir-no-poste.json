@@ -2,79 +2,129 @@
   "id": "antes-de-subir-no-poste",
   "titulo": "Antes de subir no poste",
   "aviso": "Lembrete de segurança. Não substitui treinamento oficial, APR nem procedimentos operacionais da distribuidora.",
-  "descricao": "Roteiro de verificação prévia obrigatória para trabalhos de telecomunicações em postes de distribuição de energia elétrica (NR-10, NR-35 e normas de compartilhamento).",
+  "descricao": "Conferência antes de trabalhar em cabo de telecom em poste com rede de energia (NR-10, NR-35 e normas de compartilhamento). Na dúvida, não suba: pergunte.",
   "itens": [
     {
       "id": "autorizacao-e-aso",
-      "texto": "Autorização formal da empresa válida (NR-10 e NR-35) e ASO com aptidão médica para trabalho em altura.",
-      "porque": "Trabalhar em poste exige capacitação e autorização expressa da empresa (NR-10 item 10.8.8) e atestado de saúde ocupacional (ASO) apto para trabalho em altura (NR-35 item 35.4.1).",
-      "fontes": ["nr10-vigente", "nr35-vigente"]
+      "texto": "Estou autorizado pela empresa para trabalho em proximidade (NR-10) e em altura (NR-35), e o meu ASO registra a aptidão para altura.",
+      "porque": "Só trabalhador autorizado entra na zona controlada, e a autorização é dada com anuência formal da empresa (NR-10, 10.8.4). Na NR-35, todo trabalho em altura é feito por trabalhador formalmente autorizado (35.4.1), e a aptidão para altura fica no atestado de saúde ocupacional (35.4.4.1). A nova NR-10, em vigor em junho de 2027, põe expressamente entre os autorizados quem faz trabalho em proximidade (10.10.2).",
+      "fontes": [
+        "nr10-vigente",
+        "nr35-vigente",
+        "nr10-portaria-737"
+      ]
     },
     {
       "id": "apr-e-pt",
-      "texto": "Análise Preliminar de Risco (APR) preenchida e assinada por toda a equipe no local; Permissão de Trabalho (PT) emitida se atividade não for rotineira.",
-      "porque": "A APR documenta os perigos específicos do local e medidas de controle com a participação dos executantes; a PT é mandatória para serviços não rotineiros (NR-35 itens 35.4.4 e 35.4.7).",
-      "fontes": ["nr35-vigente", "nr10-vigente"]
+      "texto": "Análise de risco (APR) da tarefa conferida no local, e permissão de trabalho (PT) emitida se a atividade não for rotineira.",
+      "porque": "Todo trabalho em altura começa pela análise de risco; na atividade rotineira, ela pode estar no procedimento operacional, e a não rotineira só sai com permissão de trabalho (NR-35, 35.5.5, 35.5.6 e 35.5.7). A nova NR-10 pede o mesmo para trabalho em proximidade não rotineiro (10.7.2). Quem assina e como a APR é registrada é regra da empresa.",
+      "fontes": [
+        "nr35-vigente",
+        "nr10-portaria-737"
+      ],
+      "confirmar": true
     },
     {
       "id": "clima-e-condicoes-meteorologicas",
-      "texto": "Condições climáticas favoráveis: ausência de chuva, tempestades, raios ou ventos fortes.",
-      "porque": "A NR-35 (item 35.4.4.1) e a NR-10 proíbem trabalho em altura sob intempéries severas devido ao risco iminente de escorregamento, queda e arcos elétricos atmosféricos.",
-      "fontes": ["nr35-vigente", "nr10-vigente"]
+      "texto": "Tempo firme: sem chuva, raio ou vento forte chegando.",
+      "porque": "A análise de risco do trabalho em altura considera as condições meteorológicas adversas (NR-35, 35.5.5.1 d). A NR-10 manda suspender de imediato os serviços em instalações energizadas ou em suas proximidades na iminência de ocorrência que ponha os trabalhadores em perigo (10.6.3).",
+      "fontes": [
+        "nr35-vigente",
+        "nr10-vigente"
+      ]
     },
     {
       "id": "zonas-de-seguranca-e-tensoes",
-      "texto": "Identificação visual dos níveis de tensão no poste (Baixa Tensão, Média Tensão 13,8/34,5 kV) e respeito ao raio da zona controlada (Rc).",
-      "porque": "O Anexo II da NR-10 define que a zona controlada da BT inicia a 0,70 m do condutor nu; como o ponto de fixação de telecom fica tipicamente a 0,60 m da BT, todo trabalho em poste é considerado em proximidade.",
-      "fontes": ["nr10-vigente", "cemig-nd66", "energisa-ndu009-v4"]
+      "texto": "Redes do poste identificadas (baixa e média tensão) e distância entre o cabo de telecom e a baixa tensão observada.",
+      "porque": "Na NR-10, a zona controlada da baixa tensão vai até 0,70 m do ponto energizado (Rc, Anexo II). As normas de compartilhamento de exemplo pedem 0,60 m entre telecom e baixa tensão, menos que 0,70 m: mexer no cabo é, em regra, trabalho em proximidade, só para trabalhador autorizado e com procedimento específico (10.6.2). O raciocínio completo está na lição 10-01.",
+      "fontes": [
+        "nr10-vigente",
+        "cemig-nd66",
+        "energisa-ndu009-v4"
+      ],
+      "confirmar": true
     },
     {
       "id": "teste-de-tensao-na-cordoalha",
-      "texto": "Teste de tensão com detector por aproximação ou contato na cordoalha de aço, mensageiro e ferragens metálicas antes de tocar.",
-      "porque": "Fios da rede elétrica rompidos ou isoladores danificados podem energizar acidentalmente a infraestrutura de telecomunicações sem desligar a proteção da rede.",
-      "fontes": ["nr10-vigente", "neoenergia-dis-nor-056"]
+      "texto": "Ausência de tensão testada na cordoalha, no mensageiro e nas ferragens metálicas antes de tocar, com o detector e o método do procedimento da empresa.",
+      "porque": "Ferragem metálica conduz eletricidade, mesmo quando o cabo óptico é dielétrico: a FOA relata dois instaladores mortos quando suportes metálicos encostaram na rede de alta tensão. Um condutor partido ou um isolador danificado pode energizar a ferragem de telecom.",
+      "fontes": [
+        "foa-seguranca",
+        "nr10-vigente"
+      ],
+      "confirmar": true
+    },
+    {
+      "id": "sem-adornos",
+      "texto": "Sem anel, aliança, relógio, corrente ou outro adorno.",
+      "porque": "A NR-10 veda o uso de adornos pessoais nos trabalhos com instalações elétricas ou em suas proximidades (10.2.9.3); a nova NR-10 mantém a regra (10.7.8).",
+      "fontes": [
+        "nr10-vigente",
+        "nr10-portaria-737"
+      ]
     },
     {
       "id": "integridade-do-poste",
-      "texto": "Inspeção visual da integridade física do poste: ausência de trincas na base, ferragens expostas, abalroamento ou inclinação excessiva.",
-      "porque": "O esforço de subir e apoiar escada pode provocar o colapso de um poste comprometido mecanicamente ou corroído por queimação e umidade.",
-      "fontes": ["nr35-vigente", "abnt-nbr15214-2005"]
+      "texto": "Poste olhado antes de subir: sem trinca, ferragem exposta, base comida, batida ou inclinação. Na dúvida, não suba e avise.",
+      "porque": "A avaliação prévia no local serve para pegar o que a análise de risco não previu (NR-35, 35.3.1 e; nova NR-10, 10.7.4), e o trabalho é suspenso diante de risco não previsto que não dê para eliminar na hora (NR-35, 35.3.1 h). O critério para condenar um poste é da distribuidora.",
+      "fontes": [
+        "nr35-vigente",
+        "nr10-portaria-737"
+      ],
+      "confirmar": true
     },
     {
       "id": "escada-inspecionada-e-amarrada",
-      "texto": "Escada extensível de fibra de vidro inspecionada, sapatas niveladas e montante superior amarrado ao poste com corda apropriada.",
-      "porque": "Escadas portáteis devem ser de material não condutor, inspecionadas antes do uso e obrigatoriamente travadas ou amarradas para evitar deslizamento (NR-35 Anexo III).",
-      "fontes": ["nr35-vigente", "nr10-vigente"]
+      "texto": "Escada inspecionada antes do uso, em piso firme, com sapatas antiderrapantes, amarrada ao poste e, se extensível, com as travas engatadas. Subir e descer com três pontos de apoio.",
+      "porque": "NR-35, Anexo III: inspeção antes do uso (5.2.2.7.2), piso estável e sapatas antiderrapantes (5.2.2.5), escada extensível fixada em mais de um ponto ou, no mínimo, num ponto no alto, com guias e travas travando as partes (5.2.2.8.1), e três pontos de apoio na subida e na descida (5.2.2.1.2). O material da escada (por exemplo, fibra de vidro isolante) é definido pelo procedimento da empresa.",
+      "fontes": [
+        "nr35-vigente"
+      ],
+      "confirmar": true
     },
     {
       "id": "inspecao-spiq-e-epis",
-      "texto": "Inspeção diária do SPIQ: cinto tipo paraquedista, talabarte de posicionamento, talabarte em Y com absorvedor de energia e capacete classe B com jugular.",
-      "porque": "Costuras, fitas e travas dos mosquetões devem ser checados antes de vestir; o capacete classe B oferece isolamento elétrico contra contatos acidentais (NR-35 item 35.5.2 e NR-10).",
-      "fontes": ["nr35-vigente", "nr10-vigente"]
+      "texto": "SPIQ inspecionado antes de começar: cinturão tipo paraquedista, talabarte de posicionamento e talabarte de retenção com absorvedor de energia. Peça com defeito fica fora de uso.",
+      "porque": "A NR-35 pede inspeção rotineira do SPIQ antes do início dos trabalhos (35.6.6.2) e o descarte de elemento com defeito, deformação ou que tenha segurado uma queda (35.6.6.5); na retenção de queda, cinturão tipo paraquedista (35.6.9) e talabarte integrado com absorvedor de energia (35.6.9.1.1). Capacete e demais EPIs para trabalho perto de rede elétrica são definidos pela empresa.",
+      "fontes": [
+        "nr35-vigente"
+      ],
+      "confirmar": true
     },
     {
       "id": "ancoragem-100-por-cento",
-      "texto": "Garantia de 100% do tempo conectado a ponto de ancoragem seguro durante a subida, permanência e descida.",
-      "porque": "A desconexão simultânea dos talabartes deixa o trabalhador totalmente vulnerável à queda; nunca conecte um talabarte diretamente no outro.",
-      "fontes": ["nr35-vigente"]
+      "texto": "Conectado ao sistema de proteção contra quedas o tempo todo: na subida, no trabalho e na descida.",
+      "porque": "A NR-35 manda o trabalhador permanecer conectado durante todo o período de exposição ao risco de queda (35.6.11 a). O talabarte não pode ser ligado a outro talabarte, a outro elemento de ligação ou a extensor, nem usado com nós ou laços, salvo especificação do fabricante (35.6.11.1.1).",
+      "fontes": [
+        "nr35-vigente"
+      ]
     },
     {
       "id": "sinalizacao-e-isolamento-da-via",
-      "texto": "Isolamento do perímetro do poste com fita zebrada e cones de sinalização viária refletivos.",
-      "porque": "Protege a equipe contra atropelamentos e impede a circulação de pedestres na área de risco de queda de ferramentas ou materiais (NR-35 item 35.4.4 e regras de trânsito).",
-      "fontes": ["nr35-vigente"]
+      "texto": "Área em volta do poste isolada e sinalizada (cones e fita), pensando no trânsito e nos pedestres.",
+      "porque": "A análise de risco considera o isolamento e a sinalização no entorno da área de trabalho e o risco de queda de materiais e ferramentas (NR-35, 35.5.5.1 b e f; nova NR-10, 10.7.3 b).",
+      "fontes": [
+        "nr35-vigente",
+        "nr10-portaria-737"
+      ]
     },
     {
       "id": "animais-peconhentos",
-      "texto": "Inspeção visual para abelhas, marimbondos, vespas e outros animais peçonhentos no topo do poste, cruzetas e caixas.",
-      "porque": "Ataques de insetos em altura provocam reações instintivas de soltura e pânico, levando a choques elétricos ou quedas graves mesmo com EPI.",
-      "fontes": ["nr35-vigente", "nr10-vigente"]
+      "texto": "Sem abelhas, marimbondos ou outros animais no alto do poste, nas cruzetas e nas caixas.",
+      "porque": "Um ataque no alto pode provocar queda ou um movimento brusco em direção à rede. A análise de risco considera o local, o entorno e os riscos adicionais (NR-35, 35.5.5.1 a e i).",
+      "fontes": [
+        "nr35-vigente"
+      ]
     },
     {
       "id": "hidratacao-e-resgate",
-      "texto": "Disponibilidade de água potável, protetor solar e equipe treinada para plano de emergência e resgate em altura.",
-      "porque": "Em regiões de calor extremo, a desidratação e estresse térmico provocam vertigem e desmaio em altura; o tempo de resposta para resgate deve ser imediato para evitar a síndrome da suspensão inerte.",
-      "fontes": ["nr35-vigente", "nr10-portaria-737"]
+      "texto": "Água e proteção contra o sol à mão, e plano de resgate em altura conhecido pela equipe antes de subir.",
+      "porque": "Trabalho a céu aberto exige medidas contra a insolação excessiva e o calor (NR-21, 21.2). A NR-35 pede procedimentos de emergência e salvamento com tempo de resgate estimado, para reduzir o tempo de suspensão inerte (35.7.1), e a análise de risco inclui o planejamento do resgate (35.5.5.1 k).",
+      "fontes": [
+        "nr21",
+        "nr35-vigente"
+      ],
+      "confirmar": true
     }
   ]
 }

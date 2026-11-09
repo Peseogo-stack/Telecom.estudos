@@ -2,61 +2,87 @@
   "id": "inspecao-ceo-cto",
   "titulo": "Inspeção de CEO e CTO",
   "aviso": "Lembrete de qualidade e operação. Siga as normas de rede externa e as instruções de montagem do fabricante da caixa.",
-  "descricao": "Roteiro de inspeção de montagem, acomodação de fibras, vedação e identificação em caixas de emenda óptica (CEO) e terminação de clientes (CTO).",
+  "descricao": "Conferência de montagem, acomodação das fibras, vedação e identificação em caixas de emenda óptica (CEO) e de terminação (CTO).",
   "itens": [
     {
       "id": "fixacao-mecanica-e-ancoragem",
-      "texto": "Fixação mecânica firme no poste ou mensageiro e elemento central de tração do cabo (FRP/aço) travado no suporte interno da caixa.",
-      "porque": "Ventos, vibrações de veículos e tração em vãos adjacentes podem puxar o cabo para fora da carcaça se o elemento de sustentação não estiver parafusado com firmeza.",
-      "fontes": ["intelbras-cto", "prysmian-cfoa-as"]
+      "texto": "Caixa bem fixada e o elemento de tração do cabo preso no suporte da caixa.",
+      "porque": "A FOA manda deixar o comprimento certo de elemento de tração para prender o cabo à caixa, conforme as instruções da caixa. Cabo solto puxa as fibras e as emendas quando o vão balança.",
+      "fontes": [
+        "foa-fusao"
+      ]
     },
     {
       "id": "vedacao-das-entradas-de-cabo",
-      "texto": "Entradas de cabos principais e derivações vedadas com borrachas grommet compatíveis, termocontráteis íntegros ou fitas de calafetação.",
-      "porque": "Folgas nas entradas permitem infiltração de água da chuva e abrigo de insetos (formigas e cupins) que corroem acrilato e degradam as bandejas plásticas.",
-      "fontes": ["intelbras-cto", "foa-conectores"]
+      "texto": "Entradas de cabo vedadas com as peças do fabricante; borrachas e fechos íntegros e encaixados.",
+      "porque": "A vedação é o que garante o grau de proteção da caixa contra poeira e água; a CTO da ficha Intelbras, por exemplo, é IP 55. Entrada mal vedada deixa entrar água.",
+      "fontes": [
+        "intelbras-cto"
+      ]
     },
     {
       "id": "raio-de-curvatura-tubos-loose",
-      "texto": "Tubos loose e fibras mantidos com raio de curvatura superior a 30 mm na entrada e no encaminhamento para as bandejas.",
-      "porque": "Curvaturas acentuadas em fibras G.652.D provocam perdas por macrocurvatura sensíveis em comprimentos de onda elevados (1550 e 1625 nm) e estresse mecânico no vidro.",
-      "fontes": ["itu-g652-2024", "intelbras-cto"]
+      "texto": "Tubos e fibras sem dobras: seguem as guias da caixa e da bandeja, sem curva mais fechada do que elas permitem.",
+      "porque": "Curva fechada dá perda por macrocurvatura, maior nos comprimentos de onda longos (lição 02-06). A G.652.D é especificada com curvas de 30 mm de raio (até 0,1 dB em 100 voltas, em 1625 nm); as fibras G.657 toleram raios menores.",
+      "fontes": [
+        "itu-g652-2024",
+        "itu-g657-2024"
+      ],
+      "confirmar": true
     },
     {
       "id": "acomodacao-na-bandeja-de-emenda",
-      "texto": "Sobras de fibra nua acomodadas em laços suaves no formato de '8' ou oval na bandeja, com comprimento de reserva de ~1 metro.",
-      "porque": "Garante espaço e flexibilidade para retrabalhos e novas fusões sem risco de estrangulamento da fibra ao fechar a bandeja articulada.",
-      "fontes": ["foa-fusao", "intelbras-cto"]
+      "texto": "Sobra de fibra acomodada em voltas largas dentro da bandeja, sem cruzar nem ficar presa na tampa.",
+      "porque": "A FOA indica cerca de 1 m de tubo loose dentro da caixa e cerca de 1 m de fibra dentro da bandeja: é a sobra que permite refazer uma emenda depois.",
+      "fontes": [
+        "foa-fusao"
+      ]
     },
     {
       "id": "travamento-dos-tubetes",
-      "texto": "Tubetes termocontráteis totalmente alojados e travados nas canaletas de encaixe da bandeja de emenda.",
-      "porque": "Tubetes soltos colidem entre si com o balanço do cabo, podendo trincar a haste metálica ou quebrar a casca de vidro da emenda.",
-      "fontes": ["foa-fusao", "fujikura-catalogo-telecom"]
+      "texto": "Cada emenda com seu tubete termocontrátil, encaixado no suporte da bandeja.",
+      "porque": "O protetor termocontrátil é o que protege a emenda pronta (FOA); solto, ele balança e força a fibra.",
+      "fontes": [
+        "foa-fusao",
+        "fujikura-catalogo-telecom"
+      ]
     },
     {
       "id": "identificacao-e-codigo-de-cores",
-      "texto": "Tubos e fibras identificados de acordo com o projeto e padrão de cores (ABNT / TIA-598), com splitters rotulados.",
-      "porque": "Facilita a localização rápida da fibra correta durante intervenções de emergência e ampliações de rede sem risco de romper clientes vizinhos.",
-      "fontes": ["foa-cores", "intelbras-splitter-plc"]
+      "texto": "Tubos, fibras e splitters identificados conforme o projeto e o código de cores do cabo.",
+      "porque": "O código de cores identifica cada fibra e cada tubo (FOA); a identificação é o que evita cortar a fibra errada numa manutenção. Padrão nacional ou TIA-598: lição 03-03.",
+      "fontes": [
+        "foa-cores"
+      ],
+      "confirmar": true
     },
     {
       "id": "portas-livres-com-tampa-dustcap",
-      "texto": "Conectores ópticos não utilizados na CTO protegidos com tampas plásticas (dust caps) limpas.",
-      "porque": "O ferrolho cerâmico exposto acumula partículas microscópicas de poeira e fuligem que contaminam e arranham permanentemente o conector ao plugar o drop.",
-      "fontes": ["foa-conectores", "intelbras-cto"]
+      "texto": "Conectores e adaptadores sem uso com tampa (dust cap).",
+      "porque": "A FOA recomenda manter sempre a tampa em conectores e adaptadores: evita poeira e que a ponta seja tocada ou danificada.",
+      "fontes": [
+        "foa-limpeza"
+      ]
     },
     {
       "id": "limpeza-dos-adaptadores-sc-apc",
-      "texto": "Inspeção e limpeza a seco dos acopladores ópticos SC/APC antes de plugar cordões de distribuição ou drops.",
-      "porque": "Sujeira microscópica no acoplador verde eleva a atenuação de inserção em 0,5 a 2,0 dB e compromete a perda de retorno óptico (ORL > 55 dB).",
-      "fontes": ["fluke-apc", "senko-plc"]
+      "texto": "Conector inspecionado e limpo antes de cada conexão; verde (APC) só com verde.",
+      "porque": "A VIAVI manda inspecionar cordões e portas antes de conectar, e a FOA manda limpar sempre o conector antes de acoplar. APC ligado em UPC anula o efeito antirreflexo (Fluke; lição 03-07).",
+      "fontes": [
+        "viavi-otdr-dicas",
+        "foa-limpeza",
+        "fluke-apc"
+      ]
     },
     {
       "id": "plaqueta-externa-e-fechamento-estanque",
-      "texto": "Plaqueta de identificação externa legível do solo e carcaça da caixa travada com todos os fechos de pressão e borrachas alinhadas.",
-      "porque": "Permite fiscalização e manutenção sem precisar escalar o poste e assegura estanqueidade contra intempéries sob sol e chuva fortes.",
-      "fontes": ["abnt-nbr15214-2005", "intelbras-cto"]
+      "texto": "Cabo identificado com a plaqueta do padrão da distribuidora e caixa fechada com todos os fechos.",
+      "porque": "As normas de exemplo exigem plaqueta legível com tipo do cabo, contato e nome do ocupante, presa ao cabo de 200 a 400 mm do poste (Cemig ND-6.6); a Neoenergia pede plaqueta de material polimérico de 100 × 50 mm. O modelo vale o da norma da sua distribuidora.",
+      "fontes": [
+        "cemig-nd66",
+        "neoenergia-dis-nor-056"
+      ],
+      "confirmar": true
     }
   ]
 }

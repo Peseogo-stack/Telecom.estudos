@@ -131,24 +131,24 @@
     "enunciado": "Por que, numa PON, o OTDR costuma ser ligado do lado do cliente, em direção à central?",
     "alternativas": [
       {
-        "texto": "Porque, da central, depois do splitter, o traço junta os ramos de todos os clientes e fica muito difícil de ler.",
+        "texto": "Da central, o pulso do OTDR não atravessa o splitter e não volta.",
+        "correta": false,
+        "explicacao": "Atravessa: da central, o OTDR ainda serve para medir o comprimento de cada ramo (FOA). O problema é a leitura do traço, não a passagem da luz."
+      },
+      {
+        "texto": "Do lado do cliente, o traço mostra os ramos de todos os outros clientes.",
+        "correta": false,
+        "explicacao": "Do lado do cliente, o traço mostra só o caminho daquele cliente, com a perda alta do splitter (FOA)."
+      },
+      {
+        "texto": "Da central, o traço depois do splitter junta os ramos de todos os clientes.",
         "correta": true,
-        "explicacao": "Certo. A FOA explica que, do lado do cliente, o traço mostra só aquele caminho, com a perda alta do splitter; da central, ele serve para medir o comprimento de cada ramo."
+        "explicacao": "Certo. Depois do splitter, o traço junta os ramos de todos os clientes e fica muito difícil de ler, ainda mais com APC no fim de cada ramo. Do lado do cliente, o traço mostra só aquele caminho (FOA)."
       },
       {
-        "texto": "Porque a luz do OTDR só consegue andar no sentido da subida.",
+        "texto": "Do lado do cliente, os conectores APC refletem mais e o traço fica nítido.",
         "correta": false,
-        "explicacao": "O splitter é passivo e bidirecional: a luz passa nos dois sentidos."
-      },
-      {
-        "texto": "Porque uma norma da Anatel proíbe ligar o OTDR na central.",
-        "correta": false,
-        "explicacao": "Não existe essa regra; o motivo é a leitura do traço."
-      },
-      {
-        "texto": "Porque, do lado do cliente, a fibra do drop é multimodo.",
-        "correta": false,
-        "explicacao": "A rede FTTH é monomodo de ponta a ponta."
+        "explicacao": "Os conectores APC quase não refletem; isso dificulta ainda mais a leitura no fim de cada ramo, e não é o motivo de testar do lado do cliente."
       }
     ],
     "fontes": [
@@ -228,24 +228,24 @@
     "enunciado": "Disparando o OTDR da central numa PON com dois níveis de splitter, por que fica difícil achar o rompimento de um drop?",
     "alternativas": [
       {
-        "texto": "Porque, depois do splitter, o traço soma os ramos de todos os clientes e não separa um drop do outro.",
+        "texto": "O traço depois do splitter junta os ramos e não separa um drop do outro.",
         "correta": true,
-        "explicacao": "Certo. A FOA diz que, da central, o traço depois do splitter junta todos os ramos e fica muito complexo; por isso o teste se faz do lado do cliente."
+        "explicacao": "Certo. Da central, o traço depois do splitter junta todos os ramos de clientes e fica muito complexo; por isso o teste se faz do lado do cliente, em direção à central (FOA)."
       },
       {
-        "texto": "Porque a capa preta do drop absorve o pulso do OTDR.",
+        "texto": "O pulso do OTDR da central não passa do primeiro splitter e não chega ao drop.",
         "correta": false,
-        "explicacao": "A luz anda no núcleo da fibra; a capa não interfere."
+        "explicacao": "O pulso passa: da central, o OTDR mede até o comprimento de cada ramo. O problema é o traço misturado depois do splitter (FOA)."
       },
       {
-        "texto": "Porque o drop tem uma blindagem que bloqueia o pulso.",
+        "texto": "O conector APC no fim de cada ramo reflete tanto que cega o OTDR.",
         "correta": false,
-        "explicacao": "O drop óptico não tem blindagem que bloqueie a luz guiada no núcleo."
+        "explicacao": "É o contrário: os conectores APC quase não refletem no fim de cada ramo, o que dificulta ainda mais separar os ramos (FOA)."
       },
       {
-        "texto": "Porque a OLT desliga a rede quando percebe o pulso do OTDR.",
+        "texto": "O traço do lado do cliente também junta os ramos, e nenhum lado resolve.",
         "correta": false,
-        "explicacao": "O teste não depende disso; o problema é a leitura do traço depois do splitter."
+        "explicacao": "Do lado do cliente, o traço mostra só aquele caminho, com a perda alta do splitter; por isso é o lado indicado em PON (FOA)."
       }
     ],
     "fontes": [

@@ -132,24 +132,24 @@
     "enunciado": "Entre que valores de potência recebida a G.984.2 garante o receptor de uma ONU classe B+?",
     "alternativas": [
       {
-        "texto": "Entre −27 dBm (sensibilidade) e −8 dBm (sobrecarga).",
+        "texto": "Entre −28 e −13 dBm.",
+        "correta": false,
+        "explicacao": "Mistura o orçamento de 28 dB e a perda mínima de 13 dB com dBm. A G.984.2 garante de −27 a −8 dBm."
+      },
+      {
+        "texto": "Entre −8 e +1,5 dBm.",
+        "correta": false,
+        "explicacao": "+1,5 dBm é a potência mínima de saída da OLT; acima de −8 dBm a ONU está em sobrecarga."
+      },
+      {
+        "texto": "Entre −27 e +5 dBm.",
+        "correta": false,
+        "explicacao": "+5 dBm é a potência máxima da OLT; na ONU, o receptor sobrecarrega acima de −8 dBm."
+      },
+      {
+        "texto": "Entre −27 e −8 dBm.",
         "correta": true,
-        "explicacao": "Certo. Tabela A.1 da G.984.2. A faixa de trabalho que a empresa aceita na ativação costuma ser mais estreita: confirme qual é."
-      },
-      {
-        "texto": "Entre −15 e −25 dBm.",
-        "correta": false,
-        "explicacao": "Essa é uma faixa de bolso usada por muitas equipes, sem norma; a G.984.2 garante de −27 a −8 dBm."
-      },
-      {
-        "texto": "Entre 0 e +5 dBm.",
-        "correta": false,
-        "explicacao": "Isso é perto da potência de saída da OLT; na ONU, passaria da sobrecarga de −8 dBm."
-      },
-      {
-        "texto": "Entre −35 e −28 dBm.",
-        "correta": false,
-        "explicacao": "Abaixo de −27 dBm, a sensibilidade especificada não é atingida."
+        "explicacao": "Certo. Sensibilidade de −27 dBm e sobrecarga de −8 dBm, na Tabela A.1 da G.984.2. A faixa que a empresa aceita na ativação costuma ser mais estreita: confirme qual é."
       }
     ],
     "fontes": [

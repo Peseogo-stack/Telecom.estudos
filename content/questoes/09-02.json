@@ -67,24 +67,24 @@
     "enunciado": "A unidade ficou sem energia e o roteador da operadora desligou por 2 horas. Em geral, isso conta no tempo parado da operadora?",
     "alternativas": [
       {
-        "texto": "Sempre conta.",
+        "texto": "Sim: o roteador é da operadora, então a parada conta contra ela.",
         "correta": false,
-        "explicacao": "Muitos contratos tratam falta de energia no local do cliente como exclusão."
+        "explicacao": "O que importa é a causa: falta de energia no local do cliente costuma ser exclusão."
       },
       {
-        "texto": "Em geral não: falta de energia no local do cliente costuma ser exclusão. Confira no contrato.",
+        "texto": "Não: falta de energia no local do cliente é exclusão.",
         "correta": true,
-        "explicacao": "Certo. Exemplo: um termo de referência público (TJAL) trata a falta de energia no cliente como exclusão."
+        "explicacao": "Certo. Exemplo: um termo de referência público (TJAL) não conta contra a operadora a falta de energia no local do cliente. Confira o que o seu contrato diz."
       },
       {
-        "texto": "Só se passar de 4 horas.",
+        "texto": "Sim, só se passar de 4 horas, o limite das manutenções.",
         "correta": false,
-        "explicacao": "O limite de 4 h aparece em manutenções programadas, não na falta de energia."
+        "explicacao": "O limite de 4 h aparece nas manutenções programadas, não na falta de energia."
       },
       {
-        "texto": "Conta em dobro.",
+        "texto": "Sim, mas só os minutos acima da parada permitida.",
         "correta": false,
-        "explicacao": "Não há regra de contar em dobro nos contratos estudados."
+        "explicacao": "Falta de energia no cliente é tirada antes da conta; só a regra \"só o excesso\" (se o contrato a tiver) trata dos minutos que contam."
       }
     ],
     "fontes": [
@@ -129,24 +129,24 @@
     "enunciado": "Um contrato usa Vd = V × (1 − D/100), com D sendo a disponibilidade do mês em %, e teto de 20%. Outro usa Dc = Cm × Ti ÷ To. No mesmo mês, longe do teto, os descontos são:",
     "alternativas": [
       {
-        "texto": "Sempre o dobro no primeiro.",
+        "texto": "O primeiro dá o dobro, pois o teto de 20% já está embutido.",
         "correta": false,
-        "explicacao": "Não há fator 2: as contas são equivalentes."
+        "explicacao": "Não há fator 2: as contas são equivalentes, e o teto só age no limite."
       },
       {
-        "texto": "Iguais, porque 1 − D/100 = Ti ÷ To; a diferença é o teto de 20%.",
+        "texto": "O segundo dá menos, pois só desconta o que passa do SLA.",
+        "correta": false,
+        "explicacao": "Dc = Cm × Ti ÷ To usa todo o Ti, não só o excesso. A regra \"só o excesso\" é outra e depende do contrato."
+      },
+      {
+        "texto": "Os dois dão 20% do valor, que é o teto de desconto.",
+        "correta": false,
+        "explicacao": "20% é o limite máximo, não um valor fixo; longe do teto, o desconto é proporcional ao tempo parado."
+      },
+      {
+        "texto": "Iguais, pois 1 − D/100 é igual a Ti ÷ To.",
         "correta": true,
-        "explicacao": "Certo. D = (To − Ti)/To × 100. Exemplo real do primeiro jeito de escrever: SUDAM, 2026."
-      },
-      {
-        "texto": "Sempre zero se a disponibilidade passar de 90%.",
-        "correta": false,
-        "explicacao": "As duas dão desconto proporcional ao tempo parado."
-      },
-      {
-        "texto": "Fixos em 20% em qualquer caso.",
-        "correta": false,
-        "explicacao": "20% é o limite máximo, não um valor fixo."
+        "explicacao": "Certo. D = (To − Ti) ÷ To × 100, então 1 − D/100 = Ti ÷ To e as duas contas dão o mesmo valor; o teto de 20% só pesa perto do limite (SUDAM 2026; IFSULDEMINAS)."
       }
     ],
     "fontes": [
@@ -161,24 +161,24 @@
     "enunciado": "O fornecedor contestou a glosa que você mandou. O que deveria estar na sua memória de cálculo?",
     "alternativas": [
       {
-        "texto": "Período, paradas com protocolo e horário, exclusões aplicadas, Ti, disponibilidade, regra do contrato e valor.",
+        "texto": "Paradas com protocolo e horário, exclusões, Ti, regra e valor.",
         "correta": true,
-        "explicacao": "Certo. Com isso o fornecedor consegue conferir passo a passo, e você consegue provar a conta. Há contrato que exige a fatura acompanhada da memória de cálculo dos descontos (TJAL, 9.2)."
+        "explicacao": "Certo. Com período, To, paradas, exclusões, Ti, disponibilidade, regra e valor, o fornecedor confere passo a passo e você prova a conta. Há contrato que exige a fatura com a memória de cálculo (TJAL)."
       },
       {
-        "texto": "Só o valor final.",
+        "texto": "Só o valor final da glosa, com o número do contrato e a data.",
         "correta": false,
-        "explicacao": "Sem os passos, não há como conferir nem defender o desconto."
+        "explicacao": "Sem os passos não há como conferir nem defender o desconto."
       },
       {
-        "texto": "O gráfico de tráfego, sem horários.",
+        "texto": "O gráfico de tráfego do mês e a velocidade média medida.",
         "correta": false,
-        "explicacao": "Pode ser evidência, mas sem horários não mostra o tempo parado."
+        "explicacao": "Pode ser evidência, mas não mostra as paradas com horário nem as exclusões."
       },
       {
-        "texto": "Só o número do contrato.",
+        "texto": "Todas as paradas, inclusive as exclusões, e o valor da fatura.",
         "correta": false,
-        "explicacao": "Identifica o contrato, mas não justifica o desconto."
+        "explicacao": "A memória de cálculo mostra as exclusões aplicadas; as paradas excluídas não entram no Ti."
       }
     ],
     "fontes": [
@@ -223,24 +223,24 @@
     "enunciado": "Por que guardar protocolo, data e hora de abertura e de fechamento de cada chamado?",
     "alternativas": [
       {
-        "texto": "Para medir o Ti e provar o tempo parado na hora de calcular a glosa.",
+        "texto": "Para o fornecedor saber quem abriu cada chamado.",
+        "correta": false,
+        "explicacao": "O objetivo é registrar o tempo parado, não identificar quem ligou."
+      },
+      {
+        "texto": "Porque a lei proíbe abrir chamado sem protocolo.",
+        "correta": false,
+        "explicacao": "O motivo é contratual e de prova, não uma proibição legal."
+      },
+      {
+        "texto": "Para provar o tempo parado (Ti) na hora de calcular a glosa.",
         "correta": true,
-        "explicacao": "Certo. Em vários contratos o relógio começa na abertura do chamado; sem registro não há prova."
+        "explicacao": "Certo. Em vários contratos o relógio começa na abertura do chamado; sem registro de protocolo, data e hora, não há prova do Ti (TJAL; TRT-7)."
       },
       {
-        "texto": "Só para estatística interna.",
+        "texto": "Para calcular o To, que depende dos horários dos chamados.",
         "correta": false,
-        "explicacao": "Esses horários definem o tempo parado, que entra no desconto."
-      },
-      {
-        "texto": "Porque a lei proíbe chamado sem protocolo.",
-        "correta": false,
-        "explicacao": "O motivo é contratual e de prova."
-      },
-      {
-        "texto": "Para o fornecedor saber quem ligou.",
-        "correta": false,
-        "explicacao": "O objetivo é registrar o tempo."
+        "explicacao": "O To é o tempo total do período (43.200 min num mês de 30 dias); os horários dos chamados dão o Ti."
       }
     ],
     "fontes": [

@@ -99,24 +99,24 @@
     "enunciado": "Dois fornecedores oferecem 99,9%: um mede por mês, o outro por ano. Qual a diferença para você?",
     "alternativas": [
       {
-        "texto": "Nenhuma: 99,9% é sempre igual.",
+        "texto": "No anual, só pode parar 43,2 min por mês, igual ao mensal.",
         "correta": false,
-        "explicacao": "O período muda tudo."
+        "explicacao": "Os 43,2 min por mês valem só no SLA mensal; no anual, o limite é do ano todo (525,6 min)."
       },
       {
-        "texto": "No anual, o link pode ficar cerca de 8 h 46 min fora do ar num mês só e ainda cumprir; no mensal, só 43,2 min por mês.",
+        "texto": "No mensal, pode parar mais, porque o mês é mais curto.",
+        "correta": false,
+        "explicacao": "É o contrário: no mensal, cada mês precisa cumprir a meta sozinho, com só 43,2 min."
+      },
+      {
+        "texto": "No anual, pode parar cerca de 8 h 46 min num mês só e cumprir.",
         "correta": true,
-        "explicacao": "Certo. 525.600 × 0,1% = 525,6 min por ano, contra 43,2 min por mês."
+        "explicacao": "Certo. 525.600 × 0,1% = 525,6 min por ano, cerca de 8 h 46 min, e o fornecedor pode gastar tudo num mês só. No mensal, são 43,2 min por mês (TRT-7)."
       },
       {
-        "texto": "O mensal é mais tolerante, porque o mês é mais curto.",
+        "texto": "Os dois são iguais, porque 99,9% é a mesma meta.",
         "correta": false,
-        "explicacao": "É o contrário: no mensal cada mês, sozinho, precisa cumprir a meta."
-      },
-      {
-        "texto": "O anual só existe para fibra apagada.",
-        "correta": false,
-        "explicacao": "O período é escolha do contrato, para qualquer serviço."
+        "explicacao": "A porcentagem é igual, mas o período muda o tempo de parada permitido. Leia sempre o período."
       }
     ],
     "fontes": [
@@ -130,24 +130,24 @@
     "enunciado": "Na conta D = (To − Ti) ÷ To × 100, o que você precisa levantar nos chamados para chegar ao Ti?",
     "alternativas": [
       {
-        "texto": "O tempo total do mês.",
-        "correta": false,
-        "explicacao": "Esse é o To."
-      },
-      {
-        "texto": "Os minutos em que o serviço ficou indisponível, já tirando as exclusões do contrato.",
+        "texto": "Os minutos de parada que contam, sem as exclusões do contrato.",
         "correta": true,
-        "explicacao": "Certo. Ti é o tempo de indisponibilidade que conta; manutenção avisada e outras exclusões ficam fora."
+        "explicacao": "Certo. Ti é o tempo de indisponibilidade que conta; manutenção avisada e outras exclusões ficam fora (TRT-7)."
       },
       {
-        "texto": "O tempo até o técnico chegar.",
+        "texto": "O total de minutos do mês, que é a base da conta.",
         "correta": false,
-        "explicacao": "Isso é tempo de atendimento, outra meta do contrato."
+        "explicacao": "Esse é o To, o tempo total do período."
       },
       {
-        "texto": "A velocidade contratada.",
+        "texto": "O tempo entre abrir o chamado e o técnico chegar.",
         "correta": false,
-        "explicacao": "Velocidade não entra nessa fórmula."
+        "explicacao": "Isso é tempo de atendimento, outra meta do contrato; Ti é o tempo parado que conta."
+      },
+      {
+        "texto": "Os minutos de todas as paradas, inclusive manutenção avisada.",
+        "correta": false,
+        "explicacao": "Manutenção programada avisada costuma ser exclusão e fica fora do Ti."
       }
     ],
     "fontes": [
@@ -161,24 +161,24 @@
     "enunciado": "O que um contrato de link pode considerar indisponibilidade, além da queda total?",
     "alternativas": [
       {
-        "texto": "Degradação medida, como latência alta, perda de pacotes ou velocidade abaixo da contratada, se o contrato disser.",
+        "texto": "Reclamação de usuário, mesmo sem medição registrada.",
+        "correta": false,
+        "explicacao": "Os contratos usam critérios medidos e registrados."
+      },
+      {
+        "texto": "Só a queda total: degradação medida não pode contar.",
+        "correta": false,
+        "explicacao": "Há contratos que contam latência, perda de pacotes e velocidade baixa como indisponibilidade (TJAL)."
+      },
+      {
+        "texto": "Manutenção programada avisada, que entra no cálculo como parada.",
+        "correta": false,
+        "explicacao": "Manutenção programada avisada costuma ser exclusão: não conta, segundo as regras do contrato."
+      },
+      {
+        "texto": "Degradação medida, como latência alta ou perda de pacotes.",
         "correta": true,
-        "explicacao": "Certo. Exemplo: um termo de referência público (TJAL) conta latência acima de 25 ms em duas medições seguidas, perda acima de 2% e vazão abaixo de 95%. Cada contrato define o seu."
-      },
-      {
-        "texto": "Qualquer reclamação de usuário, mesmo sem medição.",
-        "correta": false,
-        "explicacao": "Contratos usam critérios medidos e registrados."
-      },
-      {
-        "texto": "Nada além da queda total, em nenhum contrato.",
-        "correta": false,
-        "explicacao": "Vários contratos contam degradação como indisponibilidade."
-      },
-      {
-        "texto": "A manutenção programada avisada com antecedência.",
-        "correta": false,
-        "explicacao": "Dentro das regras do contrato, manutenção programada costuma ser exclusão: não conta."
+        "explicacao": "Certo. Exemplo: um termo de referência público (TJAL) conta latência acima de 25 ms e perda acima de 2%, em duas medições seguidas, e velocidade abaixo de 95% da contratada. Cada contrato define o seu."
       }
     ],
     "fontes": [

@@ -36,24 +36,24 @@
     "enunciado": "O mesmo link cai toda tarde há duas semanas. Além de abrir os chamados, o que pedir ao fornecedor?",
     "alternativas": [
       {
-        "texto": "Nada: cada queda é um incidente separado.",
+        "texto": "Tratar cada queda como incidente solto, sem causa.",
         "correta": false,
-        "explicacao": "Quedas que se repetem indicam um problema, que exige análise de causa."
+        "explicacao": "Quedas repetidas indicam um problema, que exige análise de causa."
       },
       {
-        "texto": "Um desconto fixo, sem análise.",
+        "texto": "Um desconto fixo na fatura, sem análise da causa.",
         "correta": false,
         "explicacao": "A glosa segue o contrato; o pedido técnico é a causa-raiz."
       },
       {
-        "texto": "Tratamento como problema: análise da causa-raiz e solução definitiva.",
+        "texto": "Tratar como problema, com análise da causa-raiz.",
         "correta": true,
-        "explicacao": "Certo. O gerenciamento de problemas cuida de incidentes recorrentes para achar a causa."
+        "explicacao": "Certo. Quedas que se repetem indicam um problema; o gerenciamento de problemas busca a causa-raiz para a solução definitiva (TJBA)."
       },
       {
-        "texto": "Mais velocidade.",
+        "texto": "Uma requisição de aumento de velocidade do link.",
         "correta": false,
-        "explicacao": "Mais velocidade não resolve uma falha que se repete."
+        "explicacao": "Requisição é pedido que não vem de falha; aqui há falha repetida, e mais velocidade não a resolve."
       }
     ],
     "fontes": [
@@ -99,24 +99,24 @@
     "enunciado": "O chamado de uma unidade crítica está parado. Quando subir o caso para a gestão do fornecedor (escalonamento hierárquico)?",
     "alternativas": [
       {
-        "texto": "Sempre, desde o primeiro minuto de qualquer chamado.",
+        "texto": "Em todo chamado, desde o primeiro minuto.",
         "correta": false,
         "explicacao": "Escalar tudo sobrecarrega e não acelera."
       },
       {
-        "texto": "Quando há impacto relevante, quando é preciso uma decisão gerencial ou quando é um incidente grave.",
+        "texto": "Com impacto relevante, incidente grave ou decisão da gestão.",
         "correta": true,
         "explicacao": "Certo. São os casos que uma política de incidentes baseada no ITIL 4 lista para o escalonamento hierárquico (exemplo: TJBA)."
       },
       {
-        "texto": "Só depois de 30 dias de chamado aberto.",
+        "texto": "Quando faltar conhecimento técnico para resolver o caso.",
         "correta": false,
-        "explicacao": "O gatilho é impacto, decisão ou gravidade, além dos prazos do contrato."
+        "explicacao": "Isso é escalonamento funcional (técnico), não hierárquico."
       },
       {
-        "texto": "Nunca: só existe escalonamento técnico.",
+        "texto": "Só depois de 30 dias com o chamado aberto.",
         "correta": false,
-        "explicacao": "Existem os dois: funcional (técnico) e hierárquico."
+        "explicacao": "O gatilho é impacto, decisão ou gravidade, além dos prazos do contrato."
       }
     ],
     "fontes": [
@@ -130,9 +130,14 @@
     "enunciado": "Qual a diferença entre escalonamento funcional e hierárquico?",
     "alternativas": [
       {
-        "texto": "Funcional leva o caso a quem sabe resolver tecnicamente; hierárquico, a quem decide.",
-        "correta": true,
-        "explicacao": "Certo. Funcional sobe no conhecimento técnico; hierárquico sobe na autoridade de decisão."
+        "texto": "Funcional sobe a quem decide; hierárquico, a quem resolve.",
+        "correta": false,
+        "explicacao": "Os papéis estão trocados: funcional é técnico, hierárquico é de gestão."
+      },
+      {
+        "texto": "Funcional vale para o cliente; hierárquico, para o fornecedor.",
+        "correta": false,
+        "explicacao": "O tipo depende de para onde o caso sobe, não de quem o aciona."
       },
       {
         "texto": "Funcional é por telefone; hierárquico, por e-mail.",
@@ -140,14 +145,9 @@
         "explicacao": "O canal não define o tipo."
       },
       {
-        "texto": "São a mesma coisa.",
-        "correta": false,
-        "explicacao": "Um sobe no conhecimento técnico; o outro, na decisão."
-      },
-      {
-        "texto": "Hierárquico só o fornecedor pode fazer.",
-        "correta": false,
-        "explicacao": "O cliente também pode acionar a gestão do fornecedor."
+        "texto": "Funcional sobe a quem resolve; hierárquico, a quem decide.",
+        "correta": true,
+        "explicacao": "Certo. O funcional sobe no conhecimento técnico; o hierárquico sobe na autoridade de decisão (TJBA)."
       }
     ],
     "fontes": [
@@ -161,24 +161,24 @@
     "enunciado": "Por que anotar o horário de abertura do chamado?",
     "alternativas": [
       {
-        "texto": "Porque em vários contratos o relógio da indisponibilidade começa na abertura do chamado.",
+        "texto": "Em vários contratos, o relógio da parada começa no chamado.",
         "correta": true,
-        "explicacao": "Certo. Exemplo: TR do TJAL. Sem o horário, o tempo parado não pode ser comprovado."
+        "explicacao": "Certo. Exemplo: TR do TJAL. Sem o horário, o tempo parado não pode ser comprovado; em outros contratos o contratante apura pelo monitoramento (TRT-7)."
       },
       {
-        "texto": "Só para estatística.",
+        "texto": "Só para a estatística interna de chamados do fornecedor.",
         "correta": false,
         "explicacao": "O horário entra no cálculo do SLA e da glosa."
       },
       {
-        "texto": "Porque o fornecedor cobra por hora de chamado.",
+        "texto": "O relógio só começa quando o técnico chega ao local.",
         "correta": false,
-        "explicacao": "Em link com SLA, o chamado não é cobrado por hora."
+        "explicacao": "Em vários contratos ele começa na abertura do chamado."
       },
       {
-        "texto": "Não precisa quando há monitoramento.",
+        "texto": "O relógio começa no fechamento do chamado.",
         "correta": false,
-        "explicacao": "O contrato pode contar a partir do chamado; registre os dois."
+        "explicacao": "O relógio começa na abertura do chamado em vários contratos; o fechamento marca o fim da parada, não o início."
       }
     ],
     "fontes": [
@@ -193,22 +193,22 @@
     "enunciado": "O fornecedor ligou dizendo que o link voltou e quer encerrar o chamado. O que fazer antes de aceitar?",
     "alternativas": [
       {
-        "texto": "Aceitar logo, para não atrasar.",
+        "texto": "Aceitar logo o encerramento, para não atrasar o fornecedor.",
         "correta": false,
-        "explicacao": "Encerrar sem conferir faz o relógio do SLA parar antes da hora."
+        "explicacao": "Encerrar sem conferir faz o relógio parar antes da hora."
       },
       {
-        "texto": "Testar se o serviço voltou de fato e pedir a causa informada.",
-        "correta": true,
-        "explicacao": "Certo. Confira na ponta e registre a causa: ela ajuda a ver problemas que se repetem. A política do TJBA só encerra depois de restaurar e validar (Seção VI)."
-      },
-      {
-        "texto": "Abrir outro chamado para o mesmo caso.",
+        "texto": "Abrir um chamado novo e deixar o antigo encerrar.",
         "correta": false,
         "explicacao": "Primeiro confira; se não voltou, o mesmo chamado continua aberto."
       },
       {
-        "texto": "Pedir a glosa na hora, por telefone.",
+        "texto": "Testar se o serviço voltou e pedir a causa informada.",
+        "correta": true,
+        "explicacao": "Certo. Confira na ponta e registre a causa: ela ajuda a ver problemas que se repetem. A política do TJBA só encerra o incidente depois de restaurado e validado (Seção VI)."
+      },
+      {
+        "texto": "Calcular e cobrar a glosa por telefone na hora.",
         "correta": false,
         "explicacao": "A glosa é calculada no fechamento do período, com memória de cálculo."
       }
@@ -224,24 +224,24 @@
     "enunciado": "Enquanto conserta a fibra rompida, o fornecedor instala um link 4G provisório para a unidade não ficar parada. Como se chama isso?",
     "alternativas": [
       {
-        "texto": "Problema.",
+        "texto": "Análise de causa-raiz.",
         "correta": false,
-        "explicacao": "Problema é a causa de incidentes."
-      },
-      {
-        "texto": "Requisição.",
-        "correta": false,
-        "explicacao": "Requisição é um pedido sem falha."
-      },
-      {
-        "texto": "Escalonamento.",
-        "correta": false,
-        "explicacao": "Escalonamento é subir o caso de nível."
+        "explicacao": "Causa-raiz é trabalho do problema, para a solução definitiva; o 4G apenas restaura o serviço por ora."
       },
       {
         "texto": "Solução de contorno.",
         "correta": true,
-        "explicacao": "Certo. Medida temporária para restaurar o serviço rápido, enquanto a correção definitiva é feita."
+        "explicacao": "Certo. Medida temporária para restaurar o serviço rápido, enquanto a correção definitiva é feita (TJBA)."
+      },
+      {
+        "texto": "Requisição de serviço.",
+        "correta": false,
+        "explicacao": "Requisição é um pedido que não vem de falha."
+      },
+      {
+        "texto": "Escalonamento funcional.",
+        "correta": false,
+        "explicacao": "Escalonamento é subir o caso de nível; o 4G provisório é uma medida de restauração."
       }
     ],
     "fontes": [

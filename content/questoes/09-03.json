@@ -12,17 +12,17 @@
       {
         "texto": "O gestor do contrato.",
         "correta": true,
-        "explicacao": "Certo. No modelo do Decreto 11.246 (arts. 21, IX, e 25), o definitivo é do gestor do contrato (ou do gestor setorial, ou de uma comissão designada). Na sua empresa o nome pode ser outro."
+        "explicacao": "Certo. No modelo do Decreto 11.246 (arts. 21, IX, e 25), o recebimento definitivo é do gestor do contrato, do gestor setorial ou de uma comissão designada. Na sua empresa o nome pode ser outro."
       },
       {
-        "texto": "O fornecedor.",
+        "texto": "O fiscal administrativo.",
         "correta": false,
-        "explicacao": "O fornecedor não aceita a própria entrega."
+        "explicacao": "Ele faz o recebimento provisório de caráter administrativo (Decreto 11.246, art. 23, VII)."
       },
       {
-        "texto": "O almoxarifado.",
+        "texto": "O preposto do fornecedor.",
         "correta": false,
-        "explicacao": "O almoxarifado recebe material, não aceita a obra."
+        "explicacao": "O preposto representa o fornecedor, que não aceita a própria entrega."
       }
     ],
     "fontes": [
@@ -36,24 +36,24 @@
     "enunciado": "Em campo, você vê que o fornecedor deixou a reserva técnica presa no poste, contra a norma. Como apoio da fiscalização técnica, o que fazer?",
     "alternativas": [
       {
-        "texto": "Registrar a ocorrência (data, local, foto) e notificar o fornecedor para corrigir, com prazo; levar ao gestor o que passar da sua alçada.",
-        "correta": true,
-        "explicacao": "Certo. É o papel do fiscal técnico no modelo do Decreto 11.246 (art. 22, II a IV) e da Lei 14.133 (art. 117)."
-      },
-      {
-        "texto": "Resolver de boca com o técnico do fornecedor.",
+        "texto": "Resolver direto com o técnico do fornecedor, sem registro.",
         "correta": false,
         "explicacao": "Sem registro, a ocorrência \"não aconteceu\" na hora de cobrar."
       },
       {
-        "texto": "Aplicar multa na hora.",
+        "texto": "Aplicar a multa ao fornecedor e informar o gestor depois.",
         "correta": false,
-        "explicacao": "O fiscal registra e informa. O gestor pede a abertura do processo de sanção (Decreto 11.246, art. 21, X), que é conduzido por comissão ou pelo setor competente."
+        "explicacao": "O fiscal registra e informa; o gestor pede a abertura do processo de sanção (Decreto 11.246, art. 21, X)."
       },
       {
-        "texto": "Ignorar, porque a obra já foi entregue.",
+        "texto": "Deixar para registrar no recebimento definitivo da obra.",
         "correta": false,
-        "explicacao": "Pendência encontrada é registrada e notificada, mesmo depois da entrega."
+        "explicacao": "Pendência encontrada é registrada e notificada na hora, para o fornecedor corrigir."
+      },
+      {
+        "texto": "Registrar a ocorrência e notificar o fornecedor, com prazo.",
+        "correta": true,
+        "explicacao": "Certo. É o papel do fiscal técnico no modelo do Decreto 11.246 (art. 22) e da Lei 14.133 (art. 117): registrar por escrito, notificar com prazo e levar ao gestor o que passar da alçada."
       }
     ],
     "fontes": [
@@ -68,24 +68,24 @@
     "enunciado": "Um colega diz que a distribuidora, empresa privada, é obrigada a seguir a Lei 14.133 nos contratos de telecom. Está certo?",
     "alternativas": [
       {
-        "texto": "Sim: toda empresa que contrata serviço segue essa lei.",
-        "correta": false,
-        "explicacao": "A Lei 14.133 é para a Administração Pública."
-      },
-      {
-        "texto": "Sim, porque é concessionária de serviço público.",
-        "correta": false,
-        "explicacao": "Ser concessionária não transforma os contratos privados dela em contratos dessa lei."
-      },
-      {
-        "texto": "Só em contratos acima de R$ 1 milhão.",
-        "correta": false,
-        "explicacao": "Não existe esse corte."
-      },
-      {
-        "texto": "Não: os contratos seguem o Código Civil e o que foi assinado; os termos da lei servem como boa prática.",
+        "texto": "Não: segue o Código Civil e o contrato; a lei é boa prática.",
         "correta": true,
-        "explicacao": "Certo. Gestor, fiscal, recebimento e glosa são vocabulário de mercado, não obrigação legal para a empresa privada."
+        "explicacao": "Certo. A Lei 14.133 é para a Administração Pública. Gestor, fiscal, recebimento e glosa são vocabulário de mercado, não obrigação para a empresa privada (Lei 14.133, art. 1º)."
+      },
+      {
+        "texto": "Sim: toda empresa que contrata telecom segue essa lei.",
+        "correta": false,
+        "explicacao": "A lei vale para a Administração Pública; a distribuidora privada não é obrigada a segui-la."
+      },
+      {
+        "texto": "Não: ela segue a Lei 13.303, como as estatais.",
+        "correta": false,
+        "explicacao": "A Lei 13.303/2016 é das empresas públicas e de economia mista. A privada segue o Código Civil e o contrato."
+      },
+      {
+        "texto": "Sim, desde que o contrato use os termos gestor e fiscal.",
+        "correta": false,
+        "explicacao": "Usar os termos não submete o contrato à lei; eles são só vocabulário e boa prática."
       }
     ],
     "fontes": [
@@ -99,24 +99,24 @@
     "enunciado": "No modelo de papéis, quem costuma controlar prazos, aditivos, pagamentos, garantias e glosas?",
     "alternativas": [
       {
-        "texto": "O fiscal técnico.",
+        "texto": "O fiscal técnico do contrato.",
         "correta": false,
-        "explicacao": "O fiscal técnico cuida das ocorrências técnicas e da conferência em campo."
+        "explicacao": "O fiscal técnico anota ocorrências, notifica e confere em campo."
+      },
+      {
+        "texto": "O preposto do fornecedor.",
+        "correta": false,
+        "explicacao": "O preposto representa o fornecedor, que não fiscaliza o próprio contrato."
       },
       {
         "texto": "O fiscal administrativo.",
         "correta": true,
-        "explicacao": "Certo. Decreto 11.246, art. 23, I."
+        "explicacao": "Certo. No modelo do Decreto 11.246, o fiscal administrativo controla prazos, aditivos, pagamentos, garantias e glosas (art. 23)."
       },
       {
-        "texto": "O fornecedor.",
+        "texto": "A comissão de sanção.",
         "correta": false,
-        "explicacao": "O fornecedor não fiscaliza o próprio contrato."
-      },
-      {
-        "texto": "O usuário do link.",
-        "correta": false,
-        "explicacao": "O usuário não acompanha o contrato."
+        "explicacao": "A comissão ou o setor competente conduz o processo de sanção, a pedido do gestor; não controla prazos nem glosas."
       }
     ],
     "fontes": [
@@ -130,24 +130,24 @@
     "enunciado": "Seis meses depois do aceite definitivo de uma rede óptica, aparece um defeito de execução: uma caixa de emenda mal vedada. O fornecedor ainda responde?",
     "alternativas": [
       {
-        "texto": "Não: o aceite encerra tudo.",
+        "texto": "Não: com o aceite definitivo, a responsabilidade acaba.",
         "correta": false,
-        "explicacao": "O recebimento não exclui a responsabilidade pela solidez e segurança da obra ou do serviço (Lei 14.133, art. 140, § 2º)."
+        "explicacao": "O aceite não encerra a responsabilidade do fornecedor, nos limites da lei e do contrato."
       },
       {
-        "texto": "Só por 90 dias depois do aceite.",
-        "correta": false,
-        "explicacao": "Não existe esse prazo geral. Vale o que a lei e o contrato dizem; em obra de imóvel, a lei de contratos públicos dá no mínimo 5 anos (§ 6º)."
-      },
-      {
-        "texto": "Sim: o aceite não acaba com a responsabilidade, nos limites da lei e do contrato. Confira a garantia do seu contrato.",
+        "texto": "Sim, nos limites da lei e do contrato, apesar do aceite.",
         "correta": true,
-        "explicacao": "Certo. Lei 14.133, art. 140, § 2º, usada aqui como referência. Os 5 anos do § 6º são para obra de imóvel; rede contratada como serviço segue o § 2º e o contrato."
+        "explicacao": "Certo. O recebimento não acaba com a responsabilidade pela solidez e segurança da obra ou do serviço (Lei 14.133, art. 140, § 2º). Confira a garantia do seu contrato."
       },
       {
-        "texto": "Só se o defeito for no cabo, não nas ferragens.",
+        "texto": "Só se o defeito aparecer em até 90 dias do aceite.",
         "correta": false,
-        "explicacao": "A responsabilidade cobre a execução toda, não só um item."
+        "explicacao": "Não há esse prazo geral; vale o que a lei e o contrato dizem."
+      },
+      {
+        "texto": "Sim, por 5 anos fixos, o mesmo prazo da obra de imóvel.",
+        "correta": false,
+        "explicacao": "Os 5 anos do § 6º são para obra de imóvel; rede contratada como serviço segue o § 2º e o contrato."
       }
     ],
     "fontes": [
@@ -161,22 +161,22 @@
     "enunciado": "O problema que você encontrou pede multa ou rescisão, o que passa da sua alçada. O que fazer?",
     "alternativas": [
       {
-        "texto": "Aplicar a multa por conta própria.",
-        "correta": false,
-        "explicacao": "Multa não é decisão do fiscal. O gestor pede a abertura do processo de sanção (Decreto 11.246, art. 21, X), conduzido por comissão ou pelo setor competente."
-      },
-      {
-        "texto": "Ignorar, porque não é sua competência.",
-        "correta": false,
-        "explicacao": "O fiscal tem de informar a tempo."
-      },
-      {
-        "texto": "Informar o gestor a tempo, com o registro da ocorrência.",
+        "texto": "Informar o gestor a tempo, com a ocorrência registrada.",
         "correta": true,
-        "explicacao": "Certo. Lei 14.133, art. 117, § 2º, e Decreto 11.246, art. 22, IV."
+        "explicacao": "Certo. O que ultrapassa a competência do fiscal vai ao gestor a tempo (Lei 14.133, art. 117, § 2º; Decreto 11.246, art. 22)."
       },
       {
-        "texto": "Combinar um desconto direto com o fornecedor.",
+        "texto": "Aplicar a multa por conta própria e avisar o gestor depois.",
+        "correta": false,
+        "explicacao": "Multa não é decisão do fiscal: o gestor pede a abertura do processo de sanção (Decreto 11.246, art. 21, X)."
+      },
+      {
+        "texto": "Ignorar, porque multa e rescisão não são tarefa do fiscal.",
+        "correta": false,
+        "explicacao": "O fiscal não decide, mas tem de informar o gestor a tempo."
+      },
+      {
+        "texto": "Combinar um desconto direto com o fornecedor, sem registro.",
         "correta": false,
         "explicacao": "Acordo informal foge do contrato e do registro."
       }
@@ -193,24 +193,24 @@
     "enunciado": "Qual a diferença entre o aceite provisório e o definitivo de uma obra?",
     "alternativas": [
       {
-        "texto": "O provisório é verbal; o definitivo, escrito.",
+        "texto": "O provisório atesta o contrato todo; o definitivo, as exigências técnicas.",
         "correta": false,
-        "explicacao": "Os dois são por termo detalhado."
+        "explicacao": "A ordem é a contrária: primeiro as exigências técnicas, depois o contrato todo."
       },
       {
-        "texto": "O provisório confere as exigências técnicas; o definitivo comprova o atendimento do contrato todo.",
+        "texto": "O provisório é do gestor do contrato; o definitivo, do fiscal técnico.",
+        "correta": false,
+        "explicacao": "No decreto, o provisório é dos fiscais e o definitivo, do gestor (ou de comissão designada)."
+      },
+      {
+        "texto": "São o mesmo ato, só muda a data de assinatura.",
+        "correta": false,
+        "explicacao": "São atos diferentes, de responsáveis diferentes e com critérios diferentes."
+      },
+      {
+        "texto": "O provisório atesta as exigências técnicas; o definitivo, o contrato todo.",
         "correta": true,
-        "explicacao": "Certo. Lei 14.133, art. 140, I, alíneas a e b."
-      },
-      {
-        "texto": "São o mesmo ato, em dias diferentes.",
-        "correta": false,
-        "explicacao": "São atos diferentes, feitos por responsáveis diferentes."
-      },
-      {
-        "texto": "O definitivo é feito pelo fornecedor.",
-        "correta": false,
-        "explicacao": "Nunca pelo fornecedor."
+        "explicacao": "Certo. O provisório é do responsável pela fiscalização, quando as exigências técnicas foram cumpridas; o definitivo, de quem a autoridade designar, quando o contrato todo foi atendido (Lei 14.133, art. 140)."
       }
     ],
     "fontes": [

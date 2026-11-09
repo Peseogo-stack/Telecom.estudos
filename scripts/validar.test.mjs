@@ -1,13 +1,33 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { validar } from './validar-conteudo.mjs';
+import { LIMITE_CORRETA, razaoCorreta, validar } from './validar-conteudo.mjs';
 import { FERRAMENTAS, RAIZ, markdownParaHtml } from './lib/conteudo.mjs';
 
 describe('validador de conteúdo', () => {
   it('o conteúdo do repositório passa sem erros', () => {
     const { erros } = validar();
     expect(erros).toEqual([]);
+  });
+});
+
+describe('viés de comprimento das alternativas', () => {
+  const questao = (correta, ...erradas) => ({
+    alternativas: [{ texto: correta, correta: true }, ...erradas.map((texto) => ({ texto, correta: false }))],
+  });
+
+  it('compara a correta com a maior errada, sem contar espaços nas pontas', () => {
+    expect(razaoCorreta(questao('  0,35 dB  ', '0,2 dB', '1 dB', '0,7 dB'))).toBeCloseTo(7 / 6);
+  });
+
+  it('o limite é 15% acima da maior errada', () => {
+    expect(LIMITE_CORRETA).toBe(1.15);
+    expect(razaoCorreta(questao('x'.repeat(23), 'x'.repeat(20), 'x', 'x'))).toBeLessThanOrEqual(LIMITE_CORRETA);
+    expect(razaoCorreta(questao('x'.repeat(24), 'x'.repeat(20), 'x', 'x'))).toBeGreaterThan(LIMITE_CORRETA);
+  });
+
+  it('sem alternativa correta não há razão', () => {
+    expect(razaoCorreta({ alternativas: [{ texto: 'a', correta: false }] })).toBeNull();
   });
 });
 

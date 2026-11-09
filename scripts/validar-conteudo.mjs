@@ -24,6 +24,19 @@ import {
   contarPalavras,
 } from './lib/conteudo.mjs';
 
+/** Aviso quando a alternativa correta passa de 15% acima da maior errada (em caracteres). */
+export const LIMITE_CORRETA = 1.15;
+
+/** Comprimento da alternativa correta dividido pelo da maior errada; null se a questão não tem como comparar. */
+export function razaoCorreta(q) {
+  const alternativas = q.alternativas ?? [];
+  const correta = alternativas.find((a) => a.correta === true);
+  const erradas = alternativas.filter((a) => a.correta !== true).map((a) => a.texto?.trim().length ?? 0);
+  if (!correta?.texto || erradas.length === 0) return null;
+  const maior = Math.max(...erradas);
+  return maior > 0 ? correta.texto.trim().length / maior : null;
+}
+
 export function validar({ hoje = new Date(), estrito = false } = {}) {
   const erros = [];
   const avisos = [];
@@ -207,19 +220,12 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
       for (const f of q.fontes ?? []) if (!fontesPorId.has(f)) erro(ondeQ, `fonte inexistente "${f}"`);
       if (![1, 2, 3].includes(q.dificuldade)) erro(ondeQ, 'dificuldade deve ser 1, 2 ou 3');
 
-      // Equilíbrio das alternativas: a correta não deve ser desproporcionalmente mais longa (> 30% que a 2ª mais longa)
-      const altCorreta = (q.alternativas ?? []).find((a) => a.correta);
-      const altIncorretas = (q.alternativas ?? []).filter((a) => !a.correta);
-      if (altCorreta?.texto && altIncorretas.length === 3) {
-        const tamCorreta = altCorreta.texto.trim().length;
-        const tamsIncorretas = altIncorretas.map((a) => a.texto?.trim()?.length ?? 0).sort((a, b) => b - a);
-        const tamSegunda = tamsIncorretas[0];
-        if (tamSegunda > 0 && tamCorreta > 1.3 * tamSegunda) {
-          const pct = Math.round(((tamCorreta / tamSegunda) - 1) * 100);
-          const msg = `alternativa correta desbalanceada: tem ${tamCorreta} caracteres (+${pct}% que a 2ª mais longa com ${tamSegunda} car.)`;
-          if (estrito) erro(ondeQ, msg);
-          else aviso(ondeQ, msg);
-        }
+      // Viés de comprimento: a correta não pode se entregar por ser bem mais longa que as erradas.
+      const razao = razaoCorreta(q);
+      if (razao !== null && razao > LIMITE_CORRETA) {
+        const msg = `alternativa correta ${Math.ceil((razao - 1) * 100)}% mais longa que a maior errada (limite: ${Math.round((LIMITE_CORRETA - 1) * 100)}%)`;
+        if (estrito) erro(ondeQ, msg);
+        else aviso(ondeQ, msg);
       }
     }
   }

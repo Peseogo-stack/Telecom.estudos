@@ -12,7 +12,7 @@ export function AnatomiaFtth({ descricao }: PropsDiagrama) {
       {/* Bloco 1: Central / OLT / DIO */}
       <rect x="10" y="10" width="118" height="92" rx="8" className="d-caixa-destaque" />
       <text x="69" y="27" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9.5 }}>
-        1. Subestação
+        1. Central
       </text>
       <text x="69" y="44" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 11 }}>
         OLT + DIO
@@ -87,7 +87,7 @@ export function AnatomiaFtth({ descricao }: PropsDiagrama) {
         • CTO só conectoriza os drops
       </text>
       <text x="26" y="202" className="d-texto d-suave" style={{ fontSize: 8.5 }}>
-        • OTDR acha falhas com facilidade
+        • Perda: a de um splitter só
       </text>
       <text x="26" y="218" className="d-texto d-forte" style={{ fontSize: 8.5 }}>
         • Mais fibras nos cabos aéreos
@@ -108,7 +108,7 @@ export function AnatomiaFtth({ descricao }: PropsDiagrama) {
         • Economiza cabos na rota troncal
       </text>
       <text x="212" y="218" className="d-texto d-forte" style={{ fontSize: 8.5 }}>
-        • OTDR cego após 2º nível
+        • OTDR: do cliente para a central
       </text>
     </Diagrama>
   );

@@ -492,7 +492,7 @@
     "tipo": "fabricante",
     "url": "https://backend.intelbras.com/sites/default/files/2022-07/datasheet%20-%20Splitter%20com%20conector%20_%20EN.pdf",
     "acessadoEm": "2026-11-06",
-    "observacao": "Perda máxima sem conector: 1:2 4,0; 1:4 7,3; 1:8 10,5; 1:16 13,7; 1:32 16,9 dB; conector SC/APC ≤ 0,3 dB."
+    "observacao": "Perda de inserção máxima sem conector (\"connector losses not taken into account\"): 1:2 4,0; 1:4 7,3; 1:8 10,5; 1:16 13,7; 1:32 16,9 dB. Uniformidade: 0,6; 0,7; 0,8; 1,2; 1,5 dB. Diretividade ≥ 55 dB; perda de retorno ≥ 50 dB; 1260 a 1650 nm. Conector SC: perda ≤ 0,3 dB; perda de retorno ≥ 50 dB (UPC) e ≥ 60 dB (APC)."
   },
   {
     "id": "senko-plc",
@@ -501,7 +501,7 @@
     "tipo": "fabricante",
     "url": "https://www.senko.com/product/1xn-plc-splitter/",
     "acessadoEm": "2026-11-06",
-    "observacao": "Perda máxima: 1:4 7,4; 1:8 10,7; 1:16 13,7; 1:32 16,9; 1:64 21,0 dB."
+    "observacao": "Perda de inserção máxima, sem conectores (1310 e 1550 nm): 1:2 4; 1:4 7,4; 1:8 10,7; 1:16 13,7; 1:32 16,9; 1:64 21 dB. Uniformidade: 0,4; 0,6; 0,8; 1,2; 1,5; 2,5 dB. Perda de retorno mínima 55 dB; diretividade mínima 55 dB."
   },
   {
     "id": "fs-plc",
@@ -510,7 +510,7 @@
     "tipo": "fabricante",
     "url": "https://img-en.fs.com/file/datasheet/mini-plug-in-type-plc-splitters-datasheet.pdf",
     "acessadoEm": "2026-11-06",
-    "observacao": "1:64 até 21,4 dB; somar 0,2 dB por conector do splitter."
+    "observacao": "Perda de inserção máxima, sem conectores: 1:2 4,4; 1:4 7,6; 1:8 10,9; 1:16 13,9; 1:32 17,3; 1:64 21,4 dB; somar 0,2 dB por conector. Uniformidade: 0,4; 0,6; 0,8; 1,2; 1,5; 2,0 dB. Perda de retorno ≥ 50 dB; diretividade 55 dB; faixa de 1260 a 1650 nm."
   },
   {
     "id": "intelbras-xfsd",
@@ -691,5 +691,23 @@
     "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-33-atualizada-2022-_retificada.pdf",
     "acessadoEm": "2026-11-09",
     "observacao": "33.2.2: espaço confinado é a área que, ao mesmo tempo, não foi projetada para ocupação humana contínua, tem meios limitados de entrada e saída e onde existe ou pode existir atmosfera perigosa (deficiência ou enriquecimento de oxigênio, contaminantes ou atmosfera explosiva)."
+  },
+  {
+    "id": "foa-ftth-teste",
+    "titulo": "The FOA Reference For Fiber Optics — Testing Fiber To The Home",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/ref/appln/FTTH-test.html",
+    "acessadoEm": "2026-11-09",
+    "observacao": "Da central, depois do splitter, o traço do OTDR junta os ramos de todos os assinantes e fica muito complexo de analisar (pior ainda com conectores APC, sem fim reflexivo); por isso o OTDR em PON é usado em geral do lado do assinante em direção à central, onde o traço mostra só aquele caminho e a perda alta do splitter. Da central, o OTDR ainda serve para medir o comprimento de cada ramo. Exemplo: um splitter 1:4 tem 6 dB de divisão mais talvez 1 dB de perda em excesso, total de 7 dB."
+  },
+  {
+    "id": "foa-splitter",
+    "titulo": "Fiber Optic Splitters for PONs",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/ref/install/Optical_splitter.html",
+    "acessadoEm": "2026-11-09",
+    "observacao": "O splitter óptico é um dispositivo passivo e bidirecional: divide a luz que entra numa fibra entre várias saídas e junta, no outro sentido, a luz das saídas na fibra de entrada."
   }
 ]

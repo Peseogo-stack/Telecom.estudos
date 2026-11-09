@@ -54,7 +54,7 @@
       {
         "texto": "Aproximadamente 0,50 dB para 1:2; 1,50 dB para 1:4; e 3,50 dB para 1:8, conforme testes de bancada em laboratório.",
         "correta": false,
-        "explicacao": "Pela lei de conservação de energia, a potência de entrada é repartida; 50% de potência equivale a −3 dBm em relação à entrada."
+        "explicacao": "Metade da potência é cerca de −3 dB em relação à entrada; a perda ideal do 1:2 é 3,01 dB."
       }
     ],
     "fontes": [
@@ -69,22 +69,22 @@
     "enunciado": "Qual é a atenuação teórica pura por divisão de potência óptica para um divisor balanceado tipo splitter 1:64?",
     "alternativas": [
       {
-        "texto": "Exatamente cerca de 18,06 dB, calculada por 10 · log₁₀(64), visto que 64 ramificações equivalem a 2 elevado à sexta.",
+        "texto": "Cerca de 18,06 dB, calculada por 10 · log₁₀(64), visto que 64 ramificações equivalem a 2 elevado à sexta.",
         "correta": true,
         "explicacao": "Certo. Como 64 = 2⁶, temos 10 · log₁₀(64) = 6 · 10 · log₁₀(2) ≈ 6 · 3,0103 ≈ 18,06 dB de perda teórica por divisão."
       },
       {
-        "texto": "Exatamente cerca de 12,04 dB, correspondente a quatro estágios sucessivos de divisão de potência pela metade.",
+        "texto": "Cerca de 12,04 dB, correspondente a quatro estágios sucessivos de divisão de potência pela metade.",
         "correta": false,
         "explicacao": "12,04 dB é a atenuação teórica pura de um divisor 1:16 (2⁴ estágios de divisão binária)."
       },
       {
-        "texto": "Exatamente cerca de 15,05 dB, correspondente a cinco estágios sucessivos de divisão de potência pela metade.",
+        "texto": "Cerca de 15,05 dB, correspondente a cinco estágios sucessivos de divisão de potência pela metade.",
         "correta": false,
         "explicacao": "15,05 dB é a atenuação teórica de um divisor 1:32 (2⁵ estágios de divisão binária)."
       },
       {
-        "texto": "Exatamente cerca de 24,08 dB, correspondente a oito estágios sucessivos de divisão de potência pela metade.",
+        "texto": "Cerca de 24,08 dB, correspondente a oito estágios sucessivos de divisão de potência pela metade.",
         "correta": false,
         "explicacao": "24,08 dB seria a perda teórica de um divisor 1:256 (2⁸ estágios de divisão binária)."
       }
@@ -101,9 +101,9 @@
     "enunciado": "Por que a atenuação de inserção real de um splitter em catálogo é superior à perda teórica ideal calculada?",
     "alternativas": [
       {
-        "texto": "Devido à perda em excesso no chip de sílica (espalhamento/absorção) somada à perda de inserção dos conectores.",
+        "texto": "Por causa da perda em excesso do splitter real, além da divisão; com conectores, soma-se a perda deles.",
         "correta": true,
-        "explicacao": "Certo. Além da divisão teórica da luz, o chip planar apresenta perda em excesso interna (~0,5 a 1,0 dB) mais a perda dos conectores ópticos."
+        "explicacao": "Certo. O splitter real perde mais que o ideal: a FOA dá o exemplo de um 1:4 com 6 dB de divisão mais cerca de 1 dB de excesso. As fichas dão o máximo sem conectores; conector é somado à parte."
       },
       {
         "texto": "Devido à presença de resistores internos de atenuação montados no chip para dissipar parte da energia da luz.",
@@ -113,17 +113,17 @@
       {
         "texto": "Devido à necessidade de alimentar pequenos circuitos passivos de chaveamento fotoelétrico no bloco planar.",
         "correta": false,
-        "explicacao": "O chip PLC funciona exclusivamente por reflexão total interna em guias de onda ópticos, sem chaves fotoelétricas."
+        "explicacao": "O splitter PLC é passivo: só guias de onda de sílica, sem chaves nem circuitos."
       },
       {
         "texto": "Devido à exigência de aplicar uma margem tributária normativa de segurança sobre componentes importados.",
         "correta": false,
-        "explicacao": "A perda de inserção decorre unicamente de fenômenos físicos da óptica geométrica e das interfaces conectorizadas."
+        "explicacao": "A perda vem do próprio dispositivo (excesso) e dos conectores, não de margem tributária."
       }
     ],
     "fontes": [
+      "foa-ftth-teste",
       "intelbras-splitter-plc",
-      "senko-plc",
       "fs-plc"
     ],
     "dificuldade": 2
@@ -131,27 +131,27 @@
   {
     "id": "04-03-q5",
     "licao": "04-03",
-    "enunciado": "Segundo datasheets de fabricantes (Intelbras, SENKO, FS), quais perdas MÁXIMAS conectorizadas são típicas para 1:8 e 1:16?",
+    "enunciado": "Nas fichas Intelbras, SENKO e FS, que valem sem conectores, qual é a perda máxima de um 1:8 e de um 1:16?",
     "alternativas": [
       {
-        "texto": "Máximo de 10,5 a 10,7 dB para modelo 1:8; e máximo de 13,7 a 13,9 dB para modelo 1:16 conectorizados com SC/APC.",
+        "texto": "1:8: de 10,5 a 10,9 dB; 1:16: de 13,7 a 13,9 dB.",
         "correta": true,
-        "explicacao": "Certo. Datasheets da Intelbras e SENKO especificam perda máxima conectorizada de 10,5–10,7 dB (1:8) e 13,7–13,9 dB (1:16)."
+        "explicacao": "Certo. Intelbras: 10,5 e 13,7 dB; SENKO: 10,7 e 13,7 dB; FS: 10,9 e 13,9 dB, todos sem conectores."
       },
       {
-        "texto": "Máximo de 9,03 dB para modelo 1:8; e máximo de 12,04 dB para modelo 1:16, igualando-se às perdas puras teóricas.",
+        "texto": "1:8: 9,03 dB; 1:16: 12,04 dB, iguais à perda ideal.",
         "correta": false,
-        "explicacao": "Esses números representam a física teórica pura sem considerar perda em excesso do chip nem os conectores SC/APC."
+        "explicacao": "Essa é a perda ideal, 10·log₁₀(N), sem a perda em excesso do splitter real."
       },
       {
-        "texto": "Máximo de 15,5 a 16,0 dB para modelo 1:8; e máximo de 21,5 a 22,0 dB para modelo 1:16 conectorizados com SC/APC.",
+        "texto": "1:8: de 15,5 a 16,0 dB; 1:16: de 21,5 a 22,0 dB.",
         "correta": false,
-        "explicacao": "Valores muito acima da especificação de fabricação; indicariam conectores sujos, defeituosos ou chips danificados."
+        "explicacao": "Muito acima das fichas; esses números lembram mais um 1:32 ou um 1:64."
       },
       {
-        "texto": "Máximo de 3,5 a 4,0 dB para modelo 1:8; e máximo de 6,5 a 7,0 dB para modelo 1:16 em virtude do ganho no chip PLC.",
+        "texto": "1:8: de 3,5 a 4,0 dB; 1:16: de 6,5 a 7,0 dB.",
         "correta": false,
-        "explicacao": "Dispositivos ópticos passivos não geram ganho de sinal; dividir em 8 portas atenua necessariamente mais de 9 dB."
+        "explicacao": "Dividir em 8 já perde 9 dB no ideal; o splitter é passivo e não dá ganho."
       }
     ],
     "fontes": [
@@ -169,7 +169,7 @@
       {
         "texto": "A diferença máxima de perda de inserção observada entre a porta mais eficiente e a porta mais atenuada do splitter.",
         "correta": true,
-        "explicacao": "Certo. A uniformidade mede a dispersão de atenuação entre as saídas, ficando tipicamente abaixo de 0,8 a 1,5 dB em splitters de qualidade."
+        "explicacao": "Certo. Na ficha Intelbras, a uniformidade é de até 0,8 dB no 1:8 e 1,2 dB no 1:16."
       },
       {
         "texto": "A variação angular admissível no polimento da ponteira de zircônia do conector SC/APC sem causar desalinhamento.",
@@ -199,9 +199,9 @@
     "enunciado": "Ao dimensionar o orçamento de potência óptica de um projeto FTTH, qual valor de atenuação do splitter deve ser adotado?",
     "alternativas": [
       {
-        "texto": "O valor máximo homologado na folha de dados do fabricante com conectores (ex.: 10,5 ou 10,7 dB para o modelo 1:8).",
+        "texto": "O máximo da ficha do fabricante, somando os conectores se a ficha for sem eles.",
         "correta": true,
-        "explicacao": "Certo. O cálculo de engenharia deve adotar o valor máximo de catálogo para assegurar que todas as portas atendam aos requisitos no pior caso."
+        "explicacao": "Certo. Com o máximo de ficha (1:8: 10,5 a 10,9 dB nas fichas consultadas), o projeto passa no pior caso; a FS manda somar 0,2 dB por conector."
       },
       {
         "texto": "O valor teórico ideal obtido por 10 · log₁₀(N), desconsiderando perdas em conectores para baratear a estimativa.",
@@ -232,9 +232,9 @@
     "enunciado": "Como se comporta a perda de inserção de um splitter balanceado PLC nas janelas de 1310 nm, 1490 nm e 1550 nm?",
     "alternativas": [
       {
-        "texto": "Apresenta resposta espectral plana e praticamente estável em toda a faixa de 1260 a 1650 nm nas três janelas.",
+        "texto": "Varia pouco: as fichas valem de 1260 a 1650 nm, com variação de até 0,3 a 0,5 dB.",
         "correta": true,
-        "explicacao": "Certo. Os splitters planares PLC são dispositivos de banda ultralarga, mantendo atenuação uniforme ao longo de todo o espectro PON."
+        "explicacao": "Certo. As fichas Intelbras e FS operam de 1260 a 1650 nm; a FS especifica variação com o comprimento de onda de até 0,3 dB (1:2 a 1:8) e 0,5 dB (1:16 a 1:64)."
       },
       {
         "texto": "Atenua intensamente na janela de 1310 nm e torna-se quase transparente sem perdas na janela de transmissão de 1550 nm.",

@@ -36,10 +36,10 @@ export function OrcamentoPon({ descricao }: PropsDiagrama) {
       {/* Faixa central: Composição de perdas */}
       <rect x="10" y="80" width="380" height="48" rx="6" className="d-zona-controlada" />
       <text x="200" y="96" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9 }}>
-        Atenuação = (km · dB/km) + Splitters + Conexões + Margem (3 dB)
+        Perdas + margem ≤ 1,5 − (−27) − 0,5 = 28,0 dB
       </text>
       <text x="200" y="112" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8 }}>
-        Exemplo 10 km: 2,5 dB (fibra) + 21 dB (splitters) + 1,5 dB + 3 dB margem = 28 dB
+        Exemplo: 2,0 fibra + 3,0 conexões + 1,8 fusões + 18,1 splitters + 3 margem = 27,9 dB
       </text>
 
       {/* Faixa inferior: Régua de recepção na ONU */}
@@ -68,10 +68,10 @@ export function OrcamentoPon({ descricao }: PropsDiagrama) {
 
       {/* Faixa central ideal */}
       <text x="210" y="168" textAnchor="middle" className="d-texto d-forte" style={{ fontSize: 9 }}>
-        Ideal: −15 a −25 dBm
+        Garantido pela norma
       </text>
       <text x="210" y="196" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8 }}>
-        Operação estável em campo
+        entre −27 e −8 dBm
       </text>
 
       {/* Ponto 2: Sensibilidade */}
@@ -87,7 +87,7 @@ export function OrcamentoPon({ descricao }: PropsDiagrama) {
       </text>
 
       <text x="200" y="228" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8 }}>
-        Abaixo de −27 dBm: perda de sincronismo e alta taxa de erro (BER &gt; 10⁻⁴)
+        Abaixo de −27 dBm, a taxa de erros deixa de ser garantida
       </text>
     </Diagrama>
   );

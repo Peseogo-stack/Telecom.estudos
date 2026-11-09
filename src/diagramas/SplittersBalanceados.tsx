@@ -28,7 +28,7 @@ export function SplittersBalanceados({ descricao }: PropsDiagrama) {
         Teórico: 3,01 dB
       </text>
       <text x="71" y="104" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Ficha: ≤ 4,0 dB
+        Fichas: 4,0–4,4 dB
       </text>
       <text x="71" y="116" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
         (50% potência p/ porta)
@@ -43,7 +43,7 @@ export function SplittersBalanceados({ descricao }: PropsDiagrama) {
         Teórico: 6,02 dB
       </text>
       <text x="200" y="104" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Ficha: ≤ 7,4 dB
+        Fichas: 7,3–7,6 dB
       </text>
       <text x="200" y="116" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
         (25% potência p/ porta)
@@ -58,7 +58,7 @@ export function SplittersBalanceados({ descricao }: PropsDiagrama) {
         Teórico: 9,03 dB
       </text>
       <text x="329" y="104" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Ficha: ≤ 10,7 dB
+        Fichas: 10,5–10,9 dB
       </text>
       <text x="329" y="116" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
         (12,5% potência p/ porta)
@@ -73,7 +73,7 @@ export function SplittersBalanceados({ descricao }: PropsDiagrama) {
         Teórico: 12,04 dB
       </text>
       <text x="71" y="176" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Ficha: ≤ 13,7 dB
+        Fichas: 13,7–13,9 dB
       </text>
       <text x="71" y="188" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
         (6,25% potência p/ porta)
@@ -88,7 +88,7 @@ export function SplittersBalanceados({ descricao }: PropsDiagrama) {
         Teórico: 15,05 dB
       </text>
       <text x="200" y="176" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Ficha: ≤ 17,0 dB
+        Fichas: 16,9–17,3 dB
       </text>
       <text x="200" y="188" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
         (3,12% potência p/ porta)
@@ -103,7 +103,7 @@ export function SplittersBalanceados({ descricao }: PropsDiagrama) {
         Teórico: 18,06 dB
       </text>
       <text x="329" y="176" textAnchor="middle" className="d-texto d-alerta" style={{ fontSize: 9.5 }}>
-        Ficha: ≤ 21,4 dB
+        Fichas: 21,0–21,4 dB
       </text>
       <text x="329" y="188" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 7.5 }}>
         (1,56% potência p/ porta)
@@ -115,7 +115,7 @@ export function SplittersBalanceados({ descricao }: PropsDiagrama) {
         Regra de projeto: no orçamento use o MÁXIMO da ficha
       </text>
       <text x="200" y="230" textAnchor="middle" className="d-texto d-suave" style={{ fontSize: 8 }}>
-        Conectores SC/APC: somar 0,2 a 0,3 dB por conector na conta
+        Fichas sem conectores: some 0,2 a 0,3 dB por conector
       </text>
     </Diagrama>
   );

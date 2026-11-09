@@ -34,7 +34,7 @@
   {
     "id": "04-01-q2",
     "licao": "04-01",
-    "enunciado": "Qual é a função da OLT (Optical Line Terminal) instalada na central ou subestação em uma rede GPON?",
+    "enunciado": "Qual é a função da OLT numa rede GPON?",
     "alternativas": [
       {
         "texto": "Transmitir continuamente em downstream a 1490 nm e coordenar a recepção das rajadas de upstream a 1310 nm.",
@@ -49,7 +49,7 @@
       {
         "texto": "Converter o tráfego óptico diretamente em sinais analógicos de rádio FM para transmissão aberta aos clientes.",
         "correta": false,
-        "explicacao": "A OLT comuta pacotes de dados digitais Ethernet/IP encapsulados em quadros GEM (GPON Encapsulation Method)."
+        "explicacao": "A OLT trabalha com dados digitais; não converte nada em rádio FM."
       },
       {
         "texto": "Realizar o alinhamento mecânico motorizado e a clivagem automática de cabos drops rompidos na planta externa.",
@@ -128,32 +128,32 @@
   {
     "id": "04-01-q5",
     "licao": "04-01",
-    "enunciado": "Qual é a principal vantagem operacional da topologia de divisão óptica centralizada em relação à distribuída?",
+    "enunciado": "Por que, numa PON, o OTDR costuma ser ligado do lado do cliente, em direção à central?",
     "alternativas": [
       {
-        "texto": "Facilita a manutenção e medição com OTDR da central, pois concentra a atenuação em um único evento de splitter.",
+        "texto": "Porque, da central, depois do splitter, o traço junta os ramos de todos os clientes e fica muito difícil de ler.",
         "correta": true,
-        "explicacao": "Certo. Com splitter único (ex.: 1:32 ou 1:64), a identificação de falhas e distâncias com OTDR a partir da central é muito mais direta."
+        "explicacao": "Certo. A FOA explica que, do lado do cliente, o traço mostra só aquele caminho, com a perda alta do splitter; da central, ele serve para medir o comprimento de cada ramo."
       },
       {
-        "texto": "Reduz em mais de 90% a quantidade total de cabos e fibras ópticas lançados nos postes ao longo da cidade.",
+        "texto": "Porque a luz do OTDR só consegue andar no sentido da subida.",
         "correta": false,
-        "explicacao": "A topologia centralizada consome mais fibras nos cabos de distribuição, pois cada porta da CTO exige uma fibra exclusiva até o armário."
+        "explicacao": "O splitter é passivo e bidirecional: a luz passa nos dois sentidos."
       },
       {
-        "texto": "Dispensa completamente o uso de fusões e conectores ópticos em todas as caixas de atendimento da planta externa.",
+        "texto": "Porque uma norma da Anatel proíbe ligar o OTDR na central.",
         "correta": false,
-        "explicacao": "Toda arquitetura óptica necessita de emendas por fusão e conectores nos distribuidores e caixas de atendimento."
+        "explicacao": "Não existe essa regra; o motivo é a leitura do traço."
       },
       {
-        "texto": "Elimina a atenuação por curvatura e permite que a luz se propague com perda de zero decibéis no enlace óptico.",
+        "texto": "Porque, do lado do cliente, a fibra do drop é multimodo.",
         "correta": false,
-        "explicacao": "A física de atenuação do vidro e perdas em divisores ópticos aplica-se igualmente a qualquer topologia de rede."
+        "explicacao": "A rede FTTH é monomodo de ponta a ponta."
       }
     ],
     "fontes": [
-      "intelbras-infografico-ftth",
-      "itu-g9842-2019"
+      "foa-ftth-teste",
+      "foa-splitter"
     ],
     "dificuldade": 2
   },
@@ -175,7 +175,7 @@
       {
         "texto": "Anula a atenuação acumulada na rota óptica, garantindo que o sinal chegue à ONU com a mesma potência da OLT.",
         "correta": false,
-        "explicacao": "Splitters dividem potência luminosa; splitters em cascata somam atenuação (cerca de 10,5 dB cada 1:8, ultrapassando 21 dB no total)."
+        "explicacao": "Splitters em cascata somam perda: até 10,5 a 10,9 dB por 1:8 nas fichas, cerca de 21 dB nos dois."
       },
       {
         "texto": "Permite a conexão de novos assinantes na rede sem necessidade de configuração de autenticação no sistema PON.",
@@ -192,12 +192,12 @@
   {
     "id": "04-01-q7",
     "licao": "04-01",
-    "enunciado": "Qual conector e polimento óptico é padronizado nas saídas de CTOs e acessos de clientes em FTTH, e por quê?",
+    "enunciado": "Na CTO da ficha consultada, os splitters vêm com conector SC/APC (verde). Por que APC no acesso FTTH?",
     "alternativas": [
       {
-        "texto": "Conector SC/APC (verde), pois o polimento angular de 8° desvia reflexões para a casca e garante alta ORL (> 60 dB).",
+        "texto": "Porque o ângulo de 8° joga a reflexão para fora do núcleo: reflete −60 dB ou menos.",
         "correta": true,
-        "explicacao": "Certo. O chanfro angular de 8° do polimento APC garante perda de retorno superior a 60 dB, evitando reflexões instabilizadoras no laser."
+        "explicacao": "Certo. Pela FOA, o APC reflete −60 dB ou menos, contra −40 a −50 dB do UPC; a ficha Intelbras do conector APC pede perda de retorno de pelo menos 60 dB."
       },
       {
         "texto": "Conector SC/UPC (azul), pois o acabamento reto reflete a totalidade da luz incidente diretamente para a OLT.",
@@ -212,43 +212,44 @@
       {
         "texto": "Conectores azuis e verdes de forma indistinta, pois adaptadores ópticos aceitam qualquer polimento sem perda.",
         "correta": false,
-        "explicacao": "Acoplar conector UPC azul em APC verde causa danos físicos irreversíveis no polimento do vidro e severa atenuação."
+        "explicacao": "Ligar UPC (azul) em APC (verde) anula o efeito antirreflexo e deixa a reflexão forte (Fluke). Verde só com verde."
       }
     ],
     "fontes": [
-      "intelbras-infografico-ftth"
+      "intelbras-cto",
+      "foa-reflectancia",
+      "fluke-apc"
     ],
     "dificuldade": 1
   },
   {
     "id": "04-01-q8",
     "licao": "04-01",
-    "enunciado": "Por que um OTDR convencional disparado da OLT tem dificuldade para localizar rompimentos em drops após dois splitters 1:8?",
+    "enunciado": "Disparando o OTDR da central numa PON com dois níveis de splitter, por que fica difícil achar o rompimento de um drop?",
     "alternativas": [
       {
-        "texto": "A perda combinada dos splitters em cascata (> 21 dB) atenua o pulso e o retroespalhamento abaixo do ruído do OTDR.",
+        "texto": "Porque, depois do splitter, o traço soma os ramos de todos os clientes e não separa um drop do outro.",
         "correta": true,
-        "explicacao": "Certo. O pulso sofre perda na ida e o sinal de retroespalhamento sofre nova perda na volta; após dois splitters, o sinal funde-se ao ruído."
+        "explicacao": "Certo. A FOA diz que, da central, o traço depois do splitter junta todos os ramos e fica muito complexo; por isso o teste se faz do lado do cliente."
       },
       {
-        "texto": "O sinal de teste de reflectometria óptica é absorvido pela capa plástica preta do cabo drop autossustentado.",
+        "texto": "Porque a capa preta do drop absorve o pulso do OTDR.",
         "correta": false,
-        "explicacao": "A luz do OTDR viaja confinada no núcleo de sílica de 9 µm; o pigmento da capa externa não tem interferência no teste."
+        "explicacao": "A luz anda no núcleo da fibra; a capa não interfere."
       },
       {
-        "texto": "Os cabos drops ópticos de acesso possuem blindagem dielétrica que bloqueia os pulsos de teste do aparelho.",
+        "texto": "Porque o drop tem uma blindagem que bloqueia o pulso.",
         "correta": false,
-        "explicacao": "Materiais dielétricos isolam eletricamente a rota, mas não bloqueiam a propagação da luz guiada no núcleo da fibra."
+        "explicacao": "O drop óptico não tem blindagem que bloqueie a luz guiada no núcleo."
       },
       {
-        "texto": "A OLT desliga automaticamente a alimentação óptica de toda a subestação ao detectar o pulso de teste do OTDR.",
+        "texto": "Porque a OLT desliga a rede quando percebe o pulso do OTDR.",
         "correta": false,
-        "explicacao": "O teste de OTDR é realizado com a fibra desconectada da porta PON ativa, sem qualquer vínculo com a subestação."
+        "explicacao": "O teste não depende disso; o problema é a leitura do traço depois do splitter."
       }
     ],
     "fontes": [
-      "itu-g9842-2019",
-      "intelbras-infografico-ftth"
+      "foa-ftth-teste"
     ],
     "dificuldade": 2
   }

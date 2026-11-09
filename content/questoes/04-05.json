@@ -17,7 +17,7 @@
       {
         "texto": "Transmissão entre +10,0 e +20,0 dBm; devendo o projetista adotar o valor máximo (+20,0 dBm) para garantir alcance.",
         "correta": false,
-        "explicacao": "Potências acima de +10 dBm pertencem a lasers de alta periculosidade ocular (Classe 3B) e queimariam os receptores das ONUs."
+        "explicacao": "Fora da classe B+: a G.984.2 fixa a OLT de +1,5 a +5 dBm. E o pior caso do projeto é a potência mínima."
       },
       {
         "texto": "Transmissão fixa padronizada em rigorosamente 0,0 dBm (1,0 mW); sem margem para tolerâncias de fabricação do laser.",
@@ -37,9 +37,9 @@
     "enunciado": "Qual é a sensibilidade de recepção da ONU em transceptores GPON Classe B+ segundo a ITU-T G.984.2?",
     "alternativas": [
       {
-        "texto": "Sensibilidade de −27,0 dBm; potências inferiores causam alta taxa de erro, perda de sincronismo e queda do enlace.",
+        "texto": "−27 dBm; abaixo disso, a taxa de erros especificada não é mais garantida.",
         "correta": true,
-        "explicacao": "Certo. Na G.984.2, a sensibilidade da ONU Classe B+ é de −27,0 dBm para uma taxa de erro de bit (BER) máxima de 10⁻⁴."
+        "explicacao": "Certo. A G.984.2 (Tabela A.1) fixa −27 dBm na classe B+; a ficha FS da ONU mede esse valor com taxa de erros de 10⁻¹⁰, antes da correção de erros."
       },
       {
         "texto": "Sensibilidade de −15,0 dBm; potências inferiores ativam o modo de economia de energia e desconectam portas de rede.",
@@ -76,7 +76,7 @@
       {
         "texto": "É o nível de sinal ideal de operação; com −5,0 dBm deve-se conectar a ONU diretamente para ganho de velocidade.",
         "correta": false,
-        "explicacao": "−5 dBm ultrapassa a sobrecarga máxima (−8 dBm) e causa distorção por saturação do fotodiodo ou queima do receptor."
+        "explicacao": "−5 dBm passa da sobrecarga (−8 dBm) e satura o receptor; ponha atenuador."
       },
       {
         "texto": "É o limiar de quebra mecânica do vidro; com −5,0 dBm o cabo drop deve ser substituído por lance de maior diâmetro.",
@@ -129,34 +129,33 @@
   {
     "id": "04-05-q5",
     "licao": "04-05",
-    "enunciado": "Qual é a faixa de potência recebida na ONU recomendada pelas boas práticas operacionais de provedores e distribuidoras?",
+    "enunciado": "Entre que valores de potência recebida a G.984.2 garante o receptor de uma ONU classe B+?",
     "alternativas": [
       {
-        "texto": "Entre −15,0 dBm e −25,0 dBm, mantendo folga contra sobrecarga (−8 dBm) e margem antes da sensibilidade (−27 dBm).",
+        "texto": "Entre −27 dBm (sensibilidade) e −8 dBm (sobrecarga).",
         "correta": true,
-        "explicacao": "Certo. Operar entre −15 e −25 dBm oferece margem contra envelhecimento da rede, poeira e variações térmicas sem arriscar desconexões."
+        "explicacao": "Certo. Tabela A.1 da G.984.2. A faixa de trabalho que a empresa aceita na ativação costuma ser mais estreita: confirme qual é."
       },
       {
-        "texto": "Entre 0,0 dBm e +5,0 dBm, fornecendo a maior densidade de potência luminosa possível para o receptor do cliente.",
+        "texto": "Entre −15 e −25 dBm.",
         "correta": false,
-        "explicacao": "Potências positivas danificam os circuitos fotodetectores de recepção da ONU projetados para operar em potências de submiliwatt."
+        "explicacao": "Essa é uma faixa de bolso usada por muitas equipes, sem norma; a G.984.2 garante de −27 a −8 dBm."
       },
       {
-        "texto": "Entre −28,0 dBm e −35,0 dBm, operando na faixa de alta atenuação para minimizar o consumo de energia da bateria.",
+        "texto": "Entre 0 e +5 dBm.",
         "correta": false,
-        "explicacao": "Sinais abaixo de −27 dBm não garantem a taxa de erro mínima (BER) e provocam quedas sistemáticas de sincronismo da ONU."
+        "explicacao": "Isso é perto da potência de saída da OLT; na ONU, passaria da sobrecarga de −8 dBm."
       },
       {
-        "texto": "Fixa em exatamente −8,0 dBm em todas as instalações, ajustando-se a potência na OLT para cada cliente da rota.",
+        "texto": "Entre −35 e −28 dBm.",
         "correta": false,
-        "explicacao": "−8 dBm é o limite de sobrecarga; operar encostado nesse patamar arrisca saturação em qualquer oscilação de temperatura."
+        "explicacao": "Abaixo de −27 dBm, a sensibilidade especificada não é atingida."
       }
     ],
     "fontes": [
-      "itu-g9842-2019",
-      "omada-link-budget"
+      "itu-g9842-2019"
     ],
-    "dificuldade": 1
+    "dificuldade": 2
   },
   {
     "id": "04-05-q6",

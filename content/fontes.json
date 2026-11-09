@@ -6,7 +6,7 @@
     "tipo": "legislacao",
     "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-10-atualizada-2019-1.pdf",
     "acessadoEm": "2026-11-07",
-    "observacao": "Vale até a nova NR-10 entrar em vigor (junho de 2027)."
+    "observacao": "Vale até a nova NR-10 entrar em vigor (junho de 2027). Itens usados: 10.2.9.3 (vedado o uso de adornos pessoais nos trabalhos com instalações elétricas ou em suas proximidades); 10.6.2 (trabalho que exige ingresso na zona controlada só com procedimentos específicos); 10.6.3 (serviços em instalações energizadas ou em suas proximidades suspensos de imediato na iminência de ocorrência que ponha os trabalhadores em perigo); 10.8.4 (autorizados: qualificados, capacitados e habilitados com anuência formal da empresa); 10.8.8.1 (a empresa concede a autorização); Anexo II (baixa tensão, até 1 kV: Rr = 0,20 m e Rc = 0,70 m; a zona controlada fica entre Rr e Rc e é restrita a trabalhadores autorizados)."
   },
   {
     "id": "nr10-portaria-737",
@@ -15,7 +15,7 @@
     "tipo": "legislacao",
     "url": "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/seguranca-e-saude-no-trabalho/sst-portarias/2026-1/portaria-mte-no-737-nova-nr-10.pdf",
     "acessadoEm": "2026-11-07",
-    "observacao": "Entra em vigor 1 ano após a publicação (art. 5º)."
+    "observacao": "Entra em vigor 1 ano após a publicação (art. 5º). Itens usados: 10.7.2 (trabalho em proximidade não rotineiro com permissão de trabalho precedida de análise de risco); 10.7.3 (a análise de risco considera o entorno, o isolamento e a sinalização, as condições meteorológicas adversas e o planejamento de resgate e primeiros socorros); 10.7.4 (avaliação prévia no local de trabalho); 10.7.8 (vedado o uso de adornos pessoais); 10.10.2 b (quem faz trabalho em proximidade é trabalhador autorizado); 10.10.2.1 (autorização exige exame médico apto e treinamento de segurança); treinamento específico de compartilhamento de infraestrutura do SEP, de 40 horas."
   },
   {
     "id": "cemig-nd66",
@@ -348,7 +348,7 @@
     "tipo": "associacao",
     "url": "https://www.thefoa.org/tech/safety.htm",
     "acessadoEm": "2026-11-07",
-    "observacao": "A luz é infravermelha: não dá para saber se há luz olhando; confirmar com power meter que a fibra está escura antes de examinar. Na faixa de 1300 a 1550 nm a luz é absorvida pela água do globo ocular (dificilmente lesa a retina, mas pode ferir a córnea ou o cristalino); em 650 nm (visível, como laser pointer / VFL) o olho é transparente e chega à retina; olhar a ponta com rastreador visível de lado, a pelo menos 6 polegadas (~15 cm). A luz sai da fibra num cone que se abre, mas um microscópio óptico concentra toda a luz no olho e precisa de filtro infravermelho. Maior risco real aos olhos e à pele: fragmentos (scraps) de fibra nua; usar óculos de segurança com proteção lateral (side shields), recolher em recipiente próprio com tampa (preferido pela FOA à fita dupla-face), nunca jogar no chão, não comer/beber/fumar na área (ingestão pode causar hemorragia interna), lavar as mãos antes de tocar olhos ou lentes de contato, e nunca fazer fusão por arco elétrico em caixas subterrâneas (manholes) onde gases inflamáveis possam se acumular."
+    "observacao": "A luz é infravermelha: não dá para saber se há luz olhando; confirmar com power meter que a fibra está escura antes de examinar. Na faixa de 1300 a 1550 nm a luz é absorvida pela água do globo ocular (dificilmente lesa a retina, mas pode ferir a córnea ou o cristalino); em 650 nm (visível, como laser pointer / VFL) o olho é transparente e chega à retina; olhar a ponta com rastreador visível de lado, a pelo menos 6 polegadas (~15 cm). A luz sai da fibra num cone que se abre, mas um microscópio óptico concentra toda a luz no olho e precisa de filtro infravermelho. Maior risco real aos olhos e à pele: fragmentos (scraps) de fibra nua; usar óculos de segurança com proteção lateral (side shields), recolher em recipiente próprio com tampa (preferido pela FOA à fita dupla-face), nunca jogar no chão, não comer/beber/fumar na área (ingestão pode causar hemorragia interna), lavar as mãos antes de tocar olhos ou lentes de contato, e nunca fazer fusão por arco elétrico em caixas subterrâneas (manholes) onde gases inflamáveis possam se acumular. Segurança elétrica: ferragens de cabo óptico conduzem eletricidade; a FOA relata dois instaladores mortos quando suportes metálicos encostaram na rede de alta tensão durante a instalação de cabo dielétrico autossustentado. Regras da FOA: avental descartável; óculos de segurança com proteção lateral e luvas; trabalhar em área ventilada; guardar todo pedaço cortado em lugar seguro; limpar bem a área ao terminar; não fumar."
   },
   {
     "id": "foa-otdr",
@@ -667,13 +667,38 @@
   },
   {
     "id": "nr35-vigente",
-    "titulo": "NR-35: Segurança e saúde no trabalho em altura (Portaria MTP nº 4.218/2022 e atualizações)",
-    "organizacao": "MTE",
-    "tipo": "norma",
-    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-35-atualizada-2023.pdf",
-    "acessadoEm": "2026-11-08",
-    "observacao": "Norma regulamentadora para trabalho com diferença de nível superior a 2,0 m com risco de queda: exigência de Análise de Risco (AR/APR), Permissão de Trabalho (PT para atividades não rotineiras), capacitação bienal, Sistema de Proteção Individual Contra Quedas (SPIQ), inspeção inicial e periódica de EPIs (cinto paraquedista, talabartes de posicionamento e retenção de queda com absorvedor), ponto de ancoragem seguro, isolamento de área e plano de emergência e resgate."
+    "titulo": "NR-35 — Trabalho em altura (texto consolidado, atualizado até a Portaria MTE nº 1.259/2026)",
+    "organizacao": "Ministério do Trabalho e Emprego",
+    "tipo": "legislacao",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-35-atualizada-2025-1.pdf",
+    "acessadoEm": "2026-11-09",
+    "observacao": "Itens usados: 35.4.1 (trabalho em altura só por trabalhador formalmente autorizado); 35.4.4.1 (aptidão para altura no atestado de saúde ocupacional); 35.5.5 e 35.5.5.1 (todo trabalho em altura precedido de análise de risco, que considera o local e o entorno, o isolamento e a sinalização, a ancoragem, as condições meteorológicas adversas, a queda de materiais, os riscos adicionais, as condições impeditivas e o planejamento do resgate para reduzir a suspensão inerte); 35.5.6 (na atividade rotineira, a análise de risco pode estar no procedimento operacional); 35.5.7 (atividade não rotineira só com permissão de trabalho); 35.3.1 e e h (avaliação prévia no local e suspensão do trabalho diante de risco não previsto); 35.6.6.2 (inspeção rotineira do SPIQ antes do início dos trabalhos); 35.6.9 e 35.6.9.1.1 (cinturão tipo paraquedista; talabarte de retenção integrado com absorvedor de energia); 35.6.11 a (permanecer conectado durante todo o período de exposição ao risco de queda); 35.6.11.1.1 (talabarte não pode ser ligado a outro talabarte, elemento de ligação ou extensor, nem usado com nós ou laços, salvo especificação do fabricante); 35.7.1 (procedimentos de emergência e salvamento, com tempo estimado de resgate). Anexo III (escadas portáteis): 5.2.2.1.2 (três pontos de apoio na subida e descida), 5.2.2.5 (piso estável e sapatas antiderrapantes), 5.2.2.7.2 (inspeção antes do uso), 5.2.2.8.1 (escada extensível fixada em mais de um ponto, com guias e travas travando as partes deslizantes). O endereço anterior (nr-35-atualizada-2023.pdf) deixou de existir."
+  },
+  {
+    "id": "nr21",
+    "titulo": "NR-21 — Trabalhos a céu aberto",
+    "organizacao": "Ministério do Trabalho e Emprego",
+    "tipo": "legislacao",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-21.pdf",
+    "acessadoEm": "2026-11-09",
+    "observacao": "21.2: serão exigidas medidas especiais que protejam os trabalhadores contra a insolação excessiva, o calor, o frio, a umidade e os ventos inconvenientes."
+  },
+  {
+    "id": "foa-limpeza",
+    "titulo": "The FOA Reference For Fiber Optics — Cleaning",
+    "organizacao": "The Fiber Optic Association (FOA)",
+    "tipo": "associacao",
+    "url": "https://www.thefoa.org/tech/ref/termination/cleaning.html",
+    "acessadoEm": "2026-11-09",
+    "observacao": "Manter sempre tampa (dust cap) em conectores, adaptadores e painéis que vão receber conexão: evita poeira e que a ponta seja tocada ou danificada numa queda. Limpar sempre os conectores antes de conectar. Para limpeza úmida, só álcool isopropílico de grau reagente 99%, com lenço sem fiapo; nunca haste de algodão ou pano, que deixam fios."
+  },
+  {
+    "id": "nr33",
+    "titulo": "NR-33 — Segurança e saúde nos trabalhos em espaços confinados (Portaria MTE nº 1.690/2022)",
+    "organizacao": "Ministério do Trabalho e Emprego",
+    "tipo": "legislacao",
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-33-atualizada-2022-_retificada.pdf",
+    "acessadoEm": "2026-11-09",
+    "observacao": "33.2.2: espaço confinado é a área que, ao mesmo tempo, não foi projetada para ocupação humana contínua, tem meios limitados de entrada e saída e onde existe ou pode existir atmosfera perigosa (deficiência ou enriquecimento de oxigênio, contaminantes ou atmosfera explosiva)."
   }
 ]
-
-

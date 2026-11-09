@@ -152,6 +152,9 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
       if (titulo !== '__antes__' && !(titulo in SECOES)) erro(onde, `seção desconhecida "## ${titulo}"`);
     }
     if (secoes['__antes__']) erro(onde, 'texto antes da primeira seção');
+    // O app não renderiza LaTeX: "$$\\frac{a}{b}$$" apareceria cru na tela.
+    const latex = corpo.match(/\$\$|\\(text|frac|cdot|log|mathbf|times)\b/);
+    if (latex) erro(onde, `fórmula em LaTeX ("${latex[0]}"): o app não renderiza; escreva em texto, como 10 × log₁₀(N)`);
 
     const usadas = new Set();
     for (const m of marcacoes(corpo)) {

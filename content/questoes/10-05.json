@@ -5,24 +5,24 @@
     "enunciado": "Um técnico de provedor pergunta se a nova NR-10 já vale para ele hoje (novembro de 2026). O que responder?",
     "alternativas": [
       {
-        "texto": "Ainda não: ela entra em vigor em junho de 2027; até lá vale o texto atual.",
+        "texto": "Sim: ela vale desde a publicação no Diário Oficial, em 01/06/2026, para todos.",
+        "correta": false,
+        "explicacao": "01/06/2026 é a data da publicação. O art. 5º dá 1 ano para entrar em vigor."
+      },
+      {
+        "texto": "Ainda não: entra em vigor em junho de 2027; até lá vale o texto atual.",
         "correta": true,
-        "explicacao": "Certo. A Portaria MTE 737/2026 foi publicada em 01/06/2026 e entra em vigor 1 ano depois (art. 5º)."
+        "explicacao": "Certo. A Portaria MTE 737/2026 foi publicada em 01/06/2026 e entra em vigor 1 ano depois (art. 5º). Até lá vale o texto atual da NR-10."
       },
       {
-        "texto": "Sim, desde 01/06/2026.",
+        "texto": "Sim: vale desde a retificação de 24/06/2026, que corrigiu a data.",
         "correta": false,
-        "explicacao": "Essa é a data da publicação. O art. 5º dá 1 ano para entrar em vigor."
+        "explicacao": "A retificação de 24/06/2026 só corrigiu o item 10.8.4. Não mudou a data de vigência."
       },
       {
-        "texto": "Sim, desde a retificação de 24/06/2026.",
+        "texto": "Só quando a ANEEL e a Anatel aprovarem o regulamento de postes.",
         "correta": false,
-        "explicacao": "A retificação só corrigiu o item 10.8.4; não mudou a data de vigência."
-      },
-      {
-        "texto": "Só quando a ANEEL aprovar o regulamento de postes.",
-        "correta": false,
-        "explicacao": "A NR-10 é do Ministério do Trabalho e não depende do regulamento da ANEEL e da Anatel."
+        "explicacao": "A NR-10 é do Ministério do Trabalho e não depende de regulamento da ANEEL nem da Anatel."
       }
     ],
     "fontes": [
@@ -36,24 +36,24 @@
     "enunciado": "A partir de junho de 2027, um técnico de provedor que trabalha em proximidade da rede, no poste compartilhado, precisa de que treinamento inicial?",
     "alternativas": [
       {
-        "texto": "\"Específico e pontual\", de 8 h.",
+        "texto": "Módulo de compartilhamento de infraestruturas do SEP, de 24 h.",
         "correta": false,
-        "explicacao": "Esse é para estrangeiros ou não residentes em serviços curtos, com acompanhamento."
+        "explicacao": "24 h é o módulo de compartilhamento na capacitação do trabalhador-capacitado (10.8.4), não o treinamento de segurança inicial."
       },
       {
-        "texto": "Reciclagem de 16 h.",
+        "texto": "Treinamento periódico bienal de compartilhamento, de 16 h.",
         "correta": false,
-        "explicacao": "16 h é a carga mínima do treinamento periódico bienal, não do inicial."
+        "explicacao": "16 h é a carga mínima do treinamento periódico bienal (10.9.10), não do inicial."
       },
       {
-        "texto": "Módulo de capacitação de 24 h.",
+        "texto": "Nenhum treinamento novo, basta ter autorização da empresa para o poste.",
         "correta": false,
-        "explicacao": "24 h é o módulo de compartilhamento na capacitação do trabalhador-capacitado (10.8.4), não o treinamento de segurança."
+        "explicacao": "A autorização vem da empresa depois do treinamento; não o substitui. Em proximidade com compartilhamento só trabalha o autorizado (10.14.1), com treinamento."
       },
       {
-        "texto": "\"Específico de compartilhamento de infraestrutura do SEP\", de 40 h.",
+        "texto": "Específico de compartilhamento de infraestrutura do SEP, de 40 h.",
         "correta": true,
-        "explicacao": "Certo. Está no Quadro I do item 10.9.2 e no item 10.9.9 da nova NR-10."
+        "explicacao": "Certo. Está no Quadro I do item 10.9.2 e no item 10.9.9 da nova NR-10. Quem faz esse não precisa do Básico nem do Complementar do SEP (10.9.4 e 10.9.5). A prática é presencial (10.9.13)."
       }
     ],
     "fontes": [
@@ -67,24 +67,24 @@
     "enunciado": "Para a nova NR-10, um provedor de internet com cabo no poste da distribuidora é um caso de quê?",
     "alternativas": [
       {
-        "texto": "Compartilhamento de infraestrutura: cessão paga da capacidade que sobra no poste para serviços de telecomunicações de outro grupo econômico.",
+        "texto": "Compartilhamento: cessão paga de espaço no poste a telecom de outro grupo econômico.",
         "correta": true,
-        "explicacao": "Certo. É a definição do glossário (Anexo I) da nova NR-10. A rede de telecom da própria distribuidora, ou de empresa do mesmo grupo, não entra nessa definição."
+        "explicacao": "Certo. É a definição do glossário (Anexo I) da nova NR-10: cessão paga da capacidade que sobra na infraestrutura para telecom de outros grupos econômicos. A rede de telecom da própria distribuidora, ou de empresa do mesmo grupo, não entra nessa definição."
       },
       {
-        "texto": "Equipamento segregado.",
+        "texto": "Rede de telecom da própria distribuidora ou de empresa do mesmo grupo, no poste dela.",
         "correta": false,
-        "explicacao": "No texto atual (glossário, item 9), segregado é o que ficou inacessível por invólucro ou barreira. Não descreve o cabo do provedor."
+        "explicacao": "A rede da distribuidora, ou de empresa do mesmo grupo, não se encaixa na definição. O provedor é de outro grupo econômico."
       },
       {
-        "texto": "Operação elementar.",
+        "texto": "Equipamento segregado, porque o cabo do provedor fica isolado da rede elétrica.",
         "correta": false,
-        "explicacao": "Operação elementar é ligar e desligar circuitos simples, como um interruptor."
+        "explicacao": "Segregado é o que ficou inacessível por invólucro ou barreira (glossário, item 9). Não descreve o cabo do provedor."
       },
       {
-        "texto": "Área classificada.",
+        "texto": "Uso gratuito do poste pelo provedor, sem contrato nem cessão de capacidade da distribuidora.",
         "correta": false,
-        "explicacao": "Área classificada é onde há risco de atmosfera explosiva."
+        "explicacao": "A definição fala em cessão paga da capacidade que sobra no poste."
       }
     ],
     "fontes": [
@@ -98,24 +98,24 @@
     "enunciado": "Vai ser feita, perto da rede, uma tarefa de telecom não rotineira (fora da rotina). Pela nova NR-10, o que é preciso?",
     "alternativas": [
       {
-        "texto": "Só a conversa da equipe antes de subir.",
+        "texto": "Só uma conversa rápida da equipe e do encarregado antes de subir no poste.",
         "correta": false,
-        "explicacao": "Conversar ajuda, mas o item 10.7.2 exige permissão de trabalho com análise de riscos."
+        "explicacao": "Conversar ajuda, mas o trabalho não rotineiro exige permissão de trabalho com análise de riscos (10.7.2)."
       },
       {
-        "texto": "Permissão de trabalho, com análise de riscos antes, aprovada por trabalhador autorizado.",
+        "texto": "Usar o procedimento escrito de outra tarefa parecida, já aprovado para o local.",
+        "correta": false,
+        "explicacao": "Procedimento escrito é para o trabalho rotineiro (10.7.1). O não rotineiro exige permissão de trabalho com análise de riscos."
+      },
+      {
+        "texto": "Permissão de trabalho e análise de riscos, aprovada por trabalhador autorizado.",
         "correta": true,
         "explicacao": "Certo. Item 10.7.2. A permissão vale pela duração da atividade, no máximo o turno, e pode ser revalidada (10.7.2.2)."
       },
       {
-        "texto": "Usar o procedimento de outra tarefa parecida.",
+        "texto": "Só a avaliação prévia no local, sem permissão de trabalho nem análise de riscos.",
         "correta": false,
-        "explicacao": "Procedimento escrito é para o trabalho rotineiro (10.7.1). O não rotineiro exige permissão de trabalho."
-      },
-      {
-        "texto": "É proibido em qualquer caso.",
-        "correta": false,
-        "explicacao": "Não é proibido: exige permissão de trabalho e análise de riscos."
+        "explicacao": "A avaliação prévia (10.7.4) também é obrigatória, mas não dispensa a permissão de trabalho com análise de riscos no trabalho não rotineiro."
       }
     ],
     "fontes": [
@@ -129,24 +129,24 @@
     "enunciado": "Um colega leu que \"a nova NR-10 aumentou as distâncias de segurança\". Isso procede?",
     "alternativas": [
       {
-        "texto": "Sim: o Rc da baixa tensão passou para 1,00 m.",
-        "correta": false,
-        "explicacao": "O Rc da baixa tensão continua 0,70 m."
-      },
-      {
-        "texto": "Sim: criaram uma zona só para telecom.",
-        "correta": false,
-        "explicacao": "Continuam as mesmas três zonas: de risco, controlada e livre."
-      },
-      {
         "texto": "Não: a tabela de zonas do Anexo II é a mesma do texto atual.",
         "correta": true,
         "explicacao": "Certo. Baixa tensão continua com Rr 0,20 m e Rc 0,70 m. O que muda são treinamentos, procedimentos e regras de compartilhamento. E surge outra distância, a segura contra o arco elétrico, definida por estudo de energia incidente (Anexo I)."
       },
       {
-        "texto": "Não: a nova NR-10 acabou com a zona controlada.",
+        "texto": "Sim: a zona controlada da baixa tensão ficou maior que 0,70 m.",
         "correta": false,
-        "explicacao": "A zona controlada continua e é só para trabalhador autorizado."
+        "explicacao": "O Rc da baixa tensão continua 0,70 m."
+      },
+      {
+        "texto": "Sim: criaram uma quarta zona só para telecom, com raio próprio no poste.",
+        "correta": false,
+        "explicacao": "Continuam as mesmas três zonas: de risco, controlada e livre."
+      },
+      {
+        "texto": "Não: a nova NR-10 acabou com a zona controlada para o trabalho de telecom.",
+        "correta": false,
+        "explicacao": "A zona controlada continua e é só para trabalhador autorizado. Trabalho em proximidade com compartilhamento só por trabalhadores autorizados (10.14.1)."
       }
     ],
     "fontes": [
@@ -161,24 +161,24 @@
     "enunciado": "Você vai planejar os treinamentos para 2028. Pela nova NR-10, como fica a reciclagem?",
     "alternativas": [
       {
-        "texto": "Anual, com 8 h.",
+        "texto": "Anual, com carga mínima de 16 h e prática presencial.",
         "correta": false,
-        "explicacao": "O item 10.9.10 fala em treinamento periódico bienal, com mínimo de 16 h."
+        "explicacao": "O item 10.9.10 fala em treinamento periódico bienal, não anual."
+      },
+      {
+        "texto": "Só depois de acidente grave ou fatal, com 24 h de curso.",
+        "correta": false,
+        "explicacao": "Depois de acidente grave ou fatal há treinamento eventual (10.9.11), além do periódico bienal. E 24 h é o módulo de capacitação, não a reciclagem."
+      },
+      {
+        "texto": "Bienal, com carga mínima de 16 h, e a prática pode ser a distância.",
+        "correta": false,
+        "explicacao": "O item 10.9.13 exige que o conteúdo prático seja presencial."
       },
       {
         "texto": "Bienal, com carga mínima de 16 h e parte prática presencial.",
         "correta": true,
         "explicacao": "Certo. Itens 10.9.10 e 10.9.13. O texto atual também é bienal, mas não fixa carga mínima."
-      },
-      {
-        "texto": "Só depois de acidente.",
-        "correta": false,
-        "explicacao": "Depois de acidente grave ou fatal há treinamento eventual (10.9.11), além do periódico."
-      },
-      {
-        "texto": "Toda a distância, inclusive a prática.",
-        "correta": false,
-        "explicacao": "O item 10.9.13 exige o conteúdo prático presencial."
       }
     ],
     "fontes": [
@@ -192,24 +192,24 @@
     "enunciado": "Hoje (antes de junho de 2027), que treinamentos a NR-10 exige de quem trabalha no sistema elétrico de potência ou perto dele?",
     "alternativas": [
       {
-        "texto": "Só o treinamento de compartilhamento de 40 h.",
+        "texto": "Só o treinamento de compartilhamento de 40 h, com reciclagem de 16 h a cada dois anos.",
         "correta": false,
-        "explicacao": "Esse treinamento só existe na nova NR-10, que ainda não vale."
-      },
-      {
-        "texto": "Nenhum, se o trabalho for só com fibra.",
-        "correta": false,
-        "explicacao": "O que conta é a proximidade da instalação elétrica, não o tipo de cabo."
+        "explicacao": "Esse treinamento só existe na nova NR-10, que ainda não vale. Hoje a reciclagem não tem carga mínima fixada."
       },
       {
         "texto": "Básico (40 h) e Complementar do SEP (40 h), com reciclagem a cada dois anos.",
         "correta": true,
-        "explicacao": "Certo. No texto vigente: Básico (10.8.8 e Anexo III), Complementar do SEP (10.7.2 e Anexo III) e reciclagem bienal (10.8.8.2)."
+        "explicacao": "Certo. No texto vigente: Básico (10.8.8 e Anexo III), Complementar do SEP (10.7.2 e Anexo III) e reciclagem bienal (10.8.8.2). Se o procedimento da empresa pedir algo além, vale o da empresa."
       },
       {
-        "texto": "Apenas a NR-35.",
+        "texto": "Nenhum, se o trabalho for só com fibra óptica e sem tocar na rede elétrica.",
         "correta": false,
-        "explicacao": "A NR-35 trata de trabalho em altura. O risco elétrico é da NR-10."
+        "explicacao": "O que conta é a proximidade da instalação elétrica, não o tipo de cabo nem encostar ou não na rede."
+      },
+      {
+        "texto": "Básico (40 h) e Complementar do SEP (40 h), com reciclagem anual de 16 h.",
+        "correta": false,
+        "explicacao": "A reciclagem é bienal e, no texto atual, sem carga mínima fixada. Anual e 16 h não vêm da norma vigente."
       }
     ],
     "fontes": [

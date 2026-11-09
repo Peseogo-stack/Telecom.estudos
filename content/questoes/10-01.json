@@ -36,24 +36,24 @@
     "enunciado": "Um colega diz: \"Vou só passar o drop no poste, não vou encostar na rede, então não é trabalho em proximidade.\" O que a NR-10 considera?",
     "alternativas": [
       {
-        "texto": "Só é proximidade se ele tocar o condutor.",
+        "texto": "É proximidade só se ele encostar a mão ou a ferramenta no condutor da rede.",
         "correta": false,
-        "explicacao": "Tocar o condutor é intervir na instalação, situação ainda mais restrita. Proximidade começa antes."
+        "explicacao": "Encostar no condutor é intervir na instalação, algo ainda mais restrito. A proximidade começa antes, quando dá para entrar na zona controlada."
       },
       {
-        "texto": "É proximidade se ele puder entrar na zona controlada, mesmo só com a mão ou com uma ferramenta.",
+        "texto": "É proximidade só se a mão ou a ferramenta entrar na zona de risco da rede.",
+        "correta": false,
+        "explicacao": "A zona de risco é só a faixa mais próxima do condutor (Rr). A proximidade já vale na zona controlada (Rc), que é maior."
+      },
+      {
+        "texto": "É proximidade já se a mão ou a ferramenta puder entrar na zona controlada.",
         "correta": true,
-        "explicacao": "Certo. É a definição do glossário da NR-10 (item 28): basta poder entrar na zona controlada com parte do corpo ou extensões condutoras."
+        "explicacao": "Certo. É a definição do glossário da NR-10 (item 28): trabalho em proximidade é o que pode entrar na zona controlada, mesmo com parte do corpo ou com extensões condutoras (ferramentas, materiais). Passar o drop sem encostar na rede não tira você da proximidade: a zona controlada é só para trabalhador autorizado."
       },
       {
-        "texto": "Só é proximidade a menos de 2 m da rede.",
+        "texto": "É proximidade só se ele ficar a menos de 2 m do condutor da rede elétrica.",
         "correta": false,
-        "explicacao": "A NR-10 não usa 2 m. O critério é a zona controlada, que depende da tensão."
-      },
-      {
-        "texto": "Só é proximidade perto da média tensão.",
-        "correta": false,
-        "explicacao": "A tabela do Anexo II começa na baixa tensão (menos de 1 kV): ela também tem zona controlada."
+        "explicacao": "A NR-10 não usa 2 m. O critério é a zona controlada, que depende da tensão da rede."
       }
     ],
     "fontes": [
@@ -100,24 +100,24 @@
     "enunciado": "Chegou a ordem de serviço para mexer no cabo de telecom de um poste com baixa tensão. Antes de subir, o que você precisa confirmar com a empresa?",
     "alternativas": [
       {
-        "texto": "Se tenho autorização para trabalho em proximidade, qual é a APR da tarefa e se precisa de permissão de trabalho.",
+        "texto": "Autorização para proximidade, APR da tarefa e se precisa de permissão de trabalho.",
         "correta": true,
-        "explicacao": "Certo. A zona controlada é só para trabalhador autorizado, e o ingresso nela exige procedimento (NR-10, item 10.6.2). A autorização vem da empresa (item 10.8.8.1)."
+        "explicacao": "Certo. A zona controlada é só para trabalhador autorizado, e o ingresso nela exige procedimento (NR-10, item 10.6.2). A autorização vem da empresa (item 10.8.8.1). Confirme também a APR e a permissão de trabalho com a empresa; este app é só lembrete."
       },
       {
-        "texto": "Só se o EPI está completo.",
+        "texto": "Só se o EPI está completo, o curso de altura está em dia e o poste é firme.",
         "correta": false,
-        "explicacao": "EPI é necessário, mas não substitui autorização, análise de risco nem procedimento."
+        "explicacao": "EPI e curso de altura são necessários, mas não substituem autorização, APR nem procedimento para entrar na zona controlada."
       },
       {
-        "texto": "Nada, se a fibra estiver desligada.",
+        "texto": "Nada, porque o cabo é só de fibra e a luz do equipamento está desligada.",
         "correta": false,
-        "explicacao": "O risco vem da rede elétrica ao lado, não da luz da fibra."
+        "explicacao": "O risco vem da rede elétrica ao lado, não da luz da fibra. Seu corpo, a escada e as ferramentas continuam podendo entrar na zona controlada."
       },
       {
-        "texto": "Só a altura do poste.",
+        "texto": "Só a altura do poste, o tipo de cabo e o material que vou levar na subida.",
         "correta": false,
-        "explicacao": "A altura importa para a NR-35, mas a NR-10 exige autorização e procedimento para entrar na zona controlada."
+        "explicacao": "A altura e o cabo importam para o serviço, mas a NR-10 exige autorização e procedimento para entrar na zona controlada."
       }
     ],
     "fontes": [
@@ -131,24 +131,24 @@
     "enunciado": "Para saber se você está dentro da zona controlada, de onde se mede a distância?",
     "alternativas": [
       {
-        "texto": "Do poste.",
+        "texto": "Do poste, no ponto em que a rede está fixada.",
         "correta": false,
         "explicacao": "O poste não é o ponto energizado. As zonas são raios em volta da parte energizada."
       },
       {
-        "texto": "Do chão.",
+        "texto": "Do chão, pela altura do condutor até o solo.",
         "correta": false,
         "explicacao": "Altura em relação ao chão é outra regra (altura mínima de cabos). As zonas partem do condutor."
       },
       {
-        "texto": "Do ponto energizado, ou seja, do condutor.",
-        "correta": true,
-        "explicacao": "Certo. Rr e Rc são raios medidos a partir do ponto energizado, como mostram as figuras do Anexo II."
-      },
-      {
-        "texto": "Do cabo de telecom.",
+        "texto": "Do cabo de telecom em que você vai trabalhar no poste.",
         "correta": false,
         "explicacao": "O cabo de telecom é onde você trabalha; a referência das zonas é o condutor energizado."
+      },
+      {
+        "texto": "Do condutor, o ponto energizado da rede.",
+        "correta": true,
+        "explicacao": "Certo. Rr e Rc são raios medidos a partir do ponto energizado, ou seja, do condutor, como mostram as figuras do Anexo II. Não se mede a partir do poste."
       }
     ],
     "fontes": [
@@ -193,24 +193,24 @@
     "enunciado": "Você está no poste e começa uma chuva forte, com raios por perto. O que fazer?",
     "alternativas": [
       {
-        "texto": "Terminar rápido o que falta.",
+        "texto": "Terminar só o que falta e depois descer.",
         "correta": false,
-        "explicacao": "Acelerar mantém você exposto. A norma manda suspender."
+        "explicacao": "Acelerar mantém você exposto na iminência de perigo. A norma manda suspender de imediato."
       },
       {
         "texto": "Suspender o serviço de imediato e descer com segurança.",
         "correta": true,
-        "explicacao": "Certo. A NR-10 (item 10.6.3) manda suspender de imediato serviços em instalações energizadas ou perto delas na iminência de perigo."
+        "explicacao": "Certo. A NR-10 (item 10.6.3) manda suspender de imediato serviços em instalações energizadas ou perto delas na iminência de perigo, como chuva forte e raios."
       },
       {
-        "texto": "Cobrir a caixa e continuar.",
+        "texto": "Cobrir a caixa de emenda e esperar a chuva passar no poste.",
         "correta": false,
-        "explicacao": "Proteger o material não tira você do perigo."
+        "explicacao": "Proteger o material não tira você do perigo. Ficar no poste durante chuva e raios é manter a exposição."
       },
       {
-        "texto": "Trocar as luvas e continuar.",
+        "texto": "Trocar as luvas por secas e continuar o serviço.",
         "correta": false,
-        "explicacao": "EPI não elimina o risco de raio e chuva no poste."
+        "explicacao": "EPI não elimina o risco de raio e chuva no poste. O serviço é suspenso, não adaptado."
       }
     ],
     "fontes": [
@@ -224,24 +224,24 @@
     "enunciado": "No poste, o cabo de telecom está a 1,50 m de uma rede de 13,8 kV, como nas normas de exemplo. O que isso quer dizer para o seu trabalho?",
     "alternativas": [
       {
-        "texto": "O cabo fica fora da zona controlada da média tensão (1,38 m), mas com folga de só 12 cm: um braço ou uma ferramenta podem cruzar o limite.",
+        "texto": "Dentro da zona controlada da média tensão, que vai até 1,50 m do condutor.",
+        "correta": false,
+        "explicacao": "A zona controlada de 13,8 kV vai até 1,38 m (Rc). A 1,50 m o cabo está fora dela, embora com pouca folga."
+      },
+      {
+        "texto": "Em zona livre, com folga de sobra: nem a mão nem a ferramenta preocupam aqui.",
+        "correta": false,
+        "explicacao": "A folga é de só 12 cm (1,50 − 1,38). Mão, braço, escada ou ferramenta podem cruzar o limite com facilidade."
+      },
+      {
+        "texto": "A NR-10 não vale para a média tensão, só vale para a rede de baixa tensão.",
+        "correta": false,
+        "explicacao": "A NR-10 vale para todas as faixas da tabela do Anexo II, inclusive a de 13,8 kV."
+      },
+      {
+        "texto": "Fora da zona controlada, com só 12 cm de folga: mão ou ferramenta podem cruzar.",
         "correta": true,
-        "explicacao": "Certo. 1,50 − 1,38 = 0,12 m. Um movimento para cima pode virar trabalho em proximidade da média tensão."
-      },
-      {
-        "texto": "A média tensão não oferece risco a quem trabalha no cabo de telecom.",
-        "correta": false,
-        "explicacao": "Com 12 cm de folga, o corpo ou a ferramenta podem entrar na zona controlada."
-      },
-      {
-        "texto": "O cabo está dentro da zona de risco da média tensão.",
-        "correta": false,
-        "explicacao": "A zona de risco de 13,8 kV vai só até 0,38 m."
-      },
-      {
-        "texto": "A NR-10 não se aplica à média tensão.",
-        "correta": false,
-        "explicacao": "A NR-10 vale para todas as faixas da tabela do Anexo II."
+        "explicacao": "Certo. 1,50 − 1,38 = 0,12 m. O cabo fica fora da zona controlada de 13,8 kV (1,38 m), mas um movimento para cima pode virar trabalho em proximidade da média tensão. Quem define como trabalhar é o procedimento da empresa."
       }
     ],
     "fontes": [
@@ -256,24 +256,24 @@
     "enunciado": "A baixa tensão do poste é multiplexada (cabo com capa isolante). Isso muda a zona controlada?",
     "alternativas": [
       {
-        "texto": "Não dá para assumir que muda: a NR-10 não traz outra tabela e a capa pode estar danificada. Trate como zona controlada e confirme com a segurança do trabalho.",
+        "texto": "Sim: a capa isola a parte viva, então cabo isolado não tem zona controlada.",
+        "correta": false,
+        "explicacao": "O texto não diz isso. Segregado é o que ficou inacessível por invólucro ou barreira, não por capa de cabo."
+      },
+      {
+        "texto": "Não por conta própria: trate como zona controlada e confirme com a segurança do trabalho.",
         "correta": true,
-        "explicacao": "Certo. As zonas existem em volta de parte energizada \"não segregada\", e segregado é o que ficou inacessível por invólucro ou barreira. Isolação é proteção, não reduz a zona por conta própria."
+        "explicacao": "Certo. As zonas existem em volta de parte energizada \"não segregada\", e segregado é o que ficou inacessível por invólucro ou barreira. Isolação é proteção, não reduz a zona por conta própria. A capa pode estar ressecada ou cortada, e o neutro muitas vezes é nu. Se o procedimento muda algo para rede multiplexada, quem decide é a segurança do trabalho."
       },
       {
-        "texto": "Sim: cabo isolado não tem zona controlada.",
+        "texto": "Sim: com a capa inteira, a zona controlada cai pela metade em volta do cabo isolado.",
         "correta": false,
-        "explicacao": "O texto não diz isso. A definição de segregado fala em invólucro ou barreira, não na capa do cabo."
+        "explicacao": "Não existe redução assim na NR-10, nem no texto atual nem no novo. E de baixo você não vê se a capa está inteira."
       },
       {
-        "texto": "Sim: com cabo isolado a zona cai pela metade.",
+        "texto": "Sim, se o cabo for novo: o técnico confere de baixo e decide no próprio local do serviço.",
         "correta": false,
-        "explicacao": "Não existe redução assim na NR-10, nem no texto atual nem no novo."
-      },
-      {
-        "texto": "Só muda se o cabo for novo.",
-        "correta": false,
-        "explicacao": "Ser novo não é critério do texto, e conexões e derivações continuam existindo. Quem decide é a segurança do trabalho."
+        "explicacao": "Ser novo não é critério do texto, e o técnico não decide sozinho. Quem decide é a segurança do trabalho."
       }
     ],
     "fontes": [

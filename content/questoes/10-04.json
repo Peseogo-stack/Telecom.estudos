@@ -162,24 +162,24 @@
     "enunciado": "Você vai usar um removedor de gel que nunca usou. O que a FOA manda fazer com qualquer produto químico da bancada?",
     "alternativas": [
       {
-        "texto": "Testar um pouco na pele do braço para ver se dá alergia.",
+        "texto": "Testar uma gota na pele do braço e só usar o removedor se não der alergia.",
         "correta": false,
-        "explicacao": "A FOA manda evitar o contato com a pele e parar de usar produto que cause alergia; teste na pele não é o caminho."
+        "explicacao": "A FOA manda evitar o contato com a pele e parar de usar produto que cause alergia. Teste na pele não é o caminho."
       },
       {
-        "texto": "Pedir a ficha de segurança, trabalhar em local ventilado e evitar contato com a pele.",
+        "texto": "Dispensar a ficha de segurança, pois produto vendido para bancada de fusão é seguro.",
+        "correta": false,
+        "explicacao": "A FOA manda pedir a ficha de segurança ao fabricante quando não se sabe lidar com o produto. Produto de bancada também pode causar alergia ou ser inflamável."
+      },
+      {
+        "texto": "Pedir a ficha de segurança, trabalhar com ventilação e evitar contato com a pele.",
         "correta": true,
-        "explicacao": "Certo. A FOA manda pedir a ficha de segurança ao fabricante quando não souber como lidar com o produto, trabalhar sempre em área ventilada e evitar contato com a pele."
+        "explicacao": "Certo. A FOA manda pedir a ficha de segurança ao fabricante quando não souber como lidar com o produto, trabalhar sempre em área ventilada e evitar contato com a pele (FOA)."
       },
       {
-        "texto": "Misturar com álcool isopropílico para secar mais rápido.",
+        "texto": "Misturar com álcool isopropílico para secar mais rápido e gastar menos produto.",
         "correta": false,
-        "explicacao": "Nenhuma ficha consultada indica essa mistura; e o álcool isopropílico é altamente inflamável (H225)."
-      },
-      {
-        "texto": "Usar dentro do carro fechado, sem vento, para render mais.",
-        "correta": false,
-        "explicacao": "A FOA manda trabalhar sempre em área bem ventilada."
+        "explicacao": "Nenhuma ficha consultada indica essa mistura, e o álcool isopropílico é altamente inflamável (H225), a poucos centímetros do arco."
       }
     ],
     "fontes": [

@@ -1,61 +1,51 @@
-# Revisão técnica — módulo 05 (fusão óptica: preparo, máquina e perdas, lições 05-01, 05-03 e 05-04)
+# Revisão técnica — módulo 5 (fusão: lições 05-01, 05-03 e 05-04)
 
-Revisor técnico independente (passada separada da escrita) · 08/11/2026.
-Versão revisada: branch `fase-3-modulo-05`.
-Escopo: lições 05-01, 05-03 e 05-04 (concluindo as 3 lições P1 do módulo 5); 24 questões (05-01, 05-03 e 05-04); 11 termos novos do glossário (`decapador`, `clivagem`, `clivador`, `tubete`, `alinhamento-nucleo`, `alinhamento-casca`, `arc-check`, `teste-de-tracao`, `perda-estimada`, `mfd`, `media-bidirecional`, além de incluir 05-01 em `alcool-isopropilico` e 05-04 em `otdr` e `ganho-aparente`); perguntas do banco (`c09` e `d16` para 05-01, `a03` e `d05` para 05-03, `b05` e `d04` para 05-04); 4 fontes novas em `fontes.json` (`foa-fusao`, `fujikura-catalogo-telecom`, `tempo-910fs-fusao`, `foa-tia568`); diagramas `PreparoFusao`, `DentroMaquina` e `EstimadoRealFusao`.
+Revisão de 09/11/2026, branch `revisao-p1`. Substitui o relatório anterior, de 07 e 08/11/2026.
 
-## Resumo (contagens)
+**Escopo:** lições 05-01, 05-03 e 05-04, suas 24 questões, os diagramas `PreparoFusao`, `DentroMaquina` e `EstimadoRealFusao` e os termos do glossário que elas usam.
+
+**Método:** um subagente listou cada afirmação numérica com o trecho candidato da fonte. Cada item foi julgado lendo a lição e o trecho. Fontes baixadas de novo nesta revisão:
+
+- FOA, *Fusion Splicing*, *Loss Budget*, *Deliverables*, *Cleaning* e *OTDRs*;
+- catálogo de máquinas de fusão da Fujikura (10/2025) e dicas de manutenção da 90R;
+- nota de aplicação da Tempo/Greenlee (910FS);
+- tabela de valores típicos da VIAVI;
+- resumo da TIA-568 pela FOA.
+
+## Resumo
 
 | Severidade | Quantidade |
 | --- | --- |
-| ERRO | 0 |
-| AJUSTE | 2 |
-| SUGESTÃO | 0 |
-| Não conferidos | 0 |
+| ERRO | 14 |
+| AJUSTE | 6 |
+| Não conferido | 0 |
 
-- **Questões:** nas 24 questões (8 em `05-01.json`, 8 em `05-03.json` e 8 em `05-04.json`), todas as 4 alternativas de cada questão foram rebalanceadas em comprimento (~105–120 caracteres) e paralelismo estrutural, com distratores de campo plausíveis e razão da correta para a 2ª mais longa ≤ 1,15, passando com 0 erros no modo `--estrito`.
-- **Revisão editorial:** as 3 lições foram enxugadas para o tom objetivo e técnico de referência (650 a 720 palavras), eliminando repetições excessivas de tags `{{fonte:...}}` e consolidando citações factuais.
-- **Diagramas e responsividade:** conferidos em 390 px (celular) e 1440 px (PC) nos três temas (`claro`, `escuro` e `sol`) via `scripts/prints.mjs` com inspeção visual dos artefatos. Todos os textos cabem com margem folgada dentro das caixas SVG, sem sobreposição nem corte lateral.
-- **Acessibilidade (axe):** 13 testes automatizados em Playwright cobrindo regras WCAG 2.1 AA nas lições, telas de questões e termos de glossário com 0 violações graves ou críticas.
-- **Nome da empresa, dados pessoais e analogias com a rede elétrica:** nenhum nos arquivos criados ou editados.
+## Erros corrigidos
+
+| # | Onde | Estava escrito | O que a fonte diz | Correção |
+| --- | --- | --- | --- | --- |
+| E1 | 05-04, tabela, diagrama e questões q7 e q8 | "0,08 dB: atenuação típica de campo (VIAVI)"; "emendas bem executadas ficam abaixo de 0,10 dB (VIAVI)". | VIAVI, tabela de valores típicos: *"Fusion 0.10 to 0.30 dB"*. | "0,10 a 0,30 dB: típica (VIAVI)". O 0,08 dB fica só como resultado do exemplo bidirecional. |
+| E2 | 05-04 | "0,10 a 0,15 dB: valor de referência para projeto e contratos, adotado pela FOA e em metas de distribuidoras". | FOA, *Loss Budget*: *"0.15dB for singlemode fusion splices"* (planejamento). FOA, *Deliverables*: fusão com média de 0,1 dB, rejeitando acima de 0,2 dB. Nada sobre "metas de distribuidoras". | Dois números separados, cada um com a sua fonte; o critério da obra é o do contrato (confirmar na empresa). |
+| E3 | 05-04, Na prática | "No orçamento, dimensione as fusões com 0,10 a 0,15 dB". | Decisão D12 e a ferramenta de orçamento: padrão conservador de 0,3 dB por fusão (máximo da TIA). | "O padrão é 0,3 dB (TIA); a FOA planeja com 0,15 dB". |
+| E4 | 05-04 | "A máquina não injeta feixe luminoso". | FOA: o sistema LID injeta e detecta luz (*"The LID system also checks transmission after splicing to estimate splice loss"*). | A estimativa é uma aproximação (Tempo; FOA); a perda real se mede com OTDR ou com fonte e medidor. |
+| E5 | 05-04 | Fórmulas em LaTeX (`$$\frac{...}$$`), que o app mostrava cruas. | O pipeline de conteúdo não renderiza LaTeX. | Fórmula em texto. O validador agora barra LaTeX. |
+| E6 | 05-01 e checklist de CEO | "1 m de **fibra nua**" na bandeja. | FOA: *"~1 m fiber inside the splice tray"*. É fibra com revestimento; fibra nua é o vidro sem revestimento. | "1 m de fibra". |
+| E7 | 05-01, glossário e diagrama | Tubete "com haste metálica em **aço inox**". | O catálogo dá comprimento máximo de 66 mm, diâmetro de 6,0 mm antes de encolher e modos de forno para 60 mm. Não fala do material da haste. | O material sai. |
+| E8 | 05-01 e diagrama | Clivagem de "10 a 16 mm"; "limite de reprovação > 1,5°"; "abaixo de 10 mm, ângulos acima de 2°". | 45S: comprimento de clivagem de 5 a 16 mm (fibra de 250 µm). CT50: de 5 a 20 mm, mas abaixo de 10 mm exige ajuste da lâmina e *"the average cleave angle is worse"*. Não há 1,5° nem 2° nas fontes. | Os valores do catálogo, sem os limites inventados. |
+| E9 | 05-01 | Limpar "em sentido único até ouvir o estalo (squeak)". | Tempo: *"clean the fiber with 99% isopropyl alcohol and a clean lint free wipe prior to cleaving"*. Nada de sentido nem de estalo. | Fica o que a Tempo diz. |
+| E10 | 05-01, Erros comuns | Álcool 70% "oxida os eletrodos". | A Fujikura só pede *"purity of 99% or higher"*. | "Os fabricantes pedem 99% ou mais". |
+| E11 | 05-03 | Ciclo da máquina "em 6 a 12 segundos". | 45S: *"SM FAST mode: Avg. 6 to 8sec."* | 6 a 8 s na 45S. |
+| E12 | 05-03, diagrama e questões | Eletrodos de "1.500 a 6.000 arcos". | Catálogo: 45S cerca de 6.000; 90R12 cerca de 1.500; 90R16 cerca de 800. | "Cerca de 800 a 6.000, conforme o modelo". |
+| E13 | 05-03 e questão q8 | Tabela de defeitos com "estrangulamento" e uma coluna de causas. | FOA: pontos ou linhas escuras podem melhorar com novo arco, *"never more than twice"*; *"For large core offsets, bubbles or bulging splices, always redo"*. Não fala de estrangulamento nem das causas. | Tabela só com o que a FOA diz. |
+| E14 | Questões 05-03 | "Funde a sílica a cerca de 2.000 °C"; "pré-fusão é uma descarga **invisível**"; arc check "quando mudam pressão, umidade e altitude". | Nenhuma fonte traz a temperatura; o arco é luminoso; a Tempo manda calibrar o arco *"at the beginning of a splicing session"*. | Corrigidas: arco elétrico, sem temperatura; calibração no início da sessão, o resto pelo manual. |
 
 ## Ajustes
 
-| # | Arquivo e trecho | Escrito | O que a fonte diz (item + trecho) | Correção aplicada |
-| --- | --- | --- | --- | --- |
-| A1 | `content/licoes/05-01.md`, `05-03.md`, `05-04.md` | Rascunhos iniciais continham tags fora do padrão (`minutos`, `confirmarNaEmpresa`, `[fonte:id]`, `$$...$$` e contagem de palavras ligeiramente acima de 900). | O validador do projeto (`scripts/validar-conteudo.mjs`) exige campos estritos em snake_case (`duracao_min`, `confirmar_na_empresa`, `{{fonte:id}}`, `{{diagrama}}`), sem fórmulas LaTeX no corpo e ideal de até 900 palavras. | Reescrita completa dos três arquivos no formato padrão de metadados, ajustando a concisão para menos de 850 palavras compiladas por lição, com 0 erros e 0 avisos. |
-| A2 | `tests/e2e/modulo-05.spec.ts:21` | O teste buscava o texto `'haste de aço'` na tela do glossário do termo `tubete`. | Em `content/glossario.json`, a definição oficial do termo `tubete` utiliza o termo `'haste metálica'`. | Atualizado o seletor do teste para buscar `'haste metálica'`, garantindo a aprovação de 100% dos testes E2E. |
-
-## Conferidos (lista detalhada por lição e arquivo)
-
-### Lição 05-01 (`content/licoes/05-01.md`)
-- **Preparo do cabo e caixa:** 2 a 3 m de decapagem da capa externa, ~1 m de tubo loose na caixa e ~1 m de fibra nua na bandeja de emenda (`foa-fusao`); elemento de sustentação fixado na carcaça (`foa-fusao`); remoção completa do gel de bloqueio com solvente próprio à base cítrica (*D'Gel FO*, ponto de fulgor > 60 °C) e secagem antes da emenda (`lps-dgel-ficha`, `foa-fusao`).
-- **Tubete termocontrátil:** comprimento de 40 mm ou 60 mm com haste de aço inoxidável; obrigatoriedade de vestir na fibra antes de decapar e clivar (`foa-fusao`); diâmetro máximo de 6,0 mm antes do encolhimento e forno aceitando até 66 mm (`fujikura-catalogo-telecom`).
-- **Sequência de preparo (strip, clean and cleave):** decapador calibrado para retirar acrilato de 250 µm e expor casca de sílica de 125 µm sem provocar riscos (*nicks*) (`foa-fusao`, `fujikura-catalogo-telecom`); limpeza com álcool isopropílico de pureza ≥ 99% em lenço sem fiapo em sentido único da base para a ponta (`fujikura-dicas-90r`, `tempo-910fs-fusao`); clivador de precisão com incisão microscópica e tração perpendicular (`foa-fusao`).
-- **Parâmetros técnicos:** comprimento de clivagem de 5 a 16 mm (45S) e 5 a 20 mm (CT50) para ≤ 250 µm, e 10 a 16/20 mm para 250 a 900 µm (`fujikura-catalogo-telecom`); ângulo médio em fibra única de 0,3° a 0,9° no CT50, piorando com clivagens < 10 mm (`fujikura-catalogo-telecom`); vida útil da lâmina do CT50 de ~60.000 clivagens em 16 posições rotativas (e CT60 com 28 posições) (`fujikura-catalogo-telecom`); teste de tração mecânica de ~2,0 N (~200 gf) (`fujikura-catalogo-telecom`); forno com ciclo de 21 a 23 s para tubete 60 mm e 16 a 18 s no modo slim (`fujikura-catalogo-telecom`); raio mínimo de curvatura de 30 mm na G.652.D e 7,5 a 10 mm na G.657 (`itu-g652-2024`, `itu-g657-2024`).
-
-### Lição 05-03 (`content/licoes/05-03.md`)
-- **Tempo de ciclo:** tempo de fusão no modo rápido (SM FAST) de 6 a 8 s na Fujikura 45S (`fujikura-catalogo-telecom`, `foa-fusao`).
-- **Alinhamento pelo núcleo (core alignment):** sistema PAS com câmeras a 90° e motores nos eixos X, Y e Z; sistema LID com injeção e detecção local por curvatura; compensação de excentricidade núcleo-casca e fibras de lotes ou fabricantes diferentes (`foa-fusao`, `tempo-910fs-fusao`).
-- **Alinhamento pela casca (clad alignment):** posicionamento da casca de 125 µm em V-grooves; alinhamento ativo na 45S com motores corrigindo o V-groove (perda média de catálogo por cut-back de 0,03 dB em G.652/G.657) vs. alinhamento fixo na 90R (perda média de 0,05 dB) (`fujikura-catalogo-telecom`, `tempo-910fs-fusao`).
-- **Ciclo elétrico:** pré-fusão (*prefuse*) para queimar micro-poeira e pré-aquecer o vidro; arco principal com avanço motorizado (*autofeed*); teste de tração de ~2,0 N ao abrir a tampa (`foa-fusao`, `fujikura-catalogo-telecom`).
-- **Manutenção e calibração:** *arc check* no início do turno e diante de variações de temperatura, umidade e altitude (`tempo-910fs-fusao`, `foa-fusao`); vida útil dos eletrodos de ~1.500 fusões (90R12) a ~6.000 fusões (45S) (`fujikura-catalogo-telecom`); proibição de tocar eletrodos com as mãos (`tempo-910fs-fusao`); limpeza diária dos V-grooves com IPA ≥ 99% e mensal das lentes objetivas com máquina desligada e sem eletrodos (`fujikura-dicas-90r`).
-- **Análise de defeitos:** linha ou ponto escuro permite aplicar re-arco no máximo 2 vezes; bolha (*bubble*), barriga (*bulging*), estrangulamento (*constriction*) ou formato de fósforo (*matchheads*) exigem quebrar a fibra e refazer do zero (`foa-fusao`).
-
-### Lição 05-04 (`content/licoes/05-04.md`)
-- **Perda estimada na tela:** estimativa matemática calculada por imagem através das câmeras e simetria do vidro, sem passagem ou medição real de feixe óptico (`tempo-910fs-fusao`, `foa-fusao`); tecnologia WSI (*Warm Splice Image*) na 45S avalia imagem durante a incandescência, mas permanece sendo avaliação visual (`fujikura-catalogo-telecom`).
-- **Fatores invisíveis à tela:** diferença de MFD (variação de 5 µm no diâmetro do núcleo pode gerar 0,20 dB de perda) e microcurvatura dentro do tubete ou na bandeja (`tempo-910fs-fusao`, `foa-fusao`).
-- **Medição oficial com OTDR:** medição bidirecional (A→B e B→A) com cálculo de média algébrica para anular discrepâncias de retroespalhamento de Rayleigh e ganhos aparentes (*gainers*) (`foa-fusao`, `exfo-otdr-an194`, `yokogawa-otdr-bidirecional`).
-- **Quatro referências de atenuação:** média de catálogo de laboratório por *cut-back* na mesma fibra (0,02 a 0,05 dB; 0,03 dB na 45S) (`fujikura-catalogo-telecom`, `tempo-910fs-fusao`); perda típica de campo no OTDR (0,08 dB; faixa prática < 0,10 dB) (`viavi-otdr-dicas`); referência de planejamento da FOA e meta típica contratual de implantação (0,10 a 0,15 dB) (`foa-loss-budget`); limite máximo normativo da norma ANSI/TIA-568 (0,30 dB por emenda, ORL > 26 dB geral e > 55 dB para CATV) (`foa-tia568`).
-
-## Fontes consultadas diretamente no texto original (08/11/2026)
-
-- Fujikura Ltd. — *Fusion Splicers: Telecommunication uses (100S, 45S, 90R, CT50)* (Catálogo oficial 10/2025, 20 páginas extraídas integralmente de PDF): https://www.fusionsplicer.fujikura.com/wp-content/uploads/2025/10/Fusionsplicer_telecom_Eng.pdf
-- Greenlee / Tempo Communications — *Application Note: Reducing Losses in Fusion Splicing (910FS)* (PDF extraído integralmente): https://res.cloudinary.com/iwh/image/upload/q_auto,g_center/assets/1/26/Tempo_910FS_Application_Note.pdf
-- The Fiber Optic Association (FOA) — *The FOA Reference For Fiber Optics: Fusion Splicing* (HTML oficial integral): https://www.thefoa.org/tech/ref/termination/fusion.html
-- The Fiber Optic Association (FOA) — *EIA/TIA 568 B.3 / 568-C Standard For Fiber Optics* (HTML oficial integral): https://www.thefoa.org/tech/tia568b3.htm
-- The Fiber Optic Association (FOA) — *Loss Budget Estimates* (HTML oficial integral): https://www.thefoa.org/tech/loss-est.htm
-- VIAVI Solutions — *OTDR Testing Tech Tip: Quick References* (PDF extraído integralmente): https://www.viavisolutions.com/en-uk/literature/otdr-testing-tips-and-tricks-quick-references-en.pdf
-- EXFO — *Application Note 194: Fundamentals of an OTDR* (PDF integral): https://www.exfo.com/contentassets/7e4d240b6717415283238de7dcec35ba/exfo_anote194_otdr-fundamentals_en.pdf
-- Yokogawa Test & Measurement — *OTDR two-way optical fiber measurement* (Artigo técnico): https://tmi.yokogawa.com/br/library/resources/application-notes/otdr-two-way-optical-fiber-measurement
-- ITU-T Recommendation G.652 (08/2024) e G.657 (08/2024) (Normas oficiais em vigor).
+| # | Onde | Ajuste |
+| --- | --- | --- |
+| A1 | 05-03 | A vantagem do alinhamento pelo núcleo vem da Tempo, que fabrica máquina por núcleo. O texto agora diz isso e manda confirmar qual máquina a equipe usa. |
+| A2 | 05-03 | A limpeza das lentes era "com a máquina desligada"; o passo a passo da Fujikura (90R) manda tirar os eletrodos sem tocar na ponta. |
+| A3 | 05-03, q3 | 45S: o catálogo diz *"Active clad alignment"*. Saiu "motores movem as ranhuras em V", que a ficha não traz. |
+| A4 | Glossário | Corrigidos arc-check, clivador, decapador, tubete, teste de tração, perda estimada e média bidirecional. |
+| A5 | 05-04 | O gainer passa a citar FOA (*OTDRs*) e Yokogawa, que tratam do assunto, no lugar da nota da EXFO. |
+| A6 | Questões | "Normas" que "proíbem" ou "exigem" sem norma citada foram trocadas pelo que a fonte diz. |

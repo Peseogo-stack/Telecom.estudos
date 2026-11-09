@@ -8,3 +8,6 @@ playwright-report
 .palavras-proibidas.txt
 docs/prints/
 *.tsbuildinfo
+
+# Insumos locais da revisão (PDFs de terceiros e prints): nunca vão para o Git
+revisao-local/

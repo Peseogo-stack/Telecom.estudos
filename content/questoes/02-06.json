@@ -5,24 +5,24 @@
     "enunciado": "No OTDR, um degrau aparece grande em 1550 nm e quase some em 1310 nm. Qual a suspeita principal?",
     "alternativas": [
       {
-        "texto": "Curvatura (fibra dobrada demais).",
+        "texto": "Fusão mal feita, que perde mais em 1550 nm que em 1310.",
+        "correta": false,
+        "explicacao": "Fusão ruim costuma perder de forma parecida em 1310 e 1550; o contraste entre os dois aponta curvatura."
+      },
+      {
+        "texto": "Fim de fibra, que só aparece no comprimento de onda longo.",
+        "correta": false,
+        "explicacao": "Fim de fibra aparece igual nos dois comprimentos de onda."
+      },
+      {
+        "texto": "Atenuação normal, porque 1550 nm perde mais que 1310 nm.",
+        "correta": false,
+        "explicacao": "Numa fibra boa, 1550 nm perde menos que 1310 nm; um degrau grande só em 1550 nm é sinal de problema."
+      },
+      {
+        "texto": "Curvatura, com a fibra dobrada ou apertada demais.",
         "correta": true,
-        "explicacao": "Certo. A perda por curvatura cresce nos comprimentos de onda longos; uma emenda ruim costuma perder parecido nos dois."
-      },
-      {
-        "texto": "Fusão mal feita.",
-        "correta": false,
-        "explicacao": "Fusão ruim costuma perder de forma parecida em 1310 e 1550."
-      },
-      {
-        "texto": "Fim de fibra.",
-        "correta": false,
-        "explicacao": "Fim de fibra aparece igual nos dois."
-      },
-      {
-        "texto": "Equipamento descalibrado.",
-        "correta": false,
-        "explicacao": "O contraste entre λ é a pista típica de curvatura."
+        "explicacao": "Certo. A perda por curvatura cresce acima de 1550 nm, então a curva aparece bem maior em 1550 nm; uma emenda ruim costuma perder parecido nos dois (G.Sup39, FOA)."
       }
     ],
     "fontes": [
@@ -37,24 +37,24 @@
     "enunciado": "Numa fibra reta e boa, por que 1550 nm perde menos que 1310 nm?",
     "alternativas": [
       {
-        "texto": "Porque o espalhamento de Rayleigh cai muito com o comprimento de onda (1/λ⁴).",
-        "correta": true,
-        "explicacao": "Certo. Medidas no núcleo de rede de uma operadora deram em média 0,34 dB/km em 1310 nm e 0,19 dB/km em 1550 nm (G.Sup39)."
-      },
-      {
-        "texto": "Porque o laser de 1550 é mais forte.",
+        "texto": "Porque o laser de 1550 nm é mais forte que o de 1310 nm.",
         "correta": false,
         "explicacao": "A atenuação é da fibra, não do transmissor."
       },
       {
-        "texto": "Porque 1550 nm é visível.",
-        "correta": false,
-        "explicacao": "1550 nm é infravermelho."
+        "texto": "Porque o espalhamento de Rayleigh cai com o comprimento de onda.",
+        "correta": true,
+        "explicacao": "Certo. Ele é proporcional a 1/λ⁴. Medidas no núcleo de rede de uma operadora deram em média 0,34 dB/km em 1310 nm e 0,19 dB/km em 1550 nm (G.Sup39)."
       },
       {
-        "texto": "Não é verdade: 1310 sempre perde menos.",
+        "texto": "Porque o pico de absorção pela água fica em 1310 nm.",
         "correta": false,
-        "explicacao": "Numa fibra boa, 1550 perde menos."
+        "explicacao": "O pico d'água fica perto de 1383 nm."
+      },
+      {
+        "texto": "Porque a perda por curvatura é menor em 1550 nm que em 1310 nm.",
+        "correta": false,
+        "explicacao": "É o contrário: a perda por curvatura cresce acima de 1550 nm."
       }
     ],
     "fontes": [
@@ -99,24 +99,24 @@
     "enunciado": "A ficha do cabo diz 0,22 dB/km em 1550 nm; a norma diz no máximo 0,30. Qual usar no orçamento de potência?",
     "alternativas": [
       {
-        "texto": "O valor que o projeto ou o contrato mandar; na falta, o máximo da norma é o mais seguro.",
-        "correta": true,
-        "explicacao": "Certo. A ficha dá o máximo garantido daquele cabo; a norma, o teto de qualquer cabo G.652.D. Sem saber o cabo exato ou os reparos futuros, o máximo da norma é o mais seguro."
+        "texto": "A média medida em campo, de 0,19 dB/km, que é a mais realista.",
+        "correta": false,
+        "explicacao": "Média não é garantia: não serve para garantir um enlace."
       },
       {
-        "texto": "Sempre o menor, para o projeto passar.",
+        "texto": "O menor valor que aparecer, para o projeto passar.",
         "correta": false,
         "explicacao": "Usar o valor mais otimista esconde risco."
       },
       {
-        "texto": "A média de campo, 0,19 dB/km.",
-        "correta": false,
-        "explicacao": "Média não é garantia."
+        "texto": "O valor que o projeto ou o contrato mandar usar.",
+        "correta": true,
+        "explicacao": "Certo. A norma dá o teto (0,30 dB/km em 1550 nm); a ficha, o máximo garantido daquele cabo (0,22). Use o que o projeto ou o contrato mandar e confirme na empresa (ITU G.652, Prysmian)."
       },
       {
-        "texto": "Tanto faz.",
+        "texto": "O valor de 1310 nm da ficha, de 0,36 dB/km, por segurança.",
         "correta": false,
-        "explicacao": "A escolha muda o resultado do orçamento."
+        "explicacao": "É de outro comprimento de onda: a conta em 1550 nm usa o valor de 1550 nm."
       }
     ],
     "fontes": [
@@ -132,24 +132,24 @@
     "enunciado": "Por que medir uma fibra também em comprimento de onda longo (1550 ou 1625 nm)?",
     "alternativas": [
       {
-        "texto": "Porque a curvatura aparece muito mais neles e fica fácil de achar.",
+        "texto": "Porque as fusões ruins só aparecem nesses comprimentos de onda.",
+        "correta": false,
+        "explicacao": "Uma fusão ruim costuma perder parecido em 1310 e em 1550 nm."
+      },
+      {
+        "texto": "Porque a água da fibra só absorve luz acima de 1550 nm.",
+        "correta": false,
+        "explicacao": "O pico de absorção pela água fica perto de 1383 nm."
+      },
+      {
+        "texto": "Porque em 1310 nm o OTDR não alcança o fim da fibra.",
+        "correta": false,
+        "explicacao": "1310 nm funciona normalmente; a vantagem do comprimento longo é outra."
+      },
+      {
+        "texto": "Porque a curva fechada aparece bem maior nesses comprimentos.",
         "correta": true,
-        "explicacao": "Certo. A fibra é mais sensível a curvatura e tensão nos comprimentos de onda longos; em 1310 nm uma curva pode passar despercebida."
-      },
-      {
-        "texto": "Porque em 1310 nm a fibra não funciona.",
-        "correta": false,
-        "explicacao": "1310 nm funciona normalmente."
-      },
-      {
-        "texto": "Porque 1625 nm mede a velocidade da internet.",
-        "correta": false,
-        "explicacao": "Não é medida de velocidade."
-      },
-      {
-        "texto": "Para aquecer a fibra.",
-        "correta": false,
-        "explicacao": "Não tem relação."
+        "explicacao": "Certo. A fibra é mais sensível a curvatura e tensão nos comprimentos de onda longos; em 1310 nm uma curva pode passar despercebida (G.Sup39, FOA)."
       }
     ],
     "fontes": [
@@ -164,24 +164,24 @@
     "enunciado": "Quais são as causas da atenuação que a ITU lista para a fibra?",
     "alternativas": [
       {
-        "texto": "Espalhamento de Rayleigh, absorção pela água, macrocurvatura e microcurvatura.",
+        "texto": "Rayleigh, absorção pela água, macrocurvatura e microcurvatura.",
         "correta": true,
         "explicacao": "Certo. São as causas que a ITU lista na G.Sup39; a perda por curvatura cresce acima de 1550 nm."
       },
       {
-        "texto": "Só sujeira nos conectores.",
+        "texto": "Espalhamento de Rayleigh, absorção pela água e sujeira nos conectores.",
         "correta": false,
-        "explicacao": "Sujeira causa perda nos conectores, não ao longo da fibra."
+        "explicacao": "Sujeira causa perda nos conectores, não ao longo da fibra; faltam as curvaturas."
       },
       {
-        "texto": "Vento e chuva no cabo.",
+        "texto": "Rayleigh, absorção pela água, vento e chuva sobre o cabo.",
         "correta": false,
-        "explicacao": "Podem causar danos, mas não são as causas da atenuação da fibra."
+        "explicacao": "Vento e chuva podem causar danos, mas não são causas de atenuação da fibra."
       },
       {
-        "texto": "A cor da fibra.",
+        "texto": "Rayleigh, absorção pela água, temperatura e idade do cabo.",
         "correta": false,
-        "explicacao": "A cor do revestimento não muda a atenuação."
+        "explicacao": "Temperatura e idade não estão entre as causas listadas; as outras duas são macrocurvatura e microcurvatura."
       }
     ],
     "fontes": [
@@ -195,24 +195,24 @@
     "enunciado": "A perda de um enlace aumentou depois que o fornecedor reorganizou a caixa de emenda, mas nada quebrou. Onde procurar primeiro?",
     "alternativas": [
       {
-        "texto": "Curvas fechadas e fibras apertadas na bandeja.",
-        "correta": true,
-        "explicacao": "Certo. Curvatura e pressão (micro) fazem a luz escapar."
-      },
-      {
-        "texto": "No laser do equipamento.",
+        "texto": "No laser do equipamento, que enfraqueceu com a mexida.",
         "correta": false,
         "explicacao": "O transmissor não mudou; a mudança foi na caixa."
       },
       {
-        "texto": "Na cor dos tubos.",
-        "correta": false,
-        "explicacao": "Cor não causa perda."
+        "texto": "Curvas fechadas e fibras apertadas na bandeja.",
+        "correta": true,
+        "explicacao": "Certo. Curvatura e pressão (micro) fazem a luz escapar; procure curvas fechadas em caixas, bandejas e DIO (G.Sup39)."
       },
       {
-        "texto": "Na altura do poste.",
+        "texto": "Na água dentro do tubo, que absorve a luz em 1550 nm.",
         "correta": false,
-        "explicacao": "Altura não tem relação com a perda óptica."
+        "explicacao": "O pico de absorção pela água é do vidro e fica perto de 1383 nm; não explica perda depois de mexer na caixa."
+      },
+      {
+        "texto": "Na cor dos tubos, que mudou na reorganização.",
+        "correta": false,
+        "explicacao": "Cor não causa perda."
       }
     ],
     "fontes": [

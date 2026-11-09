@@ -5,24 +5,24 @@
     "enunciado": "Um colega diz que a luz \"vai por dentro do plástico\" da fibra. Por onde ela anda de verdade?",
     "alternativas": [
       {
-        "texto": "Pelo núcleo de vidro, presa pela casca de vidro em volta.",
-        "correta": true,
-        "explicacao": "Certo. Núcleo e casca são vidro; a luz anda no núcleo."
-      },
-      {
-        "texto": "Pela capa plástica colorida.",
+        "texto": "Pela capa plástica colorida, que fica em volta do vidro.",
         "correta": false,
-        "explicacao": "A capa (revestimento) só protege o vidro e dá a cor."
+        "explicacao": "A capa (revestimento) só protege o vidro e dá a cor; a luz não anda nela."
       },
       {
-        "texto": "Pela casca, que é o caminho mais largo.",
-        "correta": false,
-        "explicacao": "A casca prende a luz no núcleo; ela não é o caminho."
-      },
-      {
-        "texto": "Pelo ar dentro do tubo loose.",
+        "texto": "Pelo ar dentro do tubo loose, em volta das fibras.",
         "correta": false,
         "explicacao": "A luz anda dentro do vidro da fibra, não no ar do tubo."
+      },
+      {
+        "texto": "Pelo núcleo de vidro, presa pela casca de vidro.",
+        "correta": true,
+        "explicacao": "Certo. Núcleo e casca são vidro; a luz anda no núcleo e a casca a mantém presa (FOA)."
+      },
+      {
+        "texto": "Pela casca de vidro, que é o caminho mais largo da fibra.",
+        "correta": false,
+        "explicacao": "A casca prende a luz no núcleo; ela não é o caminho."
       }
     ],
     "fontes": [
@@ -36,24 +36,24 @@
     "enunciado": "Por que a luz não sai pela lateral da fibra ao longo do caminho?",
     "alternativas": [
       {
-        "texto": "Porque a capa plástica é preta por dentro.",
+        "texto": "Porque a capa plástica é preta por dentro e absorve a luz.",
         "correta": false,
         "explicacao": "A luz nem chega à capa: volta antes, na fronteira núcleo–casca."
       },
       {
-        "texto": "Porque o núcleo tem índice de refração um pouco maior que a casca, e a luz que bate num ângulo raso volta inteira para dentro.",
-        "correta": true,
-        "explicacao": "Certo. É a reflexão interna total."
-      },
-      {
-        "texto": "Porque a fibra é espelhada por fora.",
+        "texto": "Porque a casca tem índice de refração maior que o núcleo, e isso prende a luz.",
         "correta": false,
-        "explicacao": "Não há espelho; o efeito vem da diferença de índice entre os vidros."
+        "explicacao": "É o contrário: o núcleo é que tem índice maior que a casca."
       },
       {
-        "texto": "Porque a luz anda em linha reta e nunca toca a casca.",
+        "texto": "Porque a luz anda em linha reta e nunca chega a tocar a casca.",
         "correta": false,
         "explicacao": "Ela toca a fronteira várias vezes, em zigue-zague, e volta."
+      },
+      {
+        "texto": "Porque o núcleo tem índice de refração maior que a casca, e a luz rasante volta.",
+        "correta": true,
+        "explicacao": "Certo. É a reflexão interna total: a luz que bate na fronteira num ângulo raso volta inteira para dentro (FOA)."
       }
     ],
     "fontes": [
@@ -67,22 +67,22 @@
     "enunciado": "Num conector mal alinhado, parte da luz entra na fibra muito inclinada. O que acontece com essa parte?",
     "alternativas": [
       {
-        "texto": "Fica presa normalmente.",
+        "texto": "Fica presa no núcleo e segue até o fim da fibra.",
         "correta": false,
         "explicacao": "Só a luz que entra dentro do cone de aceitação fica presa."
       },
       {
-        "texto": "Bate na fronteira num ângulo fechado, atravessa para a casca e se perde.",
+        "texto": "Atravessa a fronteira, vai para a casca e se perde.",
         "correta": true,
-        "explicacao": "Certo. Por isso alinhamento e conector limpo importam."
+        "explicacao": "Certo. A luz que entra torta demais bate na fronteira num ângulo fechado e escapa; por isso alinhamento e conector limpo importam (FOA)."
       },
       {
-        "texto": "Volta para o transmissor e aumenta a potência.",
+        "texto": "Volta pelo caminho até o transmissor do equipamento.",
         "correta": false,
-        "explicacao": "Luz perdida não aumenta a potência; vira perda."
+        "explicacao": "Luz perdida não volta para aumentar a potência; vira perda."
       },
       {
-        "texto": "Muda de comprimento de onda.",
+        "texto": "Muda de comprimento de onda e segue pelo núcleo.",
         "correta": false,
         "explicacao": "O comprimento de onda não muda por entrar torta."
       }
@@ -98,24 +98,24 @@
     "enunciado": "O cordão foi dobrado numa curva bem fechada atrás do rack e a potência caiu. Qual a explicação?",
     "alternativas": [
       {
-        "texto": "Na curva, a luz chega à fronteira com ângulo pior e parte dela escapa.",
-        "correta": true,
-        "explicacao": "Certo. É perda por curvatura; desfaça a curva e acomode com folga."
-      },
-      {
-        "texto": "A fibra encolheu e ficou mais curta.",
+        "texto": "A fibra encolheu na dobra e ficou mais curta que antes.",
         "correta": false,
         "explicacao": "A fibra não encolhe; a perda vem da luz que escapa na curva."
       },
       {
-        "texto": "O laser do equipamento enfraqueceu por causa da dobra.",
+        "texto": "O laser do equipamento enfraquece quando o cordão é dobrado.",
         "correta": false,
         "explicacao": "O transmissor não sabe da dobra; a perda é no caminho."
       },
       {
-        "texto": "A cor da capa mudou o comprimento de onda.",
+        "texto": "A cor da capa do cordão muda o comprimento de onda da luz.",
         "correta": false,
         "explicacao": "A cor da capa não tem efeito na luz."
+      },
+      {
+        "texto": "Na curva, a luz chega à fronteira em ângulo ruim e parte escapa.",
+        "correta": true,
+        "explicacao": "Certo. É perda por curvatura; desfaça a curva e acomode o cordão com folga (FOA)."
       }
     ],
     "fontes": [
@@ -191,24 +191,24 @@
     "enunciado": "A luz usada nos links (1310 e 1550 nm) é visível?",
     "alternativas": [
       {
-        "texto": "Sim, vermelha.",
+        "texto": "Sim, é vermelha, igual à do localizador visual de falhas.",
         "correta": false,
         "explicacao": "Vermelho visível é o localizador visual (VFL), não a luz de transmissão."
       },
       {
-        "texto": "Não: é infravermelho, invisível. Nunca olhe a ponta de uma fibra.",
+        "texto": "Só no escuro, quando o link está transmitindo em 1550 nm.",
+        "correta": false,
+        "explicacao": "Continua invisível em qualquer luz, no claro ou no escuro."
+      },
+      {
+        "texto": "Sim, mas só quando a fibra e o conector estão limpos.",
+        "correta": false,
+        "explicacao": "Limpeza não muda o comprimento de onda; a luz segue invisível."
+      },
+      {
+        "texto": "Não, é infravermelha e invisível; não olhe a ponta da fibra.",
         "correta": true,
-        "explicacao": "Certo. É infravermelho: olhando, você não sabe se há luz."
-      },
-      {
-        "texto": "Só à noite.",
-        "correta": false,
-        "explicacao": "Continua invisível em qualquer luz."
-      },
-      {
-        "texto": "Sim, se a fibra estiver limpa.",
-        "correta": false,
-        "explicacao": "Limpeza não muda o comprimento de onda."
+        "explicacao": "Certo. É infravermelho: olhando, você não sabe se há luz. Nunca olhe a ponta de uma fibra ou de um conector (FOA)."
       }
     ],
     "fontes": [
@@ -222,24 +222,24 @@
     "enunciado": "Para que serve a \"abertura numérica\" de uma fibra, no dia a dia?",
     "alternativas": [
       {
-        "texto": "Diz o número de fibras do cabo.",
+        "texto": "Diz quantas fibras o cabo tem, gravado na capa.",
         "correta": false,
         "explicacao": "Número de fibras vem na gravação do cabo (ex.: 12FO)."
       },
       {
-        "texto": "Diz o tamanho do cone de ângulos em que a luz pode entrar e ficar presa.",
+        "texto": "Diz a perda de potência da fibra por quilômetro, em dB/km.",
+        "correta": false,
+        "explicacao": "Perda por km é a atenuação (dB/km), outra coisa."
+      },
+      {
+        "texto": "Diz o tamanho do cone de ângulos em que a luz entra e fica presa.",
         "correta": true,
-        "explicacao": "Certo. Basta a ideia: luz fora do cone se perde."
+        "explicacao": "Certo. Basta a ideia: luz que entra fora do cone atravessa para a casca e se perde (FOA)."
       },
       {
-        "texto": "É o número de série da fibra.",
+        "texto": "Diz a curva mais fechada que a fibra aguenta sem perder luz.",
         "correta": false,
-        "explicacao": "Não tem relação com número de série."
-      },
-      {
-        "texto": "É a perda por quilômetro.",
-        "correta": false,
-        "explicacao": "Perda por km é a atenuação (dB/km)."
+        "explicacao": "Isso é o raio mínimo de curvatura (lição 02-04), não a abertura numérica."
       }
     ],
     "fontes": [

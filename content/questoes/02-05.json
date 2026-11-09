@@ -38,6 +38,11 @@
     "enunciado": "Em que comprimento de onda o XGS-PON manda dados para a ONU (descida)?",
     "alternativas": [
       {
+        "texto": "1270 nm",
+        "correta": false,
+        "explicacao": "1270 nm é a subida do XGS-PON (faixa de 1260 a 1280 nm); a descida é outra."
+      },
+      {
         "texto": "1310 nm",
         "correta": false,
         "explicacao": "1310 nm é a subida do GPON."
@@ -45,17 +50,12 @@
       {
         "texto": "1490 nm",
         "correta": false,
-        "explicacao": "1490 nm é a descida do GPON."
+        "explicacao": "1490 nm é a descida do GPON, não do XGS-PON."
       },
       {
-        "texto": "1577 nm (faixa de 1575 a 1580)",
+        "texto": "1577 nm",
         "correta": true,
-        "explicacao": "Certo. A subida do XGS-PON é em 1260–1280 nm."
-      },
-      {
-        "texto": "850 nm",
-        "correta": false,
-        "explicacao": "850 nm é multimodo."
+        "explicacao": "Certo. A descida do XGS-PON fica em 1575 a 1580 nm, e a subida em 1260 a 1280 nm (ITU G.9807)."
       }
     ],
     "fontes": [
@@ -131,24 +131,24 @@
     "enunciado": "Para que a ITU pensou a banda U (1625 a 1675 nm)?",
     "alternativas": [
       {
-        "texto": "Para internet residencial.",
+        "texto": "Para o tráfego de dados de longo alcance, com menor perda.",
         "correta": false,
-        "explicacao": "Não é faixa de canais de tráfego."
+        "explicacao": "Isso é do 1550 nm, na banda C; a banda U não tem canais de tráfego."
       },
       {
-        "texto": "Para manutenção e testes, numa região que os canais de tráfego não ocupam.",
+        "texto": "Para manutenção e testes, fora dos canais de tráfego.",
         "correta": true,
-        "explicacao": "Certo. Por isso testes em 1625/1650 nm aparecem em redes ativas, com equipamento próprio."
+        "explicacao": "Certo. Por isso testes em 1625 e 1650 nm aparecem em redes ativas, com equipamento próprio (ITU G.Sup39)."
       },
       {
-        "texto": "Para multimodo.",
+        "texto": "Para a descida do GPON e do XGS-PON na mesma fibra.",
         "correta": false,
-        "explicacao": "Multimodo usa 850 e 1300 nm."
+        "explicacao": "As descidas ficam em 1490 nm (banda S) e 1577 nm (banda L)."
       },
       {
-        "texto": "Para o pico d'água.",
+        "texto": "Para a fibra multimodo, junto com as janelas de 850 nm.",
         "correta": false,
-        "explicacao": "O pico d'água fica perto de 1383 nm, na banda E."
+        "explicacao": "Multimodo usa 850 nm, fora do eixo da banda U."
       }
     ],
     "fontes": [
@@ -162,24 +162,24 @@
     "enunciado": "Um técnico diz que viu a luz \"verde\" do 1550 nm na ponta da fibra. O que está errado?",
     "alternativas": [
       {
-        "texto": "1550 nm é infravermelho: não dá para ver. Ele pode ter visto o VFL ou outra coisa, e não deve olhar a ponta.",
+        "texto": "1550 nm é vermelho, e não verde, igual ao do localizador visual.",
+        "correta": false,
+        "explicacao": "1550 nm é invisível; o vermelho visível é o do localizador (VFL)."
+      },
+      {
+        "texto": "1550 nm é verde, sim, e dá para ver quando a fibra está limpa.",
+        "correta": false,
+        "explicacao": "1550 nm está no infravermelho; limpeza não o torna visível."
+      },
+      {
+        "texto": "1550 nm só é visível de dia, quando há luz do sol.",
+        "correta": false,
+        "explicacao": "Continua invisível em qualquer luz."
+      },
+      {
+        "texto": "1550 nm é infravermelho e invisível, então não se olha a ponta.",
         "correta": true,
-        "explicacao": "Certo. Luz de transmissão é invisível: olhando, não se sabe se há luz, e ela pode ferir o olho."
-      },
-      {
-        "texto": "1550 nm é azul, não verde.",
-        "correta": false,
-        "explicacao": "1550 nm é invisível."
-      },
-      {
-        "texto": "Nada: 1550 é verde mesmo.",
-        "correta": false,
-        "explicacao": "1550 nm está no infravermelho."
-      },
-      {
-        "texto": "Ele só podia ver de dia.",
-        "correta": false,
-        "explicacao": "Continua invisível."
+        "explicacao": "Certo. Luz de transmissão é invisível: olhando, não se sabe se há luz, e ela pode ferir o olho. Ele pode ter visto o VFL ou outra coisa (FOA)."
       }
     ],
     "fontes": [
@@ -193,24 +193,24 @@
     "enunciado": "Qual comprimento de onda está associado ao pico de absorção da água na fibra?",
     "alternativas": [
       {
+        "texto": "Cerca de 1310 nm.",
+        "correta": false,
+        "explicacao": "1310 nm é da banda O: Ethernet LX/LR e subida do GPON."
+      },
+      {
         "texto": "Cerca de 1383 nm.",
         "correta": true,
-        "explicacao": "Certo. A G.652.D limita a perda nessa região."
+        "explicacao": "Certo. É o pico d'água, na banda E; a G.652.D limita a perda nessa região (ITU G.Sup39)."
       },
       {
-        "texto": "850 nm.",
-        "correta": false,
-        "explicacao": "850 nm é a janela da multimodo."
-      },
-      {
-        "texto": "1550 nm.",
+        "texto": "Cerca de 1550 nm.",
         "correta": false,
         "explicacao": "1550 nm é a região de menor perda."
       },
       {
-        "texto": "1625 nm.",
+        "texto": "Cerca de 1625 nm.",
         "correta": false,
-        "explicacao": "1625 nm é região de teste."
+        "explicacao": "1625 nm é região de teste, na fronteira entre as bandas L e U."
       }
     ],
     "fontes": [

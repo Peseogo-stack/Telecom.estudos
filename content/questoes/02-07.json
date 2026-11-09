@@ -98,24 +98,24 @@
     "enunciado": "Uma ONU GPON classe B+ tem sensibilidade de −27 dBm. Isso equivale a quanto?",
     "alternativas": [
       {
-        "texto": "Cerca de 0,002 mW (2 µW)",
+        "texto": "0,02 mW",
+        "correta": false,
+        "explicacao": "0,02 mW seria cerca de −17 dBm: erro de um fator de 10."
+      },
+      {
+        "texto": "0,0002 mW",
+        "correta": false,
+        "explicacao": "0,0002 mW seria cerca de −37 dBm: erro de um fator de 10."
+      },
+      {
+        "texto": "0,002 mW",
         "correta": true,
-        "explicacao": "Certo. 10^(−27/10) ≈ 0,002 mW."
+        "explicacao": "Certo. 10^(−27/10) ≈ 0,002 mW, ou 2 µW: a sensibilidade especificada de uma ONU GPON B+ (ITU G.984.2, FS)."
       },
       {
-        "texto": "27 mW",
+        "texto": "0,2 mW",
         "correta": false,
-        "explicacao": "Valor alto demais e positivo."
-      },
-      {
-        "texto": "0,27 mW",
-        "correta": false,
-        "explicacao": "Seria cerca de −5,7 dBm."
-      },
-      {
-        "texto": "−27 mW",
-        "correta": false,
-        "explicacao": "Potência em mW não é negativa."
+        "explicacao": "0,2 mW seria cerca de −7 dBm, bem mais forte que a sensibilidade."
       }
     ],
     "fontes": [
@@ -161,24 +161,24 @@
     "enunciado": "Um colega somou \"−10 dBm + −10 dBm = −20 dBm\" para dois sinais. O que está errado?",
     "alternativas": [
       {
-        "texto": "Potências em dBm não se somam assim; o que se soma são perdas em dB.",
+        "texto": "Nada, está certo: dBm com dBm se soma direto.",
+        "correta": false,
+        "explicacao": "Somar dBm assim não faz sentido físico: potências não se somam desse jeito."
+      },
+      {
+        "texto": "Só a unidade: o certo é −20 dB, e não −20 dBm.",
+        "correta": false,
+        "explicacao": "Trocar a unidade não conserta a conta: potências em dBm não se somam assim."
+      },
+      {
+        "texto": "Devia ser −10 dBm, pois somar sinais iguais não muda nada.",
+        "correta": false,
+        "explicacao": "Dois sinais iguais somados dão o dobro da potência, ou seja, +3 dB (cerca de −7 dBm)."
+      },
+      {
+        "texto": "Não se somam dBm assim; o que se soma são perdas em dB.",
         "correta": true,
-        "explicacao": "Certo. Dois sinais iguais somados dão o dobro da potência, ou seja, +3 dB (cerca de −7 dBm)."
-      },
-      {
-        "texto": "Nada, está certo.",
-        "correta": false,
-        "explicacao": "Somar dBm assim não faz sentido físico."
-      },
-      {
-        "texto": "Deveria dar −100 dBm.",
-        "correta": false,
-        "explicacao": "Também não."
-      },
-      {
-        "texto": "Deveria dar 0 dBm.",
-        "correta": false,
-        "explicacao": "Também não."
+        "explicacao": "Certo. Dois sinais iguais somados dão o dobro da potência, ou seja, +3 dB (cerca de −7 dBm); já as perdas em dB se somam (FOA)."
       }
     ],
     "fontes": [
@@ -192,24 +192,24 @@
     "enunciado": "Um enlace perdeu 3 dB a mais depois de uma obra. O que isso significa em potência?",
     "alternativas": [
       {
+        "texto": "Chega 70% da luz que chegava antes.",
+        "correta": false,
+        "explicacao": "70% seria uma perda de cerca de 1,5 dB; 3 dB já é metade."
+      },
+      {
         "texto": "Chega metade da luz que chegava antes.",
         "correta": true,
-        "explicacao": "Certo. −3 dB = metade."
+        "explicacao": "Certo. −3 dB = metade da potência (FOA)."
       },
       {
-        "texto": "Quase nada mudou.",
+        "texto": "Chega 3 mW a menos do que chegava antes.",
         "correta": false,
-        "explicacao": "3 dB já é metade da potência."
+        "explicacao": "dB é relação, não mW: 3 dB de perda é metade da potência, qualquer que seja o valor inicial."
       },
       {
-        "texto": "Chega um terço.",
+        "texto": "Chega um terço da luz que chegava antes.",
         "correta": false,
-        "explicacao": "Um terço seria cerca de −4,8 dB."
-      },
-      {
-        "texto": "Chega o dobro.",
-        "correta": false,
-        "explicacao": "Perda diminui a potência."
+        "explicacao": "Um terço seria cerca de −4,8 dB; 3 dB é metade."
       }
     ],
     "fontes": [
@@ -223,24 +223,24 @@
     "enunciado": "Qual a diferença entre dB e dBm?",
     "alternativas": [
       {
-        "texto": "dB é relação (perda ou ganho); dBm é potência, comparada com 1 mW.",
-        "correta": true,
-        "explicacao": "Certo. Relatório de perda usa dB; tela de equipamento mostra dBm."
+        "texto": "dB é uma potência, e dBm é uma relação.",
+        "correta": false,
+        "explicacao": "É o contrário: dB é relação e dBm é potência."
       },
       {
-        "texto": "São a mesma coisa.",
+        "texto": "dB serve para monomodo, e dBm serve para multimodo.",
+        "correta": false,
+        "explicacao": "Os dois valem para qualquer fibra; a diferença é relação contra potência."
+      },
+      {
+        "texto": "São a mesma unidade, só escritas de formas diferentes.",
         "correta": false,
         "explicacao": "Um é relação, o outro é potência absoluta."
       },
       {
-        "texto": "dBm é usado só em multimodo.",
-        "correta": false,
-        "explicacao": "Vale para qualquer fibra."
-      },
-      {
-        "texto": "dB é potência e dBm é perda.",
-        "correta": false,
-        "explicacao": "É o contrário."
+        "texto": "dB é uma relação, e dBm é uma potência comparada a 1 mW.",
+        "correta": true,
+        "explicacao": "Certo. dB serve para perda ou ganho (relatório de teste); dBm é potência, como na tela do equipamento (FOA)."
       }
     ],
     "fontes": [

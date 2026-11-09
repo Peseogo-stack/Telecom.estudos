@@ -36,24 +36,24 @@
     "enunciado": "Por que a rede externa da distribuidora, entre unidades, é monomodo?",
     "alternativas": [
       {
-        "texto": "Porque a monomodo alcança quilômetros com pouca perda e sem dispersão modal.",
+        "texto": "Porque a monomodo tem núcleo maior e carrega mais luz.",
+        "correta": false,
+        "explicacao": "O núcleo da monomodo é menor (~9 µm); o que importa é a menor perda e a ausência de dispersão modal."
+      },
+      {
+        "texto": "Porque a monomodo usa 850 nm, que perde menos na rede externa.",
+        "correta": false,
+        "explicacao": "850 nm é típico da multimodo (SX); a monomodo usa 1310 e 1550 nm."
+      },
+      {
+        "texto": "Porque a multimodo perde menos por quilômetro e alcança mais.",
+        "correta": false,
+        "explicacao": "É o contrário: a multimodo perde cerca de 3,0 a 3,5 dB/km e alcança centenas de metros (FOA, Fluke)."
+      },
+      {
+        "texto": "Porque a monomodo alcança quilômetros e não tem dispersão modal.",
         "correta": true,
-        "explicacao": "Certo. A multimodo alcança centenas de metros."
-      },
-      {
-        "texto": "Porque a multimodo é proibida em poste.",
-        "correta": false,
-        "explicacao": "Não é questão de proibição: é alcance."
-      },
-      {
-        "texto": "Porque a monomodo tem núcleo maior.",
-        "correta": false,
-        "explicacao": "O núcleo da monomodo é menor (~9 µm)."
-      },
-      {
-        "texto": "Porque a monomodo usa 850 nm.",
-        "correta": false,
-        "explicacao": "850 nm é típico da multimodo."
+        "explicacao": "Certo. Distâncias de quilômetros, perda muito menor por km e nenhuma dispersão modal; a multimodo alcança centenas de metros (FOA)."
       }
     ],
     "fontes": [
@@ -98,24 +98,24 @@
     "enunciado": "Alguém ligou um transceptor SX (850 nm, multimodo) numa ponta e um LX (1310 nm, monomodo) na outra. O link sobe?",
     "alternativas": [
       {
-        "texto": "Sim, se o cabo for curto.",
-        "correta": false,
-        "explicacao": "Comprimento de onda e tipo de fibra diferentes não conversam."
-      },
-      {
-        "texto": "Não: transceptores e fibra precisam ser do mesmo tipo nas duas pontas.",
+        "texto": "Não, o transceptor e a fibra precisam ser do mesmo tipo.",
         "correta": true,
-        "explicacao": "Certo. Monomodo e multimodo não se misturam."
+        "explicacao": "Certo. Monomodo e multimodo não se misturam: transceptor, cordão e fibra têm de ser do mesmo tipo nas duas pontas. Confirme na empresa (FOA)."
       },
       {
-        "texto": "Sim, com um cordão amarelo.",
+        "texto": "Sim, se o cabo for curto, de poucos metros de cordão.",
+        "correta": false,
+        "explicacao": "Comprimento de onda e tipo de fibra diferentes não conversam, seja o cabo curto ou longo."
+      },
+      {
+        "texto": "Sim, se o cordão amarelo ligar as duas pontas do link.",
         "correta": false,
         "explicacao": "Trocar a cor do cordão não resolve a incompatibilidade."
       },
       {
-        "texto": "Só à noite.",
+        "texto": "Sim, se a taxa do link for baixa, de apenas 1 Gbit/s.",
         "correta": false,
-        "explicacao": "Não tem relação com horário."
+        "explicacao": "A taxa não resolve: SX (850 nm, multimodo) e LX (1310 nm, monomodo) não conversam."
       }
     ],
     "fontes": [
@@ -129,24 +129,24 @@
     "enunciado": "O que é a dispersão modal?",
     "alternativas": [
       {
-        "texto": "Na multimodo, os caminhos de luz chegam em tempos diferentes e o pulso espalha.",
-        "correta": true,
-        "explicacao": "Certo. Ela limita distância e velocidade."
-      },
-      {
-        "texto": "Perda causada por conector sujo.",
-        "correta": false,
-        "explicacao": "Sujeira causa perda, mas isso não é dispersão modal."
-      },
-      {
-        "texto": "A luz mudando de cor ao longo do cabo.",
-        "correta": false,
-        "explicacao": "Não é mudança de cor."
-      },
-      {
-        "texto": "Um problema só da monomodo.",
+        "texto": "Na monomodo, o pulso espalha por causa do núcleo fino.",
         "correta": false,
         "explicacao": "A monomodo praticamente não tem dispersão modal."
+      },
+      {
+        "texto": "Perda de potência causada por conector sujo ou dobra.",
+        "correta": false,
+        "explicacao": "Sujeira e dobra causam perda, mas isso não é dispersão modal."
+      },
+      {
+        "texto": "Na multimodo, os caminhos de luz chegam em tempos diferentes.",
+        "correta": true,
+        "explicacao": "Certo. Por isso o pulso espalha, e isso limita velocidade e distância (FOA)."
+      },
+      {
+        "texto": "A luz mudando de cor, ou de comprimento de onda, no cabo.",
+        "correta": false,
+        "explicacao": "Não é mudança de cor: é diferença de tempo entre os caminhos."
       }
     ],
     "fontes": [
@@ -191,24 +191,24 @@
     "enunciado": "Um cabo externo preto chegou sem etiqueta. Como saber se é monomodo?",
     "alternativas": [
       {
-        "texto": "Pela cor preta da capa.",
+        "texto": "Pela cor do cordão ligado nele: laranja é monomodo.",
         "correta": false,
-        "explicacao": "Cabo externo costuma ser preto qualquer que seja a fibra."
+        "explicacao": "Laranja é multimodo (OM1/OM2); monomodo é amarelo, e em cabo externo preto a cor não diz nada."
       },
       {
         "texto": "Pela gravação na capa e pela ficha do cabo.",
         "correta": true,
-        "explicacao": "Certo. A cor da capa só ajuda em cordões e cabos internos."
+        "explicacao": "Certo. A cor da capa só ajuda em cordões e cabos internos; cabo externo costuma ser preto qualquer que seja a fibra (FOA)."
       },
       {
-        "texto": "Pelo peso.",
+        "texto": "Pela perda medida: se der 3,5 dB/km, é monomodo.",
         "correta": false,
-        "explicacao": "Peso não indica o tipo de fibra."
+        "explicacao": "3,5 dB/km é ordem de grandeza de multimodo; monomodo externo fica em até 0,5 dB/km."
       },
       {
-        "texto": "Pelo cheiro da geleia.",
+        "texto": "Pela cor preta da capa, que indica monomodo.",
         "correta": false,
-        "explicacao": "Não é um critério."
+        "explicacao": "Cabo externo costuma ser preto qualquer que seja a fibra."
       }
     ],
     "fontes": [
@@ -222,24 +222,24 @@
     "enunciado": "OS2 e G.652.D são a mesma coisa?",
     "alternativas": [
       {
-        "texto": "Sim, são sinônimos.",
+        "texto": "Sim, são dois nomes da mesma fibra, usados em países diferentes.",
         "correta": false,
         "explicacao": "São classificações diferentes, de entidades diferentes."
       },
       {
-        "texto": "Não: OS2 é uma classe de cabo (TIA/ISO); G.652.D é a recomendação ITU da fibra usada nesses cabos.",
-        "correta": true,
-        "explicacao": "Certo. Na ficha você pode ver as duas."
+        "texto": "Não, OS2 é a norma ITU da fibra e G.652.D é a classe de cabo.",
+        "correta": false,
+        "explicacao": "Está trocado: OS2 é a classe de cabo (TIA/ISO) e G.652.D é a norma ITU da fibra."
       },
       {
-        "texto": "Não: OS2 é multimodo.",
+        "texto": "Não, OS2 é uma classe de cabo multimodo e G.652.D é monomodo.",
         "correta": false,
         "explicacao": "OS1 e OS2 são monomodo."
       },
       {
-        "texto": "Sim, mas só para cabos internos.",
-        "correta": false,
-        "explicacao": "Não são sinônimos."
+        "texto": "Não, OS2 é uma classe de cabo e G.652.D é a norma ITU da fibra.",
+        "correta": true,
+        "explicacao": "Certo. Uma fibra G.652.D é usada em cabos OS2; na ficha você pode ver as duas (Prysmian)."
       }
     ],
     "fontes": [

@@ -129,24 +129,24 @@
     "enunciado": "Você precisa acomodar fibras numa bandeja apertada. A fibra é G.657.A1. O que fazer?",
     "alternativas": [
       {
-        "texto": "Dobrar o quanto precisar: G.657 não perde em curva.",
-        "correta": false,
-        "explicacao": "Perde menos, mas tem raio mínimo (10 mm na A1)."
-      },
-      {
-        "texto": "Respeitar o raio mínimo (10 mm) e, de preferência, deixar folga conforme o fabricante da caixa.",
+        "texto": "Respeitar o raio de 10 mm, com folga conforme o fabricante.",
         "correta": true,
-        "explicacao": "Certo. Raio mínimo é limite, não meta."
+        "explicacao": "Certo. Raio mínimo é limite, não meta: na bandeja, acomode a fibra com folga, conforme o fabricante da caixa. Confirme na empresa (ITU G.657)."
       },
       {
-        "texto": "Usar fita para prender bem apertado.",
+        "texto": "Dobrar o quanto precisar, já que a G.657 não perde em curva.",
+        "correta": false,
+        "explicacao": "Ela perde menos, mas tem raio mínimo (10 mm na A1)."
+      },
+      {
+        "texto": "Prender a fibra bem apertada com fita para ela não soltar.",
         "correta": false,
         "explicacao": "Pressão causa microcurvatura e perda."
       },
       {
-        "texto": "Cortar e emendar para não dobrar.",
+        "texto": "Cortar a fibra e emendar de novo para evitar a dobra.",
         "correta": false,
-        "explicacao": "Emenda a mais é perda a mais; acomode corretamente."
+        "explicacao": "Emenda a mais é perda a mais; acomode a fibra com folga."
       }
     ],
     "fontes": [
@@ -160,24 +160,24 @@
     "enunciado": "O que o \"D\" da G.652.D garante a mais que a G.652.B?",
     "alternativas": [
       {
-        "texto": "Baixa perda também perto de 1383 nm (pico d'água), liberando a faixa de 1260 a 1625 nm.",
+        "texto": "Raio de curvatura de 5 mm no lugar do teste de 30 mm.",
+        "correta": false,
+        "explicacao": "Raio de 5 mm é da G.657.B3; o teste da G.652.D usa raio de 30 mm."
+      },
+      {
+        "texto": "Baixa perda também perto de 1383 nm, o pico d'água.",
         "correta": true,
-        "explicacao": "Certo. A norma limita a perda em 1383 nm a 0,40 dB/km após envelhecimento por hidrogênio."
+        "explicacao": "Certo. Isso libera a faixa de 1260 a 1625 nm; a norma limita a perda em 1383 nm a 0,40 dB/km (ITU G.652)."
       },
       {
-        "texto": "Fibra multimodo.",
+        "texto": "Atenuação de até 0,30 dB/km em toda a faixa de 1260 a 1625 nm.",
         "correta": false,
-        "explicacao": "G.652 é monomodo."
+        "explicacao": "0,30 dB/km vale só de 1530 a 1565 nm; nas outras faixas o máximo é 0,40 ou 0,47 dB/km."
       },
       {
-        "texto": "Raio de curvatura de 5 mm.",
+        "texto": "Núcleo maior, de 50 µm, como o da fibra multimodo.",
         "correta": false,
-        "explicacao": "Isso é da G.657.B3."
-      },
-      {
-        "texto": "Conector APC de fábrica.",
-        "correta": false,
-        "explicacao": "Não tem relação com conector."
+        "explicacao": "G.652 é monomodo, com núcleo de cerca de 9 µm."
       }
     ],
     "fontes": [
@@ -191,24 +191,24 @@
     "enunciado": "Um cabo interno de 300 m mediu atenuação equivalente a 0,8 dB/km em 1310 nm. Isso reprova pela G.652.D (0,40 dB/km)?",
     "alternativas": [
       {
-        "texto": "Sim, passou do limite.",
+        "texto": "Sim, o limite de 0,40 dB/km vale para qualquer cabo da rede.",
         "correta": false,
         "explicacao": "A própria G.652 diz que os limites de atenuação não valem para cordões, cabos internos e drops."
       },
       {
-        "texto": "Não: os limites de atenuação da G.652.D não se aplicam a cordões, cabos internos e drops.",
+        "texto": "Sim, mas só porque a medida foi em 1310 nm e não em 1550 nm.",
+        "correta": false,
+        "explicacao": "O motivo é o tipo de cabo, não o comprimento de onda."
+      },
+      {
+        "texto": "Não, porque cabo interno tem limite de 1,0 dB/km na G.652.D.",
+        "correta": false,
+        "explicacao": "1,0 dB/km é referência TIA para cabo interno, não um limite da G.652.D."
+      },
+      {
+        "texto": "Não, os limites não valem para cordões, cabos internos e drops.",
         "correta": true,
-        "explicacao": "Certo. Em cabo curto, a atenuação por quilômetro é difícil de medir com precisão: vale o valor do cabo de origem, e o que pesa são os conectores."
-      },
-      {
-        "texto": "Sim, se for em 1550 nm.",
-        "correta": false,
-        "explicacao": "O motivo é o tipo de cabo, não o λ."
-      },
-      {
-        "texto": "Depende da cor do cordão.",
-        "correta": false,
-        "explicacao": "Cor não é critério."
+        "explicacao": "Certo. Em cabo curto, a atenuação por quilômetro é difícil de medir com precisão: vale o valor do cabo de origem, e o que pesa são os conectores (ITU G.652)."
       }
     ],
     "fontes": [
@@ -223,24 +223,24 @@
     "enunciado": "Qual é a diferença entre as G.657 tipo A e tipo B?",
     "alternativas": [
       {
-        "texto": "A atende tudo da G.652.D (conforme); B é compatível, para o fim da rede.",
-        "correta": true,
-        "explicacao": "Certo. B3 aceita curva de até 5 mm."
+        "texto": "A é para o fim da rede, dentro de prédios, e B para a rede externa.",
+        "correta": false,
+        "explicacao": "É o contrário: os tipos A podem substituir a G.652.D em qualquer lugar e os B são para o fim da rede."
       },
       {
-        "texto": "A é multimodo e B é monomodo.",
+        "texto": "A atende tudo da G.652.D; B é só compatível, para o fim da rede.",
+        "correta": true,
+        "explicacao": "Certo. A é conforme com a G.652.D; B3 é compatível e aceita curva de até 5 mm (ITU G.657)."
+      },
+      {
+        "texto": "A é multimodo e B é monomodo, com raio de curvatura menor.",
         "correta": false,
         "explicacao": "As duas são monomodo."
       },
       {
-        "texto": "A é para poste e B é para OPGW.",
+        "texto": "A aceita curva de até 5 mm e B de até 10 mm.",
         "correta": false,
-        "explicacao": "Não é essa a divisão."
-      },
-      {
-        "texto": "Não há diferença.",
-        "correta": false,
-        "explicacao": "A diferença está na conformidade e no raio mínimo."
+        "explicacao": "Os raios não são esses: A1 é 10 mm, A2 é 7,5 mm e B3 é 5 mm."
       }
     ],
     "fontes": [

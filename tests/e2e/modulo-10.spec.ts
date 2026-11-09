@@ -17,7 +17,7 @@ for (const id of ['10-03', '10-04']) {
 
 test('10-03: termo do glossário abre a definição de VFL', async ({ page }) => {
   await page.goto('./#/licao/10-03');
-  await page.getByRole('link', { name: /localizador visual de falhas \(VFL\)/i }).first().click();
+  await page.getByRole('link', { name: 'VFL', exact: true }).first().click();
   await expect(page).toHaveURL(/glossario\?t=vfl/);
   await expect(page.getByText('Classe 2', { exact: false }).first()).toBeVisible();
 });

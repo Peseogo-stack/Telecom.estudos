@@ -22,16 +22,20 @@ test.describe('Checklists de campo (P1)', () => {
     await expect(page.locator('h1')).toContainText('Antes de subir no poste');
     await expect(page.locator('.aviso-seguranca')).toContainText('Lembrete de segurança');
 
-    // Inicialmente 0 de 12 itens
+    // Inicialmente 0 de 13 itens
     const contador = page.locator('#t-progresso');
-    await expect(contador).toContainText('0 de 12 itens verificados');
+    await expect(contador).toContainText('0 de 13 itens verificados');
 
     // Marca o primeiro item (Autorização e ASO)
     const primeiroCheckbox = page.locator('input[type="checkbox"]').first();
     await expect(primeiroCheckbox).not.toBeChecked();
     await primeiroCheckbox.click();
     await expect(primeiroCheckbox).toBeChecked();
-    await expect(contador).toContainText('1 de 12 itens verificados');
+    await expect(contador).toContainText('1 de 13 itens verificados');
+
+    // Item que varia de empresa para empresa mostra o selo (APR e PT é o 2º)
+    await expect(page.locator('fieldset ul.lista-limpa > li').nth(1).locator('.selo-confirmar')).toHaveText('Confirmar na empresa');
+    await expect(page.locator('fieldset ul.lista-limpa > li').first().locator('.selo-confirmar')).toHaveCount(0);
 
     // Abre o detalhe "Por quê?"
     const detalhe = page.locator('details').first();
@@ -58,7 +62,7 @@ test.describe('Checklists de campo (P1)', () => {
     await page.getByRole('button', { name: /limpar marcações/i }).click();
     await expect(page.locator('input[type="checkbox"]').first()).not.toBeChecked();
     await expect(page.locator('#campo-observacoes')).toHaveValue('');
-    await expect(contador).toContainText('0 de 12 itens verificados');
+    await expect(contador).toContainText('0 de 13 itens verificados');
   });
 
   for (const rota of [

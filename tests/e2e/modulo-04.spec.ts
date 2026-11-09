@@ -16,29 +16,34 @@ for (const id of ['04-01', '04-03', '04-05']) {
 
 test('04-01: termo OLT no glossário abre definição', async ({ page }) => {
   await page.goto('./#/licao/04-01');
-  await page.getByRole('link', { name: /OLT \(Terminal de Linha Óptico\)/i }).first().click();
+  await page.getByRole('link', { name: 'OLT', exact: true }).first().click();
   await expect(page).toHaveURL(/glossario\?t=olt/);
-  await expect(page.getByText('subestação, POP ou central', { exact: false }).first()).toBeVisible();
+  await expect(page.getByText('Equipamento ativo da central', { exact: false }).first()).toBeVisible();
 });
 
 test('04-03: tabela de splitters exibe valores máximos de ficha e link de conversor', async ({ page }) => {
   await page.goto('./#/licao/04-03');
-  const tabela = page.locator('.prosa table');
-  await expect(tabela).toContainText('10,5 dB');
-  await expect(tabela).toContainText('13,7 dB');
-  await expect(tabela).toContainText('21,0 dB');
+  // 1ª tabela: perda ideal; 2ª: máximos das fichas Intelbras, SENKO e FS (sem conectores)
+  await expect(page.locator('.prosa table').first()).toContainText('9,03 dB');
+  const fichas = page.locator('.prosa table').nth(1);
+  await expect(fichas).toContainText('10,5 dB');
+  await expect(fichas).toContainText('10,9 dB');
+  await expect(fichas).toContainText('17,3 dB');
+  await expect(fichas).toContainText('21,0 dB');
   await page.getByRole('link', { name: /conversor e splitters/i }).first().click();
   await expect(page).toHaveURL(/ferramentas\/conversor/);
 });
 
 test('04-05: tabela GPON B+ exibe potências da norma e link para orçamento', async ({ page }) => {
   await page.goto('./#/licao/04-05');
-  const tabela = page.locator('.prosa table');
-  await expect(tabela).toContainText('+1,5 dBm a +5,0 dBm');
-  await expect(tabela).toContainText('−27,0 dBm');
-  await expect(tabela).toContainText('−8,0 dBm');
-  await expect(tabela).toContainText('13,0 dB a 28,0 dB');
-  await page.locator('a[href*="ferramentas/orcamento"]').click();
+  const limites = page.locator('.prosa table').first();
+  await expect(limites).toContainText('+1,5 a +5 dBm');
+  await expect(limites).toContainText('−27 dBm');
+  await expect(limites).toContainText('−8 dBm');
+  await expect(limites).toContainText('13 a 28 dB');
+  // O exemplo é o mesmo que abre a ferramenta: 24,9 dB de perdas
+  await expect(page.locator('.prosa table').nth(1)).toContainText('24,9 dB');
+  await page.locator('a[href*="ferramentas/orcamento"]').first().click();
   await expect(page).toHaveURL(/ferramentas\/orcamento/);
 });
 

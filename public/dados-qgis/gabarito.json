@@ -1,0 +1,309 @@
+{
+  "aviso": "DADOS FICTÍCIOS para exercício. Não representam nenhuma rede, poste, cabo ou empresa real.",
+  "nota": "Os achados abaixo são plantados de propósito para exercício. Não são regra de norma. Alguns se sobrepõem: os 3 postes com 6 ocupantes são os mesmos 3 onde aparece o ocupante de contrato vencido.",
+  "local": {
+    "nome": "Vila Fictícia",
+    "referencia": "Estação Ecológica de Maracá (Roraima), área sem estradas nem linhas de energia mapeadas (OpenStreetMap, 10/11/2026)",
+    "centro_wgs84": {
+      "lat": 3.4,
+      "lon": -61.65
+    },
+    "centro_epsg31980": {
+      "e": 649972.42,
+      "n": 10375911.38
+    },
+    "centro_epsg31974": {
+      "e": 649972.42,
+      "n": 375911.38
+    },
+    "caixa_epsg31980": {
+      "min_e": 649372.42,
+      "max_e": 650572.42,
+      "min_n": 10375411.38,
+      "max_n": 10376411.38
+    },
+    "caixa_wgs84": {
+      "lon_min": -61.65540627465812,
+      "lon_max": -61.64459372939546,
+      "lat_min": 3.3954701619299312,
+      "lat_max": 3.404529797129122
+    },
+    "src_geopackage": "EPSG:31980",
+    "src_kml": "EPSG:4326",
+    "src_csv": "EPSG:31974 (não declarado no arquivo, de propósito); y do CSV = N do poste - 10.000.000 m, com desvio de 1 a 4 m"
+  },
+  "parametros_do_exercicio": {
+    "dist_bt_minima_m": 0.6,
+    "altura_minima_travessia_m": 5,
+    "ocupantes_maximo_por_poste": 5,
+    "tolerancia_comprimento_projeto_pct": 5,
+    "nota": "valores do exercício; a regra real é a da norma da distribuidora"
+  },
+  "totais": {
+    "postes": 66,
+    "vaos": 58,
+    "cabos": 12,
+    "caixas": 14,
+    "quadras": 6,
+    "ocupantes": 6,
+    "ocupacoes": 126,
+    "pontos_no_csv": 63
+  },
+  "irregularidades": [
+    {
+      "tipo": "ponto_sem_plaqueta",
+      "onde": "PF-0033",
+      "detalhe": "Operadora Beta sem plaqueta (plaqueta = 'nao')"
+    },
+    {
+      "tipo": "ponto_sem_plaqueta",
+      "onde": "PF-0055",
+      "detalhe": "Operadora Alfa sem plaqueta (plaqueta = 'nao')"
+    },
+    {
+      "tipo": "ponto_sem_plaqueta",
+      "onde": "PF-0005",
+      "detalhe": "Operadora Alfa sem plaqueta (plaqueta = 'nao')"
+    },
+    {
+      "tipo": "ponto_sem_plaqueta",
+      "onde": "PF-0009",
+      "detalhe": "Operadora Beta sem plaqueta (plaqueta = 'nao')"
+    },
+    {
+      "tipo": "ponto_sem_plaqueta",
+      "onde": "PF-0016",
+      "detalhe": "Operadora Alfa sem plaqueta (plaqueta = 'nao')"
+    },
+    {
+      "tipo": "ocupante_sem_identificacao",
+      "onde": "PF-0022",
+      "detalhe": "'Sem identificação' (sem contrato) presente neste poste"
+    },
+    {
+      "tipo": "ocupante_sem_identificacao",
+      "onde": "PF-0007",
+      "detalhe": "'Sem identificação' (sem contrato) presente neste poste"
+    },
+    {
+      "tipo": "ocupante_sem_identificacao",
+      "onde": "PF-0020",
+      "detalhe": "'Sem identificação' (sem contrato) presente neste poste"
+    },
+    {
+      "tipo": "ocupante_sem_identificacao",
+      "onde": "PF-0063",
+      "detalhe": "'Sem identificação' (sem contrato) presente neste poste"
+    },
+    {
+      "tipo": "ocupante_contrato_vencido",
+      "onde": "PF-0022",
+      "detalhe": "Provedor Delta (contrato vencido) presente neste poste"
+    },
+    {
+      "tipo": "ocupante_contrato_vencido",
+      "onde": "PF-0007",
+      "detalhe": "Provedor Delta (contrato vencido) presente neste poste"
+    },
+    {
+      "tipo": "ocupante_contrato_vencido",
+      "onde": "PF-0020",
+      "detalhe": "Provedor Delta (contrato vencido) presente neste poste"
+    },
+    {
+      "tipo": "poste_com_mais_de_5_ocupantes",
+      "onde": "PF-0022",
+      "detalhe": "6 ocupantes"
+    },
+    {
+      "tipo": "poste_com_mais_de_5_ocupantes",
+      "onde": "PF-0007",
+      "detalhe": "6 ocupantes"
+    },
+    {
+      "tipo": "poste_com_mais_de_5_ocupantes",
+      "onde": "PF-0020",
+      "detalhe": "6 ocupantes"
+    },
+    {
+      "tipo": "dist_bt_abaixo_do_limite",
+      "onde": "PF-0048",
+      "detalhe": "Provedor Gama: dist_bt_m = 0.50 (limite do exercício 0,60)"
+    },
+    {
+      "tipo": "dist_bt_abaixo_do_limite",
+      "onde": "PF-0021",
+      "detalhe": "Provedor Épsilon: dist_bt_m = 0.45 (limite do exercício 0,60)"
+    },
+    {
+      "tipo": "dist_bt_abaixo_do_limite",
+      "onde": "PF-0061",
+      "detalhe": "Operadora Alfa: dist_bt_m = 0.46 (limite do exercício 0,60)"
+    },
+    {
+      "tipo": "dist_bt_abaixo_do_limite",
+      "onde": "PF-0062",
+      "detalhe": "Operadora Alfa: dist_bt_m = 0.38 (limite do exercício 0,60)"
+    },
+    {
+      "tipo": "altura_baixa_em_travessia",
+      "onde": "PF-0050",
+      "detalhe": "Provedor Gama: altura_fixacao_m = 4.45 (limite do exercício 5,0), poste de vão com travessia"
+    },
+    {
+      "tipo": "altura_baixa_em_travessia",
+      "onde": "PF-0058",
+      "detalhe": "Operadora Alfa: altura_fixacao_m = 4.52 (limite do exercício 5,0), poste de vão com travessia"
+    },
+    {
+      "tipo": "altura_baixa_em_travessia",
+      "onde": "PF-0057",
+      "detalhe": "Operadora Beta: altura_fixacao_m = 4.86 (limite do exercício 5,0), poste de vão com travessia"
+    },
+    {
+      "tipo": "reserva_no_poste",
+      "onde": "PF-0037",
+      "detalhe": "Operadora Alfa: sobra de cabo enrolada no poste"
+    },
+    {
+      "tipo": "reserva_no_poste",
+      "onde": "PF-0043",
+      "detalhe": "Provedor Épsilon: sobra de cabo enrolada no poste"
+    },
+    {
+      "tipo": "reserva_no_poste",
+      "onde": "PF-0027",
+      "detalhe": "Operadora Beta: sobra de cabo enrolada no poste"
+    },
+    {
+      "tipo": "reserva_no_poste",
+      "onde": "PF-0059",
+      "detalhe": "Operadora Beta: sobra de cabo enrolada no poste"
+    },
+    {
+      "tipo": "cto_em_poste_com_trafo",
+      "onde": "CX-07",
+      "detalhe": "CTO no poste PF-0032, que tem transformador"
+    },
+    {
+      "tipo": "cto_em_poste_com_trafo",
+      "onde": "CX-13",
+      "detalhe": "CTO no poste PF-0051, que tem transformador"
+    },
+    {
+      "tipo": "comprimento_de_projeto_divergente",
+      "onde": "CB-05",
+      "detalhe": "compr_proj_m = 313.3; geometria = 287.5 m (9.0%)"
+    },
+    {
+      "tipo": "comprimento_de_projeto_divergente",
+      "onde": "CB-10",
+      "detalhe": "compr_proj_m = 215.5; geometria = 236.8 m (-9.0%)"
+    },
+    {
+      "tipo": "caixa_com_poste_inexistente",
+      "onde": "CX-01",
+      "detalhe": "poste_cod = PF-0099, que não existe na camada postes"
+    },
+    {
+      "tipo": "poste_duplicado_mesmo_local",
+      "onde": "PF-0064",
+      "detalhe": "mesmo lugar de PF-0047, código diferente"
+    },
+    {
+      "tipo": "poste_duplicado_mesmo_local",
+      "onde": "PF-0065",
+      "detalhe": "mesmo lugar de PF-0031, código diferente"
+    },
+    {
+      "tipo": "cod_poste_repetido",
+      "onde": "PF-0011",
+      "detalhe": "duas feições com este cod_poste, em lugares diferentes"
+    }
+  ],
+  "contagem_irregularidades_por_tipo": {
+    "ponto_sem_plaqueta": 5,
+    "ocupante_sem_identificacao": 4,
+    "ocupante_contrato_vencido": 3,
+    "poste_com_mais_de_5_ocupantes": 3,
+    "dist_bt_abaixo_do_limite": 4,
+    "altura_baixa_em_travessia": 3,
+    "reserva_no_poste": 4,
+    "cto_em_poste_com_trafo": 2,
+    "comprimento_de_projeto_divergente": 2,
+    "caixa_com_poste_inexistente": 1,
+    "poste_duplicado_mesmo_local": 2,
+    "cod_poste_repetido": 1
+  },
+  "respostas": {
+    "postes_com_mais_de_5_ocupantes": [
+      "PF-0007",
+      "PF-0020",
+      "PF-0022"
+    ],
+    "postes_com_mais_de_3_ocupantes": 3,
+    "postes_com_mais_de_2_ocupantes": 9,
+    "comprimento_planimetrico_cabos_m": {
+      "CB-01": 434.3,
+      "CB-02": 290.3,
+      "CB-03": 289.6,
+      "CB-04": 433.3,
+      "CB-05": 287.5,
+      "CB-06": 107.3,
+      "CB-07": 430,
+      "CB-08": 286.8,
+      "CB-09": 373.6,
+      "CB-10": 236.8,
+      "CB-11": 375.9,
+      "CB-12": 134
+    },
+    "comprimento_planimetrico_total_cabos_m": 3679.4,
+    "comprimento_total_vaos_m": 2047.2,
+    "vao_mais_longo": {
+      "cod_vao": "VA-008",
+      "compr_m": 38.2
+    },
+    "vaos_com_travessia": 12,
+    "postes_por_quadra": {
+      "Q1": 4,
+      "Q2": 10,
+      "Q3": 9,
+      "Q4": 5,
+      "Q5": 11,
+      "Q6": 9,
+      "fora_de_quadra": 18
+    },
+    "postes_por_material": {
+      "concreto": 45,
+      "aco": 4,
+      "madeira": 14
+    },
+    "postes_com_trafo": 7,
+    "postes_com_iluminacao_publica": 25,
+    "caixas_por_tipo": {
+      "CTO": 10,
+      "CEO": 4
+    },
+    "cabos_por_tipo": {
+      "optico": 8,
+      "metalico": 2,
+      "drop": 2
+    },
+    "postes_por_ocupante": {
+      "Operadora Alfa": 47,
+      "Operadora Beta": 29,
+      "Provedor Gama": 25,
+      "Provedor Delta": 3,
+      "Provedor Épsilon": 18,
+      "Sem identificação": 4
+    },
+    "cabos_com_plaqueta_nao": [
+      "CB-01",
+      "CB-02",
+      "CB-04",
+      "CB-07",
+      "CB-11"
+    ],
+    "deslocamento_n_csv_para_gpkg_m": 10000000
+  }
+}

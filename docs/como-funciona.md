@@ -153,3 +153,9 @@ Cada lição mostra, depois de "Fontes", a seção "Vídeos" (`src/componentes/V
 
 As escolhas "Útil" e "Fora do tema" ficam em `estado.videos` (chave = URL), só no aparelho; entram na exportação "tudo", não na do caderno.
 
+## 14. Dados fictícios de QGIS
+
+Em `public/dados-qgis/` ficam arquivos de exercício para o QGIS: `rede-ficticia.gpkg` (EPSG:31980), `postes.kml` (EPSG:4326), `vistoria-utm-sem-src.csv` (UTM 20N sem declarar o SRC, de propósito), `LEIA-ME.txt` e `gabarito.json` (totais, irregularidades plantadas e respostas). A área é "Vila Fictícia", dentro da Estação Ecológica de Maracá (RR), sem estradas nem linhas de energia mapeadas.
+
+- **Como regerar:** `npm run dados-qgis` (`scripts/gerar-dados-qgis.mjs`). É determinístico (semente fixa, sem relógio): rodar de novo dá os mesmos arquivos, byte a byte. Não entra no `build`, no `verificar` nem no CI; o teste `scripts/dados-qgis.test.mjs` só confere os arquivos já commitados.
+- **Nenhum dado real entra ali.** Postes, cabos, caixas, ocupantes e CNPJs são inventados, sem nome real de rua, empresa, pessoa ou subestação. Os limites do gabarito (0,60 m, 5,0 m, 5 ocupantes) são valores do exercício, não regra de norma.

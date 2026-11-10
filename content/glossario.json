@@ -1572,5 +1572,114 @@
     "licoes": [
       "04-05"
     ]
+  },
+  {
+    "id": "src",
+    "pt": "SRC (sistema de referência de coordenadas)",
+    "sigla": "SRC",
+    "en": "CRS (coordinate reference system)",
+    "definicao": "O que diz como os números de uma coordenada se ligam a um lugar na Terra. No QGIS cada camada e cada projeto tem o seu e ele é identificado por autoridade e código, como EPSG:4674.",
+    "fontes": [
+      "qgis-projecoes"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "epsg",
+    "pt": "Código EPSG",
+    "sigla": "EPSG",
+    "en": "EPSG code",
+    "definicao": "Número do registro EPSG que identifica um SRC. Exemplos: 4674 (SIRGAS 2000, em graus), 31980 (SIRGAS 2000 / UTM zona 20S) e 31974 (UTM zona 20N).",
+    "fontes": [
+      "epsg-4674",
+      "epsg-31980",
+      "epsg-31974"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "sirgas-2000",
+    "pt": "SIRGAS 2000",
+    "en": "SIRGAS 2000",
+    "definicao": "Sistema de referência geodésico do Brasil, estabelecido pela R.PR 1/2005 do IBGE, com elipsoide GRS80. Em graus é o EPSG:4674; em UTM, Roraima cai nas zonas 20S e 21S (31980 e 31981).",
+    "fontes": [
+      "ibge-rpr-2005",
+      "epsg-4674",
+      "epsg-31980",
+      "epsg-31981"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "utm",
+    "pt": "UTM",
+    "sigla": "UTM",
+    "en": "UTM (Universal Transverse Mercator)",
+    "definicao": "Projeção em zonas de 6° de longitude, com coordenadas em metros: E (leste) e N (norte). A zona 20 vai de 66°O a 60°O e a zona 21, de 60°O a 54°O.",
+    "fontes": [
+      "epsg-31980",
+      "epsg-31981"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "falso-norte",
+    "pt": "Falso norte",
+    "en": "False northing",
+    "definicao": "Valor somado ao N da coordenada UTM. Na zona 20S (31980) é 10.000.000 m; na zona 20N (31974) é 0 m. Por isso o mesmo ponto tem N de 8 dígitos numa e de 6 dígitos na outra.",
+    "fontes": [
+      "epsg-31980",
+      "epsg-31974"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "meridiano-central",
+    "pt": "Meridiano central",
+    "en": "Central meridian",
+    "definicao": "Longitude de origem da zona UTM. Na zona 20 é 63°O; na zona 21, 57°O.",
+    "fontes": [
+      "epsg-31980",
+      "epsg-31981"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "reprojecao",
+    "pt": "Reprojeção",
+    "en": "Reprojection",
+    "definicao": "Conversão das coordenadas de um SRC para outro. O QGIS reprojeta as camadas para o SRC do projeto na hora de desenhar; para gravar a camada em outro SRC, é preciso exportar.",
+    "fontes": [
+      "qgis-projecoes",
+      "qgis-criar-camadas"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "wgs-84",
+    "pt": "WGS 84",
+    "sigla": "EPSG:4326",
+    "en": "WGS 84",
+    "definicao": "SRC em latitude e longitude (EPSG:4326). Por padrão, é o SRC com que um projeto novo do QGIS começa.",
+    "fontes": [
+      "qgis-projecoes"
+    ],
+    "licoes": [
+      "08-03"
+    ]
   }
 ]

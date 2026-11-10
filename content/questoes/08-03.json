@@ -1,0 +1,262 @@
+[
+  {
+    "id": "08-03-q1",
+    "licao": "08-03",
+    "enunciado": "Ao abrir o CSV da vistoria como EPSG:31980, os pontos aparecem na Antártida. O y tem 6 dígitos, perto de 376.000. O que aconteceu?",
+    "alternativas": [
+      {
+        "texto": "O arquivo está corrompido e o QGIS perdeu a coordenada y.",
+        "correta": false,
+        "explicacao": "O y está lá, com 6 dígitos. O que falhou foi a interpretação: o N tem falso norte 0, não 10.000.000 m."
+      },
+      {
+        "texto": "As coordenadas estão em UTM 20N, com falso norte 0 m.",
+        "correta": true,
+        "explicacao": "Certo. Na 31974 (20N) o falso norte é 0 m e na 31980 (20S) é 10.000.000 m. Lido como 31980, o ponto cai a 10.000 km do lugar certo."
+      },
+      {
+        "texto": "O CSV está em graus, e o QGIS esperava metros.",
+        "correta": false,
+        "explicacao": "Graus são números pequenos, como 3,40. Um y de 376.000 é metro de UTM, só com outro falso norte."
+      },
+      {
+        "texto": "O projeto está em EPSG:4326, e isso desloca os pontos.",
+        "correta": false,
+        "explicacao": "O QGIS reprojeta as camadas para o SRC do projeto; o erro está no SRC lido para a camada, não no do projeto."
+      }
+    ],
+    "fontes": [
+      "epsg-31974",
+      "epsg-31980",
+      "qgis-projecoes"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-03-q2",
+    "licao": "08-03",
+    "enunciado": "Os pontos do CSV caíram a 10.000 km dos postes e o arquivo está em 20N. Como fazer para que fiquem sobre os postes?",
+    "alternativas": [
+      {
+        "texto": "Exportar a camada com Save Features As… para 31980.",
+        "correta": false,
+        "explicacao": "Exportar converte as coordenadas a partir do SRC que a camada tem. Com o SRC errado, o erro seria gravado num arquivo novo."
+      },
+      {
+        "texto": "Mudar o SRC do projeto para 4674 em Project ► Properties… ► CRS.",
+        "correta": false,
+        "explicacao": "O SRC do projeto só define como o mapa é desenhado. A camada continua lida como 31980 e os pontos continuam longe."
+      },
+      {
+        "texto": "Reabrir o CSV com Geometry CRS = 4674.",
+        "correta": false,
+        "explicacao": "O 4674 é em graus. Um y perto de 376.000 é metro, então o ponto cairia no lugar errado de novo."
+      },
+      {
+        "texto": "Marcar a camada e usar Layer ► Set CRS of Layer(s) para 31974.",
+        "correta": true,
+        "explicacao": "Certo. Isso muda só como o QGIS lê as coordenadas da camada, sem alterar o arquivo, e os pontos caem sobre os postes."
+      }
+    ],
+    "fontes": [
+      "qgis-projecoes",
+      "qgis-abrir-dados",
+      "epsg-31974"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-03-q3",
+    "licao": "08-03",
+    "enunciado": "Um arquivo de vistoria em UTM traz N = 10.375.911 para um ponto ao norte do Equador. Que falso norte esse número sugere?",
+    "alternativas": [
+      {
+        "texto": "Falso norte 10.000.000 m, como na zona 20S (31980).",
+        "correta": true,
+        "explicacao": "Certo. N de 8 dígitos começando com 10, ao norte do Equador, indica falso norte de 10.000.000 m."
+      },
+      {
+        "texto": "Falso norte 0 m, como na zona 20N (31974), por ser ponto ao norte.",
+        "correta": false,
+        "explicacao": "Com falso norte 0, o N desse ponto teria 6 dígitos: 375.911."
+      },
+      {
+        "texto": "Graus de latitude, como no EPSG:4674 (SIRGAS 2000 em graus).",
+        "correta": false,
+        "explicacao": "Graus são números pequenos, como 3,40. Um número de 8 dígitos é metro."
+      },
+      {
+        "texto": "Falso norte de 500.000 m, o valor fixo da zona 20S (31980).",
+        "correta": false,
+        "explicacao": "Os 500.000 m são o falso leste, somado ao E. O falso norte da 31980 é 10.000.000 m."
+      }
+    ],
+    "fontes": [
+      "epsg-31980",
+      "epsg-31974"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-03-q4",
+    "licao": "08-03",
+    "enunciado": "A camada de postes vai para o fornecedor em outro SRC, com as coordenadas convertidas num arquivo novo. Que caminho faz isso no QGIS?",
+    "alternativas": [
+      {
+        "texto": "Layer ► Set CRS of Layer(s), escolhendo o SRC de destino da entrega.",
+        "correta": false,
+        "explicacao": "O Set CRS não altera os dados nem grava arquivo; só muda como o QGIS interpreta as coordenadas no projeto."
+      },
+      {
+        "texto": "Project ► Properties… ► CRS, trocando para o SRC de destino.",
+        "correta": false,
+        "explicacao": "Isso muda o SRC do projeto, que só define como o mapa é desenhado. A camada e o arquivo ficam como estavam."
+      },
+      {
+        "texto": "Botão direito ► Export ► Save Features As…, com o SRC de destino.",
+        "correta": true,
+        "explicacao": "Certo. Exportar reprojeta de verdade e grava um arquivo novo no SRC escolhido."
+      },
+      {
+        "texto": "Settings ► Options… ► CRS, com o SRC de destino como padrão.",
+        "correta": false,
+        "explicacao": "Essa opção só diz o que o QGIS faz com camada que chega sem SRC. Não converte nem grava nada."
+      }
+    ],
+    "fontes": [
+      "qgis-criar-camadas",
+      "qgis-projecoes"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-03-q5",
+    "licao": "08-03",
+    "enunciado": "Um projeto novo abriu em EPSG:4326 e a camada de postes está em 31980. Onde os postes aparecem?",
+    "alternativas": [
+      {
+        "texto": "Deslocados, até a camada ser exportada para 4326 com Save Features As….",
+        "correta": false,
+        "explicacao": "Não precisa exportar para desenhar: o QGIS reprojeta a camada para o SRC do projeto na hora."
+      },
+      {
+        "texto": "No lugar certo: o QGIS reprojeta a camada para o SRC do projeto na hora.",
+        "correta": true,
+        "explicacao": "Certo. Camadas de SRCs diferentes aparecem juntas no lugar certo, desde que cada uma esteja com o SRC verdadeiro."
+      },
+      {
+        "texto": "Só se o SRC do projeto mudar para 31980 em Project ► Properties… ► CRS.",
+        "correta": false,
+        "explicacao": "Mudar o SRC do projeto não é condição. Ele define como o mapa é desenhado, e as camadas são reprojetadas para ele."
+      },
+      {
+        "texto": "Em lugar nenhum, porque UTM e 4326 não se misturam no mesmo projeto.",
+        "correta": false,
+        "explicacao": "Misturam, sim. O que importa é que cada camada tenha o seu SRC verdadeiro; o QGIS cuida do resto ao desenhar."
+      }
+    ],
+    "fontes": [
+      "qgis-projecoes"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-03-q6",
+    "licao": "08-03",
+    "enunciado": "O fornecedor mandou um CSV de coordenadas sem SRC declarado. O que fazer antes de abrir o arquivo no QGIS?",
+    "alternativas": [
+      {
+        "texto": "Aceitar o SRC que o QGIS sugere, pois ele reconhece o SRC pelos números.",
+        "correta": false,
+        "explicacao": "Quando a camada chega sem essa informação, o QGIS não tem como descobrir o SRC sozinho."
+      },
+      {
+        "texto": "Usar o SRC do projeto, que por padrão serve para qualquer camada.",
+        "correta": false,
+        "explicacao": "O SRC do projeto é só o de desenho. Camada com SRC errado cai no lugar errado mesmo assim."
+      },
+      {
+        "texto": "Escolher 31980, que cobre todo o Brasil, e conferir o resultado depois.",
+        "correta": false,
+        "explicacao": "A 31980 cobre de 66°O a 60°O. Para o leste de 60°O existe a zona 21, e conferir depois não substitui perguntar."
+      },
+      {
+        "texto": "Perguntar a quem gerou o arquivo: o QGIS não adivinha o SRC.",
+        "correta": true,
+        "explicacao": "Certo. O QGIS não tem como adivinhar o SRC. O manual avisa que a escolha errada põe a camada na posição errada e que às vezes é preciso perguntar ao autor."
+      }
+    ],
+    "fontes": [
+      "qgis-projecoes",
+      "epsg-31980",
+      "epsg-31981"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-03-q7",
+    "licao": "08-03",
+    "enunciado": "Um ponto de Bonfim (longitude −59,84) veio gravado em UTM 21S (31981), mas alguém abriu o arquivo como 31980. O que se vê?",
+    "alternativas": [
+      {
+        "texto": "O ponto cai dentro do mapa, 6° a oeste, a mais de 600 km do certo.",
+        "correta": true,
+        "explicacao": "Certo. Zona errada não leva à Antártida: o ponto fica dentro do mapa, em lugar errado, por isso é mais difícil de notar."
+      },
+      {
+        "texto": "O ponto cai na Antártida, a 10.000 km ao sul do lugar certo.",
+        "correta": false,
+        "explicacao": "O falso norte é 10.000.000 m nas duas zonas. O erro aqui é de zona, que desloca o ponto 6° de longitude, não 10.000 km."
+      },
+      {
+        "texto": "O ponto vai parar perto do Polo Norte, a 10.000 km ao norte.",
+        "correta": false,
+        "explicacao": "Isso acontece com N de falso norte 10.000.000 aberto como 31974. Aqui o erro é de zona, e o ponto fica 6° a oeste."
+      },
+      {
+        "texto": "O ponto aparece certo, pois 20S e 21S só diferem no falso norte.",
+        "correta": false,
+        "explicacao": "Diferem no meridiano central (63°O e 57°O) e na faixa de longitude, não no falso norte, que é o mesmo."
+      }
+    ],
+    "fontes": [
+      "epsg-31981",
+      "epsg-31980",
+      "osm-cidades-rr"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "08-03-q8",
+    "licao": "08-03",
+    "enunciado": "Uma planilha sem SRC traz x = 649.972 e y = 375.911 para um ponto ao norte do Equador. Qual é o SRC mais provável e o que se vê ao abri-la como 31980?",
+    "alternativas": [
+      {
+        "texto": "UTM 20S (31980): o y de 6 dígitos mostra o falso norte de 10.000.000 m.",
+        "correta": false,
+        "explicacao": "Na 20S, ao norte do Equador, o N tem 8 dígitos e começa com 10: 10.375.911, não 375.911."
+      },
+      {
+        "texto": "SIRGAS 2000 em graus (4674): o QGIS leria x e y como metros.",
+        "correta": false,
+        "explicacao": "Graus são números pequenos, como latitude 3,40. Valores de 6 dígitos são metros de UTM."
+      },
+      {
+        "texto": "UTM 20N (31974): aberto como 31980, o ponto cai perto de 86° S.",
+        "correta": true,
+        "explicacao": "Certo. O y de 6 dígitos indica falso norte 0, e lido como 31980 o ponto cai a 10.000 km, na Antártida."
+      },
+      {
+        "texto": "UTM 21S (31981): o y de 6 dígitos indica que o ponto está na zona 21.",
+        "correta": false,
+        "explicacao": "A zona depende da longitude, não do tamanho do N. Para o N de 6 dígitos o que muda é o falso norte 0, da 20N."
+      }
+    ],
+    "fontes": [
+      "epsg-31974",
+      "epsg-31980",
+      "epsg-4674"
+    ],
+    "dificuldade": 3
+  }
+]

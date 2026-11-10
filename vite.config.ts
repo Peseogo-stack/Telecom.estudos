@@ -33,6 +33,8 @@ export default defineConfig({
         // Pré-carrega tudo (app + conteúdo) para funcionar sem internet.
         globPatterns: ['**/*.{js,css,html,svg,png,json,webmanifest}'],
         navigateFallback: `${BASE}index.html`,
+        // Os arquivos de exercício são baixados, não abertos pelo app.
+        navigateFallbackDenylist: [/\/dados-qgis\//],
       },
     }),
   ],

@@ -709,5 +709,86 @@
     "url": "https://www.thefoa.org/tech/ref/install/Optical_splitter.html",
     "acessadoEm": "2026-11-09",
     "observacao": "O splitter óptico é um dispositivo passivo e bidirecional: divide a luz que entra numa fibra entre várias saídas e junta, no outro sentido, a luz das saídas na fibra de entrada."
+  },
+  {
+    "id": "epsg-31980",
+    "titulo": "EPSG Geodetic Parameter Dataset: CRS 31980 \"SIRGAS 2000 / UTM zone 20S\"",
+    "organizacao": "IOGP (EPSG)",
+    "tipo": "norma",
+    "url": "https://epsg.org/crs_31980/SIRGAS-2000-UTM-zone-20S.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Área de uso (extent 3442): \"Brazil - between 66°W and 60°W, northern and southern hemispheres. In remainder of South America - between 66°W and 60°W, southern hemisphere, onshore and offshore.\" Conversão \"UTM zone 20S\" (16120): Transversa de Mercator; longitude de origem −63°; fator de escala 0,9996; falso leste 500.000 m; falso norte 10.000.000 m. Unidade: metro. Eixos: E (leste), N (norte). Exemplo calculado com esses parâmetros (ponto fictício em 3,40° N, 61,65° O): E = 649.972 m, N = 10.375.911 m."
+  },
+  {
+    "id": "epsg-31974",
+    "titulo": "EPSG Geodetic Parameter Dataset: CRS 31974 \"SIRGAS 2000 / UTM zone 20N\"",
+    "organizacao": "IOGP (EPSG)",
+    "tipo": "norma",
+    "url": "https://epsg.org/crs_31974/SIRGAS-2000-UTM-zone-20N.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Área de uso (extent 3437): \"South America between 66°W and 60°W, north of approximately 4°N, onshore and offshore.\" Conversão \"UTM zone 20N\" (16020): mesmos parâmetros da 20S, mas falso norte 0 m. Exemplo calculado (ponto fictício em 3,40° N, 61,65° O): E = 649.972 m, N = 375.911 m; a diferença para a 20S é exatamente 10.000.000 m. Pelo registro EPSG, no Brasil a versão \"S\" vale nos dois hemisférios; a área registrada da \"N\" começa perto de 4°N."
+  },
+  {
+    "id": "epsg-31981",
+    "titulo": "EPSG Geodetic Parameter Dataset: CRS 31981 \"SIRGAS 2000 / UTM zone 21S\"",
+    "organizacao": "IOGP (EPSG)",
+    "tipo": "norma",
+    "url": "https://epsg.org/crs_31981/SIRGAS-2000-UTM-zone-21S.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Área de uso (extent 3443): \"Brazil - between 60°W and 54°W, northern and southern hemispheres. …\" Conversão (16121): longitude de origem −57°, falso norte 10.000.000 m. Logo: zona 20 = de 66°O a 60°O (meridiano central 63°O); zona 21 = de 60°O a 54°O (meridiano central 57°O)."
+  },
+  {
+    "id": "epsg-4674",
+    "titulo": "EPSG Geodetic Parameter Dataset: CRS 4674 \"SIRGAS 2000\" (geográfico 2D)",
+    "organizacao": "IOGP (EPSG)",
+    "tipo": "norma",
+    "url": "https://epsg.org/crs_4674/SIRGAS-2000.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "SRC geográfico 2D, com latitude e longitude em graus. Área de uso: \"Latin America - Central America and South America - onshore and offshore. Brazil - onshore and offshore.\""
+  },
+  {
+    "id": "ibge-rpr-2005",
+    "titulo": "IBGE: Resolução do Presidente R.PR 1/2005, de 25/02/2005 (SIRGAS2000 como sistema de referência)",
+    "organizacao": "IBGE",
+    "tipo": "legislacao",
+    "url": "https://geoftp.ibge.gov.br/metodos_e_outros_documentos_de_referencia/normas/rpr_01_25fev2005.pdf",
+    "acessadoEm": "2026-11-10",
+    "observacao": "\"fica estabelecido como novo sistema de referência geodésico para o SGB e para o Sistema Cartográfico Nacional (SCN) o Sistema de Referência Geocêntrico para as Américas (SIRGAS), em sua realização do ano de 2000 (SIRGAS2000).\" Período de transição \"não superior a dez anos\", em que SAD 69 e Córrego Alegre ainda podiam ser usados junto. Elipsoide do SIRGAS2000: GRS80."
+  },
+  {
+    "id": "qgis-projecoes",
+    "titulo": "QGIS User Guide 3.44: Working with Projections",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_projections/working_with_projections.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Caminhos de menu iguais na 3.44 (LTR) e na versão testing (https://docs.qgis.org/testing/en/docs/user_manual/working_with_projections/working_with_projections.html), conferidos em 10/11/2026. O QGIS identifica cada SRC por autoridade:código; EPSG:4326 é o WGS 84 em latitude/longitude. Cada camada tem o seu SRC (no Shapefile, fica no .prj). Camada sem SRC: o que o QGIS faz é configurável em Settings ► Options… ► CRS (deixar como desconhecido; perguntar; usar o SRC do projeto; usar um SRC padrão). \"Selecting the correct choice is crucial, as a wrong choice will place your layer in the wrong position on the Earth's surface!\"; às vezes é preciso perguntar ao autor do dado qual é o SRC. Layer ► Set CRS of Layer(s) (Ctrl+Shift+C) \"does not alter the underlying data source in any way, rather it just changes how QGIS interprets the raw coordinates from the layer in the current QGIS project\"; confere-se na aba Source das propriedades da camada. Cada projeto também tem um SRC e o QGIS reprojeta \"on the fly\" as camadas para ele. Projeto novo começa em EPSG:4326; muda-se em Project ► Properties… ► CRS; o SRC do projeto aparece no canto inferior direito da barra de status."
+  },
+  {
+    "id": "qgis-abrir-dados",
+    "titulo": "QGIS User Guide 3.44: Opening Data",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/opening_data.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na versão testing. CSV com coordenadas: Layer ► Add Layer ► Add Delimited Text Layer…; em \"Geometry definition\", escolher Point coordinates, indicar o campo X e o campo Y e informar o Geometry CRS. Em \"File format\", a opção Custom delimiters aceita vírgula, espaço, tabulação, ponto e vírgula e outros."
+  },
+  {
+    "id": "qgis-criar-camadas",
+    "titulo": "QGIS User Guide 3.44: Creating Layers",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/create_layers.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na versão testing. Para gravar a camada em outro SRC (reprojetar de verdade, gerando arquivo novo): botão direito na camada ► Export ► Save Features As… (ou Layer ► Save As…) e escolher o SRC de destino."
+  },
+  {
+    "id": "osm-cidades-rr",
+    "titulo": "OpenStreetMap: longitude das sedes municipais de Roraima (consulta à API do mapa)",
+    "organizacao": "OpenStreetMap e colaboradores",
+    "tipo": "documentacao",
+    "url": "https://www.openstreetmap.org/#map=7/2.0/-61.0",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Consulta de 10/11/2026. Boa Vista: −60,67 (zona 20). São Luiz: −60,04 (zona 20, a poucos km do limite). A leste de 60°O (zona 21): Bonfim −59,84; Normandia −59,63; Caroebe −59,70; São João da Baliza −59,91."
   }
 ]

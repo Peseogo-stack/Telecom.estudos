@@ -184,6 +184,8 @@ export function markdownParaHtml(md, ordemFontes, glossarioPorId) {
   html = html.replace(/<table>/g, '<div class="tabela" tabindex="0"><table>').replace(/<\/table>/g, '</table></div>');
   // Links externos abrem fora do app.
   html = html.replace(/<a href="(https?:[^"]+)"/g, '<a href="$1" target="_blank" rel="noopener noreferrer"');
+  // Arquivos de exercício (public/dados-qgis) são baixados em vez de abertos.
+  html = html.replace(/<a href="(dados-qgis\/[^"]+)"/g, '<a href="$1" download');
   return html;
 }
 

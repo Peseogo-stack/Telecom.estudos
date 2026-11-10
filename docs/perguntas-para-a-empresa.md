@@ -33,6 +33,7 @@
 | a12 | Os cordões do rack e do DIO são amarelos (monomodo) ou laranja/água (multimodo)? | Cor da capa dos cordões e a gravação neles | 02-03 |
 | a13 | Os cabos da nossa rede seguem o código de cores nacional (verde, amarela, branca, azul…) ou há cabos importados no padrão TIA-598 (azul, laranja, verde…)? E os pigtails do DIO, em que ordem vêm? | Gravação da capa, ficha do fabricante, cores ao abrir uma caixa acompanhado | 03-03 |
 | a14 | Qual é a classe de laser e a potência gravadas na etiqueta da nossa caneta VFL, e que tipo de microscópio de inspeção a equipe usa (vídeo ou óptico com filtro IR)? | Etiqueta da caneta VFL e maleta de inspeção/limpeza | 10-03 |
+| a15 | Abra um arquivo recebido de fornecedor no QGIS e veja o SRC em Propriedades ► Source: ele veio declarado? | Qualquer camada recebida de terceiros | 08-03 |
 
 ---
 
@@ -57,6 +58,7 @@
 | b15 | Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho? | Procedimentos de segurança (intranet) | 10-05 |
 | b16 | Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem? | Projeto executivo ou memorial de cálculo da rede | 02-06, 02-07, 04-03, 04-05 |
 | b17 | Qual método de referência de perda de inserção a empresa pede (1, 2 ou 3 cordões), em quais comprimentos de onda, e qual é o critério de aceite da perda total? | Especificação técnica de aceite de obra | 06-01, 09-05 |
+| b18 | O contrato ou o padrão de entrega diz em que SRC o fornecedor tem de mandar os arquivos (as-built, KML, planilha de coordenadas)? | Contrato e padrão de entrega | 08-03 |
 
 ---
 
@@ -103,6 +105,8 @@
 | d14 | Que equipamentos de teste a equipe tem (OTDR, power meter, medidor PON seletivo, VFL) e que cabos de lançamento e de recepção usamos (comprimento, conector UPC ou APC)? | 06-01, 06-02, 10-03 |
 | d15 | Quando o mapa de fusão liga cabos de padrões de cor diferentes, ele casa as fibras por número ou por cor? Como a equipe anota? | 03-03 |
 | d16 | Que álcool isopropílico (pureza) e que removedor de geleia a equipe usa na bancada, e como fazemos o descarte do pote de fragmentos de fibra? | 10-04, 05-01 |
+| d17 | Qual é o SRC do projeto de QGIS da equipe e das camadas de postes e cabos: 31980, 4674 ou outro? | 08-03 |
+| d18 | A equipe usa a zona 20 para o estado todo ou muda para a zona 21 a leste de 60°O? | 08-03 |
 
 ---
 

@@ -231,5 +231,33 @@
       "nova NR-10 2026 o que muda",
       "NR-10 telecom em poste compartilhado"
     ]
+  },
+  {
+    "licao": "08-03",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=LYocofyFTm4",
+        "titulo": "QGis 3.44 - Definindo SRC SIRGAS 2000",
+        "canal": "Liberdade para Aprender",
+        "duracao": "4:20",
+        "observar": "Onde se define o SRC no QGIS 3.44. Lembre da lição: definir o SRC muda a interpretação das coordenadas, não converte o arquivo.",
+        "conferidoEm": "2026-11-10",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem capítulos nem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=iEXU9b-h19c",
+        "titulo": "Alteração do SRC | Conceitos Básicos de QGIS [4]",
+        "canal": "Bruno Rech",
+        "duracao": "8:51",
+        "observar": "Como gravar a camada em outro SRC de forma definitiva, o que a lição faz com Export ► Save Features As….",
+        "aviso": "A descrição do vídeo diz que a conversão temporária entre SRCs \"deve ser evitada\". O manual do QGIS trata a reprojeção na hora como funcionamento normal: ela dá certo quando cada camada está com o SRC verdadeiro. O vídeo é de 2020, de uma versão 3.x anterior à 3.44.",
+        "conferidoEm": "2026-11-10",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem capítulos nem transcrição."
+      }
+    ],
+    "termosBusca": [
+      "QGIS SIRGAS 2000 UTM 31980 sistema de referência",
+      "QGIS definir SRC da camada reprojetar"
+    ]
   }
 ]

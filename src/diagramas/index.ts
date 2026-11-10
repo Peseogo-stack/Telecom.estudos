@@ -31,6 +31,7 @@ import { EstimadoRealFusao } from './EstimadoRealFusao';
 import { AnatomiaFtth } from './AnatomiaFtth';
 import { SplittersBalanceados } from './SplittersBalanceados';
 import { OrcamentoPon } from './OrcamentoPon';
+import { ZonasUtmRoraima } from './ZonasUtmRoraima';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -62,6 +63,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'anatomia-ftth': AnatomiaFtth,
   'splitters-balanceados': SplittersBalanceados,
   'orcamento-pon': OrcamentoPon,
+  'zonas-utm-roraima': ZonasUtmRoraima,
 };
 
 

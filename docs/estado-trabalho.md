@@ -6,7 +6,8 @@ Atualizado em 10/11/2026. Este arquivo diz o que está pronto, o que ficou pela 
 
 - P1 completo e revisado: módulos 2, 3, 4, 5, 6, 9 e 10 (29 lições, 233 questões) e as ferramentas.
 - Acabamento do P1 (questões equilibradas, diagramas, lições de até 700 palavras).
-- Vídeos: a tela, o validador e o `npm run conferir-videos` estão no main. Toda lição tem termos de busca; nenhuma tem vídeo conferido ainda.
+- Vídeos: a tela, o validador e o `npm run conferir-videos` estão no main. Toda lição tem termos de busca; as do P1 ainda não têm vídeo conferido.
+- Dados fictícios de QGIS em `public/dados-qgis/` (`npm run dados-qgis`).
 
 ## Pela metade, fora do main
 
@@ -45,3 +46,4 @@ Ordem: 08-03, 08-02, 08-06, 07-01, 07-02; depois 08-01, 08-04, 08-05, 08-07, 07-
 
 | Lição | Fechada em | Questões | Vídeos | O que a revisão corrigiu |
 | --- | --- | --- | --- | --- |
+| 08-03 SRC, UTM 20S e o erro de 10.000 km | 10/11/2026 | 8 | 2 (1 com aviso) | Destino do ponto com o falso norte trocado (perto do Polo Norte, não "some"); "oficial desde 2005" virou a frase da resolução; regra dos dígitos só ao norte do Equador; separador do CSV; lição enxugada para 700 palavras |

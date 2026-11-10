@@ -294,7 +294,7 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
     const palavras = contarPalavras(
       htmlParaTexto(compilada.explicacaoAntes + compilada.explicacaoDepois + compilada.naPratica + compilada.errosComuns),
     );
-    if (palavras > 900) aviso(onde, `${palavras} palavras (o ideal é até 900 para caber em 10–15 min)`);
+    if (palavras > 700) aviso(onde, `${palavras} palavras (o limite é 700, para caber em 10–15 min)`);
 
     // ---- Questões da lição ----
     const questoes = lerQuestoes(id);

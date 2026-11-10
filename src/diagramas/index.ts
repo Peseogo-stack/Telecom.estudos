@@ -31,8 +31,20 @@ import { EstimadoRealFusao } from './EstimadoRealFusao';
 import { AnatomiaFtth } from './AnatomiaFtth';
 import { SplittersBalanceados } from './SplittersBalanceados';
 import { OrcamentoPon } from './OrcamentoPon';
+import { ServicosPrazos } from './ServicosPrazos';
+import { PropriaOperadora } from './PropriaOperadora';
+import { PilhaProtocolos } from './PilhaProtocolos';
+import { GooseMulticast } from './GooseMulticast';
+import { AnelNoves } from './AnelNoves';
+import { MeiosTransporte } from './MeiosTransporte';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
+  'servicos-prazos': ServicosPrazos,
+  'propria-x-operadora': PropriaOperadora,
+  'pilha-protocolos': PilhaProtocolos,
+  'goose-multicast': GooseMulticast,
+  'anel-noves': AnelNoves,
+  'meios-transporte': MeiosTransporte,
   'zonas-poste': ZonasPoste,
   'nr10-linha-do-tempo': Nr10LinhaDoTempo,
   'disponibilidade-barra': DisponibilidadeBarra,

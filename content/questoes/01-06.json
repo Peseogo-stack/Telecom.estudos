@@ -1,0 +1,254 @@
+[
+  {
+    "id": "01-06-q1",
+    "licao": "01-06",
+    "enunciado": "O que é o cabo ADSS?",
+    "alternativas": [
+      {
+        "texto": "Cabo óptico dielétrico e autossustentado, para linhas de energia",
+        "correta": true,
+        "explicacao": "Certo. O ADSS é o cabo óptico não metálico, todo dielétrico e autossustentado, para linhas de energia (IEEE 1222)."
+      },
+      {
+        "texto": "Cabo para-raios com fibra por dentro, obrigatório em linha nova",
+        "correta": false,
+        "explicacao": "Esse é o OPGW. O ADSS é o cabo óptico não metálico e autossustentado."
+      },
+      {
+        "texto": "Transmissão de dados por onda portadora na linha de alta tensão",
+        "correta": false,
+        "explicacao": "Isso é o PLC de onda portadora. O ADSS é um cabo óptico dielétrico."
+      },
+      {
+        "texto": "Rede de pacotes que traz de volta recursos do SDH ao MPLS",
+        "correta": false,
+        "explicacao": "Isso é o MPLS-TP. O ADSS é um cabo óptico dielétrico e autossustentado."
+      }
+    ],
+    "fontes": [
+      "ieee-1222"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-06-q2",
+    "licao": "01-06",
+    "enunciado": "Qual o limite do PLC por onda portadora na linha de alta tensão?",
+    "alternativas": [
+      {
+        "texto": "Custo e obra, como acontece com a fibra",
+        "correta": false,
+        "explicacao": "Custo e obra são limites da fibra; o do PLC é a taxa baixa."
+      },
+      {
+        "texto": "Espectro e licença, como acontece com o rádio",
+        "correta": false,
+        "explicacao": "Espectro e licença são limites do rádio; o do PLC é a taxa baixa."
+      },
+      {
+        "texto": "Taxa baixa, até 9600 bps na banda estreita",
+        "correta": true,
+        "explicacao": "Certo. O PLC de onda portadora tem taxa baixa, de até 9600 bps na banda estreita (Hitachi)."
+      },
+      {
+        "texto": "Determinismo pior que o do SDH, como o MPLS-TP",
+        "correta": false,
+        "explicacao": "Isso vale para o MPLS-TP; o limite do PLC é a taxa baixa."
+      }
+    ],
+    "fontes": [
+      "hitachi-etl600"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-06-q3",
+    "licao": "01-06",
+    "enunciado": "Num diagrama, \"PLC\" aparece ao lado de uma torre de alta tensão. O que é?",
+    "alternativas": [
+      {
+        "texto": "O splitter óptico (Planar Lightwave Circuit) da fibra",
+        "correta": false,
+        "explicacao": "Esse splitter é de fibra óptica; ao lado da torre, PLC é onda portadora."
+      },
+      {
+        "texto": "Onda portadora na linha de alta tensão",
+        "correta": true,
+        "explicacao": "Certo. Nesse contexto, PLC é a transmissão de voz, dados e comandos de proteção pela própria linha de alta tensão."
+      },
+      {
+        "texto": "Um cabo óptico autossustentado para linha de energia",
+        "correta": false,
+        "explicacao": "Esse é o ADSS; PLC ao lado da torre é onda portadora na linha."
+      },
+      {
+        "texto": "Um backhaul celular privado para a automação da rede",
+        "correta": false,
+        "explicacao": "Isso é o celular 4G/5G; PLC ao lado da torre é onda portadora na linha."
+      }
+    ],
+    "fontes": [
+      "hitachi-etl600",
+      "tdworld-brasil-telecom"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-06-q4",
+    "licao": "01-06",
+    "enunciado": "Um colega diz que MPLS-TP e SDH têm o mesmo determinismo. O que a lição diz?",
+    "alternativas": [
+      {
+        "texto": "Certo, pois o MPLS-TP traz de volta o TDM do próprio SDH",
+        "correta": false,
+        "explicacao": "O MPLS-TP traz recursos do SDH para pacotes, mas não o TDM; o determinismo é pior."
+      },
+      {
+        "texto": "Errado: a Hitachi diz que o MPLS-TP é bem mais determinístico que o SDH",
+        "correta": false,
+        "explicacao": "A Hitachi diz o contrário: o desempenho determinístico não é tão bom quanto o do SDH."
+      },
+      {
+        "texto": "Certo, pois a Strathclyde achou desempenho igual em todos os testes",
+        "correta": false,
+        "explicacao": "A Strathclyde disse que o desempenho variou, e não que fosse igual ao do SDH."
+      },
+      {
+        "texto": "A Hitachi diz que o do MPLS-TP é pior, e a Strathclyde discorda em parte",
+        "correta": true,
+        "explicacao": "Certo. A Hitachi anota que o determinismo não é tão bom quanto o do SDH; a Strathclyde concluiu que o MPLS-TP bem configurado atende (Hitachi, Strathclyde)."
+      }
+    ],
+    "fontes": [
+      "hitachi-fox615",
+      "strathclyde-mpls"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-06-q5",
+    "licao": "01-06",
+    "enunciado": "Um colega diz que celular nunca serve à proteção. Como a lição trata isso?",
+    "alternativas": [
+      {
+        "texto": "A Cisco validou DTT por celular, mas é opinião de fabricante",
+        "correta": true,
+        "explicacao": "Certo. A Cisco validou DTT por celular, mas é opinião de fabricante (Cisco)."
+      },
+      {
+        "texto": "Certo, pois o celular não aceita APN privado",
+        "correta": false,
+        "explicacao": "O guia da Cisco discute APN privado ou público para o celular."
+      },
+      {
+        "texto": "Errado: a Cisco validou o diferencial de linha por celular",
+        "correta": false,
+        "explicacao": "A Cisco validou o DTT por celular, não o diferencial de linha."
+      },
+      {
+        "texto": "Certo, pois o celular só serve à medição inteligente",
+        "correta": false,
+        "explicacao": "O celular é usado no backhaul da automação, e a Cisco validou DTT por ele."
+      }
+    ],
+    "fontes": [
+      "cisco-da"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-06-q6",
+    "licao": "01-06",
+    "enunciado": "O que a Teletime informou em abril de 2024 sobre o rádio privativo do setor?",
+    "alternativas": [
+      {
+        "texto": "A Anatel leiloou a banda de 450 MHz para as operadoras de celular em geral",
+        "correta": false,
+        "explicacao": "Em janeiro de 2026, o setor pediu que a Anatel desistisse do leilão de 450 MHz; abril de 2024 foi o Ato 915/2024."
+      },
+      {
+        "texto": "A Anatel proibiu o rádio privativo nas distribuidoras de energia do país",
+        "correta": false,
+        "explicacao": "O Ato 915/2024 deu preferência na banda de 400 MHz a energia, gás e saneamento."
+      },
+      {
+        "texto": "O Ato 915/2024 deu preferência na faixa de 400 MHz a energia, gás e saneamento",
+        "correta": true,
+        "explicacao": "Certo. A Teletime informou que o Ato 915/2024 deu preferência de uso da banda de 400 MHz a energia elétrica, gás e saneamento (Teletime)."
+      },
+      {
+        "texto": "O Ato 915/2024 liberou a banda de 400 MHz apenas para a energia elétrica",
+        "correta": false,
+        "explicacao": "A preferência é de energia elétrica, gás e saneamento, não só de energia."
+      }
+    ],
+    "fontes": [
+      "teletime-redes-privativas",
+      "teletime-450mhz"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-06-q7",
+    "licao": "01-06",
+    "enunciado": "Numa linha da rede básica com OPGW no primeiro canal, qual o segundo meio que a lição cita?",
+    "alternativas": [
+      {
+        "texto": "SDH na mesma fibra do OPGW",
+        "correta": false,
+        "explicacao": "É a mesma fibra; um rompimento derruba os dois canais."
+      },
+      {
+        "texto": "PLC por onda portadora na linha",
+        "correta": true,
+        "explicacao": "Certo. O PLC de onda portadora pode ser o segundo meio na regra da rede básica (T&D World)."
+      },
+      {
+        "texto": "Outro canal em fibra do mesmo cabo OPGW",
+        "correta": false,
+        "explicacao": "É o mesmo cabo; o segundo meio deve ser diferente, como o PLC por onda portadora."
+      },
+      {
+        "texto": "Splitter PLC no mesmo cabo de fibra",
+        "correta": false,
+        "explicacao": "O splitter PLC é de fibra óptica, não onda portadora, e cai junto com o cabo."
+      }
+    ],
+    "fontes": [
+      "tdworld-brasil-telecom",
+      "hitachi-etl600"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "01-06-q8",
+    "licao": "01-06",
+    "enunciado": "Que taxas a Hitachi cita para os modems de PLC por onda portadora?",
+    "alternativas": [
+      {
+        "texto": "Até 256 kbps na banda estreita e até 9600 bps na larga",
+        "correta": false,
+        "explicacao": "Está trocado: 9600 bps é a banda estreita e 256 kbps, a larga."
+      },
+      {
+        "texto": "Até 9600 kbps na banda estreita e até 256 Mbps na larga",
+        "correta": false,
+        "explicacao": "As unidades estão erradas: são 9600 bps e 256 kbps."
+      },
+      {
+        "texto": "Até 9600 bps nas duas bandas, estreita e larga",
+        "correta": false,
+        "explicacao": "A banda larga chega a 256 kbps; só a estreita é de 9600 bps."
+      },
+      {
+        "texto": "Até 9600 bps na banda estreita e até 256 kbps na larga",
+        "correta": true,
+        "explicacao": "Certo. A Hitachi cita modems de até 9600 bps (banda estreita) e até 256 kbps (banda larga) (Hitachi)."
+      }
+    ],
+    "fontes": [
+      "hitachi-etl600"
+    ],
+    "dificuldade": 3
+  }
+]

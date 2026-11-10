@@ -1,0 +1,253 @@
+[
+  {
+    "id": "01-05-q1",
+    "licao": "01-05",
+    "enunciado": "Pela conta de 8.760 h × (1 − disponibilidade), qual a parada máxima por ano com 99,9%?",
+    "alternativas": [
+      {
+        "texto": "87,6 h",
+        "correta": false,
+        "explicacao": "Esse é o valor de 99%. Para 99,9% são 8,76 h."
+      },
+      {
+        "texto": "52,6 min",
+        "correta": false,
+        "explicacao": "Esse é o valor de 99,99%. Para 99,9% são 8,76 h."
+      },
+      {
+        "texto": "8,76 h",
+        "correta": true,
+        "explicacao": "Certo. 8.760 h × 0,001 dá 8,76 h por ano."
+      },
+      {
+        "texto": "5,26 min",
+        "correta": false,
+        "explicacao": "Esse é o valor de 99,999%. Para 99,9% são 8,76 h."
+      }
+    ],
+    "fontes": [
+      "doe-requisitos-smart-grid"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-05-q2",
+    "licao": "01-05",
+    "enunciado": "Cada nove a mais na disponibilidade corta a parada permitida em quanto?",
+    "alternativas": [
+      {
+        "texto": "Dividida por dez",
+        "correta": true,
+        "explicacao": "Certo. Cada nove a mais corta a parada permitida por dez."
+      },
+      {
+        "texto": "Dividida por dois",
+        "correta": false,
+        "explicacao": "Cada nove a mais divide por dez, não por dois."
+      },
+      {
+        "texto": "Dividida por cem",
+        "correta": false,
+        "explicacao": "Cada nove a mais divide por dez, não por cem."
+      },
+      {
+        "texto": "Dividida por mil",
+        "correta": false,
+        "explicacao": "Cada nove a mais divide por dez, não por mil."
+      }
+    ],
+    "fontes": [
+      "doe-requisitos-smart-grid"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-05-q3",
+    "licao": "01-05",
+    "enunciado": "Num anel de switches com RSTP, um enlace falha. O que acontece?",
+    "alternativas": [
+      {
+        "texto": "O anel para até alguém religar o enlace rompido",
+        "correta": false,
+        "explicacao": "O anel existe para dar a volta; a rede se reconfigura e entrega por outro caminho."
+      },
+      {
+        "texto": "A rede se reconfigura e entrega por outro caminho",
+        "correta": true,
+        "explicacao": "Certo. No RSTP, quando um enlace falha, a rede se reconfigura e entrega por outro caminho (SEL)."
+      },
+      {
+        "texto": "A mensagem é descartada, pois o RSTP não tem caminho de reserva",
+        "correta": false,
+        "explicacao": "O RSTP mantém um enlace em espera; a rede se reconfigura e entrega por outro caminho."
+      },
+      {
+        "texto": "O tráfego já corre duplicado nos dois sentidos, sem reconfigurar",
+        "correta": false,
+        "explicacao": "Duplicar o tráfego é o PRP/HSR; o RSTP reconfigura a rede e entrega por outro caminho."
+      }
+    ],
+    "fontes": [
+      "sel-ethernet-61850",
+      "iec-62439-3"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-05-q4",
+    "licao": "01-05",
+    "enunciado": "Um fornecedor diz que RSTP e PRP/HSR recuperam igual. Qual a diferença, segundo a lição?",
+    "alternativas": [
+      {
+        "texto": "Os três recuperam em zero, pois todos usam anel",
+        "correta": false,
+        "explicacao": "O RSTP precisa reconfigurar a rede; só o PRP e o HSR têm recuperação zero."
+      },
+      {
+        "texto": "O RSTP recupera em zero e o PRP precisa reconfigurar a rede",
+        "correta": false,
+        "explicacao": "É o contrário: PRP e HSR têm recuperação zero, e o RSTP reconfigura a rede."
+      },
+      {
+        "texto": "Nenhum recupera em zero, pois a norma fixa um tempo mínimo",
+        "correta": false,
+        "explicacao": "A IEC 62439-3 define PRP e HSR com tempo de recuperação zero."
+      },
+      {
+        "texto": "O PRP e o HSR têm recuperação zero; o RSTP reconfigura a rede",
+        "correta": true,
+        "explicacao": "Certo. A IEC 62439-3 dá recuperação zero ao PRP e ao HSR; o RSTP reconfigura a rede."
+      }
+    ],
+    "fontes": [
+      "iec-62439-3",
+      "sel-ethernet-61850"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-05-q5",
+    "licao": "01-05",
+    "enunciado": "Dois contratos prometem 99,9%, um medido por mês e outro por ano. O que a lição diz?",
+    "alternativas": [
+      {
+        "texto": "Equivalem, pois a porcentagem fixa a parada permitida do contrato",
+        "correta": false,
+        "explicacao": "O período de medição muda a parada permitida, mesmo com a mesma porcentagem."
+      },
+      {
+        "texto": "Só o anual vale como SLA; o mensal é só meta interna da operadora",
+        "correta": false,
+        "explicacao": "O SLA pode ser medido por mês ou por ano; o período deve ser lido com a porcentagem."
+      },
+      {
+        "texto": "O período muda a parada permitida, então lê-se com os noves",
+        "correta": true,
+        "explicacao": "Certo. O SLA pode ser medido por mês ou por ano, e isso muda a parada permitida."
+      },
+      {
+        "texto": "O período só muda a multa, não a parada permitida",
+        "correta": false,
+        "explicacao": "O período muda a parada permitida, não só a multa."
+      }
+    ],
+    "fontes": [
+      "doe-requisitos-smart-grid"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-05-q6",
+    "licao": "01-05",
+    "enunciado": "Nas contribuições reunidas pelo DOE, qual faixa de disponibilidade aparece para a gestão da rede de distribuição?",
+    "alternativas": [
+      {
+        "texto": "99 a 99,999%",
+        "correta": true,
+        "explicacao": "Certo. O DOE lista 99 a 99,999% para a gestão da rede de distribuição (DOE)."
+      },
+      {
+        "texto": "99 a 99,99%",
+        "correta": false,
+        "explicacao": "Essa é a faixa da medição inteligente. A gestão da rede vai a 99,999%."
+      },
+      {
+        "texto": "99,999 a 99,9999%",
+        "correta": false,
+        "explicacao": "Essa é a faixa de Wide Area Situational Awareness. A gestão da rede é 99 a 99,999%."
+      },
+      {
+        "texto": "99,9 a 99,99%",
+        "correta": false,
+        "explicacao": "Esses valores não são a faixa da gestão da rede, que é de 99 a 99,999%."
+      }
+    ],
+    "fontes": [
+      "doe-requisitos-smart-grid"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-05-q7",
+    "licao": "01-05",
+    "enunciado": "Um anel de switches passa todo por um só duto. Ele protege contra o rompimento do duto?",
+    "alternativas": [
+      {
+        "texto": "Sim, pois o anel sempre dá a volta por outro lado",
+        "correta": false,
+        "explicacao": "Dar a volta só funciona se o outro lado não cair junto; no mesmo duto, cai."
+      },
+      {
+        "texto": "Sim, se o RSTP tiver raiz e enlace em espera",
+        "correta": false,
+        "explicacao": "Raiz e enlace em espera não ajudam se os dois caminhos passam pelo mesmo duto."
+      },
+      {
+        "texto": "Sim, desde que o anel use PRP em vez de RSTP",
+        "correta": false,
+        "explicacao": "O PRP também não protege dois caminhos que caem juntos no mesmo duto."
+      },
+      {
+        "texto": "Não: os dois sentidos do anel caem juntos",
+        "correta": true,
+        "explicacao": "Certo. Redundância só ajuda se os dois caminhos não caem juntos; um anel num só duto cai junto."
+      }
+    ],
+    "fontes": [
+      "tdworld-brasil-telecom",
+      "sel-ethernet-61850"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "01-05-q8",
+    "licao": "01-05",
+    "enunciado": "O fornecedor diz que o bloqueio e o controle direto pedem a mesma confiabilidade de mensagens. O que a lição traz?",
+    "alternativas": [
+      {
+        "texto": "Iguais: os dois pedem 99,99% das mensagens recebidas",
+        "correta": false,
+        "explicacao": "Os valores diferem: o controle direto pede 99,999999%."
+      },
+      {
+        "texto": "Diferem: 99,99% no bloqueio e 99,999999% no controle direto",
+        "correta": true,
+        "explicacao": "Certo. Segundo a SEL, esquemas de bloqueio pedem 99,99% das mensagens e os de controle direto, 99,999999% (SEL)."
+      },
+      {
+        "texto": "Diferem: 99,999999% no bloqueio e 99,99% no controle direto",
+        "correta": false,
+        "explicacao": "Está trocado: o bloqueio pede 99,99% e o controle direto, 99,999999%."
+      },
+      {
+        "texto": "Diferem: 99,9% no bloqueio e 99,999% no controle direto",
+        "correta": false,
+        "explicacao": "Os valores da SEL são 99,99% no bloqueio e 99,999999% no controle direto."
+      }
+    ],
+    "fontes": [
+      "sel-ethernet-61850"
+    ],
+    "dificuldade": 3
+  }
+]

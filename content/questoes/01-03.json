@@ -1,0 +1,257 @@
+[
+  {
+    "id": "01-03-q1",
+    "licao": "01-03",
+    "enunciado": "No Wireshark aparece tráfego TCP na porta 20000. De que protocolo se trata, provavelmente?",
+    "alternativas": [
+      {
+        "texto": "IEC 60870-5-104, de controle SCADA",
+        "correta": false,
+        "explicacao": "O IEC 104 usa a porta TCP 2404, não a 20000."
+      },
+      {
+        "texto": "MMS, do IEC 61850 para SCADA",
+        "correta": false,
+        "explicacao": "O MMS usa a porta TCP 102, não a 20000."
+      },
+      {
+        "texto": "DNP3, da norma IEEE 1815",
+        "correta": true,
+        "explicacao": "Certo. A IANA registra a porta 20000 para o DNP3, em TCP e UDP (IANA)."
+      },
+      {
+        "texto": "GOOSE, do IEC 61850 entre IEDs",
+        "correta": false,
+        "explicacao": "O GOOSE não usa porta nenhuma; é Ethernet de camada 2, com EtherType 0x88B8."
+      }
+    ],
+    "fontes": [
+      "iana-portas",
+      "ieee-1815"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-03-q2",
+    "licao": "01-03",
+    "enunciado": "Qual porta é a padrão do IEC 60870-5-104?",
+    "alternativas": [
+      {
+        "texto": "TCP 2404",
+        "correta": true,
+        "explicacao": "Certo. A IANA registra iec-104 em TCP/2404 (IANA)."
+      },
+      {
+        "texto": "TCP 20000",
+        "correta": false,
+        "explicacao": "Essa é a porta do DNP3. O IEC 104 usa a TCP 2404."
+      },
+      {
+        "texto": "TCP 102",
+        "correta": false,
+        "explicacao": "Essa é a porta do MMS, do IEC 61850. O IEC 104 usa a TCP 2404."
+      },
+      {
+        "texto": "UDP 20000",
+        "correta": false,
+        "explicacao": "O DNP3 usa a 20000, também em UDP. O IEC 104 usa a TCP 2404."
+      }
+    ],
+    "fontes": [
+      "iana-portas",
+      "schneider-iec104"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-03-q3",
+    "licao": "01-03",
+    "enunciado": "No Wireshark aparece um quadro sem IP e sem porta, com EtherType 0x88B8. O que é?",
+    "alternativas": [
+      {
+        "texto": "Sampled Values, valores amostrados",
+        "correta": false,
+        "explicacao": "Os Sampled Values têm EtherType 0x88BA. O 0x88B8 é do GOOSE."
+      },
+      {
+        "texto": "GOOSE, mensagem rápida entre IEDs",
+        "correta": true,
+        "explicacao": "Certo. O GOOSE é Ethernet camada 2, multicast, com EtherType 0x88B8 (Wireshark)."
+      },
+      {
+        "texto": "MMS, relatório e controle do SCADA",
+        "correta": false,
+        "explicacao": "O MMS roda sobre TCP/IP, na porta 102; o quadro dado não tem IP."
+      },
+      {
+        "texto": "Tag de VLAN 802.1Q, de prioridade",
+        "correta": false,
+        "explicacao": "A tag de VLAN 802.1Q tem EtherType 0x8100. O 0x88B8 é do GOOSE."
+      }
+    ],
+    "fontes": [
+      "wireshark-etypes",
+      "softwaretoolbox-61850"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-03-q4",
+    "licao": "01-03",
+    "enunciado": "Um colega pede o filtro de porta TCP do GOOSE para o Wireshark. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Use a porta 102, que o GOOSE divide com o MMS",
+        "correta": false,
+        "explicacao": "A 102 é do MMS e do ISO-TSAP. O GOOSE não usa porta."
+      },
+      {
+        "texto": "Use a porta 2404, pois o GOOSE é da família IEC",
+        "correta": false,
+        "explicacao": "A 2404 é do IEC 104. O GOOSE não usa porta; o filtro é o EtherType 0x88B8."
+      },
+      {
+        "texto": "Use a porta 20000, igual à do DNP3",
+        "correta": false,
+        "explicacao": "A 20000 é do DNP3. O GOOSE não usa TCP nem UDP, só o EtherType 0x88B8."
+      },
+      {
+        "texto": "Não existe porta; filtre pelo EtherType 0x88B8",
+        "correta": true,
+        "explicacao": "Certo. O GOOSE não usa TCP nem UDP; filtra-se pelo EtherType 0x88B8 (Wireshark)."
+      }
+    ],
+    "fontes": [
+      "wireshark-etypes",
+      "softwaretoolbox-61850"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-03-q5",
+    "licao": "01-03",
+    "enunciado": "Um colega propõe levar GOOSE entre duas subestações por uma WAN com roteadores. O que a lição diz?",
+    "alternativas": [
+      {
+        "texto": "Passa, pois o GOOSE usa IP e TCP como o MMS faz",
+        "correta": false,
+        "explicacao": "O GOOSE não usa IP nem TCP; é Ethernet de camada 2."
+      },
+      {
+        "texto": "Não passa por roteador: o multicast de camada 2 fica na LAN",
+        "correta": true,
+        "explicacao": "Certo. O GOOSE exige uma única LAN Ethernet, sem roteadores entre publicador e assinante (Software Toolbox)."
+      },
+      {
+        "texto": "Passa, desde que se libere a porta 102 no roteador",
+        "correta": false,
+        "explicacao": "O GOOSE não tem porta; a 102 é do MMS, e o multicast de camada 2 não atravessa roteador."
+      },
+      {
+        "texto": "Passa, pois o multicast de camada 2 é roteado como o IP",
+        "correta": false,
+        "explicacao": "O multicast de camada 2 não atravessa roteador, ao contrário do tráfego IP."
+      }
+    ],
+    "fontes": [
+      "softwaretoolbox-61850",
+      "cisco-da"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-03-q6",
+    "licao": "01-03",
+    "enunciado": "Qual parte do IEC 61850 pode atravessar a WAN, por ser roteável?",
+    "alternativas": [
+      {
+        "texto": "O GOOSE, que usa IP multicast",
+        "correta": false,
+        "explicacao": "O GOOSE não usa IP; é multicast de camada 2 e não atravessa roteador."
+      },
+      {
+        "texto": "O Sampled Values, que usa a porta 88BA",
+        "correta": false,
+        "explicacao": "O Sampled Values é Ethernet de camada 2, com EtherType 0x88BA, e não tem porta."
+      },
+      {
+        "texto": "O MMS, que roda sobre TCP/IP",
+        "correta": true,
+        "explicacao": "Certo. O MMS usa TCP/IP (ISO-on-TCP) e é roteável pela WAN (Software Toolbox)."
+      },
+      {
+        "texto": "Nenhuma, pois o IEC 61850 é todo de LAN",
+        "correta": false,
+        "explicacao": "O MMS é a parte roteável pela WAN; GOOSE e SV é que ficam na LAN."
+      }
+    ],
+    "fontes": [
+      "softwaretoolbox-61850"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-03-q7",
+    "licao": "01-03",
+    "enunciado": "Na captura aparece a porta 102. Como interpretar?",
+    "alternativas": [
+      {
+        "texto": "Provavelmente MMS, mas a IANA a registra como ISO-TSAP, não só do MMS",
+        "correta": true,
+        "explicacao": "Certo. A IANA registra a 102 como iso-tsap; o MMS usa TCP 102, mas ela não é só dele (IANA)."
+      },
+      {
+        "texto": "Provavelmente IEC 104, mas a IANA a registra como iec-104 na 102",
+        "correta": false,
+        "explicacao": "O IEC 104 usa a 2404. A 102 é registrada como ISO-TSAP e é, provavelmente, do MMS."
+      },
+      {
+        "texto": "Provavelmente DNP3, mas a IANA a registra como porta do DNP3 na 102",
+        "correta": false,
+        "explicacao": "O DNP3 usa a 20000. A 102 é ISO-TSAP e, provavelmente, MMS."
+      },
+      {
+        "texto": "Provavelmente GOOSE, mas a IANA a registra como porta multicast na 102",
+        "correta": false,
+        "explicacao": "O GOOSE não usa porta. A 102 é ISO-TSAP e, provavelmente, MMS."
+      }
+    ],
+    "fontes": [
+      "iana-portas",
+      "softwaretoolbox-61850"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "01-03-q8",
+    "licao": "01-03",
+    "enunciado": "Um relé recebe valores amostrados de uma merging unit. Como esse tráfego é reconhecido na rede?",
+    "alternativas": [
+      {
+        "texto": "TCP/IP, na porta 102, como o MMS do IEC 61850",
+        "correta": false,
+        "explicacao": "Os SV não usam IP nem TCP; a 102 é do MMS."
+      },
+      {
+        "texto": "Camada 2, multicast, EtherType 0x88B8, como o GOOSE",
+        "correta": false,
+        "explicacao": "O 0x88B8 é do GOOSE. Os SV têm EtherType 0x88BA."
+      },
+      {
+        "texto": "TCP/IP, na porta 20000, como o DNP3 da IEEE 1815",
+        "correta": false,
+        "explicacao": "A 20000 é do DNP3. Os SV são Ethernet de camada 2, sem IP."
+      },
+      {
+        "texto": "Camada 2, multicast, sem IP, EtherType 0x88BA",
+        "correta": true,
+        "explicacao": "Certo. Os Sampled Values são Ethernet de camada 2, multicast, com EtherType 0x88BA (Wireshark, Software Toolbox)."
+      }
+    ],
+    "fontes": [
+      "wireshark-etypes",
+      "softwaretoolbox-61850"
+    ],
+    "dificuldade": 3
+  }
+]

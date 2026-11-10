@@ -111,7 +111,7 @@ export function validarEntradaVideos(entrada, { hoje = new Date() } = {}) {
       else if (data > hoje) erros.push(`${n}: conferidoEm ${v.conferidoEm} está no futuro`);
       else if ((hoje - data) / 86_400_000 > 365) avisos.push(`${n}: conferido há mais de 12 meses (${v.conferidoEm})`);
     }
-    if (v?.duracao === undefined || v.duracao === '') avisos.push(`${n} sem duração`);
+    if (v?.duracao === undefined || v.duracao === '') erros.push(`${n} sem duração`);
     else if (!duracaoValida(v.duracao)) erros.push(`${n}: duração "${v.duracao}" fora do formato m:ss ou h:mm:ss`);
     else if (minutosDaDuracao(v.duracao) > LIMITE_SEM_TRECHO_MIN && !v.trecho?.trim()) {
       avisos.push(`${n} com mais de ${LIMITE_SEM_TRECHO_MIN} min e sem "trecho"`);

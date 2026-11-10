@@ -251,12 +251,12 @@ Falha o build quando:
 - diagrama citado que não existe;
 - linha de tabela de ferramenta sem fonte;
 - texto com palavras proibidas da lista de dados reais (nomes de unidades, por exemplo — lista local, fora do Git);
-- `content/videos.json`: `licao` inexistente ou repetida; entrada sem nenhum vídeo e sem nenhum termo; vídeo sem `url`, `titulo`, `canal`, `conferidoEm` ou `observar`; `url` que não seja do YouTube (`https://www.youtube.com/watch?v=<11 caracteres>` ou `https://youtu.be/<11>`, com ou sem `&t=`); `conferidoEm` fora de AAAA-MM-DD ou no futuro; `duracao` fora de `m:ss`/`h:mm:ss`; mais de 2 vídeos na lição; o mesmo vídeo duas vezes na lição.
+- `content/videos.json`: `licao` inexistente ou repetida; entrada sem nenhum vídeo e sem nenhum termo; vídeo sem `url`, `titulo`, `canal`, `duracao`, `conferidoEm` ou `observar`; `url` que não seja do YouTube (`https://www.youtube.com/watch?v=<11 caracteres>` ou `https://youtu.be/<11>`, com ou sem `&t=`); `conferidoEm` fora de AAAA-MM-DD ou no futuro; `duracao` fora de `m:ss`/`h:mm:ss`; mais de 2 vídeos na lição; o mesmo vídeo duas vezes na lição.
 
 Avisa (sem falhar):
 - lição com mais de 900 palavras;
 - fonte acessada há mais de 12 meses;
-- vídeos: lição com conteúdo sem entrada em `videos.json`; vídeo sem `duracao`; vídeo com mais de 25 min sem `trecho`; `conferidoEm` com mais de 12 meses;
+- vídeos: lição com conteúdo sem entrada em `videos.json`; vídeo com mais de 25 min sem `trecho`; `conferidoEm` com mais de 12 meses;
 - `--links`: confere os links (HEAD/GET) e lista os quebrados (precisa de internet; roda à parte).
 
 ## 6. Visual

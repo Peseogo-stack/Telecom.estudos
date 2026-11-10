@@ -123,10 +123,10 @@ describe('vídeos recomendados', () => {
     expect(velho.avisos).toHaveLength(1);
   });
 
-  it('duração: ausente é aviso, mal formada é erro', () => {
+  it('duração: ausente ou mal formada é erro', () => {
     const sem = confere(entrada([video({ duracao: undefined })]));
-    expect(sem.erros).toEqual([]);
-    expect(sem.avisos).toHaveLength(1);
+    expect(sem.erros).toHaveLength(1);
+    expect(sem.avisos).toEqual([]);
     expect(confere(entrada([video({ duracao: '12 min' })])).erros).toHaveLength(1);
   });
 

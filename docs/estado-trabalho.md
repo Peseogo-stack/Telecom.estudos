@@ -48,3 +48,4 @@ Ordem: 08-03, 08-02, 08-06, 07-01, 07-02; depois 08-01, 08-04, 08-05, 08-07, 07-
 | --- | --- | --- | --- | --- |
 | 08-03 SRC, UTM 20S e o erro de 10.000 km | 10/11/2026 | 8 | 2 (1 com aviso) | Destino do ponto com o falso norte trocado (perto do Polo Norte, não "some"); "oficial desde 2005" virou a frase da resolução; regra dos dígitos só ao norte do Equador; separador do CSV; lição enxugada para 700 palavras |
 | 08-02 Vetor, raster, feição e atributo | 10/11/2026 | 8 | 1 | "Dois tipos de dado" virou "principalmente"; fonte para "camada = mesmo tipo de geometria"; "várias camadas" só para o GeoPackage; novidade da 4.x (duplo clique dá zoom) descrita como diferença entre manuais |
+| 08-06 Filtrar, selecionar e contar | 10/11/2026 | 8 | 1 (o mesmo da 08-02) | "Existem no projeto" virou "ficam disponíveis"; botão Clear para tirar o filtro; explicação da questão 8 citava uma contagem que não batia com o arquivo |

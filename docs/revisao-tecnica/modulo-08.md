@@ -46,3 +46,17 @@ A lição passou de 700 palavras com as correções e foi enxugada para caber.
 **Diferença entre versões achada nesta lição:** no manual da 4.x, o duplo clique no cabeçalho da linha da tabela dá zoom na feição. Os outros caminhos são iguais.
 
 **Vídeos:** um conferido (Geotecnologias na rede, 12:02; a descrição lista abrir dados, tabela de atributos e ponto, linha e polígono). Ficaram de fora um corte de live com divulgação de curso, um vídeo de 2019 que chama o GeoPackage de "substituto" do Shapefile e uma aula marcada como português de Portugal com descrição vaga.
+
+## 08-06 — Perguntas à camada: filtrar, selecionar e contar (10/11/2026)
+
+**Fontes abertas:** manual do QGIS 3.44 e 4.x (Query Builder, ferramentas de seleção, tabela de atributos, expressões e lista de funções). Todas as contagens do exercício foram conferidas com consultas diretas no GeoPackage fictício. Os comprimentos do cabo CB-01 foram calculados com o pyproj sobre a geometria do arquivo: 434,31 m no elipsoide GRS80 e 434,26 m no plano da projeção.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| Com filtro, só as feições do resultado "existem no projeto" | Manual: "are available in the project" | "ficam disponíveis no projeto" |
+| "Tire o filtro", sem dizer como | Manual: o botão Clear apaga a consulta e devolve a camada ao estado original | "tire o filtro com Clear" |
+| Questão 8: `"altura_m" = 9` "acha 2 postes de madeira" | No arquivo, `"altura_m" = 9` sozinho acha 17 postes; os 2 são com o material junto | A explicação cita a expressão completa da lição |
+
+**Diferença entre versões achada nesta lição:** o manual da 4.x cita o Filter… também no menu de contexto da camada e diz que o filtro é feito no provedor de dados, então a sintaxe depende dele.
+
+**Vídeos:** nenhum dos quatro candidatos novos entrou (um divulga curso pago; os outros são de 2013 a 2018, de versões antigas). Entrou o mesmo vídeo da 08-02, cuja descrição lista seleção e filtros.

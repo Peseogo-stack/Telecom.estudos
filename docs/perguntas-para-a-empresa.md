@@ -60,6 +60,7 @@
 | b16 | Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem? | Projeto executivo ou memorial de cálculo da rede | 02-06, 02-07, 04-03, 04-05 |
 | b17 | Qual método de referência de perda de inserção a empresa pede (1, 2 ou 3 cordões), em quais comprimentos de onda, e qual é o critério de aceite da perda total? | Especificação técnica de aceite de obra | 06-01, 09-05 |
 | b18 | O contrato ou o padrão de entrega diz em que SRC o fornecedor tem de mandar os arquivos (as-built, KML, planilha de coordenadas)? | Contrato e padrão de entrega | 08-03 |
+| b19 | O relatório de ocupação ou de vistoria pede contagens (postes por ocupante, pontos sem plaqueta)? De qual camada elas saem? | Modelo do relatório | 08-06 |
 
 ---
 
@@ -111,6 +112,8 @@
 | d19 | Quais camadas a equipe usa no dia a dia (postes, cabos, caixas…) e de que tipo é cada uma: ponto, linha ou polígono? | 08-02 |
 | d20 | Em que formato os dados ficam guardados: GeoPackage, Shapefile, banco de dados? | 08-02 |
 | d21 | A equipe usa imagem de satélite de fundo? De onde ela vem? | 08-02 |
+| d22 | Quais consultas a equipe mais faz nas camadas de postes e cabos (por ocupante, por situação, por data de vistoria)? | 08-06 |
+| d23 | As camadas do projeto da equipe já vêm com algum filtro ligado? Qual e por quê? | 08-06 |
 
 ---
 

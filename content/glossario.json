@@ -1818,5 +1818,66 @@
     "licoes": [
       "08-02"
     ]
+  },
+  {
+    "id": "expressao",
+    "pt": "Expressão",
+    "en": "Expression",
+    "definicao": "Pergunta de sim ou não feita a cada feição, escrita com campo, operador e valor, como \"ocupantes_qtd\" > 5. Campo vai entre aspas duplas, texto entre aspas simples e número sem aspas.",
+    "fontes": [
+      "qgis-expressoes"
+    ],
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "filtro-de-camada",
+    "pt": "Filtro de camada",
+    "en": "Layer filter (Query Builder)",
+    "definicao": "Consulta que deixa no projeto só as feições que atendem, com uma cláusula WHERE parecida com SQL. As outras somem do mapa, da tabela e das contagens até o filtro ser removido. A camada ganha um funil no painel Layers.",
+    "fontes": [
+      "qgis-propriedades-vetor"
+    ],
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "selecao",
+    "pt": "Seleção",
+    "en": "Selection",
+    "definicao": "Marca as feições que atendem a uma pergunta, sem esconder as outras: elas continuam no mapa e na tabela. O título da tabela de atributos mostra quantas estão selecionadas.",
+    "fontes": [
+      "qgis-ferramentas-gerais",
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "planimetrico",
+    "pt": "Medida planimétrica",
+    "en": "Planimetric",
+    "definicao": "Medida feita no plano do sistema de coordenadas, na unidade dele: metros numa camada em UTM e graus numa camada em 4674 ou 4326.",
+    "fontes": [
+      "qgis-funcoes"
+    ],
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "elipsoidal",
+    "pt": "Medida elipsoidal",
+    "en": "Ellipsoidal",
+    "definicao": "Medida feita sobre o elipsoide definido no projeto. A função $length do QGIS dá medida elipsoidal quando o projeto tem elipsoide e planimétrica quando não tem.",
+    "fontes": [
+      "qgis-funcoes"
+    ],
+    "licoes": [
+      "08-06"
+    ]
   }
 ]

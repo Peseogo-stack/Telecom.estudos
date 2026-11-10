@@ -33,6 +33,7 @@ import { SplittersBalanceados } from './SplittersBalanceados';
 import { OrcamentoPon } from './OrcamentoPon';
 import { ZonasUtmRoraima } from './ZonasUtmRoraima';
 import { FeicaoETabela } from './FeicaoETabela';
+import { FiltrarXSelecionar } from './FiltrarXSelecionar';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -66,6 +67,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'orcamento-pon': OrcamentoPon,
   'zonas-utm-roraima': ZonasUtmRoraima,
   'feicao-e-tabela': FeicaoETabela,
+  'filtrar-x-selecionar': FiltrarXSelecionar,
 };
 
 

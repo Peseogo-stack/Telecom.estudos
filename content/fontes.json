@@ -816,7 +816,7 @@
     "tipo": "documentacao",
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/attribute_table.html",
     "acessadoEm": "2026-11-10",
-    "observacao": "\"Each row in the table represents a feature (with or without geometry), and each column contains a particular piece of information about the feature\" (coluna = campo). O QGIS carrega camadas espaciais e tabelas não espaciais (sem geometria); as não espaciais aparecem e se editam na mesma tela de tabela de atributos. Abrir: Layer ► Open Attribute Table, botão Open Attribute Table da barra Attributes, ou F6; Shift+F6 abre só as feições selecionadas. O título da tabela mostra o total de feições da camada e quantas estão selecionadas ou filtradas. No canto inferior esquerdo, lista de filtros: Show All Features, Show Selected Features, Show Features Visible on Map. Modos: Table view (uma linha por feição) e Form view (uma feição por vez). Menus e atalhos iguais na 3.44 e na versão 4.x em desenvolvimento (https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/attribute_table.html, conferido em 10/11/2026). Diferença na 4.x: \"Double clicking the row header will zoom to the feature in the map canvas (if the layer has geometry).\" Essa frase não está no manual da 3.44."
+    "observacao": "\"Each row in the table represents a feature (with or without geometry), and each column contains a particular piece of information about the feature\" (coluna = campo). O QGIS carrega camadas espaciais e tabelas não espaciais (sem geometria); as não espaciais aparecem e se editam na mesma tela de tabela de atributos. Abrir: Layer ► Open Attribute Table, botão Open Attribute Table da barra Attributes, ou F6; Shift+F6 abre só as feições selecionadas. O título da tabela mostra o total de feições da camada e quantas estão selecionadas ou filtradas. No canto inferior esquerdo, lista de filtros: Show All Features, Show Selected Features, Show Features Visible on Map. Modos: Table view (uma linha por feição) e Form view (uma feição por vez). Menus e atalhos iguais na 3.44 e na versão 4.x em desenvolvimento (https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/attribute_table.html, conferido em 10/11/2026). Diferença na 4.x: \"Double clicking the row header will zoom to the feature in the map canvas (if the layer has geometry).\" Essa frase não está no manual da 3.44. Acrescentado para a lição 08-06: a lista no canto inferior esquerdo (Show All Features, Show Selected Features) equivale a abrir a tabela com Shift+F6. Field Calculator (botão na tabela, Ctrl+I): cria um campo novo ou atualiza um existente com o resultado de uma expressão, ou seja, altera dados; o uso fica para a lição 08-05."
   },
   {
     "id": "qgis-ferramentas-gerais",
@@ -825,6 +825,33 @@
     "tipo": "documentacao",
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/introduction/general_tools.html",
     "acessadoEm": "2026-11-10",
-    "observacao": "Igual na 4.x. Identify Features: View ► Identify Features (Ctrl+Shift+I) ou o botão na barra Attributes; depois, clicar numa feição (ou pixel) da camada ativa abre uma janela com as informações dela. No painel Layers, o menu de contexto da camada tem Show Feature Count, que mostra o número de feições ao lado do nome."
+    "observacao": "Igual na 4.x. Identify Features: View ► Identify Features (Ctrl+Shift+I) ou o botão na barra Attributes; depois, clicar numa feição (ou pixel) da camada ativa abre uma janela com as informações dela. No painel Layers, o menu de contexto da camada tem Show Feature Count, que mostra o número de feições ao lado do nome. Acrescentado para a lição 08-06 (conferido em 10/11/2026, igual na 4.x): Select Features By Expression… (Ctrl+F3); Select Features By Value… (F3); Deselect Features from All Layers (Ctrl+Alt+A); Select All Features (Ctrl+A). \"attribute table and map canvas show the same information, so if you select one feature in the attribute table, it will be selected on the map canvas too\". Painel Statistics (Ctrl+6): resumo de um campo de uma camada vetorial (contagem, soma, média…), para a camada toda ou só para as feições selecionadas (\"Selected features only\")."
+  },
+  {
+    "id": "qgis-propriedades-vetor",
+    "titulo": "QGIS User Guide 3.44: The Vector Properties Dialog (Query Builder)",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/vector_properties.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Mesma página em https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/vector_properties.html (4.x em desenvolvimento), conferida em 10/11/2026. O Query Builder abre por Layer ► Filter…; o manual da 3.44 cita também o botão Query Builder na aba Source das propriedades da camada, e o da 4.x cita ainda \"the layer contextual menu\" (botão direito na camada ► Filter…). Ele define \"a subset of the features in the layer using a SQL-like WHERE clause\"; \"As long as the query is active, only the features corresponding to its result are available in the project.\" As outras feições continuam no arquivo, mas somem do mapa, da tabela e das contagens até o filtro ser removido. No painel Layers, a camada filtrada ganha um ícone de filtro (funil) ao lado do nome; o mouse sobre ele mostra a consulta e o duplo clique reabre o Query Builder. A tela tem as listas Fields (duplo clique põe o nome do campo na consulta), Values (botões Sample, com os 25 primeiros valores únicos, e All, com todos) e Operators. Manual da 4.x: \"The filter is made at the data provider (OGR, GeoPackage, PostgreSQL, MS SQL Server…) level. So the syntax depends on the data provider\" (exemplo do manual: ILIKE não é aceito em GeoPackage). O botão Clear apaga a consulta e devolve a camada ao estado original, com todas as feições."
+  },
+  {
+    "id": "qgis-expressoes",
+    "titulo": "QGIS User Guide 3.44: Expressions",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/expressions/expression.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na 4.x. Aspas: \"single quotes return a literal, so a text placed between single quotes ('145') is interpreted as a string. Double quotes will give you the value of that text so use them for fields (\"myfield\"). Fields can also be used without quotes (myfield). No quotes for numbers (3.16).\""
+  },
+  {
+    "id": "qgis-funcoes",
+    "titulo": "QGIS User Guide 3.44: List of functions",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/expressions/functions_list.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na 4.x. $length: \"Returns the length of a linestring. […] The length calculated by this function respects both the current project's ellipsoid setting and distance unit settings. For example, if an ellipsoid has been set for the project then the calculated length will be ellipsoidal, and if no ellipsoid is set then the calculated length will be planimetric.\" length(geometry): \"Calculations are always planimetric in the Spatial Reference System (SRS) of this geometry, and the units of the returned length will match the units for the SRS.\" Consequência: numa camada em graus (4674 ou 4326), length devolve graus; numa camada em UTM (31980), devolve metros no plano da projeção. Exemplo calculado com pyproj sobre a geometria do cabo CB-01 de dados-qgis/rede-ficticia.gpkg (projeto em 31980, elipsoide GRS80): $length = 434,31 m; length da geometria = 434,26 m (cerca de 5 cm de diferença em 434 m); o campo compr_proj_m do CB-01 diz 442,7."
   }
 ]

@@ -278,5 +278,24 @@
       "QGIS tabela de atributos feições",
       "QGIS abrir GeoPackage camadas"
     ]
+  },
+  {
+    "licao": "08-06",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=IPJGEX652RQ",
+        "titulo": "Básico em Geoprocessamento - Vetores",
+        "canal": "Geotecnologias na rede",
+        "duracao": "12:02",
+        "observar": "A parte de seleção, remoção de seleção e filtros. Compare com a lição: selecionar marca as feições; filtrar esconde as outras.",
+        "conferidoEm": "2026-11-10",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. A descrição lista seleção, remoção de seleção, filtros e tabela de atributos. Sem capítulos nem transcrição, por isso não há minuto do trecho; a versão do QGIS não é informada. É o mesmo vídeo da lição 08-02."
+      }
+    ],
+    "termosBusca": [
+      "QGIS selecionar por expressão",
+      "QGIS filtro de camada construtor de consultas",
+      "QGIS contar feições selecionadas estatísticas"
+    ]
   }
 ]

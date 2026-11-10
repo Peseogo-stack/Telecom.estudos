@@ -672,5 +672,32 @@
     "licoes": [
       "08-02"
     ]
+  },
+  {
+    "id": "d22",
+    "onde": "colega",
+    "texto": "Quais consultas a equipe mais faz nas camadas de postes e cabos (por ocupante, por situação, por data de vistoria)?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "d23",
+    "onde": "colega",
+    "texto": "As camadas do projeto da equipe já vêm com algum filtro ligado? Qual e por quê?",
+    "dica": "Procure o funil ao lado do nome da camada",
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "b19",
+    "onde": "documentos",
+    "texto": "O relatório de ocupação ou de vistoria pede contagens (postes por ocupante, pontos sem plaqueta)? De qual camada elas saem?",
+    "dica": "Modelo do relatório",
+    "licoes": [
+      "08-06"
+    ]
   }
 ]

@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['08-02', '08-03']) {
+for (const id of ['08-02', '08-03', '08-06']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -36,7 +36,7 @@ test('08-03: termo SRC abre a definição no glossário', async ({ page }) => {
   await expect(page.getByText('como os números de uma coordenada', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/glossario?t=falso-norte']) {
+for (const rota of ['#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/glossario?t=falso-norte']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();
@@ -45,6 +45,23 @@ for (const rota of ['#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', 
     expect(graves.map((v) => `${v.id}: ${v.nodes.map((x) => x.target.join(' ')).slice(0, 3).join(' | ')}`)).toEqual([]);
   });
 }
+
+test('08-06: tabela de consultas, diagrama com os três quadros e link do GeoPackage', async ({ page }) => {
+  await page.goto('./#/licao/08-06');
+  const tabela = page.locator('.prosa table');
+  await expect(tabela).toContainText('"plaqueta" = \'nao\'');
+  await expect(tabela).toContainText('IS NULL');
+  await expect(page.locator('figure.diagrama svg')).toContainText('2 selecionadas de 8');
+  await expect(page.locator('figure.diagrama svg')).toContainText('a contagem passa a ser 2');
+  await expect(page.getByRole('link', { name: 'rede-ficticia.gpkg' })).toHaveAttribute('href', /dados-qgis\/rede-ficticia\.gpkg$/);
+});
+
+test('08-06: termo filtro abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-06');
+  await page.getByRole('link', { name: 'Filtrar', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=filtro-de-camada/);
+  await expect(page.getByText('cláusula WHERE', { exact: false }).first()).toBeVisible();
+});
 
 test('08-03: os arquivos de exercício baixam de verdade (GeoPackage e CSV)', async ({ page }) => {
   await page.goto('./#/licao/08-03');

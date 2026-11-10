@@ -1,0 +1,256 @@
+[
+  {
+    "id": "08-06-q1",
+    "licao": "08-06",
+    "enunciado": "O colega reclama que sumiram postes da camada postes no projeto da equipe. O que olhar primeiro?",
+    "alternativas": [
+      {
+        "texto": "O funil ao lado do nome da camada: pode haver filtro ligado.",
+        "correta": true,
+        "explicacao": "Certo. Com filtro ativo, só as feições do resultado ficam no projeto. As outras continuam no arquivo, mas somem do mapa, da tabela e das contagens."
+      },
+      {
+        "texto": "O arquivo do GeoPackage, porque postes que somem do mapa foram apagados.",
+        "correta": false,
+        "explicacao": "Filtrar não apaga nada: as feições que não atendem continuam no arquivo e voltam quando o filtro é removido. Procure o funil antes de suspeitar do arquivo."
+      },
+      {
+        "texto": "As feições selecionadas, porque a seleção esconde as outras do mapa.",
+        "correta": false,
+        "explicacao": "Selecionar só marca as feições que atendem. As outras continuam no mapa e na tabela. Quem esconde é o filtro."
+      },
+      {
+        "texto": "O Show Feature Count, que esconde as feições quando está ligado.",
+        "correta": false,
+        "explicacao": "O Show Feature Count só mostra o número de feições ao lado do nome da camada. Ele não esconde nada."
+      }
+    ],
+    "fontes": [
+      "qgis-propriedades-vetor",
+      "qgis-ferramentas-gerais"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-06-q2",
+    "licao": "08-06",
+    "enunciado": "Preciso destacar no mapa os postes com mais de 5 ocupantes, sem esconder os demais. O que usar?",
+    "alternativas": [
+      {
+        "texto": "Layer ► Filter… com a mesma expressão, que destaca esses postes e mantém os outros.",
+        "correta": false,
+        "explicacao": "O filtro não destaca: ele esconde do projeto o que não atende. Os demais postes somem do mapa, da tabela e das contagens até o filtro ser removido."
+      },
+      {
+        "texto": "Select Features By Expression…, que marca os postes e deixa os outros visíveis.",
+        "correta": true,
+        "explicacao": "Certo. A seleção marca as feições que atendem; as outras continuam no mapa e na tabela, e o arquivo não muda."
+      },
+      {
+        "texto": "Editar a camada e apagar os postes que não atendem, para sobrar só os destacados.",
+        "correta": false,
+        "explicacao": "Apagar é edição, que altera o arquivo. Para só olhar, a seleção basta e não altera nada."
+      },
+      {
+        "texto": "Field Calculator, que marca os postes sem alterar nenhum dado da camada.",
+        "correta": false,
+        "explicacao": "A calculadora de campo cria ou atualiza campos com o resultado de uma expressão, ou seja, altera dados. O uso fica para a lição 08-05."
+      }
+    ],
+    "fontes": [
+      "qgis-ferramentas-gerais",
+      "qgis-propriedades-vetor",
+      "qgis-tabela-atributos"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-06-q3",
+    "licao": "08-06",
+    "enunciado": "Quero selecionar na tabela ocupacoes as ocupações sem plaqueta, cujo valor gravado é o texto nao. Que expressão usar?",
+    "alternativas": [
+      {
+        "texto": "\"plaqueta\" = \"nao\"",
+        "correta": false,
+        "explicacao": "Aspas duplas dão o valor de um campo. Assim, \"nao\" seria lido como um campo chamado nao, e o texto precisa de aspas simples."
+      },
+      {
+        "texto": "'plaqueta' = 'nao'",
+        "correta": false,
+        "explicacao": "Com aspas simples, 'plaqueta' vira um texto literal, e não o campo. Esse texto nunca é igual a 'nao'."
+      },
+      {
+        "texto": "\"plaqueta\" = 'nao'",
+        "correta": true,
+        "explicacao": "Certo. Campo entre aspas duplas, texto entre aspas simples. No arquivo do exercício, dá 5 ocupações."
+      },
+      {
+        "texto": "\"plaqueta\" = 0",
+        "correta": false,
+        "explicacao": "Número vai sem aspas, mas o campo guarda texto: o valor gravado é 'nao'. Assim, a expressão não acha as 5 ocupações."
+      }
+    ],
+    "fontes": [
+      "qgis-expressoes"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-06-q4",
+    "licao": "08-06",
+    "enunciado": "Vou informar o total de postes. A tabela de postes mostra 16 feições e há um funil ao lado do nome da camada, com a consulta \"material\" = 'madeira'. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Informar 16, porque o título da tabela sempre mostra o total do arquivo.",
+        "correta": false,
+        "explicacao": "Com filtro ativo, o título mostra só as feições filtradas. O 16 é a contagem dos postes de madeira, e não o total."
+      },
+      {
+        "texto": "Pedir o arquivo de novo, porque o filtro apagou os postes que não atendem.",
+        "correta": false,
+        "explicacao": "O filtro não altera o arquivo: as outras feições continuam nele e só somem do projeto. Basta tirar o filtro."
+      },
+      {
+        "texto": "Somar 16 às selecionadas, porque filtrar e selecionar contam coisas diferentes.",
+        "correta": false,
+        "explicacao": "Seleção e filtro não se somam. O que se lê no título da tabela é o total da camada filtrada e quantas estão selecionadas."
+      },
+      {
+        "texto": "Tirar o filtro e ler a contagem de novo: 16 é só a camada filtrada.",
+        "correta": true,
+        "explicacao": "Certo. Entregar a contagem de uma camada filtrada como se fosse o total é o risco do filtro. Sem o filtro, são 66 postes."
+      }
+    ],
+    "fontes": [
+      "qgis-propriedades-vetor",
+      "qgis-tabela-atributos"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-06-q5",
+    "licao": "08-06",
+    "enunciado": "A camada cabos está em graus (4674). Um colega leu como metros o resultado de length da geometria. Por que está errado?",
+    "alternativas": [
+      {
+        "texto": "O length devolve na unidade do SRC da geometria, então saem graus.",
+        "correta": true,
+        "explicacao": "Certo. O length calcula no plano do SRC da geometria e devolve a unidade dele. Em 4674 são graus; só em UTM (31980) saem metros."
+      },
+      {
+        "texto": "O length é elipsoidal e já converte graus para metros, mas só com projeto em 31980.",
+        "correta": false,
+        "explicacao": "Quem respeita o elipsoide do projeto é o $length. O length da geometria é sempre planimétrico, no SRC da geometria."
+      },
+      {
+        "texto": "O length dá erro em camada de graus: só funciona em camadas em UTM.",
+        "correta": false,
+        "explicacao": "Não dá erro: devolve o resultado na unidade do SRC. O problema é ler esse resultado como metros."
+      },
+      {
+        "texto": "O $length devolve sempre graus, em qualquer camada, e o length devolve metros.",
+        "correta": false,
+        "explicacao": "O $length respeita o elipsoide e a unidade do projeto, e o length segue a unidade do SRC da geometria. Nenhum dos dois devolve sempre graus ou metros."
+      }
+    ],
+    "fontes": [
+      "qgis-funcoes"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-06-q6",
+    "licao": "08-06",
+    "enunciado": "Conferindo o cabo CB-01, o campo compr_proj_m diz 442,7 e o $length, com o projeto em 31980, dá 434,31 m. O que isso mostra?",
+    "alternativas": [
+      {
+        "texto": "Defeito do $length: o campo é que mede o desenho do cabo.",
+        "correta": false,
+        "explicacao": "O $length calcula o comprimento da geometria, o desenho. Já o campo compr_proj_m é digitado e pode discordar dele."
+      },
+      {
+        "texto": "Que a diferença vem da medida elipsoidal contra a planimétrica.",
+        "correta": false,
+        "explicacao": "Essas duas medidas diferem em cerca de 5 cm em 434 m (434,31 m e 434,26 m). Não explicam 8 m de diferença."
+      },
+      {
+        "texto": "Campo digitado pode discordar da geometria, que mede o desenho.",
+        "correta": true,
+        "explicacao": "Certo. Qual dos dois vale no contrato é assunto de confirmar na empresa. Para conferir o cabo, use o comprimento da geometria."
+      },
+      {
+        "texto": "Que a camada está em graus, e por isso as duas medidas divergem.",
+        "correta": false,
+        "explicacao": "A camada está em 31980, em metros. Em graus, o length da geometria devolveria graus, e não o 434,26 m do exercício."
+      }
+    ],
+    "fontes": [
+      "qgis-funcoes"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-06-q7",
+    "licao": "08-06",
+    "enunciado": "Selecionei os postes com mais de 5 ocupantes e preciso da soma de ocupantes_qtd só deles. Onde pedir?",
+    "alternativas": [
+      {
+        "texto": "No Show Feature Count, que passa a somar o campo das feições selecionadas.",
+        "correta": false,
+        "explicacao": "O Show Feature Count só mostra o número de feições ao lado do nome da camada. Ele não soma campo."
+      },
+      {
+        "texto": "No painel Statistics (Ctrl+6), marcando Selected features only.",
+        "correta": true,
+        "explicacao": "Certo. O Statistics resume um campo (contagem, soma, média…) da camada toda ou só das selecionadas."
+      },
+      {
+        "texto": "No título da tabela de atributos, que mostra a soma do campo das selecionadas.",
+        "correta": false,
+        "explicacao": "O título mostra o total de feições e quantas estão selecionadas ou filtradas. Ele não soma valores de um campo."
+      },
+      {
+        "texto": "Em Layer ► Filter…, porque o filtro mostra a soma dos postes que atendem.",
+        "correta": false,
+        "explicacao": "O filtro só esconde do projeto o que não atende. A soma de um campo vem do painel Statistics."
+      }
+    ],
+    "fontes": [
+      "qgis-ferramentas-gerais",
+      "qgis-tabela-atributos",
+      "qgis-propriedades-vetor"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "08-06-q8",
+    "licao": "08-06",
+    "enunciado": "Quero achar os cabos sem fibras (os metálicos). Escrevi \"fibras\" = 0 e não voltou nenhum cabo. Por quê?",
+    "alternativas": [
+      {
+        "texto": "Número leva aspas simples: o certo seria \"fibras\" = '0'.",
+        "correta": false,
+        "explicacao": "Número vai sem aspas. A lição usa \"altura_m\" = 9 assim. O problema é outro: o campo está vazio, e não com 0."
+      },
+      {
+        "texto": "O operador = só vale para texto; para número, só < e >.",
+        "correta": false,
+        "explicacao": "O = funciona com número: a lição usa \"altura_m\" = 9, junto com o material, e acha 2 postes. O que falha aqui é comparar um campo vazio com 0."
+      },
+      {
+        "texto": "Só o Query Builder aceita campo vazio; na seleção não se acha cabo sem fibras.",
+        "correta": false,
+        "explicacao": "Qualquer expressão pode perguntar por campo vazio, com IS NULL. Não depende de filtrar."
+      },
+      {
+        "texto": "O campo está vazio, e vazio não é zero: use \"fibras\" IS NULL.",
+        "correta": true,
+        "explicacao": "Certo. IS NULL acha o campo vazio, e dá 2 cabos, os metálicos. Zero seria um valor gravado."
+      }
+    ],
+    "fontes": [
+      "qgis-expressoes"
+    ],
+    "dificuldade": 3
+  }
+]

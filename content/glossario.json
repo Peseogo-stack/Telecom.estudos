@@ -1681,5 +1681,142 @@
     "licoes": [
       "08-03"
     ]
+  },
+  {
+    "id": "sig",
+    "pt": "SIG (sistema de informação geográfica)",
+    "sigla": "SIG",
+    "en": "GIS (geographic information system)",
+    "definicao": "Programa que trabalha com dados ligados a um lugar. O QGIS é um deles: guarda o que existe na paisagem como feições (vetor) ou como pixels (raster).",
+    "fontes": [
+      "qgis-intro-vetor",
+      "qgis-intro-raster"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "camada",
+    "pt": "Camada",
+    "en": "Layer",
+    "definicao": "Conjunto de feições do mesmo tipo de geometria (por exemplo, postes como pontos, cabos como linhas, quadras como polígonos). Um arquivo como o GeoPackage pode ter várias camadas.",
+    "fontes": [
+      "qgis-intro-vetor",
+      "qgis-abrir-dados"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "vetor",
+    "pt": "Vetor",
+    "en": "Vector",
+    "definicao": "Dado que representa o que se vê na paisagem (casas, estradas, árvores, rios) como feições, cada uma com geometria e atributos.",
+    "fontes": [
+      "qgis-intro-vetor"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "raster",
+    "pt": "Raster",
+    "en": "Raster",
+    "definicao": "Matriz de pixels (células), cada um com um valor para a área que cobre. É o caso de imagens de satélite e fotografias aéreas.",
+    "fontes": [
+      "qgis-intro-raster"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "feicao",
+    "pt": "Feição",
+    "en": "Feature",
+    "definicao": "Qualquer coisa que se vê na paisagem e é representada como dado vetorial. Tem geometria (a forma e o lugar) e atributos (a descrição). Na tabela de atributos, é uma linha.",
+    "fontes": [
+      "qgis-intro-vetor",
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "geometria",
+    "pt": "Geometria",
+    "en": "Geometry",
+    "definicao": "A forma de uma feição vetorial e o lugar dela, feita de um ou mais vértices ligados: um vértice é ponto; dois ou mais, linha; três ou mais com o último igual ao primeiro, polígono.",
+    "fontes": [
+      "qgis-intro-vetor"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "vertice",
+    "pt": "Vértice",
+    "en": "Vertex",
+    "definicao": "Posição no espaço descrita por X, Y e, às vezes, Z. A geometria de uma feição é feita de um ou mais vértices.",
+    "fontes": [
+      "qgis-intro-vetor"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "atributo",
+    "pt": "Atributo",
+    "en": "Attribute",
+    "definicao": "Texto ou número que descreve uma feição vetorial, como o material de um poste. Fica numa coluna (campo) da tabela de atributos.",
+    "fontes": [
+      "qgis-intro-vetor",
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "tabela-de-atributos",
+    "pt": "Tabela de atributos",
+    "en": "Attribute table",
+    "definicao": "Tabela de uma camada: cada linha é uma feição e cada coluna é um campo. Existem também tabelas sem geometria, que não desenham nada no mapa.",
+    "fontes": [
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "campo",
+    "pt": "Campo",
+    "en": "Field",
+    "definicao": "Coluna da tabela de atributos: um tipo de informação sobre as feições, como o código ou o material do poste.",
+    "fontes": [
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "geopackage",
+    "pt": "GeoPackage",
+    "en": "GeoPackage",
+    "definicao": "Formato vetorial que funciona como contêiner de camadas: um arquivo só, que no painel Browser se expande para mostrar as camadas dentro dele.",
+    "fontes": [
+      "qgis-abrir-dados"
+    ],
+    "licoes": [
+      "08-02"
+    ]
   }
 ]

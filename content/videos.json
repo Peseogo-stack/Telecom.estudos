@@ -259,5 +259,24 @@
       "QGIS SIRGAS 2000 UTM 31980 sistema de referência",
       "QGIS definir SRC da camada reprojetar"
     ]
+  },
+  {
+    "licao": "08-02",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=IPJGEX652RQ",
+        "titulo": "Básico em Geoprocessamento - Vetores",
+        "canal": "Geotecnologias na rede",
+        "duracao": "12:02",
+        "observar": "Como abrir dados, abrir a tabela de atributos e reconhecer ponto, linha e polígono. A parte de seleção e filtros adianta a lição 08-06.",
+        "conferidoEm": "2026-11-10",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. A descrição lista: abrir dados no QGIS, seleção, filtros, tabela de atributos e vetores ponto, linha e polígono. Sem capítulos nem transcrição; a versão do QGIS não é informada."
+      }
+    ],
+    "termosBusca": [
+      "QGIS vetor e raster ponto linha polígono",
+      "QGIS tabela de atributos feições",
+      "QGIS abrir GeoPackage camadas"
+    ]
   }
 ]

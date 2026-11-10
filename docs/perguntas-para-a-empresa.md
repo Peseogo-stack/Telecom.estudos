@@ -34,6 +34,7 @@
 | a13 | Os cabos da nossa rede seguem o código de cores nacional (verde, amarela, branca, azul…) ou há cabos importados no padrão TIA-598 (azul, laranja, verde…)? E os pigtails do DIO, em que ordem vêm? | Gravação da capa, ficha do fabricante, cores ao abrir uma caixa acompanhado | 03-03 |
 | a14 | Qual é a classe de laser e a potência gravadas na etiqueta da nossa caneta VFL, e que tipo de microscópio de inspeção a equipe usa (vídeo ou óptico com filtro IR)? | Etiqueta da caneta VFL e maleta de inspeção/limpeza | 10-03 |
 | a15 | Abra um arquivo recebido de fornecedor no QGIS e veja o SRC em Propriedades ► Source: ele veio declarado? | Qualquer camada recebida de terceiros | 08-03 |
+| a16 | Abra a tabela de atributos de uma camada de postes da empresa: quais campos existem e qual deles é o código do poste? (Anote só no Meu caderno; nada de dado da empresa no app.) | Camada de postes no QGIS da equipe | 08-02 |
 
 ---
 
@@ -107,6 +108,9 @@
 | d16 | Que álcool isopropílico (pureza) e que removedor de geleia a equipe usa na bancada, e como fazemos o descarte do pote de fragmentos de fibra? | 10-04, 05-01 |
 | d17 | Qual é o SRC do projeto de QGIS da equipe e das camadas de postes e cabos: 31980, 4674 ou outro? | 08-03 |
 | d18 | A equipe usa a zona 20 para o estado todo ou muda para a zona 21 a leste de 60°O? | 08-03 |
+| d19 | Quais camadas a equipe usa no dia a dia (postes, cabos, caixas…) e de que tipo é cada uma: ponto, linha ou polígono? | 08-02 |
+| d20 | Em que formato os dados ficam guardados: GeoPackage, Shapefile, banco de dados? | 08-02 |
+| d21 | A equipe usa imagem de satélite de fundo? De onde ela vem? | 08-02 |
 
 ---
 

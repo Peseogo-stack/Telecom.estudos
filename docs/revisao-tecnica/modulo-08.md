@@ -27,3 +27,22 @@ A lição passou de 700 palavras com as correções e foi enxugada para caber.
 **Vídeos:** dois conferidos pelo oEmbed e pela descrição (YouTube Data API). O de Bruno Rech entra com aviso: a descrição diz que a conversão temporária entre SRCs "deve ser evitada", e o manual do QGIS a trata como funcionamento normal. Ficaram de fora um vídeo de 33 min sem capítulos e dois com divulgação na descrição.
 
 **Validador:** o limite de palavras por lição passou de 900 para 700 no aviso (a regra já valia no texto, não no código deste branch).
+
+## 08-02 — Vetor, raster, feição e atributo (10/11/2026)
+
+**Fontes abertas:** "A Gentle Introduction to GIS" do QGIS 3.44 (dados vetoriais e raster) e o manual do QGIS 3.44 e 4.x (tabela de atributos, abrir dados, ferramentas gerais). As contagens do exercício (66 postes, 12 cabos, 6 quadras, 6 ocupantes, o poste PF-0007) foram conferidas direto no GeoPackage fictício.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "Um SIG guarda o mundo em dois tipos de dado" | O QGIS lê outros tipos além de vetor e raster | "trabalha, principalmente, com dois tipos de dado" |
+| "Uma camada reúne feições do mesmo tipo de geometria", sem fonte | Gentle Introduction, 3.5: "Features in a layer have the same geometry type" | Frase com a fonte |
+| "Um arquivo pode ter várias camadas" | Vale para o GeoPackage (contêiner de camadas), não para qualquer formato | "Um arquivo GeoPackage pode ter várias camadas" |
+| Raster "serve de fundo", como fato do manual | O manual fala de informação contínua, satélite e foto aérea | A frase do manual com a fonte; "costuma ir no fundo do mapa" fica como uso comum |
+| "Show Features Visible on Map" | Manual: "Show Features visible on map" | Como no manual |
+| Identify Features "com um cabo no mapa" | Manual: clicar numa feição da camada ativa | "Com a camada cabos ativa" |
+| "Só na 4.x… Essa frase não está no manual da 3.44" | Manual da versão em desenvolvimento | "Novidade no manual da 4.x em desenvolvimento (10/11/2026)… O manual da 3.44 LTR não traz isso" |
+| Questão 2: "um arquivo tem poucas camadas" | Sem fonte | "Cada poste é uma feição dentro da camada, não uma camada" |
+
+**Diferença entre versões achada nesta lição:** no manual da 4.x, o duplo clique no cabeçalho da linha da tabela dá zoom na feição. Os outros caminhos são iguais.
+
+**Vídeos:** um conferido (Geotecnologias na rede, 12:02; a descrição lista abrir dados, tabela de atributos e ponto, linha e polígono). Ficaram de fora um corte de live com divulgação de curso, um vídeo de 2019 que chama o GeoPackage de "substituto" do Shapefile e uma aula marcada como português de Portugal com descrição vaga.

@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['08-03']) {
+for (const id of ['08-02', '08-03']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -13,6 +13,13 @@ for (const id of ['08-03']) {
     expect(l.doc).toBeLessThanOrEqual(l.tela);
   });
 }
+
+test('08-02: tabela de tipos de geometria, diagrama com a tabela de postes e link do GeoPackage', async ({ page }) => {
+  await page.goto('./#/licao/08-02');
+  await expect(page.locator('.prosa table')).toContainText('Polígono');
+  await expect(page.locator('figure.diagrama svg')).toContainText('uma feição = um desenho');
+  await expect(page.getByRole('link', { name: 'rede-ficticia.gpkg' })).toHaveAttribute('href', /dados-qgis\/rede-ficticia\.gpkg$/);
+});
 
 test('08-03: tabela mostra os dois valores de N e o link do CSV de exercício', async ({ page }) => {
   await page.goto('./#/licao/08-03');
@@ -29,7 +36,7 @@ test('08-03: termo SRC abre a definição no glossário', async ({ page }) => {
   await expect(page.getByText('como os números de uma coordenada', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/08-03', '#/licao/08-03/questoes', '#/glossario?t=falso-norte']) {
+for (const rota of ['#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/glossario?t=falso-norte']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();

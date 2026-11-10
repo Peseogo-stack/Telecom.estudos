@@ -32,6 +32,7 @@ import { AnatomiaFtth } from './AnatomiaFtth';
 import { SplittersBalanceados } from './SplittersBalanceados';
 import { OrcamentoPon } from './OrcamentoPon';
 import { ZonasUtmRoraima } from './ZonasUtmRoraima';
+import { FeicaoETabela } from './FeicaoETabela';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -64,6 +65,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'splitters-balanceados': SplittersBalanceados,
   'orcamento-pon': OrcamentoPon,
   'zonas-utm-roraima': ZonasUtmRoraima,
+  'feicao-e-tabela': FeicaoETabela,
 };
 
 

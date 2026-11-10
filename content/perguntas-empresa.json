@@ -636,5 +636,41 @@
     "licoes": [
       "08-03"
     ]
+  },
+  {
+    "id": "a16",
+    "onde": "sozinho",
+    "texto": "Abra a tabela de atributos de uma camada de postes da empresa: quais campos existem e qual deles é o código do poste? (Anote só no Meu caderno; nada de dado da empresa no app.)",
+    "dica": "Camada de postes no QGIS da equipe",
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "d19",
+    "onde": "colega",
+    "texto": "Quais camadas a equipe usa no dia a dia (postes, cabos, caixas…) e de que tipo é cada uma: ponto, linha ou polígono?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "d20",
+    "onde": "colega",
+    "texto": "Em que formato os dados ficam guardados: GeoPackage, Shapefile, banco de dados?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "d21",
+    "onde": "colega",
+    "texto": "A equipe usa imagem de satélite de fundo? De onde ela vem?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-02"
+    ]
   }
 ]

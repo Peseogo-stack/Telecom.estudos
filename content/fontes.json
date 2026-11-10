@@ -771,7 +771,7 @@
     "tipo": "documentacao",
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/opening_data.html",
     "acessadoEm": "2026-11-10",
-    "observacao": "Igual na versão testing. CSV com coordenadas: Layer ► Add Layer ► Add Delimited Text Layer…; em \"Geometry definition\", escolher Point coordinates, indicar o campo X e o campo Y e informar o Geometry CRS. Em \"File format\", a opção Custom delimiters aceita vírgula, espaço, tabulação, ponto e vírgula e outros."
+    "observacao": "Igual na versão testing. CSV com coordenadas: Layer ► Add Layer ► Add Delimited Text Layer…; em \"Geometry definition\", escolher Point coordinates, indicar o campo X e o campo Y e informar o Geometry CRS. Em \"File format\", a opção Custom delimiters aceita vírgula, espaço, tabulação, ponto e vírgula e outros. Formatos vetoriais citados pelo manual: GeoPackage, GML, GeoJSON, GPX, KML, CSV, Shapefile, DXF, entre outros. Abrir camada vetorial: Layer ► Add Layer ► Add Vector Layer… (Ctrl+Shift+V) ou o Data Source Manager (Ctrl+L), que reúne num só lugar arquivos e bancos de dados. Raster: Layer ► Add Layer ► Add Raster Layer… (Ctrl+Shift+R). Painel Browser: mostra as pastas e os \"contêineres\" de camadas, como um GeoPackage; dá para expandir o arquivo, ver as camadas dentro dele e pôr no projeto arrastando ou com duplo clique. Igual na 3.44 e na 4.x (conferido em 10/11/2026)."
   },
   {
     "id": "qgis-criar-camadas",
@@ -790,5 +790,41 @@
     "url": "https://www.openstreetmap.org/#map=7/2.0/-61.0",
     "acessadoEm": "2026-11-10",
     "observacao": "Consulta de 10/11/2026. Boa Vista: −60,67 (zona 20). São Luiz: −60,04 (zona 20, a poucos km do limite). A leste de 60°O (zona 21): Bonfim −59,84; Normandia −59,63; Caroebe −59,70; São João da Baliza −59,91."
+  },
+  {
+    "id": "qgis-intro-vetor",
+    "titulo": "QGIS Documentation 3.44: A Gentle Introduction to GIS, Vector Data",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/gentle_gis_introduction/vector_data.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "\"Vector data provide a way to represent real world features within the GIS environment. A feature is anything you can see on the landscape\" (casas, estradas, árvores, rios). \"Vector features have attributes, which consist of text or numerical information that describe the features.\" \"A vector feature has its shape represented using geometry. The geometry is made up of one or more interconnected vertices. A vertex describes a position in space using an X, Y and optionally Z axis.\" Um só vértice: feição de ponto. Dois ou mais vértices, com o primeiro diferente do último: polilinha (linha). Três ou mais vértices, com o último igual ao primeiro: polígono (área fechada). Exemplo do manual: os atributos de um ponto dizem, por exemplo, se é uma árvore ou um poste de iluminação (\"a tree or a lamp post\")."
+  },
+  {
+    "id": "qgis-intro-raster",
+    "titulo": "QGIS Documentation 3.44: A Gentle Introduction to GIS, Raster Data",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/gentle_gis_introduction/raster_data.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "\"Rasters are made up of a matrix of pixels (also called cells), each containing a value that represents the conditions for the area covered by that cell.\" Servem para informação contínua sobre uma área, que não se divide bem em feições vetoriais; exemplos do manual: imagens de satélite e fotografias aéreas."
+  },
+  {
+    "id": "qgis-tabela-atributos",
+    "titulo": "QGIS User Guide 3.44: Working with the Attribute Table",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/attribute_table.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "\"Each row in the table represents a feature (with or without geometry), and each column contains a particular piece of information about the feature\" (coluna = campo). O QGIS carrega camadas espaciais e tabelas não espaciais (sem geometria); as não espaciais aparecem e se editam na mesma tela de tabela de atributos. Abrir: Layer ► Open Attribute Table, botão Open Attribute Table da barra Attributes, ou F6; Shift+F6 abre só as feições selecionadas. O título da tabela mostra o total de feições da camada e quantas estão selecionadas ou filtradas. No canto inferior esquerdo, lista de filtros: Show All Features, Show Selected Features, Show Features Visible on Map. Modos: Table view (uma linha por feição) e Form view (uma feição por vez). Menus e atalhos iguais na 3.44 e na versão 4.x em desenvolvimento (https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/attribute_table.html, conferido em 10/11/2026). Diferença na 4.x: \"Double clicking the row header will zoom to the feature in the map canvas (if the layer has geometry).\" Essa frase não está no manual da 3.44."
+  },
+  {
+    "id": "qgis-ferramentas-gerais",
+    "titulo": "QGIS User Guide 3.44: General Tools",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/introduction/general_tools.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na 4.x. Identify Features: View ► Identify Features (Ctrl+Shift+I) ou o botão na barra Attributes; depois, clicar numa feição (ou pixel) da camada ativa abre uma janela com as informações dela. No painel Layers, o menu de contexto da camada tem Show Feature Count, que mostra o número de feições ao lado do nome."
   }
 ]

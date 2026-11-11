@@ -60,7 +60,7 @@ test('a nova ordem não perde o que já foi aprovado: a próxima lição pula as
     ),
   );
   await page.reload();
-  await expect(page.locator('#t-proxima')).toHaveText(/01-03 · /);
+  await expect(page.locator('#t-proxima')).toHaveText(/01-01 · /);
   await page.goto('./#/trilha/10');
   await expect(page.locator('main')).toContainText('Aprovada 5/5');
   await page.goto('./#/trilha/09');

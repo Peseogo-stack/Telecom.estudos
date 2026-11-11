@@ -198,14 +198,7 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
   const noPlano = plano.semanas.flatMap((s) => s.licoes);
   for (const id of noPlano) if (!idsCurriculo.has(id)) erro('plano.json', `lição ${id} não existe no currículo`);
   if (new Set(noPlano).size !== noPlano.length) erro('plano.json', 'lição repetida no plano');
-  // "Comece por aqui": lição opcional, fora das semanas (não conta para a semana nem para a próxima lição).
-  const inicial = plano.comecePorAqui?.licao;
-  if (plano.comecePorAqui) {
-    if (!idsCurriculo.has(inicial)) erro('plano.json', `"comecePorAqui" aponta para ${inicial}, que não existe no currículo`);
-    if (noPlano.includes(inicial)) erro('plano.json', `${inicial} está no "comecePorAqui" e também numa semana`);
-    if (!plano.comecePorAqui.texto) erro('plano.json', '"comecePorAqui" sem texto');
-  }
-  for (const id of idsCurriculo) if (!noPlano.includes(id) && id !== inicial) erro('plano.json', `lição ${id} fora do plano`);
+  for (const id of idsCurriculo) if (!noPlano.includes(id)) erro('plano.json', `lição ${id} fora do plano`);
 
   // ---- Etapas da Trilha ----
   // Cada módulo fica em uma etapa só, e o plano segue a ordem da Trilha (etapa, módulo, lição).
@@ -223,7 +216,7 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
     if (n !== 1) erro('curriculo.json', `módulo ${m} aparece em ${n} etapas (deve aparecer em 1)`);
   }
   const ordemTrilha = nasEtapas.flatMap((id) => curriculo.modulos.find((m) => m.id === id)?.licoes.map((l) => l.id) ?? []);
-  const ordemPlano = [...(inicial ? [inicial] : []), ...noPlano];
+  const ordemPlano = noPlano;
   const desvio = ordemTrilha.findIndex((id, i) => ordemPlano[i] !== id);
   if (desvio !== -1) erro('plano.json', `o plano sai da ordem da Trilha na posição ${desvio + 1}: esperava ${ordemTrilha[desvio]}, veio ${ordemPlano[desvio]}`);
 

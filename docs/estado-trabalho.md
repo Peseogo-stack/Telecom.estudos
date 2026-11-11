@@ -15,7 +15,7 @@ Atualizado em 11/11/2026. Este arquivo diz o que está pronto, o que ficou pela 
 Branch `trilha-em-etapas` (D20). A Trilha agora agrupa os módulos em 4 etapas: 1 · Base (1, 10, 2, 3), 2 · Mão na massa (5, 6, 4), 3 · O trabalho na distribuidora (9, 7, 8) e 4 · Aprofundar (11, 12). Só mudou a exibição e a ordem do plano: os IDs são os mesmos, então progresso, revisões e links continuam valendo.
 
 - As etapas ficam em `content/curriculo.json` (`etapas`). O validador confere que cada módulo está em uma etapa só e que o plano segue a ordem da Trilha.
-- Plano: um módulo por semana (o 11 em duas), com novos marcos. A 01-01 continua como "comece por aqui" opcional.
+- Plano: um módulo por semana (o 11 em duas), com novos marcos. A 01-01 abre o plano, como lição normal da semana 1 (D21).
 - Cada módulo mostra "N de M prontas"; dentro dele, as lições que faltam ficam num bloco "Em construção" no fim.
 - Lições que faltam na Etapa 1: 03-02, 03-05, 03-06 e 10-02. O módulo 2 está completo.
 

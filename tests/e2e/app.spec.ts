@@ -12,7 +12,7 @@ test.describe('fluxos principais', () => {
   test('Hoje mostra a próxima lição do plano (semana 1 começa pelo módulo 1, na Etapa 1)', async ({ page }) => {
     await page.goto('./');
     await expect(page.getByRole('heading', { name: 'Hoje', level: 1 })).toBeVisible();
-    await expect(page.getByRole('heading', { name: /01-02 · Rede própria × link de operadora/ })).toBeVisible();
+    await expect(page.getByRole('heading', { name: /01-01 · Por que uma distribuidora tem rede própria/ })).toBeVisible();
     await expect(page.locator('section[aria-labelledby="t-proxima"]')).toContainText('Etapa 1 · Base');
     await expect(page.getByText('Nada para revisar hoje')).toBeVisible();
     await semRolagemLateral(page);

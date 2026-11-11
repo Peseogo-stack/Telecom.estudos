@@ -14,19 +14,15 @@ for (const id of ['01-01', '01-02', '01-03', '01-04', '01-05', '01-06']) {
   });
 }
 
-test('comece por aqui: a 01-01 aparece em Hoje e no Plano como opcional, fora das semanas', async ({ page }) => {
+test('a 01-01 abre o plano: é a próxima lição em Hoje e a primeira da semana 1', async ({ page }) => {
   await page.goto('./#/');
-  const cartao = page.locator('section[aria-labelledby="t-comece"]');
-  await expect(cartao).toContainText('opcional');
-  await expect(cartao.getByRole('link', { name: 'Abrir a lição' })).toHaveAttribute('href', '#/licao/01-01');
-  // A próxima lição continua sendo a do plano (semana 1), não a opcional.
-  await expect(page.locator('#t-proxima')).not.toContainText('01-01');
+  await expect(page.locator('#t-proxima')).toHaveText(/^01-01 · /);
+  await expect(page.locator('section[aria-labelledby="t-comece"]')).toHaveCount(0);
 
   await page.goto('./#/plano');
-  await expect(page.locator('section[aria-labelledby="t-comece"]')).toContainText('01-01');
-  const semana5 = page.locator('ol.lista-limpa > li').nth(4);
-  await expect(semana5).toContainText('Semana 5');
-  await expect(semana5).not.toContainText('01-01');
+  const semana1 = page.locator('ol.lista-limpa > li').first();
+  await expect(semana1).toContainText('Semana 1');
+  await expect(semana1.locator('.item-lista').first()).toContainText('01-01');
 });
 
 for (const rota of ['#/licao/01-01', '#/licao/01-03', '#/licao/01-04', '#/licao/01-05', '#/plano']) {

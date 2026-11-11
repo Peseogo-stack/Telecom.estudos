@@ -1,0 +1,254 @@
+[
+  {
+    "id": "07-02-q1",
+    "licao": "07-02",
+    "enunciado": "Você olha, de cima para baixo, um poste do exemplo da Cemig. Onde fica a faixa de ocupação da telecom?",
+    "alternativas": [
+      {
+        "texto": "Entre a rede primária e a rede secundária, perto da energia, para facilitar a manutenção.",
+        "correta": false,
+        "explicacao": "A faixa fica abaixo das duas redes de energia: a primária está no topo e a secundária vem logo abaixo dela."
+      },
+      {
+        "texto": "Acima da rede primária, no topo do poste, onde o cabo fica longe de quem passa.",
+        "correta": false,
+        "explicacao": "No topo está a média tensão, a rede primária. A telecom fica embaixo, na faixa de ocupação."
+      },
+      {
+        "texto": "Abaixo da baixa tensão e da iluminação pública, e acima dos equipamentos de telecom.",
+        "correta": true,
+        "explicacao": "Certo. No exemplo da Cemig a ordem é: média tensão, baixa tensão, iluminação pública, faixa de ocupação e equipamentos de telecom."
+      },
+      {
+        "texto": "Perto do solo, abaixo do espaço dos equipamentos de telecom e acima da altura livre.",
+        "correta": false,
+        "explicacao": "Os equipamentos ficam abaixo da faixa, não acima dela. De cima para baixo, a faixa vem antes deles."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-02-q2",
+    "licao": "07-02",
+    "enunciado": "Um colega diz que 600 mm é a distância segura para trabalhar perto da baixa tensão. O que você responde?",
+    "alternativas": [
+      {
+        "texto": "É a distância de trabalho: a 600 mm da baixa tensão já se pode mexer no cabo com cuidado.",
+        "correta": false,
+        "explicacao": "Os 600 mm são afastamento de instalação do cabo de telecom. Não autorizam ninguém a chegar a 600 mm da rede."
+      },
+      {
+        "texto": "É regra de instalação do cabo; perto da rede valem a lição 10-01, a APR e o procedimento.",
+        "correta": true,
+        "explicacao": "Certo. Os 600 mm dizem onde o cabo de telecom é instalado. Para trabalhar perto da rede valem a lição 10-01, o treinamento, a APR e o procedimento da empresa."
+      },
+      {
+        "texto": "É segura só para quem já tem experiência em poste e dispensa a APR nesses casos.",
+        "correta": false,
+        "explicacao": "Experiência não dispensa a APR, o treinamento nem o procedimento da empresa, e os 600 mm não são distância de trabalho."
+      },
+      {
+        "texto": "É a distância de trabalho na baixa tensão; na média tensão ela sobe para 1.500 mm.",
+        "correta": false,
+        "explicacao": "Os 1.500 mm também são afastamento de instalação (Cemig, até 15 kV), não distância de trabalho."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-02-q3",
+    "licao": "07-02",
+    "enunciado": "Você leu que a Cemig tem 9 pontos de fixação no poste urbano e a Energisa, 4. Qual número vale no poste da sua empresa?",
+    "alternativas": [
+      {
+        "texto": "O 9, porque a norma da Cemig é de 12/2024, a mais nova, e vale para todas as distribuidoras.",
+        "correta": false,
+        "explicacao": "A norma da Cemig é exemplo dela. A regra de cada poste é a da distribuidora local."
+      },
+      {
+        "texto": "O que estiver na norma técnica e no Plano de Ocupação da sua distribuidora, que pode ser outro.",
+        "correta": true,
+        "explicacao": "Certo. As duas normas discordam justamente no número de pontos, por isso não se decora número: abre-se a norma da sua distribuidora."
+      },
+      {
+        "texto": "O 4, porque é o número que as duas normas têm em comum.",
+        "correta": false,
+        "explicacao": "As duas normas não concordam no número de pontos: concordam na faixa de 500 mm e nos 600 mm até a baixa tensão."
+      },
+      {
+        "texto": "A média dos dois, até a distribuidora publicar o número dela.",
+        "correta": false,
+        "explicacao": "Não existe média: cada norma é de uma distribuidora, e o que vale é a da sua empresa."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66",
+      "energisa-ndu009-v4"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-02-q4",
+    "licao": "07-02",
+    "enunciado": "Do solo, você vê o cabo de um provedor fixado acima da faixa, na altura da baixa tensão. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Subir com escada e baixar o cabo até a faixa, porque o provedor pode demorar a agir.",
+        "correta": false,
+        "explicacao": "Não suba para conferir ou corrigir. Perto da rede valem a lição 10-01, o treinamento, a APR e o procedimento da empresa."
+      },
+      {
+        "texto": "Medir com trena metálica a distância até a baixa tensão e puxar o cabo se der menos de 600 mm.",
+        "correta": false,
+        "explicacao": "Medir em poste se faz do solo ou como o procedimento da empresa manda. Mexer no cabo não é o seu papel: você registra e comunica."
+      },
+      {
+        "texto": "Anotar só o nome do provedor, porque a posição do cabo no poste não muda a situação da ocupação.",
+        "correta": false,
+        "explicacao": "A posição conta: cabo acima da faixa, perto da baixa tensão, é o que você deve observar e registrar."
+      },
+      {
+        "texto": "Registrar foto, poste e o que viu, e comunicar pelo procedimento da empresa, sem subir.",
+        "correta": true,
+        "explicacao": "Certo. Você registra do solo e comunica conforme o procedimento da empresa; não sobe para conferir."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-02-q5",
+    "licao": "07-02",
+    "enunciado": "Um ocupante instalou um braço no poste para afastar o cabo e caber mais um ponto de fixação. O que diz o exemplo da Cemig?",
+    "alternativas": [
+      {
+        "texto": "O braço é permitido dentro da faixa de 500 mm, onde o ocupante usa o espaço como quiser.",
+        "correta": false,
+        "explicacao": "A faixa não dá essa liberdade: braço ou dispositivo para estender o espaço e instalar mais de um ponto é vedado."
+      },
+      {
+        "texto": "O braço é vedado: não se estende o espaço para instalar mais de um cabo ou ponto de fixação.",
+        "correta": true,
+        "explicacao": "Certo. É o item 6.2 da ND-6.6. Cada ocupante usa o ponto que tem na faixa."
+      },
+      {
+        "texto": "O braço é vedado só se o cabo ficar do lado oposto ao da rede secundária.",
+        "correta": false,
+        "explicacao": "O lado é uma regra à parte. Mesmo do lado da rede secundária, o braço que estende o espaço é vedado."
+      },
+      {
+        "texto": "O braço é permitido se o ocupante pagar à distribuidora por um segundo ponto de fixação.",
+        "correta": false,
+        "explicacao": "Pagar não muda a regra do exemplo: o espaço não se estende com braço nem outro dispositivo."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-02-q6",
+    "licao": "07-02",
+    "enunciado": "Um ocupante com projeto aprovado vai pôr uma caixa de equipamento no poste. Onde ela fica, no exemplo da Cemig?",
+    "alternativas": [
+      {
+        "texto": "Dentro da faixa de ocupação, ao lado do ponto de fixação do ocupante.",
+        "correta": false,
+        "explicacao": "A faixa é para os pontos de fixação. Os equipamentos ficam abaixo dela."
+      },
+      {
+        "texto": "No espaço da iluminação pública, que costuma ter folga no poste.",
+        "correta": false,
+        "explicacao": "No espaço da iluminação pública só entram equipamentos de iluminação pública."
+      },
+      {
+        "texto": "Logo abaixo da rede secundária, antes da faixa, perto da energia.",
+        "correta": false,
+        "explicacao": "Abaixo da rede secundária vêm a iluminação pública e depois a faixa; os equipamentos ficam abaixo da faixa."
+      },
+      {
+        "texto": "Entre 200 e 1.800 mm abaixo do limite inferior da faixa de ocupação.",
+        "correta": true,
+        "explicacao": "Certo. É o espaço de equipamentos de telecom no exemplo da Cemig, abaixo da faixa."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-02-q7",
+    "licao": "07-02",
+    "enunciado": "Comparando Cemig ND-6.6 e Energisa NDU-009 v4.0, o que as duas têm igual e no que discordam?",
+    "alternativas": [
+      {
+        "texto": "Igual: a faixa de 500 mm e os 600 mm até a baixa tensão. Diferente: o número de pontos.",
+        "correta": true,
+        "explicacao": "Certo. Por isso não se decora número: abre-se a norma da distribuidora."
+      },
+      {
+        "texto": "Igual: o número de pontos de fixação. Diferente: a altura da faixa de ocupação.",
+        "correta": false,
+        "explicacao": "É o contrário: a faixa é de 500 mm nas duas, e o número de pontos difere (9 ou 5 na Cemig, 4 na Energisa)."
+      },
+      {
+        "texto": "Iguais em tudo, porque as duas seguem a Resolução Conjunta 4/2014. Só mudam as datas das normas.",
+        "correta": false,
+        "explicacao": "A resolução manda seguir a norma de cada distribuidora, e o número de pontos difere entre as duas."
+      },
+      {
+        "texto": "Igual: os 4 pontos de fixação. Diferente: os 600 mm até a baixa tensão.",
+        "correta": false,
+        "explicacao": "A Cemig tem 9 pontos no poste urbano e 5 no rural, e os 600 mm são iguais nas duas."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66",
+      "energisa-ndu009-v4",
+      "res-conjunta-4-2014"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "07-02-q8",
+    "licao": "07-02",
+    "enunciado": "Na fiscalização, o cabo de telecom está na altura da faixa, mas no lado do poste oposto ao da rede secundária. Está certo?",
+    "alternativas": [
+      {
+        "texto": "Está regular: a altura dentro da faixa é a única exigência para o cabo de telecom.",
+        "correta": false,
+        "explicacao": "Há outra: nos dois exemplos, o cabo de telecom fica do mesmo lado da rede secundária."
+      },
+      {
+        "texto": "Está regular se for o único cabo no poste, pois a regra do lado vale só com vários cabos.",
+        "correta": false,
+        "explicacao": "A regra do lado não depende do número de cabos no poste."
+      },
+      {
+        "texto": "Só é irregular se passar a menos de 600 mm da baixa tensão.",
+        "correta": false,
+        "explicacao": "A irregularidade não é só de distância: o cabo do lado oposto ao da rede secundária também foge do padrão dos exemplos."
+      },
+      {
+        "texto": "Foge do padrão: nos exemplos, o cabo de telecom vai do mesmo lado da rede secundária.",
+        "correta": true,
+        "explicacao": "Certo. Cemig e Energisa pedem o mesmo lado da rede secundária. Registre do solo e comunique pelo procedimento da empresa."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66",
+      "energisa-ndu009-v4"
+    ],
+    "dificuldade": 3
+  }
+]

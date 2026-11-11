@@ -728,5 +728,41 @@
     "licoes": [
       "07-01"
     ]
+  },
+  {
+    "id": "b21",
+    "onde": "documentos",
+    "texto": "Na norma técnica da empresa, qual é a altura da faixa de ocupação, a que distância do solo fica o topo dela e quantos pontos de fixação ela tem?",
+    "dica": "Norma técnica de compartilhamento e Plano de Ocupação, no site da empresa",
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "b22",
+    "onde": "documentos",
+    "texto": "Qual é o afastamento mínimo entre o cabo de telecom e a baixa tensão e a média tensão na norma da empresa?",
+    "dica": "Tabela de afastamentos da norma técnica",
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "d25",
+    "onde": "colega",
+    "texto": "Como a equipe confere essas medidas em campo: do solo, com que instrumento, e quem pode fazer?",
+    "dica": "",
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "d26",
+    "onde": "colega",
+    "texto": "Onde podem ficar os equipamentos dos ocupantes (caixas, fontes) no poste, segundo a norma da empresa?",
+    "dica": "",
+    "licoes": [
+      "07-02"
+    ]
   }
 ]

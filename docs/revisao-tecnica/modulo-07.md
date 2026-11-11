@@ -33,3 +33,19 @@ Cada lição é escrita a partir de uma ficha com o trecho literal de cada fonte
 **O que ficou de fora por espaço** (está na fonte e pode entrar na 07-06): prazos de 30 e 150 dias, limite de 2.100 postes por ano, prazo de 90 dias para responder ao pedido, conteúdo do pedido de compartilhamento.
 
 **Vídeos:** nenhum entrou. Os candidatos são de 2021 e 2022 (antes da REN 1.044/2022), um painel de 2h33 sem capítulos e um canal de consultoria. A lição fica com termos de busca.
+
+## 07-02 — Anatomia do poste e faixa de ocupação (11/11/2026)
+
+**Fontes abertas:** Cemig ND-6.6 (PDF inteiro; a Figura 2, que traz as cotas da faixa, eu li como imagem) e Energisa NDU-009 v4.0 de 12/2017, no anexo de um contrato público (o site da Energisa respondeu 403 e não deu para ler versão mais nova). As duas entram como exemplo.
+
+**O que confere nas duas:** faixa de 500 mm, topo a 5,70 m do solo e 600 mm até a baixa tensão. **O que difere:** pontos de fixação (9 no poste urbano e 5 no rural na Cemig; 4, mais 1 em caso especial, na Energisa v4.0).
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "Braço ou suporte que estende o poste: é vedado", como regra geral | Cemig ND-6.6, item 6.2 | "no exemplo da Cemig, é vedado" |
+
+**Segurança:** a lição leva o aviso padrão de lição de segurança. Ela diz três vezes que os 600 mm são regra de instalação do cabo, não distância de trabalho, e que não se sobe no poste para medir. Nada contradiz a lição 10-01.
+
+**Não conferido:** o afastamento até a média tensão na Energisa (a tabela aparece "não conferido").
+
+**Vídeos:** nenhum entrou. Os resultados eram de escritório de advocacia, notícia, venda de curso e um vídeo de 22 segundos sem descrição.

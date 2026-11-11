@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['07-01']) {
+for (const id of ['07-01', '07-02']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -37,7 +37,33 @@ test('07-01: termo detentor abre a definição no glossário', async ({ page }) 
   await expect(page.getByText('detém, administra ou controla', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro']) {
+test('07-02: diagrama traz a etiqueta de exemplo e as cotas da Cemig', async ({ page }) => {
+  await page.goto('./#/licao/07-02');
+  const svg = page.locator('figure.diagrama svg');
+  await expect(svg).toContainText('Exemplo: Cemig ND-6.6. Vale a norma da sua distribuidora.');
+  await expect(svg).toContainText('600 mm no mínimo');
+  await expect(svg).toContainText('Faixa de ocupação: 500 mm');
+  await expect(svg).toContainText('topo a 5,70 m do solo');
+  await expect(svg).toContainText('de 200 a 1.800 mm abaixo da faixa');
+});
+
+test('07-02: os números aparecem como exemplo e os 600 mm não viram distância de trabalho', async ({ page }) => {
+  await page.goto('./#/licao/07-02');
+  const prosa = page.locator('.prosa');
+  await expect(prosa).toContainText('Dois exemplos: não é a regra da sua empresa');
+  await expect(prosa).toContainText('Os 600 mm são regra de instalação do cabo de telecom.');
+  await expect(prosa).toContainText('Não são distância de trabalho');
+  await expect(prosa).toContainText('Não suba para conferir.');
+});
+
+test('07-02: termo rede secundária abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/07-02');
+  await page.getByRole('link', { name: 'rede secundária', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=rede-secundaria/);
+  await expect(page.getByText('Rede de baixa tensão do poste', { exact: false }).first()).toBeVisible();
+});
+
+for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro', '#/licao/07-02', '#/licao/07-02/questoes']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();

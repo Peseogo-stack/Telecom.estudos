@@ -62,6 +62,8 @@
 | b18 | O contrato ou o padrão de entrega diz em que SRC o fornecedor tem de mandar os arquivos (as-built, KML, planilha de coordenadas)? | Contrato e padrão de entrega | 08-03 |
 | b19 | O relatório de ocupação ou de vistoria pede contagens (postes por ocupante, pontos sem plaqueta)? De qual camada elas saem? | Modelo do relatório | 08-06 |
 | b20 | Onde está publicado, no site da empresa, o Plano de Ocupação de Infraestrutura em vigor, e qual norma técnica o aprovou? | Site da distribuidora, página de compartilhamento de infraestrutura | 07-01 |
+| b21 | Na norma técnica da empresa, qual é a altura da faixa de ocupação, a que distância do solo fica o topo dela e quantos pontos de fixação ela tem? | Norma técnica de compartilhamento e Plano de Ocupação, no site da empresa | 07-02 |
+| b22 | Qual é o afastamento mínimo entre o cabo de telecom e a baixa tensão e a média tensão na norma da empresa? | Tabela de afastamentos da norma técnica | 07-02 |
 
 ---
 
@@ -117,6 +119,8 @@
 | d22 | Quais consultas a equipe mais faz nas camadas de postes e cabos (por ocupante, por situação, por data de vistoria)? | 08-06 |
 | d23 | As camadas do projeto da equipe já vêm com algum filtro ligado? Qual e por quê? | 08-06 |
 | d24 | Como a equipe cadastra a ocupação dos pontos de fixação (sistema, planilha, QGIS)? | 07-01 |
+| d25 | Como a equipe confere essas medidas em campo: do solo, com que instrumento, e quem pode fazer? | 07-02 |
+| d26 | Onde podem ficar os equipamentos dos ocupantes (caixas, fontes) no poste, segundo a norma da empresa? | 07-02 |
 
 ---
 

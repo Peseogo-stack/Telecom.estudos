@@ -137,7 +137,8 @@
     ],
     "licoes": [
       "10-01",
-      "10-05"
+      "10-05",
+      "07-02"
     ],
     "sigla": "APR",
     "en": "Risk analysis"
@@ -163,7 +164,8 @@
       "nr10-vigente"
     ],
     "licoes": [
-      "10-01"
+      "10-01",
+      "07-02"
     ],
     "sigla": "BT",
     "en": "Low voltage"
@@ -177,7 +179,8 @@
       "nr10-vigente"
     ],
     "licoes": [
-      "10-01"
+      "10-01",
+      "07-02"
     ],
     "sigla": "MT",
     "en": "Medium voltage"
@@ -1912,7 +1915,8 @@
       "res-conjunta-4-2014"
     ],
     "licoes": [
-      "07-01"
+      "07-01",
+      "07-02"
     ]
   },
   {
@@ -1924,7 +1928,8 @@
       "res-conjunta-4-2014"
     ],
     "licoes": [
-      "07-01"
+      "07-01",
+      "07-02"
     ]
   },
   {
@@ -1981,6 +1986,51 @@
     ],
     "licoes": [
       "07-01"
+    ]
+  },
+  {
+    "id": "rede-primaria",
+    "pt": "Rede primária",
+    "definicao": "Rede de média tensão do poste. No exemplo da Cemig, fica no topo, em cruzeta, acima da rede secundária.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "rede-secundaria",
+    "pt": "Rede secundária",
+    "definicao": "Rede de baixa tensão do poste, com neutro e fases. No exemplo da Cemig, fica abaixo da rede primária e acima da faixa de ocupação. O cabo de telecom vai do mesmo lado dela.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "iluminacao-publica",
+    "pt": "Iluminação pública",
+    "definicao": "Luminária e braço da rede de iluminação das vias, no poste. No exemplo da Cemig, o espaço dela é só para equipamento de iluminação pública, e nele não entra equipamento de telecom.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-02"
+    ],
+    "sigla": "IP"
+  },
+  {
+    "id": "flecha",
+    "pt": "Flecha",
+    "definicao": "A barriga do cabo no meio do vão. As distâncias ao solo são conferidas na pior condição de flecha (no exemplo da Cemig, a flecha máxima a 50 °C).",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-02"
     ]
   }
 ]

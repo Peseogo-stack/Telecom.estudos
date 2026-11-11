@@ -2032,5 +2032,42 @@
     "licoes": [
       "07-02"
     ]
+  },
+  {
+    "id": "ltr",
+    "pt": "LTR (versão de suporte longo)",
+    "sigla": "LTR",
+    "en": "Long Term Release",
+    "definicao": "A cada três lançamentos do QGIS, um é LTR e é mantido até a LTR seguinte. Em 11/11/2026, a LTR é a 3.44.",
+    "fontes": [
+      "qgis-roadmap"
+    ],
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "versao-de-correcao",
+    "pt": "Versão de correção",
+    "en": "point release",
+    "definicao": "Versão mensal do QGIS que traz só correção de erros, sem recurso novo. É o terceiro número: em 3.44.15, o 15.",
+    "fontes": [
+      "qgis-roadmap"
+    ],
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "complemento",
+    "pt": "Complemento",
+    "en": "plugin",
+    "definicao": "Extensão que acrescenta funções ao QGIS. Alguns vêm com o programa; os externos são mantidos pelos autores e instalados à parte.",
+    "fontes": [
+      "qgis-complementos"
+    ],
+    "licoes": [
+      "08-01"
+    ]
   }
 ]

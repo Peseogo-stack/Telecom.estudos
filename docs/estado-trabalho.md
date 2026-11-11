@@ -44,6 +44,8 @@ Branch `p2-qgis-postes`. Uma lição por vez, fechada por inteiro (pesquisa na f
 
 Ordem: 08-03, 08-02, 08-06, 07-01, 07-02; depois 08-01, 08-04, 08-05, 08-07, 07-03 a 07-07.
 
+As fichas de fatos de todas as lições (o que foi conferido na fonte, com os trechos) estão no branch `fichas-p2`, em `docs/fichas-p2/`. Lição que ainda não aparece na tabela abaixo já tem ficha pronta: falta redigir, revisar e publicar.
+
 | Lição | Fechada em | Questões | Vídeos | O que a revisão corrigiu |
 | --- | --- | --- | --- | --- |
 | 08-03 SRC, UTM 20S e o erro de 10.000 km | 10/11/2026 | 8 | 2 (1 com aviso) | Destino do ponto com o falso norte trocado (perto do Polo Norte, não "some"); "oficial desde 2005" virou a frase da resolução; regra dos dígitos só ao norte do Equador; separador do CSV; lição enxugada para 700 palavras |
@@ -51,3 +53,4 @@ Ordem: 08-03, 08-02, 08-06, 07-01, 07-02; depois 08-01, 08-04, 08-05, 08-07, 07-
 | 08-06 Filtrar, selecionar e contar | 10/11/2026 | 8 | 1 (o mesmo da 08-02) | "Existem no projeto" virou "ficam disponíveis"; botão Clear para tirar o filtro; explicação da questão 8 citava uma contagem que não batia com o arquivo |
 | 07-01 Quem manda no poste | 11/11/2026 | 8 | 0 (só termos de busca) | Órgãos de cada resolução conjunta; data da notícia tratada como data do parecer da AGU; duas definições do glossário além do que a norma diz; fontes oficiais bloqueadas (li cópias integrais e disse isso na fonte) |
 | 07-02 Anatomia do poste e faixa de ocupação | 11/11/2026 | 8 | 0 (só termos de busca) | A proibição do braço que estende o poste aparecia como regra geral e é do exemplo da Cemig; a Figura 2 da Cemig foi lida como imagem para conferir as cotas |
+| 08-01 O que é o QGIS e qual versão eu tenho | 11/11/2026 | 8 | 0 (só termos de busca) | Faltava a data numa afirmação sobre o manual; o termo "complemento" tinha definição imprecisa e fonte errada |

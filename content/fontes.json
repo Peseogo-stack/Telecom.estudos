@@ -762,7 +762,7 @@
     "tipo": "documentacao",
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_projections/working_with_projections.html",
     "acessadoEm": "2026-11-10",
-    "observacao": "Caminhos de menu iguais na 3.44 (LTR) e na versão testing (https://docs.qgis.org/testing/en/docs/user_manual/working_with_projections/working_with_projections.html), conferidos em 10/11/2026. O QGIS identifica cada SRC por autoridade:código; EPSG:4326 é o WGS 84 em latitude/longitude. Cada camada tem o seu SRC (no Shapefile, fica no .prj). Camada sem SRC: o que o QGIS faz é configurável em Settings ► Options… ► CRS (deixar como desconhecido; perguntar; usar o SRC do projeto; usar um SRC padrão). \"Selecting the correct choice is crucial, as a wrong choice will place your layer in the wrong position on the Earth's surface!\"; às vezes é preciso perguntar ao autor do dado qual é o SRC. Layer ► Set CRS of Layer(s) (Ctrl+Shift+C) \"does not alter the underlying data source in any way, rather it just changes how QGIS interprets the raw coordinates from the layer in the current QGIS project\"; confere-se na aba Source das propriedades da camada. Cada projeto também tem um SRC e o QGIS reprojeta \"on the fly\" as camadas para ele. Projeto novo começa em EPSG:4326; muda-se em Project ► Properties… ► CRS; o SRC do projeto aparece no canto inferior direito da barra de status."
+    "observacao": "Caminhos de menu iguais na 3.44 (LTR) e na versão testing (https://docs.qgis.org/testing/en/docs/user_manual/working_with_projections/working_with_projections.html), conferidos em 10/11/2026. O QGIS identifica cada SRC por autoridade:código; EPSG:4326 é o WGS 84 em latitude/longitude. Cada camada tem o seu SRC (no Shapefile, fica no .prj). Camada sem SRC: o que o QGIS faz é configurável em Settings ► Options… ► CRS (deixar como desconhecido; perguntar; usar o SRC do projeto; usar um SRC padrão). \"Selecting the correct choice is crucial, as a wrong choice will place your layer in the wrong position on the Earth's surface!\"; às vezes é preciso perguntar ao autor do dado qual é o SRC. Layer ► Set CRS of Layer(s) (Ctrl+Shift+C) \"does not alter the underlying data source in any way, rather it just changes how QGIS interprets the raw coordinates from the layer in the current QGIS project\"; confere-se na aba Source das propriedades da camada. Cada projeto também tem um SRC e o QGIS reprojeta \"on the fly\" as camadas para ele. Projeto novo começa em EPSG:4326; muda-se em Project ► Properties… ► CRS; o SRC do projeto aparece no canto inferior direito da barra de status. Os manuais são publicados por versão: docs.qgis.org/3.44/ é o da LTR e docs.qgis.org/testing/ é o da versão em desenvolvimento (4.x). Em 10 e 11/11/2026, os endereços docs.qgis.org/latest/ e docs.qgis.org/4.2/ redirecionavam para o testing."
   },
   {
     "id": "qgis-abrir-dados",
@@ -934,5 +934,59 @@
     "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2617269",
     "acessadoEm": "2026-11-10",
     "observacao": "Consulta em 10/11/2026: em 04/11/2026 o Plenário da Câmara aprovou o substitutivo e a redação final; despacho: a matéria retorna ao Senado Federal; situação: aguardando envio ao Senado Federal. Projeto de lei, não é lei."
+  },
+  {
+    "id": "qgis-roadmap",
+    "titulo": "QGIS: Release schedule / Roadmap",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://www.qgis.org/resources/roadmap/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Conferido em 11/11/2026. \"Currently available binaries: LTR 3.44.15 and Latest 4.2.3.\" \"A new release will happen every four months.\" \"Every third release (starting with 2.8) is a long-term-release (LTR) that is maintained until the next long-term-release occurs.\" A cada mês sai uma versão de correção (point release), que \"contain no new features, only bug fixes\". \"In the first four months after its release, a new LTR is also the current LR [latest release].\" Cronograma em 11/11/2026: 3.44.0 em 20/06/2025; 4.0.0 em 06/03/2026; 4.2.0 em 03/07/2026; 4.2.3 e 3.44.15 em 25/09/2026; 4.4.0 marcada para 30/10/2026; 4.4.4 entra no repositório LTR em 05/03/2027, junto com a 4.6.0; a LTR seguinte é a 4.8 (4.8.0 em 02/07/2027)."
+  },
+  {
+    "id": "qgis-version-txt",
+    "titulo": "QGIS: arquivo de versão publicado pelo projeto",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://qgis.org/version.txt",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Conferido em 11/11/2026: \"The current released version of QGIS is 4.2.3.\" O arquivo ainda diz que a 4.4 seria lançada em 30/10/2026; em 11/11/2026 ela não tinha saído."
+  },
+  {
+    "id": "qgis-blog-ltr-2026-10",
+    "titulo": "QGIS Blog: Release schedule changes for next QGIS LTR",
+    "organizacao": "QGIS Project (PSC, Tim Sutton)",
+    "tipo": "documentacao",
+    "url": "https://blog.qgis.org/2026/10/03/release-schedule-changes-for-next-qgis-ltr/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Post de 03/10/2026. \"there are still a number of issues with the 4.x builds which leave us hesitant to assign LTR status to a 4.2.x release as originally planned.\" \"QGIS 4.2 will no longer be LTR\". \"the currently anticipated date for the QGIS 4.4.4 release (which is scheduled to become LTR) is 5 March 2027.\""
+  },
+  {
+    "id": "qgis-blog-440-2026-11",
+    "titulo": "QGIS Blog: Where is QGIS 4.4.0?",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://blog.qgis.org/2026/11/04/where-is-qgis-4.4.0/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Post de 04/11/2026. \"QGIS 4.4.0 would be delayed while we work to clear up a number of regressions that occurred in the porting of QGIS from Qt5 to Qt6. The original planned date for the release was 30 October 2026.\" Critério: \"Any issue which occurs in QGIS 4.4 and does not occur in 3.x is considered blocking.\" O post não dá data nova."
+  },
+  {
+    "id": "qgis-interface",
+    "titulo": "QGIS User Guide 3.44: QGIS GUI",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/introduction/qgis_gui.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "A versão instalada aparece em Help ► About (no macOS, QGIS ► About QGIS)."
+  },
+  {
+    "id": "qgis-complementos",
+    "titulo": "QGIS User Guide 3.44: QGIS Plugins",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/plugins/plugins.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "\"QGIS has been designed with a plugin architecture. This allows many new features and functions to be easily added to the application.\" Há complementos do núcleo (Core Plugins), que vêm com o QGIS, e externos (External Plugins), mantidos pelos autores, no repositório oficial ou em outros; a página de cada um informa a versão mínima do QGIS. Instalar ou ativar: menu Plugins ► Manage and install plugins…."
   }
 ]

@@ -764,5 +764,41 @@
     "licoes": [
       "07-02"
     ]
+  },
+  {
+    "id": "a17",
+    "onde": "sozinho",
+    "texto": "Abra Help ► About no computador de trabalho: qual é a versão do QGIS instalada?",
+    "dica": "No macOS: QGIS ► About QGIS",
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "d27",
+    "onde": "colega",
+    "texto": "A equipe usa a LTR ou a versão mais nova do QGIS? Quem decide quando trocar de versão?",
+    "dica": "",
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "d28",
+    "onde": "colega",
+    "texto": "Quais complementos (plugins) a equipe usa, e quem testa se eles funcionam antes de uma troca de versão?",
+    "dica": "",
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "c18",
+    "onde": "outras-areas",
+    "texto": "Quem instala e atualiza o QGIS nos computadores da empresa (TI)? Posso instalar por conta própria?",
+    "dica": "TI ou o setor responsável pelos computadores",
+    "licoes": [
+      "08-01"
+    ]
   }
 ]

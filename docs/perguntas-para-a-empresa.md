@@ -35,6 +35,7 @@
 | a14 | Qual é a classe de laser e a potência gravadas na etiqueta da nossa caneta VFL, e que tipo de microscópio de inspeção a equipe usa (vídeo ou óptico com filtro IR)? | Etiqueta da caneta VFL e maleta de inspeção/limpeza | 10-03 |
 | a15 | Abra um arquivo recebido de fornecedor no QGIS e veja o SRC em Propriedades ► Source: ele veio declarado? | Qualquer camada recebida de terceiros | 08-03 |
 | a16 | Abra a tabela de atributos de uma camada de postes da empresa: quais campos existem e qual deles é o código do poste? (Anote só no Meu caderno; nada de dado da empresa no app.) | Camada de postes no QGIS da equipe | 08-02 |
+| a17 | Abra Help ► About no computador de trabalho: qual é a versão do QGIS instalada? | No macOS: QGIS ► About QGIS | 08-01 |
 
 ---
 
@@ -88,6 +89,7 @@
 | c15 | Que tensões existem nos postes onde vou trabalhar (baixa tensão, 13,8 kV, 34,5 kV)? | Engenharia / operação | 10-01 |
 | c16 | Há fibra multimodo nos racks das subestações ou do data center? Em quais equipamentos? | Engenharia / TI de infraestrutura | 02-03 |
 | c17 | Quem na empresa acompanha o novo regulamento da ANEEL e da Anatel para os postes, e a empresa já se prepara para uma eventual cessão da exploração dos postes? | Área regulatória ou de compartilhamento | 07-01 |
+| c18 | Quem instala e atualiza o QGIS nos computadores da empresa (TI)? Posso instalar por conta própria? | TI ou o setor responsável pelos computadores | 08-01 |
 
 ---
 
@@ -121,6 +123,8 @@
 | d24 | Como a equipe cadastra a ocupação dos pontos de fixação (sistema, planilha, QGIS)? | 07-01 |
 | d25 | Como a equipe confere essas medidas em campo: do solo, com que instrumento, e quem pode fazer? | 07-02 |
 | d26 | Onde podem ficar os equipamentos dos ocupantes (caixas, fontes) no poste, segundo a norma da empresa? | 07-02 |
+| d27 | A equipe usa a LTR ou a versão mais nova do QGIS? Quem decide quando trocar de versão? | 08-01 |
+| d28 | Quais complementos (plugins) a equipe usa, e quem testa se eles funcionam antes de uma troca de versão? | 08-01 |
 
 ---
 

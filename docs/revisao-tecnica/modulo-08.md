@@ -60,3 +60,18 @@ A lição passou de 700 palavras com as correções e foi enxugada para caber.
 **Diferença entre versões achada nesta lição:** o manual da 4.x cita o Filter… também no menu de contexto da camada e diz que o filtro é feito no provedor de dados, então a sintaxe depende dele.
 
 **Vídeos:** nenhum dos quatro candidatos novos entrou (um divulga curso pago; os outros são de 2013 a 2018, de versões antigas). Entrou o mesmo vídeo da 08-02, cuja descrição lista seleção e filtros.
+
+## 08-01 — O que é o QGIS e qual versão eu tenho (11/11/2026)
+
+**Fontes abertas em 11/11/2026:** página de versões do QGIS (roadmap), o arquivo `version.txt` do projeto, os dois posts do blog do QGIS (03/10 e 04/11/2026) e o manual 3.44.
+
+**Status no dia:** LTR 3.44.15; latest 4.2.3; a 4.2 não virou LTR; a 4.4.0, prevista para 30/10/2026, atrasou e não tem data; a 4.4.4 está prevista para virar LTR em 05/03/2027.
+
+**Não deu para conferir:** a página de changelog das versões 4.0 e 4.2 estava fora do ar (HTTP 410). Por isso a lição não diz o que mudou ou deixou de funcionar na série 4.x; só que ela é a passagem de Qt5 para Qt6 e que o atraso vem de regressões, como diz o blog.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "`latest` não leva ao manual da LTR", sem data | Redirecionamento visto em 10 e 11/11/2026 | "em 11/11/2026, `latest` não leva…" |
+| Termo "complemento" definido como "extensão instalada à parte", com a página de versões como fonte | Manual, "QGIS Plugins": há complementos do núcleo e externos | Definição nova e fonte própria (`qgis-complementos`) |
+
+**Vídeos:** nenhum entrou. Os de 2026 em português tratam de instalação e de tema escuro; os sobre a série 4.x e o Qt6 estão em outros idiomas.

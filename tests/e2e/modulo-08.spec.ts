@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['08-02', '08-03', '08-06']) {
+for (const id of ['08-01', '08-02', '08-03', '08-06']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -13,6 +13,16 @@ for (const id of ['08-02', '08-03', '08-06']) {
     expect(l.doc).toBeLessThanOrEqual(l.tela);
   });
 }
+
+test('08-01: datas de 11/11/2026, diagrama com a previsão da 4.4.4 e termo LTR no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-01');
+  await expect(page.locator('main')).toContainText('Em 11/11/2026');
+  await expect(page.locator('main')).toContainText('Help ► About');
+  await expect(page.locator('figure.diagrama svg')).toContainText('prevista para virar LTR');
+  await expect(page.locator('figure.diagrama svg')).toContainText('LTR 3.44.15 · latest 4.2.3');
+  await page.getByRole('link', { name: 'LTR', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=ltr/);
+});
 
 test('08-02: tabela de tipos de geometria, diagrama com a tabela de postes e link do GeoPackage', async ({ page }) => {
   await page.goto('./#/licao/08-02');
@@ -36,7 +46,7 @@ test('08-03: termo SRC abre a definição no glossário', async ({ page }) => {
   await expect(page.getByText('como os números de uma coordenada', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/glossario?t=falso-norte']) {
+for (const rota of ['#/licao/08-01', '#/licao/08-01/questoes', '#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/glossario?t=falso-norte']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();

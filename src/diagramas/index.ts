@@ -36,6 +36,7 @@ import { FeicaoETabela } from './FeicaoETabela';
 import { FiltrarXSelecionar } from './FiltrarXSelecionar';
 import { DetentorOcupante } from './DetentorOcupante';
 import { AnatomiaPoste } from './AnatomiaPoste';
+import { VersoesQgis } from './VersoesQgis';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -72,6 +73,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'filtrar-x-selecionar': FiltrarXSelecionar,
   'detentor-ocupante': DetentorOcupante,
   'anatomia-poste': AnatomiaPoste,
+  'versoes-qgis': VersoesQgis,
 };
 
 

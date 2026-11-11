@@ -1,0 +1,255 @@
+[
+  {
+    "id": "08-01-q1",
+    "licao": "08-01",
+    "enunciado": "O vídeo do tutorial mostra um menu que não encontro no meu QGIS. O que conferir primeiro?",
+    "alternativas": [
+      {
+        "texto": "A versão do tutorial e a minha, que aparece em Help ► About.",
+        "correta": true,
+        "explicacao": "Certo. Menus, manual e tutoriais mudam de uma versão para outra. Compare a versão do vídeo com a instalada antes de qualquer outra coisa."
+      },
+      {
+        "texto": "Reinstalar o QGIS, porque o menu sumiu por defeito da instalação.",
+        "correta": false,
+        "explicacao": "Reinstalar não resolve se a diferença é de versão. A reinstalação traz de volta a mesma versão e o mesmo menu."
+      },
+      {
+        "texto": "Procurar outros tutoriais, até achar um com a tela igual à minha.",
+        "correta": false,
+        "explicacao": "Sem saber a sua versão, o problema volta no próximo tutorial. Primeiro veja a versão em Help ► About; depois compare."
+      },
+      {
+        "texto": "Usar o manual da latest, porque ele vale para qualquer versão do QGIS.",
+        "correta": false,
+        "explicacao": "Os manuais são publicados por versão. O certo é o manual da mesma versão que a sua."
+      }
+    ],
+    "fontes": [
+      "qgis-interface",
+      "qgis-projecoes"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-01-q2",
+    "licao": "08-01",
+    "enunciado": "Um colega diz que a 4.2 é a nova LTR, por ser a mais nova. O que as fontes de 11/11/2026 dizem?",
+    "alternativas": [
+      {
+        "texto": "A 4.2 é LTR até a 4.4.0 sair, porque a latest vira LTR por quatro meses.",
+        "correta": false,
+        "explicacao": "Só uma LTR nova também é a latest nos quatro primeiros meses; o contrário não vale. O comitê do projeto disse que a 4.2 não será LTR."
+      },
+      {
+        "texto": "A LTR é sempre a versão de número mais alto, então a 4.2 é a LTR.",
+        "correta": false,
+        "explicacao": "A LTR é um lançamento a cada três, mantido até a LTR seguinte. Em 11/11/2026, a LTR é a 3.44, e a 4.2 é a latest."
+      },
+      {
+        "texto": "A 4.2 é a latest, mas o projeto decidiu que ela não será LTR.",
+        "correta": true,
+        "explicacao": "Certo. Em 11/11/2026, a LTR é a 3.44 (3.44.15). O comitê do projeto citou problemas nos builds da série 4.x e disse que a 4.2 não será LTR."
+      },
+      {
+        "texto": "A série 4.x não terá LTR, e a 3.44 fica como a única LTR do projeto.",
+        "correta": false,
+        "explicacao": "A primeira LTR da série 4.x está prevista para ser a 4.4.4, em 05/03/2027, e isso pode mudar. Não está descartada."
+      }
+    ],
+    "fontes": [
+      "qgis-roadmap",
+      "qgis-blog-ltr-2026-10"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-01-q3",
+    "licao": "08-01",
+    "enunciado": "Ao abrir o QGIS do computador de trabalho, aparece 3.44.15. O que significa o 15 no fim?",
+    "alternativas": [
+      {
+        "texto": "É a 15ª versão com recurso novo da série 3.44, lançada a cada quatro meses.",
+        "correta": false,
+        "explicacao": "Recurso novo vem nos lançamentos de cada quatro meses, e não no terceiro número. O 15 é uma versão de correção."
+      },
+      {
+        "texto": "É a 15ª LTR do projeto, e a próxima LTR será a 3.44.16.",
+        "correta": false,
+        "explicacao": "A LTR é um lançamento a cada três, e o 3.44 é o lançamento. O terceiro número só conta as versões de correção dele."
+      },
+      {
+        "texto": "É a versão de correção, mensal: só correções, sem recurso novo.",
+        "correta": true,
+        "explicacao": "Certo. Todo mês sai uma versão de correção, que não traz recurso novo, só correções."
+      },
+      {
+        "texto": "É o número de erros que ainda faltam corrigir antes da próxima LTR.",
+        "correta": false,
+        "explicacao": "O terceiro número não conta erros pendentes. Ele conta as versões de correção mensais já lançadas dentro da 3.44."
+      }
+    ],
+    "fontes": [
+      "qgis-roadmap"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-01-q4",
+    "licao": "08-01",
+    "enunciado": "A equipe vai fazer um trabalho longo e quer um QGIS que mude pouco. Discute-se entre LTR e latest. O que cada uma oferece?",
+    "alternativas": [
+      {
+        "texto": "A latest recebe só correções por mais tempo, e a LTR traz recurso novo a cada quatro meses.",
+        "correta": false,
+        "explicacao": "Está ao contrário. A LTR recebe só correções por mais tempo e muda menos; a latest é que traz recurso novo a cada quatro meses."
+      },
+      {
+        "texto": "A LTR é melhor em tudo, então a equipe pode adotá-la sem consultar ninguém sobre a troca.",
+        "correta": false,
+        "explicacao": "A lição não diz que uma é melhor: cada uma oferece uma coisa. Qual a empresa usa e quem decide a troca é assunto de confirmar na empresa."
+      },
+      {
+        "texto": "As duas oferecem o mesmo, e a diferença é só o número da versão mostrado no instalador do QGIS.",
+        "correta": false,
+        "explicacao": "A diferença é o ritmo de mudança: a LTR muda menos, e a latest ganha recurso novo a cada quatro meses."
+      },
+      {
+        "texto": "A LTR recebe só correções por mais tempo e muda menos; a latest traz recurso novo a cada 4 meses.",
+        "correta": true,
+        "explicacao": "Certo. Para um trabalho longo, a LTR muda menos. Qual das duas a empresa usa e quem decide a troca: confirmar na empresa."
+      }
+    ],
+    "fontes": [
+      "qgis-roadmap"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-01-q5",
+    "licao": "08-01",
+    "enunciado": "Saiu uma versão nova do QGIS e quero atualizar o computador de trabalho hoje. O que fazer antes?",
+    "alternativas": [
+      {
+        "texto": "Perguntar à equipe e à TI, e testar complementos e projetos numa cópia.",
+        "correta": true,
+        "explicacao": "Certo. Antes de trocar de versão, a equipe testa os complementos e os projetos que usa. Quem instala e atualiza o QGIS na empresa: confirmar."
+      },
+      {
+        "texto": "Atualizar logo, porque versão nova só traz correções e não afeta os projetos da equipe.",
+        "correta": false,
+        "explicacao": "A latest traz recurso novo a cada quatro meses, e só a versão de correção traz apenas correções. Por isso se testa antes de trocar."
+      },
+      {
+        "texto": "Atualizar só os complementos, porque o QGIS em si não precisa de teste.",
+        "correta": false,
+        "explicacao": "O teste vale para os dois lados: complementos e projetos precisam ser testados antes de trocar a versão do QGIS."
+      },
+      {
+        "texto": "Instalar por conta própria e avisar a equipe depois, se aparecer algum problema.",
+        "correta": false,
+        "explicacao": "Quem instala e atualiza o QGIS e se pode instalar por conta própria são perguntas para a TI. Pergunte antes de instalar."
+      }
+    ],
+    "fontes": [
+      "qgis-roadmap",
+      "qgis-blog-440-2026-11"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-01-q6",
+    "licao": "08-01",
+    "enunciado": "Um fornecedor mandou um projeto do QGIS e não disse em que versão foi feito. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Abrir o original e salvar por cima, porque todas as versões abrem tudo igual.",
+        "correta": false,
+        "explicacao": "A lição não garante que as versões se comportem igual. Pergunte a versão e teste numa cópia, sem arriscar o original."
+      },
+      {
+        "texto": "Atualizar o QGIS para a latest antes de abrir, porque a mais nova abre qualquer projeto.",
+        "correta": false,
+        "explicacao": "Nada na lição diz que a latest abre qualquer projeto, e trocar de versão pede teste e conversa com a TI. Pergunte a versão primeiro."
+      },
+      {
+        "texto": "Perguntar a versão a quem enviou e abrir numa cópia, para testar.",
+        "correta": true,
+        "explicacao": "Certo. Sem fonte sobre compatibilidade entre versões, o jeito seguro é perguntar a versão e testar numa cópia."
+      },
+      {
+        "texto": "Recusar o projeto, porque só a LTR abre projetos feitos por outras pessoas.",
+        "correta": false,
+        "explicacao": "Nenhuma fonte diz que só a LTR abre projetos de terceiros. Pergunte a versão e teste numa cópia."
+      }
+    ],
+    "fontes": [
+      "qgis-interface"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-01-q7",
+    "licao": "08-01",
+    "enunciado": "Um colega escreveu no relatório da equipe: \"a 4.4.4 vira LTR em 05/03/2027\". Como tratar essa data?",
+    "alternativas": [
+      {
+        "texto": "Como data firme, porque vem da página oficial de versões do QGIS, que é do projeto.",
+        "correta": false,
+        "explicacao": "O cronograma muda: o projeto já decidiu que a 4.2 não seria LTR, e o post do comitê fala em data \"anticipated\" (esperada)."
+      },
+      {
+        "texto": "Como previsão que pode mudar: a 4.4.0, prevista para 30/10/2026, atrasou.",
+        "correta": true,
+        "explicacao": "Certo. Em 11/11/2026, a 4.4.4 está prevista para virar LTR em 05/03/2027, mas a 4.4.0 atrasou e o post não dá data nova."
+      },
+      {
+        "texto": "Como data firme, porque o projeto lança uma LTR a cada quatro meses, sem falta.",
+        "correta": false,
+        "explicacao": "A regra é um lançamento a cada quatro meses e uma LTR a cada três lançamentos, mas as datas escorregam: a 4.4.0 atrasou."
+      },
+      {
+        "texto": "Como erro, porque a série 4.x não terá nenhuma LTR e o colega se enganou.",
+        "correta": false,
+        "explicacao": "A primeira LTR da série 4.x está prevista para ser a 4.4.4, em 05/03/2027. O erro é tratar a previsão como certeza."
+      }
+    ],
+    "fontes": [
+      "qgis-blog-ltr-2026-10",
+      "qgis-blog-440-2026-11",
+      "qgis-roadmap"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "08-01-q8",
+    "licao": "08-01",
+    "enunciado": "Uso a 3.44 e abri o endereço docs.qgis.org/latest/ para ler o manual, mas o texto é da série 4.x. Por quê, e o que fazer?",
+    "alternativas": [
+      {
+        "texto": "O manual só existe para a latest, e a LTR 3.44 não tem manual próprio publicado.",
+        "correta": false,
+        "explicacao": "Os manuais são publicados por versão, e a 3.44 tem o seu, em docs.qgis.org/3.44/."
+      },
+      {
+        "texto": "Abrir o manual da 4.x trocou a versão instalada no meu computador para a 4.x.",
+        "correta": false,
+        "explicacao": "Ler o manual não muda o QGIS instalado. A versão instalada se vê em Help ► About; o que muda é o manual aberto."
+      },
+      {
+        "texto": "O latest é o manual da LTR, então o erro está na versão que instalei no computador.",
+        "correta": false,
+        "explicacao": "O manual da LTR é o de docs.qgis.org/3.44/. Em 10 e 11/11/2026, o endereço latest redirecionava para o testing, que é o da série 4.x."
+      },
+      {
+        "texto": "O latest levava ao testing (4.x) em 11/11/2026; para a 3.44, use docs.qgis.org/3.44/.",
+        "correta": true,
+        "explicacao": "Certo. Use o manual da mesma versão: o 3.44 é o da LTR, e o testing é o da versão em desenvolvimento (4.x). Confira a data, que pode mudar."
+      }
+    ],
+    "fontes": [
+      "qgis-projecoes"
+    ],
+    "dificuldade": 3
+  }
+]

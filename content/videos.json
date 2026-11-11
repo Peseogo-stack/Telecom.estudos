@@ -247,6 +247,34 @@
     ]
   },
   {
+    "licao": "03-02",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=QcOBmvLWgck",
+        "titulo": "Dicas 2 - O que é o cabo Tipo Loose",
+        "canal": "Gatre Treinamentos",
+        "duracao": "4:45",
+        "observar": "Como o cabo de tubos loose é construído e os modelos que existem.",
+        "aviso": "Pela descrição curta, não dá para saber se o vídeo diz qual parte faz a tração; na lição, pelas fichas, é a aramida.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem capítulos nem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=sq2wWQau-yw",
+        "titulo": "Tipos de Cabo Loose",
+        "canal": "Cristiano Viana",
+        "duracao": "5:40",
+        "observar": "A diferença entre cabo geleado, seco e totalmente seco: o mesmo ponto da lição sobre o gel dentro do tubo.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem capítulos nem transcrição."
+      }
+    ],
+    "termosBusca": [
+      "cabo óptico tubo loose aramida elemento central",
+      "cabo fibra óptica geleado seco totalmente seco"
+    ]
+  },
+  {
     "licao": "03-03",
     "videos": [
       {

@@ -1062,7 +1062,8 @@
     ],
     "licoes": [
       "03-04",
-      "02-02"
+      "02-02",
+      "03-02"
     ]
   },
   {
@@ -2717,6 +2718,60 @@
     ],
     "licoes": [
       "10-02"
+    ]
+  },
+  {
+    "id": "fio-de-rasgamento",
+    "pt": "Fio de rasgamento",
+    "en": "Ripcord",
+    "definicao": "Fio que corre junto da capa do cabo e ajuda a abri-la sem cortar fundo.",
+    "fontes": [
+      "transcend-as",
+      "prysmian-cfoa-as"
+    ],
+    "licoes": [
+      "03-02"
+    ]
+  },
+  {
+    "id": "aramida",
+    "pt": "Aramida",
+    "en": "Aramid yarn",
+    "definicao": "Fio dielétrico de alta resistência, trançado sobre o núcleo do cabo. No cabo autossustentado, é o elemento de tração.",
+    "fontes": [
+      "prysmian-cfoa-as",
+      "transcend-as"
+    ],
+    "licoes": [
+      "03-02"
+    ]
+  },
+  {
+    "id": "hidroexpansivel",
+    "pt": "Material hidroexpansível",
+    "en": "Water-swellable material",
+    "definicao": "Fio ou fita que incha em contato com a água e barra a umidade dentro do cabo. É o que faz o núcleo ser \"seco\".",
+    "fontes": [
+      "prysmian-cfoa-as",
+      "prysmian-duto"
+    ],
+    "licoes": [
+      "03-02"
+    ]
+  },
+  {
+    "id": "elemento-central",
+    "sigla": "FRP",
+    "pt": "Elemento central",
+    "en": "Central strength member (FRP/GRP)",
+    "definicao": "Bastão dielétrico de plástico reforçado com fibra de vidro no centro do cabo. Os tubos loose são reunidos em volta dele, que previne a contração do cabo.",
+    "fontes": [
+      "transcend-as",
+      "furukawa-et02719",
+      "prysmian-cfoa-as"
+    ],
+    "licoes": [
+      "03-02"
     ]
   }
 ]

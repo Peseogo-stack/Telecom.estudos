@@ -1,0 +1,255 @@
+[
+  {
+    "id": "03-02-q1",
+    "licao": "03-02",
+    "enunciado": "Num cabo autossustentado, que parte trabalha na tração do vão?",
+    "alternativas": [
+      {
+        "texto": "A aramida trançada sobre o núcleo",
+        "correta": true,
+        "explicacao": "Certo. A Prysmian chama os fios de aramida de elementos de tração e diz que deles vem a resistência mecânica do cabo (ficha CFOA AS)."
+      },
+      {
+        "texto": "O elemento central de fibra de vidro",
+        "correta": false,
+        "explicacao": "O elemento central serve para evitar a contração do cabo (Transcend, Furukawa); a tração fica com a aramida."
+      },
+      {
+        "texto": "A capa preta, que é a parte mais grossa",
+        "correta": false,
+        "explicacao": "A capa protege contra sol e chuva; o elemento de tração é a aramida (Prysmian)."
+      },
+      {
+        "texto": "Os tubos loose, que correm o cabo todo",
+        "correta": false,
+        "explicacao": "Os tubos protegem as fibras; quem trabalha na tração é a aramida (Prysmian)."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as",
+      "transcend-as"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-02-q2",
+    "licao": "03-02",
+    "enunciado": "Para que serve o elemento central de FRP, segundo as fichas da Transcend e da Furukawa?",
+    "alternativas": [
+      {
+        "texto": "Levar a luz de reserva quando uma fibra quebra",
+        "correta": false,
+        "explicacao": "O FRP é um bastão de plástico com fibra de vidro, não uma fibra óptica; ele previne a contração do cabo."
+      },
+      {
+        "texto": "Prevenir os esforços de contração do cabo",
+        "correta": true,
+        "explicacao": "Certo. As duas fichas dizem que o elemento central fica no centro do núcleo para prevenir os esforços de contração do cabo."
+      },
+      {
+        "texto": "Aterrar o cabo nas ferragens do poste",
+        "correta": false,
+        "explicacao": "O FRP é dielétrico, não conduz; ele previne a contração do cabo (Transcend, Furukawa)."
+      },
+      {
+        "texto": "Absorver a água que entra pela capa",
+        "correta": false,
+        "explicacao": "Quem barra a água são os materiais hidroexpansíveis; o FRP previne a contração (Transcend, Furukawa)."
+      }
+    ],
+    "fontes": [
+      "transcend-as",
+      "furukawa-et02719"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-02-q3",
+    "licao": "03-02",
+    "enunciado": "O que fazem os fios ou fitas hidroexpansíveis do cabo?",
+    "alternativas": [
+      {
+        "texto": "Seguram o cabo no vão junto com a aramida",
+        "correta": false,
+        "explicacao": "Quem trabalha na tração é a aramida; os hidroexpansíveis barram a umidade (Prysmian)."
+      },
+      {
+        "texto": "Incham com a água e barram a umidade",
+        "correta": true,
+        "explicacao": "Certo. Os fios hidroexpansíveis protegem o cabo contra a penetração de umidade (Prysmian) e fazem o núcleo ser seco."
+      },
+      {
+        "texto": "Mostram a cor de cada tubo na emenda",
+        "correta": false,
+        "explicacao": "A cor vem do tubo e do revestimento das fibras; os hidroexpansíveis barram a umidade."
+      },
+      {
+        "texto": "Isolam a capa contra a radiação UV do sol",
+        "correta": false,
+        "explicacao": "A resistência a UV é da capa externa (Prysmian); os hidroexpansíveis barram a umidade."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as",
+      "prysmian-duto"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-02-q4",
+    "licao": "03-02",
+    "enunciado": "Para que existe o fio de rasgamento (ripcord)?",
+    "alternativas": [
+      {
+        "texto": "Para medir o comprimento do cabo na bobina",
+        "correta": false,
+        "explicacao": "O comprimento sai da marcação de metro na capa (lição 03-01); o ripcord ajuda a abrir a capa."
+      },
+      {
+        "texto": "Para prender o cabo na alça de ancoragem",
+        "correta": false,
+        "explicacao": "A fixação é da ferragem; o ripcord auxilia no rompimento da capa externa (Transcend)."
+      },
+      {
+        "texto": "Para ajudar a abrir a capa externa do cabo",
+        "correta": true,
+        "explicacao": "Certo. Segundo a Transcend, o fio de rasgamento auxilia no rompimento da capa externa."
+      },
+      {
+        "texto": "Para marcar o tubo piloto dentro do núcleo",
+        "correta": false,
+        "explicacao": "O piloto é marcado pela cor do tubo (lição 03-04); o ripcord ajuda a abrir a capa."
+      }
+    ],
+    "fontes": [
+      "transcend-as"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-02-q5",
+    "licao": "03-02",
+    "enunciado": "Um colega diz que cabo com \"S\" na gravação não tem gel em lugar nenhum. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Certo: \"S\" quer dizer sem gel no cabo inteiro",
+        "correta": false,
+        "explicacao": "O \"S\" é núcleo seco. A Transcend mostra núcleo seco com geleia dentro do tubo loose."
+      },
+      {
+        "texto": "Certo, e por isso nunca se usa removedor de gel",
+        "correta": false,
+        "explicacao": "Se o tubo tiver gel, o removedor é necessário (lição 05-01). O \"S\" fala do núcleo."
+      },
+      {
+        "texto": "Errado: o núcleo é seco, mas o tubo pode ter gel",
+        "correta": true,
+        "explicacao": "Certo. O núcleo seco usa hidroexpansíveis em volta dos tubos; a Transcend e o cabo de duto da Prysmian têm gel dentro dos tubos. Só a ficha do cabo diz."
+      },
+      {
+        "texto": "Errado: \"S\" quer dizer \"suspensão\", não seco",
+        "correta": false,
+        "explicacao": "\"S\" é núcleo seco; \"G\" seria geleado (Prysmian). A sigla não indica ferragem."
+      }
+    ],
+    "fontes": [
+      "transcend-as",
+      "prysmian-duto",
+      "prysmian-cfoa-as"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-02-q6",
+    "licao": "03-02",
+    "enunciado": "No cabo autossustentado da Prysmian de 24 fibras, quantas fibras há em cada tubo?",
+    "alternativas": [
+      {
+        "texto": "12, como em todo cabo de tubos loose",
+        "correta": false,
+        "explicacao": "Varia: 12 por tubo é de 48 a 144 fibras; com 24 fibras, são 6 por tubo (Prysmian)."
+      },
+      {
+        "texto": "6 fibras por tubo, em 4 tubos",
+        "correta": true,
+        "explicacao": "Certo. Na ficha da Prysmian, cabos de 24 e 36 fibras têm 6 fibras por tubo."
+      },
+      {
+        "texto": "2 fibras por tubo, em 12 tubos",
+        "correta": false,
+        "explicacao": "Tubos de 2 aparecem no cabo de 12 fibras do AS120 e do AS200; com 24, são 6 por tubo."
+      },
+      {
+        "texto": "24 fibras soltas num tubo só",
+        "correta": false,
+        "explicacao": "A Prysmian põe de 2 a 12 fibras por tubo; com 24 fibras, são 6 por tubo."
+      }
+    ],
+    "fontes": [
+      "prysmian-cfoa-as"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-02-q7",
+    "licao": "03-02",
+    "enunciado": "O que o cabo de duto da Furukawa com proteção contra roedores (DDR) tem a mais?",
+    "alternativas": [
+      {
+        "texto": "Uma armadura de aço enrolada sobre a capa",
+        "correta": false,
+        "explicacao": "O cabo é totalmente dielétrico: a proteção é uma camada de fibra de vidro de 1,3 mm (Furukawa)."
+      },
+      {
+        "texto": "Gel com repelente dentro de cada tubo loose",
+        "correta": false,
+        "explicacao": "O cabo da Furukawa é totalmente seco; a proteção é uma camada de fibra de vidro de 1,3 mm."
+      },
+      {
+        "texto": "Capa interna e camada de fibra de vidro de 1,3 mm",
+        "correta": true,
+        "explicacao": "Certo. Sobre a capa interna vai uma camada de fibra de vidro de 1,3 mm para proteger contra o ataque de roedores (Furukawa ET02719)."
+      },
+      {
+        "texto": "Um tubo de alumínio em volta do núcleo",
+        "correta": false,
+        "explicacao": "Não há metal: é uma camada de fibra de vidro de 1,3 mm sobre a capa interna (Furukawa)."
+      }
+    ],
+    "fontes": [
+      "furukawa-et02719"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-02-q8",
+    "licao": "03-02",
+    "enunciado": "Um colega diz que, como o cabo é dielétrico, não precisa de cuidado com a ferragem. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Certo: sem metal no cabo, não há risco elétrico",
+        "correta": false,
+        "explicacao": "O cabo não tem metal, mas a ferragem tem: a FOA relata mortes quando suportes metálicos encostaram na alta tensão."
+      },
+      {
+        "texto": "Certo, desde que a capa esteja sem cortes",
+        "correta": false,
+        "explicacao": "A capa não muda o risco da ferragem metálica, que conduz (FOA)."
+      },
+      {
+        "texto": "Errado: a ferragem é metálica e conduz",
+        "correta": true,
+        "explicacao": "Certo. A FOA relata dois instaladores mortos quando suportes metálicos de um cabo dielétrico autossustentado encostaram na rede de alta tensão."
+      },
+      {
+        "texto": "Errado: o cabo dielétrico conduz pela aramida",
+        "correta": false,
+        "explicacao": "A aramida é dielétrica; o risco é da ferragem metálica (FOA)."
+      }
+    ],
+    "fontes": [
+      "foa-seguranca"
+    ],
+    "dificuldade": 2
+  }
+]

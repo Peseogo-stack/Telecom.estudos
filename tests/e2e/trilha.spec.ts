@@ -21,21 +21,21 @@ test('Trilha em 4 etapas, com os módulos na ordem de estudo', async ({ page }) 
   await expect(page.locator('section.etapa').nth(0).locator('a').nth(1)).toHaveAttribute('href', '#/trilha/10');
   // Contagem de prontas: módulo pronto, módulo pela metade e módulo sem nenhuma.
   await expect(page.locator('li', { hasText: 'Módulo 1 · ' }).first()).toContainText('6 de 6 prontas');
-  await expect(page.locator('li', { hasText: 'Módulo 3 · ' }).first()).toContainText('4 de 7 prontas');
+  await expect(page.locator('li', { hasText: 'Módulo 4 · ' }).first()).toContainText('3 de 6 prontas');
   await expect(page.locator('li', { hasText: 'Módulo 11 · ' }).first()).toContainText('0 de 6 prontas · em construção');
   const l = await page.evaluate(() => ({ doc: document.documentElement.scrollWidth, tela: window.innerWidth }));
   expect(l.doc).toBeLessThanOrEqual(l.tela);
 });
 
 test('módulo: as prontas primeiro e as que faltam num bloco "Em construção" no fim', async ({ page }) => {
-  await page.goto('./#/trilha/03');
-  await expect(page.locator('main .rotulo').first()).toHaveText('Etapa 1 · Base');
-  await expect(page.locator('main')).toContainText('4 de 7 prontas');
+  await page.goto('./#/trilha/04');
+  await expect(page.locator('main .rotulo').first()).toHaveText('Etapa 2 · Mão na massa');
+  await expect(page.locator('main')).toContainText('3 de 6 prontas');
   const prontas = page.locator('main ol.cartao .titulo-item');
-  await expect(prontas).toHaveText([/^03-01 /, /^03-03 /, /^03-04 /, /^03-07 /]);
+  await expect(prontas).toHaveText([/^04-01 /, /^04-03 /, /^04-05 /]);
   const bloco = page.locator('section[aria-labelledby="t-em-construcao"]');
   await expect(bloco.getByRole('heading', { name: 'Em construção' })).toBeVisible();
-  await expect(bloco.locator('.titulo-item')).toHaveText([/^03-02 /, /^03-05 /, /^03-06 /]);
+  await expect(bloco.locator('.titulo-item')).toHaveText([/^04-02 /, /^04-04 /, /^04-06 /]);
   await expect(bloco.locator('a')).toHaveCount(0);
   // Módulo completo não mostra o bloco.
   await page.goto('./#/trilha/01');
@@ -71,7 +71,7 @@ test('a nova ordem não perde o que já foi aprovado: a próxima lição pula as
   await expect(semana2).toContainText('1 de 5 aprovadas');
 });
 
-for (const rota of ['#/trilha', '#/trilha/03', '#/trilha/11']) {
+for (const rota of ['#/trilha', '#/trilha/04', '#/trilha/11']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();

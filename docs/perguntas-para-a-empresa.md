@@ -39,6 +39,7 @@
 | a18 | Pegue um shapefile recebido de fornecedor: vieram todos os arquivos (.shp, .shx, .dbf, .prj)? (Anote só no Meu caderno; nada de dado da empresa no app.) | Pasta com arquivos recebidos | 08-04 |
 | a19 | Como os religadores se comunicam hoje (rádio, celular, fibra)? Qual equipamento de comunicação fica em cada um? | Etiqueta e ficha do religador; mapa da rede | 01-06 |
 | a20 | O meu ASO registra a aptidão para trabalho em altura? Quando foi o meu último treinamento de NR-35 e ele foi presencial? | ASO e certificado do treinamento | 10-02 |
+| a21 | Num cabo aberto na caixa: o núcleo é seco ou geleado, há gel dentro dos tubos e quantas fibras há por tubo? | Gravação da capa, ficha do fabricante e o próprio cabo aberto, acompanhado | 03-02 |
 
 ---
 
@@ -84,6 +85,7 @@
 | b36 | Que serviços (SCADA, teleproteção, medição, religadores, corporativo) vão na rede própria e quais vão em link contratado? | Projeto da rede de telecom ou plano diretor | 01-01, 01-02 |
 | b37 | Existe um plano de migração da rede de transporte (por exemplo, de SDH para pacotes)? Quais são as etapas? | Plano diretor de telecom, projeto de modernização | 01-06 |
 | b38 | Quando o serviço é em altura e também em proximidade da rede, por quanto tempo vale a PT no procedimento: turno ou jornada? | Procedimento de trabalho em poste e modelo de PT | 10-02 |
+| b39 | A especificação de compra pede cabo de duto com proteção contra roedores (DDR)? Em que trechos? | Especificação técnica de materiais ou projeto da rede | 03-02 |
 
 ---
 

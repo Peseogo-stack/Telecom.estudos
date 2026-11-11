@@ -51,3 +51,27 @@ Das mudanças de 08/11, estas estão certas:
 | E1 | 03-07 | "Em **cabos** multimodo mais novos, a FOA traz também preto para OM2, água para OM3/OM4 e verde-limão para OM5". | FOA, tabela *Connector Color Codes*: são cores de **conector** (corpo, capa e adaptador): 62,5/125 bege; 50/125 OM2 preto; OM3/OM4 água; OM5 verde-limão; monomodo azul; APC verde. | "Na tabela de cores de conector da FOA…". |
 | E2 | 03-07 | PTO: "comporta até 12 fusões **ou** um splitter 1x8 e 8 adaptadores". | Nazda: bandeja giratória *"para emendas de até 12 fibras"* **e** lugar para *"1 divisor [...] PLC 1x8 e 1 adaptador SC [...] para entrada, além de 7 adaptadores SC [...] para saída"*. | "Bandeja para até 12 emendas e lugar para um splitter 1x8 com 8 adaptadores SC". |
 | E3 | Ferramenta Código de cores | No esquema piloto, todo tubo a partir do 13º recebia a marcação "anéis", como regra do esquema. | Os anéis a partir do 13º tubo estão na ficha da Prysmian (cabo de duto). A Transcend, que também usa piloto e direcional, não define marcação acima de 12 tubos. | A marcação diz "anéis, na ficha Prysmian; confira a do seu cabo". O teste acompanha. |
+
+## Lição 03-02 · Por dentro do cabo (11/11/2026)
+
+Fontes lidas no PDF original: fichas Prysmian CFOA AS KP DRY-DRY (BR00_CFOA_AS_DRY_20250625) e CFOA-SM-DD-S (duto), Transcend Speed Star AS e Furukawa ET02719 v7 (duto com proteção contra roedores); FOA, segurança nas instalações.
+
+| Ponto | Como ficou | Por quê |
+| --- | --- | --- |
+| Quem faz a tração | Aramida, citando a Prysmian ("elementos de tração") | A pesquisa só dizia "suporta a tração"; a ficha diz literalmente |
+| Elemento central | "Prevenir os esforços de contração do cabo" (Transcend e Furukawa); os tubos são reunidos em volta dele (Prysmian) | A primeira redação dizia que ele servia "para os tubos se apoiarem", sem fonte |
+| Tensão do vão | Carga do ensaio de tensão máxima de operação: 1,5 × o peso por km no vão de 80 m e 3,0 × no de 200 m | A primeira redação falava em "esforço que cresce com o vão"; o número é de ensaio, não de esforço real |
+| Fio de rasgamento | "Corre junto da capa" | A Prysmian diz que a capa "contém" o fio; "logo abaixo" não está na ficha |
+| Seco × gel | O "S" é o núcleo; o tubo pode ter gel (Transcend e duto Prysmian) ou não (Prysmian *dry*) | Evita o erro de achar que núcleo seco dispensa removedor de gel |
+| Fibras por tubo | Tabela da Prysmian: 6 por tubo em 24 e 36; 12 de 48 a 144; no 12FO, 12 no AS80 e 2 no AS120 e AS200 | A pesquisa dava só parte dessa tabela |
+| Ferragem metálica | Citada pela FOA (dois instaladores mortos) e ligada ao checklist do poste, com "confirmar na empresa" | Cabo dielétrico não deixa a ferragem segura |
+
+Ficou de fora, sem fonte: o motivo da torção SZ, técnicas de abertura do cabo e qualquer regra de quanto cabo abrir na caixa (está na 05-01, pela FOA).
+
+**Questões:** 8. Nas de "colega diz" (q5 e q8), duas alternativas concordam e duas discordam.
+
+**Glossário:** 4 termos novos (fio de rasgamento, aramida, material hidroexpansível, elemento central); "tubo loose" passou a apontar também para a 03-02.
+
+**Perguntas para a empresa:** a21 e b39.
+
+**Vídeos:** 2 (Gatre, sobre a construção do cabo loose, com aviso; Cristiano Viana, sobre geleado, seco e totalmente seco).

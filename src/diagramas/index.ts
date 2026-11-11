@@ -43,6 +43,7 @@ import { CicloQfield } from './CicloQfield';
 import { PlaquetaIdentificacao } from './PlaquetaIdentificacao';
 import { OndeFicaCadaCoisa } from './OndeFicaCadaCoisa';
 import { AlturasAoSolo } from './AlturasAoSolo';
+import { FluxoFiscalizacao } from './FluxoFiscalizacao';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -86,6 +87,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'plaqueta-identificacao': PlaquetaIdentificacao,
   'onde-fica-cada-coisa': OndeFicaCadaCoisa,
   'alturas-ao-solo': AlturasAoSolo,
+  'fluxo-fiscalizacao': FluxoFiscalizacao,
 };
 
 

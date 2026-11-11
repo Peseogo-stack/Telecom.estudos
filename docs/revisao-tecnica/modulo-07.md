@@ -94,3 +94,18 @@ Cada lição é escrita a partir de uma ficha com o trecho literal de cada fonte
 **Segurança:** a lição trata cabo baixo como risco de acidente e diz o que o técnico não faz: medir embaixo da rede, tocar ou levantar o cabo, parar no meio da via, liberar o trânsito.
 
 **Vídeos:** nenhum. As buscas só trouxeram vídeos fora do tema (posição de trabalho no poste, rapel, vigas e laje).
+
+## 07-06 — Fiscalizar, notificar, retirar (11/11/2026)
+
+**Fontes (abertas em 10/11/2026):** Resolução Conjunta 1/1999 (art. 11: pedido por escrito e resposta em até 90 dias), REN 1.044/2022 (arts. 4º, 6º, 8º, 12 a 16, 18 e 31) e Resolução Conjunta 4/2014 (art. 4º, §§3º a 7º; arts. 5º, 6º e 9º).
+
+**Prazos que a lição separa:** 90 dias para o detentor responder ao pedido (suspensos enquanto ele aguarda correção que pediu); cronograma de regularização de até 1 ano, limitado a 2.100 postes por distribuidora por ano; 30 e 150 dias só no caso de falta de ponto de fixação; guarda dos documentos por no mínimo 5 anos. A lição não diz o que acontece se os 90 dias estourarem: diz só que nada se instala sem aprovação.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "Sem regularizar, o detentor pede autorização à Comissão" | REN 1.044, art. 13: "pode solicitar" | "pode pedir" |
+| Diagrama: "Retirada sem autorização da Comissão" nos ramos de risco e de clandestina | REN 1.044, art. 14: o detentor "pode retirar" | "Pode retirar sem autorização da Comissão" (desenho e descrição) |
+
+**Papel do técnico:** vê, registra e comunica; não decide se é clandestino, não corta e não retira. Retirada é serviço de equipe autorizada, com procedimento e análise de risco (lição 10-01).
+
+**Vídeos:** nenhum entrou. Duas das três buscas não deram resultado; a terceira trouxe um vídeo de canal com fim comercial (aluguel de postes) e uma notícia municipal.

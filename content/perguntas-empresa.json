@@ -1017,5 +1017,50 @@
     "licoes": [
       "07-05"
     ]
+  },
+  {
+    "id": "b32",
+    "onde": "documentos",
+    "texto": "Qual é o modelo de notificação da empresa e que prazos o contrato dá para regularizar?",
+    "dica": "Contrato-padrão de compartilhamento e modelo de notificação",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "b33",
+    "onde": "documentos",
+    "texto": "Como a empresa guarda os registros de fiscalização e por quanto tempo?",
+    "dica": "Procedimento de fiscalização e de guarda de documentos",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "d41",
+    "onde": "colega",
+    "texto": "Quando registro uma irregularidade, para quem vai o registro e quem emite a notificação ao ocupante?",
+    "dica": "",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "d42",
+    "onde": "colega",
+    "texto": "Quem decide que um caso é emergência e quem executa a retirada de cabos?",
+    "dica": "",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "d43",
+    "onde": "colega",
+    "texto": "O que acontece com o material retirado (guarda, devolução, descarte)?",
+    "dica": "",
+    "licoes": [
+      "07-06"
+    ]
   }
 ]

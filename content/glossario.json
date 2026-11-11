@@ -2243,5 +2243,40 @@
     "licoes": [
       "07-05"
     ]
+  },
+  {
+    "id": "notificacao",
+    "pt": "Notificação",
+    "definicao": "Comunicação formal do detentor ao ocupante para regularizar a ocupação. Traz, no mínimo, a localização do poste e a descrição da não conformidade.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "regularizacao",
+    "pt": "Regularização",
+    "definicao": "Correção da ocupação pelo ocupante, por conta dele, inclusive os custos, em cronograma acordado com o detentor. Em risco de acidente ou emergência, é imediata.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "nao-conformidade",
+    "pt": "Não conformidade",
+    "definicao": "O que está fora da norma técnica ou do que foi aprovado. A descrição dela vai na notificação, junto com a localização do poste.",
+    "fontes": [
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-06"
+    ]
   }
 ]

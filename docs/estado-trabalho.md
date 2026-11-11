@@ -60,3 +60,4 @@ As fichas de fatos de todas as lições (o que foi conferido na fonte, com os tr
 | 07-03 Plaqueta e identificação | 11/11/2026 | 8 | 0 (só termos de busca) | Frase atribuída à REN sem estar nela; "vale para todos" virou "todo ocupante"; 200–400 mm e 300 mm não "divergem"; distrator com conta errada |
 | 07-04 Reserva, CEO, CTO e drops | 11/11/2026 | 8 | 0 (só termos de busca) | O que o exemplo da Cemig permite no poste com transformador (a rede passa direto e só se deriva para clientes; não "só o drop") |
 | 07-05 Alturas ao solo | 11/11/2026 | 8 | 0 (só termos de busca) | "Poste mais alto que o meio do vão" só vale em terreno plano; a tabela da Energisa descrita como é (Tabela 03, por tensão de energia) |
+| 07-06 Fiscalizar, notificar, retirar | 11/11/2026 | 8 | 0 (só termos de busca) | A norma diz que o detentor "pode" pedir à Comissão e "pode" retirar; a lição e o diagrama diziam que ele pede e retira |

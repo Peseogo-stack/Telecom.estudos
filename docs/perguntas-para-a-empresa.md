@@ -75,6 +75,8 @@
 | b29 | A norma permite caixa ou equipamento do ocupante no poste? Em quais postes é proibido (transformador, esquina, chave)? | Norma de compartilhamento: seção sobre equipamentos no poste | 07-04 |
 | b30 | Quantos drops por vão a norma permite e de onde eles podem sair? | Norma de compartilhamento: seção sobre derivação para clientes | 07-04 |
 | b31 | Na norma da empresa, quais são as alturas mínimas do cabo de telecom sobre rua, entrada de veículos e passagem de pedestres? | Norma de compartilhamento: tabela de distâncias mínimas ao solo | 07-05 |
+| b32 | Qual é o modelo de notificação da empresa e que prazos o contrato dá para regularizar? | Contrato-padrão de compartilhamento e modelo de notificação | 07-06 |
+| b33 | Como a empresa guarda os registros de fiscalização e por quanto tempo? | Procedimento de fiscalização e de guarda de documentos | 07-06 |
 
 ---
 
@@ -149,6 +151,9 @@
 | d38 | Quais dessas irregularidades (reserva ou caixa no poste, drop no meio do vão) a equipe mais encontra e como costuma registrar? | 07-04 |
 | d39 | Como a equipe mede a altura de um cabo com segurança: com que instrumento e quem pode medir? | 07-05 |
 | d40 | Qual é o procedimento ao encontrar um cabo baixo sobre a via: a quem avisar e como sinalizar? | 07-05 |
+| d41 | Quando registro uma irregularidade, para quem vai o registro e quem emite a notificação ao ocupante? | 07-06 |
+| d42 | Quem decide que um caso é emergência e quem executa a retirada de cabos? | 07-06 |
+| d43 | O que acontece com o material retirado (guarda, devolução, descarte)? | 07-06 |
 
 ---
 

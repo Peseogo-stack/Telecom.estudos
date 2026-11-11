@@ -1,0 +1,254 @@
+[
+  {
+    "id": "07-06-q1",
+    "licao": "07-06",
+    "enunciado": "Você viu, do solo, um cabo fora da faixa num poste e vai registrar. Para a empresa poder notificar o ocupante, o que não pode faltar?",
+    "alternativas": [
+      {
+        "texto": "O nome do ocupante e uma nota sua dizendo que o cabo é clandestino, para a empresa só confirmar e seguir.",
+        "correta": false,
+        "explicacao": "Você não decide se é clandestino. A notificação precisa, no mínimo, da localização do poste e da descrição da não conformidade."
+      },
+      {
+        "texto": "A localização do poste e a descrição do que está errado, com a foto e a data do registro.",
+        "correta": true,
+        "explicacao": "Certo. A notificação traz, no mínimo, a localização do poste e a descrição da não conformidade. Foto e data completam o registro."
+      },
+      {
+        "texto": "Só a foto do cabo, porque a empresa descobre sozinha em qual poste ela foi tirada.",
+        "correta": false,
+        "explicacao": "Sem o código e a localização do poste, não há o que notificar. A foto ajuda, mas não substitui a localização."
+      },
+      {
+        "texto": "O prazo que você acha justo para o ocupante regularizar e a data em que o cabo será retirado.",
+        "correta": false,
+        "explicacao": "O cronograma é acordado entre as partes, e a retirada não é com você. Seu registro diz onde está o problema e o que é."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-06-q2",
+    "licao": "07-06",
+    "enunciado": "Um provedor instalou cabo novo num poste e diz que o pedido ficou mais de 90 dias sem resposta, então já podia ocupar. O que vale?",
+    "alternativas": [
+      {
+        "texto": "Passou o prazo sem resposta, então a instalação vale como aprovada e o cabo fica regular.",
+        "correta": false,
+        "explicacao": "O prazo de 90 dias é do detentor para responder, por escrito. A regra é que nada se instala sem aprovação."
+      },
+      {
+        "texto": "Os 90 dias são o prazo que o provedor tem para instalar depois de aprovado, e ele cumpriu.",
+        "correta": false,
+        "explicacao": "Os 90 dias são o prazo do detentor para responder ao pedido, e não um prazo para instalar."
+      },
+      {
+        "texto": "Você retira o cabo na hora, porque instalar sem aprovação é ocupação vedada.",
+        "correta": false,
+        "explicacao": "A ocupação é vedada, mas retirar não é com você. Você registra e comunica, e a empresa decide o caminho."
+      },
+      {
+        "texto": "Nada se instala sem aprovação; você registra o caso e comunica, e a empresa segue o fluxo.",
+        "correta": true,
+        "explicacao": "Certo. O prazo de resposta é do detentor, e a ocupação sem aprovação é vedada. O caso vai para a empresa."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-1-1999",
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-06-q3",
+    "licao": "07-06",
+    "enunciado": "Você encontra um cabo sem plaqueta num poste de rua e está com um alicate de corte na mão. O que faz?",
+    "alternativas": [
+      {
+        "texto": "Registra poste, foto e data, comunica pelo procedimento da empresa e não corta o cabo.",
+        "correta": true,
+        "explicacao": "Certo. Você vê, registra e comunica. Retirada é serviço perto de rede energizada, de equipe autorizada."
+      },
+      {
+        "texto": "Corta o cabo, já que a retirada de clandestino dispensa a Comissão e o técnico está ali.",
+        "correta": false,
+        "explicacao": "A dispensa da Comissão é do detentor, por equipe autorizada, com procedimento e análise de risco (10-01). Não é do técnico."
+      },
+      {
+        "texto": "Não registra, porque sem plaqueta não dá para saber de quem é o cabo e a notificação não sai.",
+        "correta": false,
+        "explicacao": "Registra-se mesmo assim, com \"sem plaqueta\". O registro é o que permite à empresa agir."
+      },
+      {
+        "texto": "Escreve \"clandestino\" no registro e deixa o cabo como está, porque já decidiu o caso.",
+        "correta": false,
+        "explicacao": "Classificar o caso é da empresa. Você descreve o que viu; não decide se é clandestino."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-06-q4",
+    "licao": "07-06",
+    "enunciado": "Você registra o cabo de um ocupante com contrato, fora da faixa da norma técnica, sem risco para ninguém. Qual é o caminho previsto?",
+    "alternativas": [
+      {
+        "texto": "Retirada pelo detentor sem autorização da Comissão, como na ocupação clandestina.",
+        "correta": false,
+        "explicacao": "Esse caso não é clandestino nem de risco. A retirada sem autorização da Comissão é só nesses dois casos."
+      },
+      {
+        "texto": "Regularização imediata pelo ocupante, sem notificação, como nos casos de risco de acidente.",
+        "correta": false,
+        "explicacao": "A regularização imediata, sem notificação prévia, é para emergência ou risco de acidente. Aqui não há risco."
+      },
+      {
+        "texto": "Notificação, regularização do ocupante em cronograma acordado e, sem regularizar, pedido à Comissão.",
+        "correta": true,
+        "explicacao": "Certo. É o caminho dos demais casos: notificação, cronograma de até 1 ano e, se não regularizar, pedido de autorização à Comissão."
+      },
+      {
+        "texto": "Pedido de autorização à Comissão antes de qualquer notificação, para o detentor poder retirar o cabo.",
+        "correta": false,
+        "explicacao": "O pedido à Comissão vem depois, quando o ocupante não regulariza. Antes, vem a notificação."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014",
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-06-q5",
+    "licao": "07-06",
+    "enunciado": "Do solo, você vê um cabo de ocupante baixo sobre a rua, preso ao poste. Pelo fluxo, o que muda em relação a um cabo só fora da faixa?",
+    "alternativas": [
+      {
+        "texto": "É risco de acidente: comunicar na hora, e o ocupante regulariza de imediato, sem esperar notificação.",
+        "correta": true,
+        "explicacao": "Certo. Em risco de acidente a regularização é imediata, independentemente de notificação prévia."
+      },
+      {
+        "texto": "Nada: registra, espera a notificação e o cronograma de até 1 ano, como nos demais casos.",
+        "correta": false,
+        "explicacao": "Esperar o cronograma serve aos demais casos. Cabo baixo sobre a rua é risco de acidente e se comunica na hora."
+      },
+      {
+        "texto": "Você retira o cabo na hora, porque risco de acidente dispensa a autorização da Comissão.",
+        "correta": false,
+        "explicacao": "A dispensa é do detentor, por equipe autorizada. Você registra e comunica, sem retirar."
+      },
+      {
+        "texto": "Registra e comunica no relatório do fim do mês, porque a notificação é que inicia a regularização.",
+        "correta": false,
+        "explicacao": "Num caso de risco a regularização não espera notificação, e a comunicação é na hora."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014",
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-06-q6",
+    "licao": "07-06",
+    "enunciado": "Um ocupante diz: \"Ninguém me notificou, então não preciso corrigir o cabo fora da norma.\" O que dizer?",
+    "alternativas": [
+      {
+        "texto": "Ele tem razão: a notificação é que cria o dever de regularizar, e a distribuidora paga a correção.",
+        "correta": false,
+        "explicacao": "A regularização é do ocupante, inclusive os custos, e a falta de notificação não o exime."
+      },
+      {
+        "texto": "Ele tem razão, salvo em risco de acidente, quando a falta de notificação passa a não valer.",
+        "correta": false,
+        "explicacao": "A falta de notificação não exime o ocupante em nenhum caso. Em risco, a regularização é também imediata."
+      },
+      {
+        "texto": "Ele só corrige depois que a Comissão autorizar a retirada, pois a notificação é feita por ela.",
+        "correta": false,
+        "explicacao": "A notificação é do detentor, e a Comissão entra só no pedido de retirada, se ele não regularizar."
+      },
+      {
+        "texto": "A falta de notificação não o exime; a regularização é dele, inclusive os custos.",
+        "correta": true,
+        "explicacao": "Certo. O dever de regularizar não depende de a empresa já ter notificado."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014",
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-06-q7",
+    "licao": "07-06",
+    "enunciado": "A empresa retirou cabos de um ocupante que não regularizou. Ele pede indenização e quer renovar o contrato sem pagar a retirada. O que a lição diz?",
+    "alternativas": [
+      {
+        "texto": "Sem indenização; o custo da retirada pode ser cobrado e a renovação, condicionada ao ressarcimento.",
+        "correta": true,
+        "explicacao": "Certo. O detentor pode cobrar o custo e condicionar novo contrato ou renovação ao ressarcimento e à quitação."
+      },
+      {
+        "texto": "Tem direito a indenização, se mostrar que o cabo estava em bom estado quando a empresa o retirou.",
+        "correta": false,
+        "explicacao": "O ocupante não tem direito a indenização pela retirada, qualquer que fosse o estado do cabo."
+      },
+      {
+        "texto": "O custo da retirada é da distribuidora, porque foi ela quem executou o serviço de retirada.",
+        "correta": false,
+        "explicacao": "O detentor pode cobrar o custo da retirada do ocupante."
+      },
+      {
+        "texto": "O detentor não pode condicionar a renovação a nada, porque o contrato é direito do ocupante.",
+        "correta": false,
+        "explicacao": "O detentor pode condicionar novo contrato ou renovação ao ressarcimento e à quitação das obrigações."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "07-06-q8",
+    "licao": "07-06",
+    "enunciado": "O supervisor quer apagar do arquivo os registros e as notificações de um caso encerrado há dois anos. O que a lição diz?",
+    "alternativas": [
+      {
+        "texto": "Apagar, porque a guarda dura só enquanto o cronograma de regularização estiver aberto.",
+        "correta": false,
+        "explicacao": "O cronograma e a guarda são prazos diferentes. O prazo de guarda é outro."
+      },
+      {
+        "texto": "Guardar por 1 ano, o mesmo prazo do cronograma de regularização.",
+        "correta": false,
+        "explicacao": "O ano é o limite do cronograma de regularização. A guarda dos documentos é por no mínimo 5 anos."
+      },
+      {
+        "texto": "Guardar no mínimo 5 anos, para a fiscalização da ANEEL; como, a empresa define.",
+        "correta": true,
+        "explicacao": "Certo. O detentor guarda os documentos por no mínimo 5 anos, para fiscalização da ANEEL. O procedimento de guarda é da empresa."
+      },
+      {
+        "texto": "Só o ocupante precisa guardar, porque os documentos do caso são da responsabilidade dele.",
+        "correta": false,
+        "explicacao": "A guarda é do detentor, por no mínimo 5 anos, para a fiscalização da ANEEL."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 3
+  }
+]

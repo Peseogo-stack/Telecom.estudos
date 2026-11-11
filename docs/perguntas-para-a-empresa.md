@@ -36,6 +36,7 @@
 | a15 | Abra um arquivo recebido de fornecedor no QGIS e veja o SRC em Propriedades ► Source: ele veio declarado? | Qualquer camada recebida de terceiros | 08-03 |
 | a16 | Abra a tabela de atributos de uma camada de postes da empresa: quais campos existem e qual deles é o código do poste? (Anote só no Meu caderno; nada de dado da empresa no app.) | Camada de postes no QGIS da equipe | 08-02 |
 | a17 | Abra Help ► About no computador de trabalho: qual é a versão do QGIS instalada? | No macOS: QGIS ► About QGIS | 08-01 |
+| a18 | Pegue um shapefile recebido de fornecedor: vieram todos os arquivos (.shp, .shx, .dbf, .prj)? (Anote só no Meu caderno; nada de dado da empresa no app.) | Pasta com arquivos recebidos | 08-04 |
 
 ---
 
@@ -65,6 +66,7 @@
 | b20 | Onde está publicado, no site da empresa, o Plano de Ocupação de Infraestrutura em vigor, e qual norma técnica o aprovou? | Site da distribuidora, página de compartilhamento de infraestrutura | 07-01 |
 | b21 | Na norma técnica da empresa, qual é a altura da faixa de ocupação, a que distância do solo fica o topo dela e quantos pontos de fixação ela tem? | Norma técnica de compartilhamento e Plano de Ocupação, no site da empresa | 07-02 |
 | b22 | Qual é o afastamento mínimo entre o cabo de telecom e a baixa tensão e a média tensão na norma da empresa? | Tabela de afastamentos da norma técnica | 07-02 |
+| b23 | O contrato ou o padrão de as-built diz em que formato e com que campos o fornecedor entrega o cadastro? | Contrato, termo de referência ou padrão de as-built | 08-04 |
 
 ---
 
@@ -125,6 +127,8 @@
 | d26 | Onde podem ficar os equipamentos dos ocupantes (caixas, fontes) no poste, segundo a norma da empresa? | 07-02 |
 | d27 | A equipe usa a LTR ou a versão mais nova do QGIS? Quem decide quando trocar de versão? | 08-01 |
 | d28 | Quais complementos (plugins) a equipe usa, e quem testa se eles funcionam antes de uma troca de versão? | 08-01 |
+| d29 | Em que formato a equipe guarda os dados e em que formato manda para fornecedores e outras áreas? | 08-04 |
+| d30 | Posso mandar KML da rede para fora da empresa ou abrir no Google Earth? Quem autoriza? | 08-04 |
 
 ---
 

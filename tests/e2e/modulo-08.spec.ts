@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['08-01', '08-02', '08-03', '08-06']) {
+for (const id of ['08-01', '08-02', '08-03', '08-04', '08-06']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -46,7 +46,7 @@ test('08-03: termo SRC abre a definição no glossário', async ({ page }) => {
   await expect(page.getByText('como os números de uma coordenada', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/08-01', '#/licao/08-01/questoes', '#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/glossario?t=falso-norte']) {
+for (const rota of ['#/licao/08-01', '#/licao/08-01/questoes', '#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-04', '#/licao/08-04/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/glossario?t=falso-norte']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();
@@ -71,6 +71,24 @@ test('08-06: termo filtro abre a definição no glossário', async ({ page }) =>
   await page.getByRole('link', { name: 'Filtrar', exact: true }).first().click();
   await expect(page).toHaveURL(/glossario\?t=filtro-de-camada/);
   await expect(page.getByText('cláusula WHERE', { exact: false }).first()).toBeVisible();
+});
+
+test('08-04: tabela de formatos, diagrama com os arquivos do Shapefile e link do KML', async ({ page }) => {
+  await page.goto('./#/licao/08-04');
+  const tabela = page.locator('.prosa table');
+  await expect(tabela).toContainText('confira com quem desenhou');
+  await expect(tabela).toContainText('sempre EPSG:4326');
+  await expect(page.locator('main')).toContainText('ocupantes_qtd');
+  await expect(page.locator('figure.diagrama svg')).toContainText('postes.dbf');
+  await expect(page.locator('figure.diagrama svg')).toContainText('KML: sempre EPSG:4326 (graus)');
+  await expect(page.getByRole('link', { name: 'postes.kml' })).toHaveAttribute('href', /dados-qgis\/postes\.kml$/);
+});
+
+test('08-04: termo Shapefile abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-04');
+  await page.getByRole('link', { name: 'Shapefile', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=shapefile/);
+  await expect(page.getByText('vários arquivos para uma só camada', { exact: false }).first()).toBeVisible();
 });
 
 test('08-03: os arquivos de exercício baixam de verdade (GeoPackage e CSV)', async ({ page }) => {

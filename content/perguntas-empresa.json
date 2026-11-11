@@ -800,5 +800,41 @@
     "licoes": [
       "08-01"
     ]
+  },
+  {
+    "id": "d29",
+    "onde": "colega",
+    "texto": "Em que formato a equipe guarda os dados e em que formato manda para fornecedores e outras áreas?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "b23",
+    "onde": "documentos",
+    "texto": "O contrato ou o padrão de as-built diz em que formato e com que campos o fornecedor entrega o cadastro?",
+    "dica": "Contrato, termo de referência ou padrão de as-built",
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "d30",
+    "onde": "colega",
+    "texto": "Posso mandar KML da rede para fora da empresa ou abrir no Google Earth? Quem autoriza?",
+    "dica": "Quem mantém o projeto de QGIS ou a gestão da área",
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "a18",
+    "onde": "sozinho",
+    "texto": "Pegue um shapefile recebido de fornecedor: vieram todos os arquivos (.shp, .shx, .dbf, .prj)? (Anote só no Meu caderno; nada de dado da empresa no app.)",
+    "dica": "Pasta com arquivos recebidos",
+    "licoes": [
+      "08-04"
+    ]
   }
 ]

@@ -1816,10 +1816,12 @@
     "en": "GeoPackage",
     "definicao": "Formato vetorial que funciona como contêiner de camadas: um arquivo só, que no painel Browser se expande para mostrar as camadas dentro dele.",
     "fontes": [
-      "qgis-abrir-dados"
+      "qgis-abrir-dados",
+      "gdal-gpkg"
     ],
     "licoes": [
-      "08-02"
+      "08-02",
+      "08-04"
     ]
   },
   {
@@ -2068,6 +2070,56 @@
     ],
     "licoes": [
       "08-01"
+    ]
+  },
+  {
+    "id": "shapefile",
+    "pt": "Shapefile",
+    "en": "shapefile",
+    "definicao": "Formato vetorial feito de vários arquivos para uma só camada: .shp, .shx e .dbf formam a camada, e o SRC vem do .prj, quando existe. Os nomes de campo têm até 10 caracteres.",
+    "fontes": [
+      "gdal-shapefile"
+    ],
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "kml",
+    "pt": "KML",
+    "en": "KML (Keyhole Markup Language)",
+    "definicao": "Formato em XML para exibir dados geoespaciais, lido por programas como o Google Earth. Usa um SRC só, o EPSG:4326, em graus.",
+    "fontes": [
+      "gdal-kml"
+    ],
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "csv",
+    "pt": "CSV",
+    "en": "CSV (comma separated values)",
+    "definicao": "Arquivo de texto com colunas. Não guarda SRC nem o tipo de cada coluna: quem abre informa o SRC, e o QGIS tenta reconhecer os tipos ao abrir como texto delimitado.",
+    "fontes": [
+      "gdal-csv",
+      "qgis-abrir-dados"
+    ],
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "dxf",
+    "pt": "DXF",
+    "en": "DXF",
+    "definicao": "Formato de desenho de CAD. O QGIS o separa em camadas por tipo de geometria, e o nome da camada do CAD vira o campo Layer.",
+    "fontes": [
+      "gdal-dxf",
+      "qgis-abrir-dados"
+    ],
+    "licoes": [
+      "08-04"
     ]
   }
 ]

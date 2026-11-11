@@ -75,3 +75,20 @@ A lição passou de 700 palavras com as correções e foi enxugada para caber.
 | Termo "complemento" definido como "extensão instalada à parte", com a página de versões como fonte | Manual, "QGIS Plugins": há complementos do núcleo e externos | Definição nova e fonte própria (`qgis-complementos`) |
 
 **Vídeos:** nenhum entrou. Os de 2026 em português tratam de instalação e de tema escuro; os sobre a série 4.x e o Qt6 estão em outros idiomas.
+
+## 08-04 — Formatos de arquivo (11/11/2026)
+
+**Fontes abertas em 11/11/2026:** páginas dos drivers da GDAL (KML, Shapefile, GeoPackage, CSV e DXF) e o manual do QGIS 3.44 e 4.x (abrir dados, criar camadas).
+
+**Teste meu com a GDAL sobre os dados fictícios:** a camada `postes` salva como Shapefile virou `.shp`, `.shx`, `.dbf`, `.prj` e `.cpg`, com `ocupantes_qtd` cortado para `ocupantes_`, `esforco_dan` para `esforco_da` e `data_vistoria` para `data_visto`; salva como KML, saiu em EPSG:4326.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "Sem arquivo de tipos (.csvt), todas as colunas vêm como texto" (erro da minha ficha: é o comportamento do driver da GDAL) | Manual do QGIS: ao abrir como texto delimitado, "Detect field types" reconhece o tipo; desmarcada, tudo vem como texto | A lição, a questão 7 e o glossário passaram a falar da opção do QGIS |
+| "São 5 arquivos" no Shapefile exportado | O teste foi com a GDAL; o QGIS pode gravar mais algum arquivo junto | "vários arquivos (pelo menos .shp, .shx, .dbf, .prj e .cpg)" |
+| "A GDAL lê o DXF inteiro como uma camada" | GDAL: "By default" | "Por padrão…" |
+| Questão 1 citava o `.csvt`, que saiu da lição | — | Distrator trocado por um erro de caminho de menu |
+
+**Não conferido, e dito na lição:** se o DXF guarda SRC ("confira com quem desenhou").
+
+**Vídeos:** nenhum entrou. O mais direto (23 segundos) chama o Shapefile de "defasado" e o GeoPackage de "substituto", e ainda divulga um guia; os outros estão marcados como português de Portugal, pedem Pix ou só têm link de curso.

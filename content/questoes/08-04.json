@@ -1,0 +1,261 @@
+[
+  {
+    "id": "08-04-q1",
+    "licao": "08-04",
+    "enunciado": "O fornecedor mandou por e-mail só o arquivo postes.shp. Ao abrir, a camada vem sem tabela de atributos e sem SRC. O que faltou?",
+    "alternativas": [
+      {
+        "texto": "Converter o arquivo para KML, que guarda os atributos e o SRC dentro de um arquivo só.",
+        "correta": false,
+        "explicacao": "O KML sempre usa EPSG:4326 e não é o conserto. O que faltou foram os outros arquivos do Shapefile."
+      },
+      {
+        "texto": "Os outros arquivos da camada: o .dbf, com os atributos, o .prj, com o SRC, e também o .shx.",
+        "correta": true,
+        "explicacao": "Certo. O Shapefile é um conjunto de arquivos: .shp, .shx e .dbf formam a camada, e o SRC vem do .prj, quando existe."
+      },
+      {
+        "texto": "Abrir o arquivo por Add Delimited Text Layer…, que lê os atributos guardados no .shp.",
+        "correta": false,
+        "explicacao": "Esse caminho é para texto delimitado, como o CSV. No Shapefile, os atributos ficam no .dbf, e não no .shp."
+      },
+      {
+        "texto": "Nada faltou: o .shp guarda sozinho a forma, os atributos e o SRC, e o defeito é do QGIS.",
+        "correta": false,
+        "explicacao": "O .shp não guarda os atributos nem o SRC: eles estão no .dbf e no .prj. Mandar só o .shp é mandar a camada incompleta."
+      }
+    ],
+    "fontes": [
+      "gdal-shapefile"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-04-q2",
+    "licao": "08-04",
+    "enunciado": "Exportei postes para Shapefile e o campo ocupantes_qtd não aparece na tabela; só existe ocupantes_. O que aconteceu?",
+    "alternativas": [
+      {
+        "texto": "O campo foi apagado na exportação, porque o Shapefile não aceita campos numéricos.",
+        "correta": false,
+        "explicacao": "O Shapefile aceita campos inteiros e reais. Nenhum campo foi apagado: mudou o nome."
+      },
+      {
+        "texto": "O QGIS trocou o nome por engano, e os valores do campo se perderam junto com ele.",
+        "correta": false,
+        "explicacao": "Não foi engano do QGIS: o limite vem do Shapefile, e os valores continuam no campo de nome cortado."
+      },
+      {
+        "texto": "O Shapefile só aceita nome de campo com até 10 caracteres, então o nome foi cortado.",
+        "correta": true,
+        "explicacao": "Certo. O limite vem do .dbf, onde ficam os atributos. Os dados continuam no campo ocupantes_."
+      },
+      {
+        "texto": "O campo foi movido para o .prj, que guarda o SRC e também os campos numéricos.",
+        "correta": false,
+        "explicacao": "O .prj guarda só o SRC. Os atributos, incluindo o campo de nome cortado, ficam no .dbf."
+      }
+    ],
+    "fontes": [
+      "gdal-shapefile"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-04-q3",
+    "licao": "08-04",
+    "enunciado": "Preciso mandar a camada caixas, que está em 31980, para um colega ver no Google Earth. Que formato uso e o que acontece com as coordenadas?",
+    "alternativas": [
+      {
+        "texto": "KML; na exportação, as coordenadas são convertidas para graus, em EPSG:4326.",
+        "correta": true,
+        "explicacao": "Certo. O KML usa só o EPSG:4326, e a saída é convertida para ele. O teste com os dados do exercício mostrou isso."
+      },
+      {
+        "texto": "CSV; o Google Earth lê as colunas X e Y e usa o SRC 31980 guardado no arquivo.",
+        "correta": false,
+        "explicacao": "O CSV não guarda SRC: quem abre informa. Nenhum SRC ficaria no arquivo."
+      },
+      {
+        "texto": "Shapefile, mandando só o .shp; as coordenadas continuam em 31980 e o Google Earth as lê.",
+        "correta": false,
+        "explicacao": "O .shp sozinho vem sem atributos e sem SRC. O exemplo de programa que lê KML, na lição, é o Google Earth."
+      },
+      {
+        "texto": "KML; o arquivo guarda o SRC 31980 e o Google Earth faz a conversão para graus.",
+        "correta": false,
+        "explicacao": "O KML não guarda o 31980: usa um SRC só, o EPSG:4326, e a conversão é feita na exportação."
+      }
+    ],
+    "fontes": [
+      "gdal-kml",
+      "gdal-shapefile",
+      "gdal-csv"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-04-q4",
+    "licao": "08-04",
+    "enunciado": "Recebi um KML, e um colega afirma que as coordenadas dele estão em UTM 31980. Por que a afirmação não procede?",
+    "alternativas": [
+      {
+        "texto": "Com o projeto do QGIS em 31980, o KML é gravado em UTM e o colega está certo.",
+        "correta": false,
+        "explicacao": "O SRC do projeto não muda o KML, que usa um SRC só, o EPSG:4326."
+      },
+      {
+        "texto": "O KML guarda o SRC no .prj, e o colega leu o arquivo errado do conjunto.",
+        "correta": false,
+        "explicacao": "O .prj é do Shapefile. O KML é um arquivo só, em XML, sem .prj."
+      },
+      {
+        "texto": "Um KML pode vir em qualquer SRC; basta perguntar a quem o gerou, como num CSV.",
+        "correta": false,
+        "explicacao": "A pergunta vale para o CSV, que não guarda SRC. O KML usa um SRC só, o EPSG:4326."
+      },
+      {
+        "texto": "O KML usa um SRC só, o EPSG:4326, em graus; ele não pode estar em UTM.",
+        "correta": true,
+        "explicacao": "Certo. A saída de um KML é sempre convertida para EPSG:4326, mesmo que a origem esteja em 31980."
+      }
+    ],
+    "fontes": [
+      "gdal-kml",
+      "gdal-shapefile",
+      "gdal-csv"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-04-q5",
+    "licao": "08-04",
+    "enunciado": "Quero entregar postes, cabos e caixas num arquivo só, com as três camadas dentro. Que formato escolho?",
+    "alternativas": [
+      {
+        "texto": "GeoPackage, um arquivo só que funciona como contêiner de várias camadas.",
+        "correta": true,
+        "explicacao": "Certo. O GeoPackage reúne várias camadas num arquivo, e o painel Browser as mostra ao expandir."
+      },
+      {
+        "texto": "Shapefile, pondo as três camadas no mesmo conjunto de arquivos .shp.",
+        "correta": false,
+        "explicacao": "O Shapefile tem uma camada por conjunto de arquivos. Três camadas viram três conjuntos."
+      },
+      {
+        "texto": "CSV, que reúne as três camadas em colunas de texto, com o SRC guardado no arquivo.",
+        "correta": false,
+        "explicacao": "O CSV não guarda SRC: quem abre informa. Ele também não é um contêiner de camadas como o GeoPackage."
+      },
+      {
+        "texto": "DXF, que guarda o SRC de cada camada do desenho junto com as feições.",
+        "correta": false,
+        "explicacao": "Se o DXF guarda SRC, não foi conferido: a lição manda confirmar com quem desenhou. O QGIS ainda o separa por tipo de geometria."
+      }
+    ],
+    "fontes": [
+      "gdal-gpkg",
+      "gdal-shapefile",
+      "gdal-csv",
+      "gdal-dxf",
+      "qgis-abrir-dados"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-04-q6",
+    "licao": "08-04",
+    "enunciado": "Abri um DXF e o QGIS criou várias camadas com \"entities\" no nome. Onde está o nome da camada do CAD?",
+    "alternativas": [
+      {
+        "texto": "No nome de cada camada do QGIS, que repete a camada do CAD de onde veio.",
+        "correta": false,
+        "explicacao": "O nome da camada do QGIS tem o arquivo e o tipo de geometria, no formato <arquivo.dxf> entities <tipo>."
+      },
+      {
+        "texto": "No campo Layer; as camadas aparecem separadas por tipo de geometria.",
+        "correta": true,
+        "explicacao": "Certo. O nome da camada do CAD vira o campo Layer, e o QGIS separa o DXF por tipo de geometria."
+      },
+      {
+        "texto": "Perdeu-se: só dá para manter a camada do CAD importando o DXF para um GeoPackage.",
+        "correta": false,
+        "explicacao": "O nome da camada do CAD não se perde: está no campo Layer. A importação para um GeoPackage serve para manter estrutura e simbologia."
+      },
+      {
+        "texto": "Em erro de abertura: o DXF deveria dar uma camada só, e várias indicam arquivo corrompido.",
+        "correta": false,
+        "explicacao": "Não é erro. O QGIS separa o DXF por tipo de geometria (ponto, linha e polígono), e cada camada leva a palavra entities."
+      }
+    ],
+    "fontes": [
+      "gdal-dxf",
+      "qgis-abrir-dados"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-04-q7",
+    "licao": "08-04",
+    "enunciado": "Abri um CSV com as colunas x, y e altura_m por Add Delimited Text Layer…, e o campo altura_m veio como texto. O que conferir primeiro?",
+    "alternativas": [
+      {
+        "texto": "O Geometry CRS: sem ele informado, as colunas numéricas viram texto.",
+        "correta": false,
+        "explicacao": "O Geometry CRS diz em que SRC estão X e Y. Ele não define o tipo das outras colunas."
+      },
+      {
+        "texto": "A opção Detect field types: desmarcada, todas as colunas vêm como texto.",
+        "correta": true,
+        "explicacao": "Certo. O QGIS tenta reconhecer o tipo de cada coluna quando Detect field types está marcada. Sem ela, todos os atributos são tratados como texto."
+      },
+      {
+        "texto": "A opção Point coordinates, que converte em texto o que não é X nem Y.",
+        "correta": false,
+        "explicacao": "Point coordinates só indica quais colunas são X e Y. O tipo das outras colunas não muda por isso."
+      },
+      {
+        "texto": "O delimitador: com ponto e vírgula, os números são lidos como texto.",
+        "correta": false,
+        "explicacao": "O delimitador só separa as colunas. O que decide o tipo é o reconhecimento de tipos do QGIS (Detect field types)."
+      }
+    ],
+    "fontes": [
+      "qgis-abrir-dados"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "08-04-q8",
+    "licao": "08-04",
+    "enunciado": "Dois fornecedores entregaram o cadastro: um em GeoPackage e outro em Shapefile. O que conferir em cada entrega?",
+    "alternativas": [
+      {
+        "texto": "Só o SRC dos dois, porque o resto é igual nos dois formatos.",
+        "correta": false,
+        "explicacao": "O resto não é igual. O Shapefile é um conjunto de arquivos e corta o nome de campo em 10 caracteres; o GeoPackage é um arquivo só, com várias camadas."
+      },
+      {
+        "texto": "No GeoPackage, se vieram todos os arquivos; no Shapefile, quais camadas vieram dentro do arquivo.",
+        "correta": false,
+        "explicacao": "A conferência está trocada. O GeoPackage é um arquivo só, com as camadas dentro; o Shapefile é que vem em vários arquivos, uma camada por conjunto."
+      },
+      {
+        "texto": "Nos dois, se vieram os arquivos .shp, .shx, .dbf e .prj, porque ambos são conjuntos de arquivos.",
+        "correta": false,
+        "explicacao": "O GeoPackage é um arquivo só. Os arquivos .shp, .shx, .dbf e .prj são do Shapefile."
+      },
+      {
+        "texto": "No Shapefile, se vieram .shp, .shx, .dbf e .prj; no GeoPackage, quais camadas há no arquivo.",
+        "correta": true,
+        "explicacao": "Certo. O Shapefile é um conjunto de arquivos para uma camada; o GeoPackage é um arquivo só, com várias camadas dentro."
+      }
+    ],
+    "fontes": [
+      "gdal-gpkg",
+      "gdal-shapefile",
+      "qgis-abrir-dados"
+    ],
+    "dificuldade": 3
+  }
+]

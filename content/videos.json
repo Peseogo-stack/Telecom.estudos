@@ -324,5 +324,14 @@
       "QGIS LTR ou versão mais nova qual usar",
       "QGIS 4 Qt6 mudanças"
     ]
+  },
+  {
+    "licao": "08-04",
+    "videos": [],
+    "termosBusca": [
+      "QGIS GeoPackage ou Shapefile formatos",
+      "QGIS exportar KML Google Earth",
+      "QGIS formatos de arquivo vetor shapefile gpkg kml csv dxf"
+    ]
   }
 ]

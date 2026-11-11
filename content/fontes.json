@@ -771,7 +771,7 @@
     "tipo": "documentacao",
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/opening_data.html",
     "acessadoEm": "2026-11-10",
-    "observacao": "Igual na versão testing. CSV com coordenadas: Layer ► Add Layer ► Add Delimited Text Layer…; em \"Geometry definition\", escolher Point coordinates, indicar o campo X e o campo Y e informar o Geometry CRS. Em \"File format\", a opção Custom delimiters aceita vírgula, espaço, tabulação, ponto e vírgula e outros. Formatos vetoriais citados pelo manual: GeoPackage, GML, GeoJSON, GPX, KML, CSV, Shapefile, DXF, entre outros. Abrir camada vetorial: Layer ► Add Layer ► Add Vector Layer… (Ctrl+Shift+V) ou o Data Source Manager (Ctrl+L), que reúne num só lugar arquivos e bancos de dados. Raster: Layer ► Add Layer ► Add Raster Layer… (Ctrl+Shift+R). Painel Browser: mostra as pastas e os \"contêineres\" de camadas, como um GeoPackage; dá para expandir o arquivo, ver as camadas dentro dele e pôr no projeto arrastando ou com duplo clique. Igual na 3.44 e na 4.x (conferido em 10/11/2026)."
+    "observacao": "Igual na versão testing. CSV com coordenadas: Layer ► Add Layer ► Add Delimited Text Layer…; em \"Geometry definition\", escolher Point coordinates, indicar o campo X e o campo Y e informar o Geometry CRS. Em \"File format\", a opção Custom delimiters aceita vírgula, espaço, tabulação, ponto e vírgula e outros. Formatos vetoriais citados pelo manual: GeoPackage, GML, GeoJSON, GPX, KML, CSV, Shapefile, DXF, entre outros. Abrir camada vetorial: Layer ► Add Layer ► Add Vector Layer… (Ctrl+Shift+V) ou o Data Source Manager (Ctrl+L), que reúne num só lugar arquivos e bancos de dados. Raster: Layer ► Add Layer ► Add Raster Layer… (Ctrl+Shift+R). Painel Browser: mostra as pastas e os \"contêineres\" de camadas, como um GeoPackage; dá para expandir o arquivo, ver as camadas dentro dele e pôr no projeto arrastando ou com duplo clique. Igual na 3.44 e na 4.x (conferido em 10/11/2026). Arquivo DXF com vários tipos de geometria (ponto, linha e/ou polígono): o nome das camadas é gerado como <arquivo.dxf> entities <tipo de geometria>, ou seja, o QGIS separa o DXF em camadas por tipo de geometria. Para manter a estrutura e a simbologia do desenho: Project ► Import/Export ► Import Layers from DWG/DXF…, que importa os elementos para um GeoPackage. Igual no manual da 4.x em desenvolvimento (conferido em 10/11/2026). Texto delimitado: \"Detect field types: automatically recognizes the field type. If unchecked then all attributes are treated as text fields\"; o QGIS usa um arquivo CSVT opcional, se existir, e examina o arquivo inteiro; o tipo detectado aparece na prévia e pode ser trocado."
   },
   {
     "id": "qgis-criar-camadas",
@@ -780,7 +780,7 @@
     "tipo": "documentacao",
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/create_layers.html",
     "acessadoEm": "2026-11-10",
-    "observacao": "Igual na versão testing. Para gravar a camada em outro SRC (reprojetar de verdade, gerando arquivo novo): botão direito na camada ► Export ► Save Features As… (ou Layer ► Save As…) e escolher o SRC de destino."
+    "observacao": "Igual na versão testing. Para gravar a camada em outro SRC (reprojetar de verdade, gerando arquivo novo): botão direito na camada ► Export ► Save Features As… (ou Layer ► Save As…) e escolher o SRC de destino. Salvar em outro formato: botão direito ► Export ► Save Features As… (ou Save Selected Features As…, só as selecionadas). No diálogo: Format, File name, Layer name (quando o arquivo é um contêiner, como o GeoPackage) e CRS (pode ser mudado para reprojetar os dados)."
   },
   {
     "id": "osm-cidades-rr",
@@ -988,5 +988,50 @@
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/plugins/plugins.html",
     "acessadoEm": "2026-11-11",
     "observacao": "\"QGIS has been designed with a plugin architecture. This allows many new features and functions to be easily added to the application.\" Há complementos do núcleo (Core Plugins), que vêm com o QGIS, e externos (External Plugins), mantidos pelos autores, no repositório oficial ou em outros; a página de cada um informa a versão mínima do QGIS. Instalar ou ativar: menu Plugins ► Manage and install plugins…."
+  },
+  {
+    "id": "gdal-kml",
+    "titulo": "GDAL: driver \"KML - Keyhole Markup Language\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/kml.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "\"KML by specification uses only a single projection, EPSG:4326. All OGR KML output will be presented in EPSG:4326. As such OGR will create layers in the correct coordinate system and transform any geometries.\" KML é uma linguagem baseada em XML para exibir dados geoespaciais; é padrão OGC. O manual fala em \"GeoBrowsers\". Teste com a GDAL em 11/11/2026, com a camada fictícia de exercício: a camada de origem em 31980 saiu em EPSG:4326."
+  },
+  {
+    "id": "gdal-shapefile",
+    "titulo": "GDAL: driver \"ESRI Shapefile / DBF\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/shapefile.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Um shapefile é um conjunto de arquivos: .shp, .shx e .dbf formam uma camada; o SRC vem do .prj, quando existe. \"Shapefile feature attributes are stored in an associated .dbf file, and so attributes suffer a number of limitations: Attribute names can only be up to 10 characters long.\" Nomes repetidos depois do corte ganham número (exemplo do manual: abcdefghijkl vira abcdefgh_1). Tipos de campo: inteiro, real, texto e data (\"not DateTime, just year/month/day\"). Texto mais longo que a largura do campo é truncado. \"it is not recommended to use a file size over 2GB for both .SHP and .DBF files.\" Uma camada por shapefile (\"treated as a dataset with one layer\"). Teste com a GDAL em 11/11/2026, com a camada fictícia postes: salva como Shapefile, virou 5 arquivos (postes.shp, .shx, .dbf, .prj e .cpg); esforco_dan virou esforco_da, ocupantes_qtd virou ocupantes_ e data_vistoria virou data_visto; cod_poste, material, altura_m, tem_trafo, tem_ip e situacao ficaram iguais."
+  },
+  {
+    "id": "gdal-gpkg",
+    "titulo": "GDAL: driver \"GPKG -- GeoPackage vector\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/gpkg.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "\"The GeoPackage standard uses a SQLite database file as a generic container\"; é um padrão OGC. Com qgis-abrir-dados: um arquivo só, contêiner de várias camadas, que o painel Browser expande."
+  },
+  {
+    "id": "gdal-csv",
+    "titulo": "GDAL: driver \"Comma Separated Value (.csv)\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/csv.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Sem arquivo de tipos (.csvt), \"The OGR CSV driver returns all attribute columns as string data types\". O CSV não guarda SRC (ver a lição 08-03): quem abre informa o Geometry CRS. Atenção: isso vale para o CSV aberto pela GDAL. Pelo Add Delimited Text Layer… do QGIS, a opção Detect field types reconhece os tipos (ver qgis-abrir-dados)."
+  },
+  {
+    "id": "gdal-dxf",
+    "titulo": "GDAL: driver \"AutoCAD DXF\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/dxf.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "\"By default, the entire contents of the file are represented as a single OGR layer named \"entities\".\" O nome da camada do desenho (layer do CAD) vira um campo chamado Layer. Se o DXF guarda SRC: não conferido; confirmar com quem desenhou."
   }
 ]

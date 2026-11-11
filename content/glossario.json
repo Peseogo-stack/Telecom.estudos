@@ -2477,7 +2477,8 @@
     ],
     "licoes": [
       "01-02",
-      "01-06"
+      "01-06",
+      "03-05"
     ]
   },
   {
@@ -2772,6 +2773,33 @@
     ],
     "licoes": [
       "03-02"
+    ]
+  },
+  {
+    "id": "espinado",
+    "pt": "Cabo espinado",
+    "en": "Lashed cable",
+    "definicao": "Cabo aéreo preso (espinado) a uma cordoalha de sustentação, em vez de se sustentar sozinho. A ficha do cabo de duto da Prysmian admite essa instalação.",
+    "fontes": [
+      "prysmian-duto",
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "03-05"
+    ]
+  },
+  {
+    "id": "lszh",
+    "sigla": "LSZH",
+    "pt": "Capa de baixa fumaça, sem halogênio",
+    "en": "Low Smoke Zero Halogen",
+    "definicao": "Classe de capa retardante à chama, com baixa emissão de fumaça e livre de halogênios. A Furukawa a indica para uso interno e externo.",
+    "fontes": [
+      "prysmian-drop-flat",
+      "furukawa-et02719"
+    ],
+    "licoes": [
+      "03-05"
     ]
   }
 ]

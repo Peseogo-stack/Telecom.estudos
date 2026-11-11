@@ -1,0 +1,254 @@
+[
+  {
+    "id": "03-05-q1",
+    "licao": "03-05",
+    "enunciado": "Qual destes cabos tem metal na sustentação, segundo a ficha da Prysmian?",
+    "alternativas": [
+      {
+        "texto": "O drop flat, com dois fios nas laterais",
+        "correta": false,
+        "explicacao": "Os dois fios do drop flat são de fibra de vidro reforçada; o fio de aço é do figura 8 (Prysmian)."
+      },
+      {
+        "texto": "O drop figura 8, com fio de aço de 1,30 mm",
+        "correta": true,
+        "explicacao": "Certo. O elemento de sustentação do drop figura 8 é um fio de aço galvanizado de 1,30 mm (Prysmian)."
+      },
+      {
+        "texto": "O autossustentado, com a aramida",
+        "correta": false,
+        "explicacao": "A aramida é dielétrica. O cabo com aço é o drop figura 8 (Prysmian)."
+      },
+      {
+        "texto": "O cabo de duto, com o elemento central",
+        "correta": false,
+        "explicacao": "O elemento central do cabo de duto é de fibra de vidro reforçada; o aço é do drop figura 8."
+      }
+    ],
+    "fontes": [
+      "prysmian-drop-fig8",
+      "prysmian-drop-flat"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-05-q2",
+    "licao": "03-05",
+    "enunciado": "Até que vão as fichas da Prysmian aceitam os drops flat e figura 8?",
+    "alternativas": [
+      {
+        "texto": "80 m, nos dois",
+        "correta": true,
+        "explicacao": "Certo. As duas fichas dão vão máximo de 80 m (Prysmian)."
+      },
+      {
+        "texto": "200 m, como o AS200",
+        "correta": false,
+        "explicacao": "200 m é o vão do autossustentado AS200; os drops vão até 80 m (Prysmian)."
+      },
+      {
+        "texto": "30 m no flat e 80 m no figura 8",
+        "correta": false,
+        "explicacao": "Os dois drops têm o mesmo vão máximo, 80 m (Prysmian)."
+      },
+      {
+        "texto": "Sem limite, porque são leves",
+        "correta": false,
+        "explicacao": "Os dois têm limite: vão máximo de 80 m (Prysmian)."
+      }
+    ],
+    "fontes": [
+      "prysmian-drop-flat",
+      "prysmian-drop-fig8"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-05-q3",
+    "licao": "03-05",
+    "enunciado": "Um colega quer lançar um cabo CFOA-DD solto entre dois postes, como um autossustentado. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Certo: todo cabo óptico externo aguenta o vão",
+        "correta": false,
+        "explicacao": "O de duto vai em duto ou subduto, ou aéreo espinado, preso a uma cordoalha (Prysmian)."
+      },
+      {
+        "texto": "Certo, desde que o vão tenha menos de 80 m",
+        "correta": false,
+        "explicacao": "A ficha do DD não dá vão máximo: ele vai em duto ou espinado na cordoalha (Prysmian)."
+      },
+      {
+        "texto": "Errado: no poste, o DD vai preso a uma cordoalha",
+        "correta": true,
+        "explicacao": "Certo. A ficha diz que o cabo de duto vai em duto ou subduto, podendo ser usado em instalação aérea espinada, presa a uma cordoalha (Prysmian)."
+      },
+      {
+        "texto": "Errado: o DD só pode ir enterrado direto no solo",
+        "correta": false,
+        "explicacao": "A ficha fala em duto ou subduto e em instalação aérea espinada; não fala em enterrar direto (Prysmian)."
+      }
+    ],
+    "fontes": [
+      "prysmian-duto"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-05-q4",
+    "licao": "03-05",
+    "enunciado": "O que quer dizer a capa LSZH?",
+    "alternativas": [
+      {
+        "texto": "Retardante, pouca fumaça e sem halogênio",
+        "correta": true,
+        "explicacao": "Certo. LSZH é retardante à chama, com baixa emissão de fumaça e livre de halogênios (Prysmian); a Furukawa o indica para uso interno e externo."
+      },
+      {
+        "texto": "Capa normal, só para ambiente externo",
+        "correta": false,
+        "explicacao": "Essa é a NR, que a Furukawa indica para ambiente externo."
+      },
+      {
+        "texto": "Capa com fio de aço para vão longo",
+        "correta": false,
+        "explicacao": "LSZH é a classe da capa contra fogo e fumaça, não sustentação (Prysmian)."
+      },
+      {
+        "texto": "Proteção contra roedores com fibra de vidro",
+        "correta": false,
+        "explicacao": "Isso é o DDR da Furukawa; LSZH é a classe da capa contra fogo e fumaça."
+      }
+    ],
+    "fontes": [
+      "prysmian-drop-flat",
+      "furukawa-et02719"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-05-q5",
+    "licao": "03-05",
+    "enunciado": "Onde fica o OPGW?",
+    "alternativas": [
+      {
+        "texto": "Na faixa de ocupação dos postes de distribuição",
+        "correta": false,
+        "explicacao": "O OPGW é cabo para-raios de linha de transmissão (T&D World)."
+      },
+      {
+        "texto": "No alto das linhas de transmissão, como para-raios",
+        "correta": true,
+        "explicacao": "Certo. O OPGW é o cabo para-raios com fibras dentro; no Brasil, é obrigatório em toda linha de transmissão nova (T&D World)."
+      },
+      {
+        "texto": "Dentro de dutos subterrâneos, no lugar do DD",
+        "correta": false,
+        "explicacao": "Cabo de duto é o DD; o OPGW fica nas linhas de transmissão (T&D World)."
+      },
+      {
+        "texto": "No último trecho, do poste até o cliente",
+        "correta": false,
+        "explicacao": "Esse é o drop; o OPGW fica nas linhas de transmissão (T&D World)."
+      }
+    ],
+    "fontes": [
+      "tdworld-brasil-telecom"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "03-05-q6",
+    "licao": "03-05",
+    "enunciado": "Pela ficha da Prysmian, qual a flecha de instalação de um drop flat num vão de 50 m?",
+    "alternativas": [
+      {
+        "texto": "Cerca de 5 m, ou 10% do vão",
+        "correta": false,
+        "explicacao": "A ficha dá 1% do vão: 50 m × 0,01 = 0,5 m (Prysmian)."
+      },
+      {
+        "texto": "Cerca de 0,5 m, ou 1% do vão",
+        "correta": true,
+        "explicacao": "Certo. A flecha de instalação é de 1,0% do vão: 50 m × 0,01 = 0,5 m (Prysmian)."
+      },
+      {
+        "texto": "Zero: o drop vai bem esticado",
+        "correta": false,
+        "explicacao": "A ficha prevê flecha de 1% do vão; esticar além disso tira o cabo da ficha (Prysmian)."
+      },
+      {
+        "texto": "Cerca de 2,5 m, ou 5% do vão",
+        "correta": false,
+        "explicacao": "A ficha dá 1% do vão, não 5%: 0,5 m em 50 m (Prysmian)."
+      }
+    ],
+    "fontes": [
+      "prysmian-drop-flat"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "03-05-q7",
+    "licao": "03-05",
+    "enunciado": "No drop figura 8, o que a ficha garante de tração sem o fio de aço?",
+    "alternativas": [
+      {
+        "texto": "O mesmo do cabo inteiro: 1.250 N",
+        "correta": false,
+        "explicacao": "Os 1.250 N são o requisito do ensaio de tensão máxima de operação; sem o aço, a ficha dá 100 N (Prysmian)."
+      },
+      {
+        "texto": "Só 100 N, sem o elemento de sustentação",
+        "correta": true,
+        "explicacao": "Certo. A ficha dá 100 N de carga de tração sem o elemento de sustentação, com deformação máxima da fibra de 0,60% (Prysmian)."
+      },
+      {
+        "texto": "Nada, porque o cabo sem aço rompe na hora",
+        "correta": false,
+        "explicacao": "A ficha dá um valor: 100 N sem o elemento de sustentação (Prysmian)."
+      },
+      {
+        "texto": "O dobro do flat, por causa do tubo único",
+        "correta": false,
+        "explicacao": "A ficha não compara assim; sem o aço, o figura 8 tem 100 N (Prysmian)."
+      }
+    ],
+    "fontes": [
+      "prysmian-drop-fig8"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "03-05-q8",
+    "licao": "03-05",
+    "enunciado": "Um colega diz que todo drop é dielétrico e que, por isso, o drop do poste não tem risco elétrico. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Certo: drop é cabo óptico, então não conduz",
+        "correta": false,
+        "explicacao": "O drop figura 8 tem fio de aço de 1,30 mm (Prysmian), e peça metálica conduz (FOA)."
+      },
+      {
+        "texto": "Certo, se a capa for COG ou LSZH",
+        "correta": false,
+        "explicacao": "A capa não muda o fio de aço do figura 8, que conduz (Prysmian, FOA)."
+      },
+      {
+        "texto": "Errado: o figura 8 tem fio de aço, que conduz",
+        "correta": true,
+        "explicacao": "Certo. O drop figura 8 tem fio de aço galvanizado (Prysmian), e a FOA lembra que peças metálicas de cabo óptico conduzem eletricidade. Confirme o procedimento da empresa."
+      },
+      {
+        "texto": "Errado: todo cabo óptico tem um fio de cobre",
+        "correta": false,
+        "explicacao": "Não: o flat, por exemplo, não lista metal. O que conduz no figura 8 é o fio de aço (Prysmian)."
+      }
+    ],
+    "fontes": [
+      "prysmian-drop-fig8",
+      "foa-seguranca"
+    ],
+    "dificuldade": 2
+  }
+]

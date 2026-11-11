@@ -40,6 +40,7 @@
 | a19 | Como os religadores se comunicam hoje (rádio, celular, fibra)? Qual equipamento de comunicação fica em cada um? | Etiqueta e ficha do religador; mapa da rede | 01-06 |
 | a20 | O meu ASO registra a aptidão para trabalho em altura? Quando foi o meu último treinamento de NR-35 e ele foi presencial? | ASO e certificado do treinamento | 10-02 |
 | a21 | Num cabo aberto na caixa: o núcleo é seco ou geleado, há gel dentro dos tubos e quantas fibras há por tubo? | Gravação da capa, ficha do fabricante e o próprio cabo aberto, acompanhado | 03-02 |
+| a22 | Que tipos de cabo aparecem na rede que você acompanha: AS80, AS120, DD espinado, drop flat ou figura 8? Anote a gravação de cada um. | Gravação da capa, vista do chão ou na caixa | 03-05 |
 
 ---
 
@@ -86,6 +87,7 @@
 | b37 | Existe um plano de migração da rede de transporte (por exemplo, de SDH para pacotes)? Quais são as etapas? | Plano diretor de telecom, projeto de modernização | 01-06 |
 | b38 | Quando o serviço é em altura e também em proximidade da rede, por quanto tempo vale a PT no procedimento: turno ou jornada? | Procedimento de trabalho em poste e modelo de PT | 10-02 |
 | b39 | A especificação de compra pede cabo de duto com proteção contra roedores (DDR)? Em que trechos? | Especificação técnica de materiais ou projeto da rede | 03-02 |
+| b40 | A norma ou a especificação da empresa aceita drop figura 8 (com fio de aço) no poste, ou exige drop sem metal? Como o fio de aço é tratado? | Norma de compartilhamento e especificação de materiais | 03-05 |
 
 ---
 
@@ -116,6 +118,7 @@
 | c21 | Quem acompanha o novo regulamento dos postes na empresa e como a equipe de campo fica sabendo quando algo mudar? | Área regulatória ou de relacionamento com ocupantes | 07-07 |
 | c22 | Os links importantes têm rota dupla, com caminhos fisicamente diferentes? Como isso é verificado? | Engenharia de telecom e planejamento da rede | 01-05 |
 | c23 | Quem faz a inspeção periódica do cinturão e dos talabartes, e onde ficam os registros? | Segurança do trabalho (SESMT) ou almoxarifado | 10-02 |
+| c24 | A empresa tem OPGW em linhas de transmissão? Quem cuida dele? | Engenharia de transmissão ou de telecom | 03-05 |
 
 ---
 

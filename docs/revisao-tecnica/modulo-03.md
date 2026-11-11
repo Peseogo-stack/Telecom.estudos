@@ -75,3 +75,16 @@ Ficou de fora, sem fonte: o motivo da torção SZ, técnicas de abertura do cabo
 **Perguntas para a empresa:** a21 e b39.
 
 **Vídeos:** 2 (Gatre, sobre a construção do cabo loose, com aviso; Cristiano Viana, sobre geleado, seco e totalmente seco).
+
+## Lição 03-05 · Tipos de cabo e onde usar (11/11/2026)
+
+Fontes lidas no PDF original: fichas Prysmian do autossustentado, do cabo de duto, do drop flat e do drop figura 8; Furukawa ET02719; T&D World (OPGW); Cemig ND-6.6 (exemplo); FOA (segurança).
+
+| Ponto | Como ficou | Por quê |
+| --- | --- | --- |
+| Cabo de duto no vão | "A ficha não dá vão máximo"; no poste, só espinado na cordoalha | A primeira redação dizia "sem previsão para vão livre", sem fonte |
+| Drop flat | "A ficha não lista metal" | A primeira redação dizia "todo dielétrico"; a ficha não usa a palavra |
+| Drop figura 8 | Fio de aço de 1,30 mm; 100 N sem a sustentação; metal conduz (FOA); aceitação no poste "confirmar na empresa" | Ponto de segurança |
+| OPGW | Assunto das linhas de transmissão (T&D World); pergunta a quem cuida | "Não é cabo de poste" não tinha fonte |
+
+**Questões:** 8 (q3 e q8 com duas que concordam e duas que discordam). **Glossário:** espinado e LSZH. **Perguntas:** a22, b40, c24. **Vídeo:** 1 (OPGW, o mesmo da 01-06, com aviso).

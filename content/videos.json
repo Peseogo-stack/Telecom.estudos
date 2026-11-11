@@ -323,6 +323,25 @@
     ]
   },
   {
+    "licao": "03-05",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=T8IvStmA-bc",
+        "titulo": "O que é o cabo OPGW ? Como ele Funciona ? Assista Aqui! Optical Ground Wire ! Cabo Para-Raios OPGW !",
+        "canal": "Elétrica Em 5 Minutos",
+        "duracao": "7:27",
+        "observar": "O que é o OPGW e onde ele fica: cabo para-raios com fibras dentro, nas linhas de transmissão.",
+        "aviso": "Trata só do OPGW; os outros quatro tipos estão na lição.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
+    "termosBusca": [
+      "drop figura 8 drop flat diferença",
+      "cabo óptico autossustentado AS80 e cabo de duto espinado"
+    ]
+  },
+  {
     "licao": "03-07",
     "videos": [
       {

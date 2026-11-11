@@ -19,6 +19,10 @@ Método: título e canal pelo oEmbed; descrição, capítulos e duração pela Y
 - Lições sem candidato, só com termos de busca: 01-01, 01-02, 01-05, 02-04, 03-01, 09-02, 10-03 e 10-04.
 - 08-03: saiu o vídeo do Bruno Rech, que contradiz o manual do QGIS sobre a conversão entre SRCs. Ficou o outro.
 
+## Módulo 11 (redes): parado na conferência da pesquisa (11/11/2026)
+
+Branch `modulo-11-redes`. A pesquisa veio de outra IA (Gemini) em PDF e está em `docs/insumos-argon/modulo-11.md`, com os fatos numerados. A conferência (todos os itens de segurança e 20% dos demais, sorteados) achou problema em 8 de 21 itens; o registro está em `docs/insumos-argon/modulo-11-conferencia.md`. Pela regra combinada, as lições não foram escritas e nada foi corrigido. Próximo passo: decisão do usuário sobre a correção da pesquisa.
+
 ## P2 de QGIS (módulo 8) e postes (módulo 7): concluído em 11/11/2026
 
 Branch `p2-qgis-postes`. Uma lição por vez, fechada por inteiro (pesquisa na fonte, lição, diagrama, glossário, perguntas para a empresa, 8 questões, vídeos ou termos de busca, revisão técnica, `npm run verificar`, merge no main).

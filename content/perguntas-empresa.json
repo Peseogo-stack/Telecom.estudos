@@ -1223,5 +1223,32 @@
     "licoes": [
       "03-02"
     ]
+  },
+  {
+    "id": "a22",
+    "onde": "sozinho",
+    "texto": "Que tipos de cabo aparecem na rede que você acompanha: AS80, AS120, DD espinado, drop flat ou figura 8? Anote a gravação de cada um.",
+    "dica": "Gravação da capa, vista do chão ou na caixa",
+    "licoes": [
+      "03-05"
+    ]
+  },
+  {
+    "id": "b40",
+    "onde": "documentos",
+    "texto": "A norma ou a especificação da empresa aceita drop figura 8 (com fio de aço) no poste, ou exige drop sem metal? Como o fio de aço é tratado?",
+    "dica": "Norma de compartilhamento e especificação de materiais",
+    "licoes": [
+      "03-05"
+    ]
+  },
+  {
+    "id": "c24",
+    "onde": "outras-areas",
+    "texto": "A empresa tem OPGW em linhas de transmissão? Quem cuida dele?",
+    "dica": "Engenharia de transmissão ou de telecom",
+    "licoes": [
+      "03-05"
+    ]
   }
 ]

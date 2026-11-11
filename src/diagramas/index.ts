@@ -39,6 +39,7 @@ import { AnelNoves } from './AnelNoves';
 import { MeiosTransporte } from './MeiosTransporte';
 import { CaminhoNr35 } from './CaminhoNr35';
 import { CorteCabo } from './CorteCabo';
+import { TiposCabo } from './TiposCabo';
 import { ZonasUtmRoraima } from './ZonasUtmRoraima';
 import { FeicaoETabela } from './FeicaoETabela';
 import { FiltrarXSelecionar } from './FiltrarXSelecionar';
@@ -63,6 +64,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'meios-transporte': MeiosTransporte,
   'caminho-nr35': CaminhoNr35,
   'corte-cabo': CorteCabo,
+  'tipos-cabo': TiposCabo,
   'zonas-poste': ZonasPoste,
   'nr10-linha-do-tempo': Nr10LinhaDoTempo,
   'disponibilidade-barra': DisponibilidadeBarra,

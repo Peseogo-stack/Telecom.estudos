@@ -405,6 +405,24 @@
     "observacao": "Gravação a cada 1 metro: <PRYSMIAN> <ano> <CFOA-XX-DD-S YYFO WW> <ANATEL> <código> <lote> <marcação métrica>; DD = duto dielétrico; S = núcleo seco; WW: NR = normal, RC = retardante à chama. Fibras por tubo: 2 a 12F (2), 24F e 36F (6), 48F a 288F (12). Tubos: 1 verde, 2 amarelo, demais naturais; a partir do 13º tubo, identificação por anéis. Raio mínimo de curvatura: 20× o diâmetro na instalação, 10× depois. Norma: ABNT NBR 14566. Design do cabo: elemento central de bastão de fibra de vidro reforçado; tubos loose de PBT com gel tixotrópico e hidrófugo, até 12 fibras; tubos e enchimentos reunidos em torção SZ reversa; núcleo seco protegido com material hidroexpansível; elementos de tração de fios dielétricos de alto módulo; capa preta resistente a UV (NR) ou retardante à chama (RC), com fio de rasgamento. Pode ser usado também em instalação aérea espinada."
   },
   {
+    "id": "prysmian-drop-flat",
+    "titulo": "Cabo Óptico Tubo Único Flat Drop Óptico SM 002–012FO NR/COG/LSZH (Rev. 01, 19/08/2020)",
+    "organizacao": "Prysmian",
+    "tipo": "fabricante",
+    "url": "https://br.prysmian.com/sites/br.prysmian.com/files/media/documents/CO_DR_04_PT_01_FLAT%20DROP%20OPTICO%20SM%20002-012FO%20NR-COG-LSZH.pdf",
+    "acessadoEm": "2026-11-11",
+    "observacao": "ABNT NBR 15596. Elemento de sustentação: 2 fios de fibra de vidro reforçados; tubo loose único preenchido com gel tixotrópico hidrófugo, 2 a 12 fibras; capa preta NR, COG ou LSZH, resistente a UV. Para FTTH e serviços semelhantes em vãos de até 80 m. Seção 5,0 × 9,0 mm. Vão máximo 80 m; flecha de instalação (EDS) de 1,0% do vão; raio mínimo 20× o diâmetro na instalação e 10× depois; operação de −20 a +65 °C. Legenda da gravação: NR = normal; COG = cabo óptico geral; LSZH = retardante à chama, baixa emissão de fumaça e livre de halogênios."
+  },
+  {
+    "id": "prysmian-drop-fig8",
+    "titulo": "Cabo Óptico Tubo Único Drop Óptico Figura 8, interno/externo COG (Rev. 01, 19/08/2020)",
+    "organizacao": "Prysmian",
+    "tipo": "fabricante",
+    "url": "https://br.prysmian.com/sites/br.prysmian.com/files/media/documents/CO_DR_01_PT_01_CABO%20FO%20XX%20DROP%20FIG%208%20MG%20002-012FO%20COG%20%281%2C30%29.pdf",
+    "acessadoEm": "2026-11-11",
+    "observacao": "ABNT NBR 15596. Elemento de sustentação: fio de aço galvanizado de 1,30 mm; tubo loose único com gel tixotrópico hidrófugo, 2 a 12 fibras; elementos de tração de fios dielétricos de alto módulo; capa retardante à chama grau COG, resistente a UV. Vãos de até 80 m; flecha de instalação (EDS) de 1,0% do vão; carga de tração sem o elemento de sustentação: 100 N."
+  },
+  {
     "id": "foa-conectores",
     "titulo": "Fiber Optic Connector Identifier",
     "organizacao": "The Fiber Optic Association (FOA)",
@@ -465,7 +483,7 @@
     "tipo": "fabricante",
     "url": "https://www.instrufiber.com.br/image/catalog/pdf/f9ceeafa9dd5e981464834fafe8443f6-CFOA-XX-DDR-X-FO-RA.pdf",
     "acessadoEm": "2026-11-11",
-    "observacao": "Fibras e tubos 1–12: verde, amarela, branca, azul, vermelha, violeta, marrom, rosa, preta, cinza, laranja, azul-claro; 13–24 com traços pretos de ~10 mm (branco sobre o preto). Elemento central em FRP; tubos secos com elementos hidroexpansíveis; se necessário, tubos de material termoplástico (enchimento) mantêm o núcleo cilíndrico. Cabos de 18 a 36 fibras com 6 fibras por tubo; 48 a 60, com 12. Cabo CFOA-DDR-S para dutos, totalmente dielétrico e totalmente seco (ABNT NBR 14773). Elemento central de FRP \"para prevenir os esforços de contração do cabo\"; elemento de tração de filamentos dielétricos sobre o núcleo; capa interna termoplástica e, sobre ela, uma camada de fibra de vidro de 1,3 mm \"com a finalidade de proteger o cabo contra o ataque de roedores\"; capa externa termoplástica."
+    "observacao": "Fibras e tubos 1–12: verde, amarela, branca, azul, vermelha, violeta, marrom, rosa, preta, cinza, laranja, azul-claro; 13–24 com traços pretos de ~10 mm (branco sobre o preto). Elemento central em FRP; tubos secos com elementos hidroexpansíveis; se necessário, tubos de material termoplástico (enchimento) mantêm o núcleo cilíndrico. Cabos de 18 a 36 fibras com 6 fibras por tubo; 48 a 60, com 12. Cabo CFOA-DDR-S para dutos, totalmente dielétrico e totalmente seco (ABNT NBR 14773). Elemento central de FRP \"para prevenir os esforços de contração do cabo\"; elemento de tração de filamentos dielétricos sobre o núcleo; capa interna termoplástica e, sobre ela, uma camada de fibra de vidro de 1,3 mm \"com a finalidade de proteger o cabo contra o ataque de roedores\"; capa externa termoplástica. Aplicação: ambiente externo para o cabo não retardante à chama (classe NR); interno/externo para o retardante à chama (classe LSZH); operação em dutos."
   },
   {
     "id": "prysmian-cfoa-as",

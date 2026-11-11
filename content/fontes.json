@@ -853,5 +853,86 @@
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/expressions/functions_list.html",
     "acessadoEm": "2026-11-10",
     "observacao": "Igual na 4.x. $length: \"Returns the length of a linestring. […] The length calculated by this function respects both the current project's ellipsoid setting and distance unit settings. For example, if an ellipsoid has been set for the project then the calculated length will be ellipsoidal, and if no ellipsoid is set then the calculated length will be planimetric.\" length(geometry): \"Calculations are always planimetric in the Spatial Reference System (SRS) of this geometry, and the units of the returned length will match the units for the SRS.\" Consequência: numa camada em graus (4674 ou 4326), length devolve graus; numa camada em UTM (31980), devolve metros no plano da projeção. Exemplo calculado com pyproj sobre a geometria do cabo CB-01 de dados-qgis/rede-ficticia.gpkg (projeto em 31980, elipsoide GRS80): $length = 434,31 m; length da geometria = 434,26 m (cerca de 5 cm de diferença em 434 m); o campo compr_proj_m do CB-01 diz 442,7."
+  },
+  {
+    "id": "aneel-ren-1044-2022",
+    "titulo": "Resolução Normativa ANEEL nº 1.044, de 27/09/2022 (compartilhamento de infraestrutura de concessionárias e permissionárias de energia elétrica)",
+    "organizacao": "ANEEL",
+    "tipo": "legislacao",
+    "url": "https://www.ceripa.com.br/docs/Resolucao_Normativa_ANEEL_n_1_044_2022.pdf",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Cópia integral; endereço oficial: https://www2.aneel.gov.br/cedoc/ren20221044.pdf. Publicada no D.O. de 30/09/2022; em vigor desde 1º/11/2022 (art. 33); revoga as RENs 375/2009 e 797/2017. Art. 2º: detentor (I), ocupação à revelia (III: fora de projeto técnico previamente aprovado, mesmo com contrato vigente), ocupação clandestina (IV: à revelia sem contrato vigente, ou dono do ativo não identificado após notificação de todos os ocupantes com contrato), ponto de fixação (VII), Plano de Ocupação de Infraestrutura (VI). Art. 3º: uso prioritário do detentor; não pode comprometer a segurança de pessoas e instalações; só a capacidade excedente; gestão e manutenção do ativo ficam com o detentor. Art. 4º: vedada a ocupação à revelia. Art. 6º: o ocupante respeita as normas técnicas e corrige, inclusive quanto aos custos. Art. 7º, IV: poste medido e cobrado por ponto de fixação. Art. 12: o detentor notifica o ocupante. Art. 13: autorização da Comissão de Resolução de Conflitos para retirar cabos. Art. 14: retirada sem autorização da Comissão em ocupação clandestina, situação emergencial ou risco de acidente. Art. 17: ocupantes mantêm identificados os cabos em todos os pontos de fixação. Art. 19: Plano de Ocupação aprovado por Norma Técnica do detentor e disponível no site dele. Em 10/11/2026 o site oficial não respondeu (ANEEL: erro 403; portal de legislação da Anatel em manutenção); o texto foi lido na cópia integral indicada na URL."
+  },
+  {
+    "id": "res-conjunta-4-2014",
+    "titulo": "Resolução Conjunta ANEEL/Anatel nº 4, de 16/12/2014 (compartilhamento de postes entre distribuidoras e prestadoras de telecomunicações)",
+    "organizacao": "ANEEL e Anatel",
+    "tipo": "legislacao",
+    "url": "https://www.legisweb.com.br/legislacao/?id=279489",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Cópia integral. Art. 1º: R$ 3,19 como preço de referência do ponto de fixação, referenciado à data da publicação (2014), para os processos de resolução de conflitos, quando esgotada a via negocial; não é tabela nem teto. Art. 2º: a prestadora não pode ocupar mais de 1 ponto de fixação por poste (dispensa de até 2 pontos só por inviabilidade técnica, art. 7º). Art. 3º: a distribuidora cobra 1 ponto por poste. Art. 4º: seguir o plano de ocupação e as normas técnicas; §4º: a notificação traz, no mínimo, a localização do poste e a descrição da não conformidade; §5º: regularização da prestadora, inclusive quanto aos custos; §7º: situação emergencial ou risco de acidente é regularizada imediatamente, independentemente de notificação prévia. Art. 6º, §1º: a distribuidora acompanha e fiscaliza a ocupação. Art. 9º: a distribuidora mantém cadastro atualizado da ocupação dos pontos de fixação nos postes. Endereço oficial da Anatel em manutenção em 10/11/2026; texto lido na cópia indicada."
+  },
+  {
+    "id": "res-conjunta-1-1999",
+    "titulo": "Resolução Conjunta ANEEL/Anatel/ANP nº 1, de 24/11/1999 (Regulamento Conjunto para compartilhamento de infraestrutura)",
+    "organizacao": "ANEEL, Anatel e ANP",
+    "tipo": "legislacao",
+    "url": "https://www.legisweb.com.br/legislacao/?id=96802",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Cópia integral. Art. 3º do Regulamento: detentor é o agente que detém, administra ou controla, direta ou indiretamente, uma infraestrutura; solicitante é o interessado no compartilhamento. Art. 11, §1º: resposta por escrito em até 90 dias, com as razões em caso de negativa. Art. 20: o contrato trata, entre outros pontos, de objeto, direitos e obrigações, preços e condições técnicas e de segurança. A REN 1.044/2022 (art. 5º) manda aplicar também esta resolução."
+  },
+  {
+    "id": "decreto-12068-2024",
+    "titulo": "Decreto nº 12.068, de 20/06/2024, art. 16 (cessão de espaço nos postes das redes aéreas de distribuição)",
+    "organizacao": "Presidência da República",
+    "tipo": "legislacao",
+    "url": "https://www2.camara.leg.br/legin/fed/decret/2024/decreto-12068-20-junho-2024-795827-publicacaooriginal-172177-pe.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Publicação original, no Portal da Câmara (o site do Planalto não respondeu em 10/11/2026). Art. 16: as distribuidoras deverão ceder a pessoa jurídica distinta o espaço em infraestrutura de distribuição, as faixas de ocupação e os pontos de fixação dos postes destinados ao compartilhamento com telecomunicações; §2º: a exploração comercial se dá conforme regulação conjunta da ANEEL e da Anatel, quanto ao preço, ao uso da faixa, dentre outros. O decreto está em vigor; a regulação conjunta, em 10/11/2026, não foi encontrada publicada."
+  },
+  {
+    "id": "teletime-postes-2025-12-02",
+    "titulo": "Aneel aprova nova versão do regulamento de compartilhamento de postes",
+    "organizacao": "Teletime",
+    "tipo": "noticia",
+    "url": "https://teletime.com.br/02/12/2025/aneel-aprova-nova-versao-do-regulamento-de-compartilhamento-de-postes/",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Notícia de 02/12/2025: a ANEEL aprovou uma nova versão do regulamento conjunto; a mesma proposta deveria ser avaliada pelo Conselho Diretor da Anatel. Proposta, não regra. Status em 10/11/2026: ver as notícias de 22/05, 06/10 e 28/10/2026."
+  },
+  {
+    "id": "telesintese-agu-2026-05-22",
+    "titulo": "Conflito entre Aneel e Anatel sobre postes chega ao fim com decisão vinculante da AGU",
+    "organizacao": "TeleSíntese",
+    "tipo": "noticia",
+    "url": "https://telesintese.com.br/conflito-entre-aneel-e-anatel-sobre-postes-chega-ao-fim-com-decisao-vinculante-da-agu/",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Notícia de 22/05/2026: a AGU concluiu, em parecer adotado em despacho vinculante, pela obrigatoriedade da cessão da exploração comercial dos postes; a ANEEL deverá rever o texto que aprovou."
+  },
+  {
+    "id": "teletime-postes-2026-10-06",
+    "titulo": "Aneel adia decisão sobre postes",
+    "organizacao": "Teletime",
+    "tipo": "noticia",
+    "url": "https://teletime.com.br/06/10/2026/aneel-adia-decisao-sobre-postes-anatel/",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Notícia de 06/10/2026: a ANEEL adiou a decisão sobre a nova regulamentação; o relator retirou o item de pauta após divergências no colegiado; o voto não chegou a ser aprovado."
+  },
+  {
+    "id": "cenario-energia-2026-10-28",
+    "titulo": "Aneel e Anatel avançam em proposta para regulamentar gestão compartilhada de postes",
+    "organizacao": "Cenário Energia",
+    "tipo": "noticia",
+    "url": "https://cenarioenergia.com.br/2026/10/28/aneel-e-anatel-avancam-em-proposta-para-regulamentar-gestao-compartilhada-de-postes/",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Notícia de 28/10/2026: minuta em análise na ANEEL; a nova redação está em análise pelo colegiado antes de ser encaminhada formalmente à Anatel; expectativa de voltar à pauta em uma ou duas semanas. As empresas que administrariam a ocupação são conhecidas no setor como posteiros."
+  },
+  {
+    "id": "camara-pl-3220-2019",
+    "titulo": "PL 3220/2019: ficha de tramitação",
+    "organizacao": "Câmara dos Deputados",
+    "tipo": "legislacao",
+    "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2617269",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Consulta em 10/11/2026: em 04/11/2026 o Plenário da Câmara aprovou o substitutivo e a redação final; despacho: a matéria retorna ao Senado Federal; situação: aguardando envio ao Senado Federal. Projeto de lei, não é lei."
   }
 ]

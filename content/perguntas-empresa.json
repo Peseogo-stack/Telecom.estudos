@@ -237,6 +237,7 @@
     "texto": "Qual é o modelo do contrato de ocupação de postes (valor por ponto, prazos, multas)?",
     "dica": "Contrato-padrão de compartilhamento",
     "licoes": [
+      "07-01",
       "07-06"
     ]
   },
@@ -522,6 +523,7 @@
     "texto": "Como é o fluxo para cabo clandestino (registro, retirada, guarda do material)?",
     "dica": "",
     "licoes": [
+      "07-01",
       "07-06"
     ]
   },
@@ -698,6 +700,33 @@
     "dica": "Modelo do relatório",
     "licoes": [
       "08-06"
+    ]
+  },
+  {
+    "id": "b20",
+    "onde": "documentos",
+    "texto": "Onde está publicado, no site da empresa, o Plano de Ocupação de Infraestrutura em vigor, e qual norma técnica o aprovou?",
+    "dica": "Site da distribuidora, página de compartilhamento de infraestrutura",
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "c17",
+    "onde": "outras-areas",
+    "texto": "Quem na empresa acompanha o novo regulamento da ANEEL e da Anatel para os postes, e a empresa já se prepara para uma eventual cessão da exploração dos postes?",
+    "dica": "Área regulatória ou de compartilhamento",
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "d24",
+    "onde": "colega",
+    "texto": "Como a equipe cadastra a ocupação dos pontos de fixação (sistema, planilha, QGIS)?",
+    "dica": "",
+    "licoes": [
+      "07-01"
     ]
   }
 ]

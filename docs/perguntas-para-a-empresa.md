@@ -52,7 +52,7 @@
 | b08 | Qual é o prazo de garantia da obra e como funcionam o aceite provisório e o definitivo? | Contrato de construção | 09-05 |
 | b09 | Quais são os contatos e a matriz de escalonamento de cada fornecedor (central, NOC, gerente de contas)? | Anexo do contrato ou cadastro do fornecedor | 09-06 |
 | b10 | O que diz a ficha técnica do cabo comprado (G.652.D ou G.657, IOR, atenuação)? | Anexo técnico, processo de compra | 02-04, 06-05, 09-05, 02-01, 02-02, 02-06 |
-| b11 | Qual é o modelo do contrato de ocupação de postes (valor por ponto, prazos, multas)? | Contrato-padrão de compartilhamento | 07-06 |
+| b11 | Qual é o modelo do contrato de ocupação de postes (valor por ponto, prazos, multas)? | Contrato-padrão de compartilhamento | 07-01, 07-06 |
 | b12 | Qual é o procedimento escrito para trabalho em poste com rede de telecom, e o modelo de APR e de permissão de trabalho? | Procedimentos de segurança (intranet) | 10-01 |
 | b13 | O contrato conta o mês como 30 dias (43.200 min) ou pelos dias do calendário? | Cláusula de SLA | 09-01 |
 | b14 | Latência alta, perda de pacotes ou velocidade abaixo do contratado contam como indisponibilidade no contrato? | Anexo de nível de serviço | 09-01 |
@@ -61,6 +61,7 @@
 | b17 | Qual método de referência de perda de inserção a empresa pede (1, 2 ou 3 cordões), em quais comprimentos de onda, e qual é o critério de aceite da perda total? | Especificação técnica de aceite de obra | 06-01, 09-05 |
 | b18 | O contrato ou o padrão de entrega diz em que SRC o fornecedor tem de mandar os arquivos (as-built, KML, planilha de coordenadas)? | Contrato e padrão de entrega | 08-03 |
 | b19 | O relatório de ocupação ou de vistoria pede contagens (postes por ocupante, pontos sem plaqueta)? De qual camada elas saem? | Modelo do relatório | 08-06 |
+| b20 | Onde está publicado, no site da empresa, o Plano de Ocupação de Infraestrutura em vigor, e qual norma técnica o aprovou? | Site da distribuidora, página de compartilhamento de infraestrutura | 07-01 |
 
 ---
 
@@ -84,6 +85,7 @@
 | c14 | Quem calcula e quem aprova a glosa antes do pagamento? | Líder de TI / financeiro | 09-02 |
 | c15 | Que tensões existem nos postes onde vou trabalhar (baixa tensão, 13,8 kV, 34,5 kV)? | Engenharia / operação | 10-01 |
 | c16 | Há fibra multimodo nos racks das subestações ou do data center? Em quais equipamentos? | Engenharia / TI de infraestrutura | 02-03 |
+| c17 | Quem na empresa acompanha o novo regulamento da ANEEL e da Anatel para os postes, e a empresa já se prepara para uma eventual cessão da exploração dos postes? | Área regulatória ou de compartilhamento | 07-01 |
 
 ---
 
@@ -98,7 +100,7 @@
 | d05 | Quem faz o arc check, a troca de eletrodo e a limpeza da máquina de fusão? | 05-03 |
 | d06 | Que faixa de sinal na ONU cobramos dos provedores, se cobramos? Que topologia eles usam aqui? | 04-05 |
 | d07 | A rede para as unidades é ponto a ponto (SFP) ou tem PON? | 04-01, 04-06, 02-05 |
-| d08 | Como é o fluxo para cabo clandestino (registro, retirada, guarda do material)? | 07-06 |
+| d08 | Como é o fluxo para cabo clandestino (registro, retirada, guarda do material)? | 07-01, 07-06 |
 | d09 | Que nomes e campos usamos nas camadas do QGIS? Usamos QField? | 08-06, 08-07 |
 | d10 | Qual é o plano de VLANs, e eu posso rodar comandos de consulta (show) nos switches? | 11-04 |
 | d11 | Como os fornecedores costumam contestar uma glosa, e o que já foi aceito ou recusado? | 09-02 |
@@ -114,6 +116,7 @@
 | d21 | A equipe usa imagem de satélite de fundo? De onde ela vem? | 08-02 |
 | d22 | Quais consultas a equipe mais faz nas camadas de postes e cabos (por ocupante, por situação, por data de vistoria)? | 08-06 |
 | d23 | As camadas do projeto da equipe já vêm com algum filtro ligado? Qual e por quê? | 08-06 |
+| d24 | Como a equipe cadastra a ocupação dos pontos de fixação (sistema, planilha, QGIS)? | 07-01 |
 
 ---
 

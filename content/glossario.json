@@ -1879,5 +1879,108 @@
     "licoes": [
       "08-06"
     ]
+  },
+  {
+    "id": "detentor",
+    "pt": "Detentor",
+    "definicao": "Concessionária ou permissionária de energia elétrica que detém, administra ou controla a infraestrutura a ser compartilhada. Em um poste da distribuidora, é a distribuidora.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-1-1999"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "ocupante",
+    "pt": "Ocupante",
+    "definicao": "Quem ocupa a infraestrutura da distribuidora mediante contrato: operadora, provedor, órgão público ou outro interessado. Regulariza e paga a regularização da própria ocupação.",
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "ponto-de-fixacao",
+    "pt": "Ponto de fixação",
+    "definicao": "Ponto do poste, dentro da faixa destinada ao compartilhamento, onde se instala o suporte que sustenta mecanicamente os cabos ou a cordoalha do ocupante. O poste é medido e cobrado por ponto de fixação.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "faixa-de-ocupacao",
+    "pt": "Faixa de ocupação",
+    "definicao": "Espaço nos postes e torres em que a distribuidora define os pontos de fixação destinados ao compartilhamento. A altura e a medida da faixa vêm da norma técnica da distribuidora.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "ocupacao-a-revelia",
+    "pt": "Ocupação à revelia",
+    "definicao": "Ocupação que não consta de projeto técnico previamente aprovado pela distribuidora, mesmo que o ocupante tenha contrato de compartilhamento vigente. É vedada.",
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "ocupacao-clandestina",
+    "pt": "Ocupação clandestina",
+    "definicao": "Ocupação à revelia sem contrato de compartilhamento vigente, ou cujo dono do cabo não foi identificado depois de a distribuidora notificar todos os ocupantes com contrato.",
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "plano-de-ocupacao",
+    "pt": "Plano de Ocupação de Infraestrutura",
+    "definicao": "Documento aprovado por norma técnica da distribuidora, publicado no site dela, que estabelece as condições técnicas que o solicitante deve seguir.",
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "comissao-de-resolucao-de-conflitos",
+    "pt": "Comissão de Resolução de Conflitos",
+    "definicao": "Comissão a que o detentor pede autorização para retirar cabos de ocupante que não regularizou. Também usa o preço de referência do ponto de fixação nos conflitos. A REN 1.044/2022 a cita nos termos da Resolução Conjunta nº 2/2001.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "posteiro",
+    "pt": "Posteiro",
+    "definicao": "Nome usado no setor para a empresa que administraria a ocupação dos postes na proposta do novo regulamento. Em 10/11/2026 ainda não existe em regra vigente.",
+    "fontes": [
+      "cenario-energia-2026-10-28"
+    ],
+    "licoes": [
+      "07-01"
+    ]
   }
 ]

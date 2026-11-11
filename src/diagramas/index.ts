@@ -34,6 +34,7 @@ import { OrcamentoPon } from './OrcamentoPon';
 import { ZonasUtmRoraima } from './ZonasUtmRoraima';
 import { FeicaoETabela } from './FeicaoETabela';
 import { FiltrarXSelecionar } from './FiltrarXSelecionar';
+import { DetentorOcupante } from './DetentorOcupante';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -68,6 +69,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-utm-roraima': ZonasUtmRoraima,
   'feicao-e-tabela': FeicaoETabela,
   'filtrar-x-selecionar': FiltrarXSelecionar,
+  'detentor-ocupante': DetentorOcupante,
 };
 
 

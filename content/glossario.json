@@ -2121,5 +2121,29 @@
     "licoes": [
       "08-04"
     ]
+  },
+  {
+    "id": "modo-de-edicao",
+    "pt": "Modo de edição",
+    "en": "Toggle editing",
+    "definicao": "Estado da camada com a edição ligada (Toggle Editing, o lápis). As ferramentas de edição ficam disponíveis e as mudanças ficam só na memória do QGIS até você salvar com Save Layer Edits.",
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "copia-de-seguranca",
+    "pt": "Cópia de segurança",
+    "en": "backup",
+    "definicao": "Cópia do arquivo feita antes de editar. O manual do QGIS recomenda fazê-la sempre; depois de salvar uma edição, é ela que protege os dados originais.",
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "licoes": [
+      "08-05"
+    ]
   }
 ]

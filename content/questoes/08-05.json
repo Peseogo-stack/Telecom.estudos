@@ -1,0 +1,252 @@
+[
+  {
+    "id": "08-05-q1",
+    "licao": "08-05",
+    "enunciado": "Com a edição ligada, movi um poste com a Vertex Tool e vi que escolhi o vértice errado. Ainda não salvei. O que faço?",
+    "alternativas": [
+      {
+        "texto": "Salvo com Save Layer Edits e depois movo o ponto de volta, com a mesma ferramenta, até ficar parecido.",
+        "correta": false,
+        "explicacao": "Salvar grava a mudança errada no arquivo. Antes de salvar, dá para desfazer com Ctrl+Z ou descartar."
+      },
+      {
+        "texto": "Aperto Ctrl+Z para desfazer o passo, ou desligo a edição e escolho descartar.",
+        "correta": true,
+        "explicacao": "Certo. Antes de salvar, o Ctrl+Z desfaz passo a passo, e descartar é a saída segura: nada vai para o arquivo."
+      },
+      {
+        "texto": "Uso Delete Selected no ponto e adiciono outro com Add Point Feature, pois o movimento já foi gravado.",
+        "correta": false,
+        "explicacao": "O movimento ainda não foi gravado: até salvar, a mudança está só na memória do QGIS. Apagar a feição seria mais uma alteração."
+      },
+      {
+        "texto": "Ligo um filtro na camada para esconder o ponto movido e sigo editando com calma.",
+        "correta": false,
+        "explicacao": "Filtrar não altera o arquivo nem desfaz o movimento: o ponto continua fora do lugar na memória do QGIS."
+      }
+    ],
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-05-q2",
+    "licao": "08-05",
+    "enunciado": "Mexi em três pontos com a edição ligada e fechei o QGIS sem salvar. O que o QGIS faz?",
+    "alternativas": [
+      {
+        "texto": "Grava os três pontos no arquivo sozinho, porque fechar o programa equivale a um Save Layer Edits.",
+        "correta": false,
+        "explicacao": "Ele não grava sozinho: pergunta antes. Até salvar, as mudanças estão só na memória."
+      },
+      {
+        "texto": "Descarta as mudanças sem avisar, porque elas só existiam na memória do QGIS.",
+        "correta": false,
+        "explicacao": "Ele avisa: pergunta se você quer salvar ou descartar. Descartar sem perguntar poderia perder trabalho."
+      },
+      {
+        "texto": "Cria uma cópia de segurança com as mudanças e mantém o arquivo original como estava.",
+        "correta": false,
+        "explicacao": "A cópia de segurança é feita por você, antes de editar, com Export ► Save Features As…; o QGIS não a cria ao fechar."
+      },
+      {
+        "texto": "Pergunta se quero salvar as mudanças no arquivo ou descartá-las de vez.",
+        "correta": true,
+        "explicacao": "Certo. Ao desligar a edição ou fechar o QGIS, ele pergunta. Descartar é a saída segura quando algo saiu errado."
+      }
+    ],
+    "fontes": [
+      "qgis-edicao",
+      "qgis-criar-camadas"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-05-q3",
+    "licao": "08-05",
+    "enunciado": "Vou corrigir atributos de uma camada de postes e quero estar protegido caso salve algo errado. O que faço antes de ligar a edição?",
+    "alternativas": [
+      {
+        "texto": "Faço uma cópia do arquivo, com Export ► Save Features As…, e edito só nela.",
+        "correta": true,
+        "explicacao": "Certo. O manual manda fazer cópia de segurança antes de editar. Depois de salvar, quem protege é a cópia."
+      },
+      {
+        "texto": "Confio no Ctrl+Z, que também desfaz o que já foi salvo, mesmo depois de eu fechar o QGIS.",
+        "correta": false,
+        "explicacao": "O Ctrl+Z desfaz passo a passo antes de salvar. Depois de salvar, quem protege é a cópia, não o Ctrl+Z."
+      },
+      {
+        "texto": "Ligo um filtro só nos postes que vou mudar, para não alterar os outros.",
+        "correta": false,
+        "explicacao": "Filtrar não protege o arquivo: a edição altera os dados do mesmo jeito. O que protege é a cópia."
+      },
+      {
+        "texto": "Salvo a camada a cada mudança, porque cada Save Layer Edits funciona como uma cópia de segurança.",
+        "correta": false,
+        "explicacao": "Save Layer Edits grava no próprio arquivo e não cria cópia. Se a mudança estiver errada, ela já foi gravada."
+      }
+    ],
+    "fontes": [
+      "qgis-edicao",
+      "qgis-criar-camadas"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-05-q4",
+    "licao": "08-05",
+    "enunciado": "Adicionei três pontos com Add Point Feature, sem salvar, e a energia do computador caiu. O que há no arquivo quando reabro?",
+    "alternativas": [
+      {
+        "texto": "Os três pontos, porque o Add Point Feature grava cada ponto no arquivo na hora em que clico.",
+        "correta": false,
+        "explicacao": "Ele não grava na hora: com a edição ligada, as mudanças ficam na memória do QGIS até salvar."
+      },
+      {
+        "texto": "Só o último ponto, que o QGIS grava ao terminar o uso de cada ferramenta.",
+        "correta": false,
+        "explicacao": "Nenhum ponto é gravado sozinho: tudo fica na memória até o Save Layer Edits."
+      },
+      {
+        "texto": "Nenhum deles: as mudanças estavam só na memória do QGIS e não foram salvas.",
+        "correta": true,
+        "explicacao": "Certo. Até salvar com Save Layer Edits, a mudança está só na memória. Por isso o manual manda salvar com regularidade."
+      },
+      {
+        "texto": "Os três pontos, porque ligar a edição já grava no arquivo tudo o que for feito depois.",
+        "correta": false,
+        "explicacao": "Ligar a edição não grava nada: as ferramentas de edição ficam disponíveis, e as mudanças ficam na memória até salvar."
+      }
+    ],
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-05-q5",
+    "licao": "08-05",
+    "enunciado": "Preciso acrescentar uma linha numa tabela que não tem geometria, só campos. Com a edição ligada, qual ferramenta uso?",
+    "alternativas": [
+      {
+        "texto": "Add Point Feature, que também cria linhas de tabela e deixa a geometria vazia.",
+        "correta": false,
+        "explicacao": "Add Point Feature adiciona um ponto no mapa, numa camada de pontos. Para tabela sem geometria, a ferramenta é Add Record."
+      },
+      {
+        "texto": "Add Record, a ferramenta própria para adicionar linha em tabela sem geometria.",
+        "correta": true,
+        "explicacao": "Certo. Add Point, Add Line e Add Polygon Feature servem conforme o tipo da camada; para tabela sem geometria, é Add Record."
+      },
+      {
+        "texto": "Vertex Tool, clicando num vértice da tabela para criar a linha nova.",
+        "correta": false,
+        "explicacao": "A Vertex Tool move vértices: seleciona o vértice, clica nele e clica no novo lugar. Não adiciona linha, e tabela sem geometria não tem vértice."
+      },
+      {
+        "texto": "Delete Selected, e depois Ctrl+Z para a linha reaparecer como uma linha nova.",
+        "correta": false,
+        "explicacao": "Delete Selected apaga as feições selecionadas. Ele não acrescenta linha."
+      }
+    ],
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-05-q6",
+    "licao": "08-05",
+    "enunciado": "Cliquei em Save Layer Edits e o QGIS acusou erro: o disco estava cheio. O que aconteceu com as minhas edições?",
+    "alternativas": [
+      {
+        "texto": "Foram descartadas, e preciso refazer tudo a partir da cópia.",
+        "correta": false,
+        "explicacao": "Elas não se perderam: quando não dá para salvar, o estado em memória é preservado."
+      },
+      {
+        "texto": "Foram gravadas no arquivo mesmo assim, e o erro é só um aviso.",
+        "correta": false,
+        "explicacao": "O salvamento também confere se o arquivo aceita as mudanças; o erro mostra que não aceitou. As edições seguem na memória."
+      },
+      {
+        "texto": "O QGIS desligou a edição e devolveu o arquivo ao estado de antes de editar.",
+        "correta": false,
+        "explicacao": "A edição não é desligada nem descartada sozinha: o estado em memória é preservado."
+      },
+      {
+        "texto": "Continuam na memória: libero espaço, ajusto o que for preciso e salvo de novo.",
+        "correta": true,
+        "explicacao": "Certo. Quando não dá para salvar (disco cheio, valor fora da faixa), o estado em memória é preservado, para ajustar e tentar de novo."
+      }
+    ],
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-05-q7",
+    "licao": "08-05",
+    "enunciado": "No cadastro oficial da empresa, achei um poste em lugar errado, e estou com o arquivo aberto no QGIS. O que faço?",
+    "alternativas": [
+      {
+        "texto": "Faço uma cópia, corrijo nela e ponho a cópia no lugar do arquivo oficial, pois a cópia me protege.",
+        "correta": false,
+        "explicacao": "A cópia protege você no exercício, mas trocar o arquivo oficial é editar o cadastro por conta própria. Quem edita o oficial é regra da empresa."
+      },
+      {
+        "texto": "Ligo a edição no arquivo oficial, movo o poste e salvo; se ficar errado, desfaço com Ctrl+Z.",
+        "correta": false,
+        "explicacao": "O oficial não é lugar de treino, e depois de salvar quem protege é a cópia. Quem pode editar o oficial é regra da empresa."
+      },
+      {
+        "texto": "Registro a divergência e a envio a quem mantém o cadastro; quem edita o oficial é regra da empresa.",
+        "correta": true,
+        "explicacao": "Certo. No trabalho, o técnico normalmente registra a divergência e manda para quem mantém o cadastro. Quem pode editar o oficial a empresa define."
+      },
+      {
+        "texto": "Apago o poste com Delete Selected e adiciono outro com Add Point Feature no lugar certo.",
+        "correta": false,
+        "explicacao": "Apagar a linha apaga a feição do mapa: são o mesmo objeto. Isso seria editar o cadastro oficial por conta própria, e a regra da empresa vem antes."
+      }
+    ],
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "08-05-q8",
+    "licao": "08-05",
+    "enunciado": "Há um funil ao lado do nome da camada postes, e vou corrigir atributos nela. Qual é o cuidado?",
+    "alternativas": [
+      {
+        "texto": "Posso não ver todas as feições; confiro o funil e o título da tabela antes de editar.",
+        "correta": true,
+        "explicacao": "Certo. Com filtro ligado, ou com poucas feições selecionadas, você pode não estar vendo tudo (lição 08-06)."
+      },
+      {
+        "texto": "Nenhum: o filtro só muda a cor das feições, e a edição vale igual para toda a camada.",
+        "correta": false,
+        "explicacao": "O filtro não pinta as feições: o funil avisa que só parte delas está disponível no projeto (lição 08-06). O risco é editar sem ver tudo."
+      },
+      {
+        "texto": "Basta selecionar poucas feições: com a seleção ativa, o QGIS edita só as selecionadas.",
+        "correta": false,
+        "explicacao": "A lição não traz essa proteção: com poucas feições selecionadas, assim como com filtro, você pode não estar vendo tudo."
+      },
+      {
+        "texto": "Guardar o resultado do filtro numa cópia e editar o original, que está sempre completo.",
+        "correta": false,
+        "explicacao": "Editar o original é o oposto do cuidado da lição: o exercício é numa cópia, e o funil deve ser conferido antes de editar."
+      }
+    ],
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "dificuldade": 3
+  }
+]

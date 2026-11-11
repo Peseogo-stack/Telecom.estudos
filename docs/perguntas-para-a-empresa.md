@@ -67,6 +67,7 @@
 | b21 | Na norma técnica da empresa, qual é a altura da faixa de ocupação, a que distância do solo fica o topo dela e quantos pontos de fixação ela tem? | Norma técnica de compartilhamento e Plano de Ocupação, no site da empresa | 07-02 |
 | b22 | Qual é o afastamento mínimo entre o cabo de telecom e a baixa tensão e a média tensão na norma da empresa? | Tabela de afastamentos da norma técnica | 07-02 |
 | b23 | O contrato ou o padrão de as-built diz em que formato e com que campos o fornecedor entrega o cadastro? | Contrato, termo de referência ou padrão de as-built | 08-04 |
+| b24 | Existe procedimento de cópia de segurança (backup) e de conferência das edições do cadastro? | Procedimento ou norma interna de gestão do cadastro | 08-05 |
 
 ---
 
@@ -129,6 +130,9 @@
 | d28 | Quais complementos (plugins) a equipe usa, e quem testa se eles funcionam antes de uma troca de versão? | 08-01 |
 | d29 | Em que formato a equipe guarda os dados e em que formato manda para fornecedores e outras áreas? | 08-04 |
 | d30 | Posso mandar KML da rede para fora da empresa ou abrir no Google Earth? Quem autoriza? | 08-04 |
+| d31 | Quem pode editar o cadastro de postes e cabos da empresa, e em que arquivo ou sistema? | 08-05 |
+| d32 | Quando acho um erro de cadastro em campo, como registro e para quem mando? | 08-05 |
+| d33 | A equipe edita direto no arquivo compartilhado ou cada um trabalha numa cópia? | 08-05 |
 
 ---
 

@@ -92,3 +92,16 @@ A lição passou de 700 palavras com as correções e foi enxugada para caber.
 **Não conferido, e dito na lição:** se o DXF guarda SRC ("confira com quem desenhou").
 
 **Vídeos:** nenhum entrou. O mais direto (23 segundos) chama o Shapefile de "defasado" e o GeoPackage de "substituto", e ainda divulga um guia; os outros estão marcados como português de Portugal, pedem Pix ou só têm link de curso.
+
+## 08-05 — Editar com segurança (11/11/2026)
+
+**Fontes abertas em 11/11/2026:** capítulo "Editing" do manual do QGIS 3.44 e 4.x, e a página da interface (menus Layer e Edit). Única diferença entre os dois manuais nesse capítulo: o da 4.x acrescenta uma frase lembrando de salvar com Save Layer Edits.
+
+**Conferência:** li a lição e as 8 questões contra a ficha e não precisei corrigir nada. Dois pontos que a ficha mandava tratar com cuidado saíram como pedido:
+
+- o Undo: a lição diz que o Ctrl+Z desfaz antes de salvar e que, depois de salvar, "quem protege é a cópia", sem afirmar o que o Undo faz depois do salvamento (não conferi);
+- o cadastro da empresa: o exercício é numa cópia do arquivo fictício, e a lição diz que o técnico registra a divergência e manda a quem mantém o cadastro, com "confirmar na empresa" em quem pode editar.
+
+**Ficou de fora por espaço:** a tolerância de aderência (snapping).
+
+**Vídeos:** nenhum entrou. Três dos quatro candidatos vendem curso na descrição; o quarto, de uma professora universitária, tem 23 minutos sem capítulos e trata de abrir dados e simbologia, não de edição de ponto e vértice.

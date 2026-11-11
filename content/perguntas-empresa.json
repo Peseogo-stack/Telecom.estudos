@@ -836,5 +836,41 @@
     "licoes": [
       "08-04"
     ]
+  },
+  {
+    "id": "d31",
+    "onde": "colega",
+    "texto": "Quem pode editar o cadastro de postes e cabos da empresa, e em que arquivo ou sistema?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "d32",
+    "onde": "colega",
+    "texto": "Quando acho um erro de cadastro em campo, como registro e para quem mando?",
+    "dica": "Quem mantém o cadastro ou o chefe da equipe",
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "b24",
+    "onde": "documentos",
+    "texto": "Existe procedimento de cópia de segurança (backup) e de conferência das edições do cadastro?",
+    "dica": "Procedimento ou norma interna de gestão do cadastro",
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "d33",
+    "onde": "colega",
+    "texto": "A equipe edita direto no arquivo compartilhado ou cada um trabalha numa cópia?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-05"
+    ]
   }
 ]

@@ -333,5 +333,14 @@
       "QGIS exportar KML Google Earth",
       "QGIS formatos de arquivo vetor shapefile gpkg kml csv dxf"
     ]
+  },
+  {
+    "licao": "08-05",
+    "videos": [],
+    "termosBusca": [
+      "QGIS edição de camada vetorial modo de edição",
+      "QGIS adicionar ponto mover vértice salvar edições",
+      "QGIS editar camada Toggle Editing salvar"
+    ]
   }
 ]

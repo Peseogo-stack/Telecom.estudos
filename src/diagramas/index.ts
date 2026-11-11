@@ -38,6 +38,7 @@ import { DetentorOcupante } from './DetentorOcupante';
 import { AnatomiaPoste } from './AnatomiaPoste';
 import { VersoesQgis } from './VersoesQgis';
 import { FormatosArquivo } from './FormatosArquivo';
+import { CicloDeEdicao } from './CicloDeEdicao';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -76,6 +77,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'anatomia-poste': AnatomiaPoste,
   'versoes-qgis': VersoesQgis,
   'formatos-arquivo': FormatosArquivo,
+  'ciclo-de-edicao': CicloDeEdicao,
 };
 
 

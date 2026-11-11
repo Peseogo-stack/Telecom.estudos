@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['08-01', '08-02', '08-03', '08-04', '08-06']) {
+for (const id of ['08-01', '08-02', '08-03', '08-04', '08-05', '08-06']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -46,7 +46,7 @@ test('08-03: termo SRC abre a definição no glossário', async ({ page }) => {
   await expect(page.getByText('como os números de uma coordenada', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/08-01', '#/licao/08-01/questoes', '#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-04', '#/licao/08-04/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/glossario?t=falso-norte']) {
+for (const rota of ['#/licao/08-01', '#/licao/08-01/questoes', '#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-04', '#/licao/08-04/questoes', '#/licao/08-05', '#/licao/08-05/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/glossario?t=falso-norte']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();
@@ -102,4 +102,20 @@ test('08-03: os arquivos de exercício baixam de verdade (GeoPackage e CSV)', as
   expect(inicio).toBe('SQLite format 3');
   const csv = await page.evaluate(async () => (await (await fetch('dados-qgis/vistoria-utm-sem-src.csv')).text()).split('\n')[0].trim());
   expect(csv).toBe('cod_poste;x;y;data;obs');
+});
+
+test('08-05: diagrama do ciclo, passos do exercício e link do GeoPackage', async ({ page }) => {
+  await page.goto('./#/licao/08-05');
+  await expect(page.locator('main')).toContainText('postes-copia.gpkg');
+  await expect(page.locator('main')).toContainText('67');
+  await expect(page.locator('figure.diagrama svg')).toContainText('4a. Save Layer Edits');
+  await expect(page.locator('figure.diagrama svg')).toContainText('na memória do QGIS');
+  await expect(page.getByRole('link', { name: 'rede-ficticia.gpkg' })).toHaveAttribute('href', /dados-qgis\/rede-ficticia\.gpkg$/);
+});
+
+test('08-05: termo modo de edição abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-05');
+  await page.getByRole('link', { name: 'edição ligada', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=modo-de-edicao/);
+  await expect(page.getByText('Save Layer Edits', { exact: false }).first()).toBeVisible();
 });

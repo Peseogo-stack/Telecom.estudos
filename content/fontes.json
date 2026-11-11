@@ -780,7 +780,7 @@
     "tipo": "documentacao",
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/create_layers.html",
     "acessadoEm": "2026-11-10",
-    "observacao": "Igual na versão testing. Para gravar a camada em outro SRC (reprojetar de verdade, gerando arquivo novo): botão direito na camada ► Export ► Save Features As… (ou Layer ► Save As…) e escolher o SRC de destino. Salvar em outro formato: botão direito ► Export ► Save Features As… (ou Save Selected Features As…, só as selecionadas). No diálogo: Format, File name, Layer name (quando o arquivo é um contêiner, como o GeoPackage) e CRS (pode ser mudado para reprojetar os dados)."
+    "observacao": "Igual na versão testing. Para gravar a camada em outro SRC (reprojetar de verdade, gerando arquivo novo): botão direito na camada ► Export ► Save Features As… (ou Layer ► Save As…) e escolher o SRC de destino. Salvar em outro formato: botão direito ► Export ► Save Features As… (ou Save Selected Features As…, só as selecionadas). No diálogo: Format, File name, Layer name (quando o arquivo é um contêiner, como o GeoPackage) e CRS (pode ser mudado para reprojetar os dados). Usado na lição 08-05 para fazer a cópia de segurança: botão direito na camada ► Export ► Save Features As… grava a camada num arquivo novo."
   },
   {
     "id": "osm-cidades-rr",
@@ -816,7 +816,7 @@
     "tipo": "documentacao",
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/attribute_table.html",
     "acessadoEm": "2026-11-10",
-    "observacao": "\"Each row in the table represents a feature (with or without geometry), and each column contains a particular piece of information about the feature\" (coluna = campo). O QGIS carrega camadas espaciais e tabelas não espaciais (sem geometria); as não espaciais aparecem e se editam na mesma tela de tabela de atributos. Abrir: Layer ► Open Attribute Table, botão Open Attribute Table da barra Attributes, ou F6; Shift+F6 abre só as feições selecionadas. O título da tabela mostra o total de feições da camada e quantas estão selecionadas ou filtradas. No canto inferior esquerdo, lista de filtros: Show All Features, Show Selected Features, Show Features Visible on Map. Modos: Table view (uma linha por feição) e Form view (uma feição por vez). Menus e atalhos iguais na 3.44 e na versão 4.x em desenvolvimento (https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/attribute_table.html, conferido em 10/11/2026). Diferença na 4.x: \"Double clicking the row header will zoom to the feature in the map canvas (if the layer has geometry).\" Essa frase não está no manual da 3.44. Acrescentado para a lição 08-06: a lista no canto inferior esquerdo (Show All Features, Show Selected Features) equivale a abrir a tabela com Shift+F6. Field Calculator (botão na tabela, Ctrl+I): cria um campo novo ou atualiza um existente com o resultado de uma expressão, ou seja, altera dados; o uso fica para a lição 08-05."
+    "observacao": "\"Each row in the table represents a feature (with or without geometry), and each column contains a particular piece of information about the feature\" (coluna = campo). O QGIS carrega camadas espaciais e tabelas não espaciais (sem geometria); as não espaciais aparecem e se editam na mesma tela de tabela de atributos. Abrir: Layer ► Open Attribute Table, botão Open Attribute Table da barra Attributes, ou F6; Shift+F6 abre só as feições selecionadas. O título da tabela mostra o total de feições da camada e quantas estão selecionadas ou filtradas. No canto inferior esquerdo, lista de filtros: Show All Features, Show Selected Features, Show Features Visible on Map. Modos: Table view (uma linha por feição) e Form view (uma feição por vez). Menus e atalhos iguais na 3.44 e na versão 4.x em desenvolvimento (https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/attribute_table.html, conferido em 10/11/2026). Diferença na 4.x: \"Double clicking the row header will zoom to the feature in the map canvas (if the layer has geometry).\" Essa frase não está no manual da 3.44. Acrescentado para a lição 08-06: a lista no canto inferior esquerdo (Show All Features, Show Selected Features) equivale a abrir a tabela com Shift+F6. Field Calculator (botão na tabela, Ctrl+I): cria um campo novo ou atualiza um existente com o resultado de uma expressão, ou seja, altera dados; o uso fica para a lição 08-05. Na lição 08-05: a tabela de atributos também tem o botão de ligar a edição (Toggle Editing); o Field Calculator (Ctrl+I) cria ou atualiza um campo com uma expressão, ou seja, altera dados."
   },
   {
     "id": "qgis-ferramentas-gerais",
@@ -972,13 +972,22 @@
     "observacao": "Post de 04/11/2026. \"QGIS 4.4.0 would be delayed while we work to clear up a number of regressions that occurred in the porting of QGIS from Qt5 to Qt6. The original planned date for the release was 30 October 2026.\" Critério: \"Any issue which occurs in QGIS 4.4 and does not occur in 3.x is considered blocking.\" O post não dá data nova."
   },
   {
+    "id": "qgis-edicao",
+    "titulo": "QGIS User Guide 3.44: Editing",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/editing_geometry_attributes.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Mesma página em /testing/ (4.x em desenvolvimento); os nomes de menu e de ferramenta são iguais nos dois manuais, conferidos em 11/11/2026. A única diferença achada: o manual da 4.x acrescenta uma frase lembrando de salvar com Save Layer Edits. \"All editing sessions start by choosing the Toggle editing option found in the context menu of a given layer, from the attribute table dialog, the digitizing toolbar or the Layer menu.\" Com a edição ligada, as ferramentas de edição ficam disponíveis e aparecem marcadores nos vértices. \"When a layer is in editing mode, any changes remain in the memory of QGIS. Therefore, they are not committed/saved immediately to the data source or disk.\" Save Layer Edits grava sem sair da edição: \"Remember to Save Layer Edits regularly. This will also check that your data source can accept all the changes.\" Ao desligar a edição (Toggle editing) ou fechar o QGIS, \"you are also asked if you want to save your changes or discard them\". Se não der para salvar (disco cheio, atributo com valor fora da faixa), o estado em memória é preservado, para ajustar e tentar de novo. \"It is always a good idea to back up your data source before you start editing. While the authors of QGIS have made every effort to preserve the integrity of your data, we offer no warranty in this regard.\" Adicionar: Add Point Feature, Add Line Feature ou Add Polygon Feature, conforme o tipo da camada; para tabela sem geometria, Add Record. Mover vértice: com a Vertex Tool, selecionar o vértice, clicar nele e clicar no novo lugar. Apagar: selecionar as feições e usar Delete Selected. Undo (Ctrl+Z): as feições e os atributos voltam ao estado anterior à operação desfeita. Várias camadas de uma vez: Save for Selected Layers e Rollback for Selected Layers (desfaz a digitalização das camadas escolhidas). A tolerância de aderência (snapping) é configurada em Settings ► Options… ► Digitizing. Não conferido: se o Undo funciona depois de salvar."
+  },
+  {
     "id": "qgis-interface",
     "titulo": "QGIS User Guide 3.44: QGIS GUI",
     "organizacao": "QGIS Project",
     "tipo": "documentacao",
     "url": "https://docs.qgis.org/3.44/en/docs/user_manual/introduction/qgis_gui.html",
     "acessadoEm": "2026-11-11",
-    "observacao": "A versão instalada aparece em Help ► About (no macOS, QGIS ► About QGIS)."
+    "observacao": "A versão instalada aparece em Help ► About (no macOS, QGIS ► About QGIS). Acrescentado para a lição 08-05 (igual na 4.x): menu Layer: Toggle Editing e Save Layer Edits. Menu Edit: Add Point Feature (Ctrl+.), Vertex Tool (Current Layer) e Delete Selected."
   },
   {
     "id": "qgis-complementos",

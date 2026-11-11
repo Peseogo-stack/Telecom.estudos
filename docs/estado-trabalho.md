@@ -10,6 +10,15 @@ Atualizado em 11/11/2026. Este arquivo diz o que está pronto, o que ficou pela 
 - Vídeos: a tela, o validador e o `npm run conferir-videos` estão no main. Toda lição tem termos de busca.
 - Dados fictícios de QGIS em `public/dados-qgis/` (`npm run dados-qgis`).
 
+## Trilha em 4 etapas (11/11/2026)
+
+Branch `trilha-em-etapas` (D20). A Trilha agora agrupa os módulos em 4 etapas: 1 · Base (1, 10, 2, 3), 2 · Mão na massa (5, 6, 4), 3 · O trabalho na distribuidora (9, 7, 8) e 4 · Aprofundar (11, 12). Só mudou a exibição e a ordem do plano: os IDs são os mesmos, então progresso, revisões e links continuam valendo.
+
+- As etapas ficam em `content/curriculo.json` (`etapas`). O validador confere que cada módulo está em uma etapa só e que o plano segue a ordem da Trilha.
+- Plano: um módulo por semana (o 11 em duas), com novos marcos. A 01-01 continua como "comece por aqui" opcional.
+- Cada módulo mostra "N de M prontas"; dentro dele, as lições que faltam ficam num bloco "Em construção" no fim.
+- Lições que faltam na Etapa 1: 03-02, 03-05, 03-06 e 10-02. O módulo 2 está completo.
+
 ## Vídeos do P1 e do módulo 1: conferidos em 11/11/2026
 
 Método: título e canal pelo oEmbed; descrição, capítulos e duração pela YouTube Data API (`videos.list`). Sem transcrição: o que o vídeo fala e a descrição não mostra fica no `aviso`. Regras: no máximo 2 por lição; nada que contradiga a lição; vídeo de mais de 20 min sem capítulos fica de fora; propaganda forte ou assunto só pelo título também.

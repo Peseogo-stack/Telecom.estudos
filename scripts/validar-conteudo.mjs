@@ -207,6 +207,26 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
   }
   for (const id of idsCurriculo) if (!noPlano.includes(id) && id !== inicial) erro('plano.json', `lição ${id} fora do plano`);
 
+  // ---- Etapas da Trilha ----
+  // Cada módulo fica em uma etapa só, e o plano segue a ordem da Trilha (etapa, módulo, lição).
+  const etapas = curriculo.etapas ?? [];
+  if (!etapas.length) erro('curriculo.json', 'sem "etapas"');
+  const idsModulos = curriculo.modulos.map((m) => m.id);
+  const nasEtapas = etapas.flatMap((e) => e.modulos ?? []);
+  for (const e of etapas) {
+    if (!e.id || !e.titulo || !e.descricao) erro(`curriculo.json[etapa ${e.id}]`, 'etapa sem id, título ou descrição');
+    for (const [campo, texto] of Object.entries(e)) if (typeof texto === 'string' && /[*`]/.test(texto)) erro(`curriculo.json[etapa ${e.id}]`, `${campo} com Markdown (*, \`)`);
+    for (const m of e.modulos ?? []) if (!idsModulos.includes(m)) erro(`curriculo.json[etapa ${e.id}]`, `módulo ${m} não existe`);
+  }
+  for (const m of idsModulos) {
+    const n = nasEtapas.filter((x) => x === m).length;
+    if (n !== 1) erro('curriculo.json', `módulo ${m} aparece em ${n} etapas (deve aparecer em 1)`);
+  }
+  const ordemTrilha = nasEtapas.flatMap((id) => curriculo.modulos.find((m) => m.id === id)?.licoes.map((l) => l.id) ?? []);
+  const ordemPlano = [...(inicial ? [inicial] : []), ...noPlano];
+  const desvio = ordemTrilha.findIndex((id, i) => ordemPlano[i] !== id);
+  if (desvio !== -1) erro('plano.json', `o plano sai da ordem da Trilha na posição ${desvio + 1}: esperava ${ordemTrilha[desvio]}, veio ${ordemPlano[desvio]}`);
+
   // ---- Banco de perguntas para a empresa ----
   const perguntasEmpresa = lerPerguntasEmpresa();
   const perguntasPorId = new Map();

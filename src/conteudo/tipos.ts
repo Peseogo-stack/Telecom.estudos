@@ -39,6 +39,16 @@ export interface Modulo {
   licoes: LicaoResumo[];
 }
 
+/** Etapa da Trilha: agrupa módulos na ordem de estudo. Os IDs dos módulos não mudam. */
+export interface Etapa {
+  id: string;
+  titulo: string;
+  /** Selo curto ao lado do título (ex.: "comece aqui"). */
+  rotulo?: string;
+  descricao: string;
+  modulos: string[];
+}
+
 export interface PerguntaEmpresa {
   id: string;
   onde: Onde;
@@ -66,7 +76,7 @@ export interface Checklist {
 
 export interface Indice {
   geradoEm: string;
-  curriculo: { modulos: Modulo[] };
+  curriculo: { etapas: Etapa[]; modulos: Modulo[] };
   plano: {
     semanas: SemanaPlano[];
     marcos: { dia: number; texto: string }[];

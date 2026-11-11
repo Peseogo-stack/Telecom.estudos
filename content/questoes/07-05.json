@@ -1,0 +1,250 @@
+[
+  {
+    "id": "07-05-q1",
+    "licao": "07-05",
+    "enunciado": "Do solo, você vê um drop esticado cruzando a rua, e ele parece baixo. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Subir na escada e levantar o drop com uma vara, para a rua ficar livre enquanto o ocupante é avisado.",
+        "correta": false,
+        "explicacao": "Você não toca nem levanta o cabo. Cabo baixo é risco de acidente, e mexer nele perto da rede segue a lição 10-01, a APR e o procedimento da empresa."
+      },
+      {
+        "texto": "Medir a altura com uma trena, parado embaixo do drop, para só comunicar se estiver mesmo baixo.",
+        "correta": false,
+        "explicacao": "Você não mede embaixo da rede. Como medir com segurança, com que instrumento e quem pode, é procedimento da empresa."
+      },
+      {
+        "texto": "Ficar longe, sinalizar conforme o procedimento, registrar poste, vão e foto de longe, e comunicar na hora.",
+        "correta": true,
+        "explicacao": "Certo. Cabo baixo é risco de acidente: o ocupante tem de regularizar na hora, e você registra e comunica sem se expor."
+      },
+      {
+        "texto": "Anotar no relatório e comunicar no fim da semana, porque a regularização depende de notificação.",
+        "correta": false,
+        "explicacao": "Situação com risco de acidente é regularizada imediatamente pelo ocupante, sem esperar notificação. Você comunica na hora."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-05-q2",
+    "licao": "07-05",
+    "enunciado": "Do solo, um cabo cruza a rua entre dois postes. O cadastro traz só a altura da fixação em cada poste. Onde a norma de exemplo cobra a altura mínima?",
+    "alternativas": [
+      {
+        "texto": "No ponto de fixação de cada poste, que é onde o cabo está preso e onde a cota do cadastro foi anotada.",
+        "correta": false,
+        "explicacao": "Em terreno plano, o meio do vão fica mais baixo que o poste. Altura no poste não prova altura no vão."
+      },
+      {
+        "texto": "Na média entre a altura no poste e a altura no meio do vão, porque o cabo desce de um lado e sobe do outro.",
+        "correta": false,
+        "explicacao": "A norma não tira média. A cota \"h mínimo\" vai do ponto mais baixo do vão ao solo."
+      },
+      {
+        "texto": "Só no poste mais próximo da via, porque o cabo ali está mais perto de quem passa.",
+        "correta": false,
+        "explicacao": "A altura vale para o ponto mais baixo do vão, e não para um poste."
+      },
+      {
+        "texto": "No ponto mais baixo do vão, a barriga do cabo, na pior condição de flecha, e não no poste.",
+        "correta": true,
+        "explicacao": "Certo. É a barriga do cabo, na pior condição de flecha. O campo de altura no poste, sozinho, não responde se o vão atende."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-05-q3",
+    "licao": "07-05",
+    "enunciado": "De manhã o cabo sobre a rua parecia alto. À tarde, com sol forte, parece mais baixo. Qual é a explicação?",
+    "alternativas": [
+      {
+        "texto": "O calor aumenta a flecha, e por isso a norma de exemplo usa a flecha máxima, a 50 °C.",
+        "correta": true,
+        "explicacao": "Certo. A altura é cobrada na pior condição, com a flecha máxima, e não numa hora boa do dia."
+      },
+      {
+        "texto": "A norma só cobra altura à tarde, quando passa mais veículo, e de manhã o cabo não é conferido.",
+        "correta": false,
+        "explicacao": "A norma não escolhe a hora pelo movimento. Ela cobra a altura na pior condição de flecha."
+      },
+      {
+        "texto": "É só impressão: a altura do cabo no meio do vão não muda com a temperatura.",
+        "correta": false,
+        "explicacao": "Muda: com calor, a flecha aumenta, e o ponto mais baixo desce."
+      },
+      {
+        "texto": "Conferir de manhã basta, porque a altura que vale é a da fixação no poste, que não muda.",
+        "correta": false,
+        "explicacao": "A altura que vale é a do ponto mais baixo do vão, na pior condição. A do poste não responde pelo meio do vão."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-05-q4",
+    "licao": "07-05",
+    "enunciado": "A equipe da empresa registrou, no ponto mais baixo, 4,6 m num vão que termina na entrada de um prédio e passa por uma rua. Como ler isso com a tabela de exemplo?",
+    "alternativas": [
+      {
+        "texto": "Atende a entrada de prédio, que pede 4,5 m, e não atende a rua, que pede 5,0 m: registrar e comunicar.",
+        "correta": true,
+        "explicacao": "Certo. O mesmo cabo muda de situação conforme o que passa embaixo."
+      },
+      {
+        "texto": "Atende as duas, porque 4,6 m passa dos 4,5 m e a diferença para os 5,0 m é pequena.",
+        "correta": false,
+        "explicacao": "A diferença pequena não conta: sobre ruas e avenidas o exemplo pede 5,0 m."
+      },
+      {
+        "texto": "Não atende nenhuma das duas, porque a tabela só vale para altura no poste e não no vão.",
+        "correta": false,
+        "explicacao": "É o contrário: a altura da tabela vale para o ponto mais baixo do vão, e foi nele que a equipe registrou."
+      },
+      {
+        "texto": "Atende só a rua, porque rua tem trânsito de pedestres, que pedem menos altura que a entrada de prédio.",
+        "correta": false,
+        "explicacao": "Rua pede 5,0 m, mais que a entrada de prédio, 4,5 m. A altura cresce com o que passa embaixo."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-05-q5",
+    "licao": "07-05",
+    "enunciado": "Do solo, você vê um cabo novo cruzando uma rodovia federal. Segundo o exemplo da Cemig, o que se exige?",
+    "alternativas": [
+      {
+        "texto": "5,0 m, a mesma altura de rua, porque os dois são vias abertas ao trânsito de veículos.",
+        "correta": false,
+        "explicacao": "A rodovia federal pede mais: 7,0 m no exemplo, contra 5,0 m das ruas e avenidas."
+      },
+      {
+        "texto": "7,0 m de altura, e a norma da distribuidora basta, porque a rodovia não tem outro responsável.",
+        "correta": false,
+        "explicacao": "Rodovia tem dono: a travessia exige autorização ou projeto aprovado conforme as normas do órgão competente."
+      },
+      {
+        "texto": "7,0 m mais autorização ou projeto aprovado do órgão competente; o valor final é o do órgão.",
+        "correta": true,
+        "explicacao": "Certo. O 7,0 m é do exemplo; vale a regra do órgão responsável, e a distribuidora confirma quem cuida disso."
+      },
+      {
+        "texto": "6,0 m, que é a altura de ferrovia, porque a rodovia usa o mesmo valor da via mais pesada.",
+        "correta": false,
+        "explicacao": "Os 6,0 m são da ferrovia não eletrificada. Para rodovia federal o exemplo pede 7,0 m."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-05-q6",
+    "licao": "07-05",
+    "enunciado": "Um colega vê 5.500 na linha de ruas e avenidas da Tabela 03 da Energisa NDU-009 v4.0 e quer usar como altura mínima do cabo de telecom. O que dizer?",
+    "alternativas": [
+      {
+        "texto": "Serve, porque a Energisa pede mais que os 5,0 m do exemplo da Cemig, e o maior valor é sempre o mais seguro.",
+        "correta": false,
+        "explicacao": "A tabela da Energisa não tem coluna de telecom. Maior número de outra coluna não vira regra para telecom."
+      },
+      {
+        "texto": "Não serve: as colunas dessa tabela são de energia, sem telecom, e a altura vale a da norma da empresa.",
+        "correta": true,
+        "explicacao": "Certo. A tabela é de energia. Ela só mostra que as normas não são iguais."
+      },
+      {
+        "texto": "Serve, porque as normas de distribuidoras usam os mesmos números e a diferença é só de arredondamento.",
+        "correta": false,
+        "explicacao": "As normas não são iguais, e por isso não se decora número: abre-se a norma da distribuidora."
+      },
+      {
+        "texto": "Não serve, porque a Energisa é de outro estado, e norma de outra empresa nunca vale nem como exemplo.",
+        "correta": false,
+        "explicacao": "A lição usa a Energisa como exemplo de que as normas não são iguais. O problema é que a tabela é de energia, sem coluna de telecom."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-05-q7",
+    "licao": "07-05",
+    "enunciado": "Um cabo de telecom caiu e está baixo sobre uma rua. Um motorista pergunta se pode passar embaixo. O que você faz?",
+    "alternativas": [
+      {
+        "texto": "Orienta a passar devagar, porque o cabo está só encostado e não há risco de acidente.",
+        "correta": false,
+        "explicacao": "Cabo baixo é risco de acidente, e liberar o trânsito não é com você."
+      },
+      {
+        "texto": "Para o carro no meio da rua e fica ali, para ninguém passar enquanto o ocupante não chega.",
+        "correta": false,
+        "explicacao": "Você não para no meio da via. Sinaliza conforme o procedimento da empresa e mantém distância."
+      },
+      {
+        "texto": "Pega uma vara seca e levanta o cabo, para a rua ficar livre e o motorista seguir.",
+        "correta": false,
+        "explicacao": "Você não toca nem levanta o cabo. Perto da rede valem a lição 10-01, a APR e o procedimento da empresa."
+      },
+      {
+        "texto": "Mantém distância, sinaliza conforme o procedimento, registra e comunica na hora.",
+        "correta": true,
+        "explicacao": "Certo. Liberar a via e mexer no cabo não é com o técnico. O ocupante regulariza na hora."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "07-05-q8",
+    "licao": "07-05",
+    "enunciado": "No exercício com os dados fictícios, um ponto de fixação tem altura_fixacao_m de 5,2 m, num poste de vão que cruza uma rua. O parâmetro do exercício é 5,0 m. O que dizer?",
+    "alternativas": [
+      {
+        "texto": "Está acima de 5,0 m, então o cabo atende sobre a rua em qualquer ponto do vão.",
+        "correta": false,
+        "explicacao": "O campo é a altura no poste. No meio do vão, com a flecha, o cabo está mais baixo."
+      },
+      {
+        "texto": "Não dá para afirmar: o campo é a altura no poste, e a que se cobra é a do ponto mais baixo do vão.",
+        "correta": true,
+        "explicacao": "Certo. A flecha reduz a altura no meio do vão, então 5,2 m no poste não garante 5,0 m sobre a rua."
+      },
+      {
+        "texto": "Está acima de 5,0 m, então o cabo atende, desde que ninguém tenha mexido nele depois do cadastro.",
+        "correta": false,
+        "explicacao": "Mesmo sem mexer, a flecha deixa o meio do vão mais baixo que o poste. O campo não mede o vão."
+      },
+      {
+        "texto": "Não atende: o campo guarda a altura do topo do poste, e o cabo fica sempre abaixo dele.",
+        "correta": false,
+        "explicacao": "O campo é a altura do ponto de fixação do cabo, não do topo do poste. O problema é que ele é a altura no poste, não no vão."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 3
+  }
+]

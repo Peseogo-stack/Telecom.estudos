@@ -981,5 +981,41 @@
     "licoes": [
       "07-04"
     ]
+  },
+  {
+    "id": "b31",
+    "onde": "documentos",
+    "texto": "Na norma da empresa, quais são as alturas mínimas do cabo de telecom sobre rua, entrada de veículos e passagem de pedestres?",
+    "dica": "Norma de compartilhamento: tabela de distâncias mínimas ao solo",
+    "licoes": [
+      "07-05"
+    ]
+  },
+  {
+    "id": "c20",
+    "onde": "outras-areas",
+    "texto": "Para travessia de rodovia, que órgão autoriza e quem na empresa cuida disso?",
+    "dica": "Área de projetos ou de compartilhamento de postes",
+    "licoes": [
+      "07-05"
+    ]
+  },
+  {
+    "id": "d39",
+    "onde": "colega",
+    "texto": "Como a equipe mede a altura de um cabo com segurança: com que instrumento e quem pode medir?",
+    "dica": "Colega que já fez vistoria de poste",
+    "licoes": [
+      "07-05"
+    ]
+  },
+  {
+    "id": "d40",
+    "onde": "colega",
+    "texto": "Qual é o procedimento ao encontrar um cabo baixo sobre a via: a quem avisar e como sinalizar?",
+    "dica": "Colega que já fez vistoria de poste",
+    "licoes": [
+      "07-05"
+    ]
   }
 ]

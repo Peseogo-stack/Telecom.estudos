@@ -79,3 +79,18 @@ Cada lição é escrita a partir de uma ficha com o trecho literal de cada fonte
 | Questão 3: o poste com transformador "não admite equipamento em altura nenhuma" | Cemig 6.33: "não permitindo instalação de equipamento" | "o exemplo da Cemig não permite instalação de equipamento" (explicação e alternativa correta) |
 
 **Vídeos:** nenhum entrou. Os candidatos eram de divulgação de serviço, de montagem de caixa sem fonte de norma, e um cuja descrição fala em reserva em cruzeta (o contrário dos dois exemplos).
+
+## 07-05 — Alturas ao solo (11/11/2026)
+
+**Fontes (abertas em 10/11/2026; a Tabela 2 da Cemig eu reli como imagem em 11/11):** Cemig ND-6.6 (item 7.1, Tabela 2, coluna "Telecomunicação e cabos aterrados", e a cota "h mínimo" da Figura 2), Energisa NDU-009 v4.0 (Tabela 03, sem coluna de telecom) e Resolução Conjunta 4/2014 (art. 4º, III e §7º).
+
+**Dados do exercício conferidos no arquivo:** 12 vãos com travessia; 3 pontos de fixação abaixo de 5,0 m em postes desses vãos (PF-0050, PF-0057 e PF-0058). A lição avisa que o campo é a altura no poste, não no meio do vão.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "A altura no ponto de fixação do poste é maior que a do meio do vão", como regra | Vale em terreno plano; com desnível, não necessariamente | "Em terreno plano, a barriga deixa o meio do vão mais baixo que o ponto de fixação" (lição e explicação da questão 2) |
+| "A tabela de ruas e avenidas" da Energisa | A Energisa v4.0 tem uma Tabela 03 por tensão de energia; ruas e avenidas é uma linha dela | "a Tabela 03 dela tem só colunas por tensão da rede de energia (em ruas e avenidas, 5.500 e 6.000 mm)" (lição e questão 6) |
+
+**Segurança:** a lição trata cabo baixo como risco de acidente e diz o que o técnico não faz: medir embaixo da rede, tocar ou levantar o cabo, parar no meio da via, liberar o trânsito.
+
+**Vídeos:** nenhum. As buscas só trouxeram vídeos fora do tema (posição de trabalho no poste, rapel, vigas e laje).

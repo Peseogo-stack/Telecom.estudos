@@ -1014,7 +1014,8 @@
     ],
     "licoes": [
       "03-01",
-      "07-04"
+      "07-04",
+      "07-05"
     ]
   },
   {
@@ -1262,7 +1263,8 @@
       "03-07",
       "04-01",
       "07-03",
-      "07-04"
+      "07-04",
+      "07-05"
     ]
   },
   {
@@ -1925,7 +1927,8 @@
     "licoes": [
       "07-01",
       "07-02",
-      "07-03"
+      "07-03",
+      "07-05"
     ]
   },
   {
@@ -2042,7 +2045,8 @@
       "cemig-nd66"
     ],
     "licoes": [
-      "07-02"
+      "07-02",
+      "07-05"
     ]
   },
   {
@@ -2227,6 +2231,17 @@
     ],
     "licoes": [
       "07-04"
+    ]
+  },
+  {
+    "id": "travessia",
+    "pt": "Travessia",
+    "definicao": "Trecho em que o cabo cruza uma via (rua, avenida, rodovia, ferrovia). Nele, a altura do ponto mais baixo do vão ao solo é a que mais importa.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-05"
     ]
   }
 ]

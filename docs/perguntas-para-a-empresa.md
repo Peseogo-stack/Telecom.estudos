@@ -74,6 +74,7 @@
 | b28 | Na norma da empresa, onde podem ficar a caixa de emenda e a reserva de cabo, e a que distância do poste? | Norma de compartilhamento: seção sobre caixa de emenda e reserva técnica | 07-04 |
 | b29 | A norma permite caixa ou equipamento do ocupante no poste? Em quais postes é proibido (transformador, esquina, chave)? | Norma de compartilhamento: seção sobre equipamentos no poste | 07-04 |
 | b30 | Quantos drops por vão a norma permite e de onde eles podem sair? | Norma de compartilhamento: seção sobre derivação para clientes | 07-04 |
+| b31 | Na norma da empresa, quais são as alturas mínimas do cabo de telecom sobre rua, entrada de veículos e passagem de pedestres? | Norma de compartilhamento: tabela de distâncias mínimas ao solo | 07-05 |
 
 ---
 
@@ -100,6 +101,7 @@
 | c17 | Quem na empresa acompanha o novo regulamento da ANEEL e da Anatel para os postes, e a empresa já se prepara para uma eventual cessão da exploração dos postes? | Área regulatória ou de compartilhamento | 07-01 |
 | c18 | Quem instala e atualiza o QGIS nos computadores da empresa (TI)? Posso instalar por conta própria? | TI ou o setor responsável pelos computadores | 08-01 |
 | c19 | Posso levar dados da rede no celular? É celular da empresa ou pessoal? O que a TI e a segurança da informação exigem? | TI e segurança da informação | 08-07 |
+| c20 | Para travessia de rodovia, que órgão autoriza e quem na empresa cuida disso? | Área de projetos ou de compartilhamento de postes | 07-05 |
 
 ---
 
@@ -145,6 +147,8 @@
 | d36 | Como registro um cabo sem plaqueta ou com plaqueta ilegível: formulário, foto, sistema? | 07-03 |
 | d37 | Depois de quantos avisos, e por quem, um cabo sem dono identificado passa a ser tratado como clandestino? | 07-03 |
 | d38 | Quais dessas irregularidades (reserva ou caixa no poste, drop no meio do vão) a equipe mais encontra e como costuma registrar? | 07-04 |
+| d39 | Como a equipe mede a altura de um cabo com segurança: com que instrumento e quem pode medir? | 07-05 |
+| d40 | Qual é o procedimento ao encontrar um cabo baixo sobre a via: a quem avisar e como sinalizar? | 07-05 |
 
 ---
 

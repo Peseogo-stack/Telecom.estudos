@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['07-01', '07-02', '07-03', '07-04']) {
+for (const id of ['07-01', '07-02', '07-03', '07-04', '07-05']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -118,7 +118,36 @@ test('07-04: termo reserva técnica abre a definição no glossário', async ({ 
   await expect(page.getByText('Sobra de cabo do ocupante', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro', '#/licao/07-02', '#/licao/07-02/questoes', '#/licao/07-03', '#/licao/07-03/questoes', '#/licao/07-04', '#/licao/07-04/questoes']) {
+test('07-05: diagrama mostra o ponto mais baixo, os exemplos e a etiqueta de exemplo', async ({ page }) => {
+  await page.goto('./#/licao/07-05');
+  const svg = page.locator('figure.diagrama svg');
+  await expect(svg).toContainText('medida aqui, no');
+  await expect(svg).toContainText('ponto mais baixo');
+  await expect(svg).toContainText('ruas e avenidas 5,0 m');
+  await expect(svg).toContainText('rodovia federal 7,0 m');
+  await expect(svg).toContainText('Com calor, a flecha aumenta.');
+  await expect(svg).toContainText('Exemplo: Cemig ND-6.6, Tabela 2.');
+});
+
+test('07-05: tabela de exemplo, altura no vão e conduta de segurança', async ({ page }) => {
+  await page.goto('./#/licao/07-05');
+  const licao = page.locator('main');
+  await expect(licao).toContainText('não é a regra da sua empresa');
+  await expect(licao).toContainText('ponto mais baixo');
+  await expect(licao).toContainText('Altura no poste não prova altura no vão');
+  await expect(licao).toContainText('Você não mede embaixo da rede');
+  await expect(licao).toContainText('não libera o trânsito');
+  await expect(licao).toContainText('comunique na hora');
+});
+
+test('07-05: termo travessia abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/07-05');
+  await page.getByRole('link', { name: 'travessia', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=travessia/);
+  await expect(page.getByText('cruza uma via', { exact: false }).first()).toBeVisible();
+});
+
+for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro', '#/licao/07-02', '#/licao/07-02/questoes', '#/licao/07-03', '#/licao/07-03/questoes', '#/licao/07-04', '#/licao/07-04/questoes', '#/licao/07-05', '#/licao/07-05/questoes']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();

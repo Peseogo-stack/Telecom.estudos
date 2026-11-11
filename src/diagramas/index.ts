@@ -44,6 +44,7 @@ import { PlaquetaIdentificacao } from './PlaquetaIdentificacao';
 import { OndeFicaCadaCoisa } from './OndeFicaCadaCoisa';
 import { AlturasAoSolo } from './AlturasAoSolo';
 import { FluxoFiscalizacao } from './FluxoFiscalizacao';
+import { CalendarioRiscosRr } from './CalendarioRiscosRr';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -88,6 +89,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'onde-fica-cada-coisa': OndeFicaCadaCoisa,
   'alturas-ao-solo': AlturasAoSolo,
   'fluxo-fiscalizacao': FluxoFiscalizacao,
+  'calendario-riscos-rr': CalendarioRiscosRr,
 };
 
 

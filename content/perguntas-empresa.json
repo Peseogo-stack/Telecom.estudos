@@ -1062,5 +1062,41 @@
     "licoes": [
       "07-06"
     ]
+  },
+  {
+    "id": "d44",
+    "onde": "colega",
+    "texto": "Em que meses a equipe concentra as vistorias de postes, e o que muda na estação chuvosa?",
+    "dica": "",
+    "licoes": [
+      "07-07"
+    ]
+  },
+  {
+    "id": "b34",
+    "onde": "documentos",
+    "texto": "O que o procedimento manda fazer em caso de raio, chuva forte, vento ou fogo perto da rede durante o trabalho de campo?",
+    "dica": "Procedimento de segurança e instrução de trabalho da empresa",
+    "licoes": [
+      "07-07"
+    ]
+  },
+  {
+    "id": "d45",
+    "onde": "colega",
+    "texto": "Depois de temporal ou queimada, quem decide reinspecionar e como os danos em cabos de ocupantes são registrados?",
+    "dica": "",
+    "licoes": [
+      "07-07"
+    ]
+  },
+  {
+    "id": "c21",
+    "onde": "outras-areas",
+    "texto": "Quem acompanha o novo regulamento dos postes na empresa e como a equipe de campo fica sabendo quando algo mudar?",
+    "dica": "Área regulatória ou de relacionamento com ocupantes",
+    "licoes": [
+      "07-07"
+    ]
   }
 ]

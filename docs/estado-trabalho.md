@@ -38,7 +38,7 @@ Falta (está no commit "WIP"):
 - A consulta usa a YouTube Data API (`videos.list`, 1 unidade por chamada; `search.list` custa 100). A chave fica só no segredo de rede do ambiente (host `www.googleapis.com`, cabeçalho `X-Goog-Api-Key`). Ela não está no Git nem em nenhum documento.
 - Lições sem candidato até agora: 01-01, 01-02, 01-05, 02-04, 03-01, 09-02, 10-03 e 10-04.
 
-## Em andamento: P2 de QGIS (módulo 8) e postes (módulo 7)
+## P2 de QGIS (módulo 8) e postes (módulo 7): concluído em 11/11/2026
 
 Branch `p2-qgis-postes`. Uma lição por vez, fechada por inteiro (pesquisa na fonte, lição, diagrama, glossário, perguntas para a empresa, 8 questões, vídeos ou termos de busca, revisão técnica, `npm run verificar`, merge no main).
 
@@ -61,3 +61,4 @@ As fichas de fatos de todas as lições (o que foi conferido na fonte, com os tr
 | 07-04 Reserva, CEO, CTO e drops | 11/11/2026 | 8 | 0 (só termos de busca) | O que o exemplo da Cemig permite no poste com transformador (a rede passa direto e só se deriva para clientes; não "só o drop") |
 | 07-05 Alturas ao solo | 11/11/2026 | 8 | 0 (só termos de busca) | "Poste mais alto que o meio do vão" só vale em terreno plano; a tabela da Energisa descrita como é (Tabela 03, por tensão de energia) |
 | 07-06 Fiscalizar, notificar, retirar | 11/11/2026 | 8 | 0 (só termos de busca) | A norma diz que o detentor "pode" pedir à Comissão e "pode" retirar; a lição e o diagrama diziam que ele pede e retira |
+| 07-07 Riscos em Roraima e o novo regulamento | 11/11/2026 | 8 | 0 (só termos de busca) | O decreto já manda ceder; o que falta é a regulação conjunta (preço, faixa, regularização); ressalva dos sites fora do ar; a regra de parar ganhou a fonte (NR-10, 10.6.3) |

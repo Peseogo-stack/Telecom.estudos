@@ -109,3 +109,19 @@ Cada lição é escrita a partir de uma ficha com o trecho literal de cada fonte
 **Papel do técnico:** vê, registra e comunica; não decide se é clandestino, não corta e não retira. Retirada é serviço de equipe autorizada, com procedimento e análise de risco (lição 10-01).
 
 **Vídeos:** nenhum entrou. Duas das três buscas não deram resultado; a terceira trouxe um vídeo de canal com fim comercial (aluguel de postes) e uma notícia municipal.
+
+## 07-07 — Riscos em Roraima e o novo regulamento (11/11/2026)
+
+**Fontes abertas em 11/11/2026:** Embrapa, Comunicado Técnico 006 (1989), probabilidades do início e do fim do período chuvoso em Boa Vista; INPA (Barbosa, 2010), focos de calor em Roraima de 1999 a 2009. A lição diz que são séries antigas e médias. As fontes regulatórias são as da 07-01 (abertas em 10/11), e a lista de notícias sobre postes do Teletime foi conferida de novo em 11/11 (nada novo depois de 06/11).
+
+**O que entrou do clima:** chuva em Boa Vista da 1ª ou 2ª dezena de maio à 2ª dezena de setembro (50% de chance de começar na 3ª dezena de abril), com junho no pico e veranicos a partir da 2ª dezena de julho e na 3ª de agosto; focos de calor concentrados de dezembro a março, com pico em fevereiro e março. Nada de número de raios ou vento de Roraima: não achei fonte primária.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "A proposta mexeria em três pontos", citando o decreto como se ele fosse a proposta | Decreto 12.068/2024, art. 16: a cessão já está no decreto; preço, uso da faixa e regularização ficam para a regulação conjunta | "O decreto manda ceder… e deixa para a regulação conjunta, que ainda não saiu, o preço, o uso da faixa e as regras de regularização" (lição e questão 8) |
+| "Em 10 e 11/11/2026, não encontramos resolução conjunta nova", sem ressalva | Sites da Anatel e do Diário Oficial fora do ar em 10/11 | Ressalva entre parênteses |
+| Regra de parar com raio, chuva, vento ou fogo, sem fonte na lição (as questões citavam a NR-10) | NR-10 vigente, 10.6.3: serviço em instalação energizada ou perto dela suspenso de imediato na iminência de ocorrência que ponha o trabalhador em perigo | Frase com a fonte |
+
+A lição passou de 700 palavras com as correções e foi enxugada.
+
+**Vídeos:** nenhum entrou. Os três candidatos são reportagens de TV sobre um ano específico (2015, 2024 e outubro de 2026); nenhum é de órgão técnico.

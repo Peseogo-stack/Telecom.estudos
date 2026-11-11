@@ -77,6 +77,7 @@
 | b31 | Na norma da empresa, quais são as alturas mínimas do cabo de telecom sobre rua, entrada de veículos e passagem de pedestres? | Norma de compartilhamento: tabela de distâncias mínimas ao solo | 07-05 |
 | b32 | Qual é o modelo de notificação da empresa e que prazos o contrato dá para regularizar? | Contrato-padrão de compartilhamento e modelo de notificação | 07-06 |
 | b33 | Como a empresa guarda os registros de fiscalização e por quanto tempo? | Procedimento de fiscalização e de guarda de documentos | 07-06 |
+| b34 | O que o procedimento manda fazer em caso de raio, chuva forte, vento ou fogo perto da rede durante o trabalho de campo? | Procedimento de segurança e instrução de trabalho da empresa | 07-07 |
 
 ---
 
@@ -104,6 +105,7 @@
 | c18 | Quem instala e atualiza o QGIS nos computadores da empresa (TI)? Posso instalar por conta própria? | TI ou o setor responsável pelos computadores | 08-01 |
 | c19 | Posso levar dados da rede no celular? É celular da empresa ou pessoal? O que a TI e a segurança da informação exigem? | TI e segurança da informação | 08-07 |
 | c20 | Para travessia de rodovia, que órgão autoriza e quem na empresa cuida disso? | Área de projetos ou de compartilhamento de postes | 07-05 |
+| c21 | Quem acompanha o novo regulamento dos postes na empresa e como a equipe de campo fica sabendo quando algo mudar? | Área regulatória ou de relacionamento com ocupantes | 07-07 |
 
 ---
 
@@ -154,6 +156,8 @@
 | d41 | Quando registro uma irregularidade, para quem vai o registro e quem emite a notificação ao ocupante? | 07-06 |
 | d42 | Quem decide que um caso é emergência e quem executa a retirada de cabos? | 07-06 |
 | d43 | O que acontece com o material retirado (guarda, devolução, descarte)? | 07-06 |
+| d44 | Em que meses a equipe concentra as vistorias de postes, e o que muda na estação chuvosa? | 07-07 |
+| d45 | Depois de temporal ou queimada, quem decide reinspecionar e como os danos em cabos de ocupantes são registrados? | 07-07 |
 
 ---
 

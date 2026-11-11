@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['07-01', '07-02', '07-03', '07-04', '07-05', '07-06']) {
+for (const id of ['07-01', '07-02', '07-03', '07-04', '07-05', '07-06', '07-07']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -177,7 +177,40 @@ test('07-06: termo notificação abre a definição no glossário', async ({ pag
   await expect(page.getByText('Comunicação formal do detentor', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro', '#/licao/07-02', '#/licao/07-02/questoes', '#/licao/07-03', '#/licao/07-03/questoes', '#/licao/07-04', '#/licao/07-04/questoes', '#/licao/07-05', '#/licao/07-05/questoes', '#/licao/07-06', '#/licao/07-06/questoes']) {
+test('07-07: diagrama mostra os dois blocos do calendário e as notas', async ({ page }) => {
+  await page.goto('./#/licao/07-07');
+  const svg = page.locator('figure.diagrama svg');
+  await expect(svg).toContainText('Chuva (Boa Vista)');
+  await expect(svg).toContainText('maio a setembro; pico em junho');
+  await expect(svg).toContainText('Abril, mais claro');
+  await expect(svg).toContainText('Seca e focos de calor');
+  await expect(svg).toContainText('dezembro a março; pico em fevereiro e março');
+  await expect(svg).toContainText('Fontes: Embrapa (1989) e INPA (1999 a 2009).');
+  await expect(svg).toContainText('Médias de séries antigas.');
+  await expect(svg).toContainText('parar e comunicar.');
+});
+
+test('07-07: parar primeiro, proposta com data e o que o decreto diz', async ({ page }) => {
+  await page.goto('./#/licao/07-07');
+  const licao = page.locator('main');
+  await expect(licao).toContainText('Parar primeiro');
+  await expect(licao).toContainText('suspenda, afaste-se e comunique');
+  await expect(licao).toContainText('Não é hora de registrar');
+  await expect(licao).toContainText('em contato com rede energizada');
+  await expect(licao).toContainText('não vale para Roraima');
+  await expect(licao).toContainText('Em 11/11/2026, é proposta, não regra');
+  await expect(licao).toContainText('Pelo texto do decreto');
+  await expect(licao).toContainText('não é lei');
+});
+
+test('07-07: termo veranico abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/07-07');
+  await page.getByRole('link', { name: 'veranicos', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=veranico/);
+  await expect(page.getByText('dias sem chuva', { exact: false }).first()).toBeVisible();
+});
+
+for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro', '#/licao/07-02', '#/licao/07-02/questoes', '#/licao/07-03', '#/licao/07-03/questoes', '#/licao/07-04', '#/licao/07-04/questoes', '#/licao/07-05', '#/licao/07-05/questoes', '#/licao/07-06', '#/licao/07-06/questoes', '#/licao/07-07', '#/licao/07-07/questoes', '#/glossario?t=veranico']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();

@@ -2000,7 +2000,8 @@
       "cenario-energia-2026-10-28"
     ],
     "licoes": [
-      "07-01"
+      "07-01",
+      "07-07"
     ]
   },
   {
@@ -2277,6 +2278,28 @@
     ],
     "licoes": [
       "07-06"
+    ]
+  },
+  {
+    "id": "veranico",
+    "pt": "Veranico",
+    "definicao": "Sequência de dias sem chuva dentro do período chuvoso. Em Boa Vista, aparece com mais frequência a partir da segunda dezena de julho e na terceira dezena de agosto (série antiga).",
+    "fontes": [
+      "embrapa-chuvas-boa-vista-1989"
+    ],
+    "licoes": [
+      "07-07"
+    ]
+  },
+  {
+    "id": "foco-de-calor",
+    "pt": "Foco de calor",
+    "definicao": "Ponto de alta temperatura detectado por satélite, usado para acompanhar queimadas. Em Roraima, os focos se concentram de dezembro a março (série de 1999 a 2009).",
+    "fontes": [
+      "inpa-focos-calor-rr-2010"
+    ],
+    "licoes": [
+      "07-07"
     ]
   }
 ]

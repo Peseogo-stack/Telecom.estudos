@@ -475,7 +475,8 @@
     "dica": "",
     "licoes": [
       "03-06",
-      "07-03"
+      "07-03",
+      "07-04"
     ]
   },
   {
@@ -943,6 +944,42 @@
     "dica": "Contrato com o ocupante",
     "licoes": [
       "07-03"
+    ]
+  },
+  {
+    "id": "b28",
+    "onde": "documentos",
+    "texto": "Na norma da empresa, onde podem ficar a caixa de emenda e a reserva de cabo, e a que distância do poste?",
+    "dica": "Norma de compartilhamento: seção sobre caixa de emenda e reserva técnica",
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "b29",
+    "onde": "documentos",
+    "texto": "A norma permite caixa ou equipamento do ocupante no poste? Em quais postes é proibido (transformador, esquina, chave)?",
+    "dica": "Norma de compartilhamento: seção sobre equipamentos no poste",
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "b30",
+    "onde": "documentos",
+    "texto": "Quantos drops por vão a norma permite e de onde eles podem sair?",
+    "dica": "Norma de compartilhamento: seção sobre derivação para clientes",
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "d38",
+    "onde": "colega",
+    "texto": "Quais dessas irregularidades (reserva ou caixa no poste, drop no meio do vão) a equipe mais encontra e como costuma registrar?",
+    "dica": "Colega que já fez vistoria de poste",
+    "licoes": [
+      "07-04"
     ]
   }
 ]

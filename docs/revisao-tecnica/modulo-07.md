@@ -64,3 +64,18 @@ Cada lição é escrita a partir de uma ficha com o trecho literal de cada fonte
 | Questão 6: distrator "a média dos dois exemplos, 250 mm" (a conta não fecha) | — | Trocado por "subir no poste com trena para medir de novo", com a explicação de segurança |
 
 **Vídeos:** nenhum entrou. Apareceram uma entrevista de 2019 sobre clandestinos, uma reportagem que mostra retirada de cabos, um vídeo de 25 segundos de provedor e um canal de entretenimento.
+
+## 07-04 — Reserva, CEO, CTO e drops (11/11/2026)
+
+**Fontes (abertas em 10/11/2026):** Cemig ND-6.6 (itens 5.13, 6.7 a 6.10, 6.30 a 6.33) e Energisa NDU-009 v4.0 (15.1.1 i, j e k; 10.1.28), como exemplo, e a Resolução Conjunta 4/2014 (art. 4º, IV). As normas falam em "caixa de emenda", "equipamentos" e "derivação para clientes"; a lição não diz que citam "CTO" pelo nome.
+
+**Onde os exemplos concordam e discordam:** os dois põem a caixa de emenda no vão e nunca no poste, e os outros equipamentos a 600 mm ou mais do poste; discordam na reserva de cabo (1.500 mm na Cemig, 2.000 mm na Energisa v4.0). As células que eu não conferi na Energisa ficaram "não conferido".
+
+**Dados do exercício conferidos no arquivo:** 4 postes com reserva no poste e 2 CTOs (CX-07 e CX-13) em poste com transformador.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "No poste com transformador, a única coisa permitida é o drop do cliente" | Cemig 6.33: a rede passa tangente; só derivações para clientes; nenhum equipamento | A rede do ocupante só passa direto, sem equipamento, e só se deriva para clientes |
+| Questão 3: o poste com transformador "não admite equipamento em altura nenhuma" | Cemig 6.33: "não permitindo instalação de equipamento" | "o exemplo da Cemig não permite instalação de equipamento" (explicação e alternativa correta) |
+
+**Vídeos:** nenhum entrou. Os candidatos eram de divulgação de serviço, de montagem de caixa sem fonte de norma, e um cuja descrição fala em reserva em cruzeta (o contrário dos dois exemplos).

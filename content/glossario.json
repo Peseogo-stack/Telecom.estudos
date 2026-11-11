@@ -1013,7 +1013,8 @@
       "transcend-as"
     ],
     "licoes": [
-      "03-01"
+      "03-01",
+      "07-04"
     ]
   },
   {
@@ -1230,7 +1231,8 @@
     ],
     "licoes": [
       "03-07",
-      "04-01"
+      "04-01",
+      "07-04"
     ]
   },
   {
@@ -1244,7 +1246,8 @@
     ],
     "licoes": [
       "03-07",
-      "04-01"
+      "04-01",
+      "07-04"
     ]
   },
   {
@@ -1258,7 +1261,8 @@
     "licoes": [
       "03-07",
       "04-01",
-      "07-03"
+      "07-03",
+      "07-04"
     ]
   },
   {
@@ -2199,6 +2203,30 @@
     ],
     "licoes": [
       "07-03"
+    ]
+  },
+  {
+    "id": "raquete",
+    "pt": "Raquete",
+    "definicao": "Suporte que prende a sobra de cabo (a reserva técnica) na cordoalha, no vão, longe do poste.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "reserva-tecnica",
+    "pt": "Reserva técnica",
+    "definicao": "Sobra de cabo do ocupante, guardada no vão, presa na cordoalha e afastada do poste. Não é o ponto de reserva técnica da distribuidora, que é o primeiro ponto de fixação da faixa (lição 07-02).",
+    "fontes": [
+      "cemig-nd66",
+      "energisa-ndu009-v4",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-04"
     ]
   }
 ]

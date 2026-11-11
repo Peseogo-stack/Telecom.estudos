@@ -71,6 +71,9 @@
 | b25 | O procedimento de vistoria diz o que registrar em cada poste (fotos, campos obrigatórios)? | Procedimento de vistoria | 08-07 |
 | b26 | Qual é o modelo de plaqueta na norma da empresa: tamanho, cor, o que precisa estar escrito e a que distância do poste? | Norma técnica de compartilhamento | 07-03 |
 | b27 | O contrato prevê multa ou prazo para o ocupante identificar os cabos? | Contrato com o ocupante | 07-03 |
+| b28 | Na norma da empresa, onde podem ficar a caixa de emenda e a reserva de cabo, e a que distância do poste? | Norma de compartilhamento: seção sobre caixa de emenda e reserva técnica | 07-04 |
+| b29 | A norma permite caixa ou equipamento do ocupante no poste? Em quais postes é proibido (transformador, esquina, chave)? | Norma de compartilhamento: seção sobre equipamentos no poste | 07-04 |
+| b30 | Quantos drops por vão a norma permite e de onde eles podem sair? | Norma de compartilhamento: seção sobre derivação para clientes | 07-04 |
 
 ---
 
@@ -106,7 +109,7 @@
 | --- | --- | --- |
 | d01 | Como os fornecedores costumam mandar os relatórios, e o que já foi devolvido por estar incompleto? | 09-05 |
 | d02 | Quais chamados se repetem e com quais fornecedores? Que prazos eles cumprem de verdade? | 09-06 |
-| d03 | Que reserva técnica e que padrão de identificação usamos na prática? | 03-06, 07-03 |
+| d03 | Que reserva técnica e que padrão de identificação usamos na prática? | 03-06, 07-03, 07-04 |
 | d04 | Qual é o critério de aceite por emenda que usamos no dia a dia (0,1? 0,15 dB?) | 05-04, 06-03 |
 | d05 | Quem faz o arc check, a troca de eletrodo e a limpeza da máquina de fusão? | 05-03 |
 | d06 | Que faixa de sinal na ONU cobramos dos provedores, se cobramos? Que topologia eles usam aqui? | 04-05 |
@@ -141,6 +144,7 @@
 | d35 | Quem recebe e confere o que foi coletado em campo antes de entrar no cadastro? | 08-07 |
 | d36 | Como registro um cabo sem plaqueta ou com plaqueta ilegível: formulário, foto, sistema? | 07-03 |
 | d37 | Depois de quantos avisos, e por quem, um cabo sem dono identificado passa a ser tratado como clandestino? | 07-03 |
+| d38 | Quais dessas irregularidades (reserva ou caixa no poste, drop no meio do vão) a equipe mais encontra e como costuma registrar? | 07-04 |
 
 ---
 

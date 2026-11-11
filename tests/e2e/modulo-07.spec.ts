@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['07-01', '07-02', '07-03']) {
+for (const id of ['07-01', '07-02', '07-03', '07-04']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -90,7 +90,35 @@ test('07-03: termo plaqueta abre a definição no glossário', async ({ page }) 
   await expect(page.getByText('diz de quem é o cabo', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro', '#/licao/07-02', '#/licao/07-02/questoes', '#/licao/07-03', '#/licao/07-03/questoes']) {
+test('07-04: diagrama traz as cotas dos dois exemplos e a etiqueta de exemplo', async ({ page }) => {
+  await page.goto('./#/licao/07-04');
+  const svg = page.locator('figure.diagrama svg');
+  await expect(svg).toContainText('CEO: 1.500 mm ou mais');
+  await expect(svg).toContainText('1.500 mm (Cemig)');
+  await expect(svg).toContainText('2.000 mm (Energisa v4.0)');
+  await expect(svg).toContainText('não no poste');
+  await expect(svg).toContainText('Exemplos. Vale a norma da sua distribuidora.');
+});
+
+test('07-04: exemplos que discordam, "não conferido" e observação do solo', async ({ page }) => {
+  await page.goto('./#/licao/07-04');
+  const licao = page.locator('main');
+  await expect(licao).toContainText('Dois exemplos: não é a regra da sua empresa');
+  await expect(licao).toContainText('Discordam na reserva: 1.500 contra 2.000 mm.');
+  await expect(licao).toContainText('não conferido');
+  await expect(licao).toContainText('não em CTO');
+  await expect(licao).toContainText('Você não mede distância em poste');
+  await expect(licao).toContainText('Não suba.');
+});
+
+test('07-04: termo reserva técnica abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/07-04');
+  await page.getByRole('link', { name: 'Reserva técnica', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=reserva-tecnica/);
+  await expect(page.getByText('Sobra de cabo do ocupante', { exact: false }).first()).toBeVisible();
+});
+
+for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro', '#/licao/07-02', '#/licao/07-02/questoes', '#/licao/07-03', '#/licao/07-03/questoes', '#/licao/07-04', '#/licao/07-04/questoes']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();

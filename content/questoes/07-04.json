@@ -1,0 +1,250 @@
+[
+  {
+    "id": "07-04-q1",
+    "licao": "07-04",
+    "enunciado": "Do solo, você vê um rolo de cabo óptico amarrado no poste, logo abaixo do cabo do provedor. O que registrar?",
+    "alternativas": [
+      {
+        "texto": "Reserva técnica regular, porque o poste é o lugar certo para guardar a sobra de cabo perto da emenda.",
+        "correta": false,
+        "explicacao": "Nos dois exemplos a sobra de cabo vai para o vão, presa na cordoalha e afastada do poste. Rolo no poste é irregular."
+      },
+      {
+        "texto": "Nada: a norma de exemplo trata só de cabo metálico, e o rolo é de cabo óptico.",
+        "correta": false,
+        "explicacao": "A Cemig fala em cabo metálico/óptico de telecomunicação. A regra vale para os dois tipos."
+      },
+      {
+        "texto": "Reserva no poste: irregular nos dois exemplos, que a põem no vão. Anotar poste, foto e comunicar.",
+        "correta": true,
+        "explicacao": "Certo. Rolo no poste não é o lugar da reserva: ela vai no vão, afastada do poste. Você registra e comunica."
+      },
+      {
+        "texto": "Subir até o rolo, soltar o amarrado e levar a reserva para o vão, antes de registrar.",
+        "correta": false,
+        "explicacao": "O técnico observa do solo, registra e comunica. Mexer no cabo no poste segue o procedimento da empresa, a APR e a lição 10-01."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-04-q2",
+    "licao": "07-04",
+    "enunciado": "Do solo, a caixa de emenda de um provedor está presa no poste. O que dizem os dois exemplos?",
+    "alternativas": [
+      {
+        "texto": "Irregular: a caixa de emenda vai no vão, presa na cordoalha, ou em caixa subterrânea. Nunca no poste.",
+        "correta": true,
+        "explicacao": "Certo. Cemig e Energisa v4.0 concordam: a caixa de emenda não pode ser fixada no poste."
+      },
+      {
+        "texto": "Regular, se a caixa tiver plaqueta, porque a plaqueta mostra quem é o dono e autoriza a posição.",
+        "correta": false,
+        "explicacao": "A plaqueta identifica o dono do cabo (lição 07-03). Ela não autoriza a posição da caixa."
+      },
+      {
+        "texto": "Regular, se estiver no ponto de fixação do próprio ocupante, porque ele já paga por esse ponto do poste.",
+        "correta": false,
+        "explicacao": "O ponto de fixação sustenta o cabo ou a cordoalha. A caixa de emenda não pode ser fixada no poste, mesmo no ponto do ocupante."
+      },
+      {
+        "texto": "Irregular só se o poste for de esquina, porque nos demais postes a caixa é aceita.",
+        "correta": false,
+        "explicacao": "A regra da caixa de emenda não depende do tipo de poste: nunca vai no poste. A esquina é outra regra, a dos equipamentos."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-04-q3",
+    "licao": "07-04",
+    "enunciado": "Do solo, você vê uma caixa de atendimento (CTO) de provedor presa num poste com transformador. Como registrar, no exemplo da Cemig?",
+    "alternativas": [
+      {
+        "texto": "Regular, porque a CTO atende os clientes, e a derivação para clientes é permitida nesse tipo de poste.",
+        "correta": false,
+        "explicacao": "O que se permite no poste com transformador é a derivação para clientes. A instalação de equipamento, como a caixa, não é permitida."
+      },
+      {
+        "texto": "Regular, se o projeto estiver aprovado e a caixa ficar entre 200 e 1.800 mm abaixo da faixa.",
+        "correta": false,
+        "explicacao": "Esse espaço vale para poste onde equipamento é permitido. No poste com transformador, o exemplo da Cemig não permite equipamento."
+      },
+      {
+        "texto": "Irregular só se a caixa estiver acima da faixa, porque abaixo dela o espaço é de equipamentos.",
+        "correta": false,
+        "explicacao": "No poste com transformador, o exemplo da Cemig não permite instalação de equipamento. O espaço de 200 a 1.800 mm abaixo da faixa vale para outros postes."
+      },
+      {
+        "texto": "Irregular: no poste com transformador a rede passa direto, sem equipamento; só se deriva para clientes.",
+        "correta": true,
+        "explicacao": "Certo. A caixa de atendimento entra na regra de equipamentos. Registre o poste e comunique."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-04-q4",
+    "licao": "07-04",
+    "enunciado": "Do solo, a reserva de cabo está no vão, presa na cordoalha, e o cadastro da empresa informa 1.800 mm do poste. O que se conclui com os dois exemplos?",
+    "alternativas": [
+      {
+        "texto": "Passa nas duas normas, porque as duas pedem a reserva no vão e 1.800 mm é mais que os 600 mm exigidos do poste.",
+        "correta": false,
+        "explicacao": "Os 600 mm são de outros equipamentos no vão. A reserva tem distância própria: 1.500 mm na Cemig e 2.000 mm na Energisa v4.0."
+      },
+      {
+        "texto": "Passa na Cemig, que pede 1.500 mm ou mais, e não na Energisa v4.0, que pede 2.000 mm ou mais: vale a norma local.",
+        "correta": true,
+        "explicacao": "Certo. Os exemplos discordam, e por isso se abre a norma da distribuidora."
+      },
+      {
+        "texto": "Passa na Energisa e não na Cemig, porque a norma mais antiga costuma ser mais permissiva.",
+        "correta": false,
+        "explicacao": "Está invertido: a Energisa v4.0 pede mais, 2.000 mm. Idade da norma não diz quem é mais permissivo."
+      },
+      {
+        "texto": "Não passa em nenhuma, porque reserva só é permitida a 2.000 mm ou mais do poste em qualquer norma.",
+        "correta": false,
+        "explicacao": "A Cemig pede 1.500 mm ou mais. Os 2.000 mm são só da Energisa v4.0, e por isso não valem como regra geral."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-04-q5",
+    "licao": "07-04",
+    "enunciado": "Do solo, um drop sai da cordoalha no meio do vão e vai até uma casa. O que registrar, no exemplo da Cemig?",
+    "alternativas": [
+      {
+        "texto": "Normal, desde que a derivação seja feita na cordoalha do próprio ocupante e o drop tenha até 90 m.",
+        "correta": false,
+        "explicacao": "A derivação no meio do vão é proibida, mesmo na cordoalha do ocupante. Os 90 m são outro limite."
+      },
+      {
+        "texto": "Normal, se o ocupante tiver no máximo 8 drops nesse vão, que é o limite permitido por ocupante.",
+        "correta": false,
+        "explicacao": "O limite de 8 drops por vão é outra regra. Não autoriza derivar no meio do vão."
+      },
+      {
+        "texto": "Derivação no meio do vão: irregular. O drop sai de um único ponto de fixação do poste.",
+        "correta": true,
+        "explicacao": "Certo. No exemplo da Cemig é expressamente proibido derivar ou ligar no meio dos vãos."
+      },
+      {
+        "texto": "Irregular só se houver reserva de cabo no mesmo vão, porque aí o cabo fica sobrecarregado.",
+        "correta": false,
+        "explicacao": "A proibição é da derivação no meio do vão, com ou sem reserva. O drop sai do poste."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-04-q6",
+    "licao": "07-04",
+    "enunciado": "Do solo, você conta 12 drops do mesmo provedor saindo no mesmo vão. O que registrar, no exemplo da Cemig?",
+    "alternativas": [
+      {
+        "texto": "Acima do limite de 8 por vão por ocupante: registrar o vão, a contagem dos drops e a foto.",
+        "correta": true,
+        "explicacao": "Certo. Contar os drops do vão é observação de solo, e o limite do exemplo é de 8 por ocupante."
+      },
+      {
+        "texto": "Dentro do limite, porque os 8 drops valem por poste e o vão pode ter mais.",
+        "correta": false,
+        "explicacao": "O limite do exemplo é por vão e por ocupante, não por poste."
+      },
+      {
+        "texto": "Acima do limite só se os drops estiverem soltos; espinados juntos e com a mesma tração, o número deixa de contar.",
+        "correta": false,
+        "explicacao": "Agrupar os drops e manter a mesma tração é outra regra. Ela não muda o limite de 8 por vão por ocupante."
+      },
+      {
+        "texto": "Dentro do limite, se a caixa de derivação ficar a até 90 m do último ponto de ancoragem.",
+        "correta": false,
+        "explicacao": "Os 90 m limitam a distância da caixa de derivação até o último ponto de ancoragem. O número de drops continua contando."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-04-q7",
+    "licao": "07-04",
+    "enunciado": "Um colega vê o primeiro ponto de fixação da faixa livre num poste e sugere guardar ali a reserva técnica do provedor. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Pode, se o provedor pagar por esse ponto: depois de contratado, ele deixa de ser reservado.",
+        "correta": false,
+        "explicacao": "No exemplo da Cemig o primeiro ponto é reserva da distribuidora. E a sobra de cabo do ocupante vai no vão, não num ponto do poste."
+      },
+      {
+        "texto": "Pode, porque nos dois exemplos o primeiro ponto da faixa é o lugar da reserva técnica de cabo do ocupante.",
+        "correta": false,
+        "explicacao": "O primeiro ponto é reservado à distribuidora. A reserva de cabo do ocupante é a sobra no vão, e a confusão vem do nome."
+      },
+      {
+        "texto": "Não pode, porque reserva técnica só existe para cabo metálico e o cabo do provedor é óptico.",
+        "correta": false,
+        "explicacao": "A Cemig trata a reserva do cabo metálico/óptico. O problema é outro: a sobra de cabo vai no vão."
+      },
+      {
+        "texto": "São coisas diferentes: o ponto reservado é da distribuidora; a reserva do ocupante é sobra de cabo, no vão.",
+        "correta": true,
+        "explicacao": "Certo. Mesmo nome, dois sentidos: o ponto de reserva é da distribuidora (lição 07-02), e a sobra de cabo do ocupante fica no vão."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "07-04-q8",
+    "licao": "07-04",
+    "enunciado": "Um provedor instalou um armário de equipamentos num poste de esquina, com projeto aprovado e na altura permitida abaixo da faixa. Como classificar, no exemplo da Cemig?",
+    "alternativas": [
+      {
+        "texto": "Regular: projeto aprovado e altura entre 200 e 1.800 mm abaixo da faixa são as únicas condições do exemplo.",
+        "correta": false,
+        "explicacao": "Há outras condições. O exemplo da Cemig não permite armário em poste de esquina."
+      },
+      {
+        "texto": "Irregular: mesmo com projeto aprovado e altura certa, o exemplo da Cemig não permite armário em esquina.",
+        "correta": true,
+        "explicacao": "Certo. Registre o poste e comunique. A aprovação do projeto não afasta a regra da esquina."
+      },
+      {
+        "texto": "Regular, porque a regra de esquina vale só para caixa de emenda, e armário é outro tipo de equipamento.",
+        "correta": false,
+        "explicacao": "A regra cita armários, caixas de medição, descidas laterais e outros equipamentos de telecom. A caixa de emenda é regra à parte."
+      },
+      {
+        "texto": "Irregular só se o poste de esquina também tiver transformador, porque aí a rede deve passar direto.",
+        "correta": false,
+        "explicacao": "A esquina, por si só, já impede o equipamento. O transformador é outra restrição, não é condição para a esquina."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 3
+  }
+]

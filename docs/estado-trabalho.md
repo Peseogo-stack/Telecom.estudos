@@ -58,3 +58,4 @@ As fichas de fatos de todas as lições (o que foi conferido na fonte, com os tr
 | 08-05 Editar com segurança | 11/11/2026 | 8 | 0 (só termos de busca) | Nada a corrigir; conferidos os dois pontos sensíveis (o que o Undo garante e quem edita o cadastro da empresa) |
 | 08-07 Campo com QField | 11/11/2026 | 8 | 1 (com aviso) | Area of Interest leva as feições que tocam ou cruzam a área; mapa de fundo descrito como no manual; questão 8 reescrita (SRC errado desloca todos os pontos, não um só) |
 | 07-03 Plaqueta e identificação | 11/11/2026 | 8 | 0 (só termos de busca) | Frase atribuída à REN sem estar nela; "vale para todos" virou "todo ocupante"; 200–400 mm e 300 mm não "divergem"; distrator com conta errada |
+| 07-04 Reserva, CEO, CTO e drops | 11/11/2026 | 8 | 0 (só termos de busca) | O que o exemplo da Cemig permite no poste com transformador (a rede passa direto e só se deriva para clientes; não "só o drop") |

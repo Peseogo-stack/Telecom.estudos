@@ -41,6 +41,7 @@ import { FormatosArquivo } from './FormatosArquivo';
 import { CicloDeEdicao } from './CicloDeEdicao';
 import { CicloQfield } from './CicloQfield';
 import { PlaquetaIdentificacao } from './PlaquetaIdentificacao';
+import { OndeFicaCadaCoisa } from './OndeFicaCadaCoisa';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -82,6 +83,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'ciclo-de-edicao': CicloDeEdicao,
   'ciclo-qfield': CicloQfield,
   'plaqueta-identificacao': PlaquetaIdentificacao,
+  'onde-fica-cada-coisa': OndeFicaCadaCoisa,
 };
 
 

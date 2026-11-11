@@ -1042,5 +1042,23 @@
     "url": "https://gdal.org/en/stable/drivers/vector/dxf.html",
     "acessadoEm": "2026-11-11",
     "observacao": "\"By default, the entire contents of the file are represented as a single OGR layer named \"entities\".\" O nome da camada do desenho (layer do CAD) vira um campo chamado Layer. Se o DXF guarda SRC: não conferido; confirmar com quem desenhou."
+  },
+  {
+    "id": "qfield-comecar",
+    "titulo": "QField Documentation: Get started",
+    "organizacao": "OPENGIS.ch / QField",
+    "tipo": "documentacao",
+    "url": "https://docs.qfield.org/get-started/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Cinco passos: 1. instalar o QField (\"available for Android, iOS, Windows, macOS and Linux\"); 2. preparar o projeto no QGIS: \"Install the QFieldSync plugin in QGIS and use it to \"package\" your project so it can be opened in QField\"; 3. levar o projeto para o aparelho, por cabo ou cópia local, ou pelo QFieldCloud (\"sync your project automatically between your team and your devices\"); 4. coletar em campo; 5. trazer as mudanças de volta, \"over cable, or automatically if you used QFieldCloud\"."
+  },
+  {
+    "id": "qfield-qfieldsync",
+    "titulo": "QField Documentation: tutorial QFieldSync",
+    "organizacao": "OPENGIS.ch / QField",
+    "tipo": "documentacao",
+    "url": "https://docs.qfield.org/get-started/tutorials/get-started-qfs/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Há versão em português em https://docs.qfield.org/pt/get-started/tutorials/get-started-qfs/. QFieldSync \"is the QGIS plugin used to package your projects for QField\": empacota o projeto num formato que o QField lê, cria mapas de fundo (basemaps), \"Sets project layers to Offline editing by default\" e \"Synchronizes changes made in the field back to the desktop project\". Fluxo típico: criar o pacote como cópia de trabalho numa pasta separada, copiar a pasta para o aparelho, coletar em campo, copiar a pasta modificada de volta para o computador e sincronizar com o projeto do QGIS. Instalar: Plugins > Manage and Install Plugins..., procurar \"QFieldSync\" e Install Plugin. Ação de cada camada: Copy (copia a camada sem acompanhar mudanças); Offline editing (\"Copies the layer into the packaged project folder and tracks changes in a changelog database. When synchronizing changes back to the desktop project, QFieldSync applies recorded changes to the original source layer.\"); Remove (deixa a camada fora do pacote). \"If a GeoPackage contains multiple layers, QFieldSync packages all layers in that file even if only one layer is included in the QGIS project.\" Area of Interest: \"QFieldSync exports only features intersecting that area of interest\". Basemap: \"A basemap is a raster layer added as the bottom layer of the packaged project file. When working offline with QField, add a raster layer or configure a map theme as a basemap.\" \"Prepare offline layers on desktop before starting fieldwork.\" Permissions (propriedades da camada para o QField): dá para desligar adicionar feições, apagar feições, editar atributos ou mexer na geometria. Empacotar: Plugins > QFieldSync > Package for QField; depois copiar a pasta exportada para o aparelho. \"Save your QGIS project using the standard Save As... command in QGIS because you will re-open this desktop project later to synchronize field changes.\" Trazer de volta: abrir o projeto original no QGIS, copiar a pasta modificada do aparelho para o computador e usar Plugins > QFieldSync > Synchronize from QField. \"Synchronize field changes back to your desktop project only once per export. To collect additional data in the field, create a new QField package to prevent synchronization conflicts or duplicate features.\""
   }
 ]

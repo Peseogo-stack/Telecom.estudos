@@ -2145,5 +2145,41 @@
     "licoes": [
       "08-05"
     ]
+  },
+  {
+    "id": "qfield",
+    "pt": "QField",
+    "en": "QField",
+    "definicao": "Aplicativo de coleta em campo que abre projetos do QGIS no aparelho. Pode ser usado sem internet, com o projeto e o mapa de fundo preparados antes, no computador.",
+    "fontes": [
+      "qfield-comecar"
+    ],
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "qfieldsync",
+    "pt": "QFieldSync",
+    "en": "QFieldSync",
+    "definicao": "Complemento (plugin) do QGIS que empacota o projeto para o QField e traz de volta as mudanças feitas em campo.",
+    "fontes": [
+      "qfield-qfieldsync"
+    ],
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "mapa-de-fundo",
+    "pt": "Mapa de fundo",
+    "en": "Basemap",
+    "definicao": "Camada raster posta no fundo do projeto empacotado. Para trabalhar sem internet no QField, ele é preparado antes, no computador.",
+    "fontes": [
+      "qfield-qfieldsync"
+    ],
+    "licoes": [
+      "08-07"
+    ]
   }
 ]

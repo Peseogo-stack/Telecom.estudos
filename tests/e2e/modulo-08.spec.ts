@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['08-01', '08-02', '08-03', '08-04', '08-05', '08-06']) {
+for (const id of ['08-01', '08-02', '08-03', '08-04', '08-05', '08-06', '08-07']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -46,7 +46,7 @@ test('08-03: termo SRC abre a definição no glossário', async ({ page }) => {
   await expect(page.getByText('como os números de uma coordenada', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/08-01', '#/licao/08-01/questoes', '#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-04', '#/licao/08-04/questoes', '#/licao/08-05', '#/licao/08-05/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/glossario?t=falso-norte']) {
+for (const rota of ['#/licao/08-01', '#/licao/08-01/questoes', '#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-04', '#/licao/08-04/questoes', '#/licao/08-05', '#/licao/08-05/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/licao/08-07', '#/licao/08-07/questoes', '#/glossario?t=falso-norte']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();
@@ -118,4 +118,20 @@ test('08-05: termo modo de edição abre a definição no glossário', async ({ 
   await page.getByRole('link', { name: 'edição ligada', exact: true }).first().click();
   await expect(page).toHaveURL(/glossario\?t=modo-de-edicao/);
   await expect(page.getByText('Save Layer Edits', { exact: false }).first()).toBeVisible();
+});
+
+test('08-07: diagrama do ciclo, caminhos de menu do QFieldSync e link do GeoPackage', async ({ page }) => {
+  await page.goto('./#/licao/08-07');
+  await expect(page.locator('main')).toContainText('Plugins > QFieldSync > Package for QField');
+  await expect(page.locator('main')).toContainText('Plugins > QFieldSync > Synchronize from QField');
+  await expect(page.locator('figure.diagrama svg')).toContainText('nova coleta = novo pacote');
+  await expect(page.locator('figure.diagrama svg')).toContainText('uma vez por pacote');
+  await expect(page.getByRole('link', { name: 'rede-ficticia.gpkg' })).toHaveAttribute('href', /dados-qgis\/rede-ficticia\.gpkg$/);
+});
+
+test('08-07: termo QFieldSync abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-07');
+  await page.getByRole('link', { name: 'QFieldSync', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=qfieldsync/);
+  await expect(page.getByText('empacota o projeto para o QField', { exact: false }).first()).toBeVisible();
 });

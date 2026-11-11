@@ -1,0 +1,253 @@
+[
+  {
+    "id": "08-07-q1",
+    "licao": "08-07",
+    "enunciado": "Cheguei ao campo sem internet e o mapa de fundo não aparece no QField. O que faltou fazer?",
+    "alternativas": [
+      {
+        "texto": "Ligar a internet do aparelho em campo, para o QField baixar o mapa de fundo durante a coleta.",
+        "correta": false,
+        "explicacao": "O ponto de partida é trabalhar sem internet: o mapa de fundo tem de estar no pacote, preparado antes no computador."
+      },
+      {
+        "texto": "Preparar o mapa de fundo e as camadas offline no computador, antes de ir a campo com o pacote.",
+        "correta": true,
+        "explicacao": "Certo. O mapa de fundo é uma camada raster no fundo do pacote, e as camadas offline também são preparadas antes, no computador."
+      },
+      {
+        "texto": "Rodar Synchronize from QField no QGIS, que monta o mapa de fundo para a próxima ida a campo.",
+        "correta": false,
+        "explicacao": "Synchronize from QField traz as mudanças de volta, no fim do ciclo. Não prepara mapa de fundo."
+      },
+      {
+        "texto": "Marcar a ação Remove na camada de fundo, que deixa o mapa pronto para uso sem internet.",
+        "correta": false,
+        "explicacao": "Remove deixa a camada fora do pacote: com ela, o mapa de fundo não iria para o aparelho."
+      }
+    ],
+    "fontes": [
+      "qfield-qfieldsync"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-07-q2",
+    "licao": "08-07",
+    "enunciado": "Coletei em campo, sincronizei no QGIS e, no dia seguinte, voltei a campo com o mesmo pacote e sincronizei de novo. Qual é o risco?",
+    "alternativas": [
+      {
+        "texto": "Conflitos e feições duplicadas: a sincronização é uma por pacote, e nova coleta pede pacote novo.",
+        "correta": true,
+        "explicacao": "Certo. O manual manda sincronizar só uma vez por export e criar um pacote novo para coletar mais, para evitar conflitos e feições duplicadas."
+      },
+      {
+        "texto": "Nenhum: a segunda sincronização aplica só o que for novo e ignora o que já veio na primeira.",
+        "correta": false,
+        "explicacao": "Não há essa proteção na lição: o manual manda sincronizar uma vez por pacote justamente para evitar conflitos e feições duplicadas."
+      },
+      {
+        "texto": "A camada original é apagada, e o que vale passa a ser a versão do aparelho.",
+        "correta": false,
+        "explicacao": "A sincronização aplica as mudanças registradas à camada original. O risco da repetição é conflito e feição duplicada."
+      },
+      {
+        "texto": "Só o aparelho é afetado: a camada original do QGIS não muda, qualquer que seja o número de sincronizações.",
+        "correta": false,
+        "explicacao": "A sincronização mexe na camada original, e por isso vale o cuidado com cópia de segurança (lição 08-05)."
+      }
+    ],
+    "fontes": [
+      "qfield-qfieldsync"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-07-q3",
+    "licao": "08-07",
+    "enunciado": "Quero que um colega só consulte os postes no celular, sem alterar nada. O que escolho ao montar o pacote?",
+    "alternativas": [
+      {
+        "texto": "A ação Offline editing, porque ela protege a camada original contra qualquer mudança feita em campo.",
+        "correta": false,
+        "explicacao": "Offline editing registra as mudanças e, na sincronização, as aplica à camada original. É a ação de quem vai editar."
+      },
+      {
+        "texto": "A ação Remove, que deixa a camada no pacote só em modo de consulta, sem edição.",
+        "correta": false,
+        "explicacao": "Remove deixa a camada fora do pacote: o colega não a veria."
+      },
+      {
+        "texto": "A ação Copy na camada, ou desligar a edição em Permissions.",
+        "correta": true,
+        "explicacao": "Certo. Copy leva a camada sem acompanhar mudanças, e Permissions permite desligar adicionar, apagar, editar atributos e mexer na geometria."
+      },
+      {
+        "texto": "Area of Interest, que limita o pacote a uma área e impede a edição das feições dela.",
+        "correta": false,
+        "explicacao": "Area of Interest só escolhe a área: vão as feições que a cruzam. Não impede a edição."
+      }
+    ],
+    "fontes": [
+      "qfield-qfieldsync"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-07-q4",
+    "licao": "08-07",
+    "enunciado": "Depois de sincronizar, os postes que coletei em campo não apareceram na camada original. A camada foi empacotada com que ação?",
+    "alternativas": [
+      {
+        "texto": "Offline editing: ela guarda a camada só para consulta e, por isso, as mudanças são descartadas.",
+        "correta": false,
+        "explicacao": "É o contrário: Offline editing registra as mudanças num banco de alterações e as aplica à camada original."
+      },
+      {
+        "texto": "Remove: a camada vai no pacote, mas as mudanças só voltam se a sincronização for feita duas vezes.",
+        "correta": false,
+        "explicacao": "Remove deixa a camada fora do pacote, e a sincronização é uma por pacote."
+      },
+      {
+        "texto": "Area of Interest: ela devolve só o que ficou fora da área escolhida ao empacotar.",
+        "correta": false,
+        "explicacao": "Area of Interest escolhe a área que vai no pacote. Ela não decide se as mudanças voltam."
+      },
+      {
+        "texto": "Copy: ela copia a camada sem acompanhar mudanças, então nada voltou.",
+        "correta": true,
+        "explicacao": "Certo. Só Offline editing registra as mudanças e as aplica à camada original na sincronização."
+      }
+    ],
+    "fontes": [
+      "qfield-qfieldsync"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-07-q5",
+    "licao": "08-07",
+    "enunciado": "Meu projeto usa só a camada postes, de um GeoPackage com cinco camadas. Vou empacotar. O que vai no pacote?",
+    "alternativas": [
+      {
+        "texto": "Só a camada postes: as outras quatro ficam de fora, porque o projeto não as usa.",
+        "correta": false,
+        "explicacao": "O manual avisa o contrário: o QFieldSync empacota todas as camadas do arquivo, mesmo que só uma esteja no projeto."
+      },
+      {
+        "texto": "A camada postes e, ao sincronizar, as outras quatro são removidas do aparelho.",
+        "correta": false,
+        "explicacao": "A lição não traz essa remoção. O que ela traz é que todas as camadas do arquivo vão no pacote."
+      },
+      {
+        "texto": "As cinco camadas do arquivo: o GeoPackage inteiro vai junto.",
+        "correta": true,
+        "explicacao": "Certo. O QFieldSync empacota todas as camadas do arquivo, mesmo que o projeto use só uma. Com dado da empresa, isso conta."
+      },
+      {
+        "texto": "Nenhuma: um GeoPackage com várias camadas não pode ser empacotado, só um arquivo de uma camada.",
+        "correta": false,
+        "explicacao": "O GeoPackage entra no pacote. O cuidado é que todas as camadas dele vão junto."
+      }
+    ],
+    "fontes": [
+      "qfield-qfieldsync"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-07-q6",
+    "licao": "08-07",
+    "enunciado": "Meu chefe pediu para eu levar o cadastro real da rede no meu celular pessoal para a vistoria. O que faço antes?",
+    "alternativas": [
+      {
+        "texto": "Pergunto à empresa, à TI e à segurança da informação, porque dado da rede no celular é decisão da empresa.",
+        "correta": true,
+        "explicacao": "Certo. Dado da rede em celular, pessoal ou não, e em nuvem é decisão da empresa. Antes, só o exercício com dados fictícios."
+      },
+      {
+        "texto": "Empacoto com a ação Copy, porque só consulta não altera o cadastro e, portanto, não precisa de permissão.",
+        "correta": false,
+        "explicacao": "O risco não está só em alterar: levar o cadastro no aparelho já é decisão da empresa, mesmo só para consulta."
+      },
+      {
+        "texto": "Escolho uma Area of Interest pequena, para levar só um trecho da rede, o que dispensa a autorização.",
+        "correta": false,
+        "explicacao": "Limitar a área não dispensa nada: dado da rede em celular é decisão da empresa, seja o trecho grande ou pequeno."
+      },
+      {
+        "texto": "Crio uma conta no QFieldCloud, para a equipe e os aparelhos ficarem sincronizados sem cabo.",
+        "correta": false,
+        "explicacao": "Nuvem também é decisão da empresa. Criar conta por conta própria, com dado da rede, não é o caminho."
+      }
+    ],
+    "fontes": [
+      "qfield-comecar",
+      "qfield-qfieldsync"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "08-07-q7",
+    "licao": "08-07",
+    "enunciado": "Preciso empacotar o projeto e depois coletar em campo. Em que programa faço cada coisa?",
+    "alternativas": [
+      {
+        "texto": "Empacoto no QField e coleto no QGIS, que fica no aparelho de campo.",
+        "correta": false,
+        "explicacao": "O empacotamento é feito no QGIS, com o QFieldSync. A coleta em campo é no QField."
+      },
+      {
+        "texto": "Empacoto no QGIS, com o complemento QFieldSync, e coleto em campo com o QField, no aparelho.",
+        "correta": true,
+        "explicacao": "Certo. O QFieldSync é complemento do QGIS e prepara o pacote; o QField abre o projeto e coleta em campo."
+      },
+      {
+        "texto": "Empacoto e coleto no QField, e uso o QGIS só no fim, para conferir a tabela.",
+        "correta": false,
+        "explicacao": "O pacote vem do QGIS: o QFieldSync é o complemento que o prepara, antes de ir a campo."
+      },
+      {
+        "texto": "Empacoto no QFieldSync, aplicativo do celular, e coleto no QGIS depois de copiar a pasta.",
+        "correta": false,
+        "explicacao": "O QFieldSync não é aplicativo de celular: é um complemento do QGIS. A coleta é no QField."
+      }
+    ],
+    "fontes": [
+      "qfield-comecar",
+      "qfield-qfieldsync"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-07-q8",
+    "licao": "08-07",
+    "enunciado": "Depois de sincronizar, todos os postes coletados em campo apareceram deslocados juntos, longe da rede. Qual é a origem provável e o que protegia a camada original?",
+    "alternativas": [
+      {
+        "texto": "O QField troca o SRC do projeto por conta própria em campo; a cópia de segurança não ajuda nisso.",
+        "correta": false,
+        "explicacao": "O SRC e os campos são os do projeto do QGIS: o que foi mal definido no computador chega mal definido no campo."
+      },
+      {
+        "texto": "A ação Copy, que desloca a feição ao sincronizar; o cuidado seria usar Area of Interest.",
+        "correta": false,
+        "explicacao": "Copy não leva mudanças de volta, e Area of Interest só escolhe a área do pacote. Nenhuma das duas desloca feição."
+      },
+      {
+        "texto": "O mapa de fundo, que desloca as feições ao sincronizar; o cuidado seria preparar outro mapa.",
+        "correta": false,
+        "explicacao": "O mapa de fundo é só a camada raster no fundo do projeto. Ele não muda a posição das feições."
+      },
+      {
+        "texto": "SRC ou campos mal definidos no projeto do QGIS; a cópia de segurança antes de sincronizar.",
+        "correta": true,
+        "explicacao": "Certo. SRC e campos vêm do projeto do QGIS, e a sincronização mexe na camada original: vale a cópia de segurança da lição 08-05."
+      }
+    ],
+    "fontes": [
+      "qfield-comecar",
+      "qfield-qfieldsync"
+    ],
+    "dificuldade": 3
+  }
+]

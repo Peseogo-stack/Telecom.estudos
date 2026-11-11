@@ -105,3 +105,18 @@ A lição passou de 700 palavras com as correções e foi enxugada para caber.
 **Ficou de fora por espaço:** a tolerância de aderência (snapping).
 
 **Vídeos:** nenhum entrou. Três dos quatro candidatos vendem curso na descrição; o quarto, de uma professora universitária, tem 23 minutos sem capítulos e trata de abrir dados e simbologia, não de edição de ponto e vértice.
+
+## 08-07 — Campo com QField (11/11/2026)
+
+**Fontes abertas em 11/11/2026:** documentação do QField ("Get started" e o tutorial do QFieldSync, que também tem versão em português). Os nomes de menu são os do tutorial. A diferença entre QGIS 3.44 e 4.x não foi conferida para o QFieldSync, e a lição não afirma nenhuma.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| Area of Interest leva "as feições dentro da área" | Tutorial: "features intersecting that area of interest" | "as feições que tocam ou cruzam a área" |
+| "Sem internet, o mapa de fundo não aparece se ninguém o pôs no projeto" | Tutorial: "When working offline with QField, add a raster layer or configure a map theme as a basemap" | "Para trabalhar sem internet, o manual manda pôr um mapa de fundo no pacote" |
+| Questão 8: um poste no lugar errado tinha como "origem provável" o SRC | Um ponto só fora do lugar é mais provavelmente erro de coleta; SRC errado desloca todos juntos | Enunciado: "todos os postes coletados apareceram deslocados juntos" |
+| Glossário: o QField "funciona sem internet" | O tutorial fala em trabalhar offline com o projeto preparado antes | "Pode ser usado sem internet, com o projeto e o mapa de fundo preparados antes" |
+
+**Cuidados:** dado da rede da empresa em celular ou em nuvem é decisão da empresa ("confirmar"); o exercício é só com os dados fictícios; uma linha de segurança sobre usar celular no poste e na rua.
+
+**Vídeos:** entrou um (Urbanidades, 22 min, de abril de 2025), com aviso: não tem capítulos e só foi conferido pelo título e pela descrição. Ficaram de fora um com link de curso pago e foco na nuvem, um que vende um kit e um em espanhol.

@@ -68,6 +68,7 @@
 | b22 | Qual é o afastamento mínimo entre o cabo de telecom e a baixa tensão e a média tensão na norma da empresa? | Tabela de afastamentos da norma técnica | 07-02 |
 | b23 | O contrato ou o padrão de as-built diz em que formato e com que campos o fornecedor entrega o cadastro? | Contrato, termo de referência ou padrão de as-built | 08-04 |
 | b24 | Existe procedimento de cópia de segurança (backup) e de conferência das edições do cadastro? | Procedimento ou norma interna de gestão do cadastro | 08-05 |
+| b25 | O procedimento de vistoria diz o que registrar em cada poste (fotos, campos obrigatórios)? | Procedimento de vistoria | 08-07 |
 
 ---
 
@@ -93,6 +94,7 @@
 | c16 | Há fibra multimodo nos racks das subestações ou do data center? Em quais equipamentos? | Engenharia / TI de infraestrutura | 02-03 |
 | c17 | Quem na empresa acompanha o novo regulamento da ANEEL e da Anatel para os postes, e a empresa já se prepara para uma eventual cessão da exploração dos postes? | Área regulatória ou de compartilhamento | 07-01 |
 | c18 | Quem instala e atualiza o QGIS nos computadores da empresa (TI)? Posso instalar por conta própria? | TI ou o setor responsável pelos computadores | 08-01 |
+| c19 | Posso levar dados da rede no celular? É celular da empresa ou pessoal? O que a TI e a segurança da informação exigem? | TI e segurança da informação | 08-07 |
 
 ---
 
@@ -133,6 +135,8 @@
 | d31 | Quem pode editar o cadastro de postes e cabos da empresa, e em que arquivo ou sistema? | 08-05 |
 | d32 | Quando acho um erro de cadastro em campo, como registro e para quem mando? | 08-05 |
 | d33 | A equipe edita direto no arquivo compartilhado ou cada um trabalha numa cópia? | 08-05 |
+| d34 | A equipe usa algum aplicativo de coleta em campo (QField ou outro)? Em que aparelho? | 08-07 |
+| d35 | Quem recebe e confere o que foi coletado em campo antes de entrar no cadastro? | 08-07 |
 
 ---
 

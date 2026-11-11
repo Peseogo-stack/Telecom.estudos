@@ -39,6 +39,7 @@ import { AnatomiaPoste } from './AnatomiaPoste';
 import { VersoesQgis } from './VersoesQgis';
 import { FormatosArquivo } from './FormatosArquivo';
 import { CicloDeEdicao } from './CicloDeEdicao';
+import { CicloQfield } from './CicloQfield';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -78,6 +79,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'versoes-qgis': VersoesQgis,
   'formatos-arquivo': FormatosArquivo,
   'ciclo-de-edicao': CicloDeEdicao,
+  'ciclo-qfield': CicloQfield,
 };
 
 

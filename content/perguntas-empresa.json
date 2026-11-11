@@ -872,5 +872,41 @@
     "licoes": [
       "08-05"
     ]
+  },
+  {
+    "id": "d34",
+    "onde": "colega",
+    "texto": "A equipe usa algum aplicativo de coleta em campo (QField ou outro)? Em que aparelho?",
+    "dica": "Quem mantém o projeto de QGIS ou quem faz vistoria",
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "c19",
+    "onde": "outras-areas",
+    "texto": "Posso levar dados da rede no celular? É celular da empresa ou pessoal? O que a TI e a segurança da informação exigem?",
+    "dica": "TI e segurança da informação",
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "d35",
+    "onde": "colega",
+    "texto": "Quem recebe e confere o que foi coletado em campo antes de entrar no cadastro?",
+    "dica": "Quem mantém o cadastro",
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "b25",
+    "onde": "documentos",
+    "texto": "O procedimento de vistoria diz o que registrar em cada poste (fotos, campos obrigatórios)?",
+    "dica": "Procedimento de vistoria",
+    "licoes": [
+      "08-07"
+    ]
   }
 ]

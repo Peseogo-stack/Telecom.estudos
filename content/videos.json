@@ -342,5 +342,25 @@
       "QGIS adicionar ponto mover vértice salvar edições",
       "QGIS editar camada Toggle Editing salvar"
     ]
+  },
+  {
+    "licao": "08-07",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=Wafx6yrN8Tk",
+        "titulo": "QGIS 3 - Coletar dados em campo com o QField (Offline)",
+        "canal": "Urbanidades",
+        "duracao": "22:01",
+        "observar": "O ciclo inteiro: preparar a base no QGIS e coletar com o QField no celular, sem internet. Compare cada passo com o ciclo da lição.",
+        "aviso": "O vídeo não tem capítulos e não foi conferido por dentro, só pelo título e pela descrição. Se ele mostrar um passo diferente da lição (por exemplo, sincronizar mais de uma vez o mesmo pacote), siga a lição e o manual do QField.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração, data (20/04/2025) e idioma pela YouTube Data API. A descrição: preparar uma base para a coleta em campo e coletar com o QField em celular ou tablet."
+      }
+    ],
+    "termosBusca": [
+      "QField coleta de dados em campo QGIS",
+      "QFieldSync empacotar projeto QGIS para celular",
+      "QField trabalhar offline sincronizar"
+    ]
   }
 ]

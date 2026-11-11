@@ -1,0 +1,255 @@
+[
+  {
+    "id": "01-04-q1",
+    "licao": "01-04",
+    "enunciado": "Pelo IEC 61850-5, na classe P2/P3 (Tipo 1A), qual o tempo de transmissão pedido ao GOOSE?",
+    "alternativas": [
+      {
+        "texto": "10 ms",
+        "correta": false,
+        "explicacao": "Esse é o valor aproximado da Classe P1, não da P2/P3."
+      },
+      {
+        "texto": "18 ms",
+        "correta": false,
+        "explicacao": "São os 18 ms o atraso máximo permitido no restante das vezes, não o tempo pedido."
+      },
+      {
+        "texto": "3 ms",
+        "correta": true,
+        "explicacao": "Certo. A classe P2/P3 pede 3 ms ou menos, em 99,9999% das vezes (SEL)."
+      },
+      {
+        "texto": "1000 ms",
+        "correta": false,
+        "explicacao": "É o intervalo de regime do exemplo da SEL, não o tempo de transmissão."
+      }
+    ],
+    "fontes": [
+      "sel-ethernet-61850",
+      "sel-goose-seguranca"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-04-q2",
+    "licao": "01-04",
+    "enunciado": "Por que o GOOSE dispensa a confirmação do TCP?",
+    "alternativas": [
+      {
+        "texto": "A mensagem se repete, e quem perdeu uma recebe a próxima",
+        "correta": true,
+        "explicacao": "Certo. O GOOSE repete a mensagem enquanto o estado não muda; quem perdeu a primeira recebe a próxima (Software Toolbox)."
+      },
+      {
+        "texto": "A criptografia do quadro garante que ele sempre chegue ao assinante",
+        "correta": false,
+        "explicacao": "O GOOSE é texto aberto, sem autenticação nativa; a entrega vem das repetições."
+      },
+      {
+        "texto": "A VLAN confirma cada quadro recebido por cada assinante",
+        "correta": false,
+        "explicacao": "A VLAN isola e prioriza, mas não confirma quadro; a entrega vem das repetições."
+      },
+      {
+        "texto": "O switch guarda a mensagem até o assinante confirmar o recebimento",
+        "correta": false,
+        "explicacao": "Não há confirmação no GOOSE; a entrega vem das repetições da mensagem."
+      }
+    ],
+    "fontes": [
+      "softwaretoolbox-61850",
+      "sel-goose-seguranca"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-04-q3",
+    "licao": "01-04",
+    "enunciado": "O que a tag 802.1Q leva no quadro GOOSE?",
+    "alternativas": [
+      {
+        "texto": "O endereço IP e a porta TCP do assinante",
+        "correta": false,
+        "explicacao": "O GOOSE não usa IP nem TCP; a tag leva VLAN e prioridade."
+      },
+      {
+        "texto": "A VLAN e a prioridade de envio do quadro",
+        "correta": true,
+        "explicacao": "Certo. O quadro GOOSE leva a tag 802.1Q, com a VLAN e a prioridade (SEL)."
+      },
+      {
+        "texto": "A chave de autenticação da mensagem",
+        "correta": false,
+        "explicacao": "O GOOSE não tem autenticação nativa; a tag leva VLAN e prioridade."
+      },
+      {
+        "texto": "O número de amostras por ciclo da rede",
+        "correta": false,
+        "explicacao": "Esse número é dos Sampled Values; a tag 802.1Q leva VLAN e prioridade."
+      }
+    ],
+    "fontes": [
+      "sel-goose-seguranca"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-04-q4",
+    "licao": "01-04",
+    "enunciado": "Um relé deixou de receber GOOSE. O que conferir primeiro?",
+    "alternativas": [
+      {
+        "texto": "Se a porta TCP do GOOSE está liberada no firewall da subestação",
+        "correta": false,
+        "explicacao": "O GOOSE não tem porta TCP; confira LAN, VLAN e ausência de roteador."
+      },
+      {
+        "texto": "Se o IP do assinante responde ao teste de ping na rede",
+        "correta": false,
+        "explicacao": "O GOOSE não usa IP; confira LAN, VLAN e ausência de roteador."
+      },
+      {
+        "texto": "Se o certificado do publicador ainda está válido no IED",
+        "correta": false,
+        "explicacao": "Segundo a SEL, o GOOSE não tem autenticação nativa; confira LAN, VLAN e ausência de roteador."
+      },
+      {
+        "texto": "Se publicador e assinante estão na mesma LAN e VLAN",
+        "correta": true,
+        "explicacao": "Certo. O GOOSE exige mesma LAN e VLAN, sem roteador entre publicador e assinante."
+      }
+    ],
+    "fontes": [
+      "softwaretoolbox-61850",
+      "sel-goose-seguranca"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-04-q5",
+    "licao": "01-04",
+    "enunciado": "Um colega afirma que o padrão da norma é retransmitir o GOOSE a cada 1000 ms. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Certo: a IEC 61850 fixa esse intervalo para todos os fabricantes",
+        "correta": false,
+        "explicacao": "Os valores são exemplo da SEL; a curva de retransmissão varia conforme o fabricante."
+      },
+      {
+        "texto": "Certo, mas só para a classe P2/P3 do IEC 61850-5",
+        "correta": false,
+        "explicacao": "A classe define tempo de transmissão, não o intervalo de regime; o 1000 ms é exemplo da SEL."
+      },
+      {
+        "texto": "Errado: é exemplo de configuração da SEL, não regra da norma",
+        "correta": true,
+        "explicacao": "Certo. Os 1 s de regime, os 4 ms e os 1000 ms são um exemplo de configuração da SEL, não regra da norma; a curva varia conforme o fabricante (SEL)."
+      },
+      {
+        "texto": "Errado: a norma fixa o regime em 4 ms, não em 1000 ms",
+        "correta": false,
+        "explicacao": "Os 4 ms também são do exemplo da SEL (o envio logo após a mudança de estado); a norma não fixa a curva de retransmissão."
+      }
+    ],
+    "fontes": [
+      "sel-goose-seguranca"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-04-q6",
+    "licao": "01-04",
+    "enunciado": "O fornecedor diz que o GOOSE já vai criptografado e autenticado de fábrica. O que a lição diz?",
+    "alternativas": [
+      {
+        "texto": "Errado: segundo a SEL, é texto aberto, sem autenticação nativa",
+        "correta": true,
+        "explicacao": "Certo. Segundo a SEL, GOOSE e SV são texto aberto, sem autenticação nativa (SEL)."
+      },
+      {
+        "texto": "Certo: a IEC 62351-6 protege todo quadro sem somar atraso",
+        "correta": false,
+        "explicacao": "Segundo a SEL, os mecanismos da IEC 62351-6 somam atraso e não servem."
+      },
+      {
+        "texto": "Certo: a VLAN criptografa o quadro dentro da LAN",
+        "correta": false,
+        "explicacao": "A VLAN isola e prioriza, mas não criptografa."
+      },
+      {
+        "texto": "Errado: só vai criptografado quando passa por um roteador",
+        "correta": false,
+        "explicacao": "O GOOSE não passa por roteador e não tem criptografia nativa; segundo a SEL, é texto aberto."
+      }
+    ],
+    "fontes": [
+      "sel-goose-seguranca"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-04-q7",
+    "licao": "01-04",
+    "enunciado": "Após um evento, o Wireshark mostra repetições do GOOSE cada vez mais espaçadas, até 1 s. Como interpretar?",
+    "alternativas": [
+      {
+        "texto": "Falha de rede, pois o GOOSE deveria repetir sempre no mesmo intervalo de tempo",
+        "correta": false,
+        "explicacao": "A retransmissão espaçada é normal; a curva até o regime depende do fabricante."
+      },
+      {
+        "texto": "É a retransmissão de T1, T2, T3 até o regime T0, que varia por fabricante",
+        "correta": true,
+        "explicacao": "Certo. Com evento, o IED transmite na hora e repete em T1, T2, T3... até voltar a T0; a curva varia conforme o fabricante (SEL)."
+      },
+      {
+        "texto": "Espera de confirmação: o publicador aguarda o ACK do TCP do assinante",
+        "correta": false,
+        "explicacao": "O GOOSE não usa TCP nem ACK; o espaçamento é a retransmissão até o regime."
+      },
+      {
+        "texto": "Efeito da prioridade 802.1p: o switch é que espaça as repetições",
+        "correta": false,
+        "explicacao": "A prioridade só adianta a mensagem na fila; o espaçamento vem do publicador."
+      }
+    ],
+    "fontes": [
+      "sel-goose-seguranca",
+      "softwaretoolbox-61850"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "01-04-q8",
+    "licao": "01-04",
+    "enunciado": "Um colega afirma que a prioridade 4 é o padrão da norma para o GOOSE. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Certo, e a norma proíbe usar qualquer outro valor",
+        "correta": false,
+        "explicacao": "A IEC 61850-8-1 indica o 4 como padrão, mas o projeto pode escolher qualquer valor de 0 a 7 (SEL)."
+      },
+      {
+        "texto": "Errado: é só o exemplo da SEL, sem padrão na norma",
+        "correta": false,
+        "explicacao": "O 4 aparece no exemplo da SEL, mas também é o padrão que a IEC 61850-8-1 indica para o GOOSE (SEL)."
+      },
+      {
+        "texto": "Errado: o padrão da norma é 7, o valor mais alto",
+        "correta": false,
+        "explicacao": "O 7 é o maior valor possível, mas o padrão indicado pela IEC 61850-8-1 para o GOOSE é 4 (SEL)."
+      },
+      {
+        "texto": "Certo: é o padrão da IEC 61850-8-1, mas vai de 0 a 7",
+        "correta": true,
+        "explicacao": "Certo. Segundo a SEL, a IEC 61850-8-1 indica prioridade 4 para o GOOSE, e o projetista pode escolher qualquer valor de 0 a 7 (SEL)."
+      }
+    ],
+    "fontes": [
+      "sel-61850-tradicional",
+      "sel-goose-seguranca"
+    ],
+    "dificuldade": 3
+  }
+]

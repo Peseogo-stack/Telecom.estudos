@@ -1,7 +1,109 @@
 [
   {
-    "licao": "02-01",
+    "licao": "01-01",
     "videos": [],
+    "termosBusca": [
+      "telecom no setor elétrico SCADA teleproteção",
+      "IEC 61850 tempos de mensagem GOOSE 3 ms"
+    ]
+  },
+  {
+    "licao": "01-02",
+    "videos": [],
+    "termosBusca": [
+      "rede própria de telecom distribuidora de energia",
+      "teleproteção link alugado operadora MPLS"
+    ]
+  },
+  {
+    "licao": "01-03",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=PKTb1idEmlg",
+        "titulo": "Conceitos Básicos da Norma IEC 61850",
+        "canal": "Conprove",
+        "duracao": "12:11",
+        "observar": "Níveis e barramentos do IEC 61850 e os protocolos GOOSE e Sampled Values.",
+        "aviso": "Não fala de DNP3 nem de IEC 104. A parte final apresenta produtos do fabricante.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
+    "termosBusca": [
+      "DNP3 IEC 104 IEC 61850 diferenças",
+      "Wireshark GOOSE EtherType 88b8"
+    ]
+  },
+  {
+    "licao": "01-04",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=PKTb1idEmlg",
+        "titulo": "Conceitos Básicos da Norma IEC 61850",
+        "canal": "Conprove",
+        "duracao": "12:11",
+        "observar": "O GOOSE dentro do IEC 61850, por um fabricante de malas de teste.",
+        "aviso": "Confira o tempo citado: a lição traz 3 ms para a classe P2/P3. A parte final apresenta produtos do fabricante.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
+    "termosBusca": [
+      "GOOSE IEC 61850 VLAN prioridade",
+      "GOOSE retransmissão T0 T1"
+    ]
+  },
+  {
+    "licao": "01-05",
+    "videos": [],
+    "termosBusca": [
+      "disponibilidade 99,9 99,99 99,999 horas por ano",
+      "PRP HSR redundância IEC 62439-3"
+    ]
+  },
+  {
+    "licao": "01-06",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=T8IvStmA-bc",
+        "titulo": "O que é o cabo OPGW ? Como ele Funciona ? Assista Aqui! Optical Ground Wire ! Cabo Para-Raios OPGW !",
+        "canal": "Elétrica Em 5 Minutos",
+        "duracao": "7:27",
+        "observar": "O que é o cabo OPGW: para-raios com fibras dentro, usado também na teleproteção.",
+        "aviso": "Trata só do OPGW.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
+    "termosBusca": [
+      "OPGW ADSS diferença",
+      "PLC onda portadora teleproteção",
+      "MPLS-TP SDH setor elétrico"
+    ]
+  },
+  {
+    "licao": "02-01",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=a7ntaz6OG1c",
+        "titulo": "COMO FUNCIONA A FIBRA ÓPTICA",
+        "canal": "Denis Wiener | Exatas ENEM",
+        "duracao": "9:49",
+        "observar": "Reflexão interna total: a luz passa do índice maior para o menor e fica presa no núcleo.",
+        "aviso": "O vídeo mede o ângulo crítico a partir da normal; é o mesmo \"ângulo raso\" da lição, visto da fronteira.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=UVaNHGZthFE",
+        "titulo": "Reflexão interna total [como funciona uma fibra ótica?] - Aula 8 - Física Óptica - Prof. Henrique",
+        "canal": "Prof. Guilherme Goulart - Biologia",
+        "duracao": "10:44",
+        "observar": "Núcleo, casca e ângulos de incidência e de refração, na linguagem da física do ensino médio.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "reflexão interna total fibra óptica explicação",
       "núcleo e casca da fibra óptica como a luz viaja"
@@ -9,7 +111,18 @@
   },
   {
     "licao": "02-02",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=1BJXnN7P1AU",
+        "titulo": "Fibra Óptica - Aula 2: Quais os tipos de cabos, fibras ópticas e conectores",
+        "canal": "Fala Cianet",
+        "duracao": "9:53",
+        "observar": "Do que a fibra é composta e os tipos de cabo e de conector.",
+        "aviso": "A descrição não cita 9/125, 250 µm nem 900 µm; confira os diâmetros com a lição.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "fibra óptica 9/125 o que significa",
       "fibra óptica revestimento 250 µm e 900 µm tight buffer"
@@ -17,7 +130,27 @@
   },
   {
     "licao": "02-03",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=A-IAyg0HUK4",
+        "titulo": "Classes/categorias de fibras ópticas multimodo e monomodo | OM1 OM2 OM3 OM4 OM5 OS1 OS1a OS2",
+        "canal": "Clarity Treinamentos",
+        "duracao": "6:23",
+        "observar": "As classes OM1 a OM5 (multimodo) e OS1 a OS2 (monomodo).",
+        "aviso": "Fala também de OM5 e OS1a, que a lição não traz.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=UReXJmt_aho",
+        "titulo": "Fibra Óptica: Multimodo vs Monomodo - Qual Escolher e Por Quê?",
+        "canal": "Clarity Treinamentos",
+        "duracao": "6:03",
+        "observar": "Monomodo × multimodo: como a luz viaja em cada uma e a dispersão modal.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "fibra monomodo e multimodo diferença",
       "fibra OM3 OM4 OS2 como identificar"
@@ -33,7 +166,18 @@
   },
   {
     "licao": "02-05",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=rLTQzIYqvPM",
+        "titulo": "Quando usar 1490nm e 1310nm - Aula 09 [Treinamento fibra óptica]",
+        "canal": "Instrutor Henrique Morais",
+        "duracao": "9:24",
+        "observar": "Para que servem 1490 nm e 1310 nm na rede.",
+        "aviso": "Não trata das bandas O a U nem do XGS-PON.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "janelas de transmissão fibra óptica 1310 1550",
       "GPON XGS-PON comprimentos de onda 1490 1577"
@@ -41,7 +185,27 @@
   },
   {
     "licao": "02-06",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=ZZXGRQ72hN4",
+        "titulo": "Perda de sinal por atenuação e dispersão na Fibra Óptica - Aula 05 [Treinamento fibra óptica]",
+        "canal": "Instrutor Henrique Morais",
+        "duracao": "13:11",
+        "observar": "As causas da perda de sinal na fibra: atenuação e dispersão.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=xdSOxeXB0Yw",
+        "titulo": "Quanto sinal a fibra óptica perde por quilômetro (KM)",
+        "canal": "Instrutor Henrique Morais",
+        "duracao": "9:58",
+        "observar": "Quanto a fibra perde por quilômetro.",
+        "aviso": "O valor que um vídeo dá é típico. Para aprovar, use o máximo da ficha do cabo ou da norma (0,40 dB/km em 1310 nm e 0,30 dB/km em 1550 nm na G.652.D).",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "atenuação em fibra óptica causas",
       "macrocurvatura fibra óptica perda"
@@ -49,7 +213,26 @@
   },
   {
     "licao": "02-07",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=fP75NWox_kc",
+        "titulo": "Decibel, dB e dBm  em cabeamento de rede | fundamentos",
+        "canal": "Clarity Treinamentos",
+        "duracao": "15:04",
+        "observar": "Definição de dB e dBm, valores de referência e conversão para mW (capítulos).",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, capítulos, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Xe9hvrsmkDs",
+        "titulo": "Entenda as diferenças entre o dB e o dBm - Fibra óptica",
+        "canal": "Instrutor Henrique Morais",
+        "duracao": "4:59",
+        "observar": "A diferença entre dB (relação) e dBm (potência), em menos de 5 minutos.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "dB e dBm fibra óptica cálculo",
       "converter dBm em mW"
@@ -65,7 +248,28 @@
   },
   {
     "licao": "03-03",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=OM4d2DHeWKY",
+        "titulo": "Diferença do Padrão de Cores dos Cabos de Fibras Ópticas Internacional e Telebrás? Explicação rápida",
+        "canal": "Evandro-etc-br",
+        "duracao": "3:21",
+        "observar": "A diferença entre o padrão de cores brasileiro (o vídeo chama de Telebrás) e o internacional.",
+        "aviso": "Confira a ordem com a tabela da lição. A 12ª cor brasileira pode aparecer como azul-claro ou água.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=yYOOl37Nh7c",
+        "titulo": "Fibra Óptica - Código de cores Padrão Nacional",
+        "canal": "Cristiano Viana",
+        "duracao": "3:39",
+        "observar": "O código de cores nacional num cabo de 24 fibras.",
+        "aviso": "Confira a ordem com a tabela da lição: a fibra 1 é verde.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "código de cores fibra óptica 12 cores",
       "cores da fibra óptica ABNT e TIA-598"
@@ -73,7 +277,18 @@
   },
   {
     "licao": "03-04",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=P2UvO9d3fNo",
+        "titulo": "PADRÃO BRASILEIRO   CABO 48 FIBRAS COM TUBO LOOSE",
+        "canal": "PROJETO COMPARTILHAMENTO DE POSTES",
+        "duracao": "4:07",
+        "observar": "Identificação das fibras nos tubos loose de um cabo de 48 fibras, no padrão brasileiro.",
+        "aviso": "Não mostra o esquema de tubo piloto e direcional.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "código de cores fibra óptica tubo piloto direcional",
       "achar a fibra em cabo de 144 fibras"
@@ -81,7 +296,26 @@
   },
   {
     "licao": "03-07",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=h6ysxWB5mw8",
+        "titulo": "✅Série tudo sobre Cordões Ópticos !! Parte 3 - Tipos de conectores ópticos !!",
+        "canal": "EXPERT FIBRA OPTICA",
+        "duracao": "6:13",
+        "observar": "Os tipos de conector óptico.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=52soBEfnYuk",
+        "titulo": "DIFERENÇA CONECTOR APC x UPC - Conectores de Fibras Ópticas #fibraoptica #telecom",
+        "canal": "Evandro-etc-br",
+        "duracao": "2:18",
+        "observar": "APC × UPC e o efeito na perda de retorno.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "conector APC UPC diferença",
       "DIO CEO CTO PTO para que servem"
@@ -89,7 +323,28 @@
   },
   {
     "licao": "04-01",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=QekoxT2a50g",
+        "titulo": "Rede FTTH: Como funciona do provedor até a sua ONU",
+        "canal": "Instrutor Henrique Morais",
+        "duracao": "10:43",
+        "observar": "O caminho de uma rede FTTH, do provedor até a ONU.",
+        "aviso": "Descrição com links de afiliado.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=wqwixLuI3L8",
+        "titulo": "OLT / GBIC / Splitter óptico - Entenda os componentes de uma rede óptica - Aula 02",
+        "canal": "Instrutor Henrique Morais",
+        "duracao": "12:30",
+        "observar": "OLT, módulo da OLT e splitter numa rede FTTH.",
+        "aviso": "O vídeo chama o módulo óptico de GBIC; na ficha, ele aparece como SFP.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "o que é OLT ONU CTO FTTH",
       "rede GPON como funciona da OLT à ONU"
@@ -97,7 +352,28 @@
   },
   {
     "licao": "04-03",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=aq2V4izia9k",
+        "titulo": "Perda em decibels nos splitters | dB PON GPON CATV",
+        "canal": "Clarity Treinamentos",
+        "duracao": "14:58",
+        "observar": "Perda teórica de cada splitter em dB, com capítulos.",
+        "aviso": "Usa os valores teóricos. Para o projeto, vale a perda máxima da ficha (lição).",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, capítulos, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=47Z6EEbitog",
+        "titulo": "Quanto sinal perde SPLITTERS 1x2, 1x8 e 1x16 na rede de FIBRA ÓPTICA",
+        "canal": "Instrutor Henrique Morais",
+        "duracao": "9:42",
+        "observar": "Quanto perdem os splitters 1x2, 1x8 e 1x16.",
+        "aviso": "Compare os números do vídeo com a perda ideal e com a ficha da lição.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "splitter óptico perda por divisão 1:8 1:16",
       "splitter desbalanceado rede FTTH provedor"
@@ -105,7 +381,18 @@
   },
   {
     "licao": "04-05",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=JlngdszEWBY",
+        "titulo": "Cálculo de orçamento de potência óptica - Redes GPON",
+        "canal": "DATACOM",
+        "duracao": "8:12",
+        "observar": "Como calcular a margem de potência de uma rede GPON, por um fabricante de OLT.",
+        "aviso": "Confira a classe (B+) e use a potência mínima da OLT para o pior caso, como na lição.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "cálculo de potência rede GPON splitter",
       "orçamento de potência GPON classe B+"
@@ -113,7 +400,28 @@
   },
   {
     "licao": "05-01",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=AJfcpUBJcqc",
+        "titulo": "Tutorial - Preparando a Fibra",
+        "canal": "WDC Networks - Brasil",
+        "duracao": "1:26",
+        "observar": "A sequência de preparo: decapar, limpar com álcool isopropílico e clivar.",
+        "aviso": "Não mostra o tubete. Na fusão, ele entra na fibra antes de decapar (lição).",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=fPg5VQCNNEM",
+        "titulo": "Como Fazer uma Fusão de Fibra Óptica - ISPSHOP",
+        "canal": "ISP Shop",
+        "duracao": "3:13",
+        "observar": "O preparo da fibra para a fusão, passo a passo.",
+        "aviso": "Vídeo de 2014, de loja de equipamentos. Confira se o tubete entra antes da decapagem.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "clivagem fibra óptica clivador",
       "preparo e decapagem de fibra óptica para fusão"
@@ -121,7 +429,27 @@
   },
   {
     "licao": "05-03",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=Js1MQ8VTgHQ",
+        "titulo": "Calibração do arco e fusão em fibra óptica",
+        "canal": "Alison Silva",
+        "duracao": "3:56",
+        "observar": "Por que calibrar o arco: umidade e temperatura mudam a fusão.",
+        "aviso": "O vídeo sugere ao menos uma vez por dia. A lição: calibrar no início de cada sessão e, para repetir, seguir o manual da máquina.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=SuieCQzOaDg",
+        "titulo": "Como fazer teste de arco na máquina de fusão sumitomo T56",
+        "canal": "Telecom Normas",
+        "duracao": "1:59",
+        "observar": "O teste de arco ao começar o trabalho ou mudar de ambiente, numa máquina Sumitomo.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "fusão de fibra óptica passo a passo",
       "limpeza máquina de fusão eletrodo",
@@ -130,7 +458,26 @@
   },
   {
     "licao": "05-04",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=D0GDcM1bw7Y",
+        "titulo": "Medindo a perda da fusão do pigtail | Zona morta de evento e atenuação | OTDR bidirecional",
+        "canal": "Clarity Treinamentos",
+        "duracao": "2:55",
+        "observar": "Como medir com OTDR a fusão perto do conector e por que medir nos dois sentidos.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=EA_jMv2VpLU",
+        "titulo": "Perda negativa em OTDR e Power Meter Óptico | Testes em fibra óptica | Fluke | TREND",
+        "canal": "Clarity Treinamentos",
+        "duracao": "6:31",
+        "observar": "A perda negativa do OTDR e a média dos dois sentidos.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "perda de emenda por fusão estimada x medida OTDR",
       "OTDR bidirecional emenda gainer"
@@ -138,7 +485,26 @@
   },
   {
     "licao": "06-01",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=pZH5cD4s1Aw",
+        "titulo": "Métodos de referência para power meter óptico | Fluke | TREND | 1, 2 ou 3 jumpers",
+        "canal": "Clarity Treinamentos",
+        "duracao": "10:10",
+        "observar": "Os três métodos de referência (1, 2 ou 3 cordões) antes de medir com o power meter. A lição usa o de 1 cordão.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=PBRoJyoCxag",
+        "titulo": "Perda negativa na fibra óptica? | Power Meter | CertiFiber Pro | Versiv | Fluke Networks",
+        "canal": "Clarity Treinamentos",
+        "duracao": "8:44",
+        "observar": "Como uma referência de dois cordões feita errado dá perda negativa no power meter.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "power meter e fonte de luz medir perda de fibra",
       "perda de inserção fibra óptica referência um cordão"
@@ -146,7 +512,26 @@
   },
   {
     "licao": "06-02",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=xTcanWXSf0U",
+        "titulo": "Principais eventos em análise de fibra óptica com OTDR | Eventos reflexivos e não reflexivos",
+        "canal": "Clarity Treinamentos",
+        "duracao": "9:47",
+        "observar": "Eventos reflexivos (pico) e não reflexivos (degrau) no traço do OTDR.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=D0GDcM1bw7Y",
+        "titulo": "Medindo a perda da fusão do pigtail | Zona morta de evento e atenuação | OTDR bidirecional",
+        "canal": "Clarity Treinamentos",
+        "duracao": "2:55",
+        "observar": "Zona morta de evento × zona morta de atenuação, e quando medir nos dois sentidos.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "OTDR como funciona",
       "zona morta OTDR bobina de lançamento"
@@ -154,7 +539,17 @@
   },
   {
     "licao": "06-03",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=xo5_gqC5Yg4",
+        "titulo": "OTDR | Eventos reflexivos e não reflexivos | OptiFiber Pro | Versiv | Fluke Networks",
+        "canal": "Clarity Treinamentos",
+        "duracao": "12:14",
+        "observar": "Na prática, como uma conexão ruim aumenta a perda e a refletância do evento, e por que aparece perda negativa.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "OTDR como ler o traço",
       "eventos no OTDR fusão conector fantasma ganho aparente"
@@ -162,7 +557,17 @@
   },
   {
     "licao": "09-01",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=RhdO-FP6v-0",
+        "titulo": "O que é o Acordo de Nível de Serviços ANS ou SLA - ITIL 4 Foundation",
+        "canal": "Prof. Adriano Martins Antonio",
+        "duracao": "10:17",
+        "observar": "O que é o acordo de nível de serviço (ANS ou SLA), no vocabulário do ITIL 4. A conta em minutos está na lição.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "cálculo de disponibilidade SLA link dedicado",
       "SLA 99,7% quantos minutos de parada"
@@ -178,7 +583,28 @@
   },
   {
     "licao": "09-03",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=_1BvtgXQI1s",
+        "titulo": "Gestor de Contrato Público- Quais as suas atribuições? O que ele faz?",
+        "canal": "Correa Lima Engenharia",
+        "duracao": "10:10",
+        "observar": "As atribuições do gestor do contrato no Decreto 11.246/2022.",
+        "aviso": "Trata de contrato público. Numa distribuidora privada (ou estatal, pela Lei 13.303), esses papéis são boa prática, não obrigação (lição).",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=0swX6Jr_UHk",
+        "titulo": "FISCAL SETORIAL: Tudo que você precisa saber sobre suas atribuições no Decreto 11.246/2022",
+        "canal": "Correa Lima Engenharia",
+        "duracao": "11:59",
+        "observar": "Pela descrição, os tipos de fiscal, com o técnico (art. 22) e o administrativo (art. 23).",
+        "aviso": "O foco do vídeo é o fiscal setorial, que a lição não trata. Mesmo aviso de contrato público.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "gestão e fiscalização de contratos Lei 14.133 gestor fiscal",
       "fiscal técnico de contrato o que faz"
@@ -186,7 +612,26 @@
   },
   {
     "licao": "09-05",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=7qwro7rxw2k",
+        "titulo": "Links em fibra óptica: os principais testes a serem feitos em campo (tier 1)",
+        "canal": "Clarity Treinamentos",
+        "duracao": "7:02",
+        "observar": "Que testes comprovam um enlace de fibra depois da obra (certificação tier 1).",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=EA_jMv2VpLU",
+        "titulo": "Perda negativa em OTDR e Power Meter Óptico | Testes em fibra óptica | Fluke | TREND",
+        "canal": "Clarity Treinamentos",
+        "duracao": "6:31",
+        "observar": "Por que aparece \"perda negativa\" no OTDR e no power meter: liga com o ganho aparente e a medição nos dois sentidos.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "relatório de teste OTDR certificação fibra óptica",
       "aceite de obra de fibra óptica"
@@ -194,7 +639,17 @@
   },
   {
     "licao": "09-06",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=8i0hOWn-FqA",
+        "titulo": "Como analisar e RESOLVER incidentes segundo a ITIL 4 Practitioner  #itil4 #itsm",
+        "canal": "Prof. Adriano Martins Antonio",
+        "duracao": "9:48",
+        "observar": "Diagnóstico, resolução e encerramento de um incidente (capítulos). O escalonamento está na lição.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "incidente problema requisição ITIL diferença",
       "abrir chamado com fornecedor escalonamento"
@@ -202,7 +657,18 @@
   },
   {
     "licao": "10-01",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=zcaz4Nt1FTk",
+        "titulo": "O QUE É DISTÂNCIA DE SEGURANÇA - NR 10 SEP",
+        "canal": "FECHADO COM A SEGURANÇA",
+        "duracao": "5:53",
+        "observar": "O que é distância de segurança na NR-10, conforme o nível de tensão.",
+        "aviso": "A descrição não traz os valores nem fala de telecom em poste. Use a tabela da lição: na baixa tensão, Rr 0,20 m e Rc 0,70 m.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "NR-10 zona livre zona controlada zona de risco",
       "NR-10 trabalho próximo a rede elétrica em poste"
@@ -226,7 +692,18 @@
   },
   {
     "licao": "10-05",
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=8dQbXVQ4Elk",
+        "titulo": "Atualização da NR-10: O Que Realmente Mudou em 2026?",
+        "canal": "FECHADO COM A SEGURANÇA",
+        "duracao": "8:24",
+        "observar": "Visão geral da nova NR-10 pelos capítulos: análise de riscos, procedimentos e capacitação.",
+        "aviso": "Pelos capítulos, não trata do compartilhamento de infraestrutura nem dos treinamentos de 40 h e 24 h da lição. A nova NR-10 só vale a partir de junho de 2027; até lá vale o texto atual.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, capítulos, duração e idioma pela YouTube Data API. Sem transcrição."
+      }
+    ],
     "termosBusca": [
       "nova NR-10 2026 o que muda",
       "NR-10 telecom em poste compartilhado"
@@ -241,16 +718,6 @@
         "canal": "Liberdade para Aprender",
         "duracao": "4:20",
         "observar": "Onde se define o SRC no QGIS 3.44. Lembre da lição: definir o SRC muda a interpretação das coordenadas, não converte o arquivo.",
-        "conferidoEm": "2026-11-10",
-        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem capítulos nem transcrição."
-      },
-      {
-        "url": "https://www.youtube.com/watch?v=iEXU9b-h19c",
-        "titulo": "Alteração do SRC | Conceitos Básicos de QGIS [4]",
-        "canal": "Bruno Rech",
-        "duracao": "8:51",
-        "observar": "Como gravar a camada em outro SRC de forma definitiva, o que a lição faz com Export ► Save Features As….",
-        "aviso": "A descrição do vídeo diz que a conversão temporária entre SRCs \"deve ser evitada\". O manual do QGIS trata a reprojeção na hora como funcionamento normal: ela dá certo quando cada camada está com o SRC verdadeiro. O vídeo é de 2020, de uma versão 3.x anterior à 3.44.",
         "conferidoEm": "2026-11-10",
         "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem capítulos nem transcrição."
       }

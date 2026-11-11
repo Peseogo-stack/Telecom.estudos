@@ -1,0 +1,254 @@
+[
+  {
+    "id": "01-01-q1",
+    "licao": "01-01",
+    "enunciado": "Na especificação de uma subestação, o trip por GOOSE aparece com qual prazo?",
+    "alternativas": [
+      {
+        "texto": "5 ms",
+        "correta": false,
+        "explicacao": "Esse é o prazo do diferencial de linha. O trip por GOOSE na subestação é de 3 ms."
+      },
+      {
+        "texto": "3 ms",
+        "correta": true,
+        "explicacao": "Certo. A tabela de prazos da lição dá 3 ms para o trip ou bloqueio na subestação (GOOSE) (SEL)."
+      },
+      {
+        "texto": "10 ms",
+        "correta": false,
+        "explicacao": "Esse é o prazo da transferência direta de disparo (DTT). O trip por GOOSE é de 3 ms."
+      },
+      {
+        "texto": "500 ms",
+        "correta": false,
+        "explicacao": "Esse é o prazo dos comandos do operador. O trip por GOOSE é de 3 ms."
+      }
+    ],
+    "fontes": [
+      "sel-ethernet-61850"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-01-q2",
+    "licao": "01-01",
+    "enunciado": "Qual destes serviços é o que mais tolera demora na resposta?",
+    "alternativas": [
+      {
+        "texto": "Eventos e alarmes, com prazo de 1000 ms",
+        "correta": false,
+        "explicacao": "Mil milissegundos é 1 s, bem menos que os 2 a 15 s da AMI, que é a mais folgada."
+      },
+      {
+        "texto": "Comandos do operador, com prazo de 500 ms",
+        "correta": false,
+        "explicacao": "Meio segundo é mais exigente que a AMI, de 2 a 15 s."
+      },
+      {
+        "texto": "Diferencial de linha, com prazo de 5 ms",
+        "correta": false,
+        "explicacao": "Esse é um dos prazos mais curtos da tabela; o mais folgado é o da AMI, de 2 a 15 s."
+      },
+      {
+        "texto": "Medição inteligente, de 2 a 15 s",
+        "correta": true,
+        "explicacao": "Certo. A AMI tem o prazo mais folgado da tabela, de 2 a 15 s (DOE)."
+      }
+    ],
+    "fontes": [
+      "doe-requisitos-smart-grid",
+      "sel-ethernet-61850"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-01-q3",
+    "licao": "01-01",
+    "enunciado": "Um colega propõe usar os mesmos endereços IP na rede corporativa e na operativa. O que a lição recomenda?",
+    "alternativas": [
+      {
+        "texto": "Separar as duas redes, com endereços IP distintos",
+        "correta": true,
+        "explicacao": "Certo. A recomendação é separar a rede operativa da corporativa, com endereços IP distintos (T&D World)."
+      },
+      {
+        "texto": "Unir as duas numa rede só, com a mesma faixa de endereços",
+        "correta": false,
+        "explicacao": "A recomendação é o contrário: separar a operativa da corporativa, com endereços IP distintos."
+      },
+      {
+        "texto": "Separar só no desenho, mantendo a mesma faixa de endereços",
+        "correta": false,
+        "explicacao": "Separar de verdade exige endereços IP distintos nas duas redes, não só no desenho."
+      },
+      {
+        "texto": "Deixar o SCADA na rede corporativa, junto com voz e e-mail",
+        "correta": false,
+        "explicacao": "O SCADA é da rede operativa, que deve ficar separada da corporativa, com endereços IP distintos."
+      }
+    ],
+    "fontes": [
+      "tdworld-brasil-telecom"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-01-q4",
+    "licao": "01-01",
+    "enunciado": "Um relatório interno cita a tabela de prazos do DOE como norma obrigatória. O que está errado?",
+    "alternativas": [
+      {
+        "texto": "Nada: o DOE fixa esses prazos por norma para as distribuidoras",
+        "correta": false,
+        "explicacao": "O DOE não fixa norma ali; a tabela resume contribuições, e ele diz que não é avaliação técnica dele."
+      },
+      {
+        "texto": "O erro é só o nome: é norma da ANEEL, traduzida pelo DOE",
+        "correta": false,
+        "explicacao": "A tabela não é norma de nenhum órgão; resume opiniões de quem comentou, segundo o DOE."
+      },
+      {
+        "texto": "É resumo de opiniões, e o DOE diz que não é avaliação técnica",
+        "correta": true,
+        "explicacao": "Certo. A tabela do DOE reúne contribuições e, nas palavras do próprio DOE, não reflete uma avaliação técnica dele (DOE)."
+      },
+      {
+        "texto": "Ela é norma, mas vale apenas para os serviços de medição",
+        "correta": false,
+        "explicacao": "Não é norma para serviço nenhum; é resumo de contribuições, sem avaliação técnica do DOE."
+      }
+    ],
+    "fontes": [
+      "doe-requisitos-smart-grid"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "01-01-q5",
+    "licao": "01-01",
+    "enunciado": "Um colega diz que, na distribuição, todo serviço aceita prazo de segundos. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Certo, pois a distribuição não tem teleproteção e não há serviço em milissegundos",
+        "correta": false,
+        "explicacao": "A distribuição tem teleproteção, com requisitos menos rígidos, mas há prazos em milissegundos, como os 3 ms do trip."
+      },
+      {
+        "texto": "Os prazos vão de milissegundos a segundos; o trip na subestação é de 3 ms",
+        "correta": true,
+        "explicacao": "Certo. A tabela vai de 3 ms a 15 s; o trip por GOOSE segue em 3 ms, mesmo com requisitos menos rígidos que os da transmissão (SEL)."
+      },
+      {
+        "texto": "Errado: os requisitos da distribuição são iguais aos da transmissão, tudo em milissegundos",
+        "correta": false,
+        "explicacao": "Os requisitos da distribuição são menos rígidos que os da transmissão, e os prazos vão de milissegundos a segundos."
+      },
+      {
+        "texto": "Certo: na distribuição, até o trip fica entre 100 ms e 2 s",
+        "correta": false,
+        "explicacao": "Só a gestão da rede de distribuição está na faixa de 100 ms a 2 s (DOE); o trip é de 3 ms e a AMI chega a 15 s."
+      }
+    ],
+    "fontes": [
+      "sel-ethernet-61850",
+      "doe-requisitos-smart-grid",
+      "tdworld-brasil-telecom"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-01-q6",
+    "licao": "01-01",
+    "enunciado": "Para mostrar que rede própria não é exceção no setor, qual dado a lição traz?",
+    "alternativas": [
+      {
+        "texto": "Em abril de 2024, 29 concessionárias tinham redes privativas, mais da metade das licenças do gênero",
+        "correta": false,
+        "explicacao": "29 são mais de um quarto, não mais da metade, das pouco mais de 100 licenças do gênero."
+      },
+      {
+        "texto": "Em abril de 2024, mais de 100 concessionárias tinham redes privativas, quase todas as licenças do gênero",
+        "correta": false,
+        "explicacao": "Eram 29 concessionárias; as pouco mais de 100 são as licenças do gênero, de vários setores."
+      },
+      {
+        "texto": "Em abril de 2024, 29 concessionárias tinham redes privativas, menos de um décimo das licenças do gênero",
+        "correta": false,
+        "explicacao": "29 de pouco mais de 100 é mais de um quarto, não menos de um décimo."
+      },
+      {
+        "texto": "Em abril de 2024, 29 concessionárias tinham redes privativas, mais de um quarto das licenças do gênero",
+        "correta": true,
+        "explicacao": "Certo. A Teletime informou 29 concessionárias com redes privativas, mais de um quarto das pouco mais de 100 licenças concedidas pela Anatel (Teletime)."
+      }
+    ],
+    "fontes": [
+      "teletime-redes-privativas"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-01-q7",
+    "licao": "01-01",
+    "enunciado": "Qual sequência vai do serviço mais exigente em prazo para o mais folgado?",
+    "alternativas": [
+      {
+        "texto": "Comandos do operador, trip por GOOSE, eventos e alarmes, AMI",
+        "correta": false,
+        "explicacao": "O trip por GOOSE, de 3 ms, vem antes dos comandos do operador, de 500 ms."
+      },
+      {
+        "texto": "Trip por GOOSE, eventos e alarmes, comandos do operador, AMI",
+        "correta": false,
+        "explicacao": "Os comandos do operador, de 500 ms, vêm antes dos eventos e alarmes, de 1000 ms."
+      },
+      {
+        "texto": "Trip por GOOSE, comandos do operador, eventos e alarmes, AMI",
+        "correta": true,
+        "explicacao": "Certo. Os prazos da tabela são 3 ms (trip), 500 ms (comandos), 1000 ms (eventos e alarmes) e 2 a 15 s (AMI) (SEL, DOE)."
+      },
+      {
+        "texto": "AMI, eventos e alarmes, comandos do operador, trip por GOOSE",
+        "correta": false,
+        "explicacao": "Essa ordem está invertida: a AMI, de 2 a 15 s, é a mais folgada, e o trip, de 3 ms, a mais exigente."
+      }
+    ],
+    "fontes": [
+      "sel-ethernet-61850",
+      "doe-requisitos-smart-grid"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "01-01-q8",
+    "licao": "01-01",
+    "enunciado": "Um relé de diferencial de linha e um esquema de DTT dividem o mesmo enlace. Que latência cada um pede?",
+    "alternativas": [
+      {
+        "texto": "5 ms o diferencial e 10 ms o DTT",
+        "correta": true,
+        "explicacao": "Certo. A tabela dá latência de 5 ms ao diferencial de linha e de 10 ms ao DTT (SEL)."
+      },
+      {
+        "texto": "10 ms o diferencial e 5 ms o DTT",
+        "correta": false,
+        "explicacao": "Está trocado: o diferencial pede 5 ms e o DTT, 10 ms."
+      },
+      {
+        "texto": "3 ms os dois, como o trip por GOOSE",
+        "correta": false,
+        "explicacao": "Os 3 ms são do trip por GOOSE na subestação; o diferencial pede 5 ms e o DTT, 10 ms."
+      },
+      {
+        "texto": "5 ms os dois, por serem teleproteção",
+        "correta": false,
+        "explicacao": "São dois prazos diferentes: 5 ms o diferencial e 10 ms o DTT."
+      }
+    ],
+    "fontes": [
+      "sel-teleprotecao-mpls"
+    ],
+    "dificuldade": 2
+  }
+]

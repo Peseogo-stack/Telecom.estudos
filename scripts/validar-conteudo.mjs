@@ -198,7 +198,14 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
   const noPlano = plano.semanas.flatMap((s) => s.licoes);
   for (const id of noPlano) if (!idsCurriculo.has(id)) erro('plano.json', `lição ${id} não existe no currículo`);
   if (new Set(noPlano).size !== noPlano.length) erro('plano.json', 'lição repetida no plano');
-  for (const id of idsCurriculo) if (!noPlano.includes(id)) erro('plano.json', `lição ${id} fora do plano`);
+  // "Comece por aqui": lição opcional, fora das semanas (não conta para a semana nem para a próxima lição).
+  const inicial = plano.comecePorAqui?.licao;
+  if (plano.comecePorAqui) {
+    if (!idsCurriculo.has(inicial)) erro('plano.json', `"comecePorAqui" aponta para ${inicial}, que não existe no currículo`);
+    if (noPlano.includes(inicial)) erro('plano.json', `${inicial} está no "comecePorAqui" e também numa semana`);
+    if (!plano.comecePorAqui.texto) erro('plano.json', '"comecePorAqui" sem texto');
+  }
+  for (const id of idsCurriculo) if (!noPlano.includes(id) && id !== inicial) erro('plano.json', `lição ${id} fora do plano`);
 
   // ---- Banco de perguntas para a empresa ----
   const perguntasEmpresa = lerPerguntasEmpresa();

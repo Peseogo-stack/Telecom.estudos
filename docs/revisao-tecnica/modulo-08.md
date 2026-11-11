@@ -24,7 +24,7 @@ Cada lição é escrita a partir de uma ficha com o trecho literal de cada fonte
 
 A lição passou de 700 palavras com as correções e foi enxugada para caber.
 
-**Vídeos:** dois conferidos pelo oEmbed e pela descrição (YouTube Data API). O de Bruno Rech entra com aviso: a descrição diz que a conversão temporária entre SRCs "deve ser evitada", e o manual do QGIS a trata como funcionamento normal. Ficaram de fora um vídeo de 33 min sem capítulos e dois com divulgação na descrição.
+**Vídeos:** um, conferido pelo oEmbed e pela descrição (YouTube Data API). O de Bruno Rech saiu em 11/11/2026: a descrição diz que a conversão temporária entre SRCs "deve ser evitada", e o manual do QGIS a trata como funcionamento normal, então o vídeo contradiz a lição. Ficaram de fora também um vídeo de 33 min sem capítulos e dois com divulgação na descrição.
 
 **Validador:** o limite de palavras por lição passou de 900 para 700 no aviso (a regra já valia no texto, não no código deste branch).
 

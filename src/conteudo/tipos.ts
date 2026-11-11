@@ -67,7 +67,12 @@ export interface Checklist {
 export interface Indice {
   geradoEm: string;
   curriculo: { modulos: Modulo[] };
-  plano: { semanas: SemanaPlano[]; marcos: { dia: number; texto: string }[] };
+  plano: {
+    semanas: SemanaPlano[];
+    marcos: { dia: number; texto: string }[];
+    /** Lição opcional de abertura: fora das semanas, não conta no progresso nem na próxima lição. */
+    comecePorAqui?: { licao: string; texto: string };
+  };
   glossario: Termo[];
   fontes: Fonte[];
   checklists: Checklist[];

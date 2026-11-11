@@ -1,0 +1,251 @@
+[
+  {
+    "id": "01-02-q1",
+    "licao": "01-02",
+    "enunciado": "Numa rede própria, quem escolhe a tecnologia e o caminho da comunicação?",
+    "alternativas": [
+      {
+        "texto": "A operadora, que decide no contrato os caminhos e a tecnologia",
+        "correta": false,
+        "explicacao": "Isso vale para o link contratado. Na rede própria, quem decide é a distribuidora."
+      },
+      {
+        "texto": "A distribuidora, que implanta, opera e mantém a rede",
+        "correta": true,
+        "explicacao": "Certo. Na rede própria, a distribuidora implanta, opera e mantém, e a escolha é dela (T&D World)."
+      },
+      {
+        "texto": "O fabricante dos switches, que fixa o caminho no equipamento",
+        "correta": false,
+        "explicacao": "O fabricante fornece o equipamento, mas na rede própria a escolha de tecnologia e caminho é da distribuidora."
+      },
+      {
+        "texto": "A Anatel, que define a tecnologia de cada trecho da rede",
+        "correta": false,
+        "explicacao": "A Anatel não escolhe a tecnologia; na rede própria, a decisão é da distribuidora."
+      }
+    ],
+    "fontes": [
+      "tdworld-brasil-telecom"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-02-q2",
+    "licao": "01-02",
+    "enunciado": "De onde vem o tempo de reparo de um link contratado de operadora?",
+    "alternativas": [
+      {
+        "texto": "Da equipe da distribuidora, que conserta a fibra",
+        "correta": false,
+        "explicacao": "No link contratado, o reparo é da operadora, e o prazo vem do contrato, com SLA e chamado."
+      },
+      {
+        "texto": "Do manual do fabricante, que fixa o reparo em horas",
+        "correta": false,
+        "explicacao": "O prazo de reparo vem do contrato com a operadora, com SLA e chamado, não do manual do equipamento."
+      },
+      {
+        "texto": "Da tecnologia usada, que define o reparo a cada falha",
+        "correta": false,
+        "explicacao": "A tecnologia não define o reparo; o prazo vem do contrato, com SLA e chamado."
+      },
+      {
+        "texto": "Do contrato com a operadora, com SLA e chamado aberto",
+        "correta": true,
+        "explicacao": "Certo. No link contratado, o tempo de reparo vem do contrato, com SLA e chamado."
+      }
+    ],
+    "fontes": [
+      "tdworld-brasil-telecom"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-02-q3",
+    "licao": "01-02",
+    "enunciado": "Segundo a SEL, por que o TDM é bom para teleproteção?",
+    "alternativas": [
+      {
+        "texto": "Divide a banda entre todo o tráfego, para aproveitar o enlace",
+        "correta": false,
+        "explicacao": "O TDM dedica banda a cada circuito, sem influência do outro tráfego."
+      },
+      {
+        "texto": "Usa filas de prioridade que reduzem a latência média",
+        "correta": false,
+        "explicacao": "Quem usa pacotes não tem a mesma garantia; o TDM dá latência previsível pela banda dedicada."
+      },
+      {
+        "texto": "Dedica banda a cada circuito, com latência previsível",
+        "correta": true,
+        "explicacao": "Certo. O TDM é síncrono, dedica banda a cada circuito e dá circuitos determinísticos, de baixa latência (SEL)."
+      },
+      {
+        "texto": "Dispensa relógio comum, pois cada nó marca o seu tempo",
+        "correta": false,
+        "explicacao": "O TDM é síncrono e usa um relógio comum."
+      }
+    ],
+    "fontes": [
+      "sel-teleprotecao-mpls"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "01-02-q4",
+    "licao": "01-02",
+    "enunciado": "Um link MPLS restabelece em 50 ms ou mais. O que isso significa para o diferencial de linha?",
+    "alternativas": [
+      {
+        "texto": "Fica acima dos 5 ms que o diferencial pede, segundo a SEL",
+        "correta": true,
+        "explicacao": "Certo. O diferencial de linha pede restabelecimento em até 5 ms, e o MPLS leva 50 ms ou mais (SEL)."
+      },
+      {
+        "texto": "Atende, pois o diferencial aceita restabelecimento de até 50 ms",
+        "correta": false,
+        "explicacao": "O diferencial pede até 5 ms; 50 ms é dez vezes isso."
+      },
+      {
+        "texto": "Atende, pois o diferencial aceita restabelecimento de até 20 ms",
+        "correta": false,
+        "explicacao": "O diferencial pede até 5 ms, bem menos que 20 ms, que é o valor típico do Carrier Ethernet."
+      },
+      {
+        "texto": "Atende, pois o MPLS restabelece mais rápido que o Carrier Ethernet",
+        "correta": false,
+        "explicacao": "O MPLS leva 50 ms ou mais e o Carrier Ethernet, cerca de 20 ms; nenhum chega aos 5 ms."
+      }
+    ],
+    "fontes": [
+      "sel-teleprotecao-mpls"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-02-q5",
+    "licao": "01-02",
+    "enunciado": "Um engenheiro cita a SEL para dizer que MPLS nunca atende teleproteção. Como a lição manda tratar isso?",
+    "alternativas": [
+      {
+        "texto": "Como fato, pois a SEL é fonte normativa e a Strathclyde só opinou",
+        "correta": false,
+        "explicacao": "A SEL é fabricante e defende um produto próprio; a Strathclyde chegou a conclusão diferente."
+      },
+      {
+        "texto": "Como posição de fabricante; a Strathclyde diz que o MPLS pode atender",
+        "correta": true,
+        "explicacao": "Certo. A SEL defende um produto próprio; a Strathclyde concluiu que IP/MPLS e MPLS-TP bem configurados podem atender, com desempenho variável. Guarde as duas posições."
+      },
+      {
+        "texto": "Como erro, pois a Strathclyde provou que o MPLS atende em qualquer caso",
+        "correta": false,
+        "explicacao": "A Strathclyde disse que o MPLS pode atender se bem configurado, e o desempenho variou."
+      },
+      {
+        "texto": "Como irrelevante, pois nenhuma das duas fontes traz dados de latência",
+        "correta": false,
+        "explicacao": "As duas são fontes da lição; guarde as duas posições, sem descartar nenhuma."
+      }
+    ],
+    "fontes": [
+      "sel-teleprotecao-mpls",
+      "strathclyde-mpls"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "01-02-q6",
+    "licao": "01-02",
+    "enunciado": "A proposta traz dois links de operadoras diferentes, mas os dois entram no prédio pelo mesmo duto. O que pensar?",
+    "alternativas": [
+      {
+        "texto": "Operadoras diferentes bastam, pois cada link tem o seu caminho",
+        "correta": false,
+        "explicacao": "Operadora diferente não garante caminho diferente; no mesmo duto, caem juntos."
+      },
+      {
+        "texto": "O duto não importa; o que vale é o SLA de cada link",
+        "correta": false,
+        "explicacao": "O SLA não impede a falha em comum; no mesmo duto, os dois caem juntos."
+      },
+      {
+        "texto": "Podem cair juntos, então não são redundantes de verdade",
+        "correta": true,
+        "explicacao": "Certo. Dois canais só protegem se não caírem juntos; no mesmo duto, uma falha leva os dois."
+      },
+      {
+        "texto": "Dois links sempre protegem, pois um assume quando o outro cai",
+        "correta": false,
+        "explicacao": "Só se não caírem juntos; no mesmo duto, uma falha derruba os dois."
+      }
+    ],
+    "fontes": [
+      "tdworld-brasil-telecom"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "01-02-q7",
+    "licao": "01-02",
+    "enunciado": "A fiscalização cobra, numa linha de distribuição, os dois canais de teleproteção por meios diferentes da regra da rede básica. O que a lição diz?",
+    "alternativas": [
+      {
+        "texto": "A regra vale igual na distribuição, pois os dois lados são do mesmo setor",
+        "correta": false,
+        "explicacao": "Na distribuição os requisitos são menos rígidos, e vale o procedimento da empresa."
+      },
+      {
+        "texto": "A regra vale na distribuição, mas só se os dois canais forem em OPGW",
+        "correta": false,
+        "explicacao": "A regra da rede básica não passa automaticamente à distribuição, e pede meios diferentes, não só OPGW."
+      },
+      {
+        "texto": "Na distribuição vale a regra do ONS, de dois enlaces em regiões diferentes",
+        "correta": false,
+        "explicacao": "Os enlaces com o ONS são regra da transmissão; na distribuição vale o procedimento da empresa."
+      },
+      {
+        "texto": "A regra é da transmissão; na distribuição vale o procedimento da empresa",
+        "correta": true,
+        "explicacao": "Certo. Essa regra é da rede básica da transmissão; na distribuição os requisitos são menos rígidos, e vale o procedimento da empresa (T&D World)."
+      }
+    ],
+    "fontes": [
+      "tdworld-brasil-telecom"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "01-02-q8",
+    "licao": "01-02",
+    "enunciado": "Qual destes é um exemplo de dois canais de teleproteção por meios diferentes?",
+    "alternativas": [
+      {
+        "texto": "Um canal em cabo OPGW e outro por onda portadora na linha",
+        "correta": true,
+        "explicacao": "Certo. O exemplo da lição é um canal em cabo OPGW e outro por onda portadora na linha de alta tensão (T&D World)."
+      },
+      {
+        "texto": "Dois canais em fibras do mesmo cabo OPGW, cada um com seu equipamento",
+        "correta": false,
+        "explicacao": "São o mesmo meio e o mesmo cabo; caem juntos se o cabo romper."
+      },
+      {
+        "texto": "Dois links alugados da mesma operadora, com SLAs diferentes",
+        "correta": false,
+        "explicacao": "SLA diferente não muda o meio nem o caminho; podem cair juntos."
+      },
+      {
+        "texto": "Um canal em SDH e outro em MPLS, ambos na mesma fibra",
+        "correta": false,
+        "explicacao": "A fibra é a mesma; um rompimento derruba os dois canais."
+      }
+    ],
+    "fontes": [
+      "tdworld-brasil-telecom"
+    ],
+    "dificuldade": 2
+  }
+]

@@ -37,6 +37,7 @@
 | a16 | Abra a tabela de atributos de uma camada de postes da empresa: quais campos existem e qual deles é o código do poste? (Anote só no Meu caderno; nada de dado da empresa no app.) | Camada de postes no QGIS da equipe | 08-02 |
 | a17 | Abra Help ► About no computador de trabalho: qual é a versão do QGIS instalada? | No macOS: QGIS ► About QGIS | 08-01 |
 | a18 | Pegue um shapefile recebido de fornecedor: vieram todos os arquivos (.shp, .shx, .dbf, .prj)? (Anote só no Meu caderno; nada de dado da empresa no app.) | Pasta com arquivos recebidos | 08-04 |
+| a19 | Como os religadores se comunicam hoje (rádio, celular, fibra)? Qual equipamento de comunicação fica em cada um? | Etiqueta e ficha do religador; mapa da rede | 01-06 |
 
 ---
 
@@ -78,6 +79,9 @@
 | b32 | Qual é o modelo de notificação da empresa e que prazos o contrato dá para regularizar? | Contrato-padrão de compartilhamento e modelo de notificação | 07-06 |
 | b33 | Como a empresa guarda os registros de fiscalização e por quanto tempo? | Procedimento de fiscalização e de guarda de documentos | 07-06 |
 | b34 | O que o procedimento manda fazer em caso de raio, chuva forte, vento ou fogo perto da rede durante o trabalho de campo? | Procedimento de segurança e instrução de trabalho da empresa | 07-07 |
+| b35 | Os links contratados têm SLA? Qual a disponibilidade, o período (mensal ou anual) e qual a meta de disponibilidade que a empresa quer para os links operativos? | Contratos de link e especificação técnica da rede | 01-02, 01-05, 09-01 |
+| b36 | Que serviços (SCADA, teleproteção, medição, religadores, corporativo) vão na rede própria e quais vão em link contratado? | Projeto da rede de telecom ou plano diretor | 01-01, 01-02 |
+| b37 | Existe um plano de migração da rede de transporte (por exemplo, de SDH para pacotes)? Quais são as etapas? | Plano diretor de telecom, projeto de modernização | 01-06 |
 
 ---
 
@@ -91,7 +95,7 @@
 | c04 | Quem é gestor e quem é fiscal de cada contrato de telecom? Qual é o meu papel e a minha alçada? | Líder de TI | 09-03 |
 | c05 | Qual sistema de chamados usamos e quem pode abrir chamado em nome da empresa? | Líder de TI | 09-06 |
 | c06 | A rede é própria, contratada ou mista? Que protocolo SCADA usamos? Já há IEC 61850? | Engenharia / automação | 01-01 |
-| c07 | Que requisitos de telecom do ONS valem depois da interligação ao SIN? | Engenharia | 01-06 |
+| c07 | Que requisitos de telecom do ONS valem depois da interligação ao SIN? | Engenharia | 01-02, 01-06 |
 | c08 | TI e TO (tecnologia da operação) são separadas? Quem cuida da telecom operativa? | Líder de TI | 01-01 |
 | c09 | Que materiais temos em estoque (cabos, CEO, CTO, tubetes, SFP, cordões)? | Almoxarifado | 03-05, 04-01, 04-03, 04-06, 02-04, 03-07, 05-01 |
 | c10 | As operadoras aplicam o RGC da Anatel aos nossos links ou só o SLA do contrato? | Jurídico | 09-02 |
@@ -106,6 +110,7 @@
 | c19 | Posso levar dados da rede no celular? É celular da empresa ou pessoal? O que a TI e a segurança da informação exigem? | TI e segurança da informação | 08-07 |
 | c20 | Para travessia de rodovia, que órgão autoriza e quem na empresa cuida disso? | Área de projetos ou de compartilhamento de postes | 07-05 |
 | c21 | Quem acompanha o novo regulamento dos postes na empresa e como a equipe de campo fica sabendo quando algo mudar? | Área regulatória ou de relacionamento com ocupantes | 07-07 |
+| c22 | Os links importantes têm rota dupla, com caminhos fisicamente diferentes? Como isso é verificado? | Engenharia de telecom e planejamento da rede | 01-05 |
 
 ---
 
@@ -158,6 +163,8 @@
 | d43 | O que acontece com o material retirado (guarda, devolução, descarte)? | 07-06 |
 | d44 | Em que meses a equipe concentra as vistorias de postes, e o que muda na estação chuvosa? | 07-07 |
 | d45 | Depois de temporal ou queimada, quem decide reinspecionar e como os danos em cabos de ocupantes são registrados? | 07-07 |
+| d46 | Que protocolos (DNP3, IEC 104, IEC 61850) a equipe de automação usa, e onde eles passam pela rede? | 01-03, 01-04 |
+| d47 | Que meios de transporte a empresa usa para cada serviço (fibra, rádio, PLC, SDH, MPLS-TP, celular)? | 01-06 |
 
 ---
 

@@ -360,6 +360,7 @@
     "texto": "Que requisitos de telecom do ONS valem depois da interligação ao SIN?",
     "dica": "Engenharia",
     "licoes": [
+      "01-02",
       "01-06"
     ]
   },
@@ -1097,6 +1098,73 @@
     "dica": "Área regulatória ou de relacionamento com ocupantes",
     "licoes": [
       "07-07"
+    ]
+  },
+  {
+    "id": "a19",
+    "onde": "sozinho",
+    "texto": "Como os religadores se comunicam hoje (rádio, celular, fibra)? Qual equipamento de comunicação fica em cada um?",
+    "dica": "Etiqueta e ficha do religador; mapa da rede",
+    "licoes": [
+      "01-06"
+    ]
+  },
+  {
+    "id": "b35",
+    "onde": "documentos",
+    "texto": "Os links contratados têm SLA? Qual a disponibilidade, o período (mensal ou anual) e qual a meta de disponibilidade que a empresa quer para os links operativos?",
+    "dica": "Contratos de link e especificação técnica da rede",
+    "licoes": [
+      "01-02",
+      "01-05",
+      "09-01"
+    ]
+  },
+  {
+    "id": "b36",
+    "onde": "documentos",
+    "texto": "Que serviços (SCADA, teleproteção, medição, religadores, corporativo) vão na rede própria e quais vão em link contratado?",
+    "dica": "Projeto da rede de telecom ou plano diretor",
+    "licoes": [
+      "01-01",
+      "01-02"
+    ]
+  },
+  {
+    "id": "b37",
+    "onde": "documentos",
+    "texto": "Existe um plano de migração da rede de transporte (por exemplo, de SDH para pacotes)? Quais são as etapas?",
+    "dica": "Plano diretor de telecom, projeto de modernização",
+    "licoes": [
+      "01-06"
+    ]
+  },
+  {
+    "id": "c22",
+    "onde": "outras-areas",
+    "texto": "Os links importantes têm rota dupla, com caminhos fisicamente diferentes? Como isso é verificado?",
+    "dica": "Engenharia de telecom e planejamento da rede",
+    "licoes": [
+      "01-05"
+    ]
+  },
+  {
+    "id": "d46",
+    "onde": "colega",
+    "texto": "Que protocolos (DNP3, IEC 104, IEC 61850) a equipe de automação usa, e onde eles passam pela rede?",
+    "dica": "Colega da automação ou da proteção",
+    "licoes": [
+      "01-03",
+      "01-04"
+    ]
+  },
+  {
+    "id": "d47",
+    "onde": "colega",
+    "texto": "Que meios de transporte a empresa usa para cada serviço (fibra, rádio, PLC, SDH, MPLS-TP, celular)?",
+    "dica": "Colega da engenharia de telecom",
+    "licoes": [
+      "01-06"
     ]
   }
 ]

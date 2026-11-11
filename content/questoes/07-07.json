@@ -1,0 +1,256 @@
+[
+  {
+    "id": "07-07-q1",
+    "licao": "07-07",
+    "enunciado": "Você planeja a vistoria de rotina dos postes de Boa Vista e olha o calendário. O que a lição recomenda?",
+    "alternativas": [
+      {
+        "texto": "Marcar só de dezembro a março, porque o estudo do INPA garante tempo seco nesses meses.",
+        "correta": false,
+        "explicacao": "São médias de séries antigas, e o calendário é guia, não garantia. Na época seca também há fogo perto da rede, que manda parar."
+      },
+      {
+        "texto": "Evitar os dias de chuva forte, lembrando que o período chuvoso médio vai de maio a setembro.",
+        "correta": true,
+        "explicacao": "Certo. A vistoria rende mais fora dos dias de chuva forte, e as datas são médias: o ano pode fugir delas."
+      },
+      {
+        "texto": "Marcar em junho, mês de maior concentração de chuva, porque a Embrapa mostra que o tempo ajuda.",
+        "correta": false,
+        "explicacao": "Junho é o mês de maior concentração de chuva segundo a Embrapa. É o contrário de um bom dia para vistoriar."
+      },
+      {
+        "texto": "Ignorar o calendário, porque as séries são antigas e não servem para planejar nada.",
+        "correta": false,
+        "explicacao": "As séries são antigas e médias, mas servem de guia para planejar. O que não dá é tratá-las como garantia."
+      }
+    ],
+    "fontes": [
+      "embrapa-chuvas-boa-vista-1989",
+      "inpa-focos-calor-rr-2010"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-07-q2",
+    "licao": "07-07",
+    "enunciado": "Você está registrando um poste e começa a trovejar ao longe. O que faz?",
+    "alternativas": [
+      {
+        "texto": "Termina só este registro, que é rápido, e então se afasta.",
+        "correta": false,
+        "explicacao": "Raio é motivo para suspender o trabalho, e não é hora de registrar."
+      },
+      {
+        "texto": "Fica junto do poste até a chuva passar, para retomar o registro logo em seguida.",
+        "correta": false,
+        "explicacao": "Com raio, o caminho é suspender, afastar-se da rede e comunicar, não esperar junto dela."
+      },
+      {
+        "texto": "Tira as fotos que faltam para não perder a viagem e comunica depois.",
+        "correta": false,
+        "explicacao": "A ordem é suspender, afastar-se e comunicar. Foto pendente não justifica ficar."
+      },
+      {
+        "texto": "Suspende o serviço, afasta-se da rede e comunica pelo procedimento da empresa.",
+        "correta": true,
+        "explicacao": "Certo. Raio, chuva forte, vento forte ou fogo perto da rede: suspender, afastar-se e comunicar (lição 10-01)."
+      }
+    ],
+    "fontes": [
+      "nr10-vigente"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-07-q3",
+    "licao": "07-07",
+    "enunciado": "Em fevereiro, você vê fogo no terreno ao lado de um vão com cabos de ocupantes. O que faz?",
+    "alternativas": [
+      {
+        "texto": "Afasta-se do fogo e da rede e comunica pelo procedimento da empresa.",
+        "correta": true,
+        "explicacao": "Certo. Fogo perto da rede é motivo para suspender, afastar-se e comunicar. O fogo pode alcançar cabo e poste."
+      },
+      {
+        "texto": "Chega perto para fotografar o cabo antes que queime e anexa a foto ao registro.",
+        "correta": false,
+        "explicacao": "Fogo perto da rede não é hora de registrar. O caminho é suspender, afastar-se e comunicar."
+      },
+      {
+        "texto": "Pede a um colega que chegue perto e registre o cabo, e comunica só depois.",
+        "correta": false,
+        "explicacao": "Mandar o colega para perto do fogo só passa o risco adiante. A regra vale para a equipe: afastar-se e comunicar."
+      },
+      {
+        "texto": "Segue para os outros vãos e comunica o fogo no relatório do fim do dia.",
+        "correta": false,
+        "explicacao": "Comunicar é parte do que se faz na hora, ao se afastar. Deixar para o fim do dia atrasa o aviso."
+      }
+    ],
+    "fontes": [
+      "nr10-vigente",
+      "inpa-focos-calor-rr-2010"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-07-q4",
+    "licao": "07-07",
+    "enunciado": "Depois de um temporal, você vai reinspecionar os vãos atingidos, conforme o procedimento da empresa. O que procurar e como?",
+    "alternativas": [
+      {
+        "texto": "Só as caixas de emenda, subindo no poste para abrir e ver se entrou água.",
+        "correta": false,
+        "explicacao": "A caixa mal fechada é um dos pontos, mas não o único. Subir não é o caminho: a vistoria é do solo."
+      },
+      {
+        "texto": "Os vãos da última vistoria de rotina, medindo a altura do cabo embaixo da rede.",
+        "correta": false,
+        "explicacao": "Reinspeciona-se o que o temporal atingiu. Você não mede embaixo da rede (lição 07-05)."
+      },
+      {
+        "texto": "Galho sobre cabo, poste inclinado e cabo baixo, do solo e de longe; registra e comunica.",
+        "correta": true,
+        "explicacao": "Certo. São os sinais de chuva e vento. Olha-se do solo e de longe, registra-se e comunica-se; cabo baixo se comunica na hora."
+      },
+      {
+        "texto": "Só os cabos já no chão, porque cabo que cedeu e ficou baixo continua dentro do normal.",
+        "correta": false,
+        "explicacao": "Cabo que cedeu e ficou baixo é risco de acidente (lição 07-05): comunica-se na hora."
+      }
+    ],
+    "fontes": [
+      "nr10-vigente",
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-07-q5",
+    "licao": "07-07",
+    "enunciado": "Depois de uma queimada na beira da estrada, você vê um cabo no chão e um poste queimado e inclinado. O que faz?",
+    "alternativas": [
+      {
+        "texto": "Afasta o cabo da pista com uma vara seca de madeira, para não atrapalhar o trânsito.",
+        "correta": false,
+        "explicacao": "O cabo pode estar em contato com rede energizada. Não se toca nele, nem com vara."
+      },
+      {
+        "texto": "Fica longe, não toca no cabo e comunica: pode haver contato com rede energizada.",
+        "correta": true,
+        "explicacao": "Certo. Cabo ou poste queimado ou caído pode estar em contato com rede energizada: distância e comunicação."
+      },
+      {
+        "texto": "Registra de perto, porque o fogo já apagou e o perigo da queimada passou.",
+        "correta": false,
+        "explicacao": "Com o fogo apagado, o risco do cabo continua, porque ele pode estar em contato com rede energizada."
+      },
+      {
+        "texto": "Chega perto só para ver se o cabo é de ocupante e depois se afasta.",
+        "correta": false,
+        "explicacao": "Chegar perto para ver melhor é o erro. Mantenha distância e comunique, e a empresa identifica o dono."
+      }
+    ],
+    "fontes": [
+      "nr10-vigente",
+      "inpa-focos-calor-rr-2010"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-07-q6",
+    "licao": "07-07",
+    "enunciado": "Um colega quer usar, num vão em Roraima, o valor de vento da norma da Cemig que viu num projeto de exemplo. O que dizer?",
+    "alternativas": [
+      {
+        "texto": "Serve, porque a norma é de uma distribuidora e vale para qualquer região do país.",
+        "correta": false,
+        "explicacao": "O vento da norma da Cemig é de Minas Gerais e não vale para Roraima. A Cemig é só exemplo."
+      },
+      {
+        "texto": "Serve só na época seca, e na chuva vale outro valor.",
+        "correta": false,
+        "explicacao": "O valor é de Minas Gerais e não vale para Roraima em época nenhuma."
+      },
+      {
+        "texto": "Serve, porque o item 6.14 fixa um mesmo vento para qualquer lugar.",
+        "correta": false,
+        "explicacao": "O item 6.14 manda considerar o vento crítico da região, e a região aqui é outra."
+      },
+      {
+        "texto": "Não serve: o vento é de Minas Gerais, e o projeto usa o vento crítico da região.",
+        "correta": true,
+        "explicacao": "Certo. O item 6.14 leva em conta o vento crítico da região, e o valor da Cemig é de Minas Gerais. O da sua empresa se confirma."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-07-q7",
+    "licao": "07-07",
+    "enunciado": "Um colega diz: \"Com o posteiro, a norma técnica da distribuidora deixa de valer.\" O que o texto do decreto diz?",
+    "alternativas": [
+      {
+        "texto": "Pelo texto do decreto, quem explorar os postes segue as condições técnicas da distribuidora cedente.",
+        "correta": true,
+        "explicacao": "Certo. É a leitura do art. 16, §3º, I, do Decreto 12.068/2024. Seu trabalho continua apoiado na norma técnica da empresa."
+      },
+      {
+        "texto": "Que o posteiro passa a definir as condições técnicas, e a distribuidora só cobra o ponto de fixação.",
+        "correta": false,
+        "explicacao": "O decreto sujeita quem explorar os postes às condições técnicas da distribuidora cedente, sem passar a definição ao posteiro."
+      },
+      {
+        "texto": "Que a norma da distribuidora só continua valendo para os cabos já instalados nos postes.",
+        "correta": false,
+        "explicacao": "O decreto não limita a norma aos cabos já instalados. As condições técnicas valem para quem explorar os postes."
+      },
+      {
+        "texto": "Que o decreto não trata de condições técnicas e que isso depende só da resolução conjunta.",
+        "correta": false,
+        "explicacao": "O art. 16, §3º, I, trata das condições técnicas aplicáveis, inclusive as da distribuidora cedente."
+      }
+    ],
+    "fontes": [
+      "decreto-12068-2024"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "07-07-q8",
+    "licao": "07-07",
+    "enunciado": "Num grupo de mensagens, alguém avisa que \"a regra nova dos postes foi aprovada\" e quer mudar a vistoria na segunda. O que conferir antes?",
+    "alternativas": [
+      {
+        "texto": "Nada: a minuta em análise na ANEEL já vale como regra desde a notícia.",
+        "correta": false,
+        "explicacao": "Em 28/10/2026 a minuta seguia em análise na ANEEL. Em 11/11/2026 é proposta, não regra."
+      },
+      {
+        "texto": "Só o preço do ponto de fixação, que é o único ponto que o regulamento mudaria na prática.",
+        "correta": false,
+        "explicacao": "A regulação que falta trata de quem explora, do preço, do uso da faixa e da regularização. Nada disso vale antes da publicação."
+      },
+      {
+        "texto": "Se a resolução conjunta saiu, a data e a orientação da empresa; até lá vale a 07-01.",
+        "correta": true,
+        "explicacao": "Certo. Em 10 e 11/11/2026 não encontramos resolução conjunta nova. Confira a publicação, a data e a orientação da empresa."
+      },
+      {
+        "texto": "Se o PL 3.220/2019 foi aprovado na Câmara; em 04/11/2026 foi, então já é lei.",
+        "correta": false,
+        "explicacao": "O projeto volta ao Senado e não é lei. Aprovação na Câmara não faz a regra valer."
+      }
+    ],
+    "fontes": [
+      "camara-pl-3220-2019",
+      "cenario-energia-2026-10-28",
+      "decreto-12068-2024"
+    ],
+    "dificuldade": 3
+  }
+]

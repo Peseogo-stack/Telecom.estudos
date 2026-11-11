@@ -136,6 +136,12 @@ function normalizarCaderno(x: unknown): Caderno {
   return caderno;
 }
 
+function normalizarVideos(x: unknown): Estado['videos'] {
+  const videos: Estado['videos'] = {};
+  if (ehObjeto(x)) for (const [url, v] of Object.entries(x)) if (v === 'util' || v === 'fora') videos[url] = v;
+  return videos;
+}
+
 function normalizarAjustes(x: unknown): Ajustes {
   const a = { ...ESTADO_INICIAL.ajustes };
   if (!ehObjeto(x)) return a;
@@ -157,6 +163,7 @@ export function normalizarEstado(x: unknown): Estado {
     revisao: normalizarRevisao(x.revisao),
     caderno: normalizarCaderno(x.caderno),
     ajustes: normalizarAjustes(x.ajustes),
+    videos: normalizarVideos(x.videos),
     ferramentas: ehObjeto(x.ferramentas) ? x.ferramentas : {},
   };
 }
@@ -272,5 +279,6 @@ export function aplicarImportacao(atual: Estado, leitura: Extract<ResultadoLeitu
     revisao: { itens, dominadas: [...new Set([...atual.revisao.dominadas, ...d.revisao.dominadas])].filter((id) => !itens[id]) },
     caderno,
     ajustes: d.ajustes,
+    videos: { ...atual.videos, ...d.videos },
   };
 }

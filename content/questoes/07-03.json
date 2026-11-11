@@ -1,0 +1,257 @@
+[
+  {
+    "id": "07-03-q1",
+    "licao": "07-03",
+    "enunciado": "Na vistoria, do solo, você vê o cabo de um provedor num poste sem plaqueta nenhuma. O que registrar e concluir?",
+    "alternativas": [
+      {
+        "texto": "Anotar como ocupação clandestina, porque cabo sem plaqueta não tem dono e a distribuidora pode retirar.",
+        "correta": false,
+        "explicacao": "Clandestina é a ocupação sem contrato ou de dono não identificado depois de a distribuidora notificar os ocupantes com contrato. Falta de plaqueta, só por si, não basta (lição 07-01)."
+      },
+      {
+        "texto": "Cortar o cabo, para o dono aparecer e se identificar na distribuidora.",
+        "correta": false,
+        "explicacao": "Você registra e comunica; não corta nem retira. Retirar cabo segue o procedimento da empresa e as regras da REN 1.044/2022 (lição 07-01)."
+      },
+      {
+        "texto": "Registrar o poste e o cabo sem plaqueta como não conformidade e comunicar; não concluir que é clandestino.",
+        "correta": true,
+        "explicacao": "Certo. Falta de plaqueta é não conformidade a registrar. Só vira clandestino nas condições da lição 07-01."
+      },
+      {
+        "texto": "Deixar para lá: nos compartilhamentos já existentes, a plaqueta é opcional.",
+        "correta": false,
+        "explicacao": "A obrigação de identificar existe. Nos compartilhamentos existentes, a identificação entra junto com a adequação ou a regularização, e você registra a falta."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-03-q2",
+    "licao": "07-03",
+    "enunciado": "O cabo de um ocupante tem plaqueta amarela legível, mas está fixado acima da faixa de ocupação. Como classificar?",
+    "alternativas": [
+      {
+        "texto": "Regular, porque o cabo está identificado e a plaqueta mostra quem é o ocupante.",
+        "correta": false,
+        "explicacao": "A plaqueta mostra o dono, mas não prova que a posição e o projeto estão certos. Cabo fora da faixa é irregular mesmo com plaqueta."
+      },
+      {
+        "texto": "Irregular quanto à posição: a plaqueta identifica o dono, mas não prova faixa nem projeto aprovado.",
+        "correta": true,
+        "explicacao": "Certo. Identificação não substitui posição na faixa (lição 07-02) nem projeto aprovado (lição 07-01)."
+      },
+      {
+        "texto": "Regular, porque a faixa é só recomendação da norma e a plaqueta já cumpre o que a REN pede.",
+        "correta": false,
+        "explicacao": "A posição na faixa é exigência da norma da distribuidora (lição 07-02). A plaqueta cumpre só a identificação."
+      },
+      {
+        "texto": "Clandestino, porque a plaqueta só vale para cabo que está dentro da faixa.",
+        "correta": false,
+        "explicacao": "Clandestina é outra situação: sem contrato, ou dono não identificado após a notificação. Aqui o dono está identificado."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "cemig-nd66"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-03-q3",
+    "licao": "07-03",
+    "enunciado": "Um ocupante diz que plaqueta é exigência só da Cemig. De onde vem a obrigação de identificar e de onde vem o modelo?",
+    "alternativas": [
+      {
+        "texto": "A obrigação vem da REN 1.044/2022 e da Resolução Conjunta 4/2014; o modelo, da norma da distribuidora.",
+        "correta": true,
+        "explicacao": "Certo. As resoluções valem para todo ocupante. Tamanho, cor, distância do poste e QR Code ficam na norma de cada distribuidora."
+      },
+      {
+        "texto": "A obrigação e o modelo vêm da Cemig ND-6.6, que a REN 1.044/2022 adotou como padrão nacional.",
+        "correta": false,
+        "explicacao": "A ND-6.6 é exemplo de uma distribuidora. A REN manda seguir as normas técnicas aplicáveis, sem fixar um modelo único."
+      },
+      {
+        "texto": "A obrigação vem da norma da distribuidora e o modelo, das resoluções, que trazem a tabela de medidas.",
+        "correta": false,
+        "explicacao": "É ao contrário: as resoluções trazem a obrigação, e as medidas da plaqueta ficam na norma da distribuidora."
+      },
+      {
+        "texto": "A obrigação vem do contrato de cada ocupante; sem cláusula, a plaqueta não é exigida.",
+        "correta": false,
+        "explicacao": "A obrigação já está na REN 1.044/2022 e na Resolução Conjunta 4/2014. O contrato pode tratar de multa ou prazo, mas não cria nem tira a obrigação."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-03-q4",
+    "licao": "07-03",
+    "enunciado": "Do solo, você vê uma plaqueta no cabo, mas o texto está pequeno demais para ler. Só dá para ler subindo no poste. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Pedir a um colega que suba só até a altura do cabo, já que ele tem experiência.",
+        "correta": false,
+        "explicacao": "Ler plaqueta é do solo, para qualquer pessoa. Subir segue o treinamento e o procedimento da empresa (lição 10-01)."
+      },
+      {
+        "texto": "Subir com escada isolada, afastada da rede, só o tempo de ler, e descer.",
+        "correta": false,
+        "explicacao": "Escada não torna a subida segura nem autorizada. Ler plaqueta é do solo e subir segue o procedimento da empresa (lição 10-01)."
+      },
+      {
+        "texto": "Registrar como cabo sem plaqueta, pois plaqueta ilegível equivale a não ter plaqueta.",
+        "correta": false,
+        "explicacao": "Há plaqueta, e não ler é limite da sua posição. O registro certo é ilegível do solo, que é diferente de sem plaqueta."
+      },
+      {
+        "texto": "Registrar \"ilegível do solo\" e seguir o procedimento da empresa, sem subir.",
+        "correta": true,
+        "explicacao": "Certo. A leitura é do solo; se não der, registre como ilegível do solo e siga o procedimento da empresa."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-03-q5",
+    "licao": "07-03",
+    "enunciado": "Um ocupante afirma que só precisa de plaqueta no primeiro e no último poste do trecho. O que dizem a REN e os exemplos?",
+    "alternativas": [
+      {
+        "texto": "Ele tem razão: nos exemplos, o primeiro e o último poste bastam para o trecho todo.",
+        "correta": false,
+        "explicacao": "Os exemplos pedem a plaqueta em todos os postes (Cemig: todos os postes e vãos por onde a rede passa; Energisa: todos, no mínimo)."
+      },
+      {
+        "texto": "Em todos os pontos de fixação; os dois exemplos pedem a plaqueta em todos os postes.",
+        "correta": true,
+        "explicacao": "Certo. A REN 1.044/2022, art. 17, e a Resolução Conjunta 4/2014, art. 8º, falam em todos os pontos de fixação."
+      },
+      {
+        "texto": "Ele tem razão se o trecho for curto, pois a REN só exige plaqueta em trechos longos.",
+        "correta": false,
+        "explicacao": "A REN não fala em trecho curto ou longo: o art. 17 fala em todos os pontos de fixação."
+      },
+      {
+        "texto": "A identificação é em um poste a cada 10 metros de cabo, como o drop na norma da Cemig.",
+        "correta": false,
+        "explicacao": "Os 10 metros da Cemig são para identificar o drop, se o ocupante quiser. Os cabos levam plaqueta em todos os pontos de fixação."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014",
+      "cemig-nd66",
+      "energisa-ndu009-v4"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-03-q6",
+    "licao": "07-03",
+    "enunciado": "Na vistoria, a plaqueta de um cabo está a 250 mm do poste. Um colega diz que a Energisa pede 300 mm e que então está errado. O que fazer?",
+    "alternativas": [
+      {
+        "texto": "Aceitar: 250 mm cai dentro dos 200 a 400 mm da Cemig, que é a norma mais nova das duas.",
+        "correta": false,
+        "explicacao": "O intervalo da Cemig também é exemplo dela. A norma da sua distribuidora pode pedir outra distância."
+      },
+      {
+        "texto": "Registrar como irregular, pois a Energisa fixa 300 mm e a Cemig foi atualizada depois, em 12/2024.",
+        "correta": false,
+        "explicacao": "A norma da Energisa é de versão antiga e é exemplo. Nenhum dos dois números vale como regra da sua empresa."
+      },
+      {
+        "texto": "Subir no poste com trena para medir de novo, antes de registrar a distância.",
+        "correta": false,
+        "explicacao": "Medir no poste segue o treinamento e o procedimento da empresa (lição 10-01). E a medida que decide é a da norma da sua distribuidora."
+      },
+      {
+        "texto": "Conferir na norma da sua distribuidora: 300 mm e 200 a 400 mm são só exemplos.",
+        "correta": true,
+        "explicacao": "Certo. Os exemplos não dizem o mesmo (200 a 400 mm na Cemig, 300 mm na Energisa); a medida que vale é a da norma da distribuidora da sua empresa."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66",
+      "energisa-ndu009-v4"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-03-q7",
+    "licao": "07-03",
+    "enunciado": "Você vê uma plaqueta com CNPJ e QR Code, e um colega diz que todo ocupante do país tem de usar esse modelo. O que está certo?",
+    "alternativas": [
+      {
+        "texto": "O QR Code é exigência da REN 1.044/2022 para todos os ocupantes, e leva ao projeto aprovado do cabo.",
+        "correta": false,
+        "explicacao": "A REN exige identificar o cabo, mas não fixa um modelo. E o QR Code do exemplo leva a um site de contato do ocupante, não ao projeto."
+      },
+      {
+        "texto": "O QR Code substitui o telefone e o nome do ocupante, que então podem ser tirados da plaqueta.",
+        "correta": false,
+        "explicacao": "No modelo novo da Cemig a plaqueta tem as mesmas características de antes, e mais o CNPJ e o QR Code. Nada é tirado."
+      },
+      {
+        "texto": "É o modelo novo da Cemig, exemplo dela; o QR Code leva a um site de contato do ocupante.",
+        "correta": true,
+        "explicacao": "Certo. É exemplo da Cemig, para plaquetas novas desde janeiro de 2026. Vale a norma da sua distribuidora para saber se o modelo se aplica."
+      },
+      {
+        "texto": "O QR Code mostra o contrato do ocupante com a distribuidora, para conferir se a ocupação é regular.",
+        "correta": false,
+        "explicacao": "O QR Code leva a um site com formas de contatar o ocupante. Ele não prova que a ocupação é regular."
+      }
+    ],
+    "fontes": [
+      "cemig-nd66",
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "07-03-q8",
+    "licao": "07-03",
+    "enunciado": "No exercício com os dados fictícios, o filtro \"plaqueta\" = 'nao' deu 5 pontos de fixação, e há o ocupante \"Sem identificação\". Como seguir?",
+    "alternativas": [
+      {
+        "texto": "Cruzar os 5 pontos com ocupantes para ver de quem são, e tratar o \"Sem identificação\" pela lição 07-01.",
+        "correta": true,
+        "explicacao": "Certo. O cruzamento mostra de quem são os 5 pontos. O ocupante sem contrato e sem dono identificado só é chamado de clandestino nas condições da lição 07-01: depois de a distribuidora notificar os ocupantes com contrato."
+      },
+      {
+        "texto": "Tratar os 5 pontos como clandestinos de imediato, já que a falta de plaqueta basta e dispensa a notificação.",
+        "correta": false,
+        "explicacao": "Sem plaqueta é não conformidade a registrar. Clandestino segue as condições da lição 07-01, e o ocupante pode ter contrato."
+      },
+      {
+        "texto": "Ignorar o ocupante \"Sem identificação\": sem nome, não há como relacioná-lo a nenhum poste da tabela.",
+        "correta": false,
+        "explicacao": "Ele aparece em 4 postes da tabela ocupacoes. É o caso que a lição 07-01 trata como clandestino, nas condições dela."
+      },
+      {
+        "texto": "Considerar regulares os ocupantes com contrato vigente, porque o contrato dispensa a plaqueta nos 5 pontos.",
+        "correta": false,
+        "explicacao": "Contrato vigente não dispensa a plaqueta: a obrigação de identificar vem da REN 1.044/2022 e da Resolução Conjunta 4/2014, e o cabo ainda pode estar fora do projeto ou da faixa."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 3
+  }
+]

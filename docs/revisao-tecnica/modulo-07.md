@@ -1,0 +1,127 @@
+# Revisão técnica do módulo 7: postes e compartilhamento
+
+Cada lição é escrita a partir de uma ficha com o trecho literal de cada fonte, aberta no dia. Depois eu confiro a lição, o glossário, as perguntas, as questões e o diagrama frase a frase contra a ficha. Cemig ND-6.6 e Energisa NDU 009 entram só como exemplo: a regra é a da norma da distribuidora local.
+
+## Acesso às fontes oficiais em 10 e 11/11/2026
+
+- **ANEEL (`www2.aneel.gov.br`):** todas as páginas responderam 403 (desafio do Cloudflare). Não contornei.
+- **Anatel (portal de legislação):** em manutenção. **Diário Oficial e Planalto:** sem resposta.
+- **O que li no lugar:** a REN 1.044/2022 numa cópia integral publicada pela Ceripa (o PDF termina com "Este texto não substitui o publicado no D.O. de 30.09.2022") e as Resoluções Conjuntas 4/2014 e 1/1999 no LegisWeb. O Decreto 12.068/2024 veio da publicação original no Portal da Câmara. Cada fonte diz isso na observação.
+- **O que isso deixa em aberto:** não deu para ver, nas páginas oficiais, se alguma dessas normas foi alterada depois. As notícias até 06/11/2026 e a lista do Teletime em 11/11/2026 tratam a Resolução Conjunta 4/2014 como vigente e o texto novo como minuta.
+
+## 07-01 — Quem manda no poste (11/11/2026)
+
+**Status do novo regulamento, conferido em 10/11 e de novo em 11/11/2026:** ainda é proposta.
+
+- 02/12/2025: a ANEEL aprovou a versão dela, que dependia da Anatel (Teletime).
+- 22/05/2026: o TeleSíntese noticia o parecer vinculante da AGU pela cessão obrigatória; a ANEEL deve rever o texto.
+- 06/10/2026: a ANEEL retirou o item de pauta (Teletime).
+- 28/10/2026: minuta em análise na ANEEL (Cenário Energia).
+- 04/11/2026: a Câmara aprovou o substitutivo do PL 3.220/2019, que volta ao Senado (ficha de tramitação).
+- 11/11/2026: nenhuma notícia de aprovação conjunta ou publicação.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "Resoluções Conjuntas ANEEL/Anatel 1/1999 e 4/2014" | A 1/1999 é da ANEEL, da Anatel e da ANP | Cada uma com os seus órgãos |
+| "A AGU concluiu, em 22/05/2026…" | 22/05/2026 é a data da notícia, não do parecer | "Segundo o TeleSíntese, de 22/05/2026, a AGU concluiu em parecer vinculante…" |
+| "a ANEEL deverá rever o texto", sem dizer qual | TeleSíntese: "deverá rever o texto que aprovou" | "o texto que tinha aprovado" |
+| Glossário: a Comissão "foi criada pela Resolução Conjunta 2/2001" | REN 1.044, art. 13: "nos termos da Resolução Conjunta […] nº 002" | "A REN 1.044/2022 a cita nos termos da Resolução Conjunta nº 2/2001" |
+| Glossário: ocupante "ou outro interessado com outorga" | REN 1.044, art. 2º, V: "demais interessados", sem exigir outorga | "ou outro interessado" |
+| Explicações das alternativas erradas começando com "Errada." | Padrão das outras lições | Sem o prefixo |
+| Questão 8: regulação conjunta "ainda não publicada" | Só sabemos até a data da consulta | "que em 10/11/2026 não tinha sido publicada" |
+
+**O que ficou de fora por espaço** (está na fonte e pode entrar na 07-06): prazos de 30 e 150 dias, limite de 2.100 postes por ano, prazo de 90 dias para responder ao pedido, conteúdo do pedido de compartilhamento.
+
+**Vídeos:** nenhum entrou. Os candidatos são de 2021 e 2022 (antes da REN 1.044/2022), um painel de 2h33 sem capítulos e um canal de consultoria. A lição fica com termos de busca.
+
+## 07-02 — Anatomia do poste e faixa de ocupação (11/11/2026)
+
+**Fontes abertas:** Cemig ND-6.6 (PDF inteiro; a Figura 2, que traz as cotas da faixa, eu li como imagem) e Energisa NDU-009 v4.0 de 12/2017, no anexo de um contrato público (o site da Energisa respondeu 403 e não deu para ler versão mais nova). As duas entram como exemplo.
+
+**O que confere nas duas:** faixa de 500 mm, topo a 5,70 m do solo e 600 mm até a baixa tensão. **O que difere:** pontos de fixação (9 no poste urbano e 5 no rural na Cemig; 4, mais 1 em caso especial, na Energisa v4.0).
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "Braço ou suporte que estende o poste: é vedado", como regra geral | Cemig ND-6.6, item 6.2 | "no exemplo da Cemig, é vedado" |
+
+**Segurança:** a lição leva o aviso padrão de lição de segurança. Ela diz três vezes que os 600 mm são regra de instalação do cabo, não distância de trabalho, e que não se sobe no poste para medir. Nada contradiz a lição 10-01.
+
+**Não conferido:** o afastamento até a média tensão na Energisa (a tabela aparece "não conferido").
+
+**Vídeos:** nenhum entrou. Os resultados eram de escritório de advocacia, notícia, venda de curso e um vídeo de 22 segundos sem descrição.
+
+## 07-03 — Plaqueta e identificação (11/11/2026)
+
+**Fontes (abertas em 10/11/2026):** REN 1.044/2022 (art. 17), Resolução Conjunta 4/2014 (art. 8º), Cemig ND-6.6 (abertura do item 6, Figuras 4.1 e 4.2, item 6.11) e Energisa NDU-009 v4.0 (10.1.27). A obrigação de identificar vem das resoluções; o modelo da plaqueta, das normas de cada distribuidora (Cemig e Energisa como exemplo).
+
+**Dados do exercício conferidos no arquivo:** 5 pontos de fixação sem plaqueta (3 da Operadora Alfa e 2 da Operadora Beta, ocupantes fictícios) e o ocupante "Sem identificação" em 4 postes.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "É pela plaqueta que o detentor liga o cabo ao contrato…", com a REN como fonte | A REN não diz isso | Frase retirada; o porquê da plaqueta fica como explicação, sem fonte atribuída |
+| A obrigação "vale para todos" | REN e Resolução Conjunta falam do ocupante e da prestadora | "vale para todo ocupante" |
+| "Os números divergem (200 a 400 mm contra 300 mm)" | 300 mm cabe dentro de 200 a 400 mm | "Os exemplos não dizem o mesmo: faixa de 200 a 400 mm na Cemig, 300 mm fixos na Energisa" |
+| Questão 6: distrator "a média dos dois exemplos, 250 mm" (a conta não fecha) | — | Trocado por "subir no poste com trena para medir de novo", com a explicação de segurança |
+
+**Vídeos:** nenhum entrou. Apareceram uma entrevista de 2019 sobre clandestinos, uma reportagem que mostra retirada de cabos, um vídeo de 25 segundos de provedor e um canal de entretenimento.
+
+## 07-04 — Reserva, CEO, CTO e drops (11/11/2026)
+
+**Fontes (abertas em 10/11/2026):** Cemig ND-6.6 (itens 5.13, 6.7 a 6.10, 6.30 a 6.33) e Energisa NDU-009 v4.0 (15.1.1 i, j e k; 10.1.28), como exemplo, e a Resolução Conjunta 4/2014 (art. 4º, IV). As normas falam em "caixa de emenda", "equipamentos" e "derivação para clientes"; a lição não diz que citam "CTO" pelo nome.
+
+**Onde os exemplos concordam e discordam:** os dois põem a caixa de emenda no vão e nunca no poste, e os outros equipamentos a 600 mm ou mais do poste; discordam na reserva de cabo (1.500 mm na Cemig, 2.000 mm na Energisa v4.0). As células que eu não conferi na Energisa ficaram "não conferido".
+
+**Dados do exercício conferidos no arquivo:** 4 postes com reserva no poste e 2 CTOs (CX-07 e CX-13) em poste com transformador.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "No poste com transformador, a única coisa permitida é o drop do cliente" | Cemig 6.33: a rede passa tangente; só derivações para clientes; nenhum equipamento | A rede do ocupante só passa direto, sem equipamento, e só se deriva para clientes |
+| Questão 3: o poste com transformador "não admite equipamento em altura nenhuma" | Cemig 6.33: "não permitindo instalação de equipamento" | "o exemplo da Cemig não permite instalação de equipamento" (explicação e alternativa correta) |
+
+**Vídeos:** nenhum entrou. Os candidatos eram de divulgação de serviço, de montagem de caixa sem fonte de norma, e um cuja descrição fala em reserva em cruzeta (o contrário dos dois exemplos).
+
+## 07-05 — Alturas ao solo (11/11/2026)
+
+**Fontes (abertas em 10/11/2026; a Tabela 2 da Cemig eu reli como imagem em 11/11):** Cemig ND-6.6 (item 7.1, Tabela 2, coluna "Telecomunicação e cabos aterrados", e a cota "h mínimo" da Figura 2), Energisa NDU-009 v4.0 (Tabela 03, sem coluna de telecom) e Resolução Conjunta 4/2014 (art. 4º, III e §7º).
+
+**Dados do exercício conferidos no arquivo:** 12 vãos com travessia; 3 pontos de fixação abaixo de 5,0 m em postes desses vãos (PF-0050, PF-0057 e PF-0058). A lição avisa que o campo é a altura no poste, não no meio do vão.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "A altura no ponto de fixação do poste é maior que a do meio do vão", como regra | Vale em terreno plano; com desnível, não necessariamente | "Em terreno plano, a barriga deixa o meio do vão mais baixo que o ponto de fixação" (lição e explicação da questão 2) |
+| "A tabela de ruas e avenidas" da Energisa | A Energisa v4.0 tem uma Tabela 03 por tensão de energia; ruas e avenidas é uma linha dela | "a Tabela 03 dela tem só colunas por tensão da rede de energia (em ruas e avenidas, 5.500 e 6.000 mm)" (lição e questão 6) |
+
+**Segurança:** a lição trata cabo baixo como risco de acidente e diz o que o técnico não faz: medir embaixo da rede, tocar ou levantar o cabo, parar no meio da via, liberar o trânsito.
+
+**Vídeos:** nenhum. As buscas só trouxeram vídeos fora do tema (posição de trabalho no poste, rapel, vigas e laje).
+
+## 07-06 — Fiscalizar, notificar, retirar (11/11/2026)
+
+**Fontes (abertas em 10/11/2026):** Resolução Conjunta 1/1999 (art. 11: pedido por escrito e resposta em até 90 dias), REN 1.044/2022 (arts. 4º, 6º, 8º, 12 a 16, 18 e 31) e Resolução Conjunta 4/2014 (art. 4º, §§3º a 7º; arts. 5º, 6º e 9º).
+
+**Prazos que a lição separa:** 90 dias para o detentor responder ao pedido (suspensos enquanto ele aguarda correção que pediu); cronograma de regularização de até 1 ano, limitado a 2.100 postes por distribuidora por ano; 30 e 150 dias só no caso de falta de ponto de fixação; guarda dos documentos por no mínimo 5 anos. A lição não diz o que acontece se os 90 dias estourarem: diz só que nada se instala sem aprovação.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "Sem regularizar, o detentor pede autorização à Comissão" | REN 1.044, art. 13: "pode solicitar" | "pode pedir" |
+| Diagrama: "Retirada sem autorização da Comissão" nos ramos de risco e de clandestina | REN 1.044, art. 14: o detentor "pode retirar" | "Pode retirar sem autorização da Comissão" (desenho e descrição) |
+
+**Papel do técnico:** vê, registra e comunica; não decide se é clandestino, não corta e não retira. Retirada é serviço de equipe autorizada, com procedimento e análise de risco (lição 10-01).
+
+**Vídeos:** nenhum entrou. Duas das três buscas não deram resultado; a terceira trouxe um vídeo de canal com fim comercial (aluguel de postes) e uma notícia municipal.
+
+## 07-07 — Riscos em Roraima e o novo regulamento (11/11/2026)
+
+**Fontes abertas em 11/11/2026:** Embrapa, Comunicado Técnico 006 (1989), probabilidades do início e do fim do período chuvoso em Boa Vista; INPA (Barbosa, 2010), focos de calor em Roraima de 1999 a 2009. A lição diz que são séries antigas e médias. As fontes regulatórias são as da 07-01 (abertas em 10/11), e a lista de notícias sobre postes do Teletime foi conferida de novo em 11/11 (nada novo depois de 06/11).
+
+**O que entrou do clima:** chuva em Boa Vista da 1ª ou 2ª dezena de maio à 2ª dezena de setembro (50% de chance de começar na 3ª dezena de abril), com junho no pico e veranicos a partir da 2ª dezena de julho e na 3ª de agosto; focos de calor concentrados de dezembro a março, com pico em fevereiro e março. Nada de número de raios ou vento de Roraima: não achei fonte primária.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "A proposta mexeria em três pontos", citando o decreto como se ele fosse a proposta | Decreto 12.068/2024, art. 16: a cessão já está no decreto; preço, uso da faixa e regularização ficam para a regulação conjunta | "O decreto manda ceder… e deixa para a regulação conjunta, que ainda não saiu, o preço, o uso da faixa e as regras de regularização" (lição e questão 8) |
+| "Em 10 e 11/11/2026, não encontramos resolução conjunta nova", sem ressalva | Sites da Anatel e do Diário Oficial fora do ar em 10/11 | Ressalva entre parênteses |
+| Regra de parar com raio, chuva, vento ou fogo, sem fonte na lição (as questões citavam a NR-10) | NR-10 vigente, 10.6.3: serviço em instalação energizada ou perto dela suspenso de imediato na iminência de ocorrência que ponha o trabalhador em perigo | Frase com a fonte |
+
+A lição passou de 700 palavras com as correções e foi enxugada.
+
+**Vídeos:** nenhum entrou. Os três candidatos são reportagens de TV sobre um ano específico (2015, 2024 e outubro de 2026); nenhum é de órgão técnico.

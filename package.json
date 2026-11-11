@@ -7,13 +7,15 @@
   "scripts": {
     "conteudo": "node scripts/compilar-conteudo.mjs",
     "validar": "node scripts/validar-conteudo.mjs",
+    "conferir-videos": "node scripts/conferir-videos.mjs",
     "validar:links": "node scripts/validar-conteudo.mjs --links",
     "dev": "npm run conteudo && vite",
     "build": "npm run validar && npm run conteudo && tsc -b && vite build",
     "preview": "vite preview --port 4173 --strictPort",
     "test": "vitest run",
     "test:e2e": "playwright test --trace off",
-    "verificar": "npm run build && npm test && npm run test:e2e"
+    "verificar": "npm run build && npm test && npm run test:e2e",
+    "dados-qgis": "node scripts/gerar-dados-qgis.mjs"
   },
   "dependencies": {
     "react": "18.3.1",

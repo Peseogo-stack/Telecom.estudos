@@ -80,6 +80,21 @@ export interface Indice {
   busca: ItemBusca[];
 }
 
+export interface Video {
+  url: string;
+  titulo: string;
+  canal: string;
+  /** m:ss ou h:mm:ss. Sem duração, a tela diz "duração não conferida". */
+  duracao?: string;
+  /** Minutos do trecho certo, quando o vídeo é longo. */
+  trecho?: string;
+  observar: string;
+  /** Diferença em relação à lição, quando houver. */
+  aviso?: string;
+  conferidoEm: string;
+  conferencia?: string;
+}
+
 export interface Licao {
   id: string;
   modulo: string;
@@ -98,6 +113,10 @@ export interface Licao {
   errosComuns: string;
   perguntas: PerguntaEmpresa[];
   fontes: Fonte[];
+  /** Vídeos conferidos (até 2); pode ser vazio. */
+  videos: Video[];
+  /** Termos para buscar no YouTube quando não há vídeo conferido. */
+  termosBusca: string[];
 }
 
 export interface Alternativa {

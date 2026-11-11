@@ -1,0 +1,411 @@
+[
+  {
+    "licao": "02-01",
+    "videos": [],
+    "termosBusca": [
+      "reflexão interna total fibra óptica explicação",
+      "núcleo e casca da fibra óptica como a luz viaja"
+    ]
+  },
+  {
+    "licao": "02-02",
+    "videos": [],
+    "termosBusca": [
+      "fibra óptica 9/125 o que significa",
+      "fibra óptica revestimento 250 µm e 900 µm tight buffer"
+    ]
+  },
+  {
+    "licao": "02-03",
+    "videos": [],
+    "termosBusca": [
+      "fibra monomodo e multimodo diferença",
+      "fibra OM3 OM4 OS2 como identificar"
+    ]
+  },
+  {
+    "licao": "02-04",
+    "videos": [],
+    "termosBusca": [
+      "G.652D x G.657A2 diferença",
+      "fibra G.657 curvatura emenda com G.652"
+    ]
+  },
+  {
+    "licao": "02-05",
+    "videos": [],
+    "termosBusca": [
+      "janelas de transmissão fibra óptica 1310 1550",
+      "GPON XGS-PON comprimentos de onda 1490 1577"
+    ]
+  },
+  {
+    "licao": "02-06",
+    "videos": [],
+    "termosBusca": [
+      "atenuação em fibra óptica causas",
+      "macrocurvatura fibra óptica perda"
+    ]
+  },
+  {
+    "licao": "02-07",
+    "videos": [],
+    "termosBusca": [
+      "dB e dBm fibra óptica cálculo",
+      "converter dBm em mW"
+    ]
+  },
+  {
+    "licao": "03-01",
+    "videos": [],
+    "termosBusca": [
+      "cabo óptico AS80 como ler a gravação",
+      "cabo óptico CFOA-SM marcação de metro"
+    ]
+  },
+  {
+    "licao": "03-03",
+    "videos": [],
+    "termosBusca": [
+      "código de cores fibra óptica 12 cores",
+      "cores da fibra óptica ABNT e TIA-598"
+    ]
+  },
+  {
+    "licao": "03-04",
+    "videos": [],
+    "termosBusca": [
+      "código de cores fibra óptica tubo piloto direcional",
+      "achar a fibra em cabo de 144 fibras"
+    ]
+  },
+  {
+    "licao": "03-07",
+    "videos": [],
+    "termosBusca": [
+      "conector APC UPC diferença",
+      "DIO CEO CTO PTO para que servem"
+    ]
+  },
+  {
+    "licao": "04-01",
+    "videos": [],
+    "termosBusca": [
+      "o que é OLT ONU CTO FTTH",
+      "rede GPON como funciona da OLT à ONU"
+    ]
+  },
+  {
+    "licao": "04-03",
+    "videos": [],
+    "termosBusca": [
+      "splitter óptico perda por divisão 1:8 1:16",
+      "splitter desbalanceado rede FTTH provedor"
+    ]
+  },
+  {
+    "licao": "04-05",
+    "videos": [],
+    "termosBusca": [
+      "cálculo de potência rede GPON splitter",
+      "orçamento de potência GPON classe B+"
+    ]
+  },
+  {
+    "licao": "05-01",
+    "videos": [],
+    "termosBusca": [
+      "clivagem fibra óptica clivador",
+      "preparo e decapagem de fibra óptica para fusão"
+    ]
+  },
+  {
+    "licao": "05-03",
+    "videos": [],
+    "termosBusca": [
+      "fusão de fibra óptica passo a passo",
+      "limpeza máquina de fusão eletrodo",
+      "arc check máquina de fusão calibração"
+    ]
+  },
+  {
+    "licao": "05-04",
+    "videos": [],
+    "termosBusca": [
+      "perda de emenda por fusão estimada x medida OTDR",
+      "OTDR bidirecional emenda gainer"
+    ]
+  },
+  {
+    "licao": "06-01",
+    "videos": [],
+    "termosBusca": [
+      "power meter e fonte de luz medir perda de fibra",
+      "perda de inserção fibra óptica referência um cordão"
+    ]
+  },
+  {
+    "licao": "06-02",
+    "videos": [],
+    "termosBusca": [
+      "OTDR como funciona",
+      "zona morta OTDR bobina de lançamento"
+    ]
+  },
+  {
+    "licao": "06-03",
+    "videos": [],
+    "termosBusca": [
+      "OTDR como ler o traço",
+      "eventos no OTDR fusão conector fantasma ganho aparente"
+    ]
+  },
+  {
+    "licao": "09-01",
+    "videos": [],
+    "termosBusca": [
+      "cálculo de disponibilidade SLA link dedicado",
+      "SLA 99,7% quantos minutos de parada"
+    ]
+  },
+  {
+    "licao": "09-02",
+    "videos": [],
+    "termosBusca": [
+      "glosa de SLA como calcular desconto",
+      "SLA de link memória de cálculo da glosa"
+    ]
+  },
+  {
+    "licao": "09-03",
+    "videos": [],
+    "termosBusca": [
+      "gestão e fiscalização de contratos Lei 14.133 gestor fiscal",
+      "fiscal técnico de contrato o que faz"
+    ]
+  },
+  {
+    "licao": "09-05",
+    "videos": [],
+    "termosBusca": [
+      "relatório de teste OTDR certificação fibra óptica",
+      "aceite de obra de fibra óptica"
+    ]
+  },
+  {
+    "licao": "09-06",
+    "videos": [],
+    "termosBusca": [
+      "incidente problema requisição ITIL diferença",
+      "abrir chamado com fornecedor escalonamento"
+    ]
+  },
+  {
+    "licao": "10-01",
+    "videos": [],
+    "termosBusca": [
+      "NR-10 zona livre zona controlada zona de risco",
+      "NR-10 trabalho próximo a rede elétrica em poste"
+    ]
+  },
+  {
+    "licao": "10-03",
+    "videos": [],
+    "termosBusca": [
+      "segurança laser fibra óptica olho",
+      "VFL localizador visual de falhas segurança"
+    ]
+  },
+  {
+    "licao": "10-04",
+    "videos": [],
+    "termosBusca": [
+      "segurança fibra óptica fragmentos",
+      "descarte de fibra nua cacos na bancada"
+    ]
+  },
+  {
+    "licao": "10-05",
+    "videos": [],
+    "termosBusca": [
+      "nova NR-10 2026 o que muda",
+      "NR-10 telecom em poste compartilhado"
+    ]
+  },
+  {
+    "licao": "08-03",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=LYocofyFTm4",
+        "titulo": "QGis 3.44 - Definindo SRC SIRGAS 2000",
+        "canal": "Liberdade para Aprender",
+        "duracao": "4:20",
+        "observar": "Onde se define o SRC no QGIS 3.44. Lembre da lição: definir o SRC muda a interpretação das coordenadas, não converte o arquivo.",
+        "conferidoEm": "2026-11-10",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem capítulos nem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=iEXU9b-h19c",
+        "titulo": "Alteração do SRC | Conceitos Básicos de QGIS [4]",
+        "canal": "Bruno Rech",
+        "duracao": "8:51",
+        "observar": "Como gravar a camada em outro SRC de forma definitiva, o que a lição faz com Export ► Save Features As….",
+        "aviso": "A descrição do vídeo diz que a conversão temporária entre SRCs \"deve ser evitada\". O manual do QGIS trata a reprojeção na hora como funcionamento normal: ela dá certo quando cada camada está com o SRC verdadeiro. O vídeo é de 2020, de uma versão 3.x anterior à 3.44.",
+        "conferidoEm": "2026-11-10",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem capítulos nem transcrição."
+      }
+    ],
+    "termosBusca": [
+      "QGIS SIRGAS 2000 UTM 31980 sistema de referência",
+      "QGIS definir SRC da camada reprojetar"
+    ]
+  },
+  {
+    "licao": "08-02",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=IPJGEX652RQ",
+        "titulo": "Básico em Geoprocessamento - Vetores",
+        "canal": "Geotecnologias na rede",
+        "duracao": "12:02",
+        "observar": "Como abrir dados, abrir a tabela de atributos e reconhecer ponto, linha e polígono. A parte de seleção e filtros adianta a lição 08-06.",
+        "conferidoEm": "2026-11-10",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. A descrição lista: abrir dados no QGIS, seleção, filtros, tabela de atributos e vetores ponto, linha e polígono. Sem capítulos nem transcrição; a versão do QGIS não é informada."
+      }
+    ],
+    "termosBusca": [
+      "QGIS vetor e raster ponto linha polígono",
+      "QGIS tabela de atributos feições",
+      "QGIS abrir GeoPackage camadas"
+    ]
+  },
+  {
+    "licao": "08-06",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=IPJGEX652RQ",
+        "titulo": "Básico em Geoprocessamento - Vetores",
+        "canal": "Geotecnologias na rede",
+        "duracao": "12:02",
+        "observar": "A parte de seleção, remoção de seleção e filtros. Compare com a lição: selecionar marca as feições; filtrar esconde as outras.",
+        "conferidoEm": "2026-11-10",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. A descrição lista seleção, remoção de seleção, filtros e tabela de atributos. Sem capítulos nem transcrição, por isso não há minuto do trecho; a versão do QGIS não é informada. É o mesmo vídeo da lição 08-02."
+      }
+    ],
+    "termosBusca": [
+      "QGIS selecionar por expressão",
+      "QGIS filtro de camada construtor de consultas",
+      "QGIS contar feições selecionadas estatísticas"
+    ]
+  },
+  {
+    "licao": "07-01",
+    "videos": [],
+    "termosBusca": [
+      "compartilhamento de postes ANEEL Anatel como funciona",
+      "detentor e ocupante de poste Resolução Normativa 1044",
+      "ocupação irregular de postes cabos clandestinos distribuidora"
+    ]
+  },
+  {
+    "licao": "07-02",
+    "videos": [],
+    "termosBusca": [
+      "faixa de ocupação poste compartilhamento telecomunicações distribuidora",
+      "estrutura do poste de distribuição rede primária secundária iluminação pública",
+      "afastamento cabo telecomunicações baixa tensão poste norma técnica"
+    ]
+  },
+  {
+    "licao": "08-01",
+    "videos": [],
+    "termosBusca": [
+      "QGIS 4.2 novidades",
+      "QGIS LTR ou versão mais nova qual usar",
+      "QGIS 4 Qt6 mudanças"
+    ]
+  },
+  {
+    "licao": "08-04",
+    "videos": [],
+    "termosBusca": [
+      "QGIS GeoPackage ou Shapefile formatos",
+      "QGIS exportar KML Google Earth",
+      "QGIS formatos de arquivo vetor shapefile gpkg kml csv dxf"
+    ]
+  },
+  {
+    "licao": "08-05",
+    "videos": [],
+    "termosBusca": [
+      "QGIS edição de camada vetorial modo de edição",
+      "QGIS adicionar ponto mover vértice salvar edições",
+      "QGIS editar camada Toggle Editing salvar"
+    ]
+  },
+  {
+    "licao": "08-07",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=Wafx6yrN8Tk",
+        "titulo": "QGIS 3 - Coletar dados em campo com o QField (Offline)",
+        "canal": "Urbanidades",
+        "duracao": "22:01",
+        "observar": "O ciclo inteiro: preparar a base no QGIS e coletar com o QField no celular, sem internet. Compare cada passo com o ciclo da lição.",
+        "aviso": "O vídeo não tem capítulos e não foi conferido por dentro, só pelo título e pela descrição. Se ele mostrar um passo diferente da lição (por exemplo, sincronizar mais de uma vez o mesmo pacote), siga a lição e o manual do QField.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração, data (20/04/2025) e idioma pela YouTube Data API. A descrição: preparar uma base para a coleta em campo e coletar com o QField em celular ou tablet."
+      }
+    ],
+    "termosBusca": [
+      "QField coleta de dados em campo QGIS",
+      "QFieldSync empacotar projeto QGIS para celular",
+      "QField trabalhar offline sincronizar"
+    ]
+  },
+  {
+    "licao": "07-03",
+    "videos": [],
+    "termosBusca": [
+      "plaqueta de identificação de cabos em postes ocupantes distribuidora",
+      "identificação de cabos de telecomunicações em postes compartilhamento",
+      "cabos irregulares em postes identificação operadoras"
+    ]
+  },
+  {
+    "licao": "07-04",
+    "videos": [],
+    "termosBusca": [
+      "reserva técnica de cabo óptico em poste compartilhamento",
+      "caixa de emenda óptica no vão cordoalha poste",
+      "drop de fibra óptica derivação para cliente poste"
+    ]
+  },
+  {
+    "licao": "07-05",
+    "videos": [],
+    "termosBusca": [
+      "altura mínima de cabos de telecomunicações em postes travessia de rua distribuidora",
+      "cabo baixo sobre a via risco de acidente poste compartilhamento",
+      "flecha do cabo altura ao solo rede aérea"
+    ]
+  },
+  {
+    "licao": "07-06",
+    "videos": [],
+    "termosBusca": [
+      "compartilhamento de postes notificação ocupação irregular ANEEL",
+      "regularização de cabos em postes distribuidora ocupantes",
+      "fiscalização de ocupação de postes REN 1044"
+    ]
+  },
+  {
+    "licao": "07-07",
+    "videos": [],
+    "termosBusca": [
+      "chuvas e queimadas em Roraima calendário período chuvoso e seca",
+      "rede elétrica e queimada perigo cabo caído Corpo de Bombeiros Defesa Civil",
+      "raio e tempestade segurança trabalho em rede aérea"
+    ]
+  }
+]

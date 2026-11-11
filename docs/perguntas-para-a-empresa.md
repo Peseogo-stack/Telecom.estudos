@@ -33,7 +33,11 @@
 | a12 | Os cordões do rack e do DIO são amarelos (monomodo) ou laranja/água (multimodo)? | Cor da capa dos cordões e a gravação neles | 02-03 |
 | a13 | Os cabos da nossa rede seguem o código de cores nacional (verde, amarela, branca, azul…) ou há cabos importados no padrão TIA-598 (azul, laranja, verde…)? E os pigtails do DIO, em que ordem vêm? | Gravação da capa, ficha do fabricante, cores ao abrir uma caixa acompanhado | 03-03 |
 | a14 | Qual é a classe de laser e a potência gravadas na etiqueta da nossa caneta VFL, e que tipo de microscópio de inspeção a equipe usa (vídeo ou óptico com filtro IR)? | Etiqueta da caneta VFL e maleta de inspeção/limpeza | 10-03 |
-| a15 | Como os religadores se comunicam hoje (rádio, celular, fibra)? Qual equipamento de comunicação fica em cada um? | Etiqueta e ficha do religador; mapa da rede | 01-06 |
+| a15 | Abra um arquivo recebido de fornecedor no QGIS e veja o SRC em Propriedades ► Source: ele veio declarado? | Qualquer camada recebida de terceiros | 08-03 |
+| a16 | Abra a tabela de atributos de uma camada de postes da empresa: quais campos existem e qual deles é o código do poste? (Anote só no Meu caderno; nada de dado da empresa no app.) | Camada de postes no QGIS da equipe | 08-02 |
+| a17 | Abra Help ► About no computador de trabalho: qual é a versão do QGIS instalada? | No macOS: QGIS ► About QGIS | 08-01 |
+| a18 | Pegue um shapefile recebido de fornecedor: vieram todos os arquivos (.shp, .shx, .dbf, .prj)? (Anote só no Meu caderno; nada de dado da empresa no app.) | Pasta com arquivos recebidos | 08-04 |
+| a19 | Como os religadores se comunicam hoje (rádio, celular, fibra)? Qual equipamento de comunicação fica em cada um? | Etiqueta e ficha do religador; mapa da rede | 01-06 |
 
 ---
 
@@ -51,16 +55,33 @@
 | b08 | Qual é o prazo de garantia da obra e como funcionam o aceite provisório e o definitivo? | Contrato de construção | 09-05 |
 | b09 | Quais são os contatos e a matriz de escalonamento de cada fornecedor (central, NOC, gerente de contas)? | Anexo do contrato ou cadastro do fornecedor | 09-06 |
 | b10 | O que diz a ficha técnica do cabo comprado (G.652.D ou G.657, IOR, atenuação)? | Anexo técnico, processo de compra | 02-04, 06-05, 09-05, 02-01, 02-02, 02-06 |
-| b11 | Qual é o modelo do contrato de ocupação de postes (valor por ponto, prazos, multas)? | Contrato-padrão de compartilhamento | 07-06 |
+| b11 | Qual é o modelo do contrato de ocupação de postes (valor por ponto, prazos, multas)? | Contrato-padrão de compartilhamento | 07-01, 07-06 |
 | b12 | Qual é o procedimento escrito para trabalho em poste com rede de telecom, e o modelo de APR e de permissão de trabalho? | Procedimentos de segurança (intranet) | 10-01 |
 | b13 | O contrato conta o mês como 30 dias (43.200 min) ou pelos dias do calendário? | Cláusula de SLA | 09-01 |
 | b14 | Latência alta, perda de pacotes ou velocidade abaixo do contratado contam como indisponibilidade no contrato? | Anexo de nível de serviço | 09-01 |
 | b15 | Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho? | Procedimentos de segurança (intranet) | 10-05 |
 | b16 | Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem? | Projeto executivo ou memorial de cálculo da rede | 02-06, 02-07, 04-03, 04-05 |
 | b17 | Qual método de referência de perda de inserção a empresa pede (1, 2 ou 3 cordões), em quais comprimentos de onda, e qual é o critério de aceite da perda total? | Especificação técnica de aceite de obra | 06-01, 09-05 |
-| b18 | Os links contratados têm SLA? Qual a disponibilidade, o período (mensal ou anual) e qual a meta de disponibilidade que a empresa quer para os links operativos? | Contratos de link e especificação técnica da rede | 01-02, 01-05, 09-01 |
-| b19 | Que serviços (SCADA, teleproteção, medição, religadores, corporativo) vão na rede própria e quais vão em link contratado? | Projeto da rede de telecom ou plano diretor | 01-01, 01-02 |
-| b20 | Existe um plano de migração da rede de transporte (por exemplo, de SDH para pacotes)? Quais são as etapas? | Plano diretor de telecom, projeto de modernização | 01-06 |
+| b18 | O contrato ou o padrão de entrega diz em que SRC o fornecedor tem de mandar os arquivos (as-built, KML, planilha de coordenadas)? | Contrato e padrão de entrega | 08-03 |
+| b19 | O relatório de ocupação ou de vistoria pede contagens (postes por ocupante, pontos sem plaqueta)? De qual camada elas saem? | Modelo do relatório | 08-06 |
+| b20 | Onde está publicado, no site da empresa, o Plano de Ocupação de Infraestrutura em vigor, e qual norma técnica o aprovou? | Site da distribuidora, página de compartilhamento de infraestrutura | 07-01 |
+| b21 | Na norma técnica da empresa, qual é a altura da faixa de ocupação, a que distância do solo fica o topo dela e quantos pontos de fixação ela tem? | Norma técnica de compartilhamento e Plano de Ocupação, no site da empresa | 07-02 |
+| b22 | Qual é o afastamento mínimo entre o cabo de telecom e a baixa tensão e a média tensão na norma da empresa? | Tabela de afastamentos da norma técnica | 07-02 |
+| b23 | O contrato ou o padrão de as-built diz em que formato e com que campos o fornecedor entrega o cadastro? | Contrato, termo de referência ou padrão de as-built | 08-04 |
+| b24 | Existe procedimento de cópia de segurança (backup) e de conferência das edições do cadastro? | Procedimento ou norma interna de gestão do cadastro | 08-05 |
+| b25 | O procedimento de vistoria diz o que registrar em cada poste (fotos, campos obrigatórios)? | Procedimento de vistoria | 08-07 |
+| b26 | Qual é o modelo de plaqueta na norma da empresa: tamanho, cor, o que precisa estar escrito e a que distância do poste? | Norma técnica de compartilhamento | 07-03 |
+| b27 | O contrato prevê multa ou prazo para o ocupante identificar os cabos? | Contrato com o ocupante | 07-03 |
+| b28 | Na norma da empresa, onde podem ficar a caixa de emenda e a reserva de cabo, e a que distância do poste? | Norma de compartilhamento: seção sobre caixa de emenda e reserva técnica | 07-04 |
+| b29 | A norma permite caixa ou equipamento do ocupante no poste? Em quais postes é proibido (transformador, esquina, chave)? | Norma de compartilhamento: seção sobre equipamentos no poste | 07-04 |
+| b30 | Quantos drops por vão a norma permite e de onde eles podem sair? | Norma de compartilhamento: seção sobre derivação para clientes | 07-04 |
+| b31 | Na norma da empresa, quais são as alturas mínimas do cabo de telecom sobre rua, entrada de veículos e passagem de pedestres? | Norma de compartilhamento: tabela de distâncias mínimas ao solo | 07-05 |
+| b32 | Qual é o modelo de notificação da empresa e que prazos o contrato dá para regularizar? | Contrato-padrão de compartilhamento e modelo de notificação | 07-06 |
+| b33 | Como a empresa guarda os registros de fiscalização e por quanto tempo? | Procedimento de fiscalização e de guarda de documentos | 07-06 |
+| b34 | O que o procedimento manda fazer em caso de raio, chuva forte, vento ou fogo perto da rede durante o trabalho de campo? | Procedimento de segurança e instrução de trabalho da empresa | 07-07 |
+| b35 | Os links contratados têm SLA? Qual a disponibilidade, o período (mensal ou anual) e qual a meta de disponibilidade que a empresa quer para os links operativos? | Contratos de link e especificação técnica da rede | 01-02, 01-05, 09-01 |
+| b36 | Que serviços (SCADA, teleproteção, medição, religadores, corporativo) vão na rede própria e quais vão em link contratado? | Projeto da rede de telecom ou plano diretor | 01-01, 01-02 |
+| b37 | Existe um plano de migração da rede de transporte (por exemplo, de SDH para pacotes)? Quais são as etapas? | Plano diretor de telecom, projeto de modernização | 01-06 |
 
 ---
 
@@ -84,7 +105,12 @@
 | c14 | Quem calcula e quem aprova a glosa antes do pagamento? | Líder de TI / financeiro | 09-02 |
 | c15 | Que tensões existem nos postes onde vou trabalhar (baixa tensão, 13,8 kV, 34,5 kV)? | Engenharia / operação | 10-01 |
 | c16 | Há fibra multimodo nos racks das subestações ou do data center? Em quais equipamentos? | Engenharia / TI de infraestrutura | 02-03 |
-| c18 | Os links importantes têm rota dupla, com caminhos fisicamente diferentes? Como isso é verificado? | Engenharia de telecom e planejamento da rede | 01-05 |
+| c17 | Quem na empresa acompanha o novo regulamento da ANEEL e da Anatel para os postes, e a empresa já se prepara para uma eventual cessão da exploração dos postes? | Área regulatória ou de compartilhamento | 07-01 |
+| c18 | Quem instala e atualiza o QGIS nos computadores da empresa (TI)? Posso instalar por conta própria? | TI ou o setor responsável pelos computadores | 08-01 |
+| c19 | Posso levar dados da rede no celular? É celular da empresa ou pessoal? O que a TI e a segurança da informação exigem? | TI e segurança da informação | 08-07 |
+| c20 | Para travessia de rodovia, que órgão autoriza e quem na empresa cuida disso? | Área de projetos ou de compartilhamento de postes | 07-05 |
+| c21 | Quem acompanha o novo regulamento dos postes na empresa e como a equipe de campo fica sabendo quando algo mudar? | Área regulatória ou de relacionamento com ocupantes | 07-07 |
+| c22 | Os links importantes têm rota dupla, com caminhos fisicamente diferentes? Como isso é verificado? | Engenharia de telecom e planejamento da rede | 01-05 |
 
 ---
 
@@ -94,12 +120,12 @@
 | --- | --- | --- |
 | d01 | Como os fornecedores costumam mandar os relatórios, e o que já foi devolvido por estar incompleto? | 09-05 |
 | d02 | Quais chamados se repetem e com quais fornecedores? Que prazos eles cumprem de verdade? | 09-06 |
-| d03 | Que reserva técnica e que padrão de identificação usamos na prática? | 03-06, 07-03 |
+| d03 | Que reserva técnica e que padrão de identificação usamos na prática? | 03-06, 07-03, 07-04 |
 | d04 | Qual é o critério de aceite por emenda que usamos no dia a dia (0,1? 0,15 dB?) | 05-04, 06-03 |
 | d05 | Quem faz o arc check, a troca de eletrodo e a limpeza da máquina de fusão? | 05-03 |
 | d06 | Que faixa de sinal na ONU cobramos dos provedores, se cobramos? Que topologia eles usam aqui? | 04-05 |
 | d07 | A rede para as unidades é ponto a ponto (SFP) ou tem PON? | 04-01, 04-06, 02-05 |
-| d08 | Como é o fluxo para cabo clandestino (registro, retirada, guarda do material)? | 07-06 |
+| d08 | Como é o fluxo para cabo clandestino (registro, retirada, guarda do material)? | 07-01, 07-06 |
 | d09 | Que nomes e campos usamos nas camadas do QGIS? Usamos QField? | 08-06, 08-07 |
 | d10 | Qual é o plano de VLANs, e eu posso rodar comandos de consulta (show) nos switches? | 11-04 |
 | d11 | Como os fornecedores costumam contestar uma glosa, e o que já foi aceito ou recusado? | 09-02 |
@@ -108,8 +134,37 @@
 | d14 | Que equipamentos de teste a equipe tem (OTDR, power meter, medidor PON seletivo, VFL) e que cabos de lançamento e de recepção usamos (comprimento, conector UPC ou APC)? | 06-01, 06-02, 10-03 |
 | d15 | Quando o mapa de fusão liga cabos de padrões de cor diferentes, ele casa as fibras por número ou por cor? Como a equipe anota? | 03-03 |
 | d16 | Que álcool isopropílico (pureza) e que removedor de geleia a equipe usa na bancada, e como fazemos o descarte do pote de fragmentos de fibra? | 10-04, 05-01 |
-| d17 | Que protocolos (DNP3, IEC 104, IEC 61850) a equipe de automação usa, e onde eles passam pela rede? | 01-03, 01-04 |
-| d18 | Que meios de transporte a empresa usa para cada serviço (fibra, rádio, PLC, SDH, MPLS-TP, celular)? | 01-06 |
+| d17 | Qual é o SRC do projeto de QGIS da equipe e das camadas de postes e cabos: 31980, 4674 ou outro? | 08-03 |
+| d18 | A equipe usa a zona 20 para o estado todo ou muda para a zona 21 a leste de 60°O? | 08-03 |
+| d19 | Quais camadas a equipe usa no dia a dia (postes, cabos, caixas…) e de que tipo é cada uma: ponto, linha ou polígono? | 08-02 |
+| d20 | Em que formato os dados ficam guardados: GeoPackage, Shapefile, banco de dados? | 08-02 |
+| d21 | A equipe usa imagem de satélite de fundo? De onde ela vem? | 08-02 |
+| d22 | Quais consultas a equipe mais faz nas camadas de postes e cabos (por ocupante, por situação, por data de vistoria)? | 08-06 |
+| d23 | As camadas do projeto da equipe já vêm com algum filtro ligado? Qual e por quê? | 08-06 |
+| d24 | Como a equipe cadastra a ocupação dos pontos de fixação (sistema, planilha, QGIS)? | 07-01 |
+| d25 | Como a equipe confere essas medidas em campo: do solo, com que instrumento, e quem pode fazer? | 07-02 |
+| d26 | Onde podem ficar os equipamentos dos ocupantes (caixas, fontes) no poste, segundo a norma da empresa? | 07-02 |
+| d27 | A equipe usa a LTR ou a versão mais nova do QGIS? Quem decide quando trocar de versão? | 08-01 |
+| d28 | Quais complementos (plugins) a equipe usa, e quem testa se eles funcionam antes de uma troca de versão? | 08-01 |
+| d29 | Em que formato a equipe guarda os dados e em que formato manda para fornecedores e outras áreas? | 08-04 |
+| d30 | Posso mandar KML da rede para fora da empresa ou abrir no Google Earth? Quem autoriza? | 08-04 |
+| d31 | Quem pode editar o cadastro de postes e cabos da empresa, e em que arquivo ou sistema? | 08-05 |
+| d32 | Quando acho um erro de cadastro em campo, como registro e para quem mando? | 08-05 |
+| d33 | A equipe edita direto no arquivo compartilhado ou cada um trabalha numa cópia? | 08-05 |
+| d34 | A equipe usa algum aplicativo de coleta em campo (QField ou outro)? Em que aparelho? | 08-07 |
+| d35 | Quem recebe e confere o que foi coletado em campo antes de entrar no cadastro? | 08-07 |
+| d36 | Como registro um cabo sem plaqueta ou com plaqueta ilegível: formulário, foto, sistema? | 07-03 |
+| d37 | Depois de quantos avisos, e por quem, um cabo sem dono identificado passa a ser tratado como clandestino? | 07-03 |
+| d38 | Quais dessas irregularidades (reserva ou caixa no poste, drop no meio do vão) a equipe mais encontra e como costuma registrar? | 07-04 |
+| d39 | Como a equipe mede a altura de um cabo com segurança: com que instrumento e quem pode medir? | 07-05 |
+| d40 | Qual é o procedimento ao encontrar um cabo baixo sobre a via: a quem avisar e como sinalizar? | 07-05 |
+| d41 | Quando registro uma irregularidade, para quem vai o registro e quem emite a notificação ao ocupante? | 07-06 |
+| d42 | Quem decide que um caso é emergência e quem executa a retirada de cabos? | 07-06 |
+| d43 | O que acontece com o material retirado (guarda, devolução, descarte)? | 07-06 |
+| d44 | Em que meses a equipe concentra as vistorias de postes, e o que muda na estação chuvosa? | 07-07 |
+| d45 | Depois de temporal ou queimada, quem decide reinspecionar e como os danos em cabos de ocupantes são registrados? | 07-07 |
+| d46 | Que protocolos (DNP3, IEC 104, IEC 61850) a equipe de automação usa, e onde eles passam pela rede? | 01-03, 01-04 |
+| d47 | Que meios de transporte a empresa usa para cada serviço (fibra, rádio, PLC, SDH, MPLS-TP, celular)? | 01-06 |
 
 ---
 

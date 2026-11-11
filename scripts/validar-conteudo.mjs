@@ -15,6 +15,7 @@ import {
   lerPlano,
   lerLicoes,
   lerQuestoes,
+  lerVideos,
   lerPerguntasEmpresa,
   gerarDocPerguntas,
   dividirSecoes,
@@ -45,6 +46,99 @@ export function viesDaLicao(questoes) {
   const total = questoes.length;
   const comAviso = questoes.filter((q) => (razaoCorreta(q) ?? 0) > LIMITE_CORRETA).length;
   return { comAviso, total, reprova: total > 0 && comAviso / total > LIMITE_LICAO };
+}
+
+/** Máximo de vídeos por lição. */
+export const MAX_VIDEOS = 2;
+/** Acima disso (em minutos) o vídeo precisa indicar o trecho certo. */
+export const LIMITE_SEM_TRECHO_MIN = 25;
+
+const RE_YT_WATCH = /^https:\/\/www\.youtube\.com\/watch\?v=([A-Za-z0-9_-]{11})(&t=\d+s?)?$/;
+const RE_YT_CURTO = /^https:\/\/youtu\.be\/([A-Za-z0-9_-]{11})(\?t=\d+s?)?$/;
+
+/** Id de 11 caracteres de uma URL do YouTube aceita (watch?v= ou youtu.be, com ou sem &t=); null se não for. */
+export function idDoVideo(url) {
+  const m = RE_YT_WATCH.exec(url ?? '') ?? RE_YT_CURTO.exec(url ?? '');
+  return m ? m[1] : null;
+}
+
+/** Duração no formato m:ss ou h:mm:ss. */
+export function duracaoValida(duracao) {
+  return /^(\d{1,3}:[0-5]\d|\d{1,2}:[0-5]\d:[0-5]\d)$/.test(duracao ?? '');
+}
+
+/** Duração em minutos (fracionários); null se o formato for inválido. */
+export function minutosDaDuracao(duracao) {
+  if (!duracaoValida(duracao)) return null;
+  const p = duracao.split(':').map(Number);
+  const seg = p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p[0] * 60 + p[1];
+  return seg / 60;
+}
+
+/** Data AAAA-MM-DD que existe no calendário. */
+function dataReal(d) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(d ?? '')) return null;
+  const t = new Date(`${d}T00:00:00Z`);
+  return Number.isNaN(t.getTime()) || t.toISOString().slice(0, 10) !== d ? null : t;
+}
+
+/**
+ * Confere a entrada de uma lição em content/videos.json.
+ * Devolve { erros, avisos } (mensagens sem o prefixo do arquivo).
+ */
+export function validarEntradaVideos(entrada, { hoje = new Date() } = {}) {
+  const erros = [];
+  const avisos = [];
+  const videos = Array.isArray(entrada?.videos) ? entrada.videos : [];
+  const termos = Array.isArray(entrada?.termosBusca) ? entrada.termosBusca.filter((t) => typeof t === 'string' && t.trim()) : [];
+  if (videos.length === 0 && termos.length === 0) erros.push('entrada sem nenhum vídeo e sem nenhum termo de busca');
+  if (videos.length > MAX_VIDEOS) erros.push(`${videos.length} vídeos (o máximo é ${MAX_VIDEOS} por lição)`);
+  const vistos = new Set();
+  videos.forEach((v, i) => {
+    const n = `vídeo ${i + 1}`;
+    for (const campo of ['url', 'titulo', 'canal', 'conferidoEm', 'observar']) {
+      if (typeof v?.[campo] !== 'string' || !v[campo].trim()) erros.push(`${n} sem "${campo}"`);
+    }
+    if (v?.url) {
+      const id = idDoVideo(v.url);
+      if (!id) erros.push(`${n}: url não é do YouTube (https://www.youtube.com/watch?v=<11 caracteres> ou https://youtu.be/<11>)`);
+      else if (vistos.has(id)) erros.push(`${n}: o mesmo vídeo aparece duas vezes na lição`);
+      else vistos.add(id);
+    }
+    if (v?.conferidoEm) {
+      const data = dataReal(v.conferidoEm);
+      if (!data) erros.push(`${n}: conferidoEm "${v.conferidoEm}" fora do formato AAAA-MM-DD`);
+      else if (data > hoje) erros.push(`${n}: conferidoEm ${v.conferidoEm} está no futuro`);
+      else if ((hoje - data) / 86_400_000 > 365) avisos.push(`${n}: conferido há mais de 12 meses (${v.conferidoEm})`);
+    }
+    if (v?.duracao === undefined || v.duracao === '') erros.push(`${n} sem duração`);
+    else if (!duracaoValida(v.duracao)) erros.push(`${n}: duração "${v.duracao}" fora do formato m:ss ou h:mm:ss`);
+    else if (minutosDaDuracao(v.duracao) > LIMITE_SEM_TRECHO_MIN && !v.trecho?.trim()) {
+      avisos.push(`${n} com mais de ${LIMITE_SEM_TRECHO_MIN} min e sem "trecho"`);
+    }
+  });
+  return { erros, avisos };
+}
+
+/** Confere o arquivo todo: lições inexistentes, repetidas e lições com conteúdo sem entrada. */
+export function validarVideos(entradas, idsLicoes, opcoes = {}) {
+  const erros = [];
+  const avisos = [];
+  const vistas = new Set();
+  for (const e of entradas) {
+    const onde = `videos.json[${e?.licao ?? '?'}]`;
+    if (!idsLicoes.has(e?.licao)) {
+      erros.push(`${onde}: lição inexistente`);
+      continue;
+    }
+    if (vistas.has(e.licao)) erros.push(`${onde}: lição repetida no arquivo`);
+    vistas.add(e.licao);
+    const r = validarEntradaVideos(e, opcoes);
+    erros.push(...r.erros.map((m) => `${onde}: ${m}`));
+    avisos.push(...r.avisos.map((m) => `${onde}: ${m}`));
+  }
+  for (const id of idsLicoes) if (!vistas.has(id)) avisos.push(`videos.json: a lição ${id} tem conteúdo mas não tem entrada`);
+  return { erros, avisos };
 }
 
 export function validar({ hoje = new Date(), estrito = false } = {}) {
@@ -255,6 +349,11 @@ export function validar({ hoje = new Date(), estrito = false } = {}) {
       erro(`questoes/${id}.json`, `${vies.comAviso} de ${vies.total} questões com a correta mais de 15% acima da maior errada (o máximo é 30% da lição)`);
     }
   }
+
+  // ---- Vídeos recomendados ----
+  const rv = validarVideos(lerVideos(), idsLicoes, { hoje });
+  erros.push(...rv.erros);
+  avisos.push(...rv.avisos);
 
   // Questões sem lição
   const pastaQ = join(PASTA_CONTEUDO, 'questoes');

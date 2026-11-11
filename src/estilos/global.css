@@ -428,6 +428,11 @@ main:focus {
 .botao-largo {
   width: 100%;
 }
+.link-toque {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--toque);
+}
 .acoes {
   display: flex;
   flex-wrap: wrap;

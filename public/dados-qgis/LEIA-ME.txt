@@ -1,0 +1,26 @@
+DADOS FICTÍCIOS DE QGIS - Vila Fictícia
+=====================================
+
+DADOS FICTÍCIOS para exercício. Não representam nenhuma rede, poste, cabo ou empresa real.
+Os códigos (PF-0001, CB-01, CX-01...), os nomes de ocupantes e os CNPJs são inventados.
+
+Arquivos
+- rede-ficticia.gpkg: GeoPackage com as camadas postes, vaos, cabos, caixas e quadras e as tabelas sem geometria
+  ocupantes e ocupacoes. SRC de todas as camadas: EPSG:31980 (SIRGAS 2000 / UTM zona 20S).
+- postes.kml: os mesmos postes em EPSG:4326 (longitude, latitude).
+- vistoria-utm-sem-src.csv: pontos de uma vistoria fictícia, separador ";", ponto decimal, colunas
+  cod_poste;x;y;data;obs. As coordenadas estão em UTM zona 20 com falso norte 0 (zona 20N, EPSG:31974), mas o
+  arquivo NÃO declara o SRC, de propósito: se você abrir como EPSG:31980, os pontos caem 10.000 km ao sul.
+  Descobrir o SRC certo faz parte do exercício.
+- gabarito.json: totais, irregularidades plantadas e respostas de exercício. Só abra depois de tentar.
+
+Onde fica
+A área fica na Estação Ecológica de Maracá (Roraima), perto de 3,40 N e 61,65 O, num retângulo de cerca de 1,2 km
+(leste-oeste) por 1,0 km (norte-sul). Foi escolhida por não ter estradas nem linhas de energia mapeadas (conferido
+no OpenStreetMap em 10/11/2026). Nada aqui descreve infraestrutura real.
+
+Licença
+Uso livre para estudo.
+
+Como regerar
+npm run dados-qgis (scripts/gerar-dados-qgis.mjs). O resultado é sempre o mesmo.

@@ -116,6 +116,12 @@ export function lerLicoes() {
     });
 }
 
+/** Lê content/videos.json (vídeos conferidos e termos de busca, por lição). */
+export function lerVideos() {
+  const caminho = join(PASTA_CONTEUDO, 'videos.json');
+  return existsSync(caminho) ? JSON.parse(readFileSync(caminho, 'utf-8')) : [];
+}
+
 /** Lê content/questoes/<id>.json (lista de questões da lição). */
 export function lerQuestoes(idLicao) {
   const caminho = join(PASTA_CONTEUDO, 'questoes', `${idLicao}.json`);
@@ -178,6 +184,8 @@ export function markdownParaHtml(md, ordemFontes, glossarioPorId) {
   html = html.replace(/<table>/g, '<div class="tabela" tabindex="0"><table>').replace(/<\/table>/g, '</table></div>');
   // Links externos abrem fora do app.
   html = html.replace(/<a href="(https?:[^"]+)"/g, '<a href="$1" target="_blank" rel="noopener noreferrer"');
+  // Arquivos de exercício (public/dados-qgis) são baixados em vez de abertos.
+  html = html.replace(/<a href="(dados-qgis\/[^"]+)"/g, '<a href="$1" download');
   return html;
 }
 

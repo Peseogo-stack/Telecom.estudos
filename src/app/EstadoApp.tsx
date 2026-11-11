@@ -3,7 +3,7 @@
 import { createContext, useContext, useEffect, useMemo, useReducer, useRef, useState, type ReactNode } from 'react';
 import { carregar, salvar } from '../dominio/armazenamento';
 import { type Dia, hoje } from '../dominio/datas';
-import { type Ajustes, type Estado, type Nota, type PerguntaCaderno, NOTA_APROVACAO } from '../dominio/estado';
+import { type Ajustes, type AvaliacaoVideo, type Estado, type Nota, type PerguntaCaderno, NOTA_APROVACAO } from '../dominio/estado';
 import { registrarErro, responderRevisao } from '../dominio/revisao';
 import { semearPerguntas } from '../dominio/caderno';
 import { indice } from '../conteudo/carregar';
@@ -22,6 +22,7 @@ export type Acao =
   | { tipo: 'atualizarPergunta'; id: string; mudancas: Partial<Pick<PerguntaCaderno, 'resposta' | 'resolvida'>> }
   | { tipo: 'apagarPergunta'; id: string }
   | { tipo: 'restaurarPergunta'; pergunta: PerguntaCaderno; posicao: number }
+  | { tipo: 'avaliarVideo'; url: string; avaliacao: AvaliacaoVideo }
   | { tipo: 'ferramenta'; id: string; valores: unknown };
 
 function marcarEstudo(estado: Estado, dia: Dia): Estado['progresso'] {
@@ -104,6 +105,11 @@ export function reduzir(estado: Estado, acao: Acao): Estado {
       const perguntas = [...estado.caderno.perguntas];
       perguntas.splice(Math.min(acao.posicao, perguntas.length), 0, acao.pergunta);
       return { ...estado, caderno: { ...estado.caderno, perguntas } };
+    }
+    case 'avaliarVideo': {
+      // Clicar de novo na mesma avaliação desmarca.
+      const { [acao.url]: atual, ...resto } = estado.videos;
+      return { ...estado, videos: atual === acao.avaliacao ? resto : { ...resto, [acao.url]: acao.avaliacao } };
     }
     case 'ferramenta':
       return { ...estado, ferramentas: { ...estado.ferramentas, [acao.id]: acao.valores } };

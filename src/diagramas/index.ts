@@ -37,6 +37,20 @@ import { PilhaProtocolos } from './PilhaProtocolos';
 import { GooseMulticast } from './GooseMulticast';
 import { AnelNoves } from './AnelNoves';
 import { MeiosTransporte } from './MeiosTransporte';
+import { ZonasUtmRoraima } from './ZonasUtmRoraima';
+import { FeicaoETabela } from './FeicaoETabela';
+import { FiltrarXSelecionar } from './FiltrarXSelecionar';
+import { DetentorOcupante } from './DetentorOcupante';
+import { AnatomiaPoste } from './AnatomiaPoste';
+import { VersoesQgis } from './VersoesQgis';
+import { FormatosArquivo } from './FormatosArquivo';
+import { CicloDeEdicao } from './CicloDeEdicao';
+import { CicloQfield } from './CicloQfield';
+import { PlaquetaIdentificacao } from './PlaquetaIdentificacao';
+import { OndeFicaCadaCoisa } from './OndeFicaCadaCoisa';
+import { AlturasAoSolo } from './AlturasAoSolo';
+import { FluxoFiscalizacao } from './FluxoFiscalizacao';
+import { CalendarioRiscosRr } from './CalendarioRiscosRr';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'servicos-prazos': ServicosPrazos,
@@ -74,6 +88,20 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'anatomia-ftth': AnatomiaFtth,
   'splitters-balanceados': SplittersBalanceados,
   'orcamento-pon': OrcamentoPon,
+  'zonas-utm-roraima': ZonasUtmRoraima,
+  'feicao-e-tabela': FeicaoETabela,
+  'filtrar-x-selecionar': FiltrarXSelecionar,
+  'detentor-ocupante': DetentorOcupante,
+  'anatomia-poste': AnatomiaPoste,
+  'versoes-qgis': VersoesQgis,
+  'formatos-arquivo': FormatosArquivo,
+  'ciclo-de-edicao': CicloDeEdicao,
+  'ciclo-qfield': CicloQfield,
+  'plaqueta-identificacao': PlaquetaIdentificacao,
+  'onde-fica-cada-coisa': OndeFicaCadaCoisa,
+  'alturas-ao-solo': AlturasAoSolo,
+  'fluxo-fiscalizacao': FluxoFiscalizacao,
+  'calendario-riscos-rr': CalendarioRiscosRr,
 };
 
 

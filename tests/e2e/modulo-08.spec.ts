@@ -1,0 +1,137 @@
+import { expect, test } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
+
+test.use({ viewport: { width: 390, height: 844 } });
+
+for (const id of ['08-01', '08-02', '08-03', '08-04', '08-05', '08-06', '08-07']) {
+  test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
+    await page.goto(`./#/licao/${id}`);
+    const svg = page.locator('figure.diagrama svg[role="img"]').first();
+    await expect(svg).toBeVisible();
+    expect((await svg.locator('desc').textContent())?.length ?? 0).toBeGreaterThan(40);
+    const l = await page.evaluate(() => ({ doc: document.documentElement.scrollWidth, tela: window.innerWidth }));
+    expect(l.doc).toBeLessThanOrEqual(l.tela);
+  });
+}
+
+test('08-01: datas de 11/11/2026, diagrama com a previsão da 4.4.4 e termo LTR no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-01');
+  await expect(page.locator('main')).toContainText('Em 11/11/2026');
+  await expect(page.locator('main')).toContainText('Help ► About');
+  await expect(page.locator('figure.diagrama svg')).toContainText('prevista para virar LTR');
+  await expect(page.locator('figure.diagrama svg')).toContainText('LTR 3.44.15 · latest 4.2.3');
+  await page.getByRole('link', { name: 'LTR', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=ltr/);
+});
+
+test('08-02: tabela de tipos de geometria, diagrama com a tabela de postes e link do GeoPackage', async ({ page }) => {
+  await page.goto('./#/licao/08-02');
+  await expect(page.locator('.prosa table')).toContainText('Polígono');
+  await expect(page.locator('figure.diagrama svg')).toContainText('uma feição = um desenho');
+  await expect(page.getByRole('link', { name: 'rede-ficticia.gpkg' })).toHaveAttribute('href', /dados-qgis\/rede-ficticia\.gpkg$/);
+});
+
+test('08-03: tabela mostra os dois valores de N e o link do CSV de exercício', async ({ page }) => {
+  await page.goto('./#/licao/08-03');
+  const tabela = page.locator('.prosa table');
+  await expect(tabela).toContainText('10.375.911 m');
+  await expect(tabela).toContainText('375.911 m');
+  await expect(page.getByRole('link', { name: 'vistoria-utm-sem-src.csv' })).toHaveAttribute('href', /dados-qgis\/vistoria-utm-sem-src\.csv$/);
+});
+
+test('08-03: termo SRC abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-03');
+  await page.getByRole('link', { name: 'SRC', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=src/);
+  await expect(page.getByText('como os números de uma coordenada', { exact: false }).first()).toBeVisible();
+});
+
+for (const rota of ['#/licao/08-01', '#/licao/08-01/questoes', '#/licao/08-02', '#/licao/08-02/questoes', '#/licao/08-03', '#/licao/08-03/questoes', '#/licao/08-04', '#/licao/08-04/questoes', '#/licao/08-05', '#/licao/08-05/questoes', '#/licao/08-06', '#/licao/08-06/questoes', '#/licao/08-07', '#/licao/08-07/questoes', '#/glossario?t=falso-norte']) {
+  test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
+    await page.goto(`./${rota}`);
+    await page.locator('main h1').first().waitFor();
+    const r = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+    const graves = r.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical');
+    expect(graves.map((v) => `${v.id}: ${v.nodes.map((x) => x.target.join(' ')).slice(0, 3).join(' | ')}`)).toEqual([]);
+  });
+}
+
+test('08-06: tabela de consultas, diagrama com os três quadros e link do GeoPackage', async ({ page }) => {
+  await page.goto('./#/licao/08-06');
+  const tabela = page.locator('.prosa table');
+  await expect(tabela).toContainText('"plaqueta" = \'nao\'');
+  await expect(tabela).toContainText('IS NULL');
+  await expect(page.locator('figure.diagrama svg')).toContainText('2 selecionadas de 8');
+  await expect(page.locator('figure.diagrama svg')).toContainText('a contagem passa a ser 2');
+  await expect(page.getByRole('link', { name: 'rede-ficticia.gpkg' })).toHaveAttribute('href', /dados-qgis\/rede-ficticia\.gpkg$/);
+});
+
+test('08-06: termo filtro abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-06');
+  await page.getByRole('link', { name: 'Filtrar', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=filtro-de-camada/);
+  await expect(page.getByText('cláusula WHERE', { exact: false }).first()).toBeVisible();
+});
+
+test('08-04: tabela de formatos, diagrama com os arquivos do Shapefile e link do KML', async ({ page }) => {
+  await page.goto('./#/licao/08-04');
+  const tabela = page.locator('.prosa table');
+  await expect(tabela).toContainText('confira com quem desenhou');
+  await expect(tabela).toContainText('sempre EPSG:4326');
+  await expect(page.locator('main')).toContainText('ocupantes_qtd');
+  await expect(page.locator('figure.diagrama svg')).toContainText('postes.dbf');
+  await expect(page.locator('figure.diagrama svg')).toContainText('KML: sempre EPSG:4326 (graus)');
+  await expect(page.getByRole('link', { name: 'postes.kml' })).toHaveAttribute('href', /dados-qgis\/postes\.kml$/);
+});
+
+test('08-04: termo Shapefile abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-04');
+  await page.getByRole('link', { name: 'Shapefile', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=shapefile/);
+  await expect(page.getByText('vários arquivos para uma só camada', { exact: false }).first()).toBeVisible();
+});
+
+test('08-03: os arquivos de exercício baixam de verdade (GeoPackage e CSV)', async ({ page }) => {
+  await page.goto('./#/licao/08-03');
+  const link = page.getByRole('link', { name: 'rede-ficticia.gpkg' });
+  await expect(link).toHaveAttribute('download', '');
+  const inicio = await page.evaluate(async () => {
+    const r = await fetch('dados-qgis/rede-ficticia.gpkg');
+    return new TextDecoder().decode((await r.arrayBuffer()).slice(0, 15));
+  });
+  expect(inicio).toBe('SQLite format 3');
+  const csv = await page.evaluate(async () => (await (await fetch('dados-qgis/vistoria-utm-sem-src.csv')).text()).split('\n')[0].trim());
+  expect(csv).toBe('cod_poste;x;y;data;obs');
+});
+
+test('08-05: diagrama do ciclo, passos do exercício e link do GeoPackage', async ({ page }) => {
+  await page.goto('./#/licao/08-05');
+  await expect(page.locator('main')).toContainText('postes-copia.gpkg');
+  await expect(page.locator('main')).toContainText('67');
+  await expect(page.locator('figure.diagrama svg')).toContainText('4a. Save Layer Edits');
+  await expect(page.locator('figure.diagrama svg')).toContainText('na memória do QGIS');
+  await expect(page.getByRole('link', { name: 'rede-ficticia.gpkg' })).toHaveAttribute('href', /dados-qgis\/rede-ficticia\.gpkg$/);
+});
+
+test('08-05: termo modo de edição abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-05');
+  await page.getByRole('link', { name: 'edição ligada', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=modo-de-edicao/);
+  await expect(page.getByText('Save Layer Edits', { exact: false }).first()).toBeVisible();
+});
+
+test('08-07: diagrama do ciclo, caminhos de menu do QFieldSync e link do GeoPackage', async ({ page }) => {
+  await page.goto('./#/licao/08-07');
+  await expect(page.locator('main')).toContainText('Plugins > QFieldSync > Package for QField');
+  await expect(page.locator('main')).toContainText('Plugins > QFieldSync > Synchronize from QField');
+  await expect(page.locator('figure.diagrama svg')).toContainText('nova coleta = novo pacote');
+  await expect(page.locator('figure.diagrama svg')).toContainText('uma vez por pacote');
+  await expect(page.getByRole('link', { name: 'rede-ficticia.gpkg' })).toHaveAttribute('href', /dados-qgis\/rede-ficticia\.gpkg$/);
+});
+
+test('08-07: termo QFieldSync abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/08-07');
+  await page.getByRole('link', { name: 'QFieldSync', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=qfieldsync/);
+  await expect(page.getByText('empacota o projeto para o QField', { exact: false }).first()).toBeVisible();
+});

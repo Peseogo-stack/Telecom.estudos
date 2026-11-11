@@ -137,7 +137,8 @@
     ],
     "licoes": [
       "10-01",
-      "10-05"
+      "10-05",
+      "07-02"
     ],
     "sigla": "APR",
     "en": "Risk analysis"
@@ -163,7 +164,8 @@
       "nr10-vigente"
     ],
     "licoes": [
-      "10-01"
+      "10-01",
+      "07-02"
     ],
     "sigla": "BT",
     "en": "Low voltage"
@@ -177,7 +179,8 @@
       "nr10-vigente"
     ],
     "licoes": [
-      "10-01"
+      "10-01",
+      "07-02"
     ],
     "sigla": "MT",
     "en": "Medium voltage"
@@ -1014,7 +1017,9 @@
       "transcend-as"
     ],
     "licoes": [
-      "03-01"
+      "03-01",
+      "07-04",
+      "07-05"
     ]
   },
   {
@@ -1231,7 +1236,8 @@
     ],
     "licoes": [
       "03-07",
-      "04-01"
+      "04-01",
+      "07-04"
     ]
   },
   {
@@ -1245,7 +1251,8 @@
     ],
     "licoes": [
       "03-07",
-      "04-01"
+      "04-01",
+      "07-04"
     ]
   },
   {
@@ -1258,7 +1265,10 @@
     ],
     "licoes": [
       "03-07",
-      "04-01"
+      "04-01",
+      "07-03",
+      "07-04",
+      "07-05"
     ]
   },
   {
@@ -1575,6 +1585,725 @@
     ],
     "licoes": [
       "04-05"
+    ]
+  },
+  {
+    "id": "src",
+    "pt": "SRC (sistema de referência de coordenadas)",
+    "sigla": "SRC",
+    "en": "CRS (coordinate reference system)",
+    "definicao": "O que diz como os números de uma coordenada se ligam a um lugar na Terra. No QGIS cada camada e cada projeto tem o seu e ele é identificado por autoridade e código, como EPSG:4674.",
+    "fontes": [
+      "qgis-projecoes"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "epsg",
+    "pt": "Código EPSG",
+    "sigla": "EPSG",
+    "en": "EPSG code",
+    "definicao": "Número do registro EPSG que identifica um SRC. Exemplos: 4674 (SIRGAS 2000, em graus), 31980 (SIRGAS 2000 / UTM zona 20S) e 31974 (UTM zona 20N).",
+    "fontes": [
+      "epsg-4674",
+      "epsg-31980",
+      "epsg-31974"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "sirgas-2000",
+    "pt": "SIRGAS 2000",
+    "en": "SIRGAS 2000",
+    "definicao": "Sistema de referência geodésico do Brasil, estabelecido pela R.PR 1/2005 do IBGE, com elipsoide GRS80. Em graus é o EPSG:4674; em UTM, Roraima cai nas zonas 20S e 21S (31980 e 31981).",
+    "fontes": [
+      "ibge-rpr-2005",
+      "epsg-4674",
+      "epsg-31980",
+      "epsg-31981"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "utm",
+    "pt": "UTM",
+    "sigla": "UTM",
+    "en": "UTM (Universal Transverse Mercator)",
+    "definicao": "Projeção em zonas de 6° de longitude, com coordenadas em metros: E (leste) e N (norte). A zona 20 vai de 66°O a 60°O e a zona 21, de 60°O a 54°O.",
+    "fontes": [
+      "epsg-31980",
+      "epsg-31981"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "falso-norte",
+    "pt": "Falso norte",
+    "en": "False northing",
+    "definicao": "Valor somado ao N da coordenada UTM. Na zona 20S (31980) é 10.000.000 m; na zona 20N (31974) é 0 m. Por isso o mesmo ponto tem N de 8 dígitos numa e de 6 dígitos na outra.",
+    "fontes": [
+      "epsg-31980",
+      "epsg-31974"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "meridiano-central",
+    "pt": "Meridiano central",
+    "en": "Central meridian",
+    "definicao": "Longitude de origem da zona UTM. Na zona 20 é 63°O; na zona 21, 57°O.",
+    "fontes": [
+      "epsg-31980",
+      "epsg-31981"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "reprojecao",
+    "pt": "Reprojeção",
+    "en": "Reprojection",
+    "definicao": "Conversão das coordenadas de um SRC para outro. O QGIS reprojeta as camadas para o SRC do projeto na hora de desenhar; para gravar a camada em outro SRC, é preciso exportar.",
+    "fontes": [
+      "qgis-projecoes",
+      "qgis-criar-camadas"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "wgs-84",
+    "pt": "WGS 84",
+    "sigla": "EPSG:4326",
+    "en": "WGS 84",
+    "definicao": "SRC em latitude e longitude (EPSG:4326). Por padrão, é o SRC com que um projeto novo do QGIS começa.",
+    "fontes": [
+      "qgis-projecoes"
+    ],
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "sig",
+    "pt": "SIG (sistema de informação geográfica)",
+    "sigla": "SIG",
+    "en": "GIS (geographic information system)",
+    "definicao": "Programa que trabalha com dados ligados a um lugar. O QGIS é um deles: guarda o que existe na paisagem como feições (vetor) ou como pixels (raster).",
+    "fontes": [
+      "qgis-intro-vetor",
+      "qgis-intro-raster"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "camada",
+    "pt": "Camada",
+    "en": "Layer",
+    "definicao": "Conjunto de feições do mesmo tipo de geometria (por exemplo, postes como pontos, cabos como linhas, quadras como polígonos). Um arquivo como o GeoPackage pode ter várias camadas.",
+    "fontes": [
+      "qgis-intro-vetor",
+      "qgis-abrir-dados"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "vetor",
+    "pt": "Vetor",
+    "en": "Vector",
+    "definicao": "Dado que representa o que se vê na paisagem (casas, estradas, árvores, rios) como feições, cada uma com geometria e atributos.",
+    "fontes": [
+      "qgis-intro-vetor"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "raster",
+    "pt": "Raster",
+    "en": "Raster",
+    "definicao": "Matriz de pixels (células), cada um com um valor para a área que cobre. É o caso de imagens de satélite e fotografias aéreas.",
+    "fontes": [
+      "qgis-intro-raster"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "feicao",
+    "pt": "Feição",
+    "en": "Feature",
+    "definicao": "Qualquer coisa que se vê na paisagem e é representada como dado vetorial. Tem geometria (a forma e o lugar) e atributos (a descrição). Na tabela de atributos, é uma linha.",
+    "fontes": [
+      "qgis-intro-vetor",
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "geometria",
+    "pt": "Geometria",
+    "en": "Geometry",
+    "definicao": "A forma de uma feição vetorial e o lugar dela, feita de um ou mais vértices ligados: um vértice é ponto; dois ou mais, linha; três ou mais com o último igual ao primeiro, polígono.",
+    "fontes": [
+      "qgis-intro-vetor"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "vertice",
+    "pt": "Vértice",
+    "en": "Vertex",
+    "definicao": "Posição no espaço descrita por X, Y e, às vezes, Z. A geometria de uma feição é feita de um ou mais vértices.",
+    "fontes": [
+      "qgis-intro-vetor"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "atributo",
+    "pt": "Atributo",
+    "en": "Attribute",
+    "definicao": "Texto ou número que descreve uma feição vetorial, como o material de um poste. Fica numa coluna (campo) da tabela de atributos.",
+    "fontes": [
+      "qgis-intro-vetor",
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "tabela-de-atributos",
+    "pt": "Tabela de atributos",
+    "en": "Attribute table",
+    "definicao": "Tabela de uma camada: cada linha é uma feição e cada coluna é um campo. Existem também tabelas sem geometria, que não desenham nada no mapa.",
+    "fontes": [
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "campo",
+    "pt": "Campo",
+    "en": "Field",
+    "definicao": "Coluna da tabela de atributos: um tipo de informação sobre as feições, como o código ou o material do poste.",
+    "fontes": [
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "geopackage",
+    "pt": "GeoPackage",
+    "en": "GeoPackage",
+    "definicao": "Formato vetorial que funciona como contêiner de camadas: um arquivo só, que no painel Browser se expande para mostrar as camadas dentro dele.",
+    "fontes": [
+      "qgis-abrir-dados",
+      "gdal-gpkg"
+    ],
+    "licoes": [
+      "08-02",
+      "08-04"
+    ]
+  },
+  {
+    "id": "expressao",
+    "pt": "Expressão",
+    "en": "Expression",
+    "definicao": "Pergunta de sim ou não feita a cada feição, escrita com campo, operador e valor, como \"ocupantes_qtd\" > 5. Campo vai entre aspas duplas, texto entre aspas simples e número sem aspas.",
+    "fontes": [
+      "qgis-expressoes"
+    ],
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "filtro-de-camada",
+    "pt": "Filtro de camada",
+    "en": "Layer filter (Query Builder)",
+    "definicao": "Consulta que deixa no projeto só as feições que atendem, com uma cláusula WHERE parecida com SQL. As outras somem do mapa, da tabela e das contagens até o filtro ser removido. A camada ganha um funil no painel Layers.",
+    "fontes": [
+      "qgis-propriedades-vetor"
+    ],
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "selecao",
+    "pt": "Seleção",
+    "en": "Selection",
+    "definicao": "Marca as feições que atendem a uma pergunta, sem esconder as outras: elas continuam no mapa e na tabela. O título da tabela de atributos mostra quantas estão selecionadas.",
+    "fontes": [
+      "qgis-ferramentas-gerais",
+      "qgis-tabela-atributos"
+    ],
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "planimetrico",
+    "pt": "Medida planimétrica",
+    "en": "Planimetric",
+    "definicao": "Medida feita no plano do sistema de coordenadas, na unidade dele: metros numa camada em UTM e graus numa camada em 4674 ou 4326.",
+    "fontes": [
+      "qgis-funcoes"
+    ],
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "elipsoidal",
+    "pt": "Medida elipsoidal",
+    "en": "Ellipsoidal",
+    "definicao": "Medida feita sobre o elipsoide definido no projeto. A função $length do QGIS dá medida elipsoidal quando o projeto tem elipsoide e planimétrica quando não tem.",
+    "fontes": [
+      "qgis-funcoes"
+    ],
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "detentor",
+    "pt": "Detentor",
+    "definicao": "Concessionária ou permissionária de energia elétrica que detém, administra ou controla a infraestrutura a ser compartilhada. Em um poste da distribuidora, é a distribuidora.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-1-1999"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "ocupante",
+    "pt": "Ocupante",
+    "definicao": "Quem ocupa a infraestrutura da distribuidora mediante contrato: operadora, provedor, órgão público ou outro interessado. Regulariza e paga a regularização da própria ocupação.",
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "licoes": [
+      "07-01",
+      "07-03"
+    ]
+  },
+  {
+    "id": "ponto-de-fixacao",
+    "pt": "Ponto de fixação",
+    "definicao": "Ponto do poste, dentro da faixa destinada ao compartilhamento, onde se instala o suporte que sustenta mecanicamente os cabos ou a cordoalha do ocupante. O poste é medido e cobrado por ponto de fixação.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-01",
+      "07-02",
+      "07-03",
+      "07-05"
+    ]
+  },
+  {
+    "id": "faixa-de-ocupacao",
+    "pt": "Faixa de ocupação",
+    "definicao": "Espaço nos postes e torres em que a distribuidora define os pontos de fixação destinados ao compartilhamento. A altura e a medida da faixa vêm da norma técnica da distribuidora.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-01",
+      "07-02",
+      "07-03"
+    ]
+  },
+  {
+    "id": "ocupacao-a-revelia",
+    "pt": "Ocupação à revelia",
+    "definicao": "Ocupação que não consta de projeto técnico previamente aprovado pela distribuidora, mesmo que o ocupante tenha contrato de compartilhamento vigente. É vedada.",
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "licoes": [
+      "07-01",
+      "07-03"
+    ]
+  },
+  {
+    "id": "ocupacao-clandestina",
+    "pt": "Ocupação clandestina",
+    "definicao": "Ocupação à revelia sem contrato de compartilhamento vigente, ou cujo dono do cabo não foi identificado depois de a distribuidora notificar todos os ocupantes com contrato.",
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "licoes": [
+      "07-01",
+      "07-03"
+    ]
+  },
+  {
+    "id": "plano-de-ocupacao",
+    "pt": "Plano de Ocupação de Infraestrutura",
+    "definicao": "Documento aprovado por norma técnica da distribuidora, publicado no site dela, que estabelece as condições técnicas que o solicitante deve seguir.",
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "comissao-de-resolucao-de-conflitos",
+    "pt": "Comissão de Resolução de Conflitos",
+    "definicao": "Comissão a que o detentor pede autorização para retirar cabos de ocupante que não regularizou. Também usa o preço de referência do ponto de fixação nos conflitos. A REN 1.044/2022 a cita nos termos da Resolução Conjunta nº 2/2001.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "posteiro",
+    "pt": "Posteiro",
+    "definicao": "Nome usado no setor para a empresa que administraria a ocupação dos postes na proposta do novo regulamento. Em 10/11/2026 ainda não existe em regra vigente.",
+    "fontes": [
+      "cenario-energia-2026-10-28"
+    ],
+    "licoes": [
+      "07-01",
+      "07-07"
+    ]
+  },
+  {
+    "id": "rede-primaria",
+    "pt": "Rede primária",
+    "definicao": "Rede de média tensão do poste. No exemplo da Cemig, fica no topo, em cruzeta, acima da rede secundária.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "rede-secundaria",
+    "pt": "Rede secundária",
+    "definicao": "Rede de baixa tensão do poste, com neutro e fases. No exemplo da Cemig, fica abaixo da rede primária e acima da faixa de ocupação. O cabo de telecom vai do mesmo lado dela.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "iluminacao-publica",
+    "pt": "Iluminação pública",
+    "definicao": "Luminária e braço da rede de iluminação das vias, no poste. No exemplo da Cemig, o espaço dela é só para equipamento de iluminação pública, e nele não entra equipamento de telecom.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-02"
+    ],
+    "sigla": "IP"
+  },
+  {
+    "id": "flecha",
+    "pt": "Flecha",
+    "definicao": "A barriga do cabo no meio do vão. As distâncias ao solo são conferidas na pior condição de flecha (no exemplo da Cemig, a flecha máxima a 50 °C).",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-02",
+      "07-05"
+    ]
+  },
+  {
+    "id": "ltr",
+    "pt": "LTR (versão de suporte longo)",
+    "sigla": "LTR",
+    "en": "Long Term Release",
+    "definicao": "A cada três lançamentos do QGIS, um é LTR e é mantido até a LTR seguinte. Em 11/11/2026, a LTR é a 3.44.",
+    "fontes": [
+      "qgis-roadmap"
+    ],
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "versao-de-correcao",
+    "pt": "Versão de correção",
+    "en": "point release",
+    "definicao": "Versão mensal do QGIS que traz só correção de erros, sem recurso novo. É o terceiro número: em 3.44.15, o 15.",
+    "fontes": [
+      "qgis-roadmap"
+    ],
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "complemento",
+    "pt": "Complemento",
+    "en": "plugin",
+    "definicao": "Extensão que acrescenta funções ao QGIS. Alguns vêm com o programa; os externos são mantidos pelos autores e instalados à parte.",
+    "fontes": [
+      "qgis-complementos"
+    ],
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "shapefile",
+    "pt": "Shapefile",
+    "en": "shapefile",
+    "definicao": "Formato vetorial feito de vários arquivos para uma só camada: .shp, .shx e .dbf formam a camada, e o SRC vem do .prj, quando existe. Os nomes de campo têm até 10 caracteres.",
+    "fontes": [
+      "gdal-shapefile"
+    ],
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "kml",
+    "pt": "KML",
+    "en": "KML (Keyhole Markup Language)",
+    "definicao": "Formato em XML para exibir dados geoespaciais, lido por programas como o Google Earth. Usa um SRC só, o EPSG:4326, em graus.",
+    "fontes": [
+      "gdal-kml"
+    ],
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "csv",
+    "pt": "CSV",
+    "en": "CSV (comma separated values)",
+    "definicao": "Arquivo de texto com colunas. Não guarda SRC nem o tipo de cada coluna: quem abre informa o SRC, e o QGIS tenta reconhecer os tipos ao abrir como texto delimitado.",
+    "fontes": [
+      "gdal-csv",
+      "qgis-abrir-dados"
+    ],
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "dxf",
+    "pt": "DXF",
+    "en": "DXF",
+    "definicao": "Formato de desenho de CAD. O QGIS o separa em camadas por tipo de geometria, e o nome da camada do CAD vira o campo Layer.",
+    "fontes": [
+      "gdal-dxf",
+      "qgis-abrir-dados"
+    ],
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "modo-de-edicao",
+    "pt": "Modo de edição",
+    "en": "Toggle editing",
+    "definicao": "Estado da camada com a edição ligada (Toggle Editing, o lápis). As ferramentas de edição ficam disponíveis e as mudanças ficam só na memória do QGIS até você salvar com Save Layer Edits.",
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "copia-de-seguranca",
+    "pt": "Cópia de segurança",
+    "en": "backup",
+    "definicao": "Cópia do arquivo feita antes de editar. O manual do QGIS recomenda fazê-la sempre; depois de salvar uma edição, é ela que protege os dados originais.",
+    "fontes": [
+      "qgis-edicao"
+    ],
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "qfield",
+    "pt": "QField",
+    "en": "QField",
+    "definicao": "Aplicativo de coleta em campo que abre projetos do QGIS no aparelho. Pode ser usado sem internet, com o projeto e o mapa de fundo preparados antes, no computador.",
+    "fontes": [
+      "qfield-comecar"
+    ],
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "qfieldsync",
+    "pt": "QFieldSync",
+    "en": "QFieldSync",
+    "definicao": "Complemento (plugin) do QGIS que empacota o projeto para o QField e traz de volta as mudanças feitas em campo.",
+    "fontes": [
+      "qfield-qfieldsync"
+    ],
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "mapa-de-fundo",
+    "pt": "Mapa de fundo",
+    "en": "Basemap",
+    "definicao": "Camada raster posta no fundo do projeto empacotado. Para trabalhar sem internet no QField, ele é preparado antes, no computador.",
+    "fontes": [
+      "qfield-qfieldsync"
+    ],
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "plaqueta",
+    "pt": "Plaqueta de identificação",
+    "definicao": "Plaqueta presa ao cabo do ocupante, perto do poste, que diz de quem é o cabo. O modelo (tamanho, cor, o que informa, distância do poste) vem da norma de cada distribuidora.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014",
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-03"
+    ]
+  },
+  {
+    "id": "raquete",
+    "pt": "Raquete",
+    "definicao": "Suporte que prende a sobra de cabo (a reserva técnica) na cordoalha, no vão, longe do poste.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "reserva-tecnica",
+    "pt": "Reserva técnica",
+    "definicao": "Sobra de cabo do ocupante, guardada no vão, presa na cordoalha e afastada do poste. Não é o ponto de reserva técnica da distribuidora, que é o primeiro ponto de fixação da faixa (lição 07-02).",
+    "fontes": [
+      "cemig-nd66",
+      "energisa-ndu009-v4",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "travessia",
+    "pt": "Travessia",
+    "definicao": "Trecho em que o cabo cruza uma via (rua, avenida, rodovia, ferrovia). Nele, a altura do ponto mais baixo do vão ao solo é a que mais importa.",
+    "fontes": [
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-05"
+    ]
+  },
+  {
+    "id": "notificacao",
+    "pt": "Notificação",
+    "definicao": "Comunicação formal do detentor ao ocupante para regularizar a ocupação. Traz, no mínimo, a localização do poste e a descrição da não conformidade.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "regularizacao",
+    "pt": "Regularização",
+    "definicao": "Correção da ocupação pelo ocupante, por conta dele, inclusive os custos, em cronograma acordado com o detentor. Em risco de acidente ou emergência, é imediata.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "nao-conformidade",
+    "pt": "Não conformidade",
+    "definicao": "O que está fora da norma técnica ou do que foi aprovado. A descrição dela vai na notificação, junto com a localização do poste.",
+    "fontes": [
+      "res-conjunta-4-2014"
+    ],
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "veranico",
+    "pt": "Veranico",
+    "definicao": "Sequência de dias sem chuva dentro do período chuvoso. Em Boa Vista, aparece com mais frequência a partir da segunda dezena de julho e na terceira dezena de agosto (série antiga).",
+    "fontes": [
+      "embrapa-chuvas-boa-vista-1989"
+    ],
+    "licoes": [
+      "07-07"
+    ]
+  },
+  {
+    "id": "foco-de-calor",
+    "pt": "Foco de calor",
+    "definicao": "Ponto de alta temperatura detectado por satélite, usado para acompanhar queimadas. Em Roraima, os focos se concentram de dezembro a março (série de 1999 a 2009).",
+    "fontes": [
+      "inpa-focos-calor-rr-2010"
+    ],
+    "licoes": [
+      "07-07"
     ]
   },
   {

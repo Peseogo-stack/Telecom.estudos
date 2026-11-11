@@ -237,6 +237,7 @@
     "texto": "Qual é o modelo do contrato de ocupação de postes (valor por ponto, prazos, multas)?",
     "dica": "Contrato-padrão de compartilhamento",
     "licoes": [
+      "07-01",
       "07-06"
     ]
   },
@@ -475,7 +476,8 @@
     "dica": "",
     "licoes": [
       "03-06",
-      "07-03"
+      "07-03",
+      "07-04"
     ]
   },
   {
@@ -523,6 +525,7 @@
     "texto": "Como é o fluxo para cabo clandestino (registro, retirada, guarda do material)?",
     "dica": "",
     "licoes": [
+      "07-01",
       "07-06"
     ]
   },
@@ -605,6 +608,501 @@
   {
     "id": "a15",
     "onde": "sozinho",
+    "texto": "Abra um arquivo recebido de fornecedor no QGIS e veja o SRC em Propriedades ► Source: ele veio declarado?",
+    "dica": "Qualquer camada recebida de terceiros",
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "b18",
+    "onde": "documentos",
+    "texto": "O contrato ou o padrão de entrega diz em que SRC o fornecedor tem de mandar os arquivos (as-built, KML, planilha de coordenadas)?",
+    "dica": "Contrato e padrão de entrega",
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "d17",
+    "onde": "colega",
+    "texto": "Qual é o SRC do projeto de QGIS da equipe e das camadas de postes e cabos: 31980, 4674 ou outro?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "d18",
+    "onde": "colega",
+    "texto": "A equipe usa a zona 20 para o estado todo ou muda para a zona 21 a leste de 60°O?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-03"
+    ]
+  },
+  {
+    "id": "a16",
+    "onde": "sozinho",
+    "texto": "Abra a tabela de atributos de uma camada de postes da empresa: quais campos existem e qual deles é o código do poste? (Anote só no Meu caderno; nada de dado da empresa no app.)",
+    "dica": "Camada de postes no QGIS da equipe",
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "d19",
+    "onde": "colega",
+    "texto": "Quais camadas a equipe usa no dia a dia (postes, cabos, caixas…) e de que tipo é cada uma: ponto, linha ou polígono?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "d20",
+    "onde": "colega",
+    "texto": "Em que formato os dados ficam guardados: GeoPackage, Shapefile, banco de dados?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "d21",
+    "onde": "colega",
+    "texto": "A equipe usa imagem de satélite de fundo? De onde ela vem?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-02"
+    ]
+  },
+  {
+    "id": "d22",
+    "onde": "colega",
+    "texto": "Quais consultas a equipe mais faz nas camadas de postes e cabos (por ocupante, por situação, por data de vistoria)?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "d23",
+    "onde": "colega",
+    "texto": "As camadas do projeto da equipe já vêm com algum filtro ligado? Qual e por quê?",
+    "dica": "Procure o funil ao lado do nome da camada",
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "b19",
+    "onde": "documentos",
+    "texto": "O relatório de ocupação ou de vistoria pede contagens (postes por ocupante, pontos sem plaqueta)? De qual camada elas saem?",
+    "dica": "Modelo do relatório",
+    "licoes": [
+      "08-06"
+    ]
+  },
+  {
+    "id": "b20",
+    "onde": "documentos",
+    "texto": "Onde está publicado, no site da empresa, o Plano de Ocupação de Infraestrutura em vigor, e qual norma técnica o aprovou?",
+    "dica": "Site da distribuidora, página de compartilhamento de infraestrutura",
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "c17",
+    "onde": "outras-areas",
+    "texto": "Quem na empresa acompanha o novo regulamento da ANEEL e da Anatel para os postes, e a empresa já se prepara para uma eventual cessão da exploração dos postes?",
+    "dica": "Área regulatória ou de compartilhamento",
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "d24",
+    "onde": "colega",
+    "texto": "Como a equipe cadastra a ocupação dos pontos de fixação (sistema, planilha, QGIS)?",
+    "dica": "",
+    "licoes": [
+      "07-01"
+    ]
+  },
+  {
+    "id": "b21",
+    "onde": "documentos",
+    "texto": "Na norma técnica da empresa, qual é a altura da faixa de ocupação, a que distância do solo fica o topo dela e quantos pontos de fixação ela tem?",
+    "dica": "Norma técnica de compartilhamento e Plano de Ocupação, no site da empresa",
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "b22",
+    "onde": "documentos",
+    "texto": "Qual é o afastamento mínimo entre o cabo de telecom e a baixa tensão e a média tensão na norma da empresa?",
+    "dica": "Tabela de afastamentos da norma técnica",
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "d25",
+    "onde": "colega",
+    "texto": "Como a equipe confere essas medidas em campo: do solo, com que instrumento, e quem pode fazer?",
+    "dica": "",
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "d26",
+    "onde": "colega",
+    "texto": "Onde podem ficar os equipamentos dos ocupantes (caixas, fontes) no poste, segundo a norma da empresa?",
+    "dica": "",
+    "licoes": [
+      "07-02"
+    ]
+  },
+  {
+    "id": "a17",
+    "onde": "sozinho",
+    "texto": "Abra Help ► About no computador de trabalho: qual é a versão do QGIS instalada?",
+    "dica": "No macOS: QGIS ► About QGIS",
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "d27",
+    "onde": "colega",
+    "texto": "A equipe usa a LTR ou a versão mais nova do QGIS? Quem decide quando trocar de versão?",
+    "dica": "",
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "d28",
+    "onde": "colega",
+    "texto": "Quais complementos (plugins) a equipe usa, e quem testa se eles funcionam antes de uma troca de versão?",
+    "dica": "",
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "c18",
+    "onde": "outras-areas",
+    "texto": "Quem instala e atualiza o QGIS nos computadores da empresa (TI)? Posso instalar por conta própria?",
+    "dica": "TI ou o setor responsável pelos computadores",
+    "licoes": [
+      "08-01"
+    ]
+  },
+  {
+    "id": "d29",
+    "onde": "colega",
+    "texto": "Em que formato a equipe guarda os dados e em que formato manda para fornecedores e outras áreas?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "b23",
+    "onde": "documentos",
+    "texto": "O contrato ou o padrão de as-built diz em que formato e com que campos o fornecedor entrega o cadastro?",
+    "dica": "Contrato, termo de referência ou padrão de as-built",
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "d30",
+    "onde": "colega",
+    "texto": "Posso mandar KML da rede para fora da empresa ou abrir no Google Earth? Quem autoriza?",
+    "dica": "Quem mantém o projeto de QGIS ou a gestão da área",
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "a18",
+    "onde": "sozinho",
+    "texto": "Pegue um shapefile recebido de fornecedor: vieram todos os arquivos (.shp, .shx, .dbf, .prj)? (Anote só no Meu caderno; nada de dado da empresa no app.)",
+    "dica": "Pasta com arquivos recebidos",
+    "licoes": [
+      "08-04"
+    ]
+  },
+  {
+    "id": "d31",
+    "onde": "colega",
+    "texto": "Quem pode editar o cadastro de postes e cabos da empresa, e em que arquivo ou sistema?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "d32",
+    "onde": "colega",
+    "texto": "Quando acho um erro de cadastro em campo, como registro e para quem mando?",
+    "dica": "Quem mantém o cadastro ou o chefe da equipe",
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "b24",
+    "onde": "documentos",
+    "texto": "Existe procedimento de cópia de segurança (backup) e de conferência das edições do cadastro?",
+    "dica": "Procedimento ou norma interna de gestão do cadastro",
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "d33",
+    "onde": "colega",
+    "texto": "A equipe edita direto no arquivo compartilhado ou cada um trabalha numa cópia?",
+    "dica": "Quem mantém o projeto de QGIS",
+    "licoes": [
+      "08-05"
+    ]
+  },
+  {
+    "id": "d34",
+    "onde": "colega",
+    "texto": "A equipe usa algum aplicativo de coleta em campo (QField ou outro)? Em que aparelho?",
+    "dica": "Quem mantém o projeto de QGIS ou quem faz vistoria",
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "c19",
+    "onde": "outras-areas",
+    "texto": "Posso levar dados da rede no celular? É celular da empresa ou pessoal? O que a TI e a segurança da informação exigem?",
+    "dica": "TI e segurança da informação",
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "d35",
+    "onde": "colega",
+    "texto": "Quem recebe e confere o que foi coletado em campo antes de entrar no cadastro?",
+    "dica": "Quem mantém o cadastro",
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "b25",
+    "onde": "documentos",
+    "texto": "O procedimento de vistoria diz o que registrar em cada poste (fotos, campos obrigatórios)?",
+    "dica": "Procedimento de vistoria",
+    "licoes": [
+      "08-07"
+    ]
+  },
+  {
+    "id": "b26",
+    "onde": "documentos",
+    "texto": "Qual é o modelo de plaqueta na norma da empresa: tamanho, cor, o que precisa estar escrito e a que distância do poste?",
+    "dica": "Norma técnica de compartilhamento",
+    "licoes": [
+      "07-03"
+    ]
+  },
+  {
+    "id": "d36",
+    "onde": "colega",
+    "texto": "Como registro um cabo sem plaqueta ou com plaqueta ilegível: formulário, foto, sistema?",
+    "dica": "",
+    "licoes": [
+      "07-03"
+    ]
+  },
+  {
+    "id": "d37",
+    "onde": "colega",
+    "texto": "Depois de quantos avisos, e por quem, um cabo sem dono identificado passa a ser tratado como clandestino?",
+    "dica": "",
+    "licoes": [
+      "07-03"
+    ]
+  },
+  {
+    "id": "b27",
+    "onde": "documentos",
+    "texto": "O contrato prevê multa ou prazo para o ocupante identificar os cabos?",
+    "dica": "Contrato com o ocupante",
+    "licoes": [
+      "07-03"
+    ]
+  },
+  {
+    "id": "b28",
+    "onde": "documentos",
+    "texto": "Na norma da empresa, onde podem ficar a caixa de emenda e a reserva de cabo, e a que distância do poste?",
+    "dica": "Norma de compartilhamento: seção sobre caixa de emenda e reserva técnica",
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "b29",
+    "onde": "documentos",
+    "texto": "A norma permite caixa ou equipamento do ocupante no poste? Em quais postes é proibido (transformador, esquina, chave)?",
+    "dica": "Norma de compartilhamento: seção sobre equipamentos no poste",
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "b30",
+    "onde": "documentos",
+    "texto": "Quantos drops por vão a norma permite e de onde eles podem sair?",
+    "dica": "Norma de compartilhamento: seção sobre derivação para clientes",
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "d38",
+    "onde": "colega",
+    "texto": "Quais dessas irregularidades (reserva ou caixa no poste, drop no meio do vão) a equipe mais encontra e como costuma registrar?",
+    "dica": "Colega que já fez vistoria de poste",
+    "licoes": [
+      "07-04"
+    ]
+  },
+  {
+    "id": "b31",
+    "onde": "documentos",
+    "texto": "Na norma da empresa, quais são as alturas mínimas do cabo de telecom sobre rua, entrada de veículos e passagem de pedestres?",
+    "dica": "Norma de compartilhamento: tabela de distâncias mínimas ao solo",
+    "licoes": [
+      "07-05"
+    ]
+  },
+  {
+    "id": "c20",
+    "onde": "outras-areas",
+    "texto": "Para travessia de rodovia, que órgão autoriza e quem na empresa cuida disso?",
+    "dica": "Área de projetos ou de compartilhamento de postes",
+    "licoes": [
+      "07-05"
+    ]
+  },
+  {
+    "id": "d39",
+    "onde": "colega",
+    "texto": "Como a equipe mede a altura de um cabo com segurança: com que instrumento e quem pode medir?",
+    "dica": "Colega que já fez vistoria de poste",
+    "licoes": [
+      "07-05"
+    ]
+  },
+  {
+    "id": "d40",
+    "onde": "colega",
+    "texto": "Qual é o procedimento ao encontrar um cabo baixo sobre a via: a quem avisar e como sinalizar?",
+    "dica": "Colega que já fez vistoria de poste",
+    "licoes": [
+      "07-05"
+    ]
+  },
+  {
+    "id": "b32",
+    "onde": "documentos",
+    "texto": "Qual é o modelo de notificação da empresa e que prazos o contrato dá para regularizar?",
+    "dica": "Contrato-padrão de compartilhamento e modelo de notificação",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "b33",
+    "onde": "documentos",
+    "texto": "Como a empresa guarda os registros de fiscalização e por quanto tempo?",
+    "dica": "Procedimento de fiscalização e de guarda de documentos",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "d41",
+    "onde": "colega",
+    "texto": "Quando registro uma irregularidade, para quem vai o registro e quem emite a notificação ao ocupante?",
+    "dica": "",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "d42",
+    "onde": "colega",
+    "texto": "Quem decide que um caso é emergência e quem executa a retirada de cabos?",
+    "dica": "",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "d43",
+    "onde": "colega",
+    "texto": "O que acontece com o material retirado (guarda, devolução, descarte)?",
+    "dica": "",
+    "licoes": [
+      "07-06"
+    ]
+  },
+  {
+    "id": "d44",
+    "onde": "colega",
+    "texto": "Em que meses a equipe concentra as vistorias de postes, e o que muda na estação chuvosa?",
+    "dica": "",
+    "licoes": [
+      "07-07"
+    ]
+  },
+  {
+    "id": "b34",
+    "onde": "documentos",
+    "texto": "O que o procedimento manda fazer em caso de raio, chuva forte, vento ou fogo perto da rede durante o trabalho de campo?",
+    "dica": "Procedimento de segurança e instrução de trabalho da empresa",
+    "licoes": [
+      "07-07"
+    ]
+  },
+  {
+    "id": "d45",
+    "onde": "colega",
+    "texto": "Depois de temporal ou queimada, quem decide reinspecionar e como os danos em cabos de ocupantes são registrados?",
+    "dica": "",
+    "licoes": [
+      "07-07"
+    ]
+  },
+  {
+    "id": "c21",
+    "onde": "outras-areas",
+    "texto": "Quem acompanha o novo regulamento dos postes na empresa e como a equipe de campo fica sabendo quando algo mudar?",
+    "dica": "Área regulatória ou de relacionamento com ocupantes",
+    "licoes": [
+      "07-07"
+    ]
+  },
+  {
+    "id": "a19",
+    "onde": "sozinho",
     "texto": "Como os religadores se comunicam hoje (rádio, celular, fibra)? Qual equipamento de comunicação fica em cada um?",
     "dica": "Etiqueta e ficha do religador; mapa da rede",
     "licoes": [
@@ -612,7 +1110,7 @@
     ]
   },
   {
-    "id": "b18",
+    "id": "b35",
     "onde": "documentos",
     "texto": "Os links contratados têm SLA? Qual a disponibilidade, o período (mensal ou anual) e qual a meta de disponibilidade que a empresa quer para os links operativos?",
     "dica": "Contratos de link e especificação técnica da rede",
@@ -623,7 +1121,7 @@
     ]
   },
   {
-    "id": "b19",
+    "id": "b36",
     "onde": "documentos",
     "texto": "Que serviços (SCADA, teleproteção, medição, religadores, corporativo) vão na rede própria e quais vão em link contratado?",
     "dica": "Projeto da rede de telecom ou plano diretor",
@@ -633,7 +1131,7 @@
     ]
   },
   {
-    "id": "b20",
+    "id": "b37",
     "onde": "documentos",
     "texto": "Existe um plano de migração da rede de transporte (por exemplo, de SDH para pacotes)? Quais são as etapas?",
     "dica": "Plano diretor de telecom, projeto de modernização",
@@ -642,7 +1140,7 @@
     ]
   },
   {
-    "id": "c18",
+    "id": "c22",
     "onde": "outras-areas",
     "texto": "Os links importantes têm rota dupla, com caminhos fisicamente diferentes? Como isso é verificado?",
     "dica": "Engenharia de telecom e planejamento da rede",
@@ -651,7 +1149,7 @@
     ]
   },
   {
-    "id": "d17",
+    "id": "d46",
     "onde": "colega",
     "texto": "Que protocolos (DNP3, IEC 104, IEC 61850) a equipe de automação usa, e onde eles passam pela rede?",
     "dica": "Colega da automação ou da proteção",
@@ -661,7 +1159,7 @@
     ]
   },
   {
-    "id": "d18",
+    "id": "d47",
     "onde": "colega",
     "texto": "Que meios de transporte a empresa usa para cada serviço (fibra, rádio, PLC, SDH, MPLS-TP, celular)?",
     "dica": "Colega da engenharia de telecom",

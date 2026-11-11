@@ -23,8 +23,8 @@
     "organizacao": "Cemig (usada como EXEMPLO; quem manda é a norma da distribuidora local)",
     "tipo": "norma",
     "url": "https://www.cemig.com.br/wp-content/uploads/2025/10/nd-6-6-compartilhamento-postes-redes-distribuicao.pdf",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Afastamento telecom–BT de 600 mm (Tabela 1, seção 7)."
+    "acessadoEm": "2026-11-10",
+    "observacao": "Afastamento telecom–BT de 600 mm (Tabela 1, seção 7). Ficha 07-02 (EXEMPLO; versão inicial 12/2024, vigência a partir de 13/12/2024). Item 4.16: faixa de ocupação é o espaço nos postes onde a distribuidora define os pontos de fixação destinados exclusivamente ao compartilhamento com ocupantes de telecomunicações. Figura 2 (p. 51, afastamentos mínimos, ocupação de poste com rede secundária), de cima para baixo: rede primária (média tensão) em cruzeta; rede secundária (neutro e fases A, B e C, 200 mm entre um e outro); 600 mm (mín.) entre o condutor mais baixo da rede secundária e o topo da faixa de ocupação; faixa com cota de 500 mm; topo da faixa a 5.700 mm do solo (faixa de 5,20 m a 5,70 m); abaixo da faixa, 200 mm e um espaço de 1.630 mm reservado a equipamentos; altura mínima do cabo ao solo (h mínimo); braço de iluminação pública entre a rede secundária e a faixa; dimensões em mm; desenho ilustrativo quanto ao tipo de estrutura. Tabela 1 (item 7, p. 22; ref. ABNT NBR 15688:2012), linha Telecomunicação como circuito inferior: 600 mm até circuito de até 1 kV; 1.500 mm até mais de 1 kV a 15 kV; 1.800 mm até mais de 15 kV a 36,2 kV. Item 5.9: 9 pontos de fixação na faixa do poste de rede urbana, no máximo 1 por ocupante, e o primeiro (de cima para baixo) é o ponto de reserva técnica da distribuidora; 5.10: 5 pontos no poste de rede rural, com a mesma reserva. 6.1: cabos e cordoalhas de telecom no mesmo lado da rede secundária existente ou prevista. 6.2: vedado braço ou outro dispositivo para estender o espaço horizontal e instalar mais de um cabo ou ponto de fixação. 6.4: ocupação ordenada e uniforme, sem usar o ponto de outro ocupante nem invadir o espaço de uso exclusivo das redes de energia e de iluminação pública. 6.23: equipamentos de telecom com projeto aprovado ficam entre 200 mm e 1.800 mm abaixo do limite inferior da faixa; 6.24: até 600 mm de largura, 600 mm de altura e 450 mm de profundidade. 6.37: no espaço da iluminação pública só equipamentos de iluminação pública. 7.1: distâncias ao solo medidas na pior condição de flecha (máxima, a 50 °C), conforme a Tabela 2. Ficha 07-03 (EXEMPLO): item 6, o ocupante mantém permanentemente identificados e legíveis seus equipamentos e cabos em todos os postes e vãos por onde passar a rede, por plaqueta com o tipo do cabo, o contato e o nome do ocupante, fixada no cabo de 200 a 400 mm do poste, em material resistente a intempéries. A partir de janeiro de 2026, plaquetas novas seguem o modelo da Figura 4.2. Figura 4.1: material não metálico e resistente a ultravioleta; 90 mm x 40 mm; espessura mínima de 3 mm; fundo preferencialmente amarelo; nome do ocupante com letras de no mínimo 12 mm; tipo de cabo e telefone de contato, 5 mm; presa ao cabo com fio de espinamento ou abraçadeira, de 200 a 400 mm do poste. Figura 4.2: as mesmas características, mais o CNPJ do ocupante e um QR Code que leva a um site com formas de contatar o ocupante. Item 6.11: o ocupante pode, se quiser, identificar também o fio drop, com telefone e nome, a cada 10 metros. Ficha 07-04 (EXEMPLO): item 6.30, a caixa de emenda e/ou a reserva técnica do cabo metálico/óptico de telecomunicação não podem ser fixadas no poste, devendo ser instaladas no vão e presas na cordoalha dos cabos, com o uso de raquetes, a no mínimo 1.500 mm do poste, ou fixadas na parede de uma caixa subterrânea instalada na calçada. 6.31: equipamentos de telecom ao longo do vão, exceto caixas de emendas, fixados na cordoalha a no mínimo 600 mm do poste. 6.32: armários, caixas de medição, descidas laterais e outros equipamentos de telecom não podem ser instalados em postes localizados em esquinas, nem em poste com equipamento da distribuidora ou com equipamento energizado de outro ocupante. 6.33: no poste com transformador não é permitida derivação ou encabeçamento de cabos de telecom com cordoalha do ocupante; a rede passa tangente, permitindo, única e exclusivamente, as derivações para seus clientes, sem instalação de equipamento. 5.13: a derivação para clientes é feita a partir de um único ponto de fixação no poste, sendo expressamente proibidas derivações ou ligações no meio dos vãos, limitada a 90 m e a no máximo 8 fios drop. 6.8: derivações de assinantes limitadas a 8 por vão por ocupante. 6.9: fios drop agrupados (espinados) e com a mesma tração. 6.10: a distância entre a caixa de derivação e o último ponto de ancoragem na infraestrutura da distribuidora não passa de 90 m. 6.7: o conjunto de cordoalha e cabos por ponto de fixação não passa de 50 mm de diâmetro. Os trechos falam em equipamentos, caixa de emenda, caixa de derivação e derivação para clientes; não citam CTO pelo nome. Ficha 07-05 (EXEMPLO): item 7.1, as distâncias mínimas de segurança entre cabos de telecom e o solo valem na situação mais crítica de flecha (flecha máxima a 50 °C), conforme as Tabelas 1 e 2 (normas de referência: ABNT NBR 15.688, 15.992 e 15.214). Tabela 2, \"Distâncias mínimas entre cabos (energia e telecomunicação) e o solo\" (ref. ABNT NBR 15688:2012), coluna \"Telecomunicação e cabos aterrados\", em mm: vias exclusivas de pedestres, áreas rurais e urbanas, 3.000; locais acessíveis ao trânsito de veículos, máquinas e equipamentos em áreas rurais, 4.500; ruas e avenidas, 5.000; entradas de prédios e demais locais de uso restrito a veículos, 4.500; rodovias federais, 7.000; ferrovias não eletrificadas e não eletrificáveis, 6.000. Na mesma tabela, a coluna de energia até 1 kV em ruas e avenidas é 5.500. Nota 2: sobre rodovias, ferrovias e cursos d'água, apresentar autorização ou projeto aprovado de acordo com as normas do órgão competente. Nota 3: em rodovias estaduais vale a legislação do órgão estadual; na falta dela, os valores das rodovias federais. Figura 2: a cota \"h mínimo\" vai do ponto mais baixo do cabo (com a flecha) até o solo. Tabela relida como imagem em 11/11/2026. Ficha 07-07 (EXEMPLO): item 6.5, as redes de telecomunicações \"devem possuir aterramentos e proteções contra curto-circuito e sobretensões independentes das redes de distribuição de energia elétrica, de modo que não transfiram tensões para as instalações de terceiros\". Item 6.14: as trações de projeto das cordoalhas e dos cabos autossustentados \"devem considerar as condições de temperatura e ação de velocidade de vento crítica da região\". Os valores de vento da Cemig são de Minas Gerais e não valem para Roraima."
   },
   {
     "id": "energisa-ndu009-v4",
@@ -32,8 +32,8 @@
     "organizacao": "Energisa MS / UFGD (usada como EXEMPLO)",
     "tipo": "norma",
     "url": "https://files.ufgd.edu.br/arquivos/arquivos/78/CONTRATOS-PRAD/Contratos%20Vigentes/Contrato%2039-2022%20-%20Compartilhamento%20de%20postes%20-%20ENERGISA.pdf",
-    "acessadoEm": "2026-11-06",
-    "observacao": "Afastamento telecom–BT de 600 mm (itens 8.2–8.3). Versão mais nova não pôde ser lida."
+    "acessadoEm": "2026-11-10",
+    "observacao": "Afastamento telecom–BT de 600 mm (itens 8.2–8.3). Versão mais nova não pôde ser lida. Ficha 07-02 (EXEMPLO e de versão antiga): o site da Energisa respondeu 403 em 10/11/2026 e versões mais novas não puderam ser lidas. Item 10.1.1: suportes dos cabos de telecom no poste do detentor, na faixa de ocupação de 500 mm reservada a essas ocupações. 10.1.2: faixa de 500 mm com 4 pontos de fixação do mesmo lado da fixação da rede secundária; com baixa tensão em cabos multiplexados e ocupação total, pode haver análise de 1 ocupação excedente, totalizando 5. 10.1.4: a parte mais alta da rede de telecom no ponto de fixação não deve ultrapassar 5,70 m do solo. Ficha 07-03 (EXEMPLO, versão antiga de 12/2017): item 10.1.27, identificação no mínimo em todos os postes, por plaqueta de plástico ou acrílico de 40 x 90 mm, espessura de 3 mm, fundo amarelo e letras pretas, com o tipo de cabo e o nome do ocupante, fixada no cabo a 300 mm do poste. Ficha 07-04 (EXEMPLO, versão antiga): item 15.1.1 j, a caixa de emenda da fibra óptica do ocupante não pode ser fixada no poste do detentor, devendo ser instalada no vão, presa na cordoalha juntamente com a folga de cabo; também pode ir em caixa subterrânea na calçada. 15.1.1 k: a reserva técnica do cabo de telecomunicação fica no vão da rede a no mínimo 2.000 mm do poste. 15.1.1 i: os demais equipamentos no vão ficam na cordoalha a no mínimo 600 mm do poste. 10.1.28: devem ser evitadas emendas de cabos no mesmo poste em que houver emenda de outro ocupante. Equipamento no poste, poste com transformador e limite de drops: não conferidos nesta versão. Ficha 07-05 (EXEMPLO, versão antiga): Tabela 03, \"Distanciamento entre os condutores e o solo\", tem só as colunas \"U ≤ 1,0 kV\" e \"1,0 < U ≤ 36,2 kV\" (ruas e avenidas: 5.500 e 6.000 mm); não há coluna própria de telecomunicação. O item 10.1.3 manda as distâncias da fixação de telecom obedecerem a essa tabela. Os números dela não são altura de cabo de telecom."
   },
   {
     "id": "abnt-nbr15214-2005",
@@ -709,6 +709,375 @@
     "url": "https://www.thefoa.org/tech/ref/install/Optical_splitter.html",
     "acessadoEm": "2026-11-09",
     "observacao": "O splitter óptico é um dispositivo passivo e bidirecional: divide a luz que entra numa fibra entre várias saídas e junta, no outro sentido, a luz das saídas na fibra de entrada."
+  },
+  {
+    "id": "epsg-31980",
+    "titulo": "EPSG Geodetic Parameter Dataset: CRS 31980 \"SIRGAS 2000 / UTM zone 20S\"",
+    "organizacao": "IOGP (EPSG)",
+    "tipo": "norma",
+    "url": "https://epsg.org/crs_31980/SIRGAS-2000-UTM-zone-20S.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Área de uso (extent 3442): \"Brazil - between 66°W and 60°W, northern and southern hemispheres. In remainder of South America - between 66°W and 60°W, southern hemisphere, onshore and offshore.\" Conversão \"UTM zone 20S\" (16120): Transversa de Mercator; longitude de origem −63°; fator de escala 0,9996; falso leste 500.000 m; falso norte 10.000.000 m. Unidade: metro. Eixos: E (leste), N (norte). Exemplo calculado com esses parâmetros (ponto fictício em 3,40° N, 61,65° O): E = 649.972 m, N = 10.375.911 m."
+  },
+  {
+    "id": "epsg-31974",
+    "titulo": "EPSG Geodetic Parameter Dataset: CRS 31974 \"SIRGAS 2000 / UTM zone 20N\"",
+    "organizacao": "IOGP (EPSG)",
+    "tipo": "norma",
+    "url": "https://epsg.org/crs_31974/SIRGAS-2000-UTM-zone-20N.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Área de uso (extent 3437): \"South America between 66°W and 60°W, north of approximately 4°N, onshore and offshore.\" Conversão \"UTM zone 20N\" (16020): mesmos parâmetros da 20S, mas falso norte 0 m. Exemplo calculado (ponto fictício em 3,40° N, 61,65° O): E = 649.972 m, N = 375.911 m; a diferença para a 20S é exatamente 10.000.000 m. Pelo registro EPSG, no Brasil a versão \"S\" vale nos dois hemisférios; a área registrada da \"N\" começa perto de 4°N."
+  },
+  {
+    "id": "epsg-31981",
+    "titulo": "EPSG Geodetic Parameter Dataset: CRS 31981 \"SIRGAS 2000 / UTM zone 21S\"",
+    "organizacao": "IOGP (EPSG)",
+    "tipo": "norma",
+    "url": "https://epsg.org/crs_31981/SIRGAS-2000-UTM-zone-21S.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Área de uso (extent 3443): \"Brazil - between 60°W and 54°W, northern and southern hemispheres. …\" Conversão (16121): longitude de origem −57°, falso norte 10.000.000 m. Logo: zona 20 = de 66°O a 60°O (meridiano central 63°O); zona 21 = de 60°O a 54°O (meridiano central 57°O)."
+  },
+  {
+    "id": "epsg-4674",
+    "titulo": "EPSG Geodetic Parameter Dataset: CRS 4674 \"SIRGAS 2000\" (geográfico 2D)",
+    "organizacao": "IOGP (EPSG)",
+    "tipo": "norma",
+    "url": "https://epsg.org/crs_4674/SIRGAS-2000.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "SRC geográfico 2D, com latitude e longitude em graus. Área de uso: \"Latin America - Central America and South America - onshore and offshore. Brazil - onshore and offshore.\""
+  },
+  {
+    "id": "ibge-rpr-2005",
+    "titulo": "IBGE: Resolução do Presidente R.PR 1/2005, de 25/02/2005 (SIRGAS2000 como sistema de referência)",
+    "organizacao": "IBGE",
+    "tipo": "legislacao",
+    "url": "https://geoftp.ibge.gov.br/metodos_e_outros_documentos_de_referencia/normas/rpr_01_25fev2005.pdf",
+    "acessadoEm": "2026-11-10",
+    "observacao": "\"fica estabelecido como novo sistema de referência geodésico para o SGB e para o Sistema Cartográfico Nacional (SCN) o Sistema de Referência Geocêntrico para as Américas (SIRGAS), em sua realização do ano de 2000 (SIRGAS2000).\" Período de transição \"não superior a dez anos\", em que SAD 69 e Córrego Alegre ainda podiam ser usados junto. Elipsoide do SIRGAS2000: GRS80."
+  },
+  {
+    "id": "qgis-projecoes",
+    "titulo": "QGIS User Guide 3.44: Working with Projections",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_projections/working_with_projections.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Caminhos de menu iguais na 3.44 (LTR) e na versão testing (https://docs.qgis.org/testing/en/docs/user_manual/working_with_projections/working_with_projections.html), conferidos em 10/11/2026. O QGIS identifica cada SRC por autoridade:código; EPSG:4326 é o WGS 84 em latitude/longitude. Cada camada tem o seu SRC (no Shapefile, fica no .prj). Camada sem SRC: o que o QGIS faz é configurável em Settings ► Options… ► CRS (deixar como desconhecido; perguntar; usar o SRC do projeto; usar um SRC padrão). \"Selecting the correct choice is crucial, as a wrong choice will place your layer in the wrong position on the Earth's surface!\"; às vezes é preciso perguntar ao autor do dado qual é o SRC. Layer ► Set CRS of Layer(s) (Ctrl+Shift+C) \"does not alter the underlying data source in any way, rather it just changes how QGIS interprets the raw coordinates from the layer in the current QGIS project\"; confere-se na aba Source das propriedades da camada. Cada projeto também tem um SRC e o QGIS reprojeta \"on the fly\" as camadas para ele. Projeto novo começa em EPSG:4326; muda-se em Project ► Properties… ► CRS; o SRC do projeto aparece no canto inferior direito da barra de status. Os manuais são publicados por versão: docs.qgis.org/3.44/ é o da LTR e docs.qgis.org/testing/ é o da versão em desenvolvimento (4.x). Em 10 e 11/11/2026, os endereços docs.qgis.org/latest/ e docs.qgis.org/4.2/ redirecionavam para o testing."
+  },
+  {
+    "id": "qgis-abrir-dados",
+    "titulo": "QGIS User Guide 3.44: Opening Data",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/opening_data.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na versão testing. CSV com coordenadas: Layer ► Add Layer ► Add Delimited Text Layer…; em \"Geometry definition\", escolher Point coordinates, indicar o campo X e o campo Y e informar o Geometry CRS. Em \"File format\", a opção Custom delimiters aceita vírgula, espaço, tabulação, ponto e vírgula e outros. Formatos vetoriais citados pelo manual: GeoPackage, GML, GeoJSON, GPX, KML, CSV, Shapefile, DXF, entre outros. Abrir camada vetorial: Layer ► Add Layer ► Add Vector Layer… (Ctrl+Shift+V) ou o Data Source Manager (Ctrl+L), que reúne num só lugar arquivos e bancos de dados. Raster: Layer ► Add Layer ► Add Raster Layer… (Ctrl+Shift+R). Painel Browser: mostra as pastas e os \"contêineres\" de camadas, como um GeoPackage; dá para expandir o arquivo, ver as camadas dentro dele e pôr no projeto arrastando ou com duplo clique. Igual na 3.44 e na 4.x (conferido em 10/11/2026). Arquivo DXF com vários tipos de geometria (ponto, linha e/ou polígono): o nome das camadas é gerado como <arquivo.dxf> entities <tipo de geometria>, ou seja, o QGIS separa o DXF em camadas por tipo de geometria. Para manter a estrutura e a simbologia do desenho: Project ► Import/Export ► Import Layers from DWG/DXF…, que importa os elementos para um GeoPackage. Igual no manual da 4.x em desenvolvimento (conferido em 10/11/2026). Texto delimitado: \"Detect field types: automatically recognizes the field type. If unchecked then all attributes are treated as text fields\"; o QGIS usa um arquivo CSVT opcional, se existir, e examina o arquivo inteiro; o tipo detectado aparece na prévia e pode ser trocado."
+  },
+  {
+    "id": "qgis-criar-camadas",
+    "titulo": "QGIS User Guide 3.44: Creating Layers",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/managing_data_source/create_layers.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na versão testing. Para gravar a camada em outro SRC (reprojetar de verdade, gerando arquivo novo): botão direito na camada ► Export ► Save Features As… (ou Layer ► Save As…) e escolher o SRC de destino. Salvar em outro formato: botão direito ► Export ► Save Features As… (ou Save Selected Features As…, só as selecionadas). No diálogo: Format, File name, Layer name (quando o arquivo é um contêiner, como o GeoPackage) e CRS (pode ser mudado para reprojetar os dados). Usado na lição 08-05 para fazer a cópia de segurança: botão direito na camada ► Export ► Save Features As… grava a camada num arquivo novo."
+  },
+  {
+    "id": "osm-cidades-rr",
+    "titulo": "OpenStreetMap: longitude das sedes municipais de Roraima (consulta à API do mapa)",
+    "organizacao": "OpenStreetMap e colaboradores",
+    "tipo": "documentacao",
+    "url": "https://www.openstreetmap.org/#map=7/2.0/-61.0",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Consulta de 10/11/2026. Boa Vista: −60,67 (zona 20). São Luiz: −60,04 (zona 20, a poucos km do limite). A leste de 60°O (zona 21): Bonfim −59,84; Normandia −59,63; Caroebe −59,70; São João da Baliza −59,91."
+  },
+  {
+    "id": "qgis-intro-vetor",
+    "titulo": "QGIS Documentation 3.44: A Gentle Introduction to GIS, Vector Data",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/gentle_gis_introduction/vector_data.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "\"Vector data provide a way to represent real world features within the GIS environment. A feature is anything you can see on the landscape\" (casas, estradas, árvores, rios). \"Vector features have attributes, which consist of text or numerical information that describe the features.\" \"A vector feature has its shape represented using geometry. The geometry is made up of one or more interconnected vertices. A vertex describes a position in space using an X, Y and optionally Z axis.\" Um só vértice: feição de ponto. Dois ou mais vértices, com o primeiro diferente do último: polilinha (linha). Três ou mais vértices, com o último igual ao primeiro: polígono (área fechada). Exemplo do manual: os atributos de um ponto dizem, por exemplo, se é uma árvore ou um poste de iluminação (\"a tree or a lamp post\")."
+  },
+  {
+    "id": "qgis-intro-raster",
+    "titulo": "QGIS Documentation 3.44: A Gentle Introduction to GIS, Raster Data",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/gentle_gis_introduction/raster_data.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "\"Rasters are made up of a matrix of pixels (also called cells), each containing a value that represents the conditions for the area covered by that cell.\" Servem para informação contínua sobre uma área, que não se divide bem em feições vetoriais; exemplos do manual: imagens de satélite e fotografias aéreas."
+  },
+  {
+    "id": "qgis-tabela-atributos",
+    "titulo": "QGIS User Guide 3.44: Working with the Attribute Table",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/attribute_table.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "\"Each row in the table represents a feature (with or without geometry), and each column contains a particular piece of information about the feature\" (coluna = campo). O QGIS carrega camadas espaciais e tabelas não espaciais (sem geometria); as não espaciais aparecem e se editam na mesma tela de tabela de atributos. Abrir: Layer ► Open Attribute Table, botão Open Attribute Table da barra Attributes, ou F6; Shift+F6 abre só as feições selecionadas. O título da tabela mostra o total de feições da camada e quantas estão selecionadas ou filtradas. No canto inferior esquerdo, lista de filtros: Show All Features, Show Selected Features, Show Features Visible on Map. Modos: Table view (uma linha por feição) e Form view (uma feição por vez). Menus e atalhos iguais na 3.44 e na versão 4.x em desenvolvimento (https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/attribute_table.html, conferido em 10/11/2026). Diferença na 4.x: \"Double clicking the row header will zoom to the feature in the map canvas (if the layer has geometry).\" Essa frase não está no manual da 3.44. Acrescentado para a lição 08-06: a lista no canto inferior esquerdo (Show All Features, Show Selected Features) equivale a abrir a tabela com Shift+F6. Field Calculator (botão na tabela, Ctrl+I): cria um campo novo ou atualiza um existente com o resultado de uma expressão, ou seja, altera dados; o uso fica para a lição 08-05. Na lição 08-05: a tabela de atributos também tem o botão de ligar a edição (Toggle Editing); o Field Calculator (Ctrl+I) cria ou atualiza um campo com uma expressão, ou seja, altera dados."
+  },
+  {
+    "id": "qgis-ferramentas-gerais",
+    "titulo": "QGIS User Guide 3.44: General Tools",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/introduction/general_tools.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na 4.x. Identify Features: View ► Identify Features (Ctrl+Shift+I) ou o botão na barra Attributes; depois, clicar numa feição (ou pixel) da camada ativa abre uma janela com as informações dela. No painel Layers, o menu de contexto da camada tem Show Feature Count, que mostra o número de feições ao lado do nome. Acrescentado para a lição 08-06 (conferido em 10/11/2026, igual na 4.x): Select Features By Expression… (Ctrl+F3); Select Features By Value… (F3); Deselect Features from All Layers (Ctrl+Alt+A); Select All Features (Ctrl+A). \"attribute table and map canvas show the same information, so if you select one feature in the attribute table, it will be selected on the map canvas too\". Painel Statistics (Ctrl+6): resumo de um campo de uma camada vetorial (contagem, soma, média…), para a camada toda ou só para as feições selecionadas (\"Selected features only\")."
+  },
+  {
+    "id": "qgis-propriedades-vetor",
+    "titulo": "QGIS User Guide 3.44: The Vector Properties Dialog (Query Builder)",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/vector_properties.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Mesma página em https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/vector_properties.html (4.x em desenvolvimento), conferida em 10/11/2026. O Query Builder abre por Layer ► Filter…; o manual da 3.44 cita também o botão Query Builder na aba Source das propriedades da camada, e o da 4.x cita ainda \"the layer contextual menu\" (botão direito na camada ► Filter…). Ele define \"a subset of the features in the layer using a SQL-like WHERE clause\"; \"As long as the query is active, only the features corresponding to its result are available in the project.\" As outras feições continuam no arquivo, mas somem do mapa, da tabela e das contagens até o filtro ser removido. No painel Layers, a camada filtrada ganha um ícone de filtro (funil) ao lado do nome; o mouse sobre ele mostra a consulta e o duplo clique reabre o Query Builder. A tela tem as listas Fields (duplo clique põe o nome do campo na consulta), Values (botões Sample, com os 25 primeiros valores únicos, e All, com todos) e Operators. Manual da 4.x: \"The filter is made at the data provider (OGR, GeoPackage, PostgreSQL, MS SQL Server…) level. So the syntax depends on the data provider\" (exemplo do manual: ILIKE não é aceito em GeoPackage). O botão Clear apaga a consulta e devolve a camada ao estado original, com todas as feições."
+  },
+  {
+    "id": "qgis-expressoes",
+    "titulo": "QGIS User Guide 3.44: Expressions",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/expressions/expression.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na 4.x. Aspas: \"single quotes return a literal, so a text placed between single quotes ('145') is interpreted as a string. Double quotes will give you the value of that text so use them for fields (\"myfield\"). Fields can also be used without quotes (myfield). No quotes for numbers (3.16).\""
+  },
+  {
+    "id": "qgis-funcoes",
+    "titulo": "QGIS User Guide 3.44: List of functions",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/expressions/functions_list.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Igual na 4.x. $length: \"Returns the length of a linestring. […] The length calculated by this function respects both the current project's ellipsoid setting and distance unit settings. For example, if an ellipsoid has been set for the project then the calculated length will be ellipsoidal, and if no ellipsoid is set then the calculated length will be planimetric.\" length(geometry): \"Calculations are always planimetric in the Spatial Reference System (SRS) of this geometry, and the units of the returned length will match the units for the SRS.\" Consequência: numa camada em graus (4674 ou 4326), length devolve graus; numa camada em UTM (31980), devolve metros no plano da projeção. Exemplo calculado com pyproj sobre a geometria do cabo CB-01 de dados-qgis/rede-ficticia.gpkg (projeto em 31980, elipsoide GRS80): $length = 434,31 m; length da geometria = 434,26 m (cerca de 5 cm de diferença em 434 m); o campo compr_proj_m do CB-01 diz 442,7."
+  },
+  {
+    "id": "aneel-ren-1044-2022",
+    "titulo": "Resolução Normativa ANEEL nº 1.044, de 27/09/2022 (compartilhamento de infraestrutura de concessionárias e permissionárias de energia elétrica)",
+    "organizacao": "ANEEL",
+    "tipo": "legislacao",
+    "url": "https://www.ceripa.com.br/docs/Resolucao_Normativa_ANEEL_n_1_044_2022.pdf",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Cópia integral; endereço oficial: https://www2.aneel.gov.br/cedoc/ren20221044.pdf. Publicada no D.O. de 30/09/2022; em vigor desde 1º/11/2022 (art. 33); revoga as RENs 375/2009 e 797/2017. Art. 2º: detentor (I), ocupação à revelia (III: fora de projeto técnico previamente aprovado, mesmo com contrato vigente), ocupação clandestina (IV: à revelia sem contrato vigente, ou dono do ativo não identificado após notificação de todos os ocupantes com contrato), ponto de fixação (VII), Plano de Ocupação de Infraestrutura (VI). Art. 3º: uso prioritário do detentor; não pode comprometer a segurança de pessoas e instalações; só a capacidade excedente; gestão e manutenção do ativo ficam com o detentor. Art. 4º: vedada a ocupação à revelia. Art. 6º: o ocupante respeita as normas técnicas e corrige, inclusive quanto aos custos. Art. 7º, IV: poste medido e cobrado por ponto de fixação. Art. 12: o detentor notifica o ocupante. Art. 13: autorização da Comissão de Resolução de Conflitos para retirar cabos. Art. 14: retirada sem autorização da Comissão em ocupação clandestina, situação emergencial ou risco de acidente. Art. 17: ocupantes mantêm identificados os cabos em todos os pontos de fixação. Art. 19: Plano de Ocupação aprovado por Norma Técnica do detentor e disponível no site dele. Em 10/11/2026 o site oficial não respondeu (ANEEL: erro 403; portal de legislação da Anatel em manutenção); o texto foi lido na cópia integral indicada na URL. Ficha 07-02: art. 2º, VII, ponto de fixação é o ponto de instalação do suporte dos cabos do ocupante dentro da faixa do poste destinada ao compartilhamento. Art. 19: o Plano de Ocupação é aprovado por norma técnica do detentor e publicado no site dele. Ficha 07-03: art. 17, os ocupantes devem manter permanentemente identificados os cabos, fios ou cordoalhas de sua propriedade em todos os pontos de fixação utilizados, seguindo as normas técnicas aplicáveis; parágrafo único: nos compartilhamentos existentes, a identificação ocorre junto com a adequação ou a regularização. Art. 2º, IV (clandestina) e art. 12 (o detentor notifica e pode pedir traçado georreferenciado ou relatório fotográfico). Ficha 07-06: art. 4º, nada é instalado antes da aprovação. Art. 6º, §1º, o detentor zela pela regularidade do compartilhamento; §2º, a falta de notificação não exime o ocupante. Art. 8º, o pedido traz projeto técnico completo, assinado por profissional competente, com previsão dos esforços mecânicos e o traçado georreferenciado dos cabos; parágrafo único, o prazo de resposta fica suspenso enquanto o detentor aguarda correção ou informação que pediu. Art. 10, só se nega por limitação de capacidade, segurança, estabilidade, confiabilidade, violação de requisitos de engenharia ou de condições do Poder Concedente, com justificativa formal por escrito. Art. 12, o detentor deve notificar o ocupante sobre a necessidade de regularização (descumprimento de norma técnica ou ocupação à revelia); §1º, regularização do ocupante, inclusive custos, conforme cronograma de execução acordado entre as partes; §2º, pode pedir traçado georreferenciado ou relatório fotográfico dos cabos já instalados. Art. 13, o detentor pode solicitar autorização à Comissão de Resolução de Conflitos para retirar cabos quando a regularização não é feita ou por falta de pagamento. Art. 14, retirada sem autorização prévia da Comissão em ocupação clandestina, situações emergenciais ou risco de acidente. Art. 15, o detentor pode cobrar do ocupante o custo da retirada; o ocupante não tem direito a indenização. Art. 16, o detentor pode condicionar novo contrato ou renovação ao ressarcimento e à quitação das obrigações. Art. 18, o contrato prevê, entre outras coisas, a responsabilidade do ocupante por danos, a prerrogativa do detentor para fiscalizar as obras do ocupante e a retirada nos casos dos arts. 13 e 14. Art. 31, o detentor guarda os documentos desses processos por no mínimo cinco anos, para fiscalização da ANEEL."
+  },
+  {
+    "id": "res-conjunta-4-2014",
+    "titulo": "Resolução Conjunta ANEEL/Anatel nº 4, de 16/12/2014 (compartilhamento de postes entre distribuidoras e prestadoras de telecomunicações)",
+    "organizacao": "ANEEL e Anatel",
+    "tipo": "legislacao",
+    "url": "https://www.legisweb.com.br/legislacao/?id=279489",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Cópia integral. Art. 1º: R$ 3,19 como preço de referência do ponto de fixação, referenciado à data da publicação (2014), para os processos de resolução de conflitos, quando esgotada a via negocial; não é tabela nem teto. Art. 2º: a prestadora não pode ocupar mais de 1 ponto de fixação por poste (dispensa de até 2 pontos só por inviabilidade técnica, art. 7º). Art. 3º: a distribuidora cobra 1 ponto por poste. Art. 4º: seguir o plano de ocupação e as normas técnicas; §4º: a notificação traz, no mínimo, a localização do poste e a descrição da não conformidade; §5º: regularização da prestadora, inclusive quanto aos custos; §7º: situação emergencial ou risco de acidente é regularizada imediatamente, independentemente de notificação prévia. Art. 6º, §1º: a distribuidora acompanha e fiscaliza a ocupação. Art. 9º: a distribuidora mantém cadastro atualizado da ocupação dos pontos de fixação nos postes. Endereço oficial da Anatel em manutenção em 10/11/2026; texto lido na cópia indicada. Ficha 07-02: art. 4º, as prestadoras seguem o plano de ocupação da distribuidora e as normas técnicas, em especial: I, a faixa de ocupação; II, o diâmetro do conjunto de cabos e cordoalha de um mesmo ponto de fixação; III, as distâncias mínimas de segurança dos cabos e equipamentos de telecom em relação ao solo e aos condutores da rede de energia; IV, a disposição da reserva técnica. Ficha 07-03: art. 8º, as prestadoras de telecom devem manter identificados todos os Pontos de Fixação que utilizem; §1º, a forma da identificação deve respeitar as normas técnicas aplicáveis. Ficha 07-04: art. 4º, IV, as prestadoras seguem as normas técnicas quanto à disposição da reserva técnica de fios ou cabos nos Pontos de Fixação. Ficha 07-05: art. 4º, III, as distâncias mínimas de segurança em relação ao solo seguem a norma técnica; art. 4º, §7º, situação com risco de acidente é regularizada imediatamente pelo ocupante, independentemente de notificação prévia. Ficha 07-06: art. 4º, §3º e §4º, a distribuidora notifica, e a notificação traz, no mínimo, a localização do poste a ser regularizado e a descrição da não conformidade; §5º e §6º, regularização por conta da prestadora, em cronograma acordado, com prazo máximo de 1 ano, limitado a 2.100 postes por distribuidora por ano; §7º, emergência ou risco de acidente, regularização imediata, independentemente de notificação prévia. Art. 5º, quando falta ponto de fixação para um novo pedido, a distribuidora notifica em até 30 dias quem ocupa mais de um ponto, e a adequação é feita em até 150 dias. Art. 6º, §1º, as distribuidoras devem acompanhar e fiscalizar a ocupação dos Pontos de Fixação e o atendimento às normas técnicas. Art. 9º, cadastro atualizado da ocupação. Art. 12, o descumprimento pode levar a sanções da ANEEL e da Anatel."
+  },
+  {
+    "id": "res-conjunta-1-1999",
+    "titulo": "Resolução Conjunta ANEEL/Anatel/ANP nº 1, de 24/11/1999 (Regulamento Conjunto para compartilhamento de infraestrutura)",
+    "organizacao": "ANEEL, Anatel e ANP",
+    "tipo": "legislacao",
+    "url": "https://www.legisweb.com.br/legislacao/?id=96802",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Cópia integral. Art. 3º do Regulamento: detentor é o agente que detém, administra ou controla, direta ou indiretamente, uma infraestrutura; solicitante é o interessado no compartilhamento. Art. 11, §1º: resposta por escrito em até 90 dias, com as razões em caso de negativa. Art. 20: o contrato trata, entre outros pontos, de objeto, direitos e obrigações, preços e condições técnicas e de segurança. A REN 1.044/2022 (art. 5º) manda aplicar também esta resolução. Ficha 07-06: art. 11, a solicitação de compartilhamento é feita por escrito; §1º, resposta por escrito em até 90 dias contados do recebimento, com as razões na negativa. O prazo é do detentor para responder; a ficha não diz o que ocorre se estourar."
+  },
+  {
+    "id": "decreto-12068-2024",
+    "titulo": "Decreto nº 12.068, de 20/06/2024, art. 16 (cessão de espaço nos postes das redes aéreas de distribuição)",
+    "organizacao": "Presidência da República",
+    "tipo": "legislacao",
+    "url": "https://www2.camara.leg.br/legin/fed/decret/2024/decreto-12068-20-junho-2024-795827-publicacaooriginal-172177-pe.html",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Publicação original, no Portal da Câmara (o site do Planalto não respondeu em 10/11/2026). Art. 16: as distribuidoras deverão ceder a pessoa jurídica distinta o espaço em infraestrutura de distribuição, as faixas de ocupação e os pontos de fixação dos postes destinados ao compartilhamento com telecomunicações; §2º: a exploração comercial se dá conforme regulação conjunta da ANEEL e da Anatel, quanto ao preço, ao uso da faixa, dentre outros. O decreto está em vigor; a regulação conjunta, em 10/11/2026, não foi encontrada publicada. Ficha 07-07: art. 16, §3º, I, a cessionária fica sujeita \"à regulação conjunta da Aneel e da Anatel, às condições técnicas aplicáveis, inclusive aquelas estabelecidas pela concessionária de distribuição de energia elétrica cedente, e às regras de regularização da faixa de ocupação\" (leitura direta do texto: as condições técnicas da distribuidora continuam valendo para quem explorar os postes)."
+  },
+  {
+    "id": "teletime-postes-2025-12-02",
+    "titulo": "Aneel aprova nova versão do regulamento de compartilhamento de postes",
+    "organizacao": "Teletime",
+    "tipo": "noticia",
+    "url": "https://teletime.com.br/02/12/2025/aneel-aprova-nova-versao-do-regulamento-de-compartilhamento-de-postes/",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Notícia de 02/12/2025: a ANEEL aprovou uma nova versão do regulamento conjunto; a mesma proposta deveria ser avaliada pelo Conselho Diretor da Anatel. Proposta, não regra. Status em 10/11/2026: ver as notícias de 22/05, 06/10 e 28/10/2026."
+  },
+  {
+    "id": "telesintese-agu-2026-05-22",
+    "titulo": "Conflito entre Aneel e Anatel sobre postes chega ao fim com decisão vinculante da AGU",
+    "organizacao": "TeleSíntese",
+    "tipo": "noticia",
+    "url": "https://telesintese.com.br/conflito-entre-aneel-e-anatel-sobre-postes-chega-ao-fim-com-decisao-vinculante-da-agu/",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Notícia de 22/05/2026: a AGU concluiu, em parecer adotado em despacho vinculante, pela obrigatoriedade da cessão da exploração comercial dos postes; a ANEEL deverá rever o texto que aprovou."
+  },
+  {
+    "id": "teletime-postes-2026-10-06",
+    "titulo": "Aneel adia decisão sobre postes",
+    "organizacao": "Teletime",
+    "tipo": "noticia",
+    "url": "https://teletime.com.br/06/10/2026/aneel-adia-decisao-sobre-postes-anatel/",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Notícia de 06/10/2026: a ANEEL adiou a decisão sobre a nova regulamentação; o relator retirou o item de pauta após divergências no colegiado; o voto não chegou a ser aprovado."
+  },
+  {
+    "id": "cenario-energia-2026-10-28",
+    "titulo": "Aneel e Anatel avançam em proposta para regulamentar gestão compartilhada de postes",
+    "organizacao": "Cenário Energia",
+    "tipo": "noticia",
+    "url": "https://cenarioenergia.com.br/2026/10/28/aneel-e-anatel-avancam-em-proposta-para-regulamentar-gestao-compartilhada-de-postes/",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Notícia de 28/10/2026: minuta em análise na ANEEL; a nova redação está em análise pelo colegiado antes de ser encaminhada formalmente à Anatel; expectativa de voltar à pauta em uma ou duas semanas. As empresas que administrariam a ocupação são conhecidas no setor como posteiros."
+  },
+  {
+    "id": "camara-pl-3220-2019",
+    "titulo": "PL 3220/2019: ficha de tramitação",
+    "organizacao": "Câmara dos Deputados",
+    "tipo": "legislacao",
+    "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2617269",
+    "acessadoEm": "2026-11-10",
+    "observacao": "Consulta em 10/11/2026: em 04/11/2026 o Plenário da Câmara aprovou o substitutivo e a redação final; despacho: a matéria retorna ao Senado Federal; situação: aguardando envio ao Senado Federal. Projeto de lei, não é lei."
+  },
+  {
+    "id": "qgis-roadmap",
+    "titulo": "QGIS: Release schedule / Roadmap",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://www.qgis.org/resources/roadmap/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Conferido em 11/11/2026. \"Currently available binaries: LTR 3.44.15 and Latest 4.2.3.\" \"A new release will happen every four months.\" \"Every third release (starting with 2.8) is a long-term-release (LTR) that is maintained until the next long-term-release occurs.\" A cada mês sai uma versão de correção (point release), que \"contain no new features, only bug fixes\". \"In the first four months after its release, a new LTR is also the current LR [latest release].\" Cronograma em 11/11/2026: 3.44.0 em 20/06/2025; 4.0.0 em 06/03/2026; 4.2.0 em 03/07/2026; 4.2.3 e 3.44.15 em 25/09/2026; 4.4.0 marcada para 30/10/2026; 4.4.4 entra no repositório LTR em 05/03/2027, junto com a 4.6.0; a LTR seguinte é a 4.8 (4.8.0 em 02/07/2027)."
+  },
+  {
+    "id": "qgis-version-txt",
+    "titulo": "QGIS: arquivo de versão publicado pelo projeto",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://qgis.org/version.txt",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Conferido em 11/11/2026: \"The current released version of QGIS is 4.2.3.\" O arquivo ainda diz que a 4.4 seria lançada em 30/10/2026; em 11/11/2026 ela não tinha saído."
+  },
+  {
+    "id": "qgis-blog-ltr-2026-10",
+    "titulo": "QGIS Blog: Release schedule changes for next QGIS LTR",
+    "organizacao": "QGIS Project (PSC, Tim Sutton)",
+    "tipo": "documentacao",
+    "url": "https://blog.qgis.org/2026/10/03/release-schedule-changes-for-next-qgis-ltr/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Post de 03/10/2026. \"there are still a number of issues with the 4.x builds which leave us hesitant to assign LTR status to a 4.2.x release as originally planned.\" \"QGIS 4.2 will no longer be LTR\". \"the currently anticipated date for the QGIS 4.4.4 release (which is scheduled to become LTR) is 5 March 2027.\""
+  },
+  {
+    "id": "qgis-blog-440-2026-11",
+    "titulo": "QGIS Blog: Where is QGIS 4.4.0?",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://blog.qgis.org/2026/11/04/where-is-qgis-4.4.0/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Post de 04/11/2026. \"QGIS 4.4.0 would be delayed while we work to clear up a number of regressions that occurred in the porting of QGIS from Qt5 to Qt6. The original planned date for the release was 30 October 2026.\" Critério: \"Any issue which occurs in QGIS 4.4 and does not occur in 3.x is considered blocking.\" O post não dá data nova."
+  },
+  {
+    "id": "qgis-edicao",
+    "titulo": "QGIS User Guide 3.44: Editing",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_vector/editing_geometry_attributes.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Mesma página em /testing/ (4.x em desenvolvimento); os nomes de menu e de ferramenta são iguais nos dois manuais, conferidos em 11/11/2026. A única diferença achada: o manual da 4.x acrescenta uma frase lembrando de salvar com Save Layer Edits. \"All editing sessions start by choosing the Toggle editing option found in the context menu of a given layer, from the attribute table dialog, the digitizing toolbar or the Layer menu.\" Com a edição ligada, as ferramentas de edição ficam disponíveis e aparecem marcadores nos vértices. \"When a layer is in editing mode, any changes remain in the memory of QGIS. Therefore, they are not committed/saved immediately to the data source or disk.\" Save Layer Edits grava sem sair da edição: \"Remember to Save Layer Edits regularly. This will also check that your data source can accept all the changes.\" Ao desligar a edição (Toggle editing) ou fechar o QGIS, \"you are also asked if you want to save your changes or discard them\". Se não der para salvar (disco cheio, atributo com valor fora da faixa), o estado em memória é preservado, para ajustar e tentar de novo. \"It is always a good idea to back up your data source before you start editing. While the authors of QGIS have made every effort to preserve the integrity of your data, we offer no warranty in this regard.\" Adicionar: Add Point Feature, Add Line Feature ou Add Polygon Feature, conforme o tipo da camada; para tabela sem geometria, Add Record. Mover vértice: com a Vertex Tool, selecionar o vértice, clicar nele e clicar no novo lugar. Apagar: selecionar as feições e usar Delete Selected. Undo (Ctrl+Z): as feições e os atributos voltam ao estado anterior à operação desfeita. Várias camadas de uma vez: Save for Selected Layers e Rollback for Selected Layers (desfaz a digitalização das camadas escolhidas). A tolerância de aderência (snapping) é configurada em Settings ► Options… ► Digitizing. Não conferido: se o Undo funciona depois de salvar."
+  },
+  {
+    "id": "qgis-interface",
+    "titulo": "QGIS User Guide 3.44: QGIS GUI",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/introduction/qgis_gui.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "A versão instalada aparece em Help ► About (no macOS, QGIS ► About QGIS). Acrescentado para a lição 08-05 (igual na 4.x): menu Layer: Toggle Editing e Save Layer Edits. Menu Edit: Add Point Feature (Ctrl+.), Vertex Tool (Current Layer) e Delete Selected."
+  },
+  {
+    "id": "qgis-complementos",
+    "titulo": "QGIS User Guide 3.44: QGIS Plugins",
+    "organizacao": "QGIS Project",
+    "tipo": "documentacao",
+    "url": "https://docs.qgis.org/3.44/en/docs/user_manual/plugins/plugins.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "\"QGIS has been designed with a plugin architecture. This allows many new features and functions to be easily added to the application.\" Há complementos do núcleo (Core Plugins), que vêm com o QGIS, e externos (External Plugins), mantidos pelos autores, no repositório oficial ou em outros; a página de cada um informa a versão mínima do QGIS. Instalar ou ativar: menu Plugins ► Manage and install plugins…."
+  },
+  {
+    "id": "gdal-kml",
+    "titulo": "GDAL: driver \"KML - Keyhole Markup Language\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/kml.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "\"KML by specification uses only a single projection, EPSG:4326. All OGR KML output will be presented in EPSG:4326. As such OGR will create layers in the correct coordinate system and transform any geometries.\" KML é uma linguagem baseada em XML para exibir dados geoespaciais; é padrão OGC. O manual fala em \"GeoBrowsers\". Teste com a GDAL em 11/11/2026, com a camada fictícia de exercício: a camada de origem em 31980 saiu em EPSG:4326."
+  },
+  {
+    "id": "gdal-shapefile",
+    "titulo": "GDAL: driver \"ESRI Shapefile / DBF\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/shapefile.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Um shapefile é um conjunto de arquivos: .shp, .shx e .dbf formam uma camada; o SRC vem do .prj, quando existe. \"Shapefile feature attributes are stored in an associated .dbf file, and so attributes suffer a number of limitations: Attribute names can only be up to 10 characters long.\" Nomes repetidos depois do corte ganham número (exemplo do manual: abcdefghijkl vira abcdefgh_1). Tipos de campo: inteiro, real, texto e data (\"not DateTime, just year/month/day\"). Texto mais longo que a largura do campo é truncado. \"it is not recommended to use a file size over 2GB for both .SHP and .DBF files.\" Uma camada por shapefile (\"treated as a dataset with one layer\"). Teste com a GDAL em 11/11/2026, com a camada fictícia postes: salva como Shapefile, virou 5 arquivos (postes.shp, .shx, .dbf, .prj e .cpg); esforco_dan virou esforco_da, ocupantes_qtd virou ocupantes_ e data_vistoria virou data_visto; cod_poste, material, altura_m, tem_trafo, tem_ip e situacao ficaram iguais."
+  },
+  {
+    "id": "gdal-gpkg",
+    "titulo": "GDAL: driver \"GPKG -- GeoPackage vector\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/gpkg.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "\"The GeoPackage standard uses a SQLite database file as a generic container\"; é um padrão OGC. Com qgis-abrir-dados: um arquivo só, contêiner de várias camadas, que o painel Browser expande."
+  },
+  {
+    "id": "gdal-csv",
+    "titulo": "GDAL: driver \"Comma Separated Value (.csv)\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/csv.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Sem arquivo de tipos (.csvt), \"The OGR CSV driver returns all attribute columns as string data types\". O CSV não guarda SRC (ver a lição 08-03): quem abre informa o Geometry CRS. Atenção: isso vale para o CSV aberto pela GDAL. Pelo Add Delimited Text Layer… do QGIS, a opção Detect field types reconhece os tipos (ver qgis-abrir-dados)."
+  },
+  {
+    "id": "gdal-dxf",
+    "titulo": "GDAL: driver \"AutoCAD DXF\"",
+    "organizacao": "GDAL/OSGeo",
+    "tipo": "documentacao",
+    "url": "https://gdal.org/en/stable/drivers/vector/dxf.html",
+    "acessadoEm": "2026-11-11",
+    "observacao": "\"By default, the entire contents of the file are represented as a single OGR layer named \"entities\".\" O nome da camada do desenho (layer do CAD) vira um campo chamado Layer. Se o DXF guarda SRC: não conferido; confirmar com quem desenhou."
+  },
+  {
+    "id": "qfield-comecar",
+    "titulo": "QField Documentation: Get started",
+    "organizacao": "OPENGIS.ch / QField",
+    "tipo": "documentacao",
+    "url": "https://docs.qfield.org/get-started/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Cinco passos: 1. instalar o QField (\"available for Android, iOS, Windows, macOS and Linux\"); 2. preparar o projeto no QGIS: \"Install the QFieldSync plugin in QGIS and use it to \"package\" your project so it can be opened in QField\"; 3. levar o projeto para o aparelho, por cabo ou cópia local, ou pelo QFieldCloud (\"sync your project automatically between your team and your devices\"); 4. coletar em campo; 5. trazer as mudanças de volta, \"over cable, or automatically if you used QFieldCloud\"."
+  },
+  {
+    "id": "qfield-qfieldsync",
+    "titulo": "QField Documentation: tutorial QFieldSync",
+    "organizacao": "OPENGIS.ch / QField",
+    "tipo": "documentacao",
+    "url": "https://docs.qfield.org/get-started/tutorials/get-started-qfs/",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Há versão em português em https://docs.qfield.org/pt/get-started/tutorials/get-started-qfs/. QFieldSync \"is the QGIS plugin used to package your projects for QField\": empacota o projeto num formato que o QField lê, cria mapas de fundo (basemaps), \"Sets project layers to Offline editing by default\" e \"Synchronizes changes made in the field back to the desktop project\". Fluxo típico: criar o pacote como cópia de trabalho numa pasta separada, copiar a pasta para o aparelho, coletar em campo, copiar a pasta modificada de volta para o computador e sincronizar com o projeto do QGIS. Instalar: Plugins > Manage and Install Plugins..., procurar \"QFieldSync\" e Install Plugin. Ação de cada camada: Copy (copia a camada sem acompanhar mudanças); Offline editing (\"Copies the layer into the packaged project folder and tracks changes in a changelog database. When synchronizing changes back to the desktop project, QFieldSync applies recorded changes to the original source layer.\"); Remove (deixa a camada fora do pacote). \"If a GeoPackage contains multiple layers, QFieldSync packages all layers in that file even if only one layer is included in the QGIS project.\" Area of Interest: \"QFieldSync exports only features intersecting that area of interest\". Basemap: \"A basemap is a raster layer added as the bottom layer of the packaged project file. When working offline with QField, add a raster layer or configure a map theme as a basemap.\" \"Prepare offline layers on desktop before starting fieldwork.\" Permissions (propriedades da camada para o QField): dá para desligar adicionar feições, apagar feições, editar atributos ou mexer na geometria. Empacotar: Plugins > QFieldSync > Package for QField; depois copiar a pasta exportada para o aparelho. \"Save your QGIS project using the standard Save As... command in QGIS because you will re-open this desktop project later to synchronize field changes.\" Trazer de volta: abrir o projeto original no QGIS, copiar a pasta modificada do aparelho para o computador e usar Plugins > QFieldSync > Synchronize from QField. \"Synchronize field changes back to your desktop project only once per export. To collect additional data in the field, create a new QField package to prevent synchronization conflicts or duplicate features.\""
+  },
+  {
+    "id": "embrapa-chuvas-boa-vista-1989",
+    "titulo": "Probabilidades do início e término do período chuvoso em Boa Vista (Comunicado Técnico nº 006, junho de 1989)",
+    "organizacao": "Embrapa (UEPAE de Boa Vista)",
+    "tipo": "documentacao",
+    "url": "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/687491/1/CT-006-JUN89.pdf",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Estudo de probabilidades para Boa Vista, com série histórica antiga (documento de 1989). Conclusões: \"O início do período chuvoso ocorre na primeira ou segunda dezena de maio.\" \"O término do período chuvoso ocorre na segunda dezena de setembro.\" \"Os veranicos ocorrem com maior frequência a partir da segunda dezena do mês de julho e na terceira dezena de agosto.\" No texto: 50% de probabilidade de as chuvas começarem já na terceira dezena de abril; junho é \"o de maior concentração das chuvas\". Veranico = sequência de dias sem chuva dentro do período chuvoso."
+  },
+  {
+    "id": "inpa-focos-calor-rr-2010",
+    "titulo": "Distribuição espacial e temporal de focos de calor em Roraima detectados pelo NOAA-AVHRR (1999-2009)",
+    "organizacao": "INPA, Núcleo de Pesquisas de Roraima (R. I. Barbosa; IX Seminário de Atualização em Sensoriamento Remoto e SIG Aplicados à Engenharia Florestal, 2010; arquivo hospedado pelo INPE)",
+    "tipo": "documentacao",
+    "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/Publicacoes-Impacto/material3os/2010_Barbosa_DistribuicaoFocosRoraima_IXSASRSI_DE3os.pdf",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Artigo de pesquisa sobre o período 1999 a 2009 (série antiga). \"A distribuição temporal dos focos de calor é concentrada entre os meses de dezembro e março, associado ao período seco regional.\" O número de focos acelera \"a partir de dezembro, atingindo seu pico principal entre fevereiro e março\". Conclusão: os meses com mais focos estão ligados à estiagem, \"em especial janeiro, fevereiro e as três primeiras semanas de março\". Média do período: 1.536 focos por ano no estado, 76% em sistemas florestais."
   },
   {
     "id": "sel-ethernet-61850",

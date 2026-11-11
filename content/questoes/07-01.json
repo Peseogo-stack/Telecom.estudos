@@ -1,0 +1,253 @@
+[
+  {
+    "id": "07-01-q1",
+    "licao": "07-01",
+    "enunciado": "Um provedor tem contrato de compartilhamento e lançou um cabo num trecho que não consta do projeto aprovado pela distribuidora. Que ocupação é essa?",
+    "alternativas": [
+      {
+        "texto": "Regular, porque o provedor tem contrato vigente com a distribuidora.",
+        "correta": false,
+        "explicacao": "Contrato vigente não basta: o cabo também precisa constar de projeto técnico aprovado."
+      },
+      {
+        "texto": "À revelia: tem contrato, mas o cabo está fora de projeto aprovado.",
+        "correta": true,
+        "explicacao": "Certo. A ocupação à revelia é a que não consta de projeto técnico aprovado, mesmo com contrato vigente (REN 1.044/2022)."
+      },
+      {
+        "texto": "Clandestina, porque o provedor lançou o cabo sem avisar a distribuidora.",
+        "correta": false,
+        "explicacao": "Clandestina é a ocupação à revelia sem contrato vigente, ou com dono não identificado depois de a distribuidora notificar os ocupantes. Aqui há contrato."
+      },
+      {
+        "texto": "Regular, até a distribuidora notificar o provedor e pedir a regularização.",
+        "correta": false,
+        "explicacao": "A regularidade não depende da notificação: sem projeto aprovado, a ocupação já é à revelia, e isso é vedado."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-01-q2",
+    "licao": "07-01",
+    "enunciado": "Você precisa da altura da faixa de ocupação e do afastamento em relação à baixa tensão para conferir uma ocupação. Onde procurar?",
+    "alternativas": [
+      {
+        "texto": "No texto da REN ANEEL 1.044/2022, que traz as medidas do compartilhamento.",
+        "correta": false,
+        "explicacao": "A REN define faixa de ocupação e ponto de fixação, mas as alturas e os afastamentos estão na norma da distribuidora."
+      },
+      {
+        "texto": "Na Resolução Conjunta 4/2014, que cita a faixa de ocupação.",
+        "correta": false,
+        "explicacao": "A resolução manda seguir a faixa de ocupação, mas o valor vem da norma técnica e do Plano de Ocupação."
+      },
+      {
+        "texto": "Na decisão da AGU de maio de 2026 sobre a cessão dos postes.",
+        "correta": false,
+        "explicacao": "A decisão trata da cessão da exploração comercial, não de medidas de campo."
+      },
+      {
+        "texto": "Na norma técnica e no Plano de Ocupação da distribuidora, no site dela.",
+        "correta": true,
+        "explicacao": "Certo. Os valores de campo estão na norma da distribuidora, e o Plano de Ocupação é publicado no site dela. Confirme a versão na empresa."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-01-q3",
+    "licao": "07-01",
+    "enunciado": "Um provedor pede um segundo ponto de fixação no mesmo poste. O que diz a Resolução Conjunta 4/2014?",
+    "alternativas": [
+      {
+        "texto": "No máximo 1 ponto por poste; o segundo exige dispensa da Anatel.",
+        "correta": true,
+        "explicacao": "Certo. É a regra geral da resolução; a dispensa é a exceção e passa pela Anatel."
+      },
+      {
+        "texto": "Pode, desde que o provedor pague também pelo segundo ponto de fixação.",
+        "correta": false,
+        "explicacao": "Pagar não muda o limite: a distribuidora cobra 1 ponto por poste, e o segundo só vem com dispensa."
+      },
+      {
+        "texto": "Pode, desde que o provedor tenha contrato vigente com a distribuidora.",
+        "correta": false,
+        "explicacao": "O contrato não afasta o limite de 1 ponto de fixação por prestadora em cada poste."
+      },
+      {
+        "texto": "Não pode em nenhum caso, porque a norma proíbe mais de um ponto no poste.",
+        "correta": false,
+        "explicacao": "Há exceção: a prestadora pode pedir dispensa à Anatel."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "07-01-q4",
+    "licao": "07-01",
+    "enunciado": "Em que situação a distribuidora pode retirar cabos sem pedir autorização à Comissão de Resolução de Conflitos?",
+    "alternativas": [
+      {
+        "texto": "Cabo de provedor com contrato, mas fora do projeto aprovado, que ele não regularizou.",
+        "correta": false,
+        "explicacao": "Quando a regularização não é feita, o detentor pede autorização à Comissão antes de retirar."
+      },
+      {
+        "texto": "Provedor com contrato que está com o pagamento atrasado.",
+        "correta": false,
+        "explicacao": "A falta de pagamento também exige pedir a autorização à Comissão."
+      },
+      {
+        "texto": "Ocupação clandestina, emergência ou situação com risco de acidente.",
+        "correta": true,
+        "explicacao": "Certo. São os três casos em que o detentor retira sem autorização prévia da Comissão (REN 1.044/2022)."
+      },
+      {
+        "texto": "Cabo sem plaqueta, porque a identificação dos cabos é obrigação do ocupante.",
+        "correta": false,
+        "explicacao": "Cabo sem identificação ainda não é, por si só, clandestino: antes a distribuidora notifica os ocupantes com contrato."
+      }
+    ],
+    "fontes": [
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-01-q5",
+    "licao": "07-01",
+    "enunciado": "A equipe vai notificar um ocupante por um cabo irregular. O que a notificação traz, no mínimo, e quem paga a regularização?",
+    "alternativas": [
+      {
+        "texto": "A localização do poste e a descrição da não conformidade; o detentor paga e cobra depois.",
+        "correta": false,
+        "explicacao": "A localização e a descrição estão certas, mas o custo da regularização é do ocupante."
+      },
+      {
+        "texto": "A localização do poste e a descrição da não conformidade; o ocupante paga.",
+        "correta": true,
+        "explicacao": "Certo. Regularizar é responsabilidade do ocupante, inclusive quanto aos custos (Res. Conjunta 4/2014)."
+      },
+      {
+        "texto": "Só o aviso de que há irregularidade, pois o ocupante conhece a norma técnica; o ocupante paga.",
+        "correta": false,
+        "explicacao": "Aviso genérico não basta: sem o poste e a não conformidade, o ocupante não sabe o que corrigir."
+      },
+      {
+        "texto": "O número do contrato e uma foto do cabo; o custo é dividido entre as partes.",
+        "correta": false,
+        "explicacao": "O mínimo é a localização e a descrição, e o custo não é dividido: é do ocupante."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014",
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-01-q6",
+    "licao": "07-01",
+    "enunciado": "Você encontra um cabo baixo, com risco de acidente. O que a norma exige do ocupante e o que você faz?",
+    "alternativas": [
+      {
+        "texto": "O ocupante espera a notificação formal; você retira o cabo para evitar o acidente.",
+        "correta": false,
+        "explicacao": "O risco de acidente dispensa a notificação prévia, e retirar o cabo por conta própria não é o seu papel."
+      },
+      {
+        "texto": "O ocupante regulariza em até 1 ano; você registra e segue o cronograma.",
+        "correta": false,
+        "explicacao": "O prazo de 1 ano é do cronograma de regularização comum; risco de acidente é priorizado e imediato."
+      },
+      {
+        "texto": "O ocupante regulariza depois do prazo; você sobe e levanta o cabo se tiver escada.",
+        "correta": false,
+        "explicacao": "Subir ou mexer no poste segue o treinamento e o procedimento da empresa, nunca a improvisação."
+      },
+      {
+        "texto": "O ocupante regulariza na hora, sem notificação; você registra e comunica.",
+        "correta": true,
+        "explicacao": "Certo. Emergência ou risco de acidente é regularizado imediatamente (Res. Conjunta 4/2014); você segue o procedimento da empresa."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "07-01-q7",
+    "licao": "07-01",
+    "enunciado": "Um provedor diz que o preço do ponto de fixação é R$ 3,19 por lei e pede esse valor no contrato. Qual é a resposta?",
+    "alternativas": [
+      {
+        "texto": "É o teto legal: a distribuidora não pode cobrar mais que isso por ponto.",
+        "correta": false,
+        "explicacao": "A resolução não fixa teto: o R$ 3,19 é referência para resolver conflitos."
+      },
+      {
+        "texto": "É o preço de tabela de 2014, que a distribuidora corrige a cada ano.",
+        "correta": false,
+        "explicacao": "É um valor de referência de 2014; não há tabela que a distribuidora corrija a cada ano."
+      },
+      {
+        "texto": "É referência de 2014 para conflito; vale o preço do contrato.",
+        "correta": true,
+        "explicacao": "Certo. O preço real é negociado em contrato; o R$ 3,19 só orienta a Comissão quando a negociação acaba (Res. Conjunta 4/2014)."
+      },
+      {
+        "texto": "Vale só para provedores de pequeno porte; os demais negociam o preço.",
+        "correta": false,
+        "explicacao": "A resolução não divide ocupantes por porte; o valor é referência para conflito."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "07-01-q8",
+    "licao": "07-01",
+    "enunciado": "Um colega diz: \"o posteiro já manda nos postes, a regra nova saiu\". O que vale em 10/11/2026?",
+    "alternativas": [
+      {
+        "texto": "A lista de regras atuais; o posteiro é só proposta.",
+        "correta": true,
+        "explicacao": "Certo. O regulamento novo é minuta e o PL 3.220/2019 não é lei; valem as resoluções, a REN 1.044/2022, a norma da distribuidora e o contrato."
+      },
+      {
+        "texto": "A AGU decidiu que a cessão é obrigatória, então o regulamento novo já vale.",
+        "correta": false,
+        "explicacao": "A AGU concluiu pela cessão, mas a ANEEL deverá rever o texto, e em 06/10/2026 adiou a decisão."
+      },
+      {
+        "texto": "O Decreto 12.068/2024 criou o posteiro, e ele vale desde a publicação.",
+        "correta": false,
+        "explicacao": "O decreto manda ceder, mas a exploração comercial depende da regulação conjunta, que em 10/11/2026 não foi encontrada publicada."
+      },
+      {
+        "texto": "O PL 3.220/2019 virou lei em 04/11/2026, quando a Câmara o aprovou.",
+        "correta": false,
+        "explicacao": "A Câmara aprovou o substitutivo e o projeto volta ao Senado; não é lei."
+      }
+    ],
+    "fontes": [
+      "res-conjunta-4-2014",
+      "aneel-ren-1044-2022"
+    ],
+    "dificuldade": 3
+  }
+]

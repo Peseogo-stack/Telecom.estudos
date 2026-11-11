@@ -1,0 +1,255 @@
+[
+  {
+    "id": "08-02-q1",
+    "licao": "08-02",
+    "enunciado": "O fornecedor vai cadastrar CTO, cabo e quadra no QGIS. Que tipo de geometria cada um deve ter?",
+    "alternativas": [
+      {
+        "texto": "CTO e cabo como pontos, e a quadra como polígono.",
+        "correta": false,
+        "explicacao": "O cabo não é ponto: ele tem comprimento e vai de um poste a outro, o que pede uma linha de dois ou mais vértices."
+      },
+      {
+        "texto": "CTO como ponto, cabo como linha e quadra como polígono.",
+        "correta": true,
+        "explicacao": "Certo. CTO é ponto (um vértice), o cabo é linha (dois ou mais vértices) e a quadra é polígono, uma área fechada."
+      },
+      {
+        "texto": "CTO como polígono, cabo como linha e quadra como ponto.",
+        "correta": false,
+        "explicacao": "Está trocado: a CTO é um ponto, e a quadra é uma área fechada, com três ou mais vértices e o último igual ao primeiro."
+      },
+      {
+        "texto": "Os três como linha, que serve para qualquer feição.",
+        "correta": false,
+        "explicacao": "Cada camada reúne feições do mesmo tipo de geometria, e o tipo depende do objeto: ponto, linha ou polígono, não um só para tudo."
+      }
+    ],
+    "fontes": [
+      "qgis-intro-vetor"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-02-q2",
+    "licao": "08-02",
+    "enunciado": "Recebi uma camada de postes e a tabela de atributos tem 66 linhas. O que isso diz?",
+    "alternativas": [
+      {
+        "texto": "A camada tem 66 campos, um para cada poste.",
+        "correta": false,
+        "explicacao": "Campo é coluna: um tipo de informação, como o material. O que a linha representa é uma feição."
+      },
+      {
+        "texto": "O arquivo tem 66 camadas, uma para cada poste.",
+        "correta": false,
+        "explicacao": "Camada é um conjunto de feições do mesmo tipo de geometria. Cada poste é uma feição dentro da camada, não uma camada."
+      },
+      {
+        "texto": "São 66 vértices, e a quantidade de postes ainda é desconhecida.",
+        "correta": false,
+        "explicacao": "Vértice é uma posição da geometria. A contagem de linhas é a de feições, e um poste é um ponto, com um só vértice."
+      },
+      {
+        "texto": "A camada tem 66 feições: cada linha é uma feição.",
+        "correta": true,
+        "explicacao": "Certo. Cada linha da tabela é uma feição, que é o mesmo objeto do desenho no mapa."
+      }
+    ],
+    "fontes": [
+      "qgis-tabela-atributos",
+      "qgis-intro-vetor"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-02-q3",
+    "licao": "08-02",
+    "enunciado": "Abri a tabela ocupantes e nada apareceu no mapa. O que explica?",
+    "alternativas": [
+      {
+        "texto": "É tabela sem geometria: tem linhas e campos, mas nada a desenhar.",
+        "correta": true,
+        "explicacao": "Certo. O QGIS abre tabelas não espaciais na mesma tela de tabela de atributos, mas sem geometria não há o que desenhar."
+      },
+      {
+        "texto": "O arquivo está corrompido: toda tabela do QGIS desenha pontos no mapa.",
+        "correta": false,
+        "explicacao": "Tabela sem geometria é normal e abre como qualquer outra. Só que, sem geometria, não há nada para desenhar."
+      },
+      {
+        "texto": "A tabela é um raster, e raster só aparece como imagem de fundo.",
+        "correta": false,
+        "explicacao": "Raster é matriz de pixels, não uma tabela. A ocupantes tem linhas e campos, só que sem geometria."
+      },
+      {
+        "texto": "Faltou ligar o Show Feature Count, que é o que desenha as feições.",
+        "correta": false,
+        "explicacao": "O Show Feature Count só mostra o número de feições ao lado do nome da camada. Não desenha nada."
+      }
+    ],
+    "fontes": [
+      "qgis-tabela-atributos",
+      "qgis-ferramentas-gerais"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "08-02-q4",
+    "licao": "08-02",
+    "enunciado": "Vejo um poste no mapa e quero ler os atributos dele sem abrir a tabela inteira. O que usar?",
+    "alternativas": [
+      {
+        "texto": "Show Feature Count, que mostra os atributos ao lado do nome da camada.",
+        "correta": false,
+        "explicacao": "O Show Feature Count mostra só o número de feições da camada, ao lado do nome. Os atributos não aparecem ali."
+      },
+      {
+        "texto": "Form view, que mostra todos os postes de uma vez, lado a lado.",
+        "correta": false,
+        "explicacao": "O Form view mostra uma feição por vez, e é um modo da tabela de atributos: ela continua sendo aberta."
+      },
+      {
+        "texto": "View ► Identify Features, clicando no poste da camada ativa.",
+        "correta": true,
+        "explicacao": "Certo. O Identify Features abre uma janela com as informações da feição clicada, sem abrir a tabela inteira."
+      },
+      {
+        "texto": "Shift+F6, que abre os atributos do poste que aparece no mapa.",
+        "correta": false,
+        "explicacao": "O Shift+F6 abre a tabela só com as feições selecionadas. Ver o poste no mapa não é selecioná-lo."
+      }
+    ],
+    "fontes": [
+      "qgis-ferramentas-gerais",
+      "qgis-tabela-atributos"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-02-q5",
+    "licao": "08-02",
+    "enunciado": "O fornecedor mandou os cabos como pontos soltos, um ponto por poste. O que se perde?",
+    "alternativas": [
+      {
+        "texto": "Nada: os pontos guardam o comprimento, e a tabela é a mesma de uma linha.",
+        "correta": false,
+        "explicacao": "Ponto tem atributos, mas não tem comprimento: um vértice só marca uma posição. Quem tem comprimento é a linha."
+      },
+      {
+        "texto": "Não há linha, então a camada não dá o comprimento de cada cabo.",
+        "correta": true,
+        "explicacao": "Certo. Uma linha tem comprimento; um ponto não. Para o comprimento de um cabo, a camada tem de ser de linha."
+      },
+      {
+        "texto": "Os atributos, porque ponto não pode ter tabela de atributos.",
+        "correta": false,
+        "explicacao": "Ponto tem atributos como qualquer feição vetorial: o manual cita o exemplo de um ponto que é uma árvore ou um poste de iluminação."
+      },
+      {
+        "texto": "A posição dos postes, já que só linha e polígono têm geometria.",
+        "correta": false,
+        "explicacao": "Ponto tem geometria: um vértice, com X e Y. Perde-se a ligação entre os postes, que é a linha."
+      }
+    ],
+    "fontes": [
+      "qgis-intro-vetor"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-02-q6",
+    "licao": "08-02",
+    "enunciado": "Na imagem de satélite de fundo, cliquei num poste e não veio nenhum atributo de poste. Por quê?",
+    "alternativas": [
+      {
+        "texto": "A imagem é vetor, e o vetor só guarda a geometria, sem atributos.",
+        "correta": false,
+        "explicacao": "Vetor tem atributos: texto ou números que descrevem a feição. O problema é que a imagem não é vetor."
+      },
+      {
+        "texto": "O poste da imagem é um ponto, mas a camada está sem tabela de atributos.",
+        "correta": false,
+        "explicacao": "O poste que se vê na imagem é só um conjunto de pixels. Ponto é uma feição vetorial, que não existe dentro do raster."
+      },
+      {
+        "texto": "Faltou abrir a tabela de atributos da imagem com F6 antes de clicar.",
+        "correta": false,
+        "explicacao": "A tabela de atributos lista feições de uma camada vetorial. Num raster, os postes não são feições, e o F6 não os cria."
+      },
+      {
+        "texto": "A imagem é raster: pixels com valor, sem feição de poste.",
+        "correta": true,
+        "explicacao": "Certo. O raster é uma matriz de pixels, cada um com um valor. Não há feição de poste, logo não há tabela de postes ali."
+      }
+    ],
+    "fontes": [
+      "qgis-intro-raster",
+      "qgis-intro-vetor"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "08-02-q7",
+    "licao": "08-02",
+    "enunciado": "No painel Layers, o Show Feature Count mostra 66 ao lado de postes. Onde se vê quantos postes estão selecionados?",
+    "alternativas": [
+      {
+        "texto": "No título da tabela de atributos, que traz o total e as selecionadas.",
+        "correta": true,
+        "explicacao": "Certo. O título da tabela mostra o total de feições da camada e quantas estão selecionadas ou filtradas."
+      },
+      {
+        "texto": "No próprio Show Feature Count, que passa a mostrar só as selecionadas.",
+        "correta": false,
+        "explicacao": "O Show Feature Count mostra o número de feições da camada ao lado do nome, e não o de selecionadas."
+      },
+      {
+        "texto": "Na janela do Identify Features, ao clicar no nome da camada no painel Layers.",
+        "correta": false,
+        "explicacao": "O Identify Features mostra as informações de uma feição clicada na camada ativa, não a contagem de selecionadas."
+      },
+      {
+        "texto": "No Form view, que lista as feições selecionadas uma abaixo da outra.",
+        "correta": false,
+        "explicacao": "O Form view mostra uma feição por vez. Quem traz o total e as selecionadas é o título da tabela."
+      }
+    ],
+    "fontes": [
+      "qgis-tabela-atributos",
+      "qgis-ferramentas-gerais"
+    ],
+    "dificuldade": 3
+  },
+  {
+    "id": "08-02-q8",
+    "licao": "08-02",
+    "enunciado": "No QGIS 4.x, dou duplo clique no cabeçalho de uma linha da tabela de postes. O que o manual diz que acontece?",
+    "alternativas": [
+      {
+        "texto": "Abre a janela do Identify Features para a feição daquela linha.",
+        "correta": false,
+        "explicacao": "O Identify Features é uma ferramenta de View que se usa clicando na feição no mapa. O manual da 4.x liga o duplo clique ao zoom."
+      },
+      {
+        "texto": "Abre o Form view com aquela feição, uma por vez, no lugar da tabela.",
+        "correta": false,
+        "explicacao": "O Form view é um modo de ver a tabela, escolhido à parte. Ele não é o que o duplo clique no cabeçalho faz."
+      },
+      {
+        "texto": "Zoom na feição no mapa, se a camada tem geometria.",
+        "correta": true,
+        "explicacao": "Certo. Isso está no manual da 4.x em desenvolvimento e não no da 3.44. Numa tabela sem geometria, não há para onde dar zoom."
+      },
+      {
+        "texto": "Seleciona a linha e abre só as selecionadas, como o Shift+F6.",
+        "correta": false,
+        "explicacao": "Selecionar e abrir só as selecionadas é o que o Shift+F6 faz. O duplo clique no cabeçalho, na 4.x, dá zoom na feição."
+      }
+    ],
+    "fontes": [
+      "qgis-tabela-atributos"
+    ],
+    "dificuldade": 3
+  }
+]

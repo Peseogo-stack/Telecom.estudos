@@ -38,3 +38,9 @@ for (const rota of ['#/licao/01-01', '#/licao/01-03', '#/licao/01-04', '#/licao/
     expect(graves.map((v) => `${v.id}: ${v.nodes.map((x) => x.target.join(' ')).slice(0, 3).join(' | ')}`)).toEqual([]);
   });
 }
+
+test('01-04: a prioridade padrão do GOOSE vem da IEC 61850-8-1, com fonte', async ({ page }) => {
+  await page.goto('./#/licao/01-04');
+  await expect(page.locator('main')).toContainText('IEC 61850-8-1 indica prioridade 4');
+  await expect(page.locator('main')).toContainText('What It Can and Cannot Offer');
+});

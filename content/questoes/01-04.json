@@ -112,7 +112,7 @@
       {
         "texto": "Se o certificado do publicador ainda está válido no IED",
         "correta": false,
-        "explicacao": "O GOOSE não tem autenticação nativa nem certificado; confira LAN, VLAN e roteador."
+        "explicacao": "Segundo a SEL, o GOOSE não tem autenticação nativa; confira LAN, VLAN e ausência de roteador."
       },
       {
         "texto": "Se publicador e assinante estão na mesma LAN e VLAN",
@@ -142,14 +142,14 @@
         "explicacao": "A classe define tempo de transmissão, não o intervalo de regime; o 1000 ms é exemplo da SEL."
       },
       {
-        "texto": "É exemplo de configuração da SEL, não regra da norma",
+        "texto": "Errado: é exemplo de configuração da SEL, não regra da norma",
         "correta": true,
-        "explicacao": "Certo. Os 1 s de regime, os 4 ms e os 1000 ms são um exemplo de configuração da SEL, não regra da norma (SEL)."
+        "explicacao": "Certo. Os 1 s de regime, os 4 ms e os 1000 ms são um exemplo de configuração da SEL, não regra da norma; a curva varia conforme o fabricante (SEL)."
       },
       {
-        "texto": "Certo: esse é o valor que a IEC 62351-6 dá ao regime",
+        "texto": "Errado: a norma fixa o regime em 4 ms, não em 1000 ms",
         "correta": false,
-        "explicacao": "A IEC 62351-6 trata de segurança, não de intervalos; o 1000 ms é exemplo da SEL."
+        "explicacao": "Os 4 ms também são do exemplo da SEL (o envio logo após a mudança de estado); a norma não fixa a curva de retransmissão."
       }
     ],
     "fontes": [
@@ -163,7 +163,7 @@
     "enunciado": "O fornecedor diz que o GOOSE já vai criptografado e autenticado de fábrica. O que a lição diz?",
     "alternativas": [
       {
-        "texto": "Segundo a SEL, é texto aberto, sem autenticação nativa",
+        "texto": "Errado: segundo a SEL, é texto aberto, sem autenticação nativa",
         "correta": true,
         "explicacao": "Certo. Segundo a SEL, GOOSE e SV são texto aberto, sem autenticação nativa (SEL)."
       },
@@ -178,9 +178,9 @@
         "explicacao": "A VLAN isola e prioriza, mas não criptografa."
       },
       {
-        "texto": "Certo: o multicast só entrega a assinantes autenticados",
+        "texto": "Errado: só vai criptografado quando passa por um roteador",
         "correta": false,
-        "explicacao": "O multicast entrega a todos na LAN; não há autenticação nativa."
+        "explicacao": "O GOOSE não passa por roteador e não tem criptografia nativa; segundo a SEL, é texto aberto."
       }
     ],
     "fontes": [
@@ -223,32 +223,32 @@
   {
     "id": "01-04-q8",
     "licao": "01-04",
-    "enunciado": "Um colega afirma que \"VLAN PRIORITY 4\" é o padrão da norma para GOOSE. O que responder?",
+    "enunciado": "Um colega afirma que a prioridade 4 é o padrão da norma para o GOOSE. O que responder?",
     "alternativas": [
       {
-        "texto": "Está certo: a 802.1p fixa a prioridade 4 para mensagens críticas",
+        "texto": "Certo, e a norma proíbe usar qualquer outro valor",
         "correta": false,
-        "explicacao": "A 802.1p permite etiqueta de prioridade, mas sem valor-padrão; o 4 é exemplo da SEL."
+        "explicacao": "A IEC 61850-8-1 indica o 4 como padrão, mas o projeto pode escolher qualquer valor de 0 a 7 (SEL)."
       },
       {
-        "texto": "Está certo: o 4 é a prioridade mínima do IEC 61850-5",
+        "texto": "Errado: é só o exemplo da SEL, sem padrão na norma",
         "correta": false,
-        "explicacao": "O IEC 61850-5 classifica tempos, não fixa prioridade; o 4 é exemplo da SEL."
+        "explicacao": "O 4 aparece no exemplo da SEL, mas também é o padrão que a IEC 61850-8-1 indica para o GOOSE (SEL)."
       },
       {
-        "texto": "Está certo: o 4 é o valor da classe P2/P3 do GOOSE",
+        "texto": "Errado: o padrão da norma é 7, o valor mais alto",
         "correta": false,
-        "explicacao": "A classe P2/P3 trata do tempo de 3 ms; o 4 é exemplo da SEL."
+        "explicacao": "O 7 é o maior valor possível, mas o padrão indicado pela IEC 61850-8-1 para o GOOSE é 4 (SEL)."
       },
       {
-        "texto": "É o valor do exemplo da SEL; a lição não traz padrão de norma",
+        "texto": "Certo: é o padrão da IEC 61850-8-1, mas vai de 0 a 7",
         "correta": true,
-        "explicacao": "Certo. O 4 aparece no exemplo da SEL; não há valor-padrão da norma na lição (SEL)."
+        "explicacao": "Certo. Segundo a SEL, a IEC 61850-8-1 indica prioridade 4 para o GOOSE, e o projetista pode escolher qualquer valor de 0 a 7 (SEL)."
       }
     ],
     "fontes": [
-      "sel-goose-seguranca",
-      "sel-ethernet-61850"
+      "sel-61850-tradicional",
+      "sel-goose-seguranca"
     ],
     "dificuldade": 3
   }

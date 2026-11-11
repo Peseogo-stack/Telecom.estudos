@@ -1107,6 +1107,15 @@
     "observacao": "Silveira e Franco, PAC World Americas. GOOSE em multicast, publicador e assinantes, mapeado na camada de enlace; MAC de destino começa com 01-0C-CD; tag IEEE 802.1Q com prioridade de VLAN; retransmissão em T0 (regime) e T1, T2, T3 após evento, com curva que varia por fabricante; no exemplo, regime de 1 s, 4 ms após mudança de estado e prioridade de VLAN 4; classe P1 na ordem de 10 ms e P2/P3 de 3 ms; GOOSE e SV em texto claro, sem autenticação nativa."
   },
   {
+    "id": "sel-61850-tradicional",
+    "titulo": "IEC 61850 – What It Can and Cannot Offer to Traditional Protection Schemes",
+    "organizacao": "Schweitzer Engineering Laboratories (SEL)",
+    "tipo": "fabricante",
+    "url": "https://cdn.selinc.com/assets/Literature/Publications/Technical%20Papers/6335_IEC61850_DH-DD_20080912_Web.pdf",
+    "acessadoEm": "2026-11-11",
+    "observacao": "Hou e Dolezilek (WPRC 2008; SEL Journal of Reliable Power, 2010). Página 8, seção sobre a tag IEEE 802.1Q/802.1p: \"The IEC 61850-8-1 standard specifies that default GOOSE messages should have a priority level of 4. However, network designers and protection engineers can choose any value between 0 and 7\"."
+  },
+  {
     "id": "iana-portas",
     "titulo": "Service Name and Transport Protocol Port Number Registry",
     "organizacao": "IANA",

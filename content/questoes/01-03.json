@@ -140,7 +140,7 @@
       {
         "texto": "Não passa por roteador: o multicast de camada 2 fica na LAN",
         "correta": true,
-        "explicacao": "Certo. O GOOSE exige uma única LAN Ethernet, sem roteadores entre publicador e assinante (Software Toolbox)."
+        "explicacao": "Certo. O GOOSE exige uma única LAN Ethernet, sem roteadores entre publicador e assinante (Software Toolbox). Levá-lo para fora da LAN exige solução própria, como as que a Cisco cita para a rede celular."
       },
       {
         "texto": "Passa, desde que se libere a porta 102 no roteador",

@@ -111,7 +111,7 @@
       {
         "texto": "Certo, pois a Strathclyde achou desempenho igual em todos os testes",
         "correta": false,
-        "explicacao": "A Strathclyde disse que o desempenho variou, e não que fosse igual ao do SDH."
+        "explicacao": "A lição não traz isso: a Strathclyde concluiu que o MPLS-TP bem configurado pode atender à teleproteção, com desempenho variável entre as métricas."
       },
       {
         "texto": "A Hitachi diz que o do MPLS-TP é pior, e a Strathclyde discorda em parte",

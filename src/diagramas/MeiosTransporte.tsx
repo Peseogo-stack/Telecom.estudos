@@ -9,7 +9,7 @@ const MEIOS: { meio: string; uso: string[]; limite: string[] }[] = [
     uso: ['teleproteção e voz'],
     limite: ['taxa baixa: até 9600 bps (banda estreita)', 'e até 256 kbps (banda larga)'],
   },
-  { meio: 'SDH', uso: ['TDM determinístico, banda dedicada'], limite: ['em migração para pacotes'] },
+  { meio: 'SDH', uso: ['TDM determinístico, banda dedicada'], limite: ['legado, em migração para pacotes'] },
   { meio: 'MPLS-TP', uso: ['recursos do SDH em rede de pacotes'], limite: ['determinismo pior que o do SDH (Hitachi)'] },
   { meio: 'Celular 4G/5G', uso: ['backhaul da automação'], limite: ['APN privado ou público'] },
 ];

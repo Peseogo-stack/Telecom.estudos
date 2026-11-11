@@ -11,7 +11,7 @@ export function PropriaOperadora({ descricao }: PropsDiagrama) {
   );
   const escala = 5; // unidades por ms
   const barras: [string, number, boolean][] = [
-    ['Diferencial de linha exige até 5 ms', 5, false],
+    ['Diferencial de linha pede até 5 ms', 5, false],
     ['Carrier Ethernet: cerca de 20 ms', 20, false],
     ['MPLS: 50 ms ou mais', 50, true],
   ];

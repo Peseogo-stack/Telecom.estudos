@@ -145,9 +145,9 @@
         "explicacao": "Os requisitos da distribuição são menos rígidos que os da transmissão, e os prazos vão de milissegundos a segundos."
       },
       {
-        "texto": "Errado: todos os serviços da distribuição ficam entre 100 ms e 2 s",
+        "texto": "Certo: na distribuição, até o trip fica entre 100 ms e 2 s",
         "correta": false,
-        "explicacao": "Só a gestão da rede de distribuição está nessa faixa; o trip é de 3 ms e a AMI chega a 15 s."
+        "explicacao": "Só a gestão da rede de distribuição está na faixa de 100 ms a 2 s (DOE); o trip é de 3 ms e a AMI chega a 15 s."
       }
     ],
     "fontes": [

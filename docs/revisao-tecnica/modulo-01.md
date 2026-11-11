@@ -59,3 +59,37 @@ O OPGW ficou com a T&D World, que diz que ele é obrigatório nas linhas de tran
 - **Assimetria:** definição da SEL de 2025, a diferença de atraso entre ida e volta.
 
 **Perguntas para a empresa: 7 novas.** Saiu a c17, que repetia a c08. As perguntas antigas c06, c07 e c08 foram ligadas às lições 01-01 e 01-02.
+
+## Questões (revisão de 11/11/2026)
+
+São 48 questões, 8 por lição. Li as de 01-03 a 01-06 frase a frase contra a lição e a fonte. As de 01-01 e 01-02 já estavam conferidas; mexi só na 01-01-q5.
+
+| Questão | Estava | Ficou |
+| --- | --- | --- |
+| 01-01-q5 | Uma alternativa concordava com o colega e três discordavam | Duas concordam e duas discordam; a nova errada ("até o trip fica entre 100 ms e 2 s") cai pela tabela do DOE |
+| 01-03-q5 | A explicação não dizia que há saída para levar GOOSE para fora da LAN | Diz que isso exige solução própria, como as que a Cisco cita para a rede celular |
+| 01-04-q4 | "Sem autenticação nativa nem certificado" | "Segundo a SEL, sem autenticação nativa" |
+| 01-04-q5, q6 | Três alternativas concordavam com o colega e só a correta discordava: dava para acertar por exclusão | Duas concordam e duas discordam |
+| 01-04-q8 | A correta dizia que a norma não tem prioridade padrão | A IEC 61850-8-1 indica prioridade 4 para o GOOSE, e o projeto pode usar de 0 a 7 (fonte abaixo); alternativas refeitas, duas concordando e duas discordando |
+| 01-06-q4 | A explicação de uma errada dizia que a Strathclyde achou "desempenho variado", o que a lição não traz | Cita a conclusão da Strathclyde como está na fonte |
+
+01-05 e 01-06: sem erro de conteúdo; os números (8,76 h, 52,6 min, 5,26 min, 99 a 99,999%, 99,99% e 99,999999%, 9600 bps e 256 kbps) batem com a lição e com a fonte.
+
+## Prioridade padrão do GOOSE
+
+A dúvida era se a IEC 61850-8-1 dá um valor padrão. Dá. Fonte aberta: Hou e Dolezilek, "IEC 61850 – What It Can and Cannot Offer to Traditional Protection Schemes" (SEL, WPRC 2008), página 8: "The IEC 61850-8-1 standard specifies that default GOOSE messages should have a priority level of 4. However, network designers and protection engineers can choose any value between 0 and 7". A ajuda do AC500 da ABB e a base de conhecimento da COPA-DATA dizem o mesmo (padrão 4, faixa 0 a 7), sem citar a parte da norma; ficaram só como confirmação. A lição 01-04, o erro comum e a questão 8 foram corrigidos, e a fonte `sel-61850-tradicional` entrou em `content/fontes.json`.
+
+## Diagramas
+
+Conferi os seis desenhos contra a lição: todos os números batem (prazos de 3 ms a 15 s, restabelecimento de 5, 20 e 50 ms, portas e EtherTypes, retransmissão do exemplo da SEL, noves, taxas do PLC). Mudanças:
+
+- 01-02: "Diferencial de linha exige até 5 ms" virou "pede até 5 ms", como na lição.
+- 01-06: o limite do SDH virou "legado, em migração para pacotes", como na tabela da lição.
+- `diagrama_descricao` reescrito em 01-01, 01-02, 01-04, 01-05 e 01-06 para descrever o desenho como ele é (blocos empilhados, régua de 1 ms a 10 s, anel de seis switches, cartões empilhados). A de 01-03 já batia.
+
+## Vídeos
+
+- 01-03 e 01-04: o mesmo vídeo da Conprove (conceitos do IEC 61850, GOOSE e SV), com aviso de que a parte final apresenta produtos.
+- 01-06: um vídeo sobre o OPGW.
+- 01-01, 01-02 e 01-05: só termos de busca; não havia candidato.
+- Ficaram de fora os dois do Bê-á-bá da IEC: a descrição não diz se tratam do que a lição ensina.

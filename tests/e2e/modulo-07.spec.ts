@@ -49,11 +49,11 @@ test('07-02: diagrama traz a etiqueta de exemplo e as cotas da Cemig', async ({ 
 
 test('07-02: os números aparecem como exemplo e os 600 mm não viram distância de trabalho', async ({ page }) => {
   await page.goto('./#/licao/07-02');
-  const prosa = page.locator('.prosa');
-  await expect(prosa).toContainText('Dois exemplos: não é a regra da sua empresa');
-  await expect(prosa).toContainText('Os 600 mm são regra de instalação do cabo de telecom.');
-  await expect(prosa).toContainText('Não são distância de trabalho');
-  await expect(prosa).toContainText('Não suba para conferir.');
+  const licao = page.locator('main');
+  await expect(licao).toContainText('Dois exemplos: não é a regra da sua empresa');
+  await expect(licao).toContainText('Os 600 mm são regra de instalação do cabo de telecom.');
+  await expect(licao).toContainText('Não são distância de trabalho');
+  await expect(licao).toContainText('Não suba para conferir.');
 });
 
 test('07-02: termo rede secundária abre a definição no glossário', async ({ page }) => {

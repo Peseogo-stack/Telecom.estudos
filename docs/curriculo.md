@@ -1,8 +1,8 @@
 # Currículo — 12 módulos, 73 lições
 
-> Versão 0.2 · 07/11/2026 · baseado em `docs/pesquisa.md` e nas decisões de `docs/decisoes.md`
+> Versão 0.3 · 11/11/2026 (Trilha em 4 etapas) · baseado em `docs/pesquisa.md` e nas decisões de `docs/decisoes.md`
 > Cada lição: 10–15 min (explicação + diagrama + na prática + erros comuns + pergunte na empresa + fontes + 5 questões).
-> **P1** = primeiras 4 semanas (29 lições). **P2** = semanas 5 a 13 (44 lições).
+> **P1** e **P2** dizem que lições foram escritas primeiro (29 no P1, 44 no P2). Desde 11/11/2026 elas não definem mais a ordem de estudo: a ordem é a das **etapas** abaixo.
 > 🏢 = a lição tem valores que dependem do padrão da empresa ("confirmar na empresa").
 
 ## Visão geral
@@ -23,7 +23,18 @@
 | 12 | Carreira | 3 | 0 | Trilha de certificados |
 | | **Total** | **73** | **29** | |
 
-**Por que essa ordem:** contratos são a primeira atividade da função (SLA, chamados, fiscalização e relatórios mandados por fornecedores). Por isso a semana 1 junta **segurança e contratos**, e a semana 2 traz a **fibra básica** (dB, dBm e perdas) para entender os números desses relatórios. Fusão, PON e postes vêm depois.
+## Etapas da Trilha (ordem de estudo, desde 11/11/2026)
+
+| Etapa | Módulos, na ordem | Para quê |
+| --- | --- | --- |
+| 1 · Base (comece aqui) | 1 Telecom na distribuidora, 10 Segurança, 2 Fibra óptica, 3 Cabos e componentes | O vocabulário de todo o resto |
+| 2 · Mão na massa | 5 Fusão, 6 Testes, 4 FTTH/PON | O que se faz e o que se mede no campo |
+| 3 · O trabalho na distribuidora | 9 Contratos, 7 Postes, 8 QGIS | Fiscalizar, cobrar e registrar |
+| 4 · Aprofundar | 11 Redes, 12 Carreira | Ler formulário de ativação e contrato de link; carreira |
+
+Os números dos módulos e os IDs das lições não mudaram (progresso, revisões e links continuam valendo). As etapas ficam em `content/curriculo.json` (`etapas`); o validador confere que cada módulo está em uma etapa só e que o plano segue essa ordem.
+
+**Ordem anterior (07/11 a 11/11/2026):** semana 1 com segurança e contratos, porque contratos eram a primeira atividade da função (D4). Trocada pela ordem de aprendizado (D20).
 
 ---
 
@@ -122,7 +133,7 @@ Caminhos de menu na **3.44 LTR** (principal) e na **4.2** (aba).
 | 08-06 | Perguntas à camada | Expressões, filtros, contagens. | P2 |
 | 08-07 | Campo com QField | Empacotar → coletar offline → sincronizar. | P2 🏢 |
 
-## Módulo 9 — Contratos e fornecedores (semana 1)
+## Módulo 9 — Contratos e fornecedores (Etapa 3)
 
 | Id | Lição | Objetivo | Prior. |
 | --- | --- | --- | --- |
@@ -133,7 +144,7 @@ Caminhos de menu na **3.44 LTR** (principal) e na **4.2** (aba).
 | 09-05 | Conferir o relatório de teste ou de aceite do fornecedor | Checar se o relatório está completo (OTDR bidirecional, λ, IOR, power meter, mapa de fusão, as built) e se os números cabem no contrato. | P1 🏢 |
 | 09-06 | Chamado e escalonamento | Abrir chamado com evidências; N1 → N2 → N3; incidente × problema × requisição. | P1 🏢 |
 
-## Módulo 10 — Segurança (semana 1 e semana 4)
+## Módulo 10 — Segurança (Etapa 1)
 Faixa fixa: "Lembrete. Não substitui treinamento, APR nem procedimento da empresa."
 
 | Id | Lição | Objetivo | Prior. |
@@ -168,29 +179,31 @@ Ligado ao Cisco NetAcad (ITN v7, módulos 3, 4, 6, 7, 11 e 13) e ao Aprenda Mais
 
 ## Plano de 90 dias
 
-**Ritmo padrão:** cerca de 7 pílulas por semana (uma por dia, ou duas no fim de semana). No app, em **Ajustes**, você marca a data de início e os dias que são **só de revisão** (por exemplo, noites com curso), com data de término; o plano se ajusta. Essas preferências ficam só no aparelho.
+**Ritmo padrão:** 5 a 7 pílulas por semana (uma por dia, ou duas no fim de semana). No app, em **Ajustes**, você marca a data de início e os dias que são **só de revisão** (por exemplo, noites com curso), com data de término; o plano se ajusta. Essas preferências ficam só no aparelho.
 
-| Semana | Lições (ordem de estudo) | Para usar no trabalho |
+A 01-01 fica fora das semanas, como "comece por aqui" opcional (não muda a próxima lição).
+
+| Semana | Lições (ordem de estudo) | Foco |
 | --- | --- | --- |
-| 1 | 10-01, 10-05, 09-01, 09-02, 09-03, 09-06, 09-05 | Segurança no poste; SLA, glosa, chamados e relatório do fornecedor; **calculadora de disponibilidade e glosa** |
-| 2 | 02-07, 02-01, 02-02, 02-05, 02-06, 06-01, 06-02 | Ler os números dos relatórios (dB, dBm, dB/km, λ); **conversor dBm ↔ mW** |
-| 3 | 06-03, 02-03, 02-04, 03-01, 03-03, 03-04, 03-07 | Eventos de OTDR, tipos de fibra, cabo, cores e conectores; **código de cores**, **leitor de OTDR** |
-| 4 | 10-03, 10-04, 05-01, 05-03, 05-04, 04-01, 04-03, 04-05 | Segurança na bancada, fusão, PON; **orçamento de potência** |
-| 5 | 07-01, 07-02, 07-04, 08-03, 01-01, 09-04 | Poste, SRC, por que a rede existe, tipos de contrato |
-| 6 | 05-02, 05-05, 05-06, 06-04, 06-05 | Fusão e OTDR completos |
-| 7 | 06-06, 06-07, 07-03, 07-05, 07-06 | Inspeção de conector, relatório de OTDR, fiscalização de poste |
-| 8 | 07-07, 10-02, 03-02, 03-05, 03-06 | Riscos regionais, NR-35, cabos e ferragens |
-| 9 | 08-01, 08-02, 08-04, 08-05 | QGIS: base e edição |
-| 10 | 08-06, 08-07, 04-02, 04-04, 04-06 | QGIS avançado; PON avançado; **montador PON** |
-| 11 | 01-02, 01-03, 01-04, 01-05, 01-06 | Telecom da distribuidora: protocolos e redundância |
-| 12 | 11-01, 11-02, 11-03, 11-04 | Redes: camadas, SFP, DOM, VLAN |
-| 13 | 11-05, 11-06, 12-01, 12-02, 12-03 | IP, MPLS e carreira; revisão geral |
+| 1 | 01-02, 01-03, 01-04, 01-05, 01-06 | Etapa 1 · Base: por que a distribuidora tem rede própria, protocolos e redundância |
+| 2 | 10-01, 10-02, 10-03, 10-04, 10-05 | Etapa 1 · Base: segurança no poste e na bancada |
+| 3 | 02-01, 02-02, 02-03, 02-04, 02-05, 02-06, 02-07 | Etapa 1 · Base: fibra óptica (dB, dBm, perdas, comprimentos de onda); conversor dBm ↔ mW |
+| 4 | 03-01, 03-02, 03-03, 03-04, 03-05, 03-06, 03-07 | Etapa 1 · Base: cabos, cores e conectores; código de cores e comprimento de cabo |
+| 5 | 05-01, 05-02, 05-03, 05-04, 05-05, 05-06 | Etapa 2 · Mão na massa: fusão; checklist antes da fusão |
+| 6 | 06-01, 06-02, 06-03, 06-04, 06-05, 06-06, 06-07 | Etapa 2 · Mão na massa: power meter e OTDR; leitor de OTDR |
+| 7 | 04-01, 04-02, 04-03, 04-04, 04-05, 04-06 | Etapa 2 · Mão na massa: FTTH/PON; orçamento de potência e montador PON |
+| 8 | 09-01, 09-02, 09-03, 09-04, 09-05, 09-06 | Etapa 3 · Na distribuidora: SLA, glosa, chamados e relatório do fornecedor; calculadora de disponibilidade e glosa |
+| 9 | 07-01, 07-02, 07-03, 07-04, 07-05, 07-06, 07-07 | Etapa 3 · Na distribuidora: postes e compartilhamento; inspeção de poste |
+| 10 | 08-01, 08-02, 08-03, 08-04, 08-05, 08-06, 08-07 | Etapa 3 · Na distribuidora: QGIS |
+| 11 | 11-01, 11-02, 11-03 | Etapa 4 · Aprofundar: camadas, transceptores e DOM |
+| 12 | 11-04, 11-05, 11-06 | Etapa 4 · Aprofundar: VLAN, IP e MPLS no contrato |
+| 13 | 12-01, 12-02, 12-03 | Etapa 4 · Aprofundar: carreira; revisão geral |
 
 | Marco | O que você consegue fazer |
 | --- | --- |
-| Dia 7 | Calcular SLA e glosa, abrir e escalar chamado, saber o papel de gestor e fiscal, conferir se um relatório do fornecedor está completo |
-| Dia 30 | Ler os números de um relatório de teste e acompanhar fusão e OTDR entendendo cada valor |
-| Dia 60 | Fiscalizar ocupação de poste e abrir o projeto no QGIS |
+| Dia 7 | Explicar por que a distribuidora tem rede própria, que protocolos passam por ela e como a redundância protege |
+| Dia 30 | Trabalhar com segurança perto da rede e ler fibra, cabo, cores e conectores, entendendo os números de um relatório |
+| Dia 60 | Acompanhar fusão e OTDR, entender a rede PON e conferir SLA, glosa e chamados |
 | Dia 90 | Conversar de igual com a equipe, os fornecedores e os provedores |
 
-As semanas 5 a 13 têm 4 a 6 lições, o que deixa espaço para a revisão espaçada (que cresce com o tempo) e para semanas cheias no trabalho.
+Cada semana cobre um módulo (o 11 ocupa duas). As semanas 11 a 13 têm 3 lições, o que deixa espaço para a revisão espaçada, que cresce com o tempo. Lições ainda não escritas ficam no plano e são puladas pela tela Hoje até ficarem prontas.

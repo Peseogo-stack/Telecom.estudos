@@ -119,6 +119,7 @@ const busca = [
 
 // Marca no currículo quais lições já têm conteúdo.
 const curriculoMarcado = {
+  etapas: curriculo.etapas,
   modulos: curriculo.modulos.map((m) => ({
     ...m,
     licoes: m.licoes.map((l) => ({ ...l, disponivel: disponiveis.has(l.id) })),

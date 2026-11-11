@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useEstado } from '../app/EstadoApp';
 import { BarraProgresso, useTitulo } from '../componentes/Comuns';
 import { IconeChecklist, IconeFerramentas, IconePlano, IconeRevisao } from '../componentes/Icones';
-import { indice, licoesDisponiveis, resumoDaLicao } from '../conteudo/carregar';
+import { etapaDoModulo, indice, licoesDisponiveis, resumoDaLicao } from '../conteudo/carregar';
 import { formatarDia, NOMES_DIAS, diaDaSemana } from '../dominio/datas';
 import { aprovada, ehDiaSoRevisao, proximaLicao, semanaAtual, sequencia, datasDaSemana } from '../dominio/plano';
 import { proximaRevisao, totalVencidas } from '../dominio/revisao';
@@ -21,6 +21,7 @@ export function Hoje() {
   const proxRevisao = proximaRevisao(revisao, hoje);
   const { licao: proxima, semConteudo } = proximaLicao(indice.plano.semanas, licoesDisponiveis, progresso.licoes);
   const resumo = proxima ? resumoDaLicao(proxima) : null;
+  const etapaProxima = resumo ? etapaDoModulo(resumo.modulo.id) : undefined;
   const soRevisao = ehDiaSoRevisao(ajustes, hoje);
   const dias = sequencia(progresso.diasEstudo, hoje);
   // "Comece por aqui" opcional: aparece só enquanto a lição não foi aberta; não muda a semana nem a próxima lição.
@@ -66,7 +67,7 @@ export function Hoje() {
               {resumo.id} · {resumo.titulo}
             </h2>
             <p className="suave">
-              Módulo {Number(resumo.modulo.id)} — {resumo.modulo.titulo}
+              {etapaProxima ? `Etapa ${etapaProxima.id} · ${etapaProxima.titulo} · ` : ''}Módulo {Number(resumo.modulo.id)} — {resumo.modulo.titulo}
             </p>
             <p>{resumo.objetivo}</p>
             <Link to={`/licao/${resumo.id}`} className="botao">

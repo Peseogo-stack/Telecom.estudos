@@ -1,4 +1,47 @@
 {
+  "etapas": [
+    {
+      "id": "1",
+      "titulo": "Base",
+      "rotulo": "comece aqui",
+      "descricao": "O que a rede da distribuidora faz, segurança, fibra e cabos: o vocabulário de todo o resto.",
+      "modulos": [
+        "01",
+        "10",
+        "02",
+        "03"
+      ]
+    },
+    {
+      "id": "2",
+      "titulo": "Mão na massa",
+      "descricao": "Fusão, testes e a rede PON: o que se faz e o que se mede no campo.",
+      "modulos": [
+        "05",
+        "06",
+        "04"
+      ]
+    },
+    {
+      "id": "3",
+      "titulo": "O trabalho na distribuidora",
+      "descricao": "Contratos, postes e QGIS: fiscalizar, cobrar e registrar.",
+      "modulos": [
+        "09",
+        "07",
+        "08"
+      ]
+    },
+    {
+      "id": "4",
+      "titulo": "Aprofundar",
+      "descricao": "Redes para ler um formulário de ativação e um contrato de link, e o plano de carreira.",
+      "modulos": [
+        "11",
+        "12"
+      ]
+    }
+  ],
   "modulos": [
     {
       "id": "01",

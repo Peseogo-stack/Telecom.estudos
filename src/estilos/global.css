@@ -1161,3 +1161,18 @@ div.campo > label {
 .lista-correcao li {
   margin: 8px 0;
 }
+
+/* ===== Trilha em etapas ===== */
+.etapa {
+  margin-top: 28px;
+}
+.etapa-titulo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.em-construcao h2 {
+  margin-top: 0;
+}

@@ -19,7 +19,7 @@ export function Plano() {
     <>
       <h1>Plano de 90 dias</h1>
       <p className="suave">
-        Começou em {formatarDia(inicio)} (mude em <Link to="/ajustes">Ajustes</Link>). Cerca de 7 pílulas por semana; as semanas 5 a 13 têm folga para a revisão.
+        Começou em {formatarDia(inicio)} (mude em <Link to="/ajustes">Ajustes</Link>). Um módulo por semana, na ordem das etapas da Trilha (5 a 7 pílulas); as semanas 11 a 13 têm folga para a revisão.
       </p>
       <BarraProgresso valor={feitas} total={total} rotulo="Lições aprovadas no plano" />
       <p className="dica">

@@ -81,8 +81,9 @@ Telecom.estudos/
 - **Pronto quando:** abre em menos de 1 s depois de instalado; mostra a revisão correta conforme a data do aparelho; funciona em modo avião.
 
 ### 4.2 Trilha
-- Lista de módulos com barra de progresso, prioridade (P1/P2) e selo "Novo"/"Concluído".
-- Dentro do módulo: lições na ordem, com estado (não iniciada, em andamento, aprovada ≥ 80%, reprovada).
+- Módulos agrupados em **4 etapas**, na ordem de estudo (desde 11/11/2026, D20): 1 · Base (comece aqui), 2 · Mão na massa, 3 · O trabalho na distribuidora, 4 · Aprofundar. O número do módulo e os IDs das lições não mudam.
+- Cada módulo mostra quantas lições estão prontas ("4 de 7 prontas"), as aprovadas e a barra de progresso das prontas.
+- Dentro do módulo: primeiro as lições prontas, na ordem, com estado (não iniciada, em andamento, aprovada ≥ 80%, reprovada); as que ainda não existem ficam num bloco "Em construção" no fim.
 - Lições P2 ficam visíveis e abertas (sem bloqueio rígido), com aviso "recomendado depois de …".
 - **Pronto quando:** o progresso persiste depois de fechar e abrir o app.
 

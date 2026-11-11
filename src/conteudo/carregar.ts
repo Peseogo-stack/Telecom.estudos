@@ -3,7 +3,7 @@
 // (o Vite gera um pedaço separado para cada um; o service worker guarda todos para o modo offline).
 import { useEffect, useState } from 'react';
 import indiceJson from '../gerado/indice.json';
-import type { ConteudoModulo, Indice, Licao, Questao } from './tipos';
+import type { ConteudoModulo, Etapa, Indice, Licao, Modulo, Questao } from './tipos';
 
 export const indice = indiceJson as unknown as Indice;
 
@@ -66,3 +66,13 @@ export function resumoDaLicao(id: string) {
 }
 
 export const fontesPorId = new Map(indice.fontes.map((f) => [f.id, f]));
+
+/** Módulos na ordem da Trilha (etapa por etapa). */
+export const modulosNaOrdem: { etapa: Etapa; modulos: Modulo[] }[] = indice.curriculo.etapas.map((etapa) => ({
+  etapa,
+  modulos: etapa.modulos.map((id) => indice.curriculo.modulos.find((m) => m.id === id)).filter((m): m is Modulo => Boolean(m)),
+}));
+
+export function etapaDoModulo(idModulo: string): Etapa | undefined {
+  return indice.curriculo.etapas.find((e) => e.modulos.includes(idModulo));
+}

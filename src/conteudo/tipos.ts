@@ -80,8 +80,6 @@ export interface Indice {
   plano: {
     semanas: SemanaPlano[];
     marcos: { dia: number; texto: string }[];
-    /** Lição opcional de abertura: fora das semanas, não conta no progresso nem na próxima lição. */
-    comecePorAqui?: { licao: string; texto: string };
   };
   glossario: Termo[];
   fontes: Fonte[];

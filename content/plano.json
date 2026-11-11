@@ -1,19 +1,16 @@
 {
-  "comecePorAqui": {
-    "licao": "01-01",
-    "texto": "Opcional: por que a distribuidora tem rede própria e que serviços passam por ela. É a primeira lição da Etapa 1, mas não entra nas semanas nem muda a próxima lição."
-  },
   "semanas": [
     {
       "semana": 1,
       "licoes": [
+        "01-01",
         "01-02",
         "01-03",
         "01-04",
         "01-05",
         "01-06"
       ],
-      "foco": "Etapa 1 · Base: por que a distribuidora tem rede própria, protocolos e redundância"
+      "foco": "Etapa 1 · Base: por que a distribuidora tem rede própria, que serviços passam por ela, protocolos e redundância"
     },
     {
       "semana": 2,

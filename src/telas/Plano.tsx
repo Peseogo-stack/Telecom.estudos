@@ -12,8 +12,6 @@ export function Plano() {
   const atual = semanaAtual(inicio, hoje);
   const total = indice.plano.semanas.reduce((s, x) => s + x.licoes.length, 0);
   const feitas = indice.plano.semanas.reduce((s, x) => s + x.licoes.filter((id) => aprovada(estado.progresso.licoes, id)).length, 0);
-  const comece = indice.plano.comecePorAqui;
-  const resumoComece = comece ? resumoDaLicao(comece.licao) : null;
 
   return (
     <>
@@ -36,23 +34,6 @@ export function Plano() {
           ))}
         </ul>
       </section>
-
-      {comece && resumoComece && (
-        <section className="cartao" aria-labelledby="t-comece">
-          <p className="rotulo">Comece por aqui · opcional</p>
-          <h2 id="t-comece">
-            {comece.licao} · {resumoComece.titulo}
-          </h2>
-          <p className="suave">{comece.texto}</p>
-          {resumoComece.disponivel ? (
-            <Link to={`/licao/${comece.licao}`} className="botao botao-secundario">
-              {aprovada(estado.progresso.licoes, comece.licao) ? 'Rever a lição' : 'Abrir a lição'}
-            </Link>
-          ) : (
-            <span className="selo">Em breve</span>
-          )}
-        </section>
-      )}
 
       <ol className="lista-limpa">
         {indice.plano.semanas.map((s) => {

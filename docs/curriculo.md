@@ -181,11 +181,9 @@ Ligado ao Cisco NetAcad (ITN v7, módulos 3, 4, 6, 7, 11 e 13) e ao Aprenda Mais
 
 **Ritmo padrão:** 5 a 7 pílulas por semana (uma por dia, ou duas no fim de semana). No app, em **Ajustes**, você marca a data de início e os dias que são **só de revisão** (por exemplo, noites com curso), com data de término; o plano se ajusta. Essas preferências ficam só no aparelho.
 
-A 01-01 fica fora das semanas, como "comece por aqui" opcional (não muda a próxima lição).
-
 | Semana | Lições (ordem de estudo) | Foco |
 | --- | --- | --- |
-| 1 | 01-02, 01-03, 01-04, 01-05, 01-06 | Etapa 1 · Base: por que a distribuidora tem rede própria, protocolos e redundância |
+| 1 | 01-01, 01-02, 01-03, 01-04, 01-05, 01-06 | Etapa 1 · Base: por que a distribuidora tem rede própria, que serviços passam por ela, protocolos e redundância |
 | 2 | 10-01, 10-02, 10-03, 10-04, 10-05 | Etapa 1 · Base: segurança no poste e na bancada |
 | 3 | 02-01, 02-02, 02-03, 02-04, 02-05, 02-06, 02-07 | Etapa 1 · Base: fibra óptica (dB, dBm, perdas, comprimentos de onda); conversor dBm ↔ mW |
 | 4 | 03-01, 03-02, 03-03, 03-04, 03-05, 03-06, 03-07 | Etapa 1 · Base: cabos, cores e conectores; código de cores e comprimento de cabo |

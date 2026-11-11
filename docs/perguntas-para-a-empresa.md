@@ -38,6 +38,7 @@
 | a17 | Abra Help ► About no computador de trabalho: qual é a versão do QGIS instalada? | No macOS: QGIS ► About QGIS | 08-01 |
 | a18 | Pegue um shapefile recebido de fornecedor: vieram todos os arquivos (.shp, .shx, .dbf, .prj)? (Anote só no Meu caderno; nada de dado da empresa no app.) | Pasta com arquivos recebidos | 08-04 |
 | a19 | Como os religadores se comunicam hoje (rádio, celular, fibra)? Qual equipamento de comunicação fica em cada um? | Etiqueta e ficha do religador; mapa da rede | 01-06 |
+| a20 | O meu ASO registra a aptidão para trabalho em altura? Quando foi o meu último treinamento de NR-35 e ele foi presencial? | ASO e certificado do treinamento | 10-02 |
 
 ---
 
@@ -56,10 +57,10 @@
 | b09 | Quais são os contatos e a matriz de escalonamento de cada fornecedor (central, NOC, gerente de contas)? | Anexo do contrato ou cadastro do fornecedor | 09-06 |
 | b10 | O que diz a ficha técnica do cabo comprado (G.652.D ou G.657, IOR, atenuação)? | Anexo técnico, processo de compra | 02-04, 06-05, 09-05, 02-01, 02-02, 02-06 |
 | b11 | Qual é o modelo do contrato de ocupação de postes (valor por ponto, prazos, multas)? | Contrato-padrão de compartilhamento | 07-01, 07-06 |
-| b12 | Qual é o procedimento escrito para trabalho em poste com rede de telecom, e o modelo de APR e de permissão de trabalho? | Procedimentos de segurança (intranet) | 10-01 |
+| b12 | Qual é o procedimento escrito para trabalho em poste com rede de telecom, e o modelo de APR e de permissão de trabalho? | Procedimentos de segurança (intranet) | 10-01, 10-02 |
 | b13 | O contrato conta o mês como 30 dias (43.200 min) ou pelos dias do calendário? | Cláusula de SLA | 09-01 |
 | b14 | Latência alta, perda de pacotes ou velocidade abaixo do contratado contam como indisponibilidade no contrato? | Anexo de nível de serviço | 09-01 |
-| b15 | Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho? | Procedimentos de segurança (intranet) | 10-05 |
+| b15 | Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho? | Procedimentos de segurança (intranet) | 10-05, 10-02 |
 | b16 | Que valores o projeto usa no orçamento de potência: atenuação da fibra (dB/km), perda por conector, por fusão e margem? | Projeto executivo ou memorial de cálculo da rede | 02-06, 02-07, 04-03, 04-05 |
 | b17 | Qual método de referência de perda de inserção a empresa pede (1, 2 ou 3 cordões), em quais comprimentos de onda, e qual é o critério de aceite da perda total? | Especificação técnica de aceite de obra | 06-01, 09-05 |
 | b18 | O contrato ou o padrão de entrega diz em que SRC o fornecedor tem de mandar os arquivos (as-built, KML, planilha de coordenadas)? | Contrato e padrão de entrega | 08-03 |
@@ -82,6 +83,7 @@
 | b35 | Os links contratados têm SLA? Qual a disponibilidade, o período (mensal ou anual) e qual a meta de disponibilidade que a empresa quer para os links operativos? | Contratos de link e especificação técnica da rede | 01-02, 01-05, 09-01 |
 | b36 | Que serviços (SCADA, teleproteção, medição, religadores, corporativo) vão na rede própria e quais vão em link contratado? | Projeto da rede de telecom ou plano diretor | 01-01, 01-02 |
 | b37 | Existe um plano de migração da rede de transporte (por exemplo, de SDH para pacotes)? Quais são as etapas? | Plano diretor de telecom, projeto de modernização | 01-06 |
+| b38 | Quando o serviço é em altura e também em proximidade da rede, por quanto tempo vale a PT no procedimento: turno ou jornada? | Procedimento de trabalho em poste e modelo de PT | 10-02 |
 
 ---
 
@@ -91,7 +93,7 @@
 | --- | --- | --- | --- |
 | c01 | Para trabalhar no cabo de telecom de um poste com baixa tensão (a 0,60 m dela), que autorização NR-10 eu preciso e quem emite a APR e a permissão de trabalho? | Segurança do trabalho (SESMT) | 10-01 |
 | c02 | Como a empresa vai se preparar para a nova NR-10 (junho de 2027)? Quem faz telecom em poste terá o treinamento específico de compartilhamento (40 h) ou o Básico + Complementar do SEP? | SESMT / RH | 10-05 |
-| c03 | Quais EPIs são exigidos para telecom em poste e na fusão? Qual é o plano de resgate em poste? | SESMT | 10-01, 10-04 |
+| c03 | Quais EPIs são exigidos para telecom em poste e na fusão? Qual é o plano de resgate em poste? | SESMT | 10-01, 10-04, 10-02 |
 | c04 | Quem é gestor e quem é fiscal de cada contrato de telecom? Qual é o meu papel e a minha alçada? | Líder de TI | 09-03 |
 | c05 | Qual sistema de chamados usamos e quem pode abrir chamado em nome da empresa? | Líder de TI | 09-06 |
 | c06 | A rede é própria, contratada ou mista? Que protocolo SCADA usamos? Já há IEC 61850? | Engenharia / automação | 01-01 |
@@ -111,6 +113,7 @@
 | c20 | Para travessia de rodovia, que órgão autoriza e quem na empresa cuida disso? | Área de projetos ou de compartilhamento de postes | 07-05 |
 | c21 | Quem acompanha o novo regulamento dos postes na empresa e como a equipe de campo fica sabendo quando algo mudar? | Área regulatória ou de relacionamento com ocupantes | 07-07 |
 | c22 | Os links importantes têm rota dupla, com caminhos fisicamente diferentes? Como isso é verificado? | Engenharia de telecom e planejamento da rede | 01-05 |
+| c23 | Quem faz a inspeção periódica do cinturão e dos talabartes, e onde ficam os registros? | Segurança do trabalho (SESMT) ou almoxarifado | 10-02 |
 
 ---
 
@@ -165,6 +168,7 @@
 | d45 | Depois de temporal ou queimada, quem decide reinspecionar e como os danos em cabos de ocupantes são registrados? | 07-07 |
 | d46 | Que protocolos (DNP3, IEC 104, IEC 61850) a equipe de automação usa, e onde eles passam pela rede? | 01-03, 01-04 |
 | d47 | Que meios de transporte a empresa usa para cada serviço (fibra, rádio, PLC, SDH, MPLS-TP, celular)? | 01-06 |
+| d48 | No poste, que talabarte de posicionamento e que sistema de retenção de queda a equipe usa, e onde prende cada um? | 10-02 |
 
 ---
 

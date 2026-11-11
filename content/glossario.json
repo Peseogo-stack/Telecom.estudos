@@ -133,12 +133,14 @@
     "pt": "Análise de risco",
     "definicao": "Avaliação dos riscos da tarefa, das causas, das consequências e das medidas de controle, feita antes de começar. Na empresa, muitas vezes chamada de APR (análise preliminar de risco).",
     "fontes": [
-      "nr10-portaria-737"
+      "nr10-portaria-737",
+      "nr35-vigente"
     ],
     "licoes": [
       "10-01",
       "10-05",
-      "07-02"
+      "07-02",
+      "10-02"
     ],
     "sigla": "APR",
     "en": "Risk analysis"
@@ -146,12 +148,14 @@
   {
     "id": "permissao-de-trabalho",
     "pt": "Permissão de trabalho",
-    "definicao": "Documento que autoriza um trabalho não rotineiro, com a análise de riscos e as condições impeditivas. Na nova NR-10, vale pela duração da atividade, no máximo o turno, e pode ser revalidada.",
+    "definicao": "Documento escrito que autoriza um trabalho não rotineiro, com as medidas de controle, as condições impeditivas e as medidas de emergência e resgate. Na NR-35, vale pela duração da atividade, restrita ao turno ou à jornada; na nova NR-10 (proximidade, a partir de 06/2027), no máximo o turno. Pode ser revalidada se nada mudar.",
     "fontes": [
-      "nr10-portaria-737"
+      "nr10-portaria-737",
+      "nr35-vigente"
     ],
     "licoes": [
-      "10-05"
+      "10-05",
+      "10-02"
     ],
     "sigla": "PT",
     "en": "Work permit"
@@ -2639,6 +2643,80 @@
     "licoes": [
       "01-03",
       "01-04"
+    ]
+  },
+  {
+    "id": "aso",
+    "sigla": "ASO",
+    "pt": "Atestado de saúde ocupacional",
+    "en": "Occupational health certificate",
+    "definicao": "Documento do exame médico ocupacional. Na NR-35, a aptidão para trabalho em altura precisa estar registrada nele (35.4.4.1).",
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "licoes": [
+      "10-02"
+    ]
+  },
+  {
+    "id": "spiq",
+    "sigla": "SPIQ",
+    "pt": "Sistema de proteção individual contra quedas",
+    "en": "Personal fall protection system",
+    "definicao": "Proteção contra quedas usada pelo próprio trabalhador. Pode ser de restrição de movimentação, de retenção de queda, de posicionamento no trabalho ou de acesso por cordas (NR-35, 35.6.4).",
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "licoes": [
+      "10-02"
+    ]
+  },
+  {
+    "id": "cinturao-paraquedista",
+    "pt": "Cinturão de segurança tipo paraquedista",
+    "en": "Full body harness",
+    "definicao": "EPI preso ao corpo que detém a queda e distribui a força pelo menos nas coxas, na pélvis, no peito e no tronco (glossário da NR-35). Obrigatório na retenção de queda (35.6.9).",
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "licoes": [
+      "10-02"
+    ]
+  },
+  {
+    "id": "talabarte",
+    "pt": "Talabarte",
+    "en": "Lanyard",
+    "definicao": "Elemento de ligação entre o cinturão e a ancoragem. Na retenção de queda, precisa ter absorvedor de energia integrado (NR-35, 35.6.9.1.1); não pode ser ligado a outro talabarte nem usado com nós, salvo indicação do fabricante (35.6.11.1.1).",
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "licoes": [
+      "10-02"
+    ]
+  },
+  {
+    "id": "absorvedor-de-energia",
+    "pt": "Absorvedor de energia",
+    "en": "Energy absorber",
+    "definicao": "Elemento que limita a força de impacto transmitida ao trabalhador, dissipando a energia da queda (glossário da NR-35). O impacto no trabalhador não pode passar de 6 kN (35.6.7).",
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "licoes": [
+      "10-02"
+    ]
+  },
+  {
+    "id": "fator-de-queda",
+    "pt": "Fator de queda",
+    "en": "Fall factor",
+    "definicao": "Razão entre a distância que o trabalhador percorreria na queda e o comprimento do equipamento que vai detê-lo (glossário da NR-35). Ancoragem mais alta encurta a queda.",
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "licoes": [
+      "10-02"
     ]
   }
 ]

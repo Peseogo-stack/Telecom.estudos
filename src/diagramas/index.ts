@@ -37,6 +37,7 @@ import { PilhaProtocolos } from './PilhaProtocolos';
 import { GooseMulticast } from './GooseMulticast';
 import { AnelNoves } from './AnelNoves';
 import { MeiosTransporte } from './MeiosTransporte';
+import { CaminhoNr35 } from './CaminhoNr35';
 import { ZonasUtmRoraima } from './ZonasUtmRoraima';
 import { FeicaoETabela } from './FeicaoETabela';
 import { FiltrarXSelecionar } from './FiltrarXSelecionar';
@@ -59,6 +60,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'goose-multicast': GooseMulticast,
   'anel-noves': AnelNoves,
   'meios-transporte': MeiosTransporte,
+  'caminho-nr35': CaminhoNr35,
   'zonas-poste': ZonasPoste,
   'nr10-linha-do-tempo': Nr10LinhaDoTempo,
   'disponibilidade-barra': DisponibilidadeBarra,

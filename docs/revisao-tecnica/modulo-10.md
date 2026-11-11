@@ -58,3 +58,29 @@ Regra da revisão: nada pode afrouxar uma regra de segurança. Na dúvida, o ite
 ## Não conferido
 
 - **IEC 60825-1 (classes de laser).** A norma é paga. A revisão usou a amostra oficial da IEC 60825-2 AMD1 e a nota da TREND para as classes do VFL. As definições de local sem restrição, restrito e controlado são da norma-base (60825-2:2004), que não está na amostra. A lição as descreve de forma resumida e manda confirmar na empresa como cada local é classificado.
+
+## Lição 10-02 · Altura: APR, PT e SPIQ (11/11/2026)
+
+Fontes lidas no texto oficial (gov.br): NR-35 consolidada até a Portaria MTE nº 1.259/2026; a própria Portaria nº 1.259/2026; NR-10 vigente; Portaria MTE nº 737/2026 (nova NR-10). Cada frase da lição cita o item da norma.
+
+**Regra de revisão:** nada pode ficar mais frouxo que o texto. Onde a norma tem exceção que só a empresa pode usar, a lição fica do lado mais rígido e manda confirmar.
+
+| Ponto | Como ficou | Por quê |
+| --- | --- | --- |
+| Validade da PT | NR-35: duração da atividade, "restrita ao turno ou à jornada" (35.5.8.2). Nova NR-10, trabalho em proximidade não rotineiro: restrita ao turno (10.7.2.2). Quando as duas valem, a lição manda não usar a "jornada" e confirmar na empresa | As duas normas divergem; a lição não pode escolher a mais folgada |
+| Talabarte | "Deve ter" absorvedor integrado na retenção de queda (35.6.9.1.1, Portaria 1.680/2025) | A primeira redação dizia "tem", como se fosse sempre assim |
+| 6 kN | O SPIQ é escolhido para o impacto não passar de 6 kN (35.6.7) | É critério de seleção, não propriedade de qualquer equipamento |
+| Peça que segurou queda | "Sai de uso" (35.6.6.5) | A norma admite restauração prevista em norma técnica e pelo fabricante; a lição não abre essa porta para o trabalhador |
+| Escada extensível | Fixada em mais de um ponto, com as travas engatadas (Anexo III, 5.2.2.8.1) | As exceções (5.2.2.8.1.1 e 5.2.2.8.1.2) dependem de análise da empresa; não entraram |
+| Treinamento presencial | 35.4.5 desde 16/07/2026; prazo de 1 ano para refazer o inicial (art. 8º da Portaria 1.259) | Conferido no texto da portaria |
+| Combinação de posicionamento e retenção no poste | Não descrita; "confirmar na empresa" | A NR-35 não descreve o arranjo no poste |
+
+Ficou de fora, por não ter fonte normativa direta: comprimento máximo de escada extensível (o 7 m do 5.2.2.7.5 é da escada de encosto, e não está claro se vale para a extensível) e qualquer técnica de amarração de escada em poste.
+
+**Questões:** 8, com a correta sempre no limite de tamanho e, nas de "colega diz", duas alternativas que concordam e duas que discordam (q4 e q8).
+
+**Glossário:** 6 termos novos (ASO, SPIQ, cinturão tipo paraquedista, talabarte, absorvedor de energia, fator de queda). O termo "permissão de trabalho" já existia: a definição passou a cobrir a NR-35 e a nova NR-10.
+
+**Perguntas para a empresa:** 4 novas (a20, b38, c23, d48) e 3 ligadas (b12, b15, c03).
+
+**Vídeos:** 2, os dois com aviso. Ficaram de fora: os de 2020 com a numeração antiga da NR-35 (35.4.5 para a análise de risco), um de amarração de escada em poste (técnica de bombeiro, não procedimento) e um sobre talabarte Y que cita a definição antiga.

@@ -247,7 +247,8 @@
     "texto": "Qual é o procedimento escrito para trabalho em poste com rede de telecom, e o modelo de APR e de permissão de trabalho?",
     "dica": "Procedimentos de segurança (intranet)",
     "licoes": [
-      "10-01"
+      "10-01",
+      "10-02"
     ]
   },
   {
@@ -274,7 +275,8 @@
     "texto": "Quais trabalhos de telecom em poste a empresa considera rotineiros (procedimento escrito) e quais exigem permissão de trabalho?",
     "dica": "Procedimentos de segurança (intranet)",
     "licoes": [
-      "10-05"
+      "10-05",
+      "10-02"
     ]
   },
   {
@@ -324,7 +326,8 @@
     "dica": "SESMT",
     "licoes": [
       "10-01",
-      "10-04"
+      "10-04",
+      "10-02"
     ]
   },
   {
@@ -1165,6 +1168,42 @@
     "dica": "Colega da engenharia de telecom",
     "licoes": [
       "01-06"
+    ]
+  },
+  {
+    "id": "a20",
+    "onde": "sozinho",
+    "texto": "O meu ASO registra a aptidão para trabalho em altura? Quando foi o meu último treinamento de NR-35 e ele foi presencial?",
+    "dica": "ASO e certificado do treinamento",
+    "licoes": [
+      "10-02"
+    ]
+  },
+  {
+    "id": "b38",
+    "onde": "documentos",
+    "texto": "Quando o serviço é em altura e também em proximidade da rede, por quanto tempo vale a PT no procedimento: turno ou jornada?",
+    "dica": "Procedimento de trabalho em poste e modelo de PT",
+    "licoes": [
+      "10-02"
+    ]
+  },
+  {
+    "id": "c23",
+    "onde": "outras-areas",
+    "texto": "Quem faz a inspeção periódica do cinturão e dos talabartes, e onde ficam os registros?",
+    "dica": "Segurança do trabalho (SESMT) ou almoxarifado",
+    "licoes": [
+      "10-02"
+    ]
+  },
+  {
+    "id": "d48",
+    "onde": "colega",
+    "texto": "No poste, que talabarte de posicionamento e que sistema de retenção de queda a equipe usa, e onde prende cada um?",
+    "dica": "Mostrado no chão, antes de subir",
+    "licoes": [
+      "10-02"
     ]
   }
 ]

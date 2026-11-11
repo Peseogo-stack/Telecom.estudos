@@ -1,0 +1,252 @@
+[
+  {
+    "id": "10-02-q1",
+    "licao": "10-02",
+    "enunciado": "A partir de quando a NR-35 se aplica a um trabalho?",
+    "alternativas": [
+      {
+        "texto": "Diferença de nível acima de 2,0 m, com risco de queda",
+        "correta": true,
+        "explicacao": "Certo. A NR-35 vale para toda atividade com diferença de nível acima de 2,0 m do nível inferior, onde haja risco de queda (35.2.1)."
+      },
+      {
+        "texto": "Diferença de nível acima de 1,5 m, em qualquer serviço",
+        "correta": false,
+        "explicacao": "O limite da norma é acima de 2,0 m, e só onde há risco de queda (35.2.1)."
+      },
+      {
+        "texto": "Só acima de 6 m de diferença de nível, em qualquer caso",
+        "correta": false,
+        "explicacao": "Não há esse limite. A NR-35 vale acima de 2,0 m de diferença de nível, onde haja risco de queda (35.2.1)."
+      },
+      {
+        "texto": "Só quando o serviço também é perto da rede elétrica",
+        "correta": false,
+        "explicacao": "A NR-35 vale por causa da altura, com ou sem rede elétrica perto: acima de 2,0 m, com risco de queda (35.2.1)."
+      }
+    ],
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-02-q2",
+    "licao": "10-02",
+    "enunciado": "Pela NR-35, por quanto tempo vale a permissão de trabalho (PT)?",
+    "alternativas": [
+      {
+        "texto": "Uma semana, enquanto a obra não terminar",
+        "correta": false,
+        "explicacao": "A PT é limitada à duração da atividade, restrita ao turno ou à jornada (35.5.8.2)."
+      },
+      {
+        "texto": "A atividade, restrita ao turno ou à jornada",
+        "correta": true,
+        "explicacao": "Certo. A PT vale pela duração da atividade, restrita ao turno ou à jornada, e pode ser revalidada se não mudarem as condições nem a equipe (35.5.8.2)."
+      },
+      {
+        "texto": "Trinta dias, renovados pelo supervisor da equipe",
+        "correta": false,
+        "explicacao": "Não existe PT de 30 dias na NR-35; ela é restrita ao turno ou à jornada (35.5.8.2)."
+      },
+      {
+        "texto": "Sem prazo, até a análise de risco mudar",
+        "correta": false,
+        "explicacao": "A PT tem prazo: a duração da atividade, restrita ao turno ou à jornada (35.5.8.2)."
+      }
+    ],
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-02-q3",
+    "licao": "10-02",
+    "enunciado": "Um serviço em altura está descrito no procedimento operacional da empresa e faz parte da rotina. O que a NR-35 pede?",
+    "alternativas": [
+      {
+        "texto": "Nada: atividade rotineira dispensa análise de risco",
+        "correta": false,
+        "explicacao": "Todo trabalho em altura começa por análise de risco (35.5.5); na rotina, ela pode estar no procedimento (35.5.6)."
+      },
+      {
+        "texto": "PT emitida antes de cada subida, mesmo na rotina",
+        "correta": false,
+        "explicacao": "A PT é exigida na atividade não rotineira (35.5.7). Na rotina, a análise pode estar no procedimento (35.5.6). A empresa pode exigir mais: confirme."
+      },
+      {
+        "texto": "Análise de risco, que pode estar no procedimento",
+        "correta": true,
+        "explicacao": "Certo. Na atividade rotineira, a análise de risco pode estar contemplada no procedimento operacional (35.5.6)."
+      },
+      {
+        "texto": "Só a assinatura do supervisor no fim do serviço",
+        "correta": false,
+        "explicacao": "A assinatura no fim não substitui a análise de risco antes do trabalho (35.5.5 e 35.5.6)."
+      }
+    ],
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "10-02-q4",
+    "licao": "10-02",
+    "enunciado": "Um colega diz que o treinamento periódico de NR-35 pode ser feito a distância. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Certo, desde que a parte prática seja filmada",
+        "correta": false,
+        "explicacao": "Desde 16/07/2026, os treinamentos da NR-35 são presenciais (35.4.5, Portaria MTE nº 1.259/2026)."
+      },
+      {
+        "texto": "Certo: só o treinamento inicial precisa ser presencial",
+        "correta": false,
+        "explicacao": "O 35.4.5 vale para os treinamentos previstos na NR-35, não só para o inicial."
+      },
+      {
+        "texto": "Errado: desde 16/07/2026 os treinamentos são presenciais",
+        "correta": true,
+        "explicacao": "Certo. A Portaria MTE nº 1.259/2026 incluiu o 35.4.5: os treinamentos da NR-35 são presenciais. O periódico é a cada 2 anos, com no mínimo 8 h (35.4.2.2)."
+      },
+      {
+        "texto": "Errado: o periódico deixou de existir, só vale o inicial",
+        "correta": false,
+        "explicacao": "O periódico continua: a cada dois anos, com no mínimo 8 h (35.4.2.2)."
+      }
+    ],
+    "fontes": [
+      "nr35-vigente",
+      "nr35-portaria-1259"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "10-02-q5",
+    "licao": "10-02",
+    "enunciado": "O talabarte não alcança o ponto de ancoragem. Um colega sugere emendar dois talabartes. O que a NR-35 diz?",
+    "alternativas": [
+      {
+        "texto": "Pode, se os dois tiverem absorvedor de energia",
+        "correta": false,
+        "explicacao": "Mesmo com absorvedor, o talabarte não pode ser ligado a outro talabarte, salvo especificação do fabricante (35.6.11.1.1)."
+      },
+      {
+        "texto": "Não pode, salvo se o fabricante especificar",
+        "correta": true,
+        "explicacao": "Certo. O talabarte não pode ser ligado a outro talabarte, elemento de ligação ou extensor, nem usado com nós ou laços, salvo especificação do fabricante (35.6.11.1.1)."
+      },
+      {
+        "texto": "Pode, desde que a emenda seja um nó bem apertado",
+        "correta": false,
+        "explicacao": "Nós e laços também são proibidos no talabarte, salvo especificação do fabricante (35.6.11.1.1)."
+      },
+      {
+        "texto": "Pode, se o trabalho durar menos de 15 minutos",
+        "correta": false,
+        "explicacao": "A duração não muda a regra: talabarte não se liga a outro talabarte (35.6.11.1.1)."
+      }
+    ],
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-02-q6",
+    "licao": "10-02",
+    "enunciado": "Com que frequência a NR-35 pede a inspeção do SPIQ?",
+    "alternativas": [
+      {
+        "texto": "Rotineira antes do uso e periódica ao menos a cada 12 meses",
+        "correta": true,
+        "explicacao": "Certo. A inspeção rotineira é feita antes do início dos trabalhos (35.6.6.2) e a periódica, no mínimo uma vez a cada 12 meses (35.6.6.3)."
+      },
+      {
+        "texto": "Só a periódica, a cada 2 anos, junto com o treinamento",
+        "correta": false,
+        "explicacao": "A periódica é no mínimo a cada 12 meses, e há também a rotineira, antes de cada uso (35.6.6.2 e 35.6.6.3)."
+      },
+      {
+        "texto": "Só quando o equipamento chega novo do fornecedor",
+        "correta": false,
+        "explicacao": "Essa é a inspeção inicial. Também há a rotineira, antes de cada uso, e a periódica, ao menos anual (35.6.6)."
+      },
+      {
+        "texto": "Só depois de uma queda, para decidir o descarte",
+        "correta": false,
+        "explicacao": "Elemento que sofreu queda sai de uso (35.6.6.5); a inspeção vem antes: rotineira a cada uso e periódica no mínimo anual (35.6.6)."
+      }
+    ],
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "dificuldade": 1
+  },
+  {
+    "id": "10-02-q7",
+    "licao": "10-02",
+    "enunciado": "Você vai subir por uma escada extensível encostada no poste. O que a NR-35 exige?",
+    "alternativas": [
+      {
+        "texto": "Escada fixada em mais de um ponto e três pontos de apoio",
+        "correta": true,
+        "explicacao": "Certo. A extensível fica fixada em mais de um ponto, com as travas engatadas (Anexo III, 5.2.2.8.1), e a subida e a descida são feitas com três pontos de apoio (5.2.2.1.2)."
+      },
+      {
+        "texto": "Escada solta, segura por um colega na base",
+        "correta": false,
+        "explicacao": "A extensível deve ser fixada em mais de um ponto (Anexo III, 5.2.2.8.1); a norma não troca a fixação por alguém segurando."
+      },
+      {
+        "texto": "Só a análise de risco; a escada não tem regra própria",
+        "correta": false,
+        "explicacao": "A análise de risco é exigida (4.1.1), e o Anexo III também traz regras de fixação e de três pontos de apoio."
+      },
+      {
+        "texto": "Subir com as ferramentas na mão para ganhar tempo",
+        "correta": false,
+        "explicacao": "Na subida e na descida são três pontos de apoio (Anexo III, 5.2.2.1.2); mãos ocupadas impedem isso."
+      }
+    ],
+    "fontes": [
+      "nr35-vigente"
+    ],
+    "dificuldade": 2
+  },
+  {
+    "id": "10-02-q8",
+    "licao": "10-02",
+    "enunciado": "Em 2028, um serviço não rotineiro em altura também é trabalho em proximidade da rede. Um colega diz que a PT pode valer a jornada toda. O que responder?",
+    "alternativas": [
+      {
+        "texto": "Certo: a NR-35 fala em turno ou jornada",
+        "correta": false,
+        "explicacao": "A NR-35 fala em turno ou jornada, mas a nova NR-10 restringe a PT do trabalho em proximidade ao turno (10.7.2.2)."
+      },
+      {
+        "texto": "Certo: a PT vale a semana, se a equipe não mudar",
+        "correta": false,
+        "explicacao": "Nenhuma das duas normas aceita PT de uma semana; a revalidação também tem regra (NR-35, 35.5.8.2; nova NR-10, 10.7.2.2)."
+      },
+      {
+        "texto": "Errado: a nova NR-10 limita ao turno; confirme",
+        "correta": true,
+        "explicacao": "Certo. Na nova NR-10, em vigor desde junho de 2027, a PT do trabalho em proximidade não rotineiro fica restrita ao turno (10.7.2.2). Confirme a regra no procedimento da empresa."
+      },
+      {
+        "texto": "Errado: a PT só vale por uma hora",
+        "correta": false,
+        "explicacao": "Nenhuma das normas fixa uma hora: a NR-35 fala em turno ou jornada, e a nova NR-10, em turno."
+      }
+    ],
+    "fontes": [
+      "nr35-vigente",
+      "nr10-portaria-737"
+    ],
+    "dificuldade": 3
+  }
+]

@@ -17,7 +17,15 @@ Branch `trilha-em-etapas` (D20). A Trilha agora agrupa os módulos em 4 etapas: 
 - As etapas ficam em `content/curriculo.json` (`etapas`). O validador confere que cada módulo está em uma etapa só e que o plano segue a ordem da Trilha.
 - Plano: um módulo por semana (o 11 em duas), com novos marcos. A 01-01 abre o plano, como lição normal da semana 1 (D21).
 - Cada módulo mostra "N de M prontas"; dentro dele, as lições que faltam ficam num bloco "Em construção" no fim.
-- Lições que faltam na Etapa 1: 03-02, 03-05, 03-06 e 10-02. O módulo 2 está completo.
+- Lições que faltam na Etapa 1: 03-02, 03-05 e 03-06. Os módulos 1, 2 e 10 estão completos.
+
+## Etapa 1 completa (11/11/2026)
+
+Uma lição por vez, com revisão técnica, `npm run verificar`, merge e push. Ordem: 10-02, 03-02, 03-05, 03-06.
+
+| Lição | Fechada em | Questões | Vídeos | O que a revisão corrigiu |
+| --- | --- | --- | --- | --- |
+| 10-02 Altura: APR, PT e SPIQ | 11/11/2026 | 8 | 2 (com aviso) | PT: a nova NR-10 restringe ao turno, a NR-35 aceita a jornada; a lição manda não usar a jornada quando as duas valem. "Tem" absorvedor virou "deve ter"; 6 kN como critério de escolha; peça que segurou queda "sai de uso" |
 
 ## Vídeos do P1 e do módulo 1: conferidos em 11/11/2026
 

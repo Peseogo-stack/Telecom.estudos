@@ -675,6 +675,35 @@
     ]
   },
   {
+    "licao": "10-02",
+    "videos": [
+      {
+        "url": "https://www.youtube.com/watch?v=c61_-lCL4qc",
+        "titulo": "EP.2 - Planejamento, Análise de Risco e Permissão de Trabalho",
+        "canal": "Marcelo Boana",
+        "duracao": "10:23",
+        "observar": "Pelos capítulos: hierarquia de medidas, o que entra na análise de risco, rotineira × não rotineira, o que a PT precisa ter e quando suspender o trabalho.",
+        "aviso": "O canal avisa que usa imagens geradas por inteligência artificial. O vídeo trata da NR-35 em geral: a regra da nova NR-10 para a PT do trabalho em proximidade (só o turno) está na lição.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, capítulos, duração e idioma pela YouTube Data API. Sem transcrição."
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=K09DRlT3ge4",
+        "titulo": "Como Usar o CINTO Tipo PARAQUEDISTA Corretamente",
+        "canal": "Bombeiro Paraizo",
+        "duracao": "12:51",
+        "observar": "Como inspecionar e vestir o cinturão tipo paraquedista.",
+        "aviso": "A inspeção e o ajuste seguem o manual do fabricante do seu cinturão e o procedimento da empresa; o vídeo não é sobre poste.",
+        "conferidoEm": "2026-11-11",
+        "conferencia": "oEmbed (título e canal); descrição, duração e idioma pela YouTube Data API. Sem capítulos nem transcrição."
+      }
+    ],
+    "termosBusca": [
+      "NR 35 análise de risco permissão de trabalho",
+      "cinto paraquedista inspeção talabarte absorvedor"
+    ]
+  },
+  {
     "licao": "10-03",
     "videos": [],
     "termosBusca": [

@@ -274,9 +274,9 @@
       "fora_de_quadra": 18
     },
     "postes_por_material": {
-      "concreto": 45,
+      "concreto": 46,
       "aco": 4,
-      "madeira": 14
+      "madeira": 16
     },
     "postes_com_trafo": 7,
     "postes_com_iluminacao_publica": 25,

@@ -690,7 +690,7 @@ function gerarGabarito() {
       vao_mais_longo: { cod_vao: maior.cod_vao, compr_m: maior.compr_m },
       vaos_com_travessia: vaos.filter((v) => v.travessia).length,
       postes_por_quadra: porQuadra,
-      postes_por_material: cont(postes, (p) => p.material),
+      postes_por_material: cont(todosPostes, (p) => p.material),
       postes_com_trafo: todosPostes.filter((p) => p.tem_trafo).length,
       postes_com_iluminacao_publica: todosPostes.filter((p) => p.tem_ip).length,
       caixas_por_tipo: cont(caixas, (c) => c.tipo),

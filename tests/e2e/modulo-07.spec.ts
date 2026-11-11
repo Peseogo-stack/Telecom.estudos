@@ -77,7 +77,7 @@ test('07-03: obrigação x modelo, ilegível do solo e cabo sem plaqueta não é
   await page.goto('./#/licao/07-03');
   const licao = page.locator('main');
   await expect(licao).toContainText('Dois exemplos: não é a regra da sua empresa');
-  await expect(licao).toContainText('A obrigação vem das resoluções e vale para todos.');
+  await expect(licao).toContainText('A obrigação vem das resoluções e vale para todo ocupante.');
   await expect(licao).toContainText('ilegível do solo');
   await expect(licao).toContainText('Não suba para ler');
   await expect(licao).toContainText('não corta nem retira');

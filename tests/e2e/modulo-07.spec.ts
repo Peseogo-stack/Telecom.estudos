@@ -25,9 +25,9 @@ test('07-01: diagrama mostra a pilha do que vale em 10/11/2026 e a caixa de prop
 
 test('07-01: a proposta vem com data e não é apresentada como regra vigente', async ({ page }) => {
   await page.goto('./#/licao/07-01');
-  const prosa = page.locator('.prosa');
-  await expect(prosa).toContainText('O que ainda é proposta, em 10/11/2026');
-  await expect(prosa).toContainText('não é lei');
+  const licao = page.locator('main');
+  await expect(licao).toContainText('O que ainda é proposta, em 10/11/2026');
+  await expect(licao).toContainText('não é lei');
 });
 
 test('07-01: termo detentor abre a definição no glossário', async ({ page }) => {

@@ -908,5 +908,41 @@
     "licoes": [
       "08-07"
     ]
+  },
+  {
+    "id": "b26",
+    "onde": "documentos",
+    "texto": "Qual é o modelo de plaqueta na norma da empresa: tamanho, cor, o que precisa estar escrito e a que distância do poste?",
+    "dica": "Norma técnica de compartilhamento",
+    "licoes": [
+      "07-03"
+    ]
+  },
+  {
+    "id": "d36",
+    "onde": "colega",
+    "texto": "Como registro um cabo sem plaqueta ou com plaqueta ilegível: formulário, foto, sistema?",
+    "dica": "",
+    "licoes": [
+      "07-03"
+    ]
+  },
+  {
+    "id": "d37",
+    "onde": "colega",
+    "texto": "Depois de quantos avisos, e por quem, um cabo sem dono identificado passa a ser tratado como clandestino?",
+    "dica": "",
+    "licoes": [
+      "07-03"
+    ]
+  },
+  {
+    "id": "b27",
+    "onde": "documentos",
+    "texto": "O contrato prevê multa ou prazo para o ocupante identificar os cabos?",
+    "dica": "Contrato com o ocupante",
+    "licoes": [
+      "07-03"
+    ]
   }
 ]

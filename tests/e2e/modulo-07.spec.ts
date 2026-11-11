@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 
 test.use({ viewport: { width: 390, height: 844 } });
 
-for (const id of ['07-01', '07-02']) {
+for (const id of ['07-01', '07-02', '07-03']) {
   test(`lição ${id}: diagrama com descrição e sem rolagem lateral em 390 px`, async ({ page }) => {
     await page.goto(`./#/licao/${id}`);
     const svg = page.locator('figure.diagrama svg[role="img"]').first();
@@ -63,7 +63,34 @@ test('07-02: termo rede secundária abre a definição no glossário', async ({ 
   await expect(page.getByText('Rede de baixa tensão do poste', { exact: false }).first()).toBeVisible();
 });
 
-for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro', '#/licao/07-02', '#/licao/07-02/questoes']) {
+test('07-03: diagrama traz a etiqueta de exemplo, a cota e o modelo novo da Cemig', async ({ page }) => {
+  await page.goto('./#/licao/07-03');
+  const svg = page.locator('figure.diagrama svg');
+  await expect(svg).toContainText('Exemplo. Vale a norma da sua distribuidora.');
+  await expect(svg).toContainText('de 200 a 400 mm do poste');
+  await expect(svg).toContainText('NOME DO OCUPANTE');
+  await expect(svg).toContainText('CNPJ + QR Code');
+  await expect(svg).toContainText('fundo amarelo (exemplos)');
+});
+
+test('07-03: obrigação x modelo, ilegível do solo e cabo sem plaqueta não é clandestino por si só', async ({ page }) => {
+  await page.goto('./#/licao/07-03');
+  const licao = page.locator('main');
+  await expect(licao).toContainText('Dois exemplos: não é a regra da sua empresa');
+  await expect(licao).toContainText('A obrigação vem das resoluções e vale para todos.');
+  await expect(licao).toContainText('ilegível do solo');
+  await expect(licao).toContainText('Não suba para ler');
+  await expect(licao).toContainText('não corta nem retira');
+});
+
+test('07-03: termo plaqueta abre a definição no glossário', async ({ page }) => {
+  await page.goto('./#/licao/07-03');
+  await page.getByRole('link', { name: 'plaqueta', exact: true }).first().click();
+  await expect(page).toHaveURL(/glossario\?t=plaqueta/);
+  await expect(page.getByText('diz de quem é o cabo', { exact: false }).first()).toBeVisible();
+});
+
+for (const rota of ['#/licao/07-01', '#/licao/07-01/questoes', '#/glossario?t=posteiro', '#/licao/07-02', '#/licao/07-02/questoes', '#/licao/07-03', '#/licao/07-03/questoes']) {
   test(`acessibilidade (axe) em /${rota}`, async ({ page }) => {
     await page.goto(`./${rota}`);
     await page.locator('main h1').first().waitFor();

@@ -49,3 +49,18 @@ Cada lição é escrita a partir de uma ficha com o trecho literal de cada fonte
 **Não conferido:** o afastamento até a média tensão na Energisa (a tabela aparece "não conferido").
 
 **Vídeos:** nenhum entrou. Os resultados eram de escritório de advocacia, notícia, venda de curso e um vídeo de 22 segundos sem descrição.
+
+## 07-03 — Plaqueta e identificação (11/11/2026)
+
+**Fontes (abertas em 10/11/2026):** REN 1.044/2022 (art. 17), Resolução Conjunta 4/2014 (art. 8º), Cemig ND-6.6 (abertura do item 6, Figuras 4.1 e 4.2, item 6.11) e Energisa NDU-009 v4.0 (10.1.27). A obrigação de identificar vem das resoluções; o modelo da plaqueta, das normas de cada distribuidora (Cemig e Energisa como exemplo).
+
+**Dados do exercício conferidos no arquivo:** 5 pontos de fixação sem plaqueta (3 da Operadora Alfa e 2 da Operadora Beta, ocupantes fictícios) e o ocupante "Sem identificação" em 4 postes.
+
+| Estava | Fonte | Ficou |
+| --- | --- | --- |
+| "É pela plaqueta que o detentor liga o cabo ao contrato…", com a REN como fonte | A REN não diz isso | Frase retirada; o porquê da plaqueta fica como explicação, sem fonte atribuída |
+| A obrigação "vale para todos" | REN e Resolução Conjunta falam do ocupante e da prestadora | "vale para todo ocupante" |
+| "Os números divergem (200 a 400 mm contra 300 mm)" | 300 mm cabe dentro de 200 a 400 mm | "Os exemplos não dizem o mesmo: faixa de 200 a 400 mm na Cemig, 300 mm fixos na Energisa" |
+| Questão 6: distrator "a média dos dois exemplos, 250 mm" (a conta não fecha) | — | Trocado por "subir no poste com trena para medir de novo", com a explicação de segurança |
+
+**Vídeos:** nenhum entrou. Apareceram uma entrevista de 2019 sobre clandestinos, uma reportagem que mostra retirada de cabos, um vídeo de 25 segundos de provedor e um canal de entretenimento.

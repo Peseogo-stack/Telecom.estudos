@@ -40,6 +40,7 @@ import { VersoesQgis } from './VersoesQgis';
 import { FormatosArquivo } from './FormatosArquivo';
 import { CicloDeEdicao } from './CicloDeEdicao';
 import { CicloQfield } from './CicloQfield';
+import { PlaquetaIdentificacao } from './PlaquetaIdentificacao';
 
 export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'zonas-poste': ZonasPoste,
@@ -80,6 +81,7 @@ export const DIAGRAMAS: Record<string, ComponentType<PropsDiagrama>> = {
   'formatos-arquivo': FormatosArquivo,
   'ciclo-de-edicao': CicloDeEdicao,
   'ciclo-qfield': CicloQfield,
+  'plaqueta-identificacao': PlaquetaIdentificacao,
 };
 
 

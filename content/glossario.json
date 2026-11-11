@@ -1257,7 +1257,8 @@
     ],
     "licoes": [
       "03-07",
-      "04-01"
+      "04-01",
+      "07-03"
     ]
   },
   {
@@ -1905,7 +1906,8 @@
       "aneel-ren-1044-2022"
     ],
     "licoes": [
-      "07-01"
+      "07-01",
+      "07-03"
     ]
   },
   {
@@ -1918,7 +1920,8 @@
     ],
     "licoes": [
       "07-01",
-      "07-02"
+      "07-02",
+      "07-03"
     ]
   },
   {
@@ -1931,7 +1934,8 @@
     ],
     "licoes": [
       "07-01",
-      "07-02"
+      "07-02",
+      "07-03"
     ]
   },
   {
@@ -1942,7 +1946,8 @@
       "aneel-ren-1044-2022"
     ],
     "licoes": [
-      "07-01"
+      "07-01",
+      "07-03"
     ]
   },
   {
@@ -1953,7 +1958,8 @@
       "aneel-ren-1044-2022"
     ],
     "licoes": [
-      "07-01"
+      "07-01",
+      "07-03"
     ]
   },
   {
@@ -2180,6 +2186,19 @@
     ],
     "licoes": [
       "08-07"
+    ]
+  },
+  {
+    "id": "plaqueta",
+    "pt": "Plaqueta de identificação",
+    "definicao": "Plaqueta presa ao cabo do ocupante, perto do poste, que diz de quem é o cabo. O modelo (tamanho, cor, o que informa, distância do poste) vem da norma de cada distribuidora.",
+    "fontes": [
+      "aneel-ren-1044-2022",
+      "res-conjunta-4-2014",
+      "cemig-nd66"
+    ],
+    "licoes": [
+      "07-03"
     ]
   }
 ]

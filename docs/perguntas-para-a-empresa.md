@@ -69,6 +69,8 @@
 | b23 | O contrato ou o padrão de as-built diz em que formato e com que campos o fornecedor entrega o cadastro? | Contrato, termo de referência ou padrão de as-built | 08-04 |
 | b24 | Existe procedimento de cópia de segurança (backup) e de conferência das edições do cadastro? | Procedimento ou norma interna de gestão do cadastro | 08-05 |
 | b25 | O procedimento de vistoria diz o que registrar em cada poste (fotos, campos obrigatórios)? | Procedimento de vistoria | 08-07 |
+| b26 | Qual é o modelo de plaqueta na norma da empresa: tamanho, cor, o que precisa estar escrito e a que distância do poste? | Norma técnica de compartilhamento | 07-03 |
+| b27 | O contrato prevê multa ou prazo para o ocupante identificar os cabos? | Contrato com o ocupante | 07-03 |
 
 ---
 
@@ -137,6 +139,8 @@
 | d33 | A equipe edita direto no arquivo compartilhado ou cada um trabalha numa cópia? | 08-05 |
 | d34 | A equipe usa algum aplicativo de coleta em campo (QField ou outro)? Em que aparelho? | 08-07 |
 | d35 | Quem recebe e confere o que foi coletado em campo antes de entrar no cadastro? | 08-07 |
+| d36 | Como registro um cabo sem plaqueta ou com plaqueta ilegível: formulário, foto, sistema? | 07-03 |
+| d37 | Depois de quantos avisos, e por quem, um cabo sem dono identificado passa a ser tratado como clandestino? | 07-03 |
 
 ---
 
